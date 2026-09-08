@@ -1,5 +1,6 @@
 #include "stg13_cityescape/o_ce_adx_chg.h"
 #include "sa2b_types.h"
+#include "samt/sonic/adx.h"
 #include "samt/sonic/game.h"
 #include "samt/sonic/task.h"
 #include "set.h"
@@ -9,7 +10,6 @@ extern void fn_80011DF4(void);
 extern void fn_80011FB0(const char *);
 extern BOOL fn_8001CC18(s32);
 extern s32 fn_8001CD40(void);
-extern void _rename_PlayAdxFile(const char *); // some "play track" func
 extern s32 _rename_EitherPlayerWithinSphere(NJS_VECTOR *, f32);
 
 // ^ extern
@@ -33,16 +33,16 @@ void ObjectCeAdxChgDest(task *tp) {
   }
   switch (twp->mode) {
   case 2: {
-    _rename_PlayAdxFile("c_escap1.adx"); // Escape From The City
+    BGM_Play("c_escap1.adx"); // Escape From The City
   } break;
   case 1:
   case 3:
   case 4: {
     if (fn_8001CC18(0)) {
-      _rename_PlayAdxFile("c_escap1.adx");
+      BGM_Play("c_escap1.adx");
     } else {
       // Escape From The City (no bass intro)
-      _rename_PlayAdxFile("c_escap3.adx");
+      BGM_Play("c_escap3.adx");
     }
   } break;
   case 0:
@@ -63,7 +63,7 @@ void ObjectCeAdxChgExec(task *tp) {
     switch (fn_8001CD40()) {
     case 16: {
       if (twp->mode != 1) {
-        _rename_PlayAdxFile("c_escap3.adx");
+        BGM_Play("c_escap3.adx");
         twp->mode = 4;
       }
     } break;
