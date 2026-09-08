@@ -155,8 +155,11 @@ ChaoMain_43.c:
 ChaoMain_44.c:
 	.text       start:0x0001B214 end:0x0001B2C0
 
+chao/al_motion.c:
+	.text       start:0x0001B39C end:0x0001B590
+
 ChaoMain_45.c:
-	.text       start:0x0001B618 end:0x0001C424
+	.text       start:0x0001B618 end:0x0001CCB0
 
 ChaoMain_46.c:
 	.text       start:0x0001CCD0 end:0x0001CD20
@@ -182,11 +185,8 @@ ChaoMain_52.c:
 ChaoMain_53.c:
 	.text       start:0x0001EDF4 end:0x0001F0D0
 
-ChaoMain_54.c:
-	.text       start:0x0001F1FC end:0x0001FA10
-
-ChaoMain_55.c:
-	.text       start:0x0001FA10 end:0x0001FC0C
+chao/al_palette.c:
+	.text       start:0x0001F0D0 end:0x0001FC0C
 
 ChaoMain_56.c:
 	.text       start:0x0001FCC0 end:0x0001FCF4
@@ -375,7 +375,7 @@ ChaoMain_116.c:
 	.text       start:0x0004EB78 end:0x0004F400
 
 ChaoMain_117.c:
-	.text       start:0x0004F400 end:0x00050498
+	.text       start:0x0004F400 end:0x00050500
 
 ChaoMain_118.c:
 	.text       start:0x00050500 end:0x00051A9C
