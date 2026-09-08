@@ -124,7 +124,7 @@ void CityEscapeProlog() {
 void CityEscapeEpilog() {}
 
 // TODO this might be a TU split? not sure
-void _rename_CityEscapeBgm(task *tp) {
+void CityEscapeBgmStart(task *tp) {
   if (fn_8001CD40() == 7) {
     fn_80011DF4();
     lbl_13_bss_80 = 0;
