@@ -814,7 +814,8 @@ extern void SetVelocityYAndRotationAndNoconTimeP(Uint8 pno, Float y, Sint32 *ang
 extern Sint32 GetPlayerRunningSpeed(Sint8 pno, Float *v);
 
 typedef struct {
-  u8 pad[0x1e];
+  s8 unk_0x0;
+  u8 pad[0x1d];
   /* 0x1e */ s8 TWO_PLAYER;
   artificial_padding(0x1e, 0xf0, s8);
 } lbl_801CC168_t;

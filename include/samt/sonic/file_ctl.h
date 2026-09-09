@@ -47,17 +47,17 @@ enum
 */
 typedef struct
 {
-    void(__cdecl* subprgprolog)(void);   /* sub-program init function               */
-    void(__cdecl* subprgepilog)(void);   /* sub-program exit function               */
-    void(__cdecl* subprgmanager)(task*); /* sub-program task exec function          */
+    void (*subprgprolog)(void);   /* sub-program init function               */
+    void (*subprgepilog)(void);   /* sub-program exit function               */
+    void (*subprgmanager)(task*); /* sub-program task exec function          */
 }
 SUBPRG_EXEC;
 
 typedef struct
 {
-    void(__cdecl* subprgprolog)(void);  /* sub-program init function                */
-    void(__cdecl* subprgepilog)(void);  /* sub-program exit function                */
-    s32 (__cdecl* subprgmanager)(void); /* sub-program game control function        */
+    void (*subprgprolog)(void);  /* sub-program init function                */
+    void (*subprgepilog)(void);  /* sub-program exit function                */
+    s32  (*subprgmanager)(void); /* sub-program game control function        */
 }
 SUBPRG_CTRL;
 
@@ -87,6 +87,10 @@ SUBPRG_HEADER;
 *     Free a file buffer. Just calls 'syFree()'
 */
 void    FreeFile( void* file );
+
+// sa2b time woohoo
+void _rename_LoadSubprogram(SUBPRG_HEADER* header);
+SUBPRG_HEADER* _rename_CurrentSubprogram(void);
 
 EXTERN_END
 
