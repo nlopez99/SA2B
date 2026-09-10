@@ -5,21 +5,23 @@
 #include "samt/sonic/player.h"
 #include "samt/sonic/task.h"
 #include "set.h"
-extern void fn_80011A04(u32);
+extern void Bgm_SetVolume(u32);
 extern void fn_80011DF4(void);
 extern s32 fn_8001CD40(void);
-extern void fn_8002506C(u32, float *);
+extern void fn_8002506C(u32, LIGHT *);
 extern void fn_8003D7D4(mtnwk *mp);
 extern void fn_8005523C(taskwk *tp, motionwk *mp, playerwk *pwp);
 extern void fn_8005D0EC(void *);
 
-typedef struct unk_struct { // i have no clue
-  s16 idx, unk_0x2;
+typedef struct {
+  s16 idx;
+  s16 unk_0x2;
   void *unk_0x4;
-} unk_struct_t;
+} lbl_801E5D28_t;
 
-extern unk_struct_t lbl_801E5D28[];
+extern lbl_801E5D28_t lbl_801E5D28[];
 extern void *lbl_13_data_200DF0[];
+extern lbl_801E5D28_t lbl_13_data_1FD2B0[];
 
 // ^ extern
 // v in this file
@@ -33,32 +35,49 @@ static void BgExecDest(task *tp);
 static void BgExecDisp(task *tp);
 static void BgExecDispSort(task *tp);
 
-float lbl_13_data_202228[16] = {0.3f,  0.1f, 1.0f, 1.0f, 0.45f, 1.0f,
-                                1.0f,  1.0f, 0.3f, 0.1f, 1.0f,  0.5f,
-                                0.43f, 1.0f, 1.0f, 1.0f};
+LIGHT lbl_13_data_202228[2] = {
+    {
+        0.3f,
+        0.1f,
+        1.0f,
+        1.0f,
+        0.45f,
+        1.0f,
+        1.0f,
+        1.0f,
+    },
+    {
+        0.3f,
+        0.1f,
+        1.0f,
+        0.5f,
+        0.43f,
+        1.0f,
+        1.0f,
+        1.0f,
+    },
+};
 SUBPRG_HEADER _rename_CityEscapeSubprgHeader = {
     "STG13   ", 0, {CityEscapeProlog, CityEscapeEpilog, CityEscapeExec}};
-unk_struct_t lbl_13_data_1FD2B0[57];
 s32 lbl_13_bss_80 = 0;
 
 void fn_13_116C4(void) {
-  unk_struct_t *s, *table = lbl_13_data_1FD2B0, *entry;
-  for (s = table;; s++) {
+  lbl_801E5D28_t *s;
+  for (s = lbl_13_data_1FD2B0;; s++) {
     if (s->idx == -1)
       break; // this feels fake as hell but i have zero clue what it could be
-    if (s->idx < 0 || s->idx >= 300)
-      continue;
-    entry = &lbl_801E5D28[s->idx];
-    if (entry->unk_0x4 == NULL) {
+    if (s->idx >= 0 && s->idx < 300 && lbl_801E5D28[s->idx].unk_0x4 == NULL) {
       void *ptr = s->unk_0x4;
-      entry->unk_0x2 = s->unk_0x2;
+      lbl_801E5D28[s->idx].unk_0x2 = s->unk_0x2;
       lbl_801E5D28[s->idx].unk_0x4 = ptr;
     }
   }
 }
 
 void fn_13_11738(void) {
-  unk_struct_t *s, *table = lbl_13_data_1FD2B0, *entry;
+  lbl_801E5D28_t *table = lbl_13_data_1FD2B0;
+  lbl_801E5D28_t *s;
+
   playerwk *pwp = playerpwp[0];
   if (pwp) {
     fn_8003D7D4(&pwp->m);
@@ -75,10 +94,8 @@ void fn_13_11738(void) {
   for (s = table;; s++) {
     if (s->idx == -1)
       break; // see above comment
-    if (s->idx < 0 || s->idx >= 300)
-      continue;
-    entry = &lbl_801E5D28[s->idx];
-    if (entry->unk_0x4 == s->unk_0x4) {
+    if (s->idx >= 0 && s->idx < 300 &&
+        lbl_801E5D28[s->idx].unk_0x4 == s->unk_0x4) {
       lbl_801E5D28[s->idx].unk_0x4 = NULL;
       lbl_801E5D28[s->idx].unk_0x2 = 0;
     }
@@ -96,19 +113,19 @@ void CityEscapeProlog() {
   }
   // +0x274
   fn_8002506C(0, &lbl_13_data_202228[0]);
-  fn_8002506C(1, &lbl_13_data_202228[8]);
+  fn_8002506C(1, &lbl_13_data_202228[1]);
   fn_8002506C(2, &lbl_13_data_202228[0]);
   fn_8002506C(3, &lbl_13_data_202228[0]);
   // +0x334
   LoadLightFile("stg13_light.bin");
   if (lbl_801CC168.unk_0x0 == 0) {
     if (!lbl_801CC168.TWO_PLAYER) {
-      fn_80011A04(0);
-      BGM_SetFile("c_escap1.adx");
+      Bgm_SetVolume(0);
+      StgPlayMusic("c_escap1.adx");
     }
   } else {
-    fn_80011A04(0);
-    BGM_SetFile("t9_sonic.adx"); // this file does not exist
+    Bgm_SetVolume(0);
+    StgPlayMusic("t9_sonic.adx"); // this file does not exist
   }
   fn_8005D0EC(lbl_13_data_200DF0);
   bgexec = CreateElementalTask(2, LEV_1, BgExec, "BgExec");
@@ -132,8 +149,8 @@ void BgmStart(task *tp) {
       fn_80011DF4();
       lbl_13_bss_80 = 0;
     } else if (lbl_13_bss_80++ == 9) {
-      fn_80011A04(0);
-      BGM_SetFile("c_escap1.adx");
+      Bgm_SetVolume(0);
+      StgPlayMusic("c_escap1.adx");
     } else if (lbl_13_bss_80 < 9) {
       fn_80011DF4();
     }

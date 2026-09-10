@@ -1,7 +1,7 @@
 #include "OBJECT/o_ring.h"
 #include "set.h"
 
-void o_ring_1(){
+void RingDone(){
 
 }
 
@@ -12,7 +12,7 @@ void Ring(task* tp)
 
 void o_ring_3() {}
 
-void o_ring_4() {}
+void DamegeRingScatter() {}
 
 int o_ring_5(NJS_VECTOR* p) {
     int out = 0;

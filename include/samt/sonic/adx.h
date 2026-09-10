@@ -127,7 +127,7 @@ void    BGM_Volume( s32 vol );
 *   Parameters:
 *     - pcAdx       : name of the adx file, including '.adx'
 */
-void    BGM_SetFile( const char* pcAdx );
+void    StgPlayMusic( const char* pcAdx );
 
 /****** Jingle **********************************************************************/
 /*
