@@ -106,18 +106,18 @@ CCL_HIT_INFO;
 /****** Colli Work ******************************************************************/
 typedef struct colliwk
 {
-    u16             id;           /* colli id                                       */
-    s16             nbHit;        /* colli hit number                               */
-    u16             flag;         /* colli flags                                    */
-    u16             nbInfo;       /* colli info count                               */
-    f32             colli_range;  /* colli range                                    */
-    CCL_INFO*       info;         /* colli info list                                */
-    CCL_HIT_INFO    hit_info[16]; /* colli hit info list                            */
-    NJS_POINT3      normal;       /* colli normal                                   */
-    task*           mytask;       /* task pointer to this task                      */
-    s16             my_num;       /* my colli info index                            */
-    s16             hit_num;      /* hit colli info index                           */
-    struct colliwk* hit_cwp;      /* hit colli work                                 */
+    u16             id;           /* 0x00 colli id                                       */
+    s16             nbHit;        /* 0x02 colli hit number                               */
+    u16             flag;         /* 0x04 colli flags                                    */
+    u16             nbInfo;       /* 0x06 colli info count                               */
+    f32             colli_range;  /* 0x08 colli range                                    */
+    CCL_INFO*       info;         /* 0x0C colli info list                                */
+    CCL_HIT_INFO    hit_info[16]; /* 0x10 colli hit info list                            */
+    NJS_POINT3      normal;       /* 0x00 colli normal                                   */
+    task*           mytask;       /* 0x00 task pointer to this task                      */
+    s16             my_num;       /* 0x00 my colli info index                            */
+    s16             hit_num;      /* 0x00 hit colli info index                           */
+    struct colliwk* hit_cwp;      /* 0x00 hit colli work                                 */
 }
 colliwk;
 

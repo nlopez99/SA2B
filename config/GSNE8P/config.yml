@@ -243,6 +243,82 @@ modules:
   hash: 3a36fca0ad82957f2221832255ec636078ea8683
   symbols: config/GSNE8P/stg13D/symbols.txt
   splits: config/GSNE8P/stg13D/splits.txt
+  extract:
+  - symbol: ring_displaylist_1
+    binary: assets/ring_displaylist_1.bin
+    header: assets/ring_displaylist_1.inc
+    header_type: none
+    custom_type: displaylist
+  - symbol: ring_displaylist_2
+    binary: assets/ring_displaylist_2.bin
+    header: assets/ring_displaylist_2.inc
+    header_type: none
+    custom_type: displaylist
+  - symbol: ring_displaylist_3
+    binary: assets/ring_displaylist_3.bin
+    header: assets/ring_displaylist_3.inc
+    header_type: none
+    custom_type: displaylist
+
+  - symbol: ring_vecs_1
+    binary: assets/ring_vecs_1.bin
+    header: assets/ring_vecs_1.inc
+    header_type: none
+    custom_type: vtx
+  - symbol: ring_vecs_2
+    binary: assets/ring_vecs_2.bin
+    header: assets/ring_vecs_2.inc
+    header_type: none
+    custom_type: vtx
+  - symbol: ring_vecs_3
+    binary: assets/ring_vecs_3.bin
+    header: assets/ring_vecs_3.inc
+    header_type: none
+    custom_type: vtx
+  - symbol: ring_vecs_4
+    binary: assets/ring_vecs_4.bin
+    header: assets/ring_vecs_4.inc
+    header_type: none
+    custom_type: vtx
+  - symbol: ring_vecs_5
+    binary: assets/ring_vecs_5.bin
+    header: assets/ring_vecs_5.inc
+    header_type: none
+    custom_type: vtx
+  - symbol: ring_vecs_6
+    binary: assets/ring_vecs_6.bin
+    header: assets/ring_vecs_6.inc
+    header_type: none
+    custom_type: vtx
+
+  - symbol: ring_material_1
+    binary: assets/ring_material_1.bin
+    header: assets/ring_material_1.inc
+    header_type: none
+    custom_type: gjmaterial
+  - symbol: ring_material_2
+    binary: assets/ring_material_2.bin
+    header: assets/ring_material_2.inc
+    header_type: none
+    custom_type: gjmaterial
+  - symbol: ring_material_3
+    binary: assets/ring_material_3.bin
+    header: assets/ring_material_3.inc
+    header_type: none
+    custom_type: gjmaterial
+
+  - symbol: ring_s16_poly_list
+    binary: assets/ring_s16_poly_list.bin
+    header: assets/ring_s16_poly_list.inc
+    header_type: none
+    custom_type: s16
+
+  - symbol: ring_s32_vert_list
+    binary: assets/ring_s32_vert_list.bin
+    header: assets/ring_s32_vert_list.inc
+    header_type: none
+    custom_type: s32
+
 
 - object: orig/GSNE8P/files/stg14D.rel
   hash: 68b094fa0f3e58adb7276d34d4b9881ac1c64fae

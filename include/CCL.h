@@ -21,7 +21,7 @@ void CCL_GetForm(taskwk *, Sint32);
 // void CCL_Enable(taskwk *, Sint32);
 // void CCL_Disable(taskwk *, Sint32);
 void CCL_GetInfo(taskwk *, Sint32);
-void CCL_InitShare(task *, CCL_INFO *, Sint32, Uint8);
+void CCL_InitShare(task *tp, CCL_INFO *info, Sint32 nbInfo, Uint8 id);
 void CCL_ClearAll(void);
 void CCL_IsHitPlayerEx(taskwk *);
 void CCL_IsHitBulletEx(taskwk *);

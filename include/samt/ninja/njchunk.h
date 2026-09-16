@@ -68,14 +68,14 @@ NJS_CNK_MODEL;
 /****** Chunk Object ****************************************************************************/
 typedef struct cnkobj
 {
-    Uint32          evalflags;  /* evalation flags                                              */
-    NJS_CNK_MODEL*  model;      /* model data pointer                                           */
-    Float           pos[3];     /* translation                                                  */
-    Angle           ang[3];     /* rotation or im part of quat                                  */
-    Float           scl[3];     /* scaling                                                      */
-    struct cnkobj*  child;      /* child object                                                 */
-    struct cnkobj*  sibling;    /* sibling object                                               */
-    Float           re_quat;    /* re part of quat                                              */
+    Uint32          evalflags;  /* 0x00 evalation flags                                              */
+    NJS_CNK_MODEL*  model;      /* 0x04 model data pointer                                           */
+    NJS_POINT3      pos;        /* 0x08 translation                                                  */
+    Angle3          ang;        /* 0x14 rotation or im part of quat                                  */
+    NJS_VECTOR      scl;        /* 0x20 scaling                                                      */
+    struct cnkobj*  child;      /* 0x2C child object                                                 */
+    struct cnkobj*  sibling;    /* 0x30 sibling object                                               */
+    Float           re_quat;    /* 0x34 re part of quat                                              */
 }
 NJS_CNK_OBJECT;
 

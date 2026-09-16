@@ -121,7 +121,8 @@ task;
 *     - exec        : task executor                                               [opt:nullptr]
 *     - name        : task name
 */
-task*   CreateElementalTask( u16 im, tasklevel level, task_exec exec, const c7* name );
+task*   CreateElementalTask( u16 im, tasklevel level, task_exec exec, const char* name );
+#define CreateFundamentalTask(im, level, exec) CreateElementalTask((im), (level), (exec), #exec)
 /*
 *   Description:
 *     Create a new task as a child of another task.

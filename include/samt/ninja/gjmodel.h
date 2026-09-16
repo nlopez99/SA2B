@@ -133,6 +133,8 @@ typedef enum
 }
 GJ_COMP_TYPE;
 
+#define GJ_ARR_TYPE(component, storage) ((component) | (storage) << 4)
+
 /********************************/
 /*  Structures                  */
 /********************************/
@@ -176,8 +178,7 @@ GJS_VLIST;
 typedef struct
 {
     Uint8           id;             /* material type                                [GJ_MTTYPE] */
-    Uint8           pad8;           /* padding                                                  */
-    Uint16          pad16;          /* padding                                                  */
+    int : 24;                       /* padding                                                  */
     Uint32          setting;        /* material setting                                         */
 }
 GJS_MATERIAL;

@@ -55,6 +55,7 @@ typedef volatile f128 vf128;
 
 // A boolean value typedef inspired by the Win32 API.
 typedef int BOOL;
+
 #undef TRUE
 #define TRUE (1)
 #undef FALSE
@@ -352,5 +353,14 @@ inline void padStack(void)
 #define __mwerks_rlwnm(S, SH, MB, ME)     /* int    */ __rlwnm(S, SH, MB, ME)     // int, int, int, int
 #define __mwerks_rlwimi(A, S, SH, MB, ME) /* int    */ __rlwimi(A, S, SH, MB, ME) // int, int, int, int, int
 #endif
+
+#ifndef __cplusplus
+#define staticassert_name_helper(line) static_assert##line
+#define static_assert(x) extern void* static_assert_helper[(x) ? 1 : 0];
+#endif
+
+#define size_assert(struct, size) static_assert(sizeof(struct) == size)
+
+#define SQ(x) ((x) * (x))
 
 #endif // _TYPES_H

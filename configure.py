@@ -16,6 +16,7 @@ import argparse
 import sys
 from pathlib import Path
 from typing import Any, Dict, List
+import json
 
 from tools.project import (
     Object,
@@ -684,6 +685,128 @@ config.libs = [
         ]
     )
 ]
+
+
+# Define our custom asset processing scripts
+config.custom_build_rules = [
+    {
+        "name": "convert_displaylist",
+        "command": "$python tools/converters/displaylistdis.py $in $out",
+        "description": "CONVERT $symbol",
+    },
+    {
+        "name": "convert_vtx",
+        "command": "$python tools/converters/vtxdis.py $in $out",
+        "description": "CONVERT $symbol",
+    },
+    {
+        "name": "convert_gjmaterial",
+        "command": "$python tools/converters/gjmaterialdis.py $in $out",
+        "description": "CONVERT $symbol",
+    },
+    {
+        "name": "convert_s32",
+        "command": "$python tools/converters/s32dis.py $in $out",
+        "description": "CONVERT $symbol",
+    },
+    {
+        "name": "convert_s16",
+        "command": "$python tools/converters/s16dis.py $in $out",
+        "description": "CONVERT $symbol",
+    },
+]
+config.custom_build_steps = {}
+
+# Grab the specific GameID so we can format our strings properly
+version = VERSIONS[version_num]
+out_dir = config.build_dir / version
+
+# This generates the build steps needed for preprocessing
+def emit_build_rule(asset):
+    steps = config.custom_build_steps.setdefault("pre-compile", [])
+
+    match asset.get("custom_type"):
+        case None:
+            return
+
+        case "displaylist":
+            steps.append(
+                {
+                    "rule": "convert_displaylist",
+                    "inputs": out_dir / "bin" / asset["binary"],
+                    "outputs": out_dir / "include" / asset["header"],
+                    "variables": {
+                        "symbol": asset["symbol"],
+                    },
+                    "implicit": Path("tools/converters/displaylistdis.py"),
+                }
+            )
+
+        case "vtx":
+            steps.append(
+                {
+                    "rule": "convert_vtx",
+                    "inputs": out_dir / "bin" / asset["binary"],
+                    "outputs": out_dir / "include" / asset["header"],
+                    "variables": {
+                        "symbol": asset["symbol"],
+                    },
+                    "implicit": Path("tools/converters/vtxdis.py"),
+                }
+            )
+
+        case "gjmaterial":
+            steps.append(
+                {
+                    "rule": "convert_gjmaterial",
+                    "inputs": out_dir / "bin" / asset["binary"],
+                    "outputs": out_dir / "include" / asset["header"],
+                    "variables": {
+                        "symbol": asset["symbol"],
+                    },
+                    "implicit": Path("tools/converters/gjmaterialdis.py"),
+                }
+            )
+
+        case "s32":
+            steps.append(
+                {
+                    "rule": "convert_s32",
+                    "inputs": out_dir / "bin" / asset["binary"],
+                    "outputs": out_dir / "include" / asset["header"],
+                    "variables": {
+                        "symbol": asset["symbol"],
+                    },
+                    "implicit": Path("tools/converters/s32dis.py"),
+                }
+            )
+
+        case "s16":
+            steps.append(
+                {
+                    "rule": "convert_s16",
+                    "inputs": out_dir / "bin" / asset["binary"],
+                    "outputs": out_dir / "include" / asset["header"],
+                    "variables": {
+                        "symbol": asset["symbol"],
+                    },
+                    "implicit": Path("tools/converters/s16dis.py"),
+                }
+            )
+
+        case _:
+            print("Unknown asset type: " + asset["custom_type"])
+
+
+# Parse the config and create the build rules for all our assets
+config_path = out_dir / "config.json"
+if config_path.exists():
+    config_data = json.load(open(config_path))
+    for asset in config_data.get("extract", []):
+        emit_build_rule(asset)
+    for module in config_data.get("modules", []):
+        for asset in module.get("extract", []):
+            emit_build_rule(asset)
 
 
 # Optional callback to adjust link order. This can be used to add, remove, or reorder objects.

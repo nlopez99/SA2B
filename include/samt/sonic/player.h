@@ -417,16 +417,16 @@ typedef struct playerwk
     s8      character;              // 0x03 Character Number
 
     s8      action_list[8];         // 0x04 
-    s8      action_num;             // 0x05 
-    s8      action_sel;             // 0x06 Currently selected action index (with Y)
-    s8      action_last;            // 0x07 ? Set on pressing action
+    s8      action_num;             // 0x0C 
+    s8      action_sel;             // 0x0D Currently selected action index (with Y)
+    s8      action_last;            // 0x0E ? Set on pressing action
 
-    s16     item;                   // 0x08 Powerups
-    s16     jumptimer;              // 0x0A 
-    s16     nocontimer;             // 0x0C No Control Timer
-    s16     breathtimer;            // 0x0E 
-    s16     waittimer;              // 0x10 
-    s16     confusetimer;           // 0x12 
+    s16     item;                   // 0x10 Powerups
+    s16     jumptimer;              // 0x12 
+    s16     nocontimer;             // 0x14 No Control Timer
+    s16     breathtimer;            // 0x16 
+    s16     waittimer;              // 0x18 
+    s16     confusetimer;           // 0x1A 
     s16     flag;                   // 0x14
     s16     island_num;             // 0x16
     s16     path_point;             // 0x18 ? More research needed
@@ -815,9 +815,13 @@ extern Sint32 GetPlayerRunningSpeed(Sint8 pno, Float *v);
 
 typedef struct {
   s8 unk_0x0;
-  u8 pad[0x1d];
+  artificial_padding(0, 0x1e, s8);
   /* 0x1e */ s8 TWO_PLAYER;
-  artificial_padding(0x1e, 0xf0, s8);
+  artificial_padding(0x1e, 0x37, s8);
+  /* 0x37 */ s8 _37;
+  artificial_padding(0x37, 0x3d, s8);
+  /* 0x3D */ s8 _3D;
+  artificial_padding(0x3d, 0xf0, s8);
 } lbl_801CC168_t;
 
 extern lbl_801CC168_t lbl_801CC168;

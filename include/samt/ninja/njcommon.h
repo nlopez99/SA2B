@@ -280,8 +280,8 @@ NJS_TEXTUREH_VTX;
 #define NJM_ANG_RAD(n)              ((n)*((2.f*NJD_PI)/65536.f))
 
 /****** Sangle **********************************************************************************/
-#define NJM_DEG_SANG(n)             ((Sangle)((n)*(65536.f/360.f)))
-#define NJM_RAD_SANG(n)             ((Sangle)((n)*(65536.f/(2.f*NJD_PI))))
+#define NJM_DEG_SANG(n)             (((n)*(65536.f/360.f)))
+#define NJM_RAD_SANG(n)             (((n)*(65536.f/(2.f*NJD_PI))))
 #define NJM_SANG_DEG(n)             ((n)*(360.f/65536.f))
 #define NJM_SANG_RAD(n)             ((n)*((2.f*NJD_PI)/65536.f))
 
