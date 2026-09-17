@@ -299,7 +299,7 @@ modules:
     binary: assets/ring_vecs_7.bin
     header: assets/ring_vecs_7.inc
     header_type: none
-    custom_type: 
+    custom_type: vtx
   - symbol: ring_vecs_8!.data:0x243d0c
     binary: assets/ring_vecs_8.bin
     header: assets/ring_vecs_8.inc
