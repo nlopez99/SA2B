@@ -331,7 +331,7 @@ config.warn_missing_source = False
 
 CHAOPIPE_C = Object(Matching, "OBJECT/o_chaopipe.c")
 SPRING_C = Object(Matching, "OBJECT/o_spring.c")
-RING_C = Object(NonMatching, "OBJECT/o_ring.c")
+RING_C = Object(Matching, "OBJECT/o_ring.c")
 
 config.libs = [
     DolphinLib(

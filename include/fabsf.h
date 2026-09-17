@@ -2,6 +2,7 @@
 #define __FABSF_H_
 
 #ifndef __MWERKS__
+// mwerks intrinsic
 inline float __fabsf(float f)
 {
     return f < 0 ? -f : f;

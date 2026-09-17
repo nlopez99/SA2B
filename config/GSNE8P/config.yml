@@ -244,81 +244,115 @@ modules:
   symbols: config/GSNE8P/stg13D/symbols.txt
   splits: config/GSNE8P/stg13D/splits.txt
   extract:
-  - symbol: ring_displaylist_1
+  - symbol: ring_displaylist_1!.data:0x2431a0
     binary: assets/ring_displaylist_1.bin
     header: assets/ring_displaylist_1.inc
     header_type: none
     custom_type: displaylist
-  - symbol: ring_displaylist_2
+  - symbol: ring_displaylist_2!.data:0x243ba0
     binary: assets/ring_displaylist_2.bin
     header: assets/ring_displaylist_2.inc
     header_type: none
     custom_type: displaylist
-  - symbol: ring_displaylist_3
+  - symbol: ring_displaylist_3!.data:0x243660
     binary: assets/ring_displaylist_3.bin
     header: assets/ring_displaylist_3.inc
     header_type: none
     custom_type: displaylist
+  - symbol: ring_displaylist_4!.data:0x243de0
+    binary: assets/ring_displaylist_4.bin
+    header: assets/ring_displaylist_4.inc
+    header_type: none
+    custom_type: displaylist
 
-  - symbol: ring_vecs_1
+  - symbol: ring_vecs_1!.data:0x242e1c
     binary: assets/ring_vecs_1.bin
     header: assets/ring_vecs_1.inc
     header_type: none
     custom_type: vtx
-  - symbol: ring_vecs_2
+  - symbol: ring_vecs_2!.data:0x242f9c
     binary: assets/ring_vecs_2.bin
     header: assets/ring_vecs_2.inc
     header_type: none
     custom_type: vtx
-  - symbol: ring_vecs_3
+  - symbol: ring_vecs_3!.data:0x243754
     binary: assets/ring_vecs_3.bin
     header: assets/ring_vecs_3.inc
     header_type: none
     custom_type: vtx
-  - symbol: ring_vecs_4
+  - symbol: ring_vecs_4!.data:0x243934
     binary: assets/ring_vecs_4.bin
     header: assets/ring_vecs_4.inc
     header_type: none
     custom_type: vtx
-  - symbol: ring_vecs_5
+  - symbol: ring_vecs_5!.data:0x243274
     binary: assets/ring_vecs_5.bin
     header: assets/ring_vecs_5.inc
     header_type: none
     custom_type: vtx
-  - symbol: ring_vecs_6
+  - symbol: ring_vecs_6!.data:0x243424
     binary: assets/ring_vecs_6.bin
     header: assets/ring_vecs_6.inc
     header_type: none
     custom_type: vtx
+  - symbol: ring_vecs_7!.data:0x243cdc
+    binary: assets/ring_vecs_7.bin
+    header: assets/ring_vecs_7.inc
+    header_type: none
+    custom_type: 
+  - symbol: ring_vecs_8!.data:0x243d0c
+    binary: assets/ring_vecs_8.bin
+    header: assets/ring_vecs_8.inc
+    header_type: none
+    custom_type: vtx
 
-  - symbol: ring_material_1
+  - symbol: ring_material_1!.data:0x24314c
     binary: assets/ring_material_1.bin
     header: assets/ring_material_1.inc
     header_type: none
     custom_type: gjmaterial
-  - symbol: ring_material_2
+  - symbol: ring_material_2!.data:0x243b44
     binary: assets/ring_material_2.bin
     header: assets/ring_material_2.inc
     header_type: none
     custom_type: gjmaterial
-  - symbol: ring_material_3
+  - symbol: ring_material_3!.data:0x243604
     binary: assets/ring_material_3.bin
     header: assets/ring_material_3.inc
     header_type: none
     custom_type: gjmaterial
+  - symbol: ring_material_4!.data:0x243d8c
+    binary: assets/ring_material_4.bin
+    header: assets/ring_material_4.inc
+    header_type: none
+    custom_type: gjmaterial
 
-  - symbol: ring_s16_poly_list
+  - symbol: ring_s16_poly_list!.data:0x242a44
     binary: assets/ring_s16_poly_list.bin
     header: assets/ring_s16_poly_list.inc
     header_type: none
     custom_type: s16
+  - symbol: _rename_defaultRingModel_s16_list!.data:0x243e78
+    binary: assets/_rename_defaultRingModel_s16_list.bin
+    header: assets/_rename_defaultRingModel_s16_list.inc
+    header_type: none
+    custom_type: s16  
+  - symbol: ring_uvs_0!.data:0x243d3c
+    binary: assets/ring_uvs_0.bin
+    header: assets/ring_uvs_0.inc
+    header_type: none
+    custom_type: s16
 
-  - symbol: ring_s32_vert_list
+  - symbol: ring_s32_vert_list!.data:0x242af8
     binary: assets/ring_s32_vert_list.bin
     header: assets/ring_s32_vert_list.inc
     header_type: none
     custom_type: s32
-
+  - symbol: _rename_defaultRingModel_s32_list!.data:0x243f18
+    binary: assets/_rename_defaultRingModel_s32_list.bin
+    header: assets/_rename_defaultRingModel_s32_list.inc
+    header_type: none
+    custom_type: s32
 
 - object: orig/GSNE8P/files/stg14D.rel
   hash: 68b094fa0f3e58adb7276d34d4b9881ac1c64fae

@@ -65,19 +65,19 @@ EXTERN_START
 /****** Vertex Array ****************************************************************************/
 typedef enum
 {
-    GJ_VA_PNMTXIDX,                 /* matrix data                                              */
-    GJ_VA_POS,                      /* position                                                 */
-    GJ_VA_NRM,                      /* normal                                                   */
-    GJ_VA_CLR0,                     /* color 0                                                  */
-    GJ_VA_CLR1,                     /* color 1                                                  */
-    GJ_VA_TEX0,                     /* UV coords 0                                              */
-    GJ_VA_TEX1,                     /* UV coords 1                                              */
-    GJ_VA_TEX2,                     /* UV coords 2                                              */
-    GJ_VA_TEX3,                     /* UV coords 3                                              */
-    GJ_VA_TEX4,                     /* UV coords 4                                              */
-    GJ_VA_TEX5,                     /* UV coords 5                                              */
-    GJ_VA_TEX6,                     /* UV coords 6                                              */
-    GJ_VA_TEX7,                     /* UV coords 7                                              */
+    GJ_VA_PNMTXIDX,                 /* 0x0 matrix data                                              */
+    GJ_VA_POS,                      /* 0x1 position                                                 */
+    GJ_VA_NRM,                      /* 0x2 normal                                                   */
+    GJ_VA_CLR0,                     /* 0x3 color 0                                                  */
+    GJ_VA_CLR1,                     /* 0x4 color 1                                                  */
+    GJ_VA_TEX0,                     /* 0x5 UV coords 0                                              */
+    GJ_VA_TEX1,                     /* 0x6 UV coords 1                                              */
+    GJ_VA_TEX2,                     /* 0x7 UV coords 2                                              */
+    GJ_VA_TEX3,                     /* 0x8 UV coords 3                                              */
+    GJ_VA_TEX4,                     /* 0x9 UV coords 4                                              */
+    GJ_VA_TEX5,                     /* 0xA UV coords 5                                              */
+    GJ_VA_TEX6,                     /* 0xB UV coords 6                                              */
+    GJ_VA_TEX7,                     /* 0xC UV coords 7                                              */
 
     GJ_VA_NULL = 255,               /* null entry, list end                                     */
 }

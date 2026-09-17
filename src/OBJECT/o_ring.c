@@ -6,18 +6,17 @@
 #include "samt/sonic/sound.h"
 #include "set.h"
 
-
 extern void CalcAdvanceAsPossible(NJS_VECTOR *, NJS_VECTOR *, f32,
                                   NJS_VECTOR *);
 extern void *syCalloc(size_t num, size_t size);
-extern void fn_13_1EF74(NJS_VECTOR *, NJS_VECTOR *, float);
+extern void _rename_MakeParticle(NJS_VECTOR *, NJS_VECTOR *, f32);
 extern void njEnableFog(void);
 extern void njDisableFog(void);
 extern void gjSetFog(void);
 extern void syFree(void *);
 extern void SE_CallRing(s8);
 extern void AddMechHP(s32, f32);
-extern float SqMag(float, float, float);
+extern f32 SqMag(f32, f32, f32);
 extern s16 GetRingNumber(s32 playerIndex);
 extern void AddScore(int);
 extern void AddNumRing(int, s16);
@@ -27,8 +26,8 @@ extern void fn_8006A148_nop(void);
 extern NJS_VECTOR lbl_801E5624;
 extern BOOL DisableObjectFog;
 extern taskwk *lbl_803ADB04;
-extern int lbl_803AD914;
-extern int lbl_803AD918;
+extern Angle lbl_803AD914;
+extern Angle lbl_803AD918;
 
 // ^ extern
 // v in this file
@@ -63,36 +62,39 @@ typedef struct {
 size_assert(NJS_CNK_OBJECT, 0x38);
 size_assert(ringfwk, 0x14);
 
-NJS_TEXNAME lbl_13_data_242A30[] = {{"sikake_05_64"}};
-
-NJS_TEXLIST lbl_13_data_242A3C = {
-    lbl_13_data_242A30,
-    ARRAY_COUNT(lbl_13_data_242A30),
+static NJS_TEXNAME ring_texarray_0[] = {
+    {"sikake_05_64"},
 };
 
-s16 ring_s16_poly_list[] = {
-  #include "assets/ring_s16_poly_list.inc"
-};
-s32 ring_s32_vert_list[] = {
-  #include "assets/ring_s32_vert_list.inc"
+NJS_TEXLIST _rename_ring_tex_0 = {
+    ring_texarray_0,
+    ARRAY_COUNT(ring_texarray_0),
 };
 
-NJS_CNK_MODEL lbl_13_data_242E04 = {
+static s16 ring_s16_poly_list[] = {
+#include "assets/ring_s16_poly_list.inc"
+};
+
+static s32 ring_s32_vert_list[] = {
+#include "assets/ring_s32_vert_list.inc"
+};
+
+static NJS_CNK_MODEL ring_model_0 = {
     ring_s32_vert_list,
     ring_s16_poly_list,
     {0.0f, 0.0f, -0.0f},
     3.102889060974121,
 };
 
-NJS_VECTOR ring_vecs_1[] = {
-  #include "assets/ring_vecs_1.inc"
+static NJS_VECTOR ring_vecs_1[] = {
+#include "assets/ring_vecs_1.inc"
 };
 
-NJS_VECTOR ring_vecs_2[] = {
-  #include "assets/ring_vecs_2.inc"
+static NJS_VECTOR ring_vecs_2[] = {
+#include "assets/ring_vecs_2.inc"
 };
 
-GJS_ARRAY lbl_13_data_24311C[] = {
+static GJS_ARRAY ring_attributes_0[] = {
     {
         GJ_VA_POS,
         sizeof(*ring_vecs_1),
@@ -112,15 +114,15 @@ GJS_ARRAY lbl_13_data_24311C[] = {
     {GJ_VA_NULL},
 };
 
-GJS_MATERIAL ring_material_1[] = {
-  #include "assets/ring_material_1.inc"
+static GJS_MATERIAL ring_material_1[] = {
+#include "assets/ring_material_1.inc"
 };
 
-u8 ring_displaylist_1[] ATTRIBUTE_ALIGN(32) = {
-  #include "assets/ring_displaylist_1.inc"
+static u8 ring_displaylist_1[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/ring_displaylist_1.inc"
 };
 
-GJS_MESHSET lbl_13_data_243240[] = {
+static GJS_MESHSET ring_meshset_0[] = {
     {
         ring_material_1,
         ARRAY_COUNT(ring_material_1),
@@ -129,27 +131,27 @@ GJS_MESHSET lbl_13_data_243240[] = {
     },
 };
 
-GJS_MODEL model_ring = {
-    lbl_13_data_24311C,
+static GJS_MODEL model_ring = {
+    ring_attributes_0,
     NULL,
-    lbl_13_data_243240,
+    ring_meshset_0,
     NULL,
-    ARRAY_COUNT(lbl_13_data_243240),
+    ARRAY_COUNT(ring_meshset_0),
     0,
     {0.0f, 0.0f, -0.0f},
     3.102889060974121f,
 };
 
-NJS_VECTOR ring_vecs_5[] = {
+static NJS_VECTOR ring_vecs_5[] = {
 #include "assets/ring_vecs_5.inc"
 };
 
-NJS_VECTOR ring_vecs_6[] = {
-  #include "assets/ring_vecs_6.inc"
+static NJS_VECTOR ring_vecs_6[] = {
+#include "assets/ring_vecs_6.inc"
 };
 
-GJS_ARRAY lbl_13_data_2435D4[] = {
-      {
+static GJS_ARRAY ring_attributes_1[] = {
+    {
         GJ_VA_POS,
         sizeof(*ring_vecs_5),
         ARRAY_COUNT(ring_vecs_5),
@@ -168,41 +170,41 @@ GJS_ARRAY lbl_13_data_2435D4[] = {
     {GJ_VA_NULL},
 };
 
-GJS_MATERIAL ring_material_3[] = {
-  #include "assets/ring_material_3.inc"
+static GJS_MATERIAL ring_material_3[] = {
+#include "assets/ring_material_3.inc"
 };
 
-u8 ring_displaylist_3[] ATTRIBUTE_ALIGN(32) = {
-  #include "assets/ring_displaylist_3.inc"
+static u8 ring_displaylist_3[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/ring_displaylist_3.inc"
 };
 
-GJS_MESHSET lbl_13_data_243720[1] = {
-    ring_material_3,
-    ARRAY_COUNT(ring_material_3),
-    ring_displaylist_3,
-    ARRAY_COUNT(ring_displaylist_3)
+static GJS_MESHSET ring_meshset_1[] = {
+    {
+        ring_material_3,
+        ARRAY_COUNT(ring_material_3),
+        ring_displaylist_3,
+        ARRAY_COUNT(ring_displaylist_3),
+    },
 };
 
-GJS_MODEL model_ring_l2 = {
-    lbl_13_data_2435D4,
-    NULL,
-    lbl_13_data_243720,
-    NULL,
-    ARRAY_COUNT(lbl_13_data_243720),
-    0,
-    {0.f, 0.f, -0.f},
-    3.119550943374634
-};
+static GJS_MODEL model_ring_l2 = {ring_attributes_1,
+                                  NULL,
+                                  ring_meshset_1,
+                                  NULL,
+                                  ARRAY_COUNT(ring_meshset_1),
+                                  0,
+                                  {0.f, 0.f, -0.f},
+                                  3.119550943374634};
 
-NJS_VECTOR ring_vecs_3[] = {
+static NJS_VECTOR ring_vecs_3[] = {
 #include "assets/ring_vecs_3.inc"
 };
 
-NJS_VECTOR ring_vecs_4[] = {
+static NJS_VECTOR ring_vecs_4[] = {
 #include "assets/ring_vecs_4.inc"
 };
 
-GJS_ARRAY lbl_13_data_243B14[] = {
+static GJS_ARRAY ring_attributes_2[] = {
     {
         GJ_VA_POS,
         sizeof(*ring_vecs_3),
@@ -222,15 +224,15 @@ GJS_ARRAY lbl_13_data_243B14[] = {
     {GJ_VA_NULL},
 };
 
-GJS_MATERIAL ring_material_2[] = {
-  #include "assets/ring_material_2.inc"
+static GJS_MATERIAL ring_material_2[] = {
+#include "assets/ring_material_2.inc"
 };
 
-u8 ring_displaylist_2[] ATTRIBUTE_ALIGN(32) = {
-  #include "assets/ring_displaylist_2.inc"
+static u8 ring_displaylist_2[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/ring_displaylist_2.inc"
 };
 
-GJS_MESHSET lbl_13_data_243C80[1] = {
+static GJS_MESHSET ring_meshset_2[1] = {
     {
         ring_material_2,
         ARRAY_COUNT(ring_material_2),
@@ -239,24 +241,112 @@ GJS_MESHSET lbl_13_data_243C80[1] = {
     },
 };
 
-GJS_MODEL model_ring_l1 = {
-    lbl_13_data_243B14,
+static GJS_MODEL model_ring_l1 = {
+    ring_attributes_2,
     NULL,
-    lbl_13_data_243C80,
+    ring_meshset_2,
     NULL,
-    ARRAY_COUNT(lbl_13_data_243C80),
+    ARRAY_COUNT(ring_meshset_2),
     0,
     {-0.0f, -0.0f, -0.0f},
     3.088042974472046,
 };
 
+static NJS_TEXNAME ring_texarray_1[] = {
+    {"kyotu32_marukage"},
+};
 
-extern CCL_INFO ring_info[1];
-extern f32 lbl_13_data_243E34;
-extern f32 lbl_13_data_243E38;
-extern NJS_TEXLIST lbl_13_data_243CD4;
-extern GJS_MODEL lbl_13_data_243E10;
-extern NJS_CNK_OBJECT _rename_defaultRingObject;
+NJS_TEXLIST _rename_ring_tex_1 = {
+    ring_texarray_1,
+    ARRAY_COUNT(ring_texarray_1),
+};
+
+static NJS_VECTOR ring_vecs_7[] = {
+#include "assets/ring_vecs_7.inc"
+};
+
+static NJS_VECTOR ring_vecs_8[] = {
+#include "assets/ring_vecs_8.inc"
+};
+
+static NJS_TEX ring_uvs_0[] = {
+#include "assets/ring_uvs_0.inc"
+};
+
+static GJS_ARRAY ring_attributes_3[] = {
+    {
+        GJ_VA_POS,
+        sizeof(*ring_vecs_7),
+        ARRAY_COUNT(ring_vecs_7),
+        GJ_ARR_TYPE(GJ_POS_XYZ, GJ_F32),
+        ring_vecs_7,
+        sizeof(ring_vecs_7),
+    },
+    {
+        GJ_VA_NRM,
+        sizeof(*ring_vecs_8),
+        ARRAY_COUNT(ring_vecs_8),
+        GJ_ARR_TYPE(GJ_NRM_XYZ, GJ_F32),
+        ring_vecs_8,
+        sizeof(ring_vecs_8),
+    },
+    {
+        GJ_VA_TEX0,
+        sizeof(*ring_uvs_0),
+        ARRAY_COUNT(ring_uvs_0),
+        GJ_ARR_TYPE(GJ_TEX_ST, GJ_S16),
+        ring_uvs_0,
+        sizeof(ring_uvs_0),
+    },
+    {GJ_VA_NULL},
+};
+
+static GJS_MATERIAL ring_material_4[] = {
+#include "assets/ring_material_4.inc"
+};
+
+static u8 ring_displaylist_4[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/ring_displaylist_4.inc"
+};
+
+static GJS_MESHSET ring_meshset_4[] = {
+    ring_material_4,
+    ARRAY_COUNT(ring_material_4),
+    ring_displaylist_4,
+    ARRAY_COUNT(ring_displaylist_4),
+};
+
+GJS_MODEL _rename_ring_tex_2 = {
+    ring_attributes_3,
+    NULL,
+    NULL,
+    ring_meshset_4,
+    0,
+    ARRAY_COUNT(ring_meshset_4),
+    {0, 0, 0},
+    7.071067810058594f,
+};
+
+static f32 sScaleX = 0.8f;
+static f32 sScaleZ = 0.4f;
+
+static CCL_INFO ring_info[] = {
+    {
+        0,
+        CI_FORM_SPHERE,
+        0xb0,
+        0,
+        0x680000,
+        {0, 0, 0},
+        5.0f,
+        0.0f,
+        0.0f,
+        0.0f,
+        0,
+        0,
+        0,
+    },
+};
 
 // bss
 static s32 colli_timer = 0;
@@ -264,12 +354,13 @@ static ringwk *RingObjects = NULL;
 static BOOL CleanupRingObjs = FALSE;
 static task *RingTP = NULL;
 
-void CreateRingTask(void);
-void o_ring_10(ringwk *arg);
-ringwk *CreateRingObject(void);
-void RingEnd(task *);
-BOOL o_ring_8(task *tp);
-void Tobitiri(task *);
+// forward decls
+
+static void RingEnd(task *);
+static void CreateRingTask(void);
+static void o_ring_10(ringwk *arg);
+static ringwk *CreateRingObject(void);
+static BOOL o_ring_8(task *tp);
 
 enum RINGMD {
   RINGMD_0 = 0,
@@ -278,7 +369,7 @@ enum RINGMD {
   RINGMD_3 = 3,
 };
 
-void o_ring_0(task *tp) {
+static void o_ring_0(task *tp) {
   NJS_VECTOR pos;
   NJS_VECTOR vec;
   int stackPad;
@@ -298,7 +389,7 @@ void o_ring_0(task *tp) {
     pos.x = x + 4.0f * njSin(ang);
     pos.y = (y + 1.8f * i) - 1.5f;
     pos.z = z + 4.0f * njCos(ang);
-    fn_13_1EF74(&pos, &vec, 2.5f);
+    _rename_MakeParticle(&pos, &vec, 2.5f);
     i--;
     ang += increment;
   }
@@ -448,19 +539,19 @@ void Ring(task *tp) {
 }
 
 void o_ring_3() {
-  njSetTexture(&lbl_13_data_242A3C);
+  njSetTexture(&_rename_ring_tex_0);
   if (DisableObjectFog) {
     njDisableFog();
     gjSetFog();
   }
-  njCnkCacheDrawModel(&lbl_13_data_242E04);
+  njCnkCacheDrawModel(&ring_model_0);
   if (DisableObjectFog) {
     njEnableFog();
     gjSetFog();
   }
 }
 
-void DamegeRingScatter(int playerIndex) {
+void DamegeRingScatter(s32 playerIndex) {
   f32 f31 = njRandom() * 360.0f;
   int ringNum = GetRingNumber(playerIndex);
   int i;
@@ -488,7 +579,7 @@ void DamegeRingScatter(int playerIndex) {
 
 static f32 floatHack(void) { return 1.0f; }
 
-int o_ring_5(NJS_VECTOR *p) {
+static int o_ring_5(NJS_VECTOR *p) {
   int out = 0;
   if (p->x > 0.9f) {
     out = 1;
@@ -832,7 +923,7 @@ void Tobitiri(task *tp) {
   }
 }
 
-void RingEnd(task *tp) {
+static void RingEnd(task *tp) {
   if (tp->work.ptr) {
     o_ring_10(GET_RING_WK(tp));
   }
@@ -846,7 +937,7 @@ void RingEnd(task *tp) {
   tp->mwp = NULL;
 }
 
-BOOL o_ring_8(task *tp) {
+static BOOL o_ring_8(task *tp) {
   playerwk *pwp;
   taskwk *twp = tp->twp;
   taskwk *twp2;
@@ -911,7 +1002,26 @@ BOOL o_ring_8(task *tp) {
   return TRUE;
 }
 
-ringwk *CreateRingObject() {
+static s16 _rename_defaultRingModel_s16_list[] = {
+#include "assets/_rename_defaultRingModel_s16_list.inc"
+};
+
+static s32 _rename_defaultRingModel_s32_list[] = {
+#include "assets/_rename_defaultRingModel_s32_list.inc"
+};
+
+static NJS_CNK_MODEL _rename_defaultRingModel = {
+    _rename_defaultRingModel_s32_list,
+    _rename_defaultRingModel_s16_list,
+    {0, 0, -0.f},
+    3.102889060974121f};
+
+static NJS_CNK_OBJECT _rename_defaultRingObject = {
+    22,  &_rename_defaultRingModel, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, NULL, NULL,
+    0.f,
+};
+
+static ringwk *CreateRingObject() {
   ringwk *wk = syCalloc(1, sizeof(ringwk));
   if (wk != NULL) {
     CreateRingTask();
@@ -929,7 +1039,7 @@ ringwk *CreateRingObject() {
   return wk;
 }
 
-void o_ring_10(ringwk *arg) {
+static void o_ring_10(ringwk *arg) {
   if (arg != NULL) {
     arg->cnkObj.evalflags |= NJD_EVAL_HIDE;
     arg->cnkObj.model = NULL;
@@ -937,7 +1047,7 @@ void o_ring_10(ringwk *arg) {
   }
 }
 
-void RingModelDest(task *tp) {
+static void RingModelDest(task *tp) {
   while (RingObjects != NULL) {
     ringwk *tmp = (ringwk *)RingObjects->cnkObj.sibling;
     syFree(RingObjects);
@@ -950,7 +1060,7 @@ void RingModelDest(task *tp) {
   }
 }
 
-void RingModelExec(task *tp) {
+static void RingModelExec(task *tp) {
   if (CleanupRingObjs) {
     ringwk *currNode = RingObjects;
     ringwk *nextNode = NULL;
@@ -977,7 +1087,7 @@ void RingModelExec(task *tp) {
   }
 }
 
-void RingModelDisp(task *tp) {
+static void RingModelDisp(task *tp) {
   ringwk *pRing;
   u8 stackpad[0x58];
 
@@ -986,7 +1096,7 @@ void RingModelDisp(task *tp) {
       njDisableFog();
       gjSetFog();
     }
-    njSetTexture(&lbl_13_data_242A3C);
+    njSetTexture(&_rename_ring_tex_0);
     njPushMatrixEx();
     pRing = RingObjects;
     for (; pRing != NULL; pRing = (ringwk *)pRing->cnkObj.sibling) {
@@ -1018,14 +1128,14 @@ void RingModelDisp(task *tp) {
   }
 }
 
-void RingModelDisp2(task *tp) {
+static void RingModelDisp2(task *tp) {
   ringwk *pRing;
   if (!lbl_801CC168._3D) {
     if (DisableObjectFog) {
       njDisableFog();
       gjSetFog();
     }
-    njSetTexture(&lbl_13_data_243CD4);
+    njSetTexture(&_rename_ring_tex_1);
     pRing = RingObjects;
     njPushMatrixEx();
     for (; pRing != NULL; pRing = (ringwk *)pRing->cnkObj.sibling) {
@@ -1037,8 +1147,8 @@ void RingModelDisp2(task *tp) {
         njRotateX(NULL, pRing->shadow_ang.x);
         njRotateY(NULL, pRing->shadow_ang.y);
         njTranslate(NULL, 0.0f, 0.5f, 0.0f);
-        njScale(NULL, lbl_13_data_243E34, 1.0f, lbl_13_data_243E38);
-        gjDrawModel(&lbl_13_data_243E10);
+        njScale(NULL, sScaleX, 1.0f, sScaleZ);
+        gjDrawModel(&_rename_ring_tex_2);
         njPopMatrixEx();
         njPushMatrixEx();
       }

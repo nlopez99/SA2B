@@ -5,5 +5,8 @@
 #include "samt/sonic/task.h"
 
 void Ring(task* tp);
+void Tobitiri(task *);
+void DamegeRingScatter(s32 playerIndex);
+void o_ring_16(task *tp);
 
 #endif // !_O_RING_H_
