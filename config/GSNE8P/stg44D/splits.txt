@@ -322,9 +322,11 @@ stg44D_79.c:
 	.text       start:0x0003429C end:0x00034C04
 	.rodata     start:0x00000F10 end:0x00000F58
 
-stg44D_80.c:
-	.text       start:0x00034DC4 end:0x000376FC
+OBJECT/o_ring.c:
+	.text       start:0x00034DC4 end:0x00037790
 	.rodata     start:0x00000F58 end:0x00000FF8
+	.data       start:0x00093DE0 end:0x00095660
+	.bss        start:0x00001188 end:0x00001198
 
 stg44D_81.c:
 	.text       start:0x000377B8 end:0x000392D8

@@ -306,9 +306,11 @@ stg09D_75.c:
 	.text       start:0x00031058 end:0x000319C0
 	.rodata     start:0x00000EF8 end:0x00000F40
 
-stg09D_76.c:
-	.text       start:0x00031B80 end:0x00033DA8
+OBJECT/o_ring.c:
+	.text       start:0x00031B80 end:0x00033E3C
 	.rodata     start:0x00000F40 end:0x00000FD8
+	.data       start:0x0007FE20 end:0x000816A0
+	.bss        start:0x00000D38 end:0x00000D48
 
 stg09D_77.c:
 	.text       start:0x00033E64 end:0x00035984

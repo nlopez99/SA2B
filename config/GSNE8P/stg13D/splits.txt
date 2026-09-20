@@ -319,7 +319,7 @@ stg13D_77.c:
 	.rodata     start:0x00001018 end:0x00001060
 
 OBJECT/o_ring.c:
-	.text       start:0x0003E038 end:0x0004031C
+	.text       start:0x0003E038 end:0x000402F4
 	.rodata     start:0x00001060 end:0x000010F8
 	.data       start:0x00242A20 end:0x002442A0
 	.bss        start:0x00000DC0 end:0x00000DD0

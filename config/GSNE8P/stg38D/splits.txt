@@ -278,9 +278,11 @@ stg38D_68.c:
 	.text       start:0x00034BF0 end:0x00035558
 	.rodata     start:0x00001008 end:0x00001050
 
-stg38D_69.c:
-	.text       start:0x00035718 end:0x00038050
+OBJECT/o_ring.c:
+	.text       start:0x00035718 end:0x000380E4
 	.rodata     start:0x00001050 end:0x000010F0
+	.data       start:0x000C7DA0 end:0x000C9620
+	.bss        start:0x00000FC8 end:0x00000FD8
 
 stg38D_70.c:
 	.text       start:0x000380E4 end:0x00039C04

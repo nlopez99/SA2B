@@ -233,9 +233,11 @@ stg39D_56.c:
 	.text       start:0x00026168 end:0x00026AD0
 	.rodata     start:0x00000B50 end:0x00000B98
 
-stg39D_57.c:
-	.text       start:0x00026C90 end:0x00028E4C
+OBJECT/o_ring.c:
+	.text       start:0x00026C90 end:0x00028EE0
 	.rodata     start:0x00000B98 end:0x00000C30
+	.data       start:0x00057860 end:0x00058D00
+	.bss        start:0x00000D38 end:0x00000D48
 
 stg39D_58.c:
 	.text       start:0x00028F08 end:0x0002AA28

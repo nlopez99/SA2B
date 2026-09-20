@@ -206,9 +206,11 @@ boss_bigbogyD_50.c:
 	.text       start:0x00030EE8 end:0x00031850
 	.rodata     start:0x00001430 end:0x00001478
 
-boss_bigbogyD_51.c:
-	.text       start:0x00031A10 end:0x00033C38
+OBJECT/o_ring.c:
+	.text       start:0x00031A10 end:0x00033CCC
 	.rodata     start:0x00001478 end:0x00001510
+	.data       start:0x00071A00 end:0x00073280
+	.bss        start:0x00000B80 end:0x00000B90
 
 boss_bigbogyD_52.c:
 	.text       start:0x00033CCC end:0x000357EC

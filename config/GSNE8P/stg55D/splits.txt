@@ -282,9 +282,11 @@ stg55D_69.c:
 	.text       start:0x00033204 end:0x00033B6C
 	.rodata     start:0x00000F40 end:0x00000F88
 
-stg55D_70.c:
-	.text       start:0x00033D2C end:0x00035F54
+OBJECT/o_ring.c:
+	.text       start:0x00033D2C end:0x00035FE8
 	.rodata     start:0x00000F88 end:0x00001020
+	.data       start:0x00054420 end:0x00055CA0
+	.bss        start:0x00000BA8 end:0x00000BB8
 
 stg55D_71.c:
 	.text       start:0x00036010 end:0x00037B30

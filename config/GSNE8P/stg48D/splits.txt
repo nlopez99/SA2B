@@ -334,9 +334,11 @@ stg48D_82.c:
 	.text       start:0x00032FC8 end:0x00033930
 	.rodata     start:0x00000F50 end:0x00000F98
 
-stg48D_83.c:
-	.text       start:0x00033AF0 end:0x00035D18
+OBJECT/o_ring.c:
+	.text       start:0x00033AF0 end:0x00035DAC
 	.rodata     start:0x00000F98 end:0x00001030
+	.data       start:0x001346E0 end:0x00135F60
+	.bss        start:0x00000B20 end:0x00000B30
 
 stg48D_84.c:
 	.text       start:0x00035DAC end:0x000378CC

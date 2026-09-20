@@ -318,9 +318,11 @@ stg57D_78.c:
 	.text       start:0x00036C94 end:0x000375FC
 	.rodata     start:0x00000FC0 end:0x00001008
 
-stg57D_79.c:
-	.text       start:0x000377BC end:0x000399E4
+OBJECT/o_ring.c:
+	.text       start:0x000377BC end:0x00039A78
 	.rodata     start:0x00001008 end:0x000010A0
+	.data       start:0x00172780 end:0x00174000
+	.bss        start:0x00001030 end:0x00001040
 
 stg57D_80.c:
 	.text       start:0x00039AA0 end:0x0003B5C0

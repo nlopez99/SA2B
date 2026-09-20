@@ -2,6 +2,58 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+def is_int(i:str):
+    try:
+        int(i)
+        return True
+    except:
+        pass
+    try:
+        int(i, 16)
+        return True
+    except:
+        return False
+
+def is_float(i:str) -> bool:
+    try:
+        float(i)
+        return True
+    except:
+        return False
+
+def try_get_pointer(line:str) -> Optional[str]:
+    prefix = "\t.4byte "
+    if not line.startswith(prefix):
+        return None
+    
+    part2 = line.removeprefix(prefix).strip("\"")
+    if is_int(part2) or is_float(part2):
+        return None
+    
+    if "+" in part2:
+        part2 = part2.split("+")[0]
+
+    return part2
+
+def compare_obj_line_by_line(control_lines:list[str], test_lines:list[str], new_links:dict[str, str]):
+    control_obj_name = control_lines[0].removeprefix(".obj ").split(",")[0].strip("\"")
+    test_obj_name = test_lines[0].removeprefix(".obj ").split(",")[0].strip("\"")
+
+    if test_obj_name != control_obj_name:
+        new_links.setdefault(test_obj_name, control_obj_name)
+
+    for control_line, test_line in zip(control_lines, test_lines):
+        control_pointer = try_get_pointer(control_line)
+        test_pointer = try_get_pointer(test_line)
+
+        if control_pointer != None and test_pointer != None:
+            if (test_pointer != control_pointer):
+                new_links.setdefault(test_pointer, control_pointer)
+        elif control_pointer != None or test_pointer != None:
+            print("we've desynced, these objects are not the same, skip")
+            return
+
+
 def compare_funcs_line_by_line(control_lines:list[str], test_lines:list[str], new_links:dict[str, str]):
     control_func_name = control_lines[0].removeprefix(".fn ").split(",")[0]
     test_func_name = test_lines[0].removeprefix(".fn ").split(",")[0]
@@ -48,6 +100,19 @@ def Get_symbols_to_update(control_file:Path, test_file:Path):
                 last_test_line.line = i
                 return test_lines[start_ind:i]
 
+    def get_equivalent_data(obj_header:str, last_test_line:LineRef):
+        # .text:0x0 | 0x39054 | size: 0x35C
+        section_offset = obj_header.split(" | ")[0]
+        size = obj_header.split(" | ")[2]
+        start_ind = None
+        for i in range(last_test_line.line, len(test_lines)):
+            line = test_lines[i]
+            if line.startswith(section_offset):
+                start_ind = i+1
+            elif line.startswith(".endobj") and start_ind != None:
+                last_test_line.line = i
+                return test_lines[start_ind:i]
+
     new_links:dict[str, str] = {}
     for control_line_ind, line in enumerate(control_lines):
         if line.startswith(".fn"):
@@ -59,6 +124,15 @@ def Get_symbols_to_update(control_file:Path, test_file:Path):
             if (test_func == None):
                 break
             compare_funcs_line_by_line(control_func, test_func, new_links)
+        elif line.startswith(".obj"):
+            start_func_l = control_line_ind
+        elif line.startswith(".endobj"):
+            end_func_l = control_line_ind
+            control_obj = control_lines[start_func_l:end_func_l]
+            test_obj = get_equivalent_data(control_lines[start_func_l-1], last_test_line)
+            if (test_obj == None):
+                break
+            compare_obj_line_by_line(control_obj, test_obj, new_links)
 
     return new_links
 
@@ -102,7 +176,7 @@ class SymbolInfo:
     def from_str(s:str):
         parts = s.split(" ")
         # print(parts)
-        name = parts[0]
+        name = parts[0].strip("\"")
         section = parts[2].split(":")[0]
         addr = parts[2].split(":")[1].strip(";")
         attributes = s.split("// ")[1].split(" ")
@@ -209,103 +283,103 @@ def update_symbols(control_file:Path, control_symbols:Path, test_file:Path, test
 #     main()
 rels_to_update = [
     "advertiseD",
-    "boss_bigbogyD",
-    "boss_bigfootD",
-    "boss_fdogD",
-    "Boss_GolemD",
-    "Boss_GolemED",
-    "boss_hotshotD",
-    "boss_last1D",
-    "Boss_Last2D",
-    "CartD",
-    "ChaoMain",
-    "ChaoMotionsD",
-    "ChaoStgDark",
-    "ChaoStgEntrance",
-    "ChaoStgHero",
-    "ChaoStgKarate",
-    "ChaoStgKinder",
-    "ChaoStgLobby",
-    "ChaoStgLobby000",
-    "ChaoStgLobby00K",
-    "ChaoStgLobby0DK",
-    "ChaoStgLobbyH0K",
-    "ChaoStgLobbyHDK",
-    "ChaoStgNeut",
-    "ChaoStgOdekake",
-    "ChaoStgRace",
-    "ChaoStgRaceDark",
-    "ChaoStgRaceHero",
-    "ChaoStgRaceNeut",
-    "ChaoStgStadium",
-    "EmblemGetD",
-    "EndingD",
-    "eventD",
-    "mcwarnD",
-    "otherprintD",
-    "stg00D",
-    "stg03D",
-    "stg04D",
-    "stg05D",
-    "stg06D",
-    "stg07D",
-    "stg08D",
-    "stg09D",
-    "stg10D",
-    "stg11D",
-    "stg12D",
+    # "boss_bigbogyD",
+    # "boss_bigfootD",
+    # "boss_fdogD",
+    # "Boss_GolemD",
+    # "Boss_GolemED",
+    # "boss_hotshotD",
+    # "boss_last1D",
+    # "Boss_Last2D",
+    # "CartD",
+    # "ChaoMain",
+    # "ChaoMotionsD",
+    # "ChaoStgDark",
+    # "ChaoStgEntrance",
+    # "ChaoStgHero",
+    # "ChaoStgKarate",
+    # "ChaoStgKinder",
+    # "ChaoStgLobby",
+    # "ChaoStgLobby000",
+    # "ChaoStgLobby00K",
+    # "ChaoStgLobby0DK",
+    # "ChaoStgLobbyH0K",
+    # "ChaoStgLobbyHDK",
+    # "ChaoStgNeut",
+    # "ChaoStgOdekake",
+    # "ChaoStgRace",
+    # "ChaoStgRaceDark",
+    # "ChaoStgRaceHero",
+    # "ChaoStgRaceNeut",
+    # "ChaoStgStadium",
+    # "EmblemGetD",
+    # "EndingD",
+    # "eventD",
+    # "mcwarnD",
+    # "otherprintD",
+    # "stg00D",
+    # "stg03D",
+    # "stg04D",
+    # "stg05D",
+    # "stg06D",
+    # "stg07D",
+    # "stg08D",
+    # "stg09D",
+    # "stg10D",
+    # "stg11D",
+    # "stg12D",
     # "stg13D",
-    "stg14D",
-    "stg15D",
-    "stg16D",
-    "stg17D",
-    "stg18D",
-    "stg19D",
-    "stg20D",
-    "stg21D",
-    "stg22D",
-    "stg23D",
-    "stg24D",
-    "stg25D",
-    "stg26D",
-    "stg27D",
-    "stg28D",
-    "stg29D",
-    "stg30D",
-    "stg31D",
-    "stg32D",
-    "stg33D",
-    "stg34D",
-    "stg35D",
-    "stg36D",
-    "stg37D",
-    "stg38D",
-    "stg39D",
-    "stg40D",
-    "stg41D",
-    "stg42D",
-    "stg43D",
-    "stg44D",
-    "stg45D",
-    "stg46D",
-    "stg47D",
-    "stg48D",
-    "stg49D",
-    "stg50D",
-    "stg51D",
-    "stg52D",
-    "stg53D",
-    "stg54D",
-    "stg55D",
-    "stg56D",
-    "stg57D",
-    "stg58D",
+    # "stg14D",
+    # "stg15D",
+    # "stg16D",
+    # "stg17D",
+    # "stg18D",
+    # "stg19D",
+    # "stg20D",
+    # "stg21D",
+    # "stg22D",
+    # "stg23D",
+    # "stg24D",
+    # "stg25D",
+    # "stg26D",
+    # "stg27D",
+    # "stg28D",
+    # "stg29D",
+    # "stg30D",
+    # "stg31D",
+    # "stg32D",
+    # "stg33D",
+    # "stg34D",
+    # "stg35D",
+    # "stg36D",
+    # "stg37D",
+    # "stg38D",
+    # "stg39D",
+    # "stg40D",
+    # "stg41D",
+    # "stg42D",
+    # "stg43D",
+    # "stg44D",
+    # "stg45D",
+    # "stg46D",
+    # "stg47D",
+    # "stg48D",
+    # "stg49D",
+    # "stg50D",
+    # "stg51D",
+    # "stg52D",
+    # "stg53D",
+    # "stg54D",
+    # "stg55D",
+    # "stg56D",
+    # "stg57D",
+    # "stg58D",
     "stg59D",
     "titleD",
 ]
 
-control_rel = "stg13D"
-obj_to_link = "OBJECT/o_chaopipe"
+control_rel = "stg38D"
+obj_to_link = "OBJECT/o_ring"
 
 control_asm_path = Path(f"./build/GSNE8P/{control_rel}/asm/{obj_to_link}.s")
 control_symbol_path = Path(f"./config/GSNE8P/{control_rel}/symbols.txt")

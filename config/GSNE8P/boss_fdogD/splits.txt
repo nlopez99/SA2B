@@ -206,9 +206,11 @@ boss_fdogD_50.c:
 	.text       start:0x00024CF8 end:0x00025660
 	.rodata     start:0x00000C28 end:0x00000C70
 
-boss_fdogD_51.c:
-	.text       start:0x00025820 end:0x00027A48
+OBJECT/o_ring.c:
+	.text       start:0x00025820 end:0x00027ADC
 	.rodata     start:0x00000C70 end:0x00000D08
+	.data       start:0x00044300 end:0x00045B80
+	.bss        start:0x00000E78 end:0x00000E88
 
 boss_fdogD_52.c:
 	.text       start:0x00027ADC end:0x000295FC

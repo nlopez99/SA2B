@@ -28,6 +28,7 @@ extern BOOL DisableObjectFog;
 extern taskwk *lbl_803ADB04;
 extern Angle lbl_803AD914;
 extern Angle lbl_803AD918;
+extern int lbl_803ADAD0;
 
 // ^ extern
 // v in this file
@@ -361,6 +362,8 @@ static void CreateRingTask(void);
 static void o_ring_10(ringwk *arg);
 static ringwk *CreateRingObject(void);
 static BOOL o_ring_8(task *tp);
+static void o_ring_2(task*);
+static void o_ring_1(task* tp, f32 f1);
 
 enum RINGMD {
   RINGMD_0 = 0,
@@ -538,6 +541,160 @@ void Ring(task *tp) {
   }
 }
 
+void o_ring_M1(task *tp) {
+  taskwk *twp = tp->twp;
+  if (CheckRangeOut(tp)) {
+    if (twp->mode != 0) {
+      if (tp->mwp) {
+        GET_RING_MWK(tp)->flag |= 1;
+        GET_RING_MWK(tp)->tp = NULL;
+        tp->mwp = NULL;
+      }
+      tp->mwp = NULL;
+    }
+    return;
+  }
+
+  switch (twp->mode) {
+  case RINGMD_0:
+  case RINGMD_2:
+    if (twp->mode != RINGMD_2) {
+      tp->mwp = NULL;
+    }
+    if (tp->mwp) {
+      GET_RING_MWK(tp)->flag &= ~0x1;
+      GET_RING_MWK(tp)->tp = tp;
+    }
+    tp->fwp = syCalloc(1, sizeof(ringfwk));
+    
+    if (twp->scl.x == -1.0f) {
+      twp->smode = colli_timer;
+      colli_timer++;
+      if (colli_timer > 8) {
+        colli_timer = 0;
+      }
+    } else {
+      twp->smode = -1;
+    }
+    twp->scl.y = GetShadowPos(twp->pos.x, twp->pos.y, twp->pos.z, &twp->ang);
+    twp->mode = RINGMD_1;
+
+    GET_RING_FWK(tp)->_4 = 0.0f;
+    twp->scl.x = -2.0f;
+    twp->scl.z = -4.0f;
+    twp->id = 17;
+    tp->dest = RingEnd;
+    tp->disp = o_ring_2;
+    break;
+  case 1: {
+    int i;
+    int isPlayer = -1;
+    for (i = 0; i < 2 && playertwp[i] != NULL && playertwp[i]->cwp != NULL;
+         i++) {
+      if (lbl_801CC168._38 & (1 << i) &&
+          njDistanceP2P(&playertwp[i]->cwp->info->center, &twp->pos) < 14.0f) {
+        isPlayer = i;
+        break;
+      }
+    }
+    if (isPlayer >= 0) {
+      twp->mode = RINGMD_3;
+      if ((isPlayer == 0 && !(playerpwp[0]->item & 0x4000)) ||
+          (isPlayer == 1 && !(playerpwp[1]->item & 0x4000))) {
+        AddScore(10);
+        AddNumRing(isPlayer, 1);
+        AddMechHP(isPlayer, 0.1f);
+        SE_CallRing(isPlayer);
+      }
+      o_ring_0(tp);
+    }
+    if (!o_ring_8(tp)) {
+      // CCL_Entry(tp);
+      if (GET_RING_FWK(tp)->_C || !lbl_801CC168._37) {
+        twp->ang.y += 0x16c;
+      }
+    } else {
+      twp->scl.y = -1000000.0f;
+    }
+
+    if (twp->scl.y != -1000000.0f && twp->smode >= 0) {
+      twp->smode--;
+      if (twp->smode == -1) {
+        twp->smode = 8;
+        if (SqMag(lbl_803ADB04->pos.x - twp->pos.x,
+                  lbl_803ADB04->pos.y - twp->pos.y,
+                  lbl_803ADB04->pos.z - twp->pos.z) < SQ(400)) {
+          f32 f31 = GetShadowPos(twp->pos.x, twp->pos.y, twp->pos.z, &twp->ang);
+          f32 f30 = f31 - twp->scl.y;
+          if (fabsf(f30) < 8.0f) {
+            twp->scl.y = f31;
+            twp->pos.y += f30;
+          } else {
+            task *tobitiriT;
+            twp->mode = RINGMD_3;
+            tobitiriT = CreateElementalTask(10, 2, &Tobitiri, "Tobitiri");
+            if (tobitiriT) {
+              taskwk *t2 = tobitiriT->twp;
+              t2->pos = twp->pos;
+              t2->pos.y -= 10.f;
+              t2->ang.y = NJM_DEG_SANG(njRandom() * 360);
+            }
+          }
+        }
+      }
+    }
+  } break;
+  case 3:
+    if (tp->mwp) {
+      GET_RING_MWK(tp)->flag |= 2;
+      GET_RING_MWK(tp)->tp = NULL;
+      tp->mwp = NULL;
+    }
+    if (tp->ocp) {
+      DeadOut(tp);
+    } else {
+      FreeTask(tp);
+    }
+    break;
+  }
+}
+
+static void o_ring_1(task* tp, f32 f1) {
+  taskwk* twp = tp->twp;
+  njSetTexture(&_rename_ring_tex_1);
+  njPushMatrixEx();
+  njTranslate(NULL, twp->pos.x, f1 + 0.2f, twp->pos.z);
+  njRotateZ(NULL, twp->ang.z);
+  njRotateX(NULL, twp->ang.x);
+  njRotateY(NULL, twp->ang.y);
+  njScale(NULL, sScaleX, 1.0f, sScaleZ);
+  gjDrawModel(&_rename_ring_tex_2);
+  njPopMatrixEx();
+}
+
+static void o_ring_2(task *tp) {
+  taskwk *twp = tp->twp;
+  if (lbl_801CC168._38 & (1 << lbl_803ADAD0) || lbl_801CC168._9) {
+    if (twp->btimer < 50 && twp->scl.y != -1000000.0f) {
+      o_ring_1(tp, twp->scl.y);
+    }
+    if (DisableObjectFog) {
+      njDisableFog();
+      gjSetFog();
+    }
+    njSetTexture(&_rename_ring_tex_0);
+    njPushMatrixEx();
+    njTranslateEx(&twp->pos);
+    njRotateY(NULL, twp->ang.y);
+    njCnkCacheDrawModel(&ring_model_0);
+    njPopMatrixEx();
+    if (DisableObjectFog) {
+      njEnableFog();
+      gjSetFog();
+    }
+  }
+}
+
 void o_ring_3() {
   njSetTexture(&_rename_ring_tex_0);
   if (DisableObjectFog) {
@@ -576,8 +733,6 @@ void DamegeRingScatter(s32 playerIndex) {
   }
   SE_Call(0x8014, NULL, 0, 0);
 }
-
-static f32 floatHack(void) { return 1.0f; }
 
 static int o_ring_5(NJS_VECTOR *p) {
   int out = 0;
@@ -1171,11 +1326,5 @@ void CreateRingTask(void) {
       t->disp_dely = RingModelDisp2;
       t->dest = RingModelDest;
     }
-  }
-}
-
-void o_ring_16(task *tp) {
-  if (CheckRangeOut(tp)) {
-    return;
   }
 }

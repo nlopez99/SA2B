@@ -294,9 +294,11 @@ stg50D_72.c:
 	.text       start:0x00032A2C end:0x00033394
 	.rodata     start:0x00000EC8 end:0x00000F10
 
-stg50D_73.c:
-	.text       start:0x00033554 end:0x00035E8C
+OBJECT/o_ring.c:
+	.text       start:0x00033554 end:0x00035F20
 	.rodata     start:0x00000F10 end:0x00000FB0
+	.data       start:0x00061620 end:0x00062EA0
+	.bss        start:0x00001188 end:0x00001198
 
 stg50D_74.c:
 	.text       start:0x00035F48 end:0x00037A68

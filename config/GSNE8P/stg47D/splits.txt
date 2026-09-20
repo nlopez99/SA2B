@@ -326,9 +326,11 @@ stg47D_80.c:
 	.text       start:0x00032F64 end:0x000338CC
 	.rodata     start:0x00000F28 end:0x00000F70
 
-stg47D_81.c:
-	.text       start:0x00033A8C end:0x00035CB4
+OBJECT/o_ring.c:
+	.text       start:0x00033A8C end:0x00035D48
 	.rodata     start:0x00000F70 end:0x00001008
+	.data       start:0x000BE640 end:0x000BFEC0
+	.bss        start:0x00000D40 end:0x00000D50
 
 stg47D_82.c:
 	.text       start:0x00035D48 end:0x00037868

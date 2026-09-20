@@ -194,9 +194,11 @@ stg29D_46.c:
 	.text       start:0x0001FDB8 end:0x00020720
 	.rodata     start:0x000009B8 end:0x00000A00
 
-stg29D_47.c:
-	.text       start:0x000208E0 end:0x00022A9C
+OBJECT/o_ring.c:
+	.text       start:0x000208E0 end:0x00022B30
 	.rodata     start:0x00000A00 end:0x00000A98
+	.data       start:0x0003ECC0 end:0x00040160
+	.bss        start:0x00000D10 end:0x00000D20
 
 stg29D_48.c:
 	.text       start:0x00022B58 end:0x00024678

@@ -286,9 +286,11 @@ stg08D_70.c:
 	.text       start:0x00030418 end:0x00030D80
 	.rodata     start:0x00000DF8 end:0x00000E40
 
-stg08D_71.c:
-	.text       start:0x00030F40 end:0x00033878
+OBJECT/o_ring.c:
+	.text       start:0x00030F40 end:0x0003390C
 	.rodata     start:0x00000E40 end:0x00000EE0
+	.data       start:0x00086F60 end:0x000887E0
+	.bss        start:0x00005430 end:0x00005440
 
 stg08D_72.c:
 	.text       start:0x00033934 end:0x00035454

@@ -676,6 +676,12 @@ config.libs = [
             RING_C,
         ]
     ),
+    Rel(
+        "Boss_GolemD",
+        [
+        ],
+        extra_cflags = ["-DUSE_BOSS_RING_TEX"]
+    ),
     ChaoRel(
         "ChaoMain",
         [

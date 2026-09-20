@@ -194,9 +194,11 @@ stg20D_46.c:
 	.text       start:0x00026484 end:0x00026DEC
 	.rodata     start:0x00000C80 end:0x00000CC8
 
-stg20D_47.c:
-	.text       start:0x00026FAC end:0x00029168
+OBJECT/o_ring.c:
+	.text       start:0x00026FAC end:0x000291FC
 	.rodata     start:0x00000CC8 end:0x00000D60
+	.data       start:0x00049CE0 end:0x0004B180
+	.bss        start:0x00000D90 end:0x00000DA0
 
 stg20D_48.c:
 	.text       start:0x00029224 end:0x0002AD44

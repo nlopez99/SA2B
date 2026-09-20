@@ -298,9 +298,11 @@ stg04D_73.c:
 	.text       start:0x00031CD8 end:0x00032640
 	.rodata     start:0x00000E88 end:0x00000ED0
 
-stg04D_74.c:
-	.text       start:0x00032800 end:0x00034A28
+OBJECT/o_ring.c:
+	.text       start:0x00032800 end:0x00034ABC
 	.rodata     start:0x00000ED0 end:0x00000F68
+	.data       start:0x000AA5E0 end:0x000ABE60
+	.bss        start:0x00000D58 end:0x00000D68
 
 stg04D_75.c:
 	.text       start:0x00034AE4 end:0x00036604

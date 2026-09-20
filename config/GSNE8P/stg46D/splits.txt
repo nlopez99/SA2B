@@ -330,9 +330,11 @@ stg46D_81.c:
 	.text       start:0x0002E8B8 end:0x0002F220
 	.rodata     start:0x00000E60 end:0x00000EA8
 
-stg46D_82.c:
-	.text       start:0x0002F3E0 end:0x00031D18
+OBJECT/o_ring.c:
+	.text       start:0x0002F3E0 end:0x00031DAC
 	.rodata     start:0x00000EA8 end:0x00000F48
+	.data       start:0x0008D020 end:0x0008E8A0
+	.bss        start:0x00000D60 end:0x00000D70
 
 stg46D_83.c:
 	.text       start:0x00031DAC end:0x000338CC

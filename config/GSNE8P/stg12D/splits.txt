@@ -298,9 +298,11 @@ stg12D_73.c:
 	.text       start:0x000323C4 end:0x00032D2C
 	.rodata     start:0x00000F00 end:0x00000F48
 
-stg12D_74.c:
-	.text       start:0x00032EEC end:0x00035114
+OBJECT/o_ring.c:
+	.text       start:0x00032EEC end:0x000351A8
 	.rodata     start:0x00000F48 end:0x00000FE0
+	.data       start:0x00087960 end:0x000891E0
+	.bss        start:0x00000DC0 end:0x00000DD0
 
 stg12D_75.c:
 	.text       start:0x000351D0 end:0x00036CF0

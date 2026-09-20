@@ -290,9 +290,11 @@ boss_last1D_71.c:
 	.text       start:0x0002FBA4 end:0x0003050C
 	.rodata     start:0x00001328 end:0x00001370
 
-boss_last1D_72.c:
-	.text       start:0x000306CC end:0x000328F4
+OBJECT/o_ring.c:
+	.text       start:0x000306CC end:0x00032988
 	.rodata     start:0x00001370 end:0x00001408
+	.data       start:0x000DCD80 end:0x000DE600
+	.bss        start:0x00000F78 end:0x00000F88
 
 boss_last1D_73.c:
 	.text       start:0x00032988 end:0x000344A8

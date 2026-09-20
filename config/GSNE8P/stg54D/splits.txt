@@ -177,9 +177,11 @@ OBJECT/o_chaopipe.c:
 	.text       start:0x0001C2B8 end:0x000206C4
 	.rodata     start:0x000008E8 end:0x000009D0
 
-54d_43.c:
-	.text       start:0x00020720 end:0x00022948
+OBJECT/o_ring.c:
+	.text       start:0x00020720 end:0x000229DC
 	.rodata     start:0x000009D0 end:0x00000A68
+	.data       start:0x0015F7E0 end:0x00161060
+	.bss        start:0x00000490 end:0x000004A0
 
 54d_44.c:
 	.text       start:0x000229DC end:0x00023A6C

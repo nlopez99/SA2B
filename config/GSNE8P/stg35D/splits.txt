@@ -250,9 +250,11 @@ stg35D_61.c:
 	.text       start:0x0003B344 end:0x0003BCAC
 	.rodata     start:0x00001148 end:0x00001190
 
-stg35D_62.c:
-	.text       start:0x0003BE6C end:0x0003E094
+OBJECT/o_ring.c:
+	.text       start:0x0003BE6C end:0x0003E128
 	.rodata     start:0x00001190 end:0x00001228
+	.data       start:0x000B2C20 end:0x000B44A0
+	.bss        start:0x00000B50 end:0x00000B60
 
 stg35D_63.c:
 	.text       start:0x0003E128 end:0x0003FC48

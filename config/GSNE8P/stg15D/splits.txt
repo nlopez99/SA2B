@@ -301,9 +301,11 @@ stg15D_74.c:
 	.text       start:0x00031C9C end:0x00032604
 	.rodata     start:0x00000F00 end:0x00000F48
 
-stg15D_75.c:
-	.text       start:0x000327C4 end:0x000349EC
+OBJECT/o_ring.c:
+	.text       start:0x000327C4 end:0x00034A80
 	.rodata     start:0x00000F48 end:0x00000FE0
+	.data       start:0x0006AA00 end:0x0006C280
+	.bss        start:0x00000DB8 end:0x00000DC8
 
 stg15D_76.c:
 	.text       start:0x00034AA8 end:0x000365C8
