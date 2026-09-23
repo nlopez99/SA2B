@@ -146,6 +146,9 @@ EFFECT/ef_rocketthrust.c:
 	.text       start:0x0001253C end:0x00012D0C
 	.rodata     start:0x000006F0 end:0x00000730
 
+OBJECT/o_stoplsd.c:
+	.text       start:0x00012D0C end:0x00012E7C
+
 EFFECT/ef_snowpuff.c:
 	.text       start:0x00012F8C end:0x000139A4
 	.rodata     start:0x00000730 end:0x00000770

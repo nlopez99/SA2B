@@ -126,6 +126,9 @@ EFFECT/ef_rocketthrust.c:
 	.text       start:0x00011488 end:0x00011C58
 	.rodata     start:0x000005E0 end:0x00000620
 
+OBJECT/o_stoplsd.c:
+	.text       start:0x00011C58 end:0x00011DC8
+
 stg08D_31.c:
 	.text       start:0x00011DC8 end:0x00012C64
 	.rodata     start:0x00000620 end:0x00000660

@@ -154,6 +154,9 @@ stg57D_37.c:
 	.text       start:0x00017C90 end:0x000189C0
 	.rodata     start:0x00000788 end:0x000007D8
 
+OBJECT/o_stoplsd.c:
+	.text       start:0x000189C0 end:0x00018B30
+
 EFFECT/ef_snowpuff.c:
 	.text       start:0x00018B30 end:0x00019548
 	.rodata     start:0x000007D8 end:0x00000818
