@@ -94,13 +94,11 @@ stg45D_21.c:
 	.text       start:0x0000DEB8 end:0x0000E044
 	.rodata     start:0x000004B0 end:0x000004D8
 
-stg45D_22.c:
-	.text       start:0x0000E114 end:0x0000E46C
-	.rodata     start:0x000004D8 end:0x000004F0
-
-stg45D_23.c:
-	.text       start:0x0000E46C end:0x0000E89C
-	.rodata     start:0x000004F0 end:0x00000500
+EFFECT/ef_spspark.c:
+	.text       start:0x0000E114 end:0x0000E91C
+	.rodata     start:0x000004D8 end:0x00000500
+	.data       start:0x00026378 end:0x000263B0
+	.bss        start:0x00000440 end:0x00000450
 
 EFFECT/ef_dirt.c:
 	.text       start:0x0000E91C end:0x0000EAD8

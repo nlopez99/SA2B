@@ -93,13 +93,11 @@ EFFECT/ef_splash.c:
 	.text       start:0x0001B44C end:0x0001B870
 	.rodata     start:0x00000EC0 end:0x00000EF0
 
-boss_bigbogyD_22.c:
-	.text       start:0x0001B870 end:0x0001BBC8
-	.rodata     start:0x00000EF0 end:0x00000F08
-
-boss_bigbogyD_23.c:
-	.text       start:0x0001BBC8 end:0x0001BFF8
-	.rodata     start:0x00000F08 end:0x00000F18
+EFFECT/ef_spspark.c:
+	.text       start:0x0001B870 end:0x0001C078
+	.rodata     start:0x00000EF0 end:0x00000F18
+	.data       start:0x00043138 end:0x00043170
+	.bss        start:0x000004C8 end:0x000004D8
 
 EFFECT/ef_dirt.c:
 	.text       start:0x0001C078 end:0x0001C234

@@ -90,13 +90,11 @@ stg20D_20.c:
 	.text       start:0x0001589C end:0x00015A28
 	.rodata     start:0x000007E0 end:0x00000808
 
-stg20D_21.c:
-	.text       start:0x00015AF8 end:0x00015E50
-	.rodata     start:0x00000808 end:0x00000820
-
-stg20D_22.c:
-	.text       start:0x00015E50 end:0x00016280
-	.rodata     start:0x00000820 end:0x00000830
+EFFECT/ef_spspark.c:
+	.text       start:0x00015AF8 end:0x00016300
+	.rodata     start:0x00000808 end:0x00000830
+	.data       start:0x00036C28 end:0x00036C60
+	.bss        start:0x000006E0 end:0x000006F0
 
 EFFECT/ef_dirt.c:
 	.text       start:0x00016300 end:0x000164BC

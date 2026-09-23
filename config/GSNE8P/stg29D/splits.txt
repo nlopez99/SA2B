@@ -94,13 +94,11 @@ stg29D_21.c:
 	.text       start:0x0000F684 end:0x0000F810
 	.rodata     start:0x00000538 end:0x00000560
 
-stg29D_22.c:
-	.text       start:0x0000F8E0 end:0x0000FC38
-	.rodata     start:0x00000560 end:0x00000578
-
-stg29D_23.c:
-	.text       start:0x0000FC38 end:0x00010068
-	.rodata     start:0x00000578 end:0x00000588
+EFFECT/ef_spspark.c:
+	.text       start:0x0000F8E0 end:0x000100E8
+	.rodata     start:0x00000560 end:0x00000588
+	.data       start:0x0002C2E0 end:0x0002C318
+	.bss        start:0x00000660 end:0x00000670
 
 EFFECT/ef_dirt.c:
 	.text       start:0x000100E8 end:0x000102A4

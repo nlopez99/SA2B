@@ -169,13 +169,11 @@ stg03D_40.c:
 	.text       start:0x00018914 end:0x00019754
 	.rodata     start:0x000008D8 end:0x00000938
 
-stg03D_41.c:
-	.text       start:0x00019754 end:0x00019AAC
-	.rodata     start:0x00000938 end:0x00000950
-
-stg03D_42.c:
-	.text       start:0x00019AAC end:0x00019EDC
-	.rodata     start:0x00000950 end:0x00000960
+EFFECT/ef_spspark.c:
+	.text       start:0x00019754 end:0x00019F5C
+	.rodata     start:0x00000938 end:0x00000960
+	.data       start:0x000DAB20 end:0x000DAB58
+	.bss        start:0x000006A0 end:0x000006B0
 
 EFFECT/ef_dirt.c:
 	.text       start:0x00019F5C end:0x0001A118

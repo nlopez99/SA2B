@@ -157,13 +157,11 @@ EFFECT/ef_splash.c:
 	.text       start:0x000139A4 end:0x00013DC8
 	.rodata     start:0x00000770 end:0x000007A0
 
-stg09D_38.c:
-	.text       start:0x00013DC8 end:0x00014120
-	.rodata     start:0x000007A0 end:0x000007B8
-
-stg09D_39.c:
-	.text       start:0x00014120 end:0x00014550
-	.rodata     start:0x000007B8 end:0x000007C8
+EFFECT/ef_spspark.c:
+	.text       start:0x00013DC8 end:0x000145D0
+	.rodata     start:0x000007A0 end:0x000007C8
+	.data       start:0x0004C6A0 end:0x0004C6D8
+	.bss        start:0x00000660 end:0x00000670
 
 EFFECT/ef_dirt.c:
 	.text       start:0x000145D0 end:0x0001478C
