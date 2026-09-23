@@ -174,9 +174,10 @@ stg04D_43.c:
 	.text       start:0x0001768C end:0x00017B10
 	.rodata     start:0x00000810 end:0x00000830
 
-stg04D_44.c:
-	.text       start:0x00017D0C end:0x00019168
+OBJECT/o_bunchin.c:
+	.text       start:0x00017C10 end:0x00019168
 	.rodata     start:0x00000830 end:0x00000878
+	.bss        start:0x00000698 end:0x000006A0
 
 stg04D_45.c:
 	.text       start:0x00019168 end:0x00019C28

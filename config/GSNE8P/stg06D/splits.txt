@@ -146,9 +146,10 @@ stg06D_36.c:
 	.text       start:0x00014E38 end:0x000152BC
 	.rodata     start:0x00000758 end:0x00000778
 
-stg06D_37.c:
-	.text       start:0x000154B8 end:0x00016914
+OBJECT/o_bunchin.c:
+	.text       start:0x000153BC end:0x00016914
 	.rodata     start:0x00000778 end:0x000007C0
+	.bss        start:0x00000688 end:0x00000690
 
 stg06D_38.c:
 	.text       start:0x00016914 end:0x000173D4

@@ -194,9 +194,10 @@ stg13D_47.c:
 	.text       start:0x00022EF0 end:0x00023510
 	.rodata     start:0x000009A0 end:0x000009C0
 
-stg13D_48.c:
+OBJECT/o_bunchin.c:
 	.text       start:0x00023510 end:0x00024A68
 	.rodata     start:0x000009C0 end:0x00000A08
+	.bss        start:0x00000700 end:0x00000708
 
 stg13D_49.c:
 	.text       start:0x00024A68 end:0x00025528

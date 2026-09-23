@@ -226,9 +226,10 @@ stg32D_56.c:
 	.text       start:0x0001A68C end:0x0001AB10
 	.rodata     start:0x00000908 end:0x00000928
 
-stg32D_57.c:
-	.text       start:0x0001AD0C end:0x0001C168
+OBJECT/o_bunchin.c:
+	.text       start:0x0001AC10 end:0x0001C168
 	.rodata     start:0x00000928 end:0x00000970
+	.bss        start:0x000006C8 end:0x000006D0
 
 stg32D_58.c:
 	.text       start:0x0001C168 end:0x0001CC28

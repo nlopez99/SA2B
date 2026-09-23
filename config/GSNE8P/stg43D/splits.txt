@@ -170,9 +170,10 @@ stg43D_41.c:
 	.text       start:0x00017ED4 end:0x00018358
 	.rodata     start:0x00000830 end:0x00000850
 
-stg43D_42.c:
-	.text       start:0x00018554 end:0x000199B0
+OBJECT/o_bunchin.c:
+	.text       start:0x00018458 end:0x000199B0
 	.rodata     start:0x00000850 end:0x00000898
+	.bss        start:0x000006C0 end:0x000006C8
 
 stg43D_43.c:
 	.text       start:0x000199B0 end:0x0001A470

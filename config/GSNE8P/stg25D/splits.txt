@@ -254,9 +254,10 @@ stg25D_63.c:
 	.text       start:0x00022600 end:0x00022A84
 	.rodata     start:0x00000BC0 end:0x00000BE0
 
-stg25D_64.c:
-	.text       start:0x00022C80 end:0x000240DC
+OBJECT/o_bunchin.c:
+	.text       start:0x00022B84 end:0x000240DC
 	.rodata     start:0x00000BE0 end:0x00000C28
+	.bss        start:0x000006A0 end:0x000006A8
 
 stg25D_65.c:
 	.text       start:0x000240DC end:0x00024B9C

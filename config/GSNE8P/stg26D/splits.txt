@@ -226,9 +226,10 @@ stg26D_56.c:
 	.text       start:0x0001DDBC end:0x0001E240
 	.rodata     start:0x000009E8 end:0x00000A08
 
-stg26D_57.c:
-	.text       start:0x0001E43C end:0x0001F898
+OBJECT/o_bunchin.c:
+	.text       start:0x0001E340 end:0x0001F898
 	.rodata     start:0x00000A08 end:0x00000A50
+	.bss        start:0x000009D0 end:0x000009D8
 
 stg26D_58.c:
 	.text       start:0x0001F898 end:0x00020358

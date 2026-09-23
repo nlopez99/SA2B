@@ -78,9 +78,10 @@ stg00D_18.c:
 	.text       start:0x00007F30 end:0x000083B4
 	.rodata     start:0x00000368 end:0x00000388
 
-stg00D_19.c:
-	.text       start:0x000085B0 end:0x00009A0C
+OBJECT/o_bunchin.c:
+	.text       start:0x000084B4 end:0x00009A0C
 	.rodata     start:0x00000388 end:0x000003D0
+	.bss        start:0x00000430 end:0x00000438
 
 OBJECT/o_chaopipe.c:
 	.text       start:0x00009A0C end:0x00009DC0

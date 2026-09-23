@@ -226,9 +226,10 @@ stg18D_56.c:
 	.text       start:0x0001D2F4 end:0x0001D778
 	.rodata     start:0x00000A48 end:0x00000A68
 
-stg18D_57.c:
-	.text       start:0x0001D974 end:0x0001EDD0
+OBJECT/o_bunchin.c:
+	.text       start:0x0001D878 end:0x0001EDD0
 	.rodata     start:0x00000A68 end:0x00000AB0
+	.bss        start:0x000006D8 end:0x000006E0
 
 stg18D_58.c:
 	.text       start:0x0001EDD0 end:0x0001F890

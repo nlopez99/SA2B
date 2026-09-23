@@ -162,9 +162,10 @@ stg34D_40.c:
 	.text       start:0x00019598 end:0x00019A1C
 	.rodata     start:0x000008C0 end:0x000008E0
 
-stg34D_41.c:
-	.text       start:0x00019C18 end:0x0001B074
+OBJECT/o_bunchin.c:
+	.text       start:0x00019B1C end:0x0001B074
 	.rodata     start:0x000008E0 end:0x00000928
+	.bss        start:0x000004C8 end:0x000004D0
 
 stg34D_42.c:
 	.text       start:0x0001B074 end:0x0001BB34

@@ -194,9 +194,10 @@ stg10D_48.c:
 	.text       start:0x0001C0DC end:0x0001C560
 	.rodata     start:0x00000950 end:0x00000970
 
-stg10D_49.c:
-	.text       start:0x0001C75C end:0x0001DBB8
+OBJECT/o_bunchin.c:
+	.text       start:0x0001C660 end:0x0001DBB8
 	.rodata     start:0x00000970 end:0x000009B8
+	.bss        start:0x00000978 end:0x00000980
 
 stg10D_50.c:
 	.text       start:0x0001DBB8 end:0x0001E678

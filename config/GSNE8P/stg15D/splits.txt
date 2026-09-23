@@ -181,9 +181,10 @@ stg15D_44.c:
 	.text       start:0x000170F4 end:0x00017578
 	.rodata     start:0x00000880 end:0x000008A0
 
-stg15D_45.c:
-	.text       start:0x00017774 end:0x00018BD0
+OBJECT/o_bunchin.c:
+	.text       start:0x00017678 end:0x00018BD0
 	.rodata     start:0x000008A0 end:0x000008E8
+	.bss        start:0x000006F8 end:0x00000700
 
 stg15D_46.c:
 	.text       start:0x00018BD0 end:0x00019690

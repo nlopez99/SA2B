@@ -118,9 +118,10 @@ OBJECT/o_3spring.c:
 	.text       start:0x0000F49C end:0x0000FABC
 	.rodata     start:0x000005A8 end:0x000005C8
 
-54d_28.c:
+OBJECT/o_bunchin.c:
 	.text       start:0x0000FABC end:0x00011014
 	.rodata     start:0x000005C8 end:0x00000610
+	.bss        start:0x00000440 end:0x00000448
 
 54d_29.c:
 	.text       start:0x00011014 end:0x00011AD4

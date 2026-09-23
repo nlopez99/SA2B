@@ -182,9 +182,10 @@ stg09D_45.c:
 	.text       start:0x000164CC end:0x00016950
 	.rodata     start:0x00000880 end:0x000008A0
 
-stg09D_46.c:
-	.text       start:0x00016B4C end:0x00017FA8
+OBJECT/o_bunchin.c:
+	.text       start:0x00016A50 end:0x00017FA8
 	.rodata     start:0x000008A0 end:0x000008E8
+	.bss        start:0x00000678 end:0x00000680
 
 stg09D_47.c:
 	.text       start:0x00017FA8 end:0x00018A68

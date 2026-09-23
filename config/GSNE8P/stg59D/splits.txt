@@ -242,9 +242,10 @@ stg59D_60.c:
 	.text       start:0x00022618 end:0x00022A9C
 	.rodata     start:0x00000BC0 end:0x00000BE0
 
-stg59D_61.c:
-	.text       start:0x00022C98 end:0x000240F4
+OBJECT/o_bunchin.c:
+	.text       start:0x00022B9C end:0x000240F4
 	.rodata     start:0x00000BE0 end:0x00000C28
+	.bss        start:0x000006A0 end:0x000006A8
 
 stg59D_62.c:
 	.text       start:0x000240F4 end:0x00024BB4

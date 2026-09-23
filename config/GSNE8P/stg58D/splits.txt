@@ -183,9 +183,10 @@ stg58D_45.c:
 	.text       start:0x0001C840 end:0x0001E328
 	.rodata     start:0x000009F8 end:0x00000AA8
 
-stg58D_46.c:
-	.text       start:0x0001E428 end:0x0001F884
+OBJECT/o_bunchin.c:
+	.text       start:0x0001E32C end:0x0001F884
 	.rodata     start:0x00000AA8 end:0x00000AF0
+	.bss        start:0x00000738 end:0x00000740
 
 stg58D_47.c:
 	.text       start:0x0001F884 end:0x00020344

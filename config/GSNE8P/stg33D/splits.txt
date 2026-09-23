@@ -119,9 +119,10 @@ stg33D_30.c:
 	.text       start:0x00010D70 end:0x000111F4
 	.rodata     start:0x000005C8 end:0x000005E8
 
-stg33D_31.c:
-	.text       start:0x000113F0 end:0x0001284C
+OBJECT/o_bunchin.c:
+	.text       start:0x000112F4 end:0x0001284C
 	.rodata     start:0x000005E8 end:0x00000630
+	.bss        start:0x00000680 end:0x00000688
 
 stg33D_32.c:
 	.text       start:0x0001284C end:0x00013344

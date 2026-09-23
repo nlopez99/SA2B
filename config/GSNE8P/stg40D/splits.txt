@@ -158,9 +158,10 @@ stg40D_39.c:
 	.text       start:0x00015428 end:0x000158AC
 	.rodata     start:0x000006C8 end:0x000006E8
 
-stg40D_40.c:
-	.text       start:0x00015AA8 end:0x00016F04
+OBJECT/o_bunchin.c:
+	.text       start:0x000159AC end:0x00016F04
 	.rodata     start:0x000006E8 end:0x00000730
+	.bss        start:0x00000690 end:0x00000698
 
 stg40D_41.c:
 	.text       start:0x00016F04 end:0x000179C4

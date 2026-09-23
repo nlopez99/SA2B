@@ -206,9 +206,10 @@ stg47D_50.c:
 	.text       start:0x000188F0 end:0x00018D74
 	.rodata     start:0x000008B0 end:0x000008D0
 
-stg47D_51.c:
-	.text       start:0x00018F70 end:0x0001A3CC
+OBJECT/o_bunchin.c:
+	.text       start:0x00018E74 end:0x0001A3CC
 	.rodata     start:0x000008D0 end:0x00000918
+	.bss        start:0x00000680 end:0x00000688
 
 stg47D_52.c:
 	.text       start:0x0001A3CC end:0x0001AE8C

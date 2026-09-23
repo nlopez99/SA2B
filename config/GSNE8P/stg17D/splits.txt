@@ -166,9 +166,10 @@ stg17D_40.c:
 	.text       start:0x0001FC54 end:0x000200D8
 	.rodata     start:0x000009A8 end:0x000009C8
 
-stg17D_41.c:
-	.text       start:0x000202D4 end:0x00021730
+OBJECT/o_bunchin.c:
+	.text       start:0x000201D8 end:0x00021730
 	.rodata     start:0x000009C8 end:0x00000A10
+	.bss        start:0x000006B8 end:0x000006C0
 
 stg17D_42.c:
 	.text       start:0x00021730 end:0x000221F0

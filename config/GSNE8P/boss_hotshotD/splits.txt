@@ -110,9 +110,10 @@ boss_hotshotD_27.c:
 	.text       start:0x000129E4 end:0x00012E68
 	.rodata     start:0x000009F0 end:0x00000A10
 
-boss_hotshotD_28.c:
-	.text       start:0x00013064 end:0x000144C0
+OBJECT/o_bunchin.c:
+	.text       start:0x00012F68 end:0x000144C0
 	.rodata     start:0x00000A10 end:0x00000A58
+	.bss        start:0x00000598 end:0x000005A0
 
 OBJECT/o_chaopipe.c:
 	.text       start:0x000144C0 end:0x00014874

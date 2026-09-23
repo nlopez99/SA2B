@@ -270,9 +270,10 @@ stg28D_67.c:
 	.text       start:0x00021A58 end:0x00021EDC
 	.rodata     start:0x00000BF0 end:0x00000C10
 
-stg28D_68.c:
-	.text       start:0x000220D8 end:0x00023534
+OBJECT/o_bunchin.c:
+	.text       start:0x00021FDC end:0x00023534
 	.rodata     start:0x00000C10 end:0x00000C58
+	.bss        start:0x000006B0 end:0x000006B8
 
 stg28D_69.c:
 	.text       start:0x00023534 end:0x00023FF4

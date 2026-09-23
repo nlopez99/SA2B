@@ -695,6 +695,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_ironball2.c"),
             Object(Matching, "ENEMY/e_bullet.c"),
             Object(Matching, "OBJECT/o_hintbox.c"),
+            Object(Matching, "OBJECT/o_bunchin.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

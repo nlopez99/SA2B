@@ -118,9 +118,10 @@ boss_fdogD_29.c:
 	.text       start:0x00010F58 end:0x000113DC
 	.rodata     start:0x000007A8 end:0x000007C8
 
-boss_fdogD_30.c:
-	.text       start:0x000115D8 end:0x00012A34
+OBJECT/o_bunchin.c:
+	.text       start:0x000114DC end:0x00012A34
 	.rodata     start:0x000007C8 end:0x00000810
+	.bss        start:0x000007D8 end:0x000007E0
 
 OBJECT/o_chaopipe.c:
 	.text       start:0x00012A34 end:0x00012DE8
