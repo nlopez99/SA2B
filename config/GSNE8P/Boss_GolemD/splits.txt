@@ -82,8 +82,8 @@ Boss_GolemD_18.c:
 	.text       start:0x00014234 end:0x00015A08
 	.rodata     start:0x00000CF8 end:0x00000D60
 
-Boss_GolemD_19.c:
-	.text       start:0x00015A08 end:0x00015B94
+EFFECT/ef_flame.c:
+	.text       start:0x00015A08 end:0x00015C64
 	.rodata     start:0x00000D60 end:0x00000D88
 
 OBJECT/flashmanager.c:

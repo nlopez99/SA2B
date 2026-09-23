@@ -38,8 +38,8 @@ stg36D_7.c:
 	.text       start:0x00019DCC end:0x0001A394
 	.rodata     start:0x00000720 end:0x00000748
 
-stg36D_8.c:
-	.text       start:0x0001A394 end:0x0001A520
+EFFECT/ef_flame.c:
+	.text       start:0x0001A394 end:0x0001A5F0
 	.rodata     start:0x00000748 end:0x00000770
 
 OBJECT/flashmanager.c:

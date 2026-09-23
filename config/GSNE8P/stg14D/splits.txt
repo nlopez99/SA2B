@@ -90,8 +90,8 @@ stg14D_20.c:
 	.text       start:0x0000D9E0 end:0x0000F91C
 	.rodata     start:0x000003F8 end:0x00000460
 
-stg14D_21.c:
-	.text       start:0x0000F91C end:0x0000FAA8
+EFFECT/ef_flame.c:
+	.text       start:0x0000F91C end:0x0000FB78
 	.rodata     start:0x00000460 end:0x00000488
 
 OBJECT/flashmanager.c:

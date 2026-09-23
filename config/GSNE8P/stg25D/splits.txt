@@ -170,8 +170,8 @@ stg25D_40.c:
 	.text       start:0x00018E80 end:0x0001ADBC
 	.rodata     start:0x00000808 end:0x00000870
 
-stg25D_41.c:
-	.text       start:0x0001ADBC end:0x0001AF48
+EFFECT/ef_flame.c:
+	.text       start:0x0001ADBC end:0x0001B018
 	.rodata     start:0x00000870 end:0x00000898
 
 OBJECT/flashmanager.c:

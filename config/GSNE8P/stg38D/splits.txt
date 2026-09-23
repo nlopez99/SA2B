@@ -74,8 +74,8 @@ stg38D_16.c:
 	.text       start:0x00011C28 end:0x00013B64
 	.rodata     start:0x00000580 end:0x000005E8
 
-stg38D_17.c:
-	.text       start:0x00013B64 end:0x00013CF0
+EFFECT/ef_flame.c:
+	.text       start:0x00013B64 end:0x00013DC0
 	.rodata     start:0x000005E8 end:0x00000610
 
 OBJECT/flashmanager.c:

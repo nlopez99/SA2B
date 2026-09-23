@@ -78,8 +78,8 @@ stg05D_17.c:
 	.text       start:0x0000C768 end:0x0000E6A4
 	.rodata     start:0x00000388 end:0x000003F0
 
-stg05D_18.c:
-	.text       start:0x0000E6A4 end:0x0000E830
+EFFECT/ef_flame.c:
+	.text       start:0x0000E6A4 end:0x0000E900
 	.rodata     start:0x000003F0 end:0x00000418
 
 OBJECT/flashmanager.c:

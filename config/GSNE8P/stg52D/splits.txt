@@ -101,8 +101,8 @@ stg52D_22.c:
 	.text       start:0x0001A64C end:0x0001AC14
 	.rodata     start:0x000005E8 end:0x00000610
 
-stg52D_23.c:
-	.text       start:0x0001AC14 end:0x0001ADA0
+EFFECT/ef_flame.c:
+	.text       start:0x0001AC14 end:0x0001AE70
 	.rodata     start:0x00000610 end:0x00000638
 
 OBJECT/flashmanager.c:

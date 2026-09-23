@@ -86,8 +86,8 @@ stg30D_19.c:
 	.text       start:0x0000E24C end:0x00010188
 	.rodata     start:0x000003D8 end:0x00000440
 
-stg30D_20.c:
-	.text       start:0x00010188 end:0x00010314
+EFFECT/ef_flame.c:
+	.text       start:0x00010188 end:0x000103E4
 	.rodata     start:0x00000440 end:0x00000468
 
 OBJECT/flashmanager.c:

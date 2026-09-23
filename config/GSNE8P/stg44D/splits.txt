@@ -114,8 +114,8 @@ stg44D_26.c:
 	.text       start:0x0000ED74 end:0x000111F8
 	.rodata     start:0x000004A8 end:0x00000510
 
-stg44D_27.c:
-	.text       start:0x000111F8 end:0x00011384
+EFFECT/ef_flame.c:
+	.text       start:0x000111F8 end:0x00011454
 	.rodata     start:0x00000510 end:0x00000538
 
 OBJECT/flashmanager.c:

@@ -102,8 +102,8 @@ stg07D_23.c:
 	.text       start:0x0000E720 end:0x0001065C
 	.rodata     start:0x00000470 end:0x000004D8
 
-stg07D_24.c:
-	.text       start:0x0001065C end:0x000107E8
+EFFECT/ef_flame.c:
+	.text       start:0x0001065C end:0x000108B8
 	.rodata     start:0x000004D8 end:0x00000500
 
 OBJECT/flashmanager.c:

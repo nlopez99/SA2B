@@ -108,8 +108,8 @@ stg13D_24.c:
 	.text       start:0x0001ACAC end:0x0001B274
 	.rodata     start:0x00000600 end:0x00000628
 
-stg13D_25.c:
-	.text       start:0x0001B274 end:0x0001B400
+EFFECT/ef_flame.c:
+	.text       start:0x0001B274 end:0x0001B4D0
 	.rodata     start:0x00000628 end:0x00000650
 
 OBJECT/flashmanager.c:

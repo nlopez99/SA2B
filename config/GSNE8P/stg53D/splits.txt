@@ -86,8 +86,8 @@ stg53D_19.c:
 	.text       start:0x00009E9C end:0x0000CD18
 	.rodata     start:0x00000350 end:0x000003C0
 
-stg53D_20.c:
-	.text       start:0x0000CD18 end:0x0000CEA4
+EFFECT/ef_flame.c:
+	.text       start:0x0000CD18 end:0x0000CF74
 	.rodata     start:0x000003C0 end:0x000003E8
 
 OBJECT/flashmanager.c:

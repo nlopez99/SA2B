@@ -38,8 +38,8 @@ boss_bigbogyD_7.c:
 	.text       start:0x00015284 end:0x00016A58
 	.rodata     start:0x00000C18 end:0x00000C80
 
-boss_bigbogyD_8.c:
-	.text       start:0x00016A58 end:0x00016BE4
+EFFECT/ef_flame.c:
+	.text       start:0x00016A58 end:0x00016CB4
 	.rodata     start:0x00000C80 end:0x00000CA8
 
 OBJECT/flashmanager.c:

@@ -98,8 +98,8 @@ stg09D_22.c:
 	.text       start:0x0000C15C end:0x0000E5E0
 	.rodata     start:0x000004A0 end:0x00000508
 
-stg09D_23.c:
-	.text       start:0x0000E5E0 end:0x0000E76C
+EFFECT/ef_flame.c:
+	.text       start:0x0000E5E0 end:0x0000E83C
 	.rodata     start:0x00000508 end:0x00000530
 
 OBJECT/flashmanager.c:

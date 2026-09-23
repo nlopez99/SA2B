@@ -86,8 +86,8 @@ stg43D_19.c:
 	.text       start:0x0000CAD4 end:0x0000F980
 	.rodata     start:0x00000428 end:0x00000498
 
-stg43D_20.c:
-	.text       start:0x0000F980 end:0x0000FB0C
+EFFECT/ef_flame.c:
+	.text       start:0x0000F980 end:0x0000FBDC
 	.rodata     start:0x00000498 end:0x000004C0
 
 OBJECT/flashmanager.c:

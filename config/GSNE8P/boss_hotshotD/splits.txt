@@ -34,8 +34,8 @@ boss_hotshotD_6.c:
 	.text       start:0x0000B3B0 end:0x0000CB84
 	.rodata     start:0x000006A0 end:0x00000708
 
-boss_hotshotD_7.c:
-	.text       start:0x0000CB84 end:0x0000CD10
+EFFECT/ef_flame.c:
+	.text       start:0x0000CB84 end:0x0000CDE0
 	.rodata     start:0x00000708 end:0x00000730
 
 boss_hotshotD_8.c:

@@ -58,8 +58,8 @@ boss_bigfootD_12.c:
 	.text       start:0x00014884 end:0x00014E4C
 	.rodata     start:0x00000830 end:0x00000858
 
-boss_bigfootD_13.c:
-	.text       start:0x00014E4C end:0x00014FD8
+EFFECT/ef_flame.c:
+	.text       start:0x00014E4C end:0x000150A8
 	.rodata     start:0x00000858 end:0x00000880
 
 boss_bigfootD_14.c:

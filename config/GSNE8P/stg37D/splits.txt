@@ -42,8 +42,8 @@ stg37D_8.c:
 	.text       start:0x0000FE34 end:0x00011D70
 	.rodata     start:0x00000538 end:0x000005A0
 
-stg37D_9.c:
-	.text       start:0x00011D70 end:0x00011EFC
+EFFECT/ef_flame.c:
+	.text       start:0x00011D70 end:0x00011FCC
 	.rodata     start:0x000005A0 end:0x000005C8
 
 OBJECT/flashmanager.c:

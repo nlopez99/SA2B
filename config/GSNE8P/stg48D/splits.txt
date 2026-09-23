@@ -130,8 +130,8 @@ stg48D_30.c:
 	.text       start:0x0000EEA0 end:0x00010DDC
 	.rodata     start:0x000004F8 end:0x00000560
 
-stg48D_31.c:
-	.text       start:0x00010DDC end:0x00010F68
+EFFECT/ef_flame.c:
+	.text       start:0x00010DDC end:0x00011038
 	.rodata     start:0x00000560 end:0x00000588
 
 OBJECT/flashmanager.c:

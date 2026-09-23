@@ -50,8 +50,8 @@ stg35D_10.c:
 	.text       start:0x0001AE88 end:0x0001B450
 	.rodata     start:0x00000768 end:0x00000790
 
-stg35D_11.c:
-	.text       start:0x0001B450 end:0x0001B5DC
+EFFECT/ef_flame.c:
+	.text       start:0x0001B450 end:0x0001B6AC
 	.rodata     start:0x00000790 end:0x000007B8
 
 OBJECT/flashmanager.c:

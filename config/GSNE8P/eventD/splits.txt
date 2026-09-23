@@ -110,8 +110,8 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x0000F3E0 end:0x0000FB2C
 	.rodata     start:0x00000308 end:0x00000340
 
-eventD_26.c:
-	.text       start:0x0000FB2C end:0x0000FCB8
+EFFECT/ef_flame.c:
+	.text       start:0x0000FB2C end:0x0000FD88
 	.rodata     start:0x00000340 end:0x00000368
 
 EFFECT/ef_dirt.c:

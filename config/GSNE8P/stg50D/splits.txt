@@ -86,8 +86,8 @@ stg50D_19.c:
 	.text       start:0x0000D504 end:0x0000F988
 	.rodata     start:0x00000460 end:0x000004C8
 
-stg50D_20.c:
-	.text       start:0x0000F988 end:0x0000FB14
+EFFECT/ef_flame.c:
+	.text       start:0x0000F988 end:0x0000FBE4
 	.rodata     start:0x000004C8 end:0x000004F0
 
 OBJECT/flashmanager.c:

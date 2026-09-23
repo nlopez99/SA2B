@@ -118,8 +118,8 @@ boss_last1D_27.c:
 	.text       start:0x00013C44 end:0x00015418
 	.rodata     start:0x00000AF0 end:0x00000B58
 
-boss_last1D_28.c:
-	.text       start:0x00015418 end:0x000155A4
+EFFECT/ef_flame.c:
+	.text       start:0x00015418 end:0x00015674
 	.rodata     start:0x00000B58 end:0x00000B80
 
 OBJECT/flashmanager.c:

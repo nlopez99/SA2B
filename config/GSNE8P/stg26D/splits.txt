@@ -142,8 +142,8 @@ stg26D_33.c:
 	.text       start:0x00014B04 end:0x00016A40
 	.rodata     start:0x00000648 end:0x000006B0
 
-stg26D_34.c:
-	.text       start:0x00016A40 end:0x00016BCC
+EFFECT/ef_flame.c:
+	.text       start:0x00016A40 end:0x00016C9C
 	.rodata     start:0x000006B0 end:0x000006D8
 
 OBJECT/flashmanager.c:

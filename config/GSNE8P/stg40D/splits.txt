@@ -74,8 +74,8 @@ stg40D_16.c:
 	.text       start:0x0000B1D0 end:0x0000D624
 	.rodata     start:0x000002E8 end:0x00000350
 
-stg40D_17.c:
-	.text       start:0x0000D624 end:0x0000D7B0
+EFFECT/ef_flame.c:
+	.text       start:0x0000D624 end:0x0000D880
 	.rodata     start:0x00000350 end:0x00000378
 
 OBJECT/flashmanager.c:

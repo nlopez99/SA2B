@@ -98,8 +98,8 @@ stg16D_22.c:
 	.text       start:0x0000F070 end:0x00010FAC
 	.rodata     start:0x000004F8 end:0x00000560
 
-stg16D_23.c:
-	.text       start:0x00010FAC end:0x00011138
+EFFECT/ef_flame.c:
+	.text       start:0x00010FAC end:0x00011208
 	.rodata     start:0x00000560 end:0x00000588
 
 OBJECT/flashmanager.c:

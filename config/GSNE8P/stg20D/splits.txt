@@ -87,8 +87,8 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x00014E84 end:0x0001589C
 	.rodata     start:0x000007A0 end:0x000007E0
 
-stg20D_20.c:
-	.text       start:0x0001589C end:0x00015A28
+EFFECT/ef_flame.c:
+	.text       start:0x0001589C end:0x00015AF8
 	.rodata     start:0x000007E0 end:0x00000808
 
 EFFECT/ef_spspark.c:

@@ -110,8 +110,8 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x0000CCFC end:0x0000D714
 	.rodata     start:0x00000510 end:0x00000550
 
-stg42D_25.c:
-	.text       start:0x0000D714 end:0x0000D8A0
+EFFECT/ef_flame.c:
+	.text       start:0x0000D714 end:0x0000D970
 	.rodata     start:0x00000550 end:0x00000578
 
 EFFECT/ef_spspark.c:

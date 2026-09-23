@@ -98,8 +98,8 @@ stg24D_22.c:
 	.text       start:0x00015A50 end:0x00016018
 	.rodata     start:0x00000700 end:0x00000728
 
-stg24D_23.c:
-	.text       start:0x00016018 end:0x000161A4
+EFFECT/ef_flame.c:
+	.text       start:0x00016018 end:0x00016274
 	.rodata     start:0x00000728 end:0x00000750
 
 OBJECT/flashmanager.c:

@@ -158,8 +158,8 @@ stg59D_37.c:
 	.text       start:0x00018E98 end:0x0001ADD4
 	.rodata     start:0x00000808 end:0x00000870
 
-stg59D_38.c:
-	.text       start:0x0001ADD4 end:0x0001AF60
+EFFECT/ef_flame.c:
+	.text       start:0x0001ADD4 end:0x0001B030
 	.rodata     start:0x00000870 end:0x00000898
 
 OBJECT/flashmanager.c:

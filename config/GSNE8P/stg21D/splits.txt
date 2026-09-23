@@ -150,8 +150,8 @@ stg21D_35.c:
 	.text       start:0x0000FCB4 end:0x00011BF0
 	.rodata     start:0x000004E0 end:0x00000548
 
-stg21D_36.c:
-	.text       start:0x00011BF0 end:0x00011D7C
+EFFECT/ef_flame.c:
+	.text       start:0x00011BF0 end:0x00011E4C
 	.rodata     start:0x00000548 end:0x00000570
 
 OBJECT/flashmanager.c:

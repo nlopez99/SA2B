@@ -54,8 +54,8 @@ stg31D_11.c:
 	.text       start:0x000085CC end:0x0000A508
 	.rodata     start:0x00000280 end:0x000002E8
 
-stg31D_12.c:
-	.text       start:0x0000A508 end:0x0000A694
+EFFECT/ef_flame.c:
+	.text       start:0x0000A508 end:0x0000A764
 	.rodata     start:0x000002E8 end:0x00000310
 
 OBJECT/flashmanager.c:

@@ -78,8 +78,8 @@ stg55D_17.c:
 	.text       start:0x000105D0 end:0x00010B98
 	.rodata     start:0x00000548 end:0x00000570
 
-stg55D_18.c:
-	.text       start:0x00010B98 end:0x00010D24
+EFFECT/ef_flame.c:
+	.text       start:0x00010B98 end:0x00010DF4
 	.rodata     start:0x00000570 end:0x00000598
 
 OBJECT/flashmanager.c:

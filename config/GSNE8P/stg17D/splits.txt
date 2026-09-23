@@ -82,8 +82,8 @@ stg17D_18.c:
 	.text       start:0x0001705C end:0x00017624
 	.rodata     start:0x000005E8 end:0x00000610
 
-stg17D_19.c:
-	.text       start:0x00017624 end:0x000177B0
+EFFECT/ef_flame.c:
+	.text       start:0x00017624 end:0x00017880
 	.rodata     start:0x00000610 end:0x00000638
 
 OBJECT/flashmanager.c:

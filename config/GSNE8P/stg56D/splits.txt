@@ -63,6 +63,10 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x0000D6D4 end:0x0000E0EC
 	.rodata     start:0x00000450 end:0x00000490
 
+EFFECT/ef_flame.c:
+	.text       start:0x0000E0EC end:0x0000E348
+	.rodata     start:0x00000490 end:0x000004B8
+
 EFFECT/ef_spspark.c:
 	.text       start:0x0000E348 end:0x0000EB50
 	.rodata     start:0x000004B8 end:0x000004E0

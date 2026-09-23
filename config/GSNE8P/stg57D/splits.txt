@@ -106,8 +106,8 @@ stg57D_24.c:
 	.text       start:0x00011728 end:0x00013DF4
 	.rodata     start:0x00000530 end:0x000005A0
 
-stg57D_25.c:
-	.text       start:0x00013DF4 end:0x00013F80
+EFFECT/ef_flame.c:
+	.text       start:0x00013DF4 end:0x00014050
 	.rodata     start:0x000005A0 end:0x000005C8
 
 OBJECT/flashmanager.c:
