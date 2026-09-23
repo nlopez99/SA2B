@@ -193,9 +193,10 @@ stg43D_46.c:
 	.text       start:0x0001A824 end:0x0001B0A8
 	.rodata     start:0x00000908 end:0x00000950
 
-stg43D_47.c:
-	.text       start:0x0001B194 end:0x0001BC8C
+OBJECT/o_contiron.c:
+	.text       start:0x0001B194 end:0x0001BDAC
 	.rodata     start:0x00000950 end:0x00000998
+	.bss        start:0x000006D8 end:0x000006E0
 
 stg43D_48.c:
 	.text       start:0x0001BDAC end:0x0001CBF0

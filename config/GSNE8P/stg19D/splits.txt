@@ -114,9 +114,10 @@ stg19D_25.c:
 	.text       start:0x00010848 end:0x00010BF8
 	.rodata     start:0x000006A0 end:0x000006D0
 
-stg19D_26.c:
-	.text       start:0x00010D9C end:0x00011894
+OBJECT/o_contiron.c:
+	.text       start:0x00010D9C end:0x000119B4
 	.rodata     start:0x000006D0 end:0x00000718
+	.bss        start:0x00000670 end:0x00000678
 
 stg19D_27.c:
 	.text       start:0x000119B4 end:0x000127F8

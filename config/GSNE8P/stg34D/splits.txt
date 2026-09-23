@@ -183,9 +183,10 @@ stg34D_45.c:
 	.text       start:0x0001BEE8 end:0x0001C76C
 	.rodata     start:0x00000998 end:0x000009E0
 
-stg34D_46.c:
-	.text       start:0x0001C858 end:0x0001D350
+OBJECT/o_contiron.c:
+	.text       start:0x0001C858 end:0x0001D470
 	.rodata     start:0x000009E0 end:0x00000A28
+	.bss        start:0x000004E0 end:0x000004E8
 
 stg34D_47.c:
 	.text       start:0x0001D470 end:0x0001E2B4

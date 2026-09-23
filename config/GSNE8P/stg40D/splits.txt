@@ -181,9 +181,10 @@ stg40D_44.c:
 	.text       start:0x00017D78 end:0x000185FC
 	.rodata     start:0x000007A0 end:0x000007E8
 
-stg40D_45.c:
-	.text       start:0x000186E8 end:0x000191E0
+OBJECT/o_contiron.c:
+	.text       start:0x000186E8 end:0x00019300
 	.rodata     start:0x000007E8 end:0x00000830
+	.bss        start:0x000006A8 end:0x000006B0
 
 stg40D_46.c:
 	.text       start:0x00019300 end:0x0001A144

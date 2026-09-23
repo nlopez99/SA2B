@@ -175,9 +175,10 @@ OBJECT/o_bunchin.c:
 	.rodata     start:0x000008F0 end:0x00000938
 	.bss        start:0x000006A8 end:0x000006B0
 
-stg39D_43.c:
-	.text       start:0x0001E0A0 end:0x0001EB98
+OBJECT/o_contiron.c:
+	.text       start:0x0001E0A0 end:0x0001ECB8
 	.rodata     start:0x00000938 end:0x00000980
+	.bss        start:0x000006B0 end:0x000006B8
 
 stg39D_44.c:
 	.text       start:0x0001ECB8 end:0x0001FAFC

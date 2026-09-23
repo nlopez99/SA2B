@@ -126,9 +126,10 @@ OBJECT/o_bunchin.c:
 	.rodata     start:0x000005B8 end:0x00000600
 	.bss        start:0x00000458 end:0x00000460
 
-stg45D_31.c:
-	.text       start:0x00011324 end:0x00011E1C
+OBJECT/o_contiron.c:
+	.text       start:0x00011324 end:0x00011F3C
 	.rodata     start:0x00000600 end:0x00000648
+	.bss        start:0x00000460 end:0x00000468
 
 stg45D_32.c:
 	.text       start:0x00011F3C end:0x00012D80

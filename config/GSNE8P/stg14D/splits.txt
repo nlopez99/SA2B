@@ -197,9 +197,10 @@ stg14D_48.c:
 	.text       start:0x00019DC4 end:0x0001A648
 	.rodata     start:0x000008B0 end:0x000008F8
 
-stg14D_49.c:
-	.text       start:0x0001A734 end:0x0001B22C
+OBJECT/o_contiron.c:
+	.text       start:0x0001A734 end:0x0001B34C
 	.rodata     start:0x000008F8 end:0x00000940
+	.bss        start:0x000006E0 end:0x000006E8
 
 stg14D_50.c:
 	.text       start:0x0001B34C end:0x0001C190

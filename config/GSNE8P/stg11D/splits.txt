@@ -206,9 +206,10 @@ stg11D_50.c:
 	.text       start:0x0001FDA4 end:0x00020628
 	.rodata     start:0x00000B28 end:0x00000B70
 
-stg11D_51.c:
-	.text       start:0x00020714 end:0x0002120C
+OBJECT/o_contiron.c:
+	.text       start:0x00020714 end:0x0002132C
 	.rodata     start:0x00000B70 end:0x00000BB8
+	.bss        start:0x00000950 end:0x00000958
 
 stg11D_52.c:
 	.text       start:0x0002132C end:0x00022170

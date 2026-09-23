@@ -100,6 +100,11 @@ OBJECT/o_bunchin.c:
 	.rodata     start:0x00000598 end:0x000005E0
 	.bss        start:0x00000680 end:0x00000688
 
+OBJECT/o_contiron.c:
+	.text       start:0x000116FC end:0x00012314
+	.rodata     start:0x000005E0 end:0x00000628
+	.bss        start:0x00000688 end:0x00000690
+
 OBJECT/o_degring_linear.c:
 	.text       start:0x00013158 end:0x00013AA8
 	.rodata     start:0x00000680 end:0x00000698

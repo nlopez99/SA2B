@@ -120,9 +120,10 @@ OBJECT/o_chaopipe.c:
 	.text       start:0x000144C0 end:0x00014874
 	.rodata     start:0x00000A58 end:0x00000A78
 
-boss_hotshotD_31.c:
-	.text       start:0x00014874 end:0x0001536C
+OBJECT/o_contiron.c:
+	.text       start:0x00014874 end:0x0001548C
 	.rodata     start:0x00000A78 end:0x00000AC0
+	.bss        start:0x000005A0 end:0x000005A8
 
 boss_hotshotD_32.c:
 	.text       start:0x0001548C end:0x000162D0

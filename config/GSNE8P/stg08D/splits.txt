@@ -185,9 +185,10 @@ stg08D_45.c:
 	.text       start:0x000180DC end:0x00018960
 	.rodata     start:0x00000848 end:0x00000890
 
-stg08D_46.c:
-	.text       start:0x00018A4C end:0x00019544
+OBJECT/o_contiron.c:
+	.text       start:0x00018A4C end:0x00019664
 	.rodata     start:0x00000890 end:0x000008D8
+	.bss        start:0x00004D88 end:0x00004D90
 
 stg08D_47.c:
 	.text       start:0x00019664 end:0x0001A4A8

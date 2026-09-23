@@ -235,9 +235,10 @@ stg48D_57.c:
 	.text       start:0x0001B2A4 end:0x0001BB28
 	.rodata     start:0x000009B0 end:0x000009F8
 
-stg48D_58.c:
-	.text       start:0x0001BC14 end:0x0001C70C
+OBJECT/o_contiron.c:
+	.text       start:0x0001BC14 end:0x0001C82C
 	.rodata     start:0x000009F8 end:0x00000A40
+	.bss        start:0x00000478 end:0x00000480
 
 stg48D_59.c:
 	.text       start:0x0001C82C end:0x0001D670

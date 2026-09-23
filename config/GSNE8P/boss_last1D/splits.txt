@@ -213,9 +213,10 @@ OBJECT/o_chaopipe.c:
 	.text       start:0x0001D8E0 end:0x0001DC94
 	.rodata     start:0x00000F10 end:0x00000F30
 
-boss_last1D_54.c:
-	.text       start:0x0001DC94 end:0x0001E78C
+OBJECT/o_contiron.c:
+	.text       start:0x0001DC94 end:0x0001E8AC
 	.rodata     start:0x00000F30 end:0x00000F78
+	.bss        start:0x000008E0 end:0x000008E8
 
 boss_last1D_55.c:
 	.text       start:0x0001E8AC end:0x0001F6F0

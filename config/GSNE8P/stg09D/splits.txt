@@ -205,9 +205,10 @@ stg09D_50.c:
 	.text       start:0x00018E1C end:0x000196A0
 	.rodata     start:0x00000958 end:0x000009A0
 
-stg09D_51.c:
-	.text       start:0x0001978C end:0x0001A284
+OBJECT/o_contiron.c:
+	.text       start:0x0001978C end:0x0001A3A4
 	.rodata     start:0x000009A0 end:0x000009E8
+	.bss        start:0x00000690 end:0x00000698
 
 stg09D_52.c:
 	.text       start:0x0001A3A4 end:0x0001B1E8

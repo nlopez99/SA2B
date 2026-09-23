@@ -159,9 +159,10 @@ stg35D_38.c:
 	.text       start:0x00025DB8 end:0x0002663C
 	.rodata     start:0x00000C00 end:0x00000C48
 
-stg35D_39.c:
-	.text       start:0x00026728 end:0x00027220
+OBJECT/o_contiron.c:
+	.text       start:0x00026728 end:0x00027340
 	.rodata     start:0x00000C48 end:0x00000C90
+	.bss        start:0x000004B0 end:0x000004B8
 
 stg35D_40.c:
 	.text       start:0x00027340 end:0x00028184

@@ -201,9 +201,10 @@ stg51D_48.c:
 	.text       start:0x00019F68 end:0x0001A7EC
 	.rodata     start:0x00000960 end:0x000009A8
 
-stg51D_49.c:
-	.text       start:0x0001A8D8 end:0x0001B3D0
+OBJECT/o_contiron.c:
+	.text       start:0x0001A8D8 end:0x0001B4F0
 	.rodata     start:0x000009A8 end:0x000009F0
+	.bss        start:0x00000718 end:0x00000720
 
 stg51D_50.c:
 	.text       start:0x0001B4F0 end:0x0001C334

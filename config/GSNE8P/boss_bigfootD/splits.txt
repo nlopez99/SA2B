@@ -144,9 +144,10 @@ OBJECT/o_chaopipe.c:
 	.text       start:0x0001C948 end:0x0001CCFC
 	.rodata     start:0x00000BA8 end:0x00000BC8
 
-boss_bigfootD_37.c:
-	.text       start:0x0001CCFC end:0x0001D7F4
+OBJECT/o_contiron.c:
+	.text       start:0x0001CCFC end:0x0001D914
 	.rodata     start:0x00000BC8 end:0x00000C10
+	.bss        start:0x000005B8 end:0x000005C0
 
 boss_bigfootD_38.c:
 	.text       start:0x0001D914 end:0x0001E758

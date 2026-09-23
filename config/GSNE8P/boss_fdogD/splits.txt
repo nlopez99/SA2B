@@ -130,9 +130,10 @@ OBJECT/o_chaopipe.c:
 	.text       start:0x00012A34 end:0x00012DE8
 	.rodata     start:0x00000810 end:0x00000830
 
-boss_fdogD_33.c:
-	.text       start:0x00012DE8 end:0x000138E0
+OBJECT/o_contiron.c:
+	.text       start:0x00012DE8 end:0x00013A00
 	.rodata     start:0x00000830 end:0x00000878
+	.bss        start:0x000007E0 end:0x000007E8
 
 boss_fdogD_34.c:
 	.text       start:0x00013A00 end:0x00014844

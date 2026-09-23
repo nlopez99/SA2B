@@ -187,9 +187,10 @@ stg27D_46.c:
 	.text       start:0x0001B9F0 end:0x0001C274
 	.rodata     start:0x000009D0 end:0x00000A18
 
-stg27D_47.c:
-	.text       start:0x0001C360 end:0x0001CE58
+OBJECT/o_contiron.c:
+	.text       start:0x0001C360 end:0x0001CF78
 	.rodata     start:0x00000A18 end:0x00000A60
+	.bss        start:0x00000930 end:0x00000938
 
 stg27D_48.c:
 	.text       start:0x0001CF78 end:0x0001DDBC

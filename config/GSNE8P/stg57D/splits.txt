@@ -217,9 +217,10 @@ stg57D_53.c:
 	.text       start:0x0001EB20 end:0x0001F3A4
 	.rodata     start:0x00000A20 end:0x00000A68
 
-stg57D_54.c:
-	.text       start:0x0001F490 end:0x0001FF88
+OBJECT/o_contiron.c:
+	.text       start:0x0001F490 end:0x000200A8
 	.rodata     start:0x00000A68 end:0x00000AB0
+	.bss        start:0x00000988 end:0x00000990
 
 stg57D_55.c:
 	.text       start:0x000200A8 end:0x00020EEC

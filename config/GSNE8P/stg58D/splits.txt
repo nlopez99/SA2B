@@ -204,9 +204,10 @@ stg58D_50.c:
 	.text       start:0x000206F8 end:0x00020F7C
 	.rodata     start:0x00000B60 end:0x00000BA8
 
-stg58D_51.c:
-	.text       start:0x00021068 end:0x00021B60
+OBJECT/o_contiron.c:
+	.text       start:0x00021068 end:0x00021C80
 	.rodata     start:0x00000BA8 end:0x00000BF0
+	.bss        start:0x00000750 end:0x00000758
 
 stg58D_52.c:
 	.text       start:0x00021C80 end:0x00022AC4

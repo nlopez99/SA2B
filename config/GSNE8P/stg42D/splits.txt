@@ -130,9 +130,10 @@ stg42D_29.c:
 	.text       start:0x0000E334 end:0x0000E6E4
 	.rodata     start:0x000005C8 end:0x000005F8
 
-stg42D_30.c:
-	.text       start:0x0000E888 end:0x0000F380
+OBJECT/o_contiron.c:
+	.text       start:0x0000E888 end:0x0000F4A0
 	.rodata     start:0x000005F8 end:0x00000640
+	.bss        start:0x00000670 end:0x00000678
 
 stg42D_31.c:
 	.text       start:0x0000F4A0 end:0x000102E4

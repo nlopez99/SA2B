@@ -129,9 +129,10 @@ OBJECT/o_chaopipe.c:
 	.text       start:0x0001EC24 end:0x0001EFD8
 	.rodata     start:0x00001018 end:0x00001038
 
-boss_bigbogyD_33.c:
-	.text       start:0x0001EFD8 end:0x0001FAD0
+OBJECT/o_contiron.c:
+	.text       start:0x0001EFD8 end:0x0001FBF0
 	.rodata     start:0x00001038 end:0x00001080
+	.bss        start:0x000004E8 end:0x000004F0
 
 boss_bigbogyD_34.c:
 	.text       start:0x0001FBF0 end:0x00020A34

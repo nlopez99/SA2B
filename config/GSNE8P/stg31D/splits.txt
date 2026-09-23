@@ -163,9 +163,10 @@ stg31D_40.c:
 	.text       start:0x000148B8 end:0x0001513C
 	.rodata     start:0x00000738 end:0x00000780
 
-stg31D_41.c:
-	.text       start:0x00015228 end:0x00015D20
+OBJECT/o_contiron.c:
+	.text       start:0x00015228 end:0x00015E40
 	.rodata     start:0x00000780 end:0x000007C8
+	.bss        start:0x00000488 end:0x00000490
 
 stg31D_42.c:
 	.text       start:0x00015E40 end:0x00016C84

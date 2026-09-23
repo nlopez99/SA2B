@@ -189,9 +189,10 @@ stg17D_45.c:
 	.text       start:0x000225A4 end:0x00022E28
 	.rodata     start:0x00000A80 end:0x00000AC8
 
-stg17D_46.c:
-	.text       start:0x00022F14 end:0x00023A0C
+OBJECT/o_contiron.c:
+	.text       start:0x00022F14 end:0x00023B2C
 	.rodata     start:0x00000AC8 end:0x00000B10
+	.bss        start:0x000006D0 end:0x000006D8
 
 stg17D_47.c:
 	.text       start:0x00023B2C end:0x00024970

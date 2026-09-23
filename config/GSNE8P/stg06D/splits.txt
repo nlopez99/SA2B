@@ -169,9 +169,10 @@ stg06D_41.c:
 	.text       start:0x00017788 end:0x0001800C
 	.rodata     start:0x00000830 end:0x00000878
 
-stg06D_42.c:
-	.text       start:0x000180F8 end:0x00018BF0
+OBJECT/o_contiron.c:
+	.text       start:0x000180F8 end:0x00018D10
 	.rodata     start:0x00000878 end:0x000008C0
+	.bss        start:0x000006A0 end:0x000006A8
 
 stg06D_43.c:
 	.text       start:0x00018D10 end:0x00019B54

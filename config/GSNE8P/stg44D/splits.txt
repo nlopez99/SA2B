@@ -221,9 +221,10 @@ stg44D_54.c:
 	.text       start:0x0001B958 end:0x0001C1DC
 	.rodata     start:0x00000960 end:0x000009A8
 
-stg44D_55.c:
-	.text       start:0x0001C2C8 end:0x0001CDC0
+OBJECT/o_contiron.c:
+	.text       start:0x0001C2C8 end:0x0001CEE0
 	.rodata     start:0x000009A8 end:0x000009F0
+	.bss        start:0x00000AE0 end:0x00000AE8
 
 stg44D_56.c:
 	.text       start:0x0001CEE0 end:0x0001DD24

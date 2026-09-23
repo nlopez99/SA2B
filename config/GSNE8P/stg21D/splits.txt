@@ -257,9 +257,10 @@ stg21D_62.c:
 	.text       start:0x0001C8FC end:0x0001D180
 	.rodata     start:0x000009B8 end:0x00000A00
 
-stg21D_63.c:
-	.text       start:0x0001D26C end:0x0001DD64
+OBJECT/o_contiron.c:
+	.text       start:0x0001D26C end:0x0001DE84
 	.rodata     start:0x00000A00 end:0x00000A48
+	.bss        start:0x00000CE0 end:0x00000CE8
 
 stg21D_64.c:
 	.text       start:0x0001DE84 end:0x0001ECC8

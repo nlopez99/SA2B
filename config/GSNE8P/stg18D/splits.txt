@@ -249,9 +249,10 @@ stg18D_61.c:
 	.text       start:0x0001FC44 end:0x000204C8
 	.rodata     start:0x00000B20 end:0x00000B68
 
-stg18D_62.c:
-	.text       start:0x000205B4 end:0x000210AC
+OBJECT/o_contiron.c:
+	.text       start:0x000205B4 end:0x000211CC
 	.rodata     start:0x00000B68 end:0x00000BB0
+	.bss        start:0x000006F0 end:0x000006F8
 
 stg18D_63.c:
 	.text       start:0x000211CC end:0x00022010

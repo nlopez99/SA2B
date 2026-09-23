@@ -204,9 +204,10 @@ stg15D_49.c:
 	.text       start:0x00019A44 end:0x0001A2C8
 	.rodata     start:0x00000958 end:0x000009A0
 
-stg15D_50.c:
-	.text       start:0x0001A3B4 end:0x0001AEAC
+OBJECT/o_contiron.c:
+	.text       start:0x0001A3B4 end:0x0001AFCC
 	.rodata     start:0x000009A0 end:0x000009E8
+	.bss        start:0x00000710 end:0x00000718
 
 stg15D_51.c:
 	.text       start:0x0001AFCC end:0x0001BE10

@@ -128,9 +128,10 @@ OBJECT/o_bunchin.c:
 	.rodata     start:0x00000908 end:0x00000950
 	.bss        start:0x000006F8 end:0x00000700
 
-stg20D_31.c:
-	.text       start:0x000191A8 end:0x00019CA0
+OBJECT/o_contiron.c:
+	.text       start:0x000191A8 end:0x00019DC0
 	.rodata     start:0x00000950 end:0x00000998
+	.bss        start:0x00000700 end:0x00000708
 
 stg20D_32.c:
 	.text       start:0x00019DC0 end:0x0001AC04
