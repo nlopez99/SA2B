@@ -184,13 +184,11 @@ stg31D_46.c:
 	.text       start:0x00018A50 end:0x000193D0
 	.rodata     start:0x00000878 end:0x000008A8
 
-stg31D_47.c:
-	.text       start:0x000193D0 end:0x0001BF80
-	.rodata     start:0x000008A8 end:0x000008F8
-
-stg31D_48.c:
-	.text       start:0x0001BF80 end:0x0001C03C
-	.rodata     start:0x000008F8 end:0x00000900
+OBJECT/o_emerald.c:
+	.text       start:0x000193D0 end:0x0001C1E0
+	.rodata     start:0x000008A8 end:0x00000900
+	.data       start:0x0008CEE8 end:0x0008DCD0
+	.bss        start:0x00000AE8 end:0x00000AF0
 
 OBJECT/o_goalring.c:
 	.text       start:0x0001C1E0 end:0x0001D4FC

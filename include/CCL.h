@@ -23,7 +23,7 @@ void CCL_GetForm(taskwk *, Sint32);
 void CCL_GetInfo(taskwk *, Sint32);
 void CCL_InitShare(task *tp, CCL_INFO *info, Sint32 nbInfo, Uint8 id);
 void CCL_ClearAll(void);
-void CCL_IsHitPlayerEx(taskwk *);
+CCL_HIT_INFO *CCL_IsHitPlayerEx(task *tp);
 void CCL_IsHitBulletEx(taskwk *);
 void CCL_IsHitEnemyEx(taskwk *);
 void CCL_IsHitEnemy2Ex(taskwk *);

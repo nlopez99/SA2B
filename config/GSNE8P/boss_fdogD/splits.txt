@@ -148,13 +148,11 @@ boss_fdogD_37.c:
 	.text       start:0x00015C0C end:0x0001658C
 	.rodata     start:0x00000908 end:0x00000938
 
-boss_fdogD_38.c:
-	.text       start:0x0001658C end:0x0001913C
-	.rodata     start:0x00000938 end:0x00000988
-
-boss_fdogD_39.c:
-	.text       start:0x0001913C end:0x000191F8
-	.rodata     start:0x00000988 end:0x00000990
+OBJECT/o_emerald.c:
+	.text       start:0x0001658C end:0x0001939C
+	.rodata     start:0x00000938 end:0x00000990
+	.data       start:0x0001CEA8 end:0x0001DC90
+	.bss        start:0x00000E38 end:0x00000E40
 
 OBJECT/o_goalring.c:
 	.text       start:0x0001939C end:0x0001A6B8

@@ -240,13 +240,11 @@ stg03D_60.c:
 	.text       start:0x00022AA0 end:0x00023420
 	.rodata     start:0x00000C50 end:0x00000C80
 
-stg03D_61.c:
-	.text       start:0x00023420 end:0x00025FD0
-	.rodata     start:0x00000C80 end:0x00000CD0
-
-stg03D_62.c:
-	.text       start:0x00025FD0 end:0x0002608C
-	.rodata     start:0x00000CD0 end:0x00000CD8
+OBJECT/o_emerald.c:
+	.text       start:0x00023420 end:0x00026230
+	.rodata     start:0x00000C80 end:0x00000CD8
+	.data       start:0x000E36A8 end:0x000E4490
+	.bss        start:0x00000D30 end:0x00000D38
 
 OBJECT/o_goalring.c:
 	.text       start:0x00026230 end:0x0002754C

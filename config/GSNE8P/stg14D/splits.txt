@@ -216,13 +216,11 @@ stg14D_54.c:
 	.text       start:0x0001DF5C end:0x0001E8DC
 	.rodata     start:0x000009F0 end:0x00000A20
 
-stg14D_55.c:
-	.text       start:0x0001E8DC end:0x0002148C
-	.rodata     start:0x00000A20 end:0x00000A70
-
-stg14D_56.c:
-	.text       start:0x0002148C end:0x00021548
-	.rodata     start:0x00000A70 end:0x00000A78
+OBJECT/o_emerald.c:
+	.text       start:0x0001E8DC end:0x000216EC
+	.rodata     start:0x00000A20 end:0x00000A78
+	.data       start:0x000CB4A8 end:0x000CC290
+	.bss        start:0x00000D40 end:0x00000D48
 
 OBJECT/o_goalring.c:
 	.text       start:0x000216EC end:0x00022A08

@@ -144,13 +144,11 @@ boss_hotshotD_36.c:
 	.text       start:0x0001809C end:0x00018A1C
 	.rodata     start:0x00000B70 end:0x00000BA0
 
-boss_hotshotD_37.c:
-	.text       start:0x00018A1C end:0x0001B5CC
-	.rodata     start:0x00000BA0 end:0x00000BF0
-
-boss_hotshotD_38.c:
-	.text       start:0x0001B5CC end:0x0001B688
-	.rodata     start:0x00000BF0 end:0x00000BF8
+OBJECT/o_emerald.c:
+	.text       start:0x00018A1C end:0x0001B82C
+	.rodata     start:0x00000BA0 end:0x00000BF8
+	.data       start:0x00026108 end:0x00026EF0
+	.bss        start:0x00000C00 end:0x00000C08
 
 OBJECT/o_goalring.c:
 	.text       start:0x0001B82C end:0x0001CB48

@@ -232,13 +232,11 @@ boss_last1D_58.c:
 	.text       start:0x00020AB8 end:0x00021438
 	.rodata     start:0x00001008 end:0x00001038
 
-boss_last1D_59.c:
-	.text       start:0x00021438 end:0x00023FE8
-	.rodata     start:0x00001038 end:0x00001088
-
-boss_last1D_60.c:
-	.text       start:0x00023FE8 end:0x000240A4
-	.rodata     start:0x00001088 end:0x00001090
+OBJECT/o_emerald.c:
+	.text       start:0x00021438 end:0x00024248
+	.rodata     start:0x00001038 end:0x00001090
+	.data       start:0x000B5928 end:0x000B6710
+	.bss        start:0x00000F38 end:0x00000F40
 
 OBJECT/o_goalring.c:
 	.text       start:0x00024248 end:0x00025564

@@ -164,13 +164,11 @@ boss_bigfootD_41.c:
 	.text       start:0x0001FB20 end:0x000204A0
 	.rodata     start:0x00000CA0 end:0x00000CD0
 
-boss_bigfootD_42.c:
-	.text       start:0x000204A0 end:0x00023050
-	.rodata     start:0x00000CD0 end:0x00000D20
-
-boss_bigfootD_43.c:
-	.text       start:0x00023050 end:0x0002310C
-	.rodata     start:0x00000D20 end:0x00000D28
+OBJECT/o_emerald.c:
+	.text       start:0x000204A0 end:0x000232B0
+	.rodata     start:0x00000CD0 end:0x00000D28
+	.data       start:0x0004DFA8 end:0x0004ED90
+	.bss        start:0x00000C10 end:0x00000C18
 
 OBJECT/o_goalring.c:
 	.text       start:0x000232B0 end:0x000245CC

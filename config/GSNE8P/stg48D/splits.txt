@@ -256,13 +256,11 @@ stg48D_63.c:
 	.text       start:0x0001F43C end:0x0001FDBC
 	.rodata     start:0x00000AF0 end:0x00000B20
 
-stg48D_64.c:
-	.text       start:0x0001FDBC end:0x0002296C
-	.rodata     start:0x00000B20 end:0x00000B70
-
-stg48D_65.c:
-	.text       start:0x0002296C end:0x00022A28
-	.rodata     start:0x00000B70 end:0x00000B78
+OBJECT/o_emerald.c:
+	.text       start:0x0001FDBC end:0x00022BCC
+	.rodata     start:0x00000B20 end:0x00000B78
+	.data       start:0x001094C8 end:0x0010A2B0
+	.bss        start:0x00000AD8 end:0x00000AE0
 
 OBJECT/o_goalring.c:
 	.text       start:0x00022BCC end:0x00023EE8

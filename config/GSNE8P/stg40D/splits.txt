@@ -200,13 +200,11 @@ stg40D_50.c:
 	.text       start:0x0001BF10 end:0x0001C890
 	.rodata     start:0x000008E0 end:0x00000910
 
-stg40D_51.c:
-	.text       start:0x0001C890 end:0x0001F440
-	.rodata     start:0x00000910 end:0x00000960
-
-stg40D_52.c:
-	.text       start:0x0001F440 end:0x0001F4FC
-	.rodata     start:0x00000960 end:0x00000968
+OBJECT/o_emerald.c:
+	.text       start:0x0001C890 end:0x0001F6A0
+	.rodata     start:0x00000910 end:0x00000968
+	.data       start:0x00082FA8 end:0x00083D90
+	.bss        start:0x00000D08 end:0x00000D10
 
 OBJECT/o_goalring.c:
 	.text       start:0x0001F6A0 end:0x000209BC

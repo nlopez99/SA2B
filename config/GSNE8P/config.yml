@@ -432,6 +432,46 @@ modules:
     header: assets/e_bomb_touch_vlist.inc
     header_type: none
     custom_type: s32
+  - symbol: emerald_plist!.data:0x2177b4
+    binary: assets/emerald_plist.bin
+    header: assets/emerald_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: emerald_vlist!.data:0x217904
+    binary: assets/emerald_vlist.bin
+    header: assets/emerald_vlist.inc
+    header_type: none
+    custom_type: s32
+  - symbol: emerald_shine_plist_0!.data:0x217d48
+    binary: assets/emerald_shine_plist_0.bin
+    header: assets/emerald_shine_plist_0.inc
+    header_type: none
+    custom_type: s16
+  - symbol: emerald_shine_vlist_0!.data:0x217d90
+    binary: assets/emerald_shine_vlist_0.bin
+    header: assets/emerald_shine_vlist_0.inc
+    header_type: none
+    custom_type: s32
+  - symbol: emerald_shine_plist_1!.data:0x217ed4
+    binary: assets/emerald_shine_plist_1.bin
+    header: assets/emerald_shine_plist_1.inc
+    header_type: none
+    custom_type: s16
+  - symbol: emerald_shine_vlist_1!.data:0x217f24
+    binary: assets/emerald_shine_vlist_1.bin
+    header: assets/emerald_shine_vlist_1.inc
+    header_type: none
+    custom_type: s32
+  - symbol: emerald_shine_plist_2!.data:0x218098
+    binary: assets/emerald_shine_plist_2.bin
+    header: assets/emerald_shine_plist_2.inc
+    header_type: none
+    custom_type: s16
+  - symbol: emerald_shine_vlist_2!.data:0x2180e0
+    binary: assets/emerald_shine_vlist_2.bin
+    header: assets/emerald_shine_vlist_2.inc
+    header_type: none
+    custom_type: s32
 
 - object: orig/GSNE8P/files/stg14D.rel
   hash: 68b094fa0f3e58adb7276d34d4b9881ac1c64fae

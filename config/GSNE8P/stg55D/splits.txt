@@ -200,13 +200,11 @@ stg55D_50.c:
 	.text       start:0x0001EFFC end:0x0001F97C
 	.rodata     start:0x00000AD8 end:0x00000B08
 
-stg55D_51.c:
-	.text       start:0x0001F97C end:0x0002252C
-	.rodata     start:0x00000B08 end:0x00000B58
-
-stg55D_52.c:
-	.text       start:0x0002252C end:0x000225E8
-	.rodata     start:0x00000B58 end:0x00000B60
+OBJECT/o_emerald.c:
+	.text       start:0x0001F97C end:0x0002278C
+	.rodata     start:0x00000B08 end:0x00000B60
+	.data       start:0x00029168 end:0x00029F50
+	.bss        start:0x00000B60 end:0x00000B68
 
 OBJECT/o_goalring.c:
 	.text       start:0x0002278C end:0x00023AA8

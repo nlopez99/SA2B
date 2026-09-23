@@ -180,13 +180,11 @@ Boss_GolemED_44.c:
 	.text       start:0x000203BC end:0x00020D3C
 	.rodata     start:0x00001120 end:0x00001150
 
-Boss_GolemED_45.c:
-	.text       start:0x00020D3C end:0x000238EC
-	.rodata     start:0x00001150 end:0x000011A0
-
-Boss_GolemED_46.c:
-	.text       start:0x000238EC end:0x000239A8
-	.rodata     start:0x000011A0 end:0x000011A8
+OBJECT/o_emerald.c:
+	.text       start:0x00020D3C end:0x00023B4C
+	.rodata     start:0x00001150 end:0x000011A8
+	.data       start:0x000D3548 end:0x000D4330
+	.bss        start:0x00000F10 end:0x00000F18
 
 OBJECT/o_goalring.c:
 	.text       start:0x00023B4C end:0x00024E68

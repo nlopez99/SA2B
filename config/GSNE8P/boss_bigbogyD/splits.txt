@@ -148,13 +148,11 @@ boss_bigbogyD_37.c:
 	.text       start:0x00021DFC end:0x0002277C
 	.rodata     start:0x00001110 end:0x00001140
 
-boss_bigbogyD_38.c:
-	.text       start:0x0002277C end:0x0002532C
-	.rodata     start:0x00001140 end:0x00001190
-
-boss_bigbogyD_39.c:
-	.text       start:0x0002532C end:0x000253E8
-	.rodata     start:0x00001190 end:0x00001198
+OBJECT/o_emerald.c:
+	.text       start:0x0002277C end:0x0002558C
+	.rodata     start:0x00001140 end:0x00001198
+	.data       start:0x0004A5A8 end:0x0004B390
+	.bss        start:0x00000B40 end:0x00000B48
 
 OBJECT/o_goalring.c:
 	.text       start:0x0002558C end:0x000268A8
