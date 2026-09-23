@@ -456,9 +456,10 @@ EFFECT/ef_explosion.c:
 	.data       start:0x00121A00 end:0x00121A78
 	.bss        start:0x00002E08 end:0x00002E10
 
-stg18D_112.c:
-	.text       start:0x00051168 end:0x00051F48
+ENEMY/e_gold.c:
+	.text       start:0x0005112C end:0x00051F48
 	.rodata     start:0x00001968 end:0x000019B0
+	.data       start:0x001238E8 end:0x00123980
 
 ENEMY/e_kumi.c:
 	.text       start:0x00051F48 end:0x00054490

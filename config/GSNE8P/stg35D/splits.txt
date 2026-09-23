@@ -356,9 +356,10 @@ stg35D_85.c:
 	.text       start:0x000516CC end:0x000530E8
 	.rodata     start:0x00001918 end:0x000019B0
 
-stg35D_86.c:
-	.text       start:0x000535AC end:0x0005438C
+ENEMY/e_gold.c:
+	.text       start:0x00053570 end:0x0005438C
 	.rodata     start:0x000019B0 end:0x000019F8
+	.data       start:0x000D78A0 end:0x000D7938
 
 stg35D_87.c:
 	.text       start:0x000543C8 end:0x0005ABD4

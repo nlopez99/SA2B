@@ -400,9 +400,10 @@ stg08D_97.c:
 	.text       start:0x00048704 end:0x0004A120
 	.rodata     start:0x00001668 end:0x00001700
 
-stg08D_98.c:
-	.text       start:0x0004A5E4 end:0x0004B3C4
+ENEMY/e_gold.c:
+	.text       start:0x0004A5A8 end:0x0004B3C4
 	.rodata     start:0x00001700 end:0x00001748
+	.data       start:0x000AC838 end:0x000AC8D0
 
 ENEMY/e_kumi.c:
 	.text       start:0x0004B3C4 end:0x0004D90C

@@ -408,9 +408,10 @@ stg24D_98.c:
 	.text       start:0x0004E34C end:0x0004FD68
 	.rodata     start:0x00001898 end:0x00001930
 
-stg24D_99.c:
-	.text       start:0x0005022C end:0x0005100C
+ENEMY/e_gold.c:
+	.text       start:0x000501F0 end:0x0005100C
 	.rodata     start:0x00001930 end:0x00001978
+	.data       start:0x000D3D18 end:0x000D3DB0
 
 stg24D_100.c:
 	.text       start:0x00051048 end:0x00057854

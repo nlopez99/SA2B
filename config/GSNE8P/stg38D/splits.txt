@@ -380,9 +380,10 @@ EFFECT/ef_explosion.c:
 	.data       start:0x000E0060 end:0x000E00D8
 	.bss        start:0x00003038 end:0x00003040
 
-stg38D_93.c:
-	.text       start:0x0004C8CC end:0x0004D6AC
+ENEMY/e_gold.c:
+	.text       start:0x0004C890 end:0x0004D6AC
 	.rodata     start:0x00001848 end:0x00001890
+	.data       start:0x000E1F48 end:0x000E1FE0
 
 stg38D_94.c:
 	.text       start:0x0004D6E8 end:0x00053EF4

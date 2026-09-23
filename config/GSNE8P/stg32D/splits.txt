@@ -458,9 +458,10 @@ stg32D_112.c:
 	.text       start:0x0004C90C end:0x0004E328
 	.rodata     start:0x00001788 end:0x00001820
 
-stg32D_113.c:
-	.text       start:0x0004E7EC end:0x0004F5CC
+ENEMY/e_gold.c:
+	.text       start:0x0004E7B0 end:0x0004F5CC
 	.rodata     start:0x00001820 end:0x00001868
+	.data       start:0x000B7B98 end:0x000B7C30
 
 stg32D_114.c:
 	.text       start:0x0004F608 end:0x00054E98

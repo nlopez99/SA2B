@@ -392,9 +392,10 @@ stg43D_94.c:
 	.text       start:0x00047564 end:0x00048F80
 	.rodata     start:0x000015F8 end:0x00001690
 
-stg43D_95.c:
-	.text       start:0x00049444 end:0x0004A224
+ENEMY/e_gold.c:
+	.text       start:0x00049408 end:0x0004A224
 	.rodata     start:0x00001690 end:0x000016D8
+	.data       start:0x000A95A0 end:0x000A9638
 
 stg43D_96.c:
 	.text       start:0x0004A260 end:0x00050A6C

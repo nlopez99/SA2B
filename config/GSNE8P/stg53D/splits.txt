@@ -388,9 +388,10 @@ EFFECT/ef_explosion.c:
 	.data       start:0x0006E8E0 end:0x0006E958
 	.bss        start:0x00002DE0 end:0x00002DE8
 
-stg53D_95.c:
-	.text       start:0x0004415C end:0x00044F3C
+ENEMY/e_gold.c:
+	.text       start:0x00044120 end:0x00044F3C
 	.rodata     start:0x00001508 end:0x00001550
+	.data       start:0x000707C8 end:0x00070860
 
 stg53D_96.c:
 	.text       start:0x00044F78 end:0x00045EF4

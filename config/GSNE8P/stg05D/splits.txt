@@ -386,9 +386,10 @@ stg05D_95.c:
 	.text       start:0x00048AA0 end:0x0004A4BC
 	.rodata     start:0x00001638 end:0x000016D0
 
-stg05D_96.c:
-	.text       start:0x0004A980 end:0x0004B760
+ENEMY/e_gold.c:
+	.text       start:0x0004A944 end:0x0004B760
 	.rodata     start:0x000016D0 end:0x00001718
+	.data       start:0x000A0C18 end:0x000A0CB0
 
 stg05D_97.c:
 	.text       start:0x0004B7D4 end:0x0004D83C

@@ -419,9 +419,10 @@ stg52D_101.c:
 	.text       start:0x00053EBC end:0x000558D8
 	.rodata     start:0x00001808 end:0x000018A0
 
-stg52D_102.c:
-	.text       start:0x00055D9C end:0x00056B7C
+ENEMY/e_gold.c:
+	.text       start:0x00055D60 end:0x00056B7C
 	.rodata     start:0x000018A0 end:0x000018E8
+	.data       start:0x001D50B8 end:0x001D5150
 
 ENEMY/e_kumi.c:
 	.text       start:0x00056B7C end:0x000590C4

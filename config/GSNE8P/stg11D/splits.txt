@@ -404,9 +404,10 @@ stg11D_98.c:
 	.text       start:0x0004D568 end:0x0004EF84
 	.rodata     start:0x00001858 end:0x000018F0
 
-stg11D_99.c:
-	.text       start:0x0004F448 end:0x00050228
+ENEMY/e_gold.c:
+	.text       start:0x0004F40C end:0x00050228
 	.rodata     start:0x000018F0 end:0x00001938
+	.data       start:0x000B79D8 end:0x000B7A70
 
 ENEMY/e_kumi.c:
 	.text       start:0x00050228 end:0x00052770

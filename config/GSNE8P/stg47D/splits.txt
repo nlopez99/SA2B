@@ -428,9 +428,10 @@ stg47D_103.c:
 	.text       start:0x00049AFC end:0x0004B518
 	.rodata     start:0x00001728 end:0x000017C0
 
-stg47D_104.c:
-	.text       start:0x0004B9DC end:0x0004C7BC
+ENEMY/e_gold.c:
+	.text       start:0x0004B9A0 end:0x0004C7BC
 	.rodata     start:0x000017C0 end:0x00001808
+	.data       start:0x000E32C0 end:0x000E3358
 
 ENEMY/e_kumi.c:
 	.text       start:0x0004C7BC end:0x0004ED04

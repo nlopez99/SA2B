@@ -390,9 +390,10 @@ stg34D_95.c:
 	.text       start:0x0004B208 end:0x0004CC24
 	.rodata     start:0x00001738 end:0x000017D0
 
-stg34D_96.c:
-	.text       start:0x0004D0E8 end:0x0004DEC8
+ENEMY/e_gold.c:
+	.text       start:0x0004D0AC end:0x0004DEC8
 	.rodata     start:0x000017D0 end:0x00001818
+	.data       start:0x001B0A00 end:0x001B0A98
 
 stg34D_97.c:
 	.text       start:0x0004DF04 end:0x00054710

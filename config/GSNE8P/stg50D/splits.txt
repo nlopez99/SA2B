@@ -406,9 +406,10 @@ stg50D_99.c:
 	.text       start:0x0004AC2C end:0x0004C648
 	.rodata     start:0x00001738 end:0x000017D0
 
-stg50D_100.c:
-	.text       start:0x0004CB0C end:0x0004D8EC
+ENEMY/e_gold.c:
+	.text       start:0x0004CAD0 end:0x0004D8EC
 	.rodata     start:0x000017D0 end:0x00001818
+	.data       start:0x00086E98 end:0x00086F30
 
 stg50D_101.c:
 	.text       start:0x0004D928 end:0x000531B8

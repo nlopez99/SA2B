@@ -399,9 +399,10 @@ stg30D_97.c:
 	.text       start:0x00048F60 end:0x0004A97C
 	.rodata     start:0x00001608 end:0x000016A0
 
-stg30D_98.c:
-	.text       start:0x0004AE40 end:0x0004BC20
+ENEMY/e_gold.c:
+	.text       start:0x0004AE04 end:0x0004BC20
 	.rodata     start:0x000016A0 end:0x000016E8
+	.data       start:0x00117D78 end:0x00117E10
 
 stg30D_99.c:
 	.text       start:0x0004BC5C end:0x000514EC
