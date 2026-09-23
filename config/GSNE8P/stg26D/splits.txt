@@ -170,13 +170,9 @@ stg26D_40.c:
 	.text       start:0x000185E8 end:0x00018870
 	.rodata     start:0x000007A8 end:0x000007B0
 
-stg26D_41.c:
-	.text       start:0x0001897C end:0x000190B8
-	.rodata     start:0x000007B0 end:0x000007E0
-
-stg26D_42.c:
-	.text       start:0x000190B8 end:0x00019234
-	.rodata     start:0x000007E0 end:0x000007F8
+EFFECT/ef_dust.c:
+	.text       start:0x0001897C end:0x00019234
+	.rodata     start:0x000007B0 end:0x000007F8
 
 stg26D_43.c:
 	.text       start:0x00019234 end:0x000195D8

@@ -106,13 +106,9 @@ stg05D_24.c:
 	.text       start:0x00010718 end:0x000109A0
 	.rodata     start:0x00000500 end:0x00000508
 
-stg05D_25.c:
-	.text       start:0x00010AAC end:0x000111E8
-	.rodata     start:0x00000508 end:0x00000538
-
-stg05D_26.c:
-	.text       start:0x000111E8 end:0x00011364
-	.rodata     start:0x00000538 end:0x00000550
+EFFECT/ef_dust.c:
+	.text       start:0x00010AAC end:0x00011364
+	.rodata     start:0x00000508 end:0x00000550
 
 stg05D_27.c:
 	.text       start:0x00011364 end:0x00011708

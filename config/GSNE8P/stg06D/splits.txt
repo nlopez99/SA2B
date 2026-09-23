@@ -94,13 +94,9 @@ stg06D_21.c:
 	.text       start:0x0000FAFC end:0x0000FD84
 	.rodata     start:0x00000538 end:0x00000540
 
-stg06D_22.c:
-	.text       start:0x0000FE90 end:0x000105CC
-	.rodata     start:0x00000540 end:0x00000570
-
-stg06D_23.c:
-	.text       start:0x000105CC end:0x00010748
-	.rodata     start:0x00000570 end:0x00000588
+EFFECT/ef_dust.c:
+	.text       start:0x0000FE90 end:0x00010748
+	.rodata     start:0x00000540 end:0x00000588
 
 stg06D_24.c:
 	.text       start:0x00010748 end:0x00010AEC

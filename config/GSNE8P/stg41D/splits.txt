@@ -130,13 +130,9 @@ stg41D_30.c:
 	.text       start:0x0001319C end:0x00013424
 	.rodata     start:0x000006A0 end:0x000006A8
 
-stg41D_31.c:
-	.text       start:0x00013530 end:0x00013C6C
-	.rodata     start:0x000006A8 end:0x000006D8
-
-stg41D_32.c:
-	.text       start:0x00013C6C end:0x00013DE8
-	.rodata     start:0x000006D8 end:0x000006F0
+EFFECT/ef_dust.c:
+	.text       start:0x00013530 end:0x00013DE8
+	.rodata     start:0x000006A8 end:0x000006F0
 
 stg41D_33.c:
 	.text       start:0x00013DE8 end:0x0001418C

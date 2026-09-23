@@ -218,13 +218,9 @@ stg28D_52.c:
 	.text       start:0x0001C71C end:0x0001C9A4
 	.rodata     start:0x000009D0 end:0x000009D8
 
-stg28D_53.c:
-	.text       start:0x0001CAB0 end:0x0001D1EC
-	.rodata     start:0x000009D8 end:0x00000A08
-
-stg28D_54.c:
-	.text       start:0x0001D1EC end:0x0001D368
-	.rodata     start:0x00000A08 end:0x00000A20
+EFFECT/ef_dust.c:
+	.text       start:0x0001CAB0 end:0x0001D368
+	.rodata     start:0x000009D8 end:0x00000A20
 
 stg28D_55.c:
 	.text       start:0x0001D368 end:0x0001D70C

@@ -122,13 +122,9 @@ stg14D_28.c:
 	.text       start:0x00012138 end:0x000123C0
 	.rodata     start:0x000005B8 end:0x000005C0
 
-stg14D_29.c:
-	.text       start:0x000124CC end:0x00012C08
-	.rodata     start:0x000005C0 end:0x000005F0
-
-stg14D_30.c:
-	.text       start:0x00012C08 end:0x00012D84
-	.rodata     start:0x000005F0 end:0x00000608
+EFFECT/ef_dust.c:
+	.text       start:0x000124CC end:0x00012D84
+	.rodata     start:0x000005C0 end:0x00000608
 
 stg14D_31.c:
 	.text       start:0x00012D84 end:0x00013128

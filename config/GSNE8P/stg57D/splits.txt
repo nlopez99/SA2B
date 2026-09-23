@@ -138,13 +138,9 @@ stg57D_32.c:
 	.text       start:0x00016638 end:0x000168C0
 	.rodata     start:0x000006F8 end:0x00000700
 
-stg57D_33.c:
-	.text       start:0x000169CC end:0x00017108
-	.rodata     start:0x00000700 end:0x00000730
-
-stg57D_34.c:
-	.text       start:0x00017108 end:0x00017284
-	.rodata     start:0x00000730 end:0x00000748
+EFFECT/ef_dust.c:
+	.text       start:0x000169CC end:0x00017284
+	.rodata     start:0x00000700 end:0x00000748
 
 stg57D_35.c:
 	.text       start:0x00017284 end:0x00017628

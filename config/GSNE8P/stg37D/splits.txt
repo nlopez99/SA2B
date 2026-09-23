@@ -74,13 +74,9 @@ stg37D_16.c:
 	.text       start:0x00013FD4 end:0x0001425C
 	.rodata     start:0x000006D8 end:0x000006E0
 
-stg37D_17.c:
-	.text       start:0x00014368 end:0x00014AA4
-	.rodata     start:0x000006E0 end:0x00000710
-
-stg37D_18.c:
-	.text       start:0x00014AA4 end:0x00014C20
-	.rodata     start:0x00000710 end:0x00000728
+EFFECT/ef_dust.c:
+	.text       start:0x00014368 end:0x00014C20
+	.rodata     start:0x000006E0 end:0x00000728
 
 stg37D_19.c:
 	.text       start:0x00014C20 end:0x00014FC4

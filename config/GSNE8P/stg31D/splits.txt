@@ -86,13 +86,9 @@ stg31D_19.c:
 	.text       start:0x0000C684 end:0x0000C90C
 	.rodata     start:0x00000420 end:0x00000428
 
-stg31D_20.c:
-	.text       start:0x0000CA18 end:0x0000D154
-	.rodata     start:0x00000428 end:0x00000458
-
-stg31D_21.c:
-	.text       start:0x0000D154 end:0x0000D2D0
-	.rodata     start:0x00000458 end:0x00000470
+EFFECT/ef_dust.c:
+	.text       start:0x0000CA18 end:0x0000D2D0
+	.rodata     start:0x00000428 end:0x00000470
 
 stg31D_22.c:
 	.text       start:0x0000D2D0 end:0x0000D674

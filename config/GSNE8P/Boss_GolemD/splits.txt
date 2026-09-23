@@ -106,13 +106,9 @@ Boss_GolemD_24.c:
 	.text       start:0x0001726C end:0x000174F4
 	.rodata     start:0x00000E48 end:0x00000E50
 
-Boss_GolemD_25.c:
-	.text       start:0x00017600 end:0x00017D3C
-	.rodata     start:0x00000E50 end:0x00000E80
-
-Boss_GolemD_26.c:
-	.text       start:0x00017D3C end:0x00017EB8
-	.rodata     start:0x00000E80 end:0x00000E98
+EFFECT/ef_dust.c:
+	.text       start:0x00017600 end:0x00017EB8
+	.rodata     start:0x00000E50 end:0x00000E98
 
 Boss_GolemD_27.c:
 	.text       start:0x00017EB8 end:0x00017F1C

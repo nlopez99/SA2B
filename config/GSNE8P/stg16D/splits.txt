@@ -130,13 +130,9 @@ stg16D_30.c:
 	.text       start:0x00012F78 end:0x00013200
 	.rodata     start:0x00000698 end:0x000006A0
 
-stg16D_31.c:
-	.text       start:0x0001330C end:0x00013A48
-	.rodata     start:0x000006A0 end:0x000006D0
-
-stg16D_32.c:
-	.text       start:0x00013A48 end:0x00013BC4
-	.rodata     start:0x000006D0 end:0x000006E8
+EFFECT/ef_dust.c:
+	.text       start:0x0001330C end:0x00013BC4
+	.rodata     start:0x000006A0 end:0x000006E8
 
 stg16D_33.c:
 	.text       start:0x00013BC4 end:0x00013F68

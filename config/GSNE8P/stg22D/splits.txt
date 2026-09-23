@@ -150,13 +150,9 @@ stg22D_35.c:
 	.text       start:0x000189F8 end:0x00018C80
 	.rodata     start:0x00000898 end:0x000008A0
 
-stg22D_36.c:
-	.text       start:0x00018D8C end:0x000194C8
-	.rodata     start:0x000008A0 end:0x000008D0
-
-stg22D_37.c:
-	.text       start:0x000194C8 end:0x00019644
-	.rodata     start:0x000008D0 end:0x000008E8
+EFFECT/ef_dust.c:
+	.text       start:0x00018D8C end:0x00019644
+	.rodata     start:0x000008A0 end:0x000008E8
 
 stg22D_38.c:
 	.text       start:0x00019644 end:0x000199E8

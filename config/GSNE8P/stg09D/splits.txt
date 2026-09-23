@@ -130,13 +130,9 @@ stg09D_30.c:
 	.text       start:0x00010EE4 end:0x0001116C
 	.rodata     start:0x00000660 end:0x00000668
 
-stg09D_31.c:
-	.text       start:0x00011278 end:0x000119B4
-	.rodata     start:0x00000668 end:0x00000698
-
-stg09D_32.c:
-	.text       start:0x000119B4 end:0x00011B30
-	.rodata     start:0x00000698 end:0x000006B0
+EFFECT/ef_dust.c:
+	.text       start:0x00011278 end:0x00011B30
+	.rodata     start:0x00000668 end:0x000006B0
 
 stg09D_33.c:
 	.text       start:0x00011B30 end:0x00011ED4

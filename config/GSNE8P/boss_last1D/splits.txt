@@ -146,13 +146,9 @@ boss_last1D_34.c:
 	.text       start:0x0001750C end:0x00017794
 	.rodata     start:0x00000C88 end:0x00000C90
 
-boss_last1D_35.c:
-	.text       start:0x000178A0 end:0x00017FDC
-	.rodata     start:0x00000C90 end:0x00000CC0
-
-boss_last1D_36.c:
-	.text       start:0x00017FDC end:0x00018158
-	.rodata     start:0x00000CC0 end:0x00000CD8
+EFFECT/ef_dust.c:
+	.text       start:0x000178A0 end:0x00018158
+	.rodata     start:0x00000C90 end:0x00000CD8
 
 boss_last1D_37.c:
 	.text       start:0x00018158 end:0x000181BC

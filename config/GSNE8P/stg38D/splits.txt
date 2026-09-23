@@ -102,13 +102,9 @@ stg38D_23.c:
 	.text       start:0x00015C00 end:0x00015E88
 	.rodata     start:0x000006F8 end:0x00000700
 
-stg38D_24.c:
-	.text       start:0x00015F94 end:0x000166D0
-	.rodata     start:0x00000700 end:0x00000730
-
-stg38D_25.c:
-	.text       start:0x000166D0 end:0x0001684C
-	.rodata     start:0x00000730 end:0x00000748
+EFFECT/ef_dust.c:
+	.text       start:0x00015F94 end:0x0001684C
+	.rodata     start:0x00000700 end:0x00000748
 
 stg38D_26.c:
 	.text       start:0x0001684C end:0x00016BF0

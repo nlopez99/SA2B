@@ -106,13 +106,9 @@ stg55D_24.c:
 	.text       start:0x00012D74 end:0x00012FFC
 	.rodata     start:0x000006A0 end:0x000006A8
 
-stg55D_25.c:
-	.text       start:0x00013108 end:0x00013844
-	.rodata     start:0x000006A8 end:0x000006D8
-
-stg55D_26.c:
-	.text       start:0x00013844 end:0x000139C0
-	.rodata     start:0x000006D8 end:0x000006F0
+EFFECT/ef_dust.c:
+	.text       start:0x00013108 end:0x000139C0
+	.rodata     start:0x000006A8 end:0x000006F0
 
 stg55D_27.c:
 	.text       start:0x000139C0 end:0x00013D64

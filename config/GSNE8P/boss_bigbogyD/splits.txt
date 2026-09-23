@@ -66,13 +66,9 @@ boss_bigbogyD_14.c:
 	.text       start:0x00018B4C end:0x00018DD4
 	.rodata     start:0x00000DB0 end:0x00000DB8
 
-boss_bigbogyD_15.c:
-	.text       start:0x00018EE0 end:0x0001961C
-	.rodata     start:0x00000DB8 end:0x00000DE8
-
-boss_bigbogyD_16.c:
-	.text       start:0x0001961C end:0x00019798
-	.rodata     start:0x00000DE8 end:0x00000E00
+EFFECT/ef_dust.c:
+	.text       start:0x00018EE0 end:0x00019798
+	.rodata     start:0x00000DB8 end:0x00000E00
 
 boss_bigbogyD_17.c:
 	.text       start:0x00019798 end:0x000197FC

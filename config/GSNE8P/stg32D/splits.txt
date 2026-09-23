@@ -170,13 +170,9 @@ stg32D_40.c:
 	.text       start:0x00014DA8 end:0x00015030
 	.rodata     start:0x000006C8 end:0x000006D0
 
-stg32D_41.c:
-	.text       start:0x0001513C end:0x00015878
-	.rodata     start:0x000006D0 end:0x00000700
-
-stg32D_42.c:
-	.text       start:0x00015878 end:0x000159F4
-	.rodata     start:0x00000700 end:0x00000718
+EFFECT/ef_dust.c:
+	.text       start:0x0001513C end:0x000159F4
+	.rodata     start:0x000006D0 end:0x00000718
 
 stg32D_43.c:
 	.text       start:0x000159F4 end:0x00015D98

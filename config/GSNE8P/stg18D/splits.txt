@@ -170,13 +170,9 @@ stg18D_40.c:
 	.text       start:0x00017B20 end:0x00017DA8
 	.rodata     start:0x00000808 end:0x00000810
 
-stg18D_41.c:
-	.text       start:0x00017EB4 end:0x000185F0
-	.rodata     start:0x00000810 end:0x00000840
-
-stg18D_42.c:
-	.text       start:0x000185F0 end:0x0001876C
-	.rodata     start:0x00000840 end:0x00000858
+EFFECT/ef_dust.c:
+	.text       start:0x00017EB4 end:0x0001876C
+	.rodata     start:0x00000810 end:0x00000858
 
 stg18D_43.c:
 	.text       start:0x0001876C end:0x00018B10

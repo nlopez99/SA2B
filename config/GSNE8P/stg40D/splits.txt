@@ -106,13 +106,9 @@ stg40D_24.c:
 	.text       start:0x0000FE40 end:0x000100C8
 	.rodata     start:0x000004A8 end:0x000004B0
 
-stg40D_25.c:
-	.text       start:0x000101D4 end:0x00010910
-	.rodata     start:0x000004B0 end:0x000004E0
-
-stg40D_26.c:
-	.text       start:0x00010910 end:0x00010A8C
-	.rodata     start:0x000004E0 end:0x000004F8
+EFFECT/ef_dust.c:
+	.text       start:0x000101D4 end:0x00010A8C
+	.rodata     start:0x000004B0 end:0x000004F8
 
 stg40D_27.c:
 	.text       start:0x00010A8C end:0x00010E30

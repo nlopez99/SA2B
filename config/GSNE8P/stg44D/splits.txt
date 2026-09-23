@@ -146,13 +146,9 @@ stg44D_34.c:
 	.text       start:0x00013B30 end:0x00013DB8
 	.rodata     start:0x00000668 end:0x00000670
 
-stg44D_35.c:
-	.text       start:0x00013EC4 end:0x00014600
-	.rodata     start:0x00000670 end:0x000006A0
-
-stg44D_36.c:
-	.text       start:0x00014600 end:0x0001477C
-	.rodata     start:0x000006A0 end:0x000006B8
+EFFECT/ef_dust.c:
+	.text       start:0x00013EC4 end:0x0001477C
+	.rodata     start:0x00000670 end:0x000006B8
 
 stg44D_37.c:
 	.text       start:0x0001477C end:0x00014B20

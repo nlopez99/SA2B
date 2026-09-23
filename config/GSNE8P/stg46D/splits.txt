@@ -154,13 +154,9 @@ stg46D_36.c:
 	.text       start:0x00012058 end:0x000122E0
 	.rodata     start:0x00000680 end:0x00000688
 
-stg46D_37.c:
-	.text       start:0x000123EC end:0x00012B28
-	.rodata     start:0x00000688 end:0x000006B8
-
-stg46D_38.c:
-	.text       start:0x00012B28 end:0x00012CA4
-	.rodata     start:0x000006B8 end:0x000006D0
+EFFECT/ef_dust.c:
+	.text       start:0x000123EC end:0x00012CA4
+	.rodata     start:0x00000688 end:0x000006D0
 
 stg46D_39.c:
 	.text       start:0x00012CA4 end:0x00013048

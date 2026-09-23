@@ -142,13 +142,9 @@ stg03D_33.c:
 	.text       start:0x00015F64 end:0x000161EC
 	.rodata     start:0x000007C8 end:0x000007D0
 
-stg03D_34.c:
-	.text       start:0x000162F8 end:0x00016A34
-	.rodata     start:0x000007D0 end:0x00000800
-
-stg03D_35.c:
-	.text       start:0x00016A34 end:0x00016BB0
-	.rodata     start:0x00000800 end:0x00000818
+EFFECT/ef_dust.c:
+	.text       start:0x000162F8 end:0x00016BB0
+	.rodata     start:0x000007D0 end:0x00000818
 
 stg03D_36.c:
 	.text       start:0x00016BB0 end:0x00016F54

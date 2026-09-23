@@ -138,13 +138,9 @@ stg10D_32.c:
 	.text       start:0x00016544 end:0x000167CC
 	.rodata     start:0x00000700 end:0x00000708
 
-stg10D_33.c:
-	.text       start:0x000168D8 end:0x00017014
-	.rodata     start:0x00000708 end:0x00000738
-
-stg10D_34.c:
-	.text       start:0x00017014 end:0x00017190
-	.rodata     start:0x00000738 end:0x00000750
+EFFECT/ef_dust.c:
+	.text       start:0x000168D8 end:0x00017190
+	.rodata     start:0x00000708 end:0x00000750
 
 stg10D_35.c:
 	.text       start:0x00017190 end:0x00017534
