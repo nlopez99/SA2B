@@ -342,8 +342,8 @@ stg03D_85.c:
 	.text       start:0x0003FD34 end:0x0004056C
 	.rodata     start:0x00001340 end:0x00001378
 
-stg03D_86.c:
-	.text       start:0x00040758 end:0x00040A90
+OBJECT/o_solidbox.c:
+	.text       start:0x00040758 end:0x00040AFC
 	.rodata     start:0x00001378 end:0x000013A0
 
 OBJECT/o_spring.c:

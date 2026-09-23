@@ -129,6 +129,10 @@ OBJECT/o_rocketmissile.c:
 	.text       start:0x00022E08 end:0x00024B64
 	.rodata     start:0x00000A88 end:0x00000B18
 
+OBJECT/o_solidbox.c:
+	.text       start:0x00024D94 end:0x00025138
+	.rodata     start:0x00000B20 end:0x00000B48
+
 OBJECT/o_spring.c:
 	.text       start:0x00025138 end:0x0002625C
 	.rodata     start:0x00000B48 end:0x00000BA8

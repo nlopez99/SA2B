@@ -322,8 +322,8 @@ stg51D_79.c:
 	.text       start:0x0003B63C end:0x0003BE74
 	.rodata     start:0x00001190 end:0x000011C8
 
-stg51D_80.c:
-	.text       start:0x0003C060 end:0x0003C398
+OBJECT/o_solidbox.c:
+	.text       start:0x0003C060 end:0x0003C404
 	.rodata     start:0x000011C8 end:0x000011F0
 
 OBJECT/o_spring.c:

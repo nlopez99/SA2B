@@ -205,8 +205,8 @@ stg29D_50.c:
 	.text       start:0x000264C4 end:0x0002669C
 	.rodata     start:0x00000BC0 end:0x00000BC8
 
-stg29D_51.c:
-	.text       start:0x0002669C end:0x000269D4
+OBJECT/o_solidbox.c:
+	.text       start:0x0002669C end:0x00026A40
 	.rodata     start:0x00000BC8 end:0x00000BF0
 
 OBJECT/o_spring.c:

@@ -326,8 +326,8 @@ stg24D_80.c:
 	.text       start:0x000425BC end:0x00042DF4
 	.rodata     start:0x000013C8 end:0x00001400
 
-stg24D_81.c:
-	.text       start:0x00042FE0 end:0x00043318
+OBJECT/o_solidbox.c:
+	.text       start:0x00042FE0 end:0x00043384
 	.rodata     start:0x00001400 end:0x00001428
 
 OBJECT/o_spring.c:

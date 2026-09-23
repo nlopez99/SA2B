@@ -338,8 +338,8 @@ stg57D_84.c:
 	.text       start:0x0003FF74 end:0x000407AC
 	.rodata     start:0x00001250 end:0x00001288
 
-stg57D_85.c:
-	.text       start:0x00040998 end:0x00040CD0
+OBJECT/o_solidbox.c:
+	.text       start:0x00040998 end:0x00040D3C
 	.rodata     start:0x00001288 end:0x000012B0
 
 OBJECT/o_spring.c:

@@ -378,8 +378,8 @@ stg32D_94.c:
 	.text       start:0x00040B7C end:0x000413B4
 	.rodata     start:0x000012B8 end:0x000012F0
 
-stg32D_95.c:
-	.text       start:0x000415A0 end:0x000418D8
+OBJECT/o_solidbox.c:
+	.text       start:0x000415A0 end:0x00041944
 	.rodata     start:0x000012F0 end:0x00001318
 
 OBJECT/o_spring.c:

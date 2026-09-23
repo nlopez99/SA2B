@@ -338,8 +338,8 @@ stg10D_84.c:
 	.text       start:0x0003FE80 end:0x000406B8
 	.rodata     start:0x00001258 end:0x00001290
 
-stg10D_85.c:
-	.text       start:0x000408A4 end:0x00040BDC
+OBJECT/o_solidbox.c:
+	.text       start:0x000408A4 end:0x00040C48
 	.rodata     start:0x00001290 end:0x000012B8
 
 OBJECT/o_spring.c:

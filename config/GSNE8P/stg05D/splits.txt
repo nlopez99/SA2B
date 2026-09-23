@@ -302,8 +302,8 @@ stg05D_76.c:
 	.text       start:0x0003B170 end:0x0003BB14
 	.rodata     start:0x000010B0 end:0x000010F0
 
-stg05D_77.c:
-	.text       start:0x0003BB14 end:0x0003BE4C
+OBJECT/o_solidbox.c:
+	.text       start:0x0003BB14 end:0x0003BEB8
 	.rodata     start:0x000010F0 end:0x00001118
 
 OBJECT/o_spring.c:

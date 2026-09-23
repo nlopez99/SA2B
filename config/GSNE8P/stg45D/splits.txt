@@ -191,8 +191,8 @@ OBJECT/o_rocketmissile.c:
 	.text       start:0x0001DA8C end:0x0001F7E8
 	.rodata     start:0x00000990 end:0x00000A20
 
-stg45D_48.c:
-	.text       start:0x0001F808 end:0x0001FB40
+OBJECT/o_solidbox.c:
+	.text       start:0x0001F808 end:0x0001FBAC
 	.rodata     start:0x00000A20 end:0x00000A48
 
 OBJECT/o_spring.c:

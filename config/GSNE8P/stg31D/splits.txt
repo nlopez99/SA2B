@@ -286,8 +286,8 @@ stg31D_71.c:
 	.text       start:0x00035DD4 end:0x0003660C
 	.rodata     start:0x00000F68 end:0x00000FA0
 
-stg31D_72.c:
-	.text       start:0x000367F8 end:0x00036B30
+OBJECT/o_solidbox.c:
+	.text       start:0x000367F8 end:0x00036B9C
 	.rodata     start:0x00000FA0 end:0x00000FC8
 
 OBJECT/o_spring.c:

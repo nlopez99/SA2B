@@ -290,8 +290,8 @@ stg06D_72.c:
 	.text       start:0x00039198 end:0x00039370
 	.rodata     start:0x00001070 end:0x00001078
 
-stg06D_73.c:
-	.text       start:0x0003955C end:0x00039894
+OBJECT/o_solidbox.c:
+	.text       start:0x0003955C end:0x00039900
 	.rodata     start:0x00001078 end:0x000010A0
 
 OBJECT/o_spring.c:

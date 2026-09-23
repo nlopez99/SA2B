@@ -314,8 +314,8 @@ stg43D_77.c:
 	.text       start:0x0003BD40 end:0x0003C578
 	.rodata     start:0x00001138 end:0x00001170
 
-stg43D_78.c:
-	.text       start:0x0003C578 end:0x0003C8B0
+OBJECT/o_solidbox.c:
+	.text       start:0x0003C578 end:0x0003C91C
 	.rodata     start:0x00001170 end:0x00001198
 
 OBJECT/o_spring.c:

@@ -338,7 +338,7 @@ stg13D_83.c:
 	.text       start:0x000467F0 end:0x00047028
 	.rodata     start:0x000012A8 end:0x000012E0
 
-stg13D_84.c:
+OBJECT/o_solidbox.c:
 	.text       start:0x00047214 end:0x000475B8
 	.rodata     start:0x000012E0 end:0x00001308
 

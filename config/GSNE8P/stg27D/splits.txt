@@ -310,8 +310,8 @@ stg27D_77.c:
 	.text       start:0x0003D0C4 end:0x0003D8FC
 	.rodata     start:0x00001200 end:0x00001238
 
-stg27D_78.c:
-	.text       start:0x0003DAE8 end:0x0003DE20
+OBJECT/o_solidbox.c:
+	.text       start:0x0003DAE8 end:0x0003DE8C
 	.rodata     start:0x00001238 end:0x00001260
 
 OBJECT/o_spring.c:

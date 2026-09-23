@@ -310,8 +310,8 @@ stg17D_76.c:
 	.text       start:0x00043C78 end:0x000444B0
 	.rodata     start:0x000012B0 end:0x000012E8
 
-stg17D_77.c:
-	.text       start:0x0004469C end:0x000449D4
+OBJECT/o_solidbox.c:
+	.text       start:0x0004469C end:0x00044A40
 	.rodata     start:0x000012E8 end:0x00001310
 
 OBJECT/o_spring.c:

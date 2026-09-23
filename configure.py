@@ -677,6 +677,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_itembox.c"),
             Object(Matching, "OBJECT/o_modmod.c"),
             Object(Matching, "OBJECT/o_wsmmls.c"),
+            Object(Matching, "OBJECT/o_solidbox.c"),
             Object(Matching, "OBJECT/o_itemboxair.c"),
             Object(Matching, "OBJECT/o_savepoint.c"),
             Object(Matching, "OBJECT/o_goalring.c"),

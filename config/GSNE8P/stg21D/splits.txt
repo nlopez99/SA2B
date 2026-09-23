@@ -374,8 +374,8 @@ stg21D_92.c:
 	.text       start:0x0003D004 end:0x0003D83C
 	.rodata     start:0x000011C8 end:0x00001200
 
-stg21D_93.c:
-	.text       start:0x0003DA28 end:0x0003DD60
+OBJECT/o_solidbox.c:
+	.text       start:0x0003DA28 end:0x0003DDCC
 	.rodata     start:0x00001200 end:0x00001228
 
 OBJECT/o_spring.c:

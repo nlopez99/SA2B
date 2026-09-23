@@ -276,8 +276,8 @@ stg35D_67.c:
 	.text       start:0x000445FC end:0x00044E34
 	.rodata     start:0x000013D8 end:0x00001410
 
-stg35D_68.c:
-	.text       start:0x00045020 end:0x00045358
+OBJECT/o_solidbox.c:
+	.text       start:0x00045020 end:0x000453C4
 	.rodata     start:0x00001410 end:0x00001438
 
 OBJECT/o_spring.c:

@@ -304,8 +304,8 @@ stg38D_75.c:
 	.text       start:0x0003EFB4 end:0x0003F7EC
 	.rodata     start:0x000012D0 end:0x00001308
 
-stg38D_76.c:
-	.text       start:0x0003F9D8 end:0x0003FD10
+OBJECT/o_solidbox.c:
+	.text       start:0x0003F9D8 end:0x0003FD7C
 	.rodata     start:0x00001308 end:0x00001330
 
 OBJECT/o_spring.c:
