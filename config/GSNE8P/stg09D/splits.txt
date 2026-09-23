@@ -170,9 +170,10 @@ EFFECT/ef_dirt.c:
 	.text       start:0x000145D0 end:0x0001478C
 	.rodata     start:0x000007C8 end:0x000007F0
 
-stg09D_41.c:
+EFFECT/ef_wphole.c:
 	.text       start:0x0001478C end:0x000157CC
 	.rodata     start:0x000007F0 end:0x00000840
+	.data       start:0x0004C770 end:0x0004C7F8
 
 OBJECT/o_3spring.c:
 	.text       start:0x00015B0C end:0x00015FA8

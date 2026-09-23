@@ -697,6 +697,7 @@ config.libs = [
             Object(Matching, "EFFECT/ef_splash.c"),
             Object(Matching, "EFFECT/ef_spspark.c"),
             Object(Matching, "EFFECT/ef_dirt.c"),
+            Object(Matching, "EFFECT/ef_wphole.c"),
             Object(Matching, "EFFECT/ef_explosion.c"),
             Object(Matching, "EFFECT/ef_flame.c"),
             Object(Matching, "field.c"),

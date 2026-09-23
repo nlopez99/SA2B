@@ -158,9 +158,10 @@ EFFECT/ef_dirt.c:
 	.text       start:0x00012D08 end:0x00012EC4
 	.rodata     start:0x00000680 end:0x000006A8
 
-stg53D_38.c:
+EFFECT/ef_wphole.c:
 	.text       start:0x00012EC4 end:0x00013F04
 	.rodata     start:0x000006A8 end:0x000006F8
+	.data       start:0x00023F00 end:0x00023F88
 
 OBJECT/o_3spring.c:
 	.text       start:0x000140A8 end:0x00014544

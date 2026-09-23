@@ -22,7 +22,7 @@ extern void fn_800E29BC(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl);
 extern void _rename_CreateObjDust1(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl);
 extern void CreateFlame(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl);
 extern void _rename_CreateSmoke(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl);
-extern void _rename_CreateSikake(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl);
+extern void CreateWpHoleParticle(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl);
 extern void CreateFlash(Float x, Float y, Float z, Float scl);
 
 extern NJS_TEXLIST lbl_803AD5A0;
@@ -35,7 +35,7 @@ extern NJS_TEXLIST _rename_snowpuff_texlist;
 extern NJS_TEXLIST _rename_dirt_texlist;
 extern NJS_TEXLIST _rename_flame_texlist;
 extern NJS_TEXLIST _rename_flash_texlist;
-extern NJS_TEXLIST _rename_sikake_texlist;
+extern NJS_TEXLIST wphole_texlist;
 
 // ^ extern
 // v in this file
@@ -56,7 +56,7 @@ NJS_TEXLIST *effobj0_texlists[] = {
     &spspark_texlist,
     &_rename_flame_texlist,
     &_rename_flash_texlist,
-    &_rename_sikake_texlist,
+    &wphole_texlist,
     NULL,
 };
 
@@ -157,7 +157,7 @@ static void ObjectEffObj0Exec(task *tp) {
                         scl * (0.9f + 0.2f * njRandom()));
     break;
   case 16:
-    _rename_CreateSikake(&twp->pos, &v, scl * (0.9f + 0.2f * njRandom()));
+    CreateWpHoleParticle(&twp->pos, &v, scl * (0.9f + 0.2f * njRandom()));
     break;
   case 17:
     CreateSnowPuffColor(&twp->pos, &v, scl * (0.9f + 0.2f * njRandom()), 0.0f);

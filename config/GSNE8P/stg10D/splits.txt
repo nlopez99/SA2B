@@ -182,9 +182,10 @@ stg10D_43.c:
 	.text       start:0x0001A23C end:0x0001A524
 	.rodata     start:0x000008A0 end:0x000008C0
 
-stg10D_44.c:
+EFFECT/ef_wphole.c:
 	.text       start:0x0001A538 end:0x0001B578
 	.rodata     start:0x000008C0 end:0x00000910
+	.data       start:0x0015C5D8 end:0x0015C660
 
 OBJECT/o_3spring.c:
 	.text       start:0x0001B71C end:0x0001BBB8

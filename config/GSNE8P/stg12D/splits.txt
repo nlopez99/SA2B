@@ -166,9 +166,10 @@ stg12D_38.c:
 	.text       start:0x00015644 end:0x0001592C
 	.rodata     start:0x000007D8 end:0x000007F8
 
-stg12D_39.c:
+EFFECT/ef_wphole.c:
 	.text       start:0x00015940 end:0x00016980
 	.rodata     start:0x000007F8 end:0x00000848
+	.data       start:0x000542B0 end:0x00054338
 
 OBJECT/o_3spring.c:
 	.text       start:0x00016CC0 end:0x0001715C

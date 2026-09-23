@@ -17,7 +17,7 @@ extern void _rename_SetConditionFlag(task *tp, Uint8 smode);
 // the two halves of the executor are not quite symmetric, as in the original
 extern Sint32 _rename_GetKnuDaiMode(Sint32 no);
 extern Sint32 _rename_GetKnuDaiPos(Sint32 no, NJS_POINT3 *pos);
-extern task *_rename_CreateWpHole(NJS_POINT3 *pos, Float scale, Sint32 num,
+extern task *CreateWpHole(NJS_POINT3 *pos, Float scale, Sint32 num,
                                   Uint8 flag, Float alpha, task **ptp);
 
 extern Float _rename_wphole_size;  // 10.0f
@@ -69,7 +69,7 @@ typedef struct kdwarpholewk // sizeof=0x14
         _rename_wphole_alpha * (GetWork(tp)->size / _rename_wphole_size);      \
     GetWork(tp)->hole0->work.f = GetWork(tp)->ratio;                           \
   } else {                                                                     \
-    _rename_CreateWpHole(&twp->pos, GetWork(tp)->size * _rename_wphole_scale,  \
+    CreateWpHole(&twp->pos, GetWork(tp)->size * _rename_wphole_scale,  \
                          0xFE, 0, _rename_wphole_alpha,                        \
                          &GetWork(tp)->hole0);                                 \
   }                                                                            \
@@ -81,7 +81,7 @@ typedef struct kdwarpholewk // sizeof=0x14
     GetWork(tp)->hole1->work.f = GetWork(tp)->ratio;                           \
   } else {                                                                     \
     task *htp =                                                                \
-        _rename_CreateWpHole(&twp->scl, GetWork(tp)->size * _rename_wphole_scale, \
+        CreateWpHole(&twp->scl, GetWork(tp)->size * _rename_wphole_scale, \
                              0xFE, 1, _rename_wphole_alpha,                    \
                              &GetWork(tp)->hole1);                             \
     if (htp != NULL) {                                                         \

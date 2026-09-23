@@ -242,9 +242,10 @@ stg25D_58.c:
 	.text       start:0x000205C4 end:0x000208AC
 	.rodata     start:0x00000B10 end:0x00000B30
 
-stg25D_59.c:
+EFFECT/ef_wphole.c:
 	.text       start:0x000208C0 end:0x00021900
 	.rodata     start:0x00000B30 end:0x00000B80
+	.data       start:0x000D3A20 end:0x000D3AA8
 
 OBJECT/o_3spring.c:
 	.text       start:0x00021C40 end:0x000220DC

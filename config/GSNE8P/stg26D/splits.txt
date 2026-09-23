@@ -212,9 +212,10 @@ stg26D_51.c:
 	.text       start:0x0001BD80 end:0x0001C068
 	.rodata     start:0x00000938 end:0x00000958
 
-stg26D_52.c:
+EFFECT/ef_wphole.c:
 	.text       start:0x0001C07C end:0x0001D0BC
 	.rodata     start:0x00000958 end:0x000009A8
+	.data       start:0x0009C1B8 end:0x0009C240
 
 OBJECT/o_3spring.c:
 	.text       start:0x0001D3FC end:0x0001D898

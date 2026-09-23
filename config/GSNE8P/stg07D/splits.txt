@@ -176,9 +176,10 @@ stg07D_41.c:
 	.text       start:0x00016CD4 end:0x00016FBC
 	.rodata     start:0x000007D8 end:0x000007F8
 
-stg07D_42.c:
+EFFECT/ef_wphole.c:
 	.text       start:0x00016FD0 end:0x00018010
 	.rodata     start:0x000007F8 end:0x00000848
+	.data       start:0x00048730 end:0x000487B8
 
 OBJECT/o_3spring.c:
 	.text       start:0x00018350 end:0x000187EC
