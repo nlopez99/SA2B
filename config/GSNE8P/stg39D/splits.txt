@@ -214,13 +214,10 @@ OBJECT/o_itemboxair.c:
 	.rodata     start:0x00000AC0 end:0x00000B00
 	.data       start:0x000549B8 end:0x00054A38
 
-stg39D_54.c:
-	.text       start:0x00024E8C end:0x000258EC
-	.rodata     start:0x00000B00 end:0x00000B40
-
-stg39D_55.c:
-	.text       start:0x00025960 end:0x00025B48
-	.rodata     start:0x00000B40 end:0x00000B50
+OBJECT/o_itemboxballoon.c:
+	.text       start:0x00024D48 end:0x00025B48
+	.rodata     start:0x00000B00 end:0x00000B50
+	.data       start:0x00054A38 end:0x000553A0
 
 stg39D_56.c:
 	.text       start:0x00026168 end:0x00026AD0
