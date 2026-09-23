@@ -158,13 +158,9 @@ stg43D_37.c:
 	.text       start:0x00016194 end:0x000171D4
 	.rodata     start:0x000007A0 end:0x000007F0
 
-stg43D_38.c:
-	.text       start:0x00017514 end:0x000176AC
-	.rodata     start:0x000007F0 end:0x00000808
-
-stg43D_39.c:
-	.text       start:0x000176AC end:0x000179B0
-	.rodata     start:0x00000808 end:0x00000810
+OBJECT/o_3spring.c:
+	.text       start:0x00017514 end:0x000179B0
+	.rodata     start:0x000007F0 end:0x00000810
 
 stg43D_40.c:
 	.text       start:0x000179B0 end:0x00017E38

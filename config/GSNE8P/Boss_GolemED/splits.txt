@@ -134,13 +134,9 @@ Boss_GolemED_31.c:
 	.text       start:0x00019DF0 end:0x0001A1A0
 	.rodata     start:0x00000F30 end:0x00000F60
 
-Boss_GolemED_32.c:
-	.text       start:0x0001A344 end:0x0001A4DC
-	.rodata     start:0x00000F60 end:0x00000F78
-
-Boss_GolemED_33.c:
-	.text       start:0x0001A4DC end:0x0001A7E0
-	.rodata     start:0x00000F78 end:0x00000F80
+OBJECT/o_3spring.c:
+	.text       start:0x0001A344 end:0x0001A7E0
+	.rodata     start:0x00000F60 end:0x00000F80
 
 Boss_GolemED_34.c:
 	.text       start:0x0001A7E0 end:0x0001AC68

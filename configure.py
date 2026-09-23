@@ -671,6 +671,7 @@ config.libs = [
             Object(Matching, "stg13_cityescape/o_ce_board_col.c"),
             Object(NonMatching, "stg13_cityescape/o_ce_sobj.c"),
             Object(NonMatching, "stg13_cityescape/cityescape.c"),
+            Object(Matching, "OBJECT/o_3spring.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

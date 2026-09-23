@@ -6,6 +6,10 @@ Sections:
 	.data       type:data align:8
 	.bss        type:bss align:8
 
+OBJECT/o_3spring.c:
+	.text       start:0x0000F260 end:0x0000F6FC
+	.rodata     start:0x00000538 end:0x00000558
+
 OBJECT/o_ring.c:
 	.text       start:0x0001EFD8 end:0x00021228
 	.rodata     start:0x00000958 end:0x000009F0

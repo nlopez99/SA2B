@@ -126,13 +126,9 @@ stg35D_29.c:
 	.text       start:0x000218C4 end:0x00022904
 	.rodata     start:0x00000A98 end:0x00000AE8
 
-stg35D_30.c:
-	.text       start:0x00022AA8 end:0x00022C40
-	.rodata     start:0x00000AE8 end:0x00000B00
-
-stg35D_31.c:
-	.text       start:0x00022C40 end:0x00022F44
-	.rodata     start:0x00000B00 end:0x00000B08
+OBJECT/o_3spring.c:
+	.text       start:0x00022AA8 end:0x00022F44
+	.rodata     start:0x00000AE8 end:0x00000B08
 
 stg35D_32.c:
 	.text       start:0x00022F44 end:0x000233CC

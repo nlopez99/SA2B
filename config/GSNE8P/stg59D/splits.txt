@@ -234,13 +234,9 @@ stg59D_56.c:
 	.text       start:0x000208D8 end:0x00021918
 	.rodata     start:0x00000B30 end:0x00000B80
 
-stg59D_57.c:
-	.text       start:0x00021C58 end:0x00021DF0
-	.rodata     start:0x00000B80 end:0x00000B98
-
-stg59D_58.c:
-	.text       start:0x00021DF0 end:0x000220F4
-	.rodata     start:0x00000B98 end:0x00000BA0
+OBJECT/o_3spring.c:
+	.text       start:0x00021C58 end:0x000220F4
+	.rodata     start:0x00000B80 end:0x00000BA0
 
 stg59D_59.c:
 	.text       start:0x000220F4 end:0x0002257C

@@ -218,13 +218,9 @@ stg18D_52.c:
 	.text       start:0x0001B5B4 end:0x0001C5F4
 	.rodata     start:0x000009B8 end:0x00000A08
 
-stg18D_53.c:
-	.text       start:0x0001C934 end:0x0001CACC
-	.rodata     start:0x00000A08 end:0x00000A20
-
-stg18D_54.c:
-	.text       start:0x0001CACC end:0x0001CDD0
-	.rodata     start:0x00000A20 end:0x00000A28
+OBJECT/o_3spring.c:
+	.text       start:0x0001C934 end:0x0001CDD0
+	.rodata     start:0x00000A08 end:0x00000A28
 
 stg18D_55.c:
 	.text       start:0x0001CDD0 end:0x0001D258

@@ -150,13 +150,9 @@ stg55D_35.c:
 	.text       start:0x0001661C end:0x0001765C
 	.rodata     start:0x00000830 end:0x00000880
 
-stg55D_36.c:
-	.text       start:0x0001799C end:0x00017B34
-	.rodata     start:0x00000880 end:0x00000898
-
-stg55D_37.c:
-	.text       start:0x00017B34 end:0x00017E38
-	.rodata     start:0x00000898 end:0x000008A0
+OBJECT/o_3spring.c:
+	.text       start:0x0001799C end:0x00017E38
+	.rodata     start:0x00000880 end:0x000008A0
 
 stg55D_38.c:
 	.text       start:0x00017E38 end:0x000182C0

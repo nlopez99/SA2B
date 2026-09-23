@@ -190,13 +190,9 @@ stg44D_45.c:
 	.text       start:0x000172C8 end:0x00018308
 	.rodata     start:0x000007F8 end:0x00000848
 
-stg44D_46.c:
-	.text       start:0x00018648 end:0x000187E0
-	.rodata     start:0x00000848 end:0x00000860
-
-stg44D_47.c:
-	.text       start:0x000187E0 end:0x00018AE4
-	.rodata     start:0x00000860 end:0x00000868
+OBJECT/o_3spring.c:
+	.text       start:0x00018648 end:0x00018AE4
+	.rodata     start:0x00000848 end:0x00000868
 
 stg44D_48.c:
 	.text       start:0x00018AE4 end:0x00018F6C

@@ -134,13 +134,9 @@ stg31D_31.c:
 	.text       start:0x00010228 end:0x00011268
 	.rodata     start:0x000005D0 end:0x00000620
 
-stg31D_32.c:
-	.text       start:0x000115A8 end:0x00011740
-	.rodata     start:0x00000620 end:0x00000638
-
-stg31D_33.c:
-	.text       start:0x00011740 end:0x00011A44
-	.rodata     start:0x00000638 end:0x00000640
+OBJECT/o_3spring.c:
+	.text       start:0x000115A8 end:0x00011A44
+	.rodata     start:0x00000620 end:0x00000640
 
 stg31D_34.c:
 	.text       start:0x00011A44 end:0x00011ECC

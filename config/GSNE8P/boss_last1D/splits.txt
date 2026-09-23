@@ -194,13 +194,9 @@ boss_last1D_46.c:
 	.text       start:0x0001AEF0 end:0x0001B2A0
 	.rodata     start:0x00000E38 end:0x00000E68
 
-boss_last1D_47.c:
-	.text       start:0x0001B444 end:0x0001B5DC
-	.rodata     start:0x00000E68 end:0x00000E80
-
-boss_last1D_48.c:
-	.text       start:0x0001B5DC end:0x0001B8E0
-	.rodata     start:0x00000E80 end:0x00000E88
+OBJECT/o_3spring.c:
+	.text       start:0x0001B444 end:0x0001B8E0
+	.rodata     start:0x00000E68 end:0x00000E88
 
 boss_last1D_49.c:
 	.text       start:0x0001B8E0 end:0x0001BD68

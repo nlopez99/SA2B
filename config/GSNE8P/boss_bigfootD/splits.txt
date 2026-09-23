@@ -126,13 +126,9 @@ boss_bigfootD_29.c:
 	.text       start:0x00019F58 end:0x0001A308
 	.rodata     start:0x00000AD0 end:0x00000B00
 
-boss_bigfootD_30.c:
-	.text       start:0x0001A4AC end:0x0001A644
-	.rodata     start:0x00000B00 end:0x00000B18
-
-boss_bigfootD_31.c:
-	.text       start:0x0001A644 end:0x0001A948
-	.rodata     start:0x00000B18 end:0x00000B20
+OBJECT/o_3spring.c:
+	.text       start:0x0001A4AC end:0x0001A948
+	.rodata     start:0x00000B00 end:0x00000B20
 
 boss_bigfootD_32.c:
 	.text       start:0x0001A948 end:0x0001ADD0

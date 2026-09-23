@@ -170,13 +170,9 @@ stg24D_40.c:
 	.text       start:0x0001C858 end:0x0001D898
 	.rodata     start:0x00000A30 end:0x00000A80
 
-stg24D_41.c:
-	.text       start:0x0001DBD8 end:0x0001DD70
-	.rodata     start:0x00000A80 end:0x00000A98
-
-stg24D_42.c:
-	.text       start:0x0001DD70 end:0x0001E074
-	.rodata     start:0x00000A98 end:0x00000AA0
+OBJECT/o_3spring.c:
+	.text       start:0x0001DBD8 end:0x0001E074
+	.rodata     start:0x00000A80 end:0x00000AA0
 
 stg24D_43.c:
 	.text       start:0x0001E074 end:0x0001E4FC

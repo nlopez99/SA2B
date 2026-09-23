@@ -105,7 +105,7 @@ Sections:
 54d_24.c:
 	.text       start:0x0000E9D4 end:0x0000EB78
 
-54d_25.c:
+OBJECT/o_3spring.c:
 	.text       start:0x0000EB78 end:0x0000F014
 	.rodata     start:0x00000568 end:0x00000588
 

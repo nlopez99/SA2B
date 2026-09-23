@@ -246,13 +246,9 @@ stg25D_59.c:
 	.text       start:0x000208C0 end:0x00021900
 	.rodata     start:0x00000B30 end:0x00000B80
 
-stg25D_60.c:
-	.text       start:0x00021C40 end:0x00021DD8
-	.rodata     start:0x00000B80 end:0x00000B98
-
-stg25D_61.c:
-	.text       start:0x00021DD8 end:0x000220DC
-	.rodata     start:0x00000B98 end:0x00000BA0
+OBJECT/o_3spring.c:
+	.text       start:0x00021C40 end:0x000220DC
+	.rodata     start:0x00000B80 end:0x00000BA0
 
 stg25D_62.c:
 	.text       start:0x000220DC end:0x00022564

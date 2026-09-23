@@ -202,13 +202,9 @@ stg23D_48.c:
 	.text       start:0x00017CA0 end:0x00018CE0
 	.rodata     start:0x000008E8 end:0x00000938
 
-stg23D_49.c:
-	.text       start:0x00018E84 end:0x0001901C
-	.rodata     start:0x00000938 end:0x00000950
-
-stg23D_50.c:
-	.text       start:0x0001901C end:0x00019320
-	.rodata     start:0x00000950 end:0x00000958
+OBJECT/o_3spring.c:
+	.text       start:0x00018E84 end:0x00019320
+	.rodata     start:0x00000938 end:0x00000958
 
 stg23D_51.c:
 	.text       start:0x00019320 end:0x000197A8

@@ -114,13 +114,9 @@ stg33D_26.c:
 	.text       start:0x0000FE5C end:0x0001020C
 	.rodata     start:0x00000558 end:0x00000588
 
-stg33D_27.c:
-	.text       start:0x000103B0 end:0x00010548
-	.rodata     start:0x00000588 end:0x000005A0
-
-stg33D_28.c:
-	.text       start:0x00010548 end:0x0001084C
-	.rodata     start:0x000005A0 end:0x000005A8
+OBJECT/o_3spring.c:
+	.text       start:0x000103B0 end:0x0001084C
+	.rodata     start:0x00000588 end:0x000005A8
 
 stg33D_29.c:
 	.text       start:0x0001084C end:0x00010CD4

@@ -162,13 +162,9 @@ stg50D_38.c:
 	.text       start:0x00015A58 end:0x00016A98
 	.rodata     start:0x000007B0 end:0x00000800
 
-stg50D_39.c:
-	.text       start:0x00016DD8 end:0x00016F70
-	.rodata     start:0x00000800 end:0x00000818
-
-stg50D_40.c:
-	.text       start:0x00016F70 end:0x00017274
-	.rodata     start:0x00000818 end:0x00000820
+OBJECT/o_3spring.c:
+	.text       start:0x00016DD8 end:0x00017274
+	.rodata     start:0x00000800 end:0x00000820
 
 stg50D_41.c:
 	.text       start:0x00017274 end:0x000176FC

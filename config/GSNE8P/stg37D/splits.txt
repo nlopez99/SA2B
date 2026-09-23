@@ -122,13 +122,9 @@ stg37D_28.c:
 	.text       start:0x00017A68 end:0x00018AA8
 	.rodata     start:0x00000888 end:0x000008D8
 
-stg37D_29.c:
-	.text       start:0x00018C4C end:0x00018DE4
-	.rodata     start:0x000008D8 end:0x000008F0
-
-stg37D_30.c:
-	.text       start:0x00018DE4 end:0x000190E8
-	.rodata     start:0x000008F0 end:0x000008F8
+OBJECT/o_3spring.c:
+	.text       start:0x00018C4C end:0x000190E8
+	.rodata     start:0x000008D8 end:0x000008F8
 
 stg37D_31.c:
 	.text       start:0x000190E8 end:0x00019570

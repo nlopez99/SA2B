@@ -170,13 +170,9 @@ stg58D_40.c:
 	.text       start:0x0001A3D4 end:0x0001B414
 	.rodata     start:0x00000948 end:0x00000998
 
-stg58D_41.c:
-	.text       start:0x0001B754 end:0x0001B8EC
-	.rodata     start:0x00000998 end:0x000009B0
-
-stg58D_42.c:
-	.text       start:0x0001B8EC end:0x0001BBF0
-	.rodata     start:0x000009B0 end:0x000009B8
+OBJECT/o_3spring.c:
+	.text       start:0x0001B754 end:0x0001BBF0
+	.rodata     start:0x00000998 end:0x000009B8
 
 stg58D_43.c:
 	.text       start:0x0001BBF0 end:0x0001C078

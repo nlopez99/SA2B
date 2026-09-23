@@ -202,13 +202,9 @@ stg48D_48.c:
 	.text       start:0x00016F54 end:0x00017F94
 	.rodata     start:0x00000848 end:0x00000898
 
-stg48D_49.c:
-	.text       start:0x00017F94 end:0x0001812C
-	.rodata     start:0x00000898 end:0x000008B0
-
-stg48D_50.c:
-	.text       start:0x0001812C end:0x00018430
-	.rodata     start:0x000008B0 end:0x000008B8
+OBJECT/o_3spring.c:
+	.text       start:0x00017F94 end:0x00018430
+	.rodata     start:0x00000898 end:0x000008B8
 
 stg48D_51.c:
 	.text       start:0x00018430 end:0x000188B8

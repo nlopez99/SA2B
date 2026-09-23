@@ -178,13 +178,9 @@ stg07D_42.c:
 	.text       start:0x00016FD0 end:0x00018010
 	.rodata     start:0x000007F8 end:0x00000848
 
-stg07D_43.c:
-	.text       start:0x00018350 end:0x000184E8
-	.rodata     start:0x00000848 end:0x00000860
-
-stg07D_44.c:
-	.text       start:0x000184E8 end:0x000187EC
-	.rodata     start:0x00000860 end:0x00000868
+OBJECT/o_3spring.c:
+	.text       start:0x00018350 end:0x000187EC
+	.rodata     start:0x00000848 end:0x00000868
 
 stg07D_45.c:
 	.text       start:0x000187EC end:0x00018C74

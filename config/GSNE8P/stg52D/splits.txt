@@ -174,13 +174,9 @@ stg52D_41.c:
 	.text       start:0x00020D88 end:0x00021DC8
 	.rodata     start:0x000008F8 end:0x00000948
 
-stg52D_42.c:
-	.text       start:0x00021F6C end:0x00022104
-	.rodata     start:0x00000948 end:0x00000960
-
-stg52D_43.c:
-	.text       start:0x00022104 end:0x00022408
-	.rodata     start:0x00000960 end:0x00000968
+OBJECT/o_3spring.c:
+	.text       start:0x00021F6C end:0x00022408
+	.rodata     start:0x00000948 end:0x00000968
 
 stg52D_44.c:
 	.text       start:0x00022408 end:0x00022890

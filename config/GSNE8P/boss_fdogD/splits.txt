@@ -110,13 +110,9 @@ boss_fdogD_25.c:
 	.text       start:0x00010044 end:0x000103F4
 	.rodata     start:0x00000738 end:0x00000768
 
-boss_fdogD_26.c:
-	.text       start:0x00010598 end:0x00010730
-	.rodata     start:0x00000768 end:0x00000780
-
-boss_fdogD_27.c:
-	.text       start:0x00010730 end:0x00010A34
-	.rodata     start:0x00000780 end:0x00000788
+OBJECT/o_3spring.c:
+	.text       start:0x00010598 end:0x00010A34
+	.rodata     start:0x00000768 end:0x00000788
 
 boss_fdogD_28.c:
 	.text       start:0x00010A34 end:0x00010EBC

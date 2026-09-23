@@ -222,13 +222,9 @@ stg21D_53.c:
 	.text       start:0x00018408 end:0x00019448
 	.rodata     start:0x00000850 end:0x000008A0
 
-stg21D_54.c:
-	.text       start:0x000195EC end:0x00019784
-	.rodata     start:0x000008A0 end:0x000008B8
-
-stg21D_55.c:
-	.text       start:0x00019784 end:0x00019A88
-	.rodata     start:0x000008B8 end:0x000008C0
+OBJECT/o_3spring.c:
+	.text       start:0x000195EC end:0x00019A88
+	.rodata     start:0x000008A0 end:0x000008C0
 
 stg21D_56.c:
 	.text       start:0x00019A88 end:0x00019F10

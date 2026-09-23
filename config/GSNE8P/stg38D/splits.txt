@@ -150,13 +150,9 @@ stg38D_35.c:
 	.text       start:0x00019694 end:0x0001A6D4
 	.rodata     start:0x000008A8 end:0x000008F8
 
-stg38D_36.c:
-	.text       start:0x0001A878 end:0x0001AA10
-	.rodata     start:0x000008F8 end:0x00000910
-
-stg38D_37.c:
-	.text       start:0x0001AA10 end:0x0001AD14
-	.rodata     start:0x00000910 end:0x00000918
+OBJECT/o_3spring.c:
+	.text       start:0x0001A878 end:0x0001AD14
+	.rodata     start:0x000008F8 end:0x00000918
 
 stg38D_38.c:
 	.text       start:0x0001AD14 end:0x0001B19C

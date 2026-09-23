@@ -218,13 +218,9 @@ stg32D_52.c:
 	.text       start:0x0001894C end:0x0001998C
 	.rodata     start:0x00000878 end:0x000008C8
 
-stg32D_53.c:
-	.text       start:0x00019CCC end:0x00019E64
-	.rodata     start:0x000008C8 end:0x000008E0
-
-stg32D_54.c:
-	.text       start:0x00019E64 end:0x0001A168
-	.rodata     start:0x000008E0 end:0x000008E8
+OBJECT/o_3spring.c:
+	.text       start:0x00019CCC end:0x0001A168
+	.rodata     start:0x000008C8 end:0x000008E8
 
 stg32D_55.c:
 	.text       start:0x0001A168 end:0x0001A5F0

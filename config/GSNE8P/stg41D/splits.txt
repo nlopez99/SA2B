@@ -174,13 +174,9 @@ stg41D_41.c:
 	.text       start:0x00016934 end:0x00017974
 	.rodata     start:0x00000830 end:0x00000880
 
-stg41D_42.c:
-	.text       start:0x00017CB4 end:0x00017E4C
-	.rodata     start:0x00000880 end:0x00000898
-
-stg41D_43.c:
-	.text       start:0x00017E4C end:0x00018150
-	.rodata     start:0x00000898 end:0x000008A0
+OBJECT/o_3spring.c:
+	.text       start:0x00017CB4 end:0x00018150
+	.rodata     start:0x00000880 end:0x000008A0
 
 stg41D_44.c:
 	.text       start:0x00018150 end:0x000185D8

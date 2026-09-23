@@ -194,13 +194,9 @@ stg22D_46.c:
 	.text       start:0x0001C190 end:0x0001D1D0
 	.rodata     start:0x00000A28 end:0x00000A78
 
-stg22D_47.c:
-	.text       start:0x0001D510 end:0x0001D6A8
-	.rodata     start:0x00000A78 end:0x00000A90
-
-stg22D_48.c:
-	.text       start:0x0001D6A8 end:0x0001D9AC
-	.rodata     start:0x00000A90 end:0x00000A98
+OBJECT/o_3spring.c:
+	.text       start:0x0001D510 end:0x0001D9AC
+	.rodata     start:0x00000A78 end:0x00000A98
 
 stg22D_49.c:
 	.text       start:0x0001D9AC end:0x0001DE34

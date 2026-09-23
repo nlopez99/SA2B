@@ -154,13 +154,9 @@ stg34D_36.c:
 	.text       start:0x000179F4 end:0x00018A34
 	.rodata     start:0x00000830 end:0x00000880
 
-stg34D_37.c:
-	.text       start:0x00018BD8 end:0x00018D70
-	.rodata     start:0x00000880 end:0x00000898
-
-stg34D_38.c:
-	.text       start:0x00018D70 end:0x00019074
-	.rodata     start:0x00000898 end:0x000008A0
+OBJECT/o_3spring.c:
+	.text       start:0x00018BD8 end:0x00019074
+	.rodata     start:0x00000880 end:0x000008A0
 
 stg34D_39.c:
 	.text       start:0x00019074 end:0x000194FC

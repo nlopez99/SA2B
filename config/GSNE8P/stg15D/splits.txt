@@ -169,13 +169,9 @@ stg15D_40.c:
 	.text       start:0x000153B4 end:0x000163F4
 	.rodata     start:0x000007F0 end:0x00000840
 
-stg15D_41.c:
-	.text       start:0x00016734 end:0x000168CC
-	.rodata     start:0x00000840 end:0x00000858
-
-stg15D_42.c:
-	.text       start:0x000168CC end:0x00016BD0
-	.rodata     start:0x00000858 end:0x00000860
+OBJECT/o_3spring.c:
+	.text       start:0x00016734 end:0x00016BD0
+	.rodata     start:0x00000840 end:0x00000860
 
 stg15D_43.c:
 	.text       start:0x00016BD0 end:0x00017058

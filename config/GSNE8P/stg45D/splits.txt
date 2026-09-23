@@ -110,13 +110,9 @@ stg45D_25.c:
 	.text       start:0x0000EAD8 end:0x0000EE88
 	.rodata     start:0x00000528 end:0x00000558
 
-stg45D_26.c:
-	.text       start:0x0000EE88 end:0x0000F020
-	.rodata     start:0x00000558 end:0x00000570
-
-stg45D_27.c:
-	.text       start:0x0000F020 end:0x0000F324
-	.rodata     start:0x00000570 end:0x00000578
+OBJECT/o_3spring.c:
+	.text       start:0x0000EE88 end:0x0000F324
+	.rodata     start:0x00000558 end:0x00000578
 
 stg45D_28.c:
 	.text       start:0x0000F324 end:0x0000F7AC
