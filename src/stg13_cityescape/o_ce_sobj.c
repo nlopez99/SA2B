@@ -10,7 +10,7 @@
 #include "fabsf.h"
 
 extern u8 fn_80065388(task *tp);
-extern void fn_8006539C(task *tp, u8 smode);
+extern void _rename_SetConditionFlag(task *tp, u8 smode);
 extern NJS_POINT3 lbl_13_data_141294;//  = {60, 30, 130};
 
 // ^ extern
@@ -81,7 +81,7 @@ static void ObjectCesobjDest(task *tp) {
   tp->awp = NULL;
   tp->fwp = NULL;
   if (tp->ocp) {
-    fn_8006539C(tp, twp->smode);
+    _rename_SetConditionFlag(tp, twp->smode);
   }
 }
 
