@@ -208,13 +208,10 @@ OBJECT/o_itemboxair.c:
 	.rodata     start:0x00001260 end:0x000012A0
 	.data       start:0x000DD078 end:0x000DD0F8
 
-Boss_GolemED_53.c:
-	.text       start:0x00027968 end:0x000283C8
-	.rodata     start:0x000012A0 end:0x000012E0
-
-Boss_GolemED_54.c:
-	.text       start:0x0002843C end:0x00028480
-	.rodata     start:0x000012E0 end:0x000012E8
+OBJECT/o_itemboxballoon.c:
+	.text       start:0x00027824 end:0x000284F4
+	.rodata     start:0x000012A0 end:0x000012E8
+	.data       start:0x000DD0F8 end:0x000DDA50
 
 Boss_GolemED_55.c:
 	.text       start:0x000284F4 end:0x0002A644

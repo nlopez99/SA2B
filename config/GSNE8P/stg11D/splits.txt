@@ -256,13 +256,10 @@ OBJECT/o_itemboxair.c:
 	.rodata     start:0x00000DB8 end:0x00000DF8
 	.data       start:0x00072238 end:0x000722B8
 
-stg11D_65.c:
-	.text       start:0x0002B5CC end:0x0002C02C
-	.rodata     start:0x00000DF8 end:0x00000E38
-
-stg11D_66.c:
-	.text       start:0x0002C0A0 end:0x0002C0E4
-	.rodata     start:0x00000E38 end:0x00000E40
+OBJECT/o_itemboxballoon.c:
+	.text       start:0x0002B488 end:0x0002C158
+	.rodata     start:0x00000DF8 end:0x00000E40
+	.data       start:0x000722B8 end:0x00072C10
 
 stg11D_67.c:
 	.text       start:0x0002C158 end:0x0002CB0C

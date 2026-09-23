@@ -264,13 +264,10 @@ OBJECT/o_itemboxair.c:
 	.rodata     start:0x00001148 end:0x00001188
 	.data       start:0x000BF458 end:0x000BF4D8
 
-boss_last1D_67.c:
-	.text       start:0x00028064 end:0x00028AC4
-	.rodata     start:0x00001188 end:0x000011C8
-
-boss_last1D_68.c:
-	.text       start:0x00028B38 end:0x00028B7C
-	.rodata     start:0x000011C8 end:0x000011D0
+OBJECT/o_itemboxballoon.c:
+	.text       start:0x00027F20 end:0x00028BF0
+	.rodata     start:0x00001188 end:0x000011D0
+	.data       start:0x000BF4D8 end:0x000BFE30
 
 boss_last1D_69.c:
 	.text       start:0x00028BF0 end:0x0002AD40

@@ -196,13 +196,10 @@ OBJECT/o_itemboxair.c:
 	.rodata     start:0x00000DE0 end:0x00000E20
 	.data       start:0x00057AD8 end:0x00057B58
 
-boss_bigfootD_50.c:
-	.text       start:0x000270CC end:0x00027B2C
-	.rodata     start:0x00000E20 end:0x00000E60
-
-boss_bigfootD_51.c:
-	.text       start:0x00027BA0 end:0x00027BE4
-	.rodata     start:0x00000E60 end:0x00000E68
+OBJECT/o_itemboxballoon.c:
+	.text       start:0x00026F88 end:0x00027C58
+	.rodata     start:0x00000E20 end:0x00000E68
+	.data       start:0x00057B58 end:0x000584B0
 
 boss_bigfootD_52.c:
 	.text       start:0x00027C58 end:0x00029DA8

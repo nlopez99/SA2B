@@ -180,13 +180,10 @@ OBJECT/o_itemboxair.c:
 	.rodata     start:0x00000A48 end:0x00000A88
 	.data       start:0x000269D8 end:0x00026A58
 
-boss_fdogD_46.c:
-	.text       start:0x0001D1B8 end:0x0001DC18
-	.rodata     start:0x00000A88 end:0x00000AC8
-
-boss_fdogD_47.c:
-	.text       start:0x0001DC8C end:0x0001DCD0
-	.rodata     start:0x00000AC8 end:0x00000AD0
+OBJECT/o_itemboxballoon.c:
+	.text       start:0x0001D074 end:0x0001DD44
+	.rodata     start:0x00000A88 end:0x00000AD0
+	.data       start:0x00026A58 end:0x000273B0
 
 boss_fdogD_48.c:
 	.text       start:0x0001DD44 end:0x0001FE94

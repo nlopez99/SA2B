@@ -280,13 +280,10 @@ OBJECT/o_itemboxair.c:
 	.rodata     start:0x00000C38 end:0x00000C78
 	.data       start:0x0009DE38 end:0x0009DEB8
 
-stg47D_71.c:
-	.text       start:0x000273A4 end:0x00027E04
-	.rodata     start:0x00000C78 end:0x00000CB8
-
-stg47D_72.c:
-	.text       start:0x00027E78 end:0x00027EBC
-	.rodata     start:0x00000CB8 end:0x00000CC0
+OBJECT/o_itemboxballoon.c:
+	.text       start:0x00027260 end:0x00027F30
+	.rodata     start:0x00000C78 end:0x00000CC0
+	.data       start:0x0009DEB8 end:0x0009E810
 
 stg47D_73.c:
 	.text       start:0x00027F30 end:0x000288E4

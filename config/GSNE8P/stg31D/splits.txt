@@ -220,13 +220,10 @@ OBJECT/o_itemboxair.c:
 	.rodata     start:0x000009E8 end:0x00000A28
 	.data       start:0x000978F8 end:0x00097978
 
-stg31D_56.c:
-	.text       start:0x00020AE4 end:0x00021544
-	.rodata     start:0x00000A28 end:0x00000A68
-
-stg31D_57.c:
-	.text       start:0x000215B8 end:0x000215FC
-	.rodata     start:0x00000A68 end:0x00000A70
+OBJECT/o_itemboxballoon.c:
+	.text       start:0x000209A0 end:0x00021670
+	.rodata     start:0x00000A28 end:0x00000A70
+	.data       start:0x00097978 end:0x000982D0
 
 stg31D_58.c:
 	.text       start:0x00021670 end:0x00022024
