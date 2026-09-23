@@ -61,8 +61,8 @@ stg13_cityescape/o_ce_tjumpdai.c:
 	.text       start:0x0000C5C4 end:0x0000C9C8
 	.rodata     start:0x00000280 end:0x00000290
 
-stg52D_13.c:
-	.text       start:0x0000CA94 end:0x0000CB70
+OBJECT/o_treest.c:
+	.text       start:0x0000C9C8 end:0x0000CB70
 	.rodata     start:0x00000290 end:0x00000298
 
 stg52D_14.c:

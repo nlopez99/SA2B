@@ -685,6 +685,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_itemboxballoon.c"),
             Object(Matching, "OBJECT/o_colli.c"),
             Object(Matching, "OBJECT/o_stoplsd.c"),
+            Object(Matching, "OBJECT/o_treest.c"),
             Object(Matching, "EFFECT/ef_lnspark.c"),
             Object(Matching, "EFFECT/ef_spark.c"),
             Object(Matching, "EFFECT/ef_lensflare.c"),
