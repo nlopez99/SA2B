@@ -94,7 +94,7 @@ EFFECT/ef_ringsparkle.c:
 	.text       start:0x000177B0 end:0x00017E18
 	.rodata     start:0x00000998 end:0x000009D0
 
-boss_bigfootD_23.c:
+EFFECT/ef_rocketthrust.c:
 	.text       start:0x00017E18 end:0x000185E8
 	.rodata     start:0x000009D0 end:0x00000A10
 

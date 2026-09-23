@@ -106,7 +106,7 @@ EFFECT/ef_ringsparkle.c:
 	.text       start:0x00017648 end:0x00017CB0
 	.rodata     start:0x00000DF8 end:0x00000E30
 
-Boss_GolemED_25.c:
+EFFECT/ef_rocketthrust.c:
 	.text       start:0x00017CB0 end:0x00018480
 	.rodata     start:0x00000E30 end:0x00000E70
 

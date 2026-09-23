@@ -130,7 +130,7 @@ EFFECT/ef_ringsparkle.c:
 	.text       start:0x00012EA8 end:0x00013510
 	.rodata     start:0x00000628 end:0x00000660
 
-stg04D_32.c:
+EFFECT/ef_rocketthrust.c:
 	.text       start:0x00013510 end:0x00013CE0
 	.rodata     start:0x00000660 end:0x000006A0
 

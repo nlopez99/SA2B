@@ -50,7 +50,7 @@ EFFECT/ef_ringsparkle.c:
 	.text       start:0x00005918 end:0x00005F80
 	.rodata     start:0x00000228 end:0x00000260
 
-stg00D_11.c:
+EFFECT/ef_rocketthrust.c:
 	.text       start:0x00005F80 end:0x00006750
 	.rodata     start:0x00000260 end:0x000002A0
 

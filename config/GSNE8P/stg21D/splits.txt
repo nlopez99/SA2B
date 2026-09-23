@@ -194,7 +194,7 @@ EFFECT/ef_ringsparkle.c:
 	.text       start:0x00015B50 end:0x000161B8
 	.rodata     start:0x00000718 end:0x00000750
 
-stg21D_47.c:
+EFFECT/ef_rocketthrust.c:
 	.text       start:0x000161B8 end:0x00016988
 	.rodata     start:0x00000750 end:0x00000790
 
