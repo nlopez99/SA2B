@@ -5,5 +5,6 @@
 #include "samt/sonic/task.h"
 
 void ObjectItemBoxBalloon(task *tp);
+void ObjectItemBoxBalloonGenerator(task *tp);
 
 #endif // !_O_ITEMBOXBALLOON_H_

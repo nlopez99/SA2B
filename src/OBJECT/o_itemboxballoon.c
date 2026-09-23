@@ -9,6 +9,7 @@
 #include "samt/sonic/player.h"
 #include "samt/sonic/sound.h"
 #include "set.h"
+#include "stl/stdlib.h"
 
 extern BOOL _rename_CheckFlag0x20(task *tp);
 extern void _rename_SetFlag0x20(task *tp);
@@ -411,4 +412,36 @@ static void ItemBoxBalloonNothing(task *tp, Sint32 pno) {
 static void ItemBoxBalloonInvincible(task *tp, Sint32 pno) {
   AddScore(200);
   fn_800373B8(pno);
+}
+
+// indices into itemboxballoon_item_info; repeats weight the common items
+static Sint8 itemboxballoon_generator_item[12] = {
+    0, 1, 3, 3, 3, 3, 4, 4, 4, 5, 5, 1,
+};
+
+// keeps one balloon alive, replacing it twp->ang.x frames after it is gone
+void ObjectItemBoxBalloonGenerator(task *tp) {
+  taskwk *twp = tp->twp;
+  task *ctp;
+  taskwk *ctwp;
+
+  if (CheckRangeOut(tp)) {
+    return;
+  }
+  // wtimer reset in both branches to match
+  if (tp->ctp == NULL) {
+    if (twp->wtimer++ <= twp->ang.x) {
+      return;
+    }
+    ctp = CreateChildTask(IM_TWK, ObjectItemBoxBalloon, tp);
+    if (ctp != NULL) {
+      ctwp = ctp->twp;
+      ctwp->ang.y = twp->ang.y;
+      ctwp->scl.x = itemboxballoon_generator_item[(Sint32)(
+          12.0f * (0.000030517578f * (Float)rand()))];
+    }
+    twp->wtimer = 0;
+  } else {
+    twp->wtimer = 0;
+  }
 }
