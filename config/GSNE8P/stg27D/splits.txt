@@ -78,9 +78,11 @@ stg27D_17.c:
 	.text       start:0x0000E730 end:0x00010BB4
 	.rodata     start:0x000004F0 end:0x00000558
 
-stg27D_18.c:
+earthshake.c:
 	.text       start:0x00010BB4 end:0x0001117C
 	.rodata     start:0x00000558 end:0x00000580
+	.data       start:0x0006C2A0 end:0x0006C2D8
+	.bss        start:0x000008D8 end:0x000008DC
 
 EFFECT/ef_flame.c:
 	.text       start:0x0001117C end:0x000113D8

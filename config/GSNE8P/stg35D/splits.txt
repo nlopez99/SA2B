@@ -46,9 +46,11 @@ stg35D_9.c:
 	.text       start:0x00018A34 end:0x0001AE88
 	.rodata     start:0x00000700 end:0x00000768
 
-stg35D_10.c:
+earthshake.c:
 	.text       start:0x0001AE88 end:0x0001B450
 	.rodata     start:0x00000768 end:0x00000790
+	.data       start:0x0007EC68 end:0x0007ECA0
+	.bss        start:0x00000468 end:0x0000046C
 
 EFFECT/ef_flame.c:
 	.text       start:0x0001B450 end:0x0001B6AC

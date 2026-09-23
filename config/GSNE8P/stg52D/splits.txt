@@ -97,9 +97,11 @@ stg52D_21.c:
 	.text       start:0x00018710 end:0x0001A64C
 	.rodata     start:0x00000580 end:0x000005E8
 
-stg52D_22.c:
+earthshake.c:
 	.text       start:0x0001A64C end:0x0001AC14
 	.rodata     start:0x000005E8 end:0x00000610
+	.data       start:0x0017B8C0 end:0x0017B8F8
+	.bss        start:0x000006B8 end:0x000006BC
 
 EFFECT/ef_flame.c:
 	.text       start:0x0001AC14 end:0x0001AE70

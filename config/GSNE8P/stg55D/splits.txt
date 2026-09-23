@@ -74,9 +74,11 @@ stg55D_16.c:
 	.text       start:0x0000E14C end:0x000105D0
 	.rodata     start:0x000004E0 end:0x00000548
 
-stg55D_17.c:
+earthshake.c:
 	.text       start:0x000105D0 end:0x00010B98
 	.rodata     start:0x00000548 end:0x00000570
+	.data       start:0x0001FDB8 end:0x0001FDF0
+	.bss        start:0x000004C0 end:0x000004C4
 
 EFFECT/ef_flame.c:
 	.text       start:0x00010B98 end:0x00010DF4

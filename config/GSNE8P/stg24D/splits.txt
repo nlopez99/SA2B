@@ -94,9 +94,11 @@ stg24D_21.c:
 	.text       start:0x000135CC end:0x00015A50
 	.rodata     start:0x00000698 end:0x00000700
 
-stg24D_22.c:
+earthshake.c:
 	.text       start:0x00015A50 end:0x00016018
 	.rodata     start:0x00000700 end:0x00000728
+	.data       start:0x0007B298 end:0x0007B2D0
+	.bss        start:0x00000650 end:0x00000654
 
 EFFECT/ef_flame.c:
 	.text       start:0x00016018 end:0x00016274

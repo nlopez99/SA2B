@@ -34,9 +34,11 @@ stg29D_6.c:
 	.text       start:0x00007B10 end:0x000097FC
 	.rodata     start:0x00000220 end:0x00000288
 
-stg29D_7.c:
+earthshake.c:
 	.text       start:0x000097FC end:0x00009DC4
 	.rodata     start:0x00000288 end:0x000002B0
+	.data       start:0x0002B3E8 end:0x0002B420
+	.bss        start:0x00000638 end:0x0000063C
 
 EFFECT/ef_splash.c:
 	.text       start:0x00009DC4 end:0x0000A020

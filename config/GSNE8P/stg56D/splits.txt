@@ -14,6 +14,12 @@ EFFECT/ef_bombfire.c:
 	.text       start:0x00006B1C end:0x00006BE4
 	.rodata     start:0x00000190 end:0x00000198
 
+earthshake.c:
+	.text       start:0x000088D0 end:0x00008E98
+	.rodata     start:0x00000200 end:0x00000228
+	.data       start:0x0002B0F8 end:0x0002B130
+	.bss        start:0x00000640 end:0x00000644
+
 EFFECT/ef_splash.c:
 	.text       start:0x00008E98 end:0x000090F4
 	.rodata     start:0x00000228 end:0x00000250
