@@ -364,7 +364,7 @@ stg46D_88.c:
 	.text       start:0x00038DE0 end:0x00039BFC
 	.rodata     start:0x00001128 end:0x00001188
 
-stg46D_89.c:
+OBJECT/o_skull.c:
 	.text       start:0x00039C30 end:0x0003A468
 	.rodata     start:0x00001188 end:0x000011C0
 

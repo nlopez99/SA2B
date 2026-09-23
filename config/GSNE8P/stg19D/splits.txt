@@ -170,7 +170,7 @@ OBJECT/o_searchbox.c:
 	.data       start:0x00029048 end:0x00029080
 	.bss        start:0x000006B8 end:0x000006C8
 
-stg19D_39.c:
+OBJECT/o_skull.c:
 	.text       start:0x0001F8F4 end:0x0002012C
 	.rodata     start:0x00000A78 end:0x00000AB0
 

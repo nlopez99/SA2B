@@ -320,7 +320,7 @@ OBJECT/o_savepoint.c:
 	.data       start:0x000B4DD0 end:0x000B4E20
 	.bss        start:0x00000D68 end:0x00000D70
 
-stg04D_78.c:
+OBJECT/o_skull.c:
 	.text       start:0x000394A8 end:0x00039CE0
 	.rodata     start:0x000010C8 end:0x00001100
 

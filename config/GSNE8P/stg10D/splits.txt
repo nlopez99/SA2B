@@ -346,7 +346,7 @@ OBJECT/o_searchbox.c:
 	.data       start:0x0019D668 end:0x0019D6A0
 	.bss        start:0x00001050 end:0x00001060
 
-stg10D_84.c:
+OBJECT/o_skull.c:
 	.text       start:0x0003FE80 end:0x000406B8
 	.rodata     start:0x00001258 end:0x00001290
 

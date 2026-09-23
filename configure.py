@@ -683,6 +683,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_effobj0.c"),
             Object(Matching, "OBJECT/o_wsmmls.c"),
             Object(Matching, "OBJECT/o_solidbox.c"),
+            Object(Matching, "OBJECT/o_skull.c"),
             Object(Matching, "OBJECT/o_chaokey.c"),
             Object(Matching, "OBJECT/o_itemboxair.c"),
             Object(Matching, "OBJECT/o_savepoint.c"),
