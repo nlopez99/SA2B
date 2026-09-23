@@ -122,8 +122,8 @@ void CreateEnemyCapturingBullet(task *tp, NJS_VECTOR *spd,
 void EnemyJetLoadTexture(void);
 void CreateEnemyJet(task *tp, Sint32 type, NJS_POINT3 *pos,
                             NJS_VECTOR *spd);
-void _rename_EnemyLaserLoadTexture(void);
-void _rename_CreateEnemyLaser(task *tp, Float pow, NJS_VECTOR *spd,
+void EnemyLaserLoadTexture(void);
+void CreateEnemyLaser(task *tp, Float pow, NJS_VECTOR *spd,
                               NJS_POINT3 *pos);
 void EnemyLightLoadTexture(void);
 void CreateEnemyLight(task *tp, Sint32 type, NJS_POINT3 *pos);
@@ -228,7 +228,7 @@ static void EnemyAiInit(task *tp, taskwk *twp) {
     ewp->shot_num = twp->ang.x & 0xFF;
     ewp->wait = twp->ang.z;
     ewp->shot_spd = twp->scl.y;
-    _rename_EnemyLaserLoadTexture();
+    EnemyLaserLoadTexture();
     if (twp->smode == AI_BIG) {
       ewp->mtn.object = &_rename_e_ai3_object;
     } else {
@@ -692,7 +692,7 @@ static void EnemyAiShotLaser(task *tp, taskwk *twp, enemywk *ewp) {
   spd.z = 0.0f;
   EnemyAiAim(twp, &pos, &spd);
 
-  _rename_CreateEnemyLaser(tp, (Float)ewp->shot_num, &spd, &pos);
+  CreateEnemyLaser(tp, (Float)ewp->shot_num, &spd, &pos);
 }
 
 static void EnemyAiShotCapture(task *tp, taskwk *twp, enemywk *ewp) {

@@ -714,6 +714,7 @@ config.libs = [
             Object(Matching, "sonic/fog.c"),
             Object(Matching, "OBJECT/o_ironball2.c"),
             Object(Matching, "ENEMY/e_bullet.c"),
+            Object(Matching, "ENEMY/e_laser.c"),
             Object(Matching, "OBJECT/o_hintbox.c"),
             Object(Matching, "OBJECT/o_bunchin.c"),
             Object(Matching, "OBJECT/o_udreel.c"),

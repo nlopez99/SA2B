@@ -402,6 +402,27 @@ modules:
     header_type: none
     custom_type: s32
 
+  - symbol: e_laser_plist!.data:0x258cb8
+    binary: assets/e_laser_plist.bin
+    header: assets/e_laser_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: e_laser_vlist!.data:0x258e0c
+    binary: assets/e_laser_vlist.bin
+    header: assets/e_laser_vlist.inc
+    header_type: none
+    custom_type: s32
+  - symbol: e_laser_flash_plist!.data:0x258f20
+    binary: assets/e_laser_flash_plist.bin
+    header: assets/e_laser_flash_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: e_laser_flash_vlist!.data:0x258fe8
+    binary: assets/e_laser_flash_vlist.bin
+    header: assets/e_laser_flash_vlist.inc
+    header_type: none
+    custom_type: s32
+
   - symbol: e_bomb_big_plist!.data:0x256c80
     binary: assets/e_bomb_big_plist.bin
     header: assets/e_bomb_big_plist.inc
