@@ -363,9 +363,11 @@ boss_last1D_92.c:
 	.text       start:0x00041F88 end:0x0004227C
 	.rodata     start:0x00001980 end:0x000019A8
 
-boss_last1D_93.c:
-	.text       start:0x00042454 end:0x0004381C
+EFFECT/ef_explosion.c:
+	.text       start:0x000423D8 end:0x00043948
 	.rodata     start:0x000019A8 end:0x00001A68
+	.data       start:0x000F2198 end:0x000F2210
+	.bss        start:0x00002FD8 end:0x00002FE0
 
 boss_last1D_94.c:
 	.text       start:0x00043A64 end:0x00045E90

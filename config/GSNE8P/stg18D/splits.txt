@@ -437,9 +437,11 @@ stg18D_110.c:
 	.text       start:0x0004F76C end:0x0004FA60
 	.rodata     start:0x00001880 end:0x000018A8
 
-stg18D_111.c:
-	.text       start:0x0004FC38 end:0x00051000
+EFFECT/ef_explosion.c:
+	.text       start:0x0004FBBC end:0x0005112C
 	.rodata     start:0x000018A8 end:0x00001968
+	.data       start:0x00121A00 end:0x00121A78
+	.bss        start:0x00002E08 end:0x00002E10
 
 stg18D_112.c:
 	.text       start:0x00051168 end:0x00051F48

@@ -370,9 +370,11 @@ stg53D_93.c:
 	.text       start:0x00042760 end:0x00042A54
 	.rodata     start:0x00001420 end:0x00001448
 
-stg53D_94.c:
-	.text       start:0x00042C2C end:0x00043FF4
+EFFECT/ef_explosion.c:
+	.text       start:0x00042BB0 end:0x00044120
 	.rodata     start:0x00001448 end:0x00001508
+	.data       start:0x0006E8E0 end:0x0006E958
+	.bss        start:0x00002DE0 end:0x00002DE8
 
 stg53D_95.c:
 	.text       start:0x0004415C end:0x00044F3C

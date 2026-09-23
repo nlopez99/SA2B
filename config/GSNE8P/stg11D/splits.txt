@@ -380,9 +380,11 @@ stg11D_96.c:
 	.text       start:0x0004BB34 end:0x0004BE28
 	.rodata     start:0x00001770 end:0x00001798
 
-stg11D_97.c:
-	.text       start:0x0004C000 end:0x0004D3C8
+EFFECT/ef_explosion.c:
+	.text       start:0x0004BF84 end:0x0004D4F4
 	.rodata     start:0x00001798 end:0x00001858
+	.data       start:0x000AAFB8 end:0x000AB030
+	.bss        start:0x00003060 end:0x00003068
 
 stg11D_98.c:
 	.text       start:0x0004D568 end:0x0004EF84

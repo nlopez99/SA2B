@@ -319,9 +319,11 @@ stg36D_80.c:
 	.text       start:0x0004F874 end:0x0004FB68
 	.rodata     start:0x00001800 end:0x00001828
 
-stg36D_81.c:
-	.text       start:0x0004FD40 end:0x00051108
+EFFECT/ef_explosion.c:
+	.text       start:0x0004FCC4 end:0x00051234
 	.rodata     start:0x00001828 end:0x000018E8
+	.data       start:0x000BFF80 end:0x000BFFF8
+	.bss        start:0x00002BB8 end:0x00002BC0
 
 stg36D_82.c:
 	.text       start:0x00051270 end:0x00052050

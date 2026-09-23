@@ -383,9 +383,11 @@ stg51D_96.c:
 	.text       start:0x00046B54 end:0x00046E48
 	.rodata     start:0x000015F0 end:0x00001618
 
-stg51D_97.c:
-	.text       start:0x00047020 end:0x000483E8
+EFFECT/ef_explosion.c:
+	.text       start:0x00046FA4 end:0x00048514
 	.rodata     start:0x00001618 end:0x000016D8
+	.data       start:0x00080898 end:0x00080910
+	.bss        start:0x00002E30 end:0x00002E38
 
 stg51D_98.c:
 	.text       start:0x00048588 end:0x00049FA4

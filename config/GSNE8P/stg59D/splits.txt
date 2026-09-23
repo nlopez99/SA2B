@@ -443,9 +443,11 @@ stg59D_112.c:
 	.text       start:0x00052EB4 end:0x000531A8
 	.rodata     start:0x00001948 end:0x00001970
 
-stg59D_113.c:
-	.text       start:0x00053380 end:0x00054748
+EFFECT/ef_explosion.c:
+	.text       start:0x00053304 end:0x00054874
 	.rodata     start:0x00001970 end:0x00001A30
+	.data       start:0x000FB878 end:0x000FB8F0
+	.bss        start:0x00002DC0 end:0x00002DC8
 
 stg59D_114.c:
 	.text       start:0x000548B0 end:0x00055690

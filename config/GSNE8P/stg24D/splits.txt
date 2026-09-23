@@ -383,9 +383,11 @@ stg24D_96.c:
 	.text       start:0x0004C918 end:0x0004CC0C
 	.rodata     start:0x000017B0 end:0x000017D8
 
-stg24D_97.c:
-	.text       start:0x0004CDE4 end:0x0004E1AC
+EFFECT/ef_explosion.c:
+	.text       start:0x0004CD68 end:0x0004E2D8
 	.rodata     start:0x000017D8 end:0x00001898
+	.data       start:0x000C72F8 end:0x000C7370
+	.bss        start:0x00002DB8 end:0x00002DC0
 
 stg24D_98.c:
 	.text       start:0x0004E34C end:0x0004FD68

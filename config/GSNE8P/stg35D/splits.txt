@@ -331,9 +331,11 @@ stg35D_83.c:
 	.text       start:0x0004FC98 end:0x0004FF8C
 	.rodata     start:0x00001830 end:0x00001858
 
-stg35D_84.c:
-	.text       start:0x00050164 end:0x0005152C
+EFFECT/ef_explosion.c:
+	.text       start:0x000500E8 end:0x00051658
 	.rodata     start:0x00001858 end:0x00001918
+	.data       start:0x000CAE80 end:0x000CAEF8
+	.bss        start:0x00002BC0 end:0x00002BC8
 
 stg35D_85.c:
 	.text       start:0x000516CC end:0x000530E8

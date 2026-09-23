@@ -211,6 +211,8 @@ stg45D_52.c:
 	.text       start:0x00023F08 end:0x00025450
 	.rodata     start:0x00000BA8 end:0x00000C08
 
-stg45D_53.c:
-	.text       start:0x000254CC end:0x00026894
+EFFECT/ef_explosion.c:
+	.text       start:0x00025450 end:0x000269C0
 	.rodata     start:0x00000C08 end:0x00000CC4
+	.data       start:0x00042800 end:0x00042873
+	.bss        start:0x00000AF8 end:0x00000AFC

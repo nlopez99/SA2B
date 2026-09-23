@@ -367,9 +367,11 @@ stg43D_92.c:
 	.text       start:0x00045B30 end:0x00045E24
 	.rodata     start:0x00001510 end:0x00001538
 
-stg43D_93.c:
-	.text       start:0x00045FFC end:0x000473C4
+EFFECT/ef_explosion.c:
+	.text       start:0x00045F80 end:0x000474F0
 	.rodata     start:0x00001538 end:0x000015F8
+	.data       start:0x0009CB80 end:0x0009CBF8
+	.bss        start:0x00002DE8 end:0x00002DF0
 
 stg43D_94.c:
 	.text       start:0x00047564 end:0x00048F80

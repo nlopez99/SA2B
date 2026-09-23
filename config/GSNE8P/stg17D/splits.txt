@@ -371,9 +371,11 @@ stg17D_93.c:
 	.text       start:0x0004F360 end:0x0004F654
 	.rodata     start:0x00001710 end:0x00001738
 
-stg17D_94.c:
-	.text       start:0x0004F82C end:0x00050BF4
+EFFECT/ef_explosion.c:
+	.text       start:0x0004F7B0 end:0x00050D20
 	.rodata     start:0x00001738 end:0x000017F8
+	.data       start:0x000D0AB8 end:0x000D0B30
+	.bss        start:0x00002DE8 end:0x00002DF0
 
 stg17D_95.c:
 	.text       start:0x00050D94 end:0x000527B0

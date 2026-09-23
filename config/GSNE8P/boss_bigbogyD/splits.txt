@@ -279,9 +279,11 @@ boss_bigbogyD_71.c:
 	.text       start:0x000432CC end:0x000435C0
 	.rodata     start:0x00001A88 end:0x00001AB0
 
-boss_bigbogyD_72.c:
-	.text       start:0x00043798 end:0x00044B60
+EFFECT/ef_explosion.c:
+	.text       start:0x0004371C end:0x00044C8C
 	.rodata     start:0x00001AB0 end:0x00001B70
+	.data       start:0x00086E18 end:0x00086E90
+	.bss        start:0x00002BE0 end:0x00002BE8
 
 boss_bigbogyD_73.c:
 	.text       start:0x00044DA8 end:0x000471D4

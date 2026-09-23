@@ -380,9 +380,11 @@ stg58D_96.c:
 	.text       start:0x0004C488 end:0x0004C77C
 	.rodata     start:0x000017A8 end:0x000017D0
 
-stg58D_97.c:
-	.text       start:0x0004C954 end:0x0004DD1C
+EFFECT/ef_explosion.c:
+	.text       start:0x0004C8D8 end:0x0004DE48
 	.rodata     start:0x000017D0 end:0x00001890
+	.data       start:0x0006F9B8 end:0x0006FA30
+	.bss        start:0x00002E60 end:0x00002E68
 
 stg58D_98.c:
 	.text       start:0x0004DE84 end:0x0004EC64

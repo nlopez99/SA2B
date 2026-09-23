@@ -387,9 +387,11 @@ stg09D_98.c:
 	.text       start:0x00045B98 end:0x00045E8C
 	.rodata     start:0x000015E8 end:0x00001610
 
-stg09D_99.c:
-	.text       start:0x00046064 end:0x0004742C
+EFFECT/ef_explosion.c:
+	.text       start:0x00045FE8 end:0x00047558
 	.rodata     start:0x00001610 end:0x000016D0
+	.data       start:0x00098558 end:0x000985D0
+	.bss        start:0x00002DA8 end:0x00002DB0
 
 stg09D_100.c:
 	.text       start:0x000475CC end:0x00048FE8

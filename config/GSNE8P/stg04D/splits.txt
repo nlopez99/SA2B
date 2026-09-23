@@ -375,9 +375,11 @@ stg04D_95.c:
 	.text       start:0x000454B4 end:0x000457A8
 	.rodata     start:0x00001548 end:0x00001570
 
-stg04D_96.c:
-	.text       start:0x00045980 end:0x00046D48
+EFFECT/ef_explosion.c:
+	.text       start:0x00045904 end:0x00046E74
 	.rodata     start:0x00001570 end:0x00001630
+	.data       start:0x000BF580 end:0x000BF5F8
+	.bss        start:0x00002DB8 end:0x00002DC0
 
 stg04D_97.c:
 	.text       start:0x00046EE8 end:0x00048904

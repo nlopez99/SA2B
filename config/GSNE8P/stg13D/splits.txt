@@ -403,9 +403,11 @@ stg13D_101.c:
 	.text       start:0x00052AE8 end:0x00052DDC
 	.rodata     start:0x00001738 end:0x00001760
 
-stg13D_102.c:
-	.text       start:0x00052FB4 end:0x0005437C
+EFFECT/ef_explosion.c:
+	.text       start:0x00052F38 end:0x000544A8
 	.rodata     start:0x00001760 end:0x00001820
+	.data       start:0x0025B178 end:0x0025B1F0
+	.bss        start:0x00002E30 end:0x00002E38
 
 stg13D_103.c:
 	.text       start:0x0005451C end:0x00055F38

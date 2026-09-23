@@ -403,9 +403,11 @@ stg47D_101.c:
 	.text       start:0x000480C8 end:0x000483BC
 	.rodata     start:0x00001640 end:0x00001668
 
-stg47D_102.c:
-	.text       start:0x00048594 end:0x0004995C
+EFFECT/ef_explosion.c:
+	.text       start:0x00048518 end:0x00049A88
 	.rodata     start:0x00001668 end:0x00001728
+	.data       start:0x000D68A0 end:0x000D6918
+	.bss        start:0x00002DB0 end:0x00002DB8
 
 stg47D_103.c:
 	.text       start:0x00049AFC end:0x0004B518

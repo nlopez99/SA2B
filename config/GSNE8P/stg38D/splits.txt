@@ -359,9 +359,11 @@ stg38D_91.c:
 	.text       start:0x0004AED0 end:0x0004B1C4
 	.rodata     start:0x00001760 end:0x00001788
 
-stg38D_92.c:
-	.text       start:0x0004B39C end:0x0004C764
+EFFECT/ef_explosion.c:
+	.text       start:0x0004B320 end:0x0004C890
 	.rodata     start:0x00001788 end:0x00001848
+	.data       start:0x000E0060 end:0x000E00D8
+	.bss        start:0x00003038 end:0x00003040
 
 stg38D_93.c:
 	.text       start:0x0004C8CC end:0x0004D6AC

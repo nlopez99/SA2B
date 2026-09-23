@@ -415,9 +415,11 @@ stg23D_104.c:
 	.text       start:0x00049424 end:0x00049718
 	.rodata     start:0x00001710 end:0x00001738
 
-stg23D_105.c:
-	.text       start:0x000498F0 end:0x0004ACB8
+EFFECT/ef_explosion.c:
+	.text       start:0x00049874 end:0x0004ADE4
 	.rodata     start:0x00001738 end:0x000017F8
+	.data       start:0x001400A0 end:0x00140118
+	.bss        start:0x00002DB0 end:0x00002DB8
 
 stg23D_106.c:
 	.text       start:0x0004AE58 end:0x0004C874

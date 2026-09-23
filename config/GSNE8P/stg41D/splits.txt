@@ -393,9 +393,11 @@ stg41D_99.c:
 	.text       start:0x0004B1E0 end:0x0004B4D4
 	.rodata     start:0x00001708 end:0x00001730
 
-stg41D_100.c:
-	.text       start:0x0004B6AC end:0x0004CA74
+EFFECT/ef_explosion.c:
+	.text       start:0x0004B630 end:0x0004CBA0
 	.rodata     start:0x00001730 end:0x000017F0
+	.data       start:0x000B3078 end:0x000B30F0
+	.bss        start:0x00002DE8 end:0x00002DF0
 
 stg41D_101.c:
 	.text       start:0x0004CBDC end:0x0004D9BC

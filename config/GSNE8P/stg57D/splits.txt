@@ -399,9 +399,11 @@ stg57D_101.c:
 	.text       start:0x0004B48C end:0x0004B780
 	.rodata     start:0x000016B0 end:0x000016D8
 
-stg57D_102.c:
-	.text       start:0x0004B958 end:0x0004CD20
+EFFECT/ef_explosion.c:
+	.text       start:0x0004B8DC end:0x0004CE4C
 	.rodata     start:0x000016D8 end:0x00001798
+	.data       start:0x0018AEB8 end:0x0018AF30
+	.bss        start:0x000030A0 end:0x000030A8
 
 stg57D_103.c:
 	.text       start:0x0004CE88 end:0x0004DC68

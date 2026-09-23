@@ -307,9 +307,11 @@ Boss_GolemED_77.c:
 	.text       start:0x00040DA8 end:0x0004109C
 	.rodata     start:0x00001A70 end:0x00001A98
 
-Boss_GolemED_78.c:
-	.text       start:0x00041274 end:0x0004263C
+EFFECT/ef_explosion.c:
+	.text       start:0x000411F8 end:0x00042768
 	.rodata     start:0x00001A98 end:0x00001B58
+	.data       start:0x0010E148 end:0x0010E1C0
+	.bss        start:0x00002FA8 end:0x00002FB0
 
 Boss_GolemED_79.c:
 	.text       start:0x00042884 end:0x00044CB0

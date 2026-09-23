@@ -367,9 +367,11 @@ stg34D_93.c:
 	.text       start:0x000497D4 end:0x00049AC8
 	.rodata     start:0x00001650 end:0x00001678
 
-stg34D_94.c:
-	.text       start:0x00049CA0 end:0x0004B068
+EFFECT/ef_explosion.c:
+	.text       start:0x00049C24 end:0x0004B194
 	.rodata     start:0x00001678 end:0x00001738
+	.data       start:0x001A3FE0 end:0x001A4058
+	.bss        start:0x00002BF8 end:0x00002C00
 
 stg34D_95.c:
 	.text       start:0x0004B208 end:0x0004CC24

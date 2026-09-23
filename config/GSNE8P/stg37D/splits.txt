@@ -323,9 +323,11 @@ stg37D_82.c:
 	.text       start:0x000457FC end:0x00045AF0
 	.rodata     start:0x000015F0 end:0x00001618
 
-stg37D_83.c:
-	.text       start:0x00045CC8 end:0x00047090
+EFFECT/ef_explosion.c:
+	.text       start:0x00045C4C end:0x000471BC
 	.rodata     start:0x00001618 end:0x000016D8
+	.data       start:0x000E4C88 end:0x000E4D00
+	.bss        start:0x00002BF0 end:0x00002BF8
 
 stg37D_84.c:
 	.text       start:0x000471F8 end:0x00047FD8
