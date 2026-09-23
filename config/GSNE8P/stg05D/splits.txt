@@ -194,13 +194,11 @@ stg05D_49.c:
 	.text       start:0x0001BB64 end:0x0001C4E4
 	.rodata     start:0x00000918 end:0x00000948
 
-stg05D_50.c:
-	.text       start:0x0001C4E4 end:0x0001F79C
-	.rodata     start:0x00000948 end:0x000009A8
-
-stg05D_51.c:
-	.text       start:0x0001F79C end:0x0001F858
-	.rodata     start:0x000009A8 end:0x000009B0
+OBJECT/o_emerald.c:
+	.text       start:0x0001C4E4 end:0x0001F9FC
+	.rodata     start:0x00000948 end:0x000009B0
+	.data       start:0x00050028 end:0x00050E38
+	.bss        start:0x00000CF8 end:0x00000D00
 
 OBJECT/o_goalring.c:
 	.text       start:0x0001F9FC end:0x00020D18

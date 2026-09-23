@@ -1,6 +1,7 @@
 #include "OBJECT/o_emerald.h"
 
 #include "CCL.h"
+#include "EFFECT/ef_kiran.h"
 #include "samt/ninja/njchunk.h"
 #include "samt/ninja/njcollision.h"
 #include "samt/ninja/njmath.h"
@@ -72,6 +73,9 @@ static void InEnemyDisp(task *tp);
 static void InEnemyDest(task *tp);
 static void FinalDisp(task *tp);
 static void DrawEmeraldFlash(Sint32 no);
+static void EmeraldGetSignKiran(task *tp);
+static void EmeraldGetSign(task *tp);
+static void EmeraldGetSignDisp(task *tp);
 
 // emerald kinds, the second byte of the set file's ang.x
 enum {
@@ -282,13 +286,6 @@ static NJS_CNK_MODEL *emerald_shine_models[] = {
     &emerald_shine_model_2,
 };
 
-static CCL_INFO emerald_colli_info[1] = {
-    {0, CI_FORM_SPHERE, (Sint8)0xF0, 0, 0x00788000, {0.0f, 0.0f, 0.0f}, 3.0f,
-     0.0f, 0.0f, 0.0f, 0, 0, 0},
-};
-
-static NJS_POINT3 emerald_edit_origin = {0.0f, 0.0f, 0.0f};
-
 EMERALD_PATH **emerald_path_tbl;
 
 // the emerald with one of three highlight shells, picked by the camera angle
@@ -334,6 +331,18 @@ static void DrawEmeraldModel(void) {
   _rename_CnkDrawModelColor(emerald_shine_models[no], color);
 }
 
+// stages with moving emeralds hand their path list over before the set file is
+// read
+void EmeraldSetPathTable(EMERALD_PATH **tbl, Sint32 num) {
+  emerald_path_tbl = tbl;
+  emerald_path_num = num;
+}
+
+void EmeraldClearPathTable(void) {
+  emerald_path_num = -1;
+  emerald_path_tbl = NULL;
+}
+
 // underground pieces can only be dug up, except in the stages listed
 static BOOL CheckPlayerCanGet(Sint32 kind, Sint32 pno) {
   switch (kind) {
@@ -359,6 +368,50 @@ static BOOL CheckPlayerCanGet(Sint32 kind, Sint32 pno) {
     }
   }
   return TRUE;
+}
+
+// an emerald placed by code instead of by the set file
+task *CreateEmerald(NJS_POINT3 *pos, Sint32 kind, Sint32 id) {
+  task *tp = CreateFundamentalTask(IM_TWK, LEV_1, ObjectEmerald);
+
+  STACK_PAD_VAR(1);
+  if (tp != NULL) {
+    tp->twp->pos = *pos;
+    tp->twp->ang.x = (Uint8)(Sint8)kind << 8 | (Uint8)(Sint8)id;
+    tp->twp->mode = 3;
+  }
+  return tp;
+}
+
+// mode 5 hides the emerald and drops its collision, mode 4 shows it again
+void EmeraldSetVisible(task *tp, Sint32 on) {
+  if (on != 0) {
+    tp->twp->mode = 4;
+    if (tp->twp->smode == SMD_TAKEN && tp->twp->smode != SMD_ALIVE) {
+      tp->twp->smode = SMD_CHECK;
+    }
+  } else {
+    tp->twp->mode = 5;
+  }
+}
+
+// an emerald carried by another object, drawn with the parent's angle
+task *CreateEmeraldChild(task *ptp, NJS_POINT3 *pos, Sint32 kind, Sint32 id) {
+  task *tp = CreateChildTask(IM_TWK, NormalExec, ptp);
+
+  if (tp != NULL) {
+    tp->twp->pos = *pos;
+    tp->twp->ang.x = (Uint8)(Sint8)kind << 8 | (Uint8)(Sint8)id;
+    tp->twp->mode = 4;
+    if (fn_80032428()) {
+      tp->disp = NormalDisp;
+    } else {
+      tp->disp_dely = NormalDisp;
+    }
+    tp->dest = NormalDest;
+    NormalInit(tp);
+  }
+  return tp;
 }
 
 static void SetEmeraldLight(void) {
@@ -483,6 +536,125 @@ static void DrawEmeraldEditAngY(NJS_POINT3 *pos, Angle angy, Sint32 no) {
   ang.z = 0;
   DrawEmeraldEdit(pos, &ang, no);
 }
+
+// the emerald that rises out of the player when one is collected
+void CreateEmeraldGetSign(Sint32 pno, Sint32 no) {
+  task *tp;
+
+  STACK_PAD_VAR(2);
+  // a player number outside the range hangs the game, as in the original
+  while (pno < 0 || pno >= 2) {
+  }
+
+  tp = CreateFundamentalTask(IM_TWK, LEV_3, EmeraldGetSign);
+  if (tp != NULL) {
+    tp->twp->btimer = (Uint8)pno;
+    tp->work.l = no;
+  }
+}
+
+static Float emerald_kiran_spd = 2.5f;
+static Float emerald_kiran_scl = 1.2f;
+
+static void EmeraldGetSignKiran(task *tp) {
+  taskwk *twp = tp->twp;
+  NJS_VECTOR v;
+
+  v.x = emerald_kiran_spd * (njRandom() - 0.5f);
+  v.z = emerald_kiran_spd * (njRandom() - 0.5f);
+  v.y = emerald_kiran_spd * (njRandom() - 0.5f);
+  if (v.y < 0.0f) {
+    v.y *= 0.3f;
+  }
+  CreateKiran(&twp->pos, &v, emerald_kiran_scl);
+}
+
+static void EmeraldGetSign(task *tp) {
+  taskwk *twp = tp->twp;
+  taskwk *ptwp;
+  Sint32 i;
+
+  if ((ptwp = playertwp[twp->btimer]) == NULL) {
+    FreeTask(tp);
+    return;
+  }
+
+  switch (twp->mode) {
+  case 0:
+    twp->mode = 1;
+    twp->scl.x = 0.0f;
+    twp->wtimer = 0;
+    tp->disp_sort = EmeraldGetSignDisp;
+    break;
+  case 1:
+    twp->pos = ptwp->cwp->info->center;
+    twp->pos.y += 2.0f + (ptwp->cwp->info->a + 3.8f * twp->scl.x);
+    twp->scl.x += 0.1f;
+    twp->wtimer++;
+    if (twp->wtimer > 120) {
+      twp->ang.y += 0x13E9;
+      if (twp->scl.x > 4.0f) {
+        for (i = 0; i < 8; i++) {
+          EmeraldGetSignKiran(tp);
+        }
+        FreeTask(tp);
+      } else {
+        EmeraldGetSignKiran(tp);
+      }
+    } else {
+      twp->ang.y += 0x5B;
+      if (twp->scl.x > 1.2f) {
+        twp->scl.x = 1.2f;
+      }
+    }
+    break;
+  }
+}
+
+static void EmeraldGetSignDisp(task *tp) {
+  taskwk *twp = tp->twp;
+  Angle float_spd;
+
+  njDisableFog();
+  gjSetFog();
+  if (emerald_param.flag & 1) {
+    SetEmeraldLight();
+  } else {
+    SetEmeraldLightNoSpec();
+  }
+
+  njPushMatrixEx();
+  float_spd = emerald_param.float_spd;
+  if (float_spd != 0) {
+    njTranslate(NULL, twp->pos.x,
+                twp->pos.y + emerald_param.float_h *
+                                 njSin(lbl_801CC168._7C * float_spd),
+                twp->pos.z);
+  } else {
+    njTranslateEx(&twp->pos);
+  }
+  njRotateY(NULL, twp->ang.y);
+  njSetTexture(emerald_param.texlist[tp->work.l]);
+  njScale(NULL, twp->scl.x, twp->scl.x, twp->scl.x);
+  if (emerald_param.model[tp->work.l] == &emerald_model) {
+    DrawEmeraldModel();
+  } else {
+    njCnkCacheDrawModel(emerald_param.model[tp->work.l]);
+  }
+  DrawEmeraldFlash(tp->work.l);
+  njPopMatrixEx();
+
+  ResetEmeraldLight();
+  njEnableFog();
+  gjSetFog();
+}
+
+static CCL_INFO emerald_colli_info[1] = {
+    {0, CI_FORM_SPHERE, (Sint8)0xF0, 0, 0x00788000, {0.0f, 0.0f, 0.0f}, 3.0f,
+     0.0f, 0.0f, 0.0f, 0, 0, 0},
+};
+
+static NJS_POINT3 emerald_edit_origin = {0.0f, 0.0f, 0.0f};
 
 static void DrawColliSphere(NJS_POINT3 *pos, Float r) {
   NJS_VECTOR scl;
