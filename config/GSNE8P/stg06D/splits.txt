@@ -143,8 +143,8 @@ stg06D_35.c:
 	.text       start:0x00014914 end:0x00014D9C
 	.rodata     start:0x00000738 end:0x00000758
 
-stg06D_36.c:
-	.text       start:0x00014E38 end:0x000152BC
+OBJECT/o_bigjump.c:
+	.text       start:0x00014D9C end:0x000153BC
 	.rodata     start:0x00000758 end:0x00000778
 
 OBJECT/o_bunchin.c:

@@ -64,6 +64,10 @@ OBJECT/o_3spring.c:
 	.text       start:0x0000F260 end:0x0000F6FC
 	.rodata     start:0x00000538 end:0x00000558
 
+OBJECT/o_bigjump.c:
+	.text       start:0x0000FB84 end:0x000101A4
+	.rodata     start:0x00000578 end:0x00000598
+
 OBJECT/o_bunchin.c:
 	.text       start:0x000101A4 end:0x000116FC
 	.rodata     start:0x00000598 end:0x000005E0

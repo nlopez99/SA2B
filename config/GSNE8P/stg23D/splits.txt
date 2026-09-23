@@ -211,8 +211,8 @@ stg23D_51.c:
 	.text       start:0x00019320 end:0x000197A8
 	.rodata     start:0x00000958 end:0x00000978
 
-stg23D_52.c:
-	.text       start:0x00019844 end:0x00019CC8
+OBJECT/o_bigjump.c:
+	.text       start:0x000197A8 end:0x00019DC8
 	.rodata     start:0x00000978 end:0x00000998
 
 OBJECT/o_bunchin.c:

@@ -116,8 +116,8 @@ stg29D_28.c:
 	.text       start:0x00010C94 end:0x0001111C
 	.rodata     start:0x00000600 end:0x00000620
 
-stg29D_29.c:
-	.text       start:0x000111B8 end:0x0001163C
+OBJECT/o_bigjump.c:
+	.text       start:0x0001111C end:0x0001173C
 	.rodata     start:0x00000620 end:0x00000640
 
 OBJECT/o_bunchin.c:

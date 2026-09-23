@@ -127,8 +127,8 @@ stg37D_31.c:
 	.text       start:0x000190E8 end:0x00019570
 	.rodata     start:0x000008F8 end:0x00000918
 
-stg37D_32.c:
-	.text       start:0x0001960C end:0x00019A90
+OBJECT/o_bigjump.c:
+	.text       start:0x00019570 end:0x00019B90
 	.rodata     start:0x00000918 end:0x00000938
 
 OBJECT/o_bunchin.c:

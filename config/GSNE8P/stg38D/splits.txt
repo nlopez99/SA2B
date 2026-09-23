@@ -155,8 +155,8 @@ stg38D_38.c:
 	.text       start:0x0001AD14 end:0x0001B19C
 	.rodata     start:0x00000918 end:0x00000938
 
-stg38D_39.c:
-	.text       start:0x0001B238 end:0x0001B6BC
+OBJECT/o_bigjump.c:
+	.text       start:0x0001B19C end:0x0001B7BC
 	.rodata     start:0x00000938 end:0x00000958
 
 stg38D_40.c:

@@ -163,8 +163,8 @@ stg17D_39.c:
 	.text       start:0x0001F730 end:0x0001FBB8
 	.rodata     start:0x00000988 end:0x000009A8
 
-stg17D_40.c:
-	.text       start:0x0001FC54 end:0x000200D8
+OBJECT/o_bigjump.c:
+	.text       start:0x0001FBB8 end:0x000201D8
 	.rodata     start:0x000009A8 end:0x000009C8
 
 OBJECT/o_bunchin.c:

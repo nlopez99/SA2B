@@ -251,8 +251,8 @@ stg25D_62.c:
 	.text       start:0x000220DC end:0x00022564
 	.rodata     start:0x00000BA0 end:0x00000BC0
 
-stg25D_63.c:
-	.text       start:0x00022600 end:0x00022A84
+OBJECT/o_bigjump.c:
+	.text       start:0x00022564 end:0x00022B84
 	.rodata     start:0x00000BC0 end:0x00000BE0
 
 OBJECT/o_bunchin.c:

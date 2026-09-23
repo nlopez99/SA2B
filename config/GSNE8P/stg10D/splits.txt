@@ -191,8 +191,8 @@ stg10D_47.c:
 	.text       start:0x0001BBB8 end:0x0001C040
 	.rodata     start:0x00000930 end:0x00000950
 
-stg10D_48.c:
-	.text       start:0x0001C0DC end:0x0001C560
+OBJECT/o_bigjump.c:
+	.text       start:0x0001C040 end:0x0001C660
 	.rodata     start:0x00000950 end:0x00000970
 
 OBJECT/o_bunchin.c:

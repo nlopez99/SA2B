@@ -184,8 +184,8 @@ stg07D_45.c:
 	.text       start:0x000187EC end:0x00018C74
 	.rodata     start:0x00000868 end:0x00000888
 
-stg07D_46.c:
-	.text       start:0x00018D10 end:0x00019194
+OBJECT/o_bigjump.c:
+	.text       start:0x00018C74 end:0x00019294
 	.rodata     start:0x00000888 end:0x000008A8
 
 stg07D_47.c:

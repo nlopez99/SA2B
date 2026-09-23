@@ -107,8 +107,8 @@ boss_hotshotD_26.c:
 	.text       start:0x000124C0 end:0x00012948
 	.rodata     start:0x000009D0 end:0x000009F0
 
-boss_hotshotD_27.c:
-	.text       start:0x000129E4 end:0x00012E68
+OBJECT/o_bigjump.c:
+	.text       start:0x00012948 end:0x00012F68
 	.rodata     start:0x000009F0 end:0x00000A10
 
 OBJECT/o_bunchin.c:

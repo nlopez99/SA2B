@@ -179,8 +179,8 @@ stg24D_43.c:
 	.text       start:0x0001E074 end:0x0001E4FC
 	.rodata     start:0x00000AA0 end:0x00000AC0
 
-stg24D_44.c:
-	.text       start:0x0001E598 end:0x0001EA1C
+OBJECT/o_bigjump.c:
+	.text       start:0x0001E4FC end:0x0001EB1C
 	.rodata     start:0x00000AC0 end:0x00000AE0
 
 OBJECT/o_bunchin.c:

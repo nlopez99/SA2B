@@ -116,8 +116,8 @@ stg20D_28.c:
 	.text       start:0x000171A8 end:0x00017630
 	.rodata     start:0x000008C8 end:0x000008E8
 
-stg20D_29.c:
-	.text       start:0x000176CC end:0x00017B50
+OBJECT/o_bigjump.c:
+	.text       start:0x00017630 end:0x00017C50
 	.rodata     start:0x000008E8 end:0x00000908
 
 OBJECT/o_bunchin.c:

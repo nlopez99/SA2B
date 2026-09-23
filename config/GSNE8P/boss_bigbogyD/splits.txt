@@ -115,8 +115,8 @@ boss_bigbogyD_28.c:
 	.text       start:0x0001CC24 end:0x0001D0AC
 	.rodata     start:0x00000F90 end:0x00000FB0
 
-boss_bigbogyD_29.c:
-	.text       start:0x0001D148 end:0x0001D5CC
+OBJECT/o_bigjump.c:
+	.text       start:0x0001D0AC end:0x0001D6CC
 	.rodata     start:0x00000FB0 end:0x00000FD0
 
 OBJECT/o_bunchin.c:

@@ -178,8 +178,8 @@ stg15D_43.c:
 	.text       start:0x00016BD0 end:0x00017058
 	.rodata     start:0x00000860 end:0x00000880
 
-stg15D_44.c:
-	.text       start:0x000170F4 end:0x00017578
+OBJECT/o_bigjump.c:
+	.text       start:0x00017058 end:0x00017678
 	.rodata     start:0x00000880 end:0x000008A0
 
 OBJECT/o_bunchin.c:

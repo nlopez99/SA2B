@@ -167,8 +167,8 @@ stg50D_41.c:
 	.text       start:0x00017274 end:0x000176FC
 	.rodata     start:0x00000820 end:0x00000840
 
-stg50D_42.c:
-	.text       start:0x00017798 end:0x00017C1C
+OBJECT/o_bigjump.c:
+	.text       start:0x000176FC end:0x00017D1C
 	.rodata     start:0x00000840 end:0x00000860
 
 OBJECT/o_bunchin.c:

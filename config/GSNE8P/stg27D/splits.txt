@@ -163,8 +163,8 @@ stg27D_40.c:
 	.text       start:0x00018B7C end:0x00019004
 	.rodata     start:0x000008D8 end:0x000008F8
 
-stg27D_41.c:
-	.text       start:0x000190A0 end:0x00019524
+OBJECT/o_bigjump.c:
+	.text       start:0x00019004 end:0x00019624
 	.rodata     start:0x000008F8 end:0x00000918
 
 OBJECT/o_bunchin.c:

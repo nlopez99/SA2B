@@ -155,8 +155,8 @@ Boss_GolemD_38.c:
 	.text       start:0x0001B344 end:0x0001B7CC
 	.rodata     start:0x00001028 end:0x00001048
 
-Boss_GolemD_39.c:
-	.text       start:0x0001B868 end:0x0001BCEC
+OBJECT/o_bigjump.c:
+	.text       start:0x0001B7CC end:0x0001BDEC
 	.rodata     start:0x00001048 end:0x00001068
 
 OBJECT/o_bunchin.c:

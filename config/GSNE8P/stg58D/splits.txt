@@ -176,8 +176,8 @@ stg58D_43.c:
 	.text       start:0x0001BBF0 end:0x0001C078
 	.rodata     start:0x000009B8 end:0x000009D8
 
-stg58D_44.c:
-	.text       start:0x0001C114 end:0x0001C598
+OBJECT/o_bigjump.c:
+	.text       start:0x0001C078 end:0x0001C698
 	.rodata     start:0x000009D8 end:0x000009F8
 
 stg58D_45.c:

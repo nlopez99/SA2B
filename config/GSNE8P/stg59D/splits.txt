@@ -239,8 +239,8 @@ stg59D_59.c:
 	.text       start:0x000220F4 end:0x0002257C
 	.rodata     start:0x00000BA0 end:0x00000BC0
 
-stg59D_60.c:
-	.text       start:0x00022618 end:0x00022A9C
+OBJECT/o_bigjump.c:
+	.text       start:0x0002257C end:0x00022B9C
 	.rodata     start:0x00000BC0 end:0x00000BE0
 
 OBJECT/o_bunchin.c:

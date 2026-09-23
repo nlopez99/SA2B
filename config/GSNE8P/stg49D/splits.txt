@@ -184,8 +184,8 @@ stg49D_45.c:
 	.text       start:0x00018970 end:0x00018DF8
 	.rodata     start:0x00000868 end:0x00000888
 
-stg49D_46.c:
-	.text       start:0x00018E94 end:0x00019318
+OBJECT/o_bigjump.c:
+	.text       start:0x00018DF8 end:0x00019418
 	.rodata     start:0x00000888 end:0x000008A8
 
 stg49D_47.c:

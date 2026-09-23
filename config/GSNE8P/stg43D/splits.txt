@@ -167,8 +167,8 @@ stg43D_40.c:
 	.text       start:0x000179B0 end:0x00017E38
 	.rodata     start:0x00000810 end:0x00000830
 
-stg43D_41.c:
-	.text       start:0x00017ED4 end:0x00018358
+OBJECT/o_bigjump.c:
+	.text       start:0x00017E38 end:0x00018458
 	.rodata     start:0x00000830 end:0x00000850
 
 OBJECT/o_bunchin.c:

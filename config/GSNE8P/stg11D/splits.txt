@@ -176,8 +176,8 @@ stg11D_43.c:
 	.text       start:0x0001B29C end:0x0001B724
 	.rodata     start:0x00000980 end:0x000009A0
 
-stg11D_44.c:
-	.text       start:0x0001B7C0 end:0x0001BC44
+OBJECT/o_bigjump.c:
+	.text       start:0x0001B724 end:0x0001BD44
 	.rodata     start:0x000009A0 end:0x000009C0
 
 stg11D_45.c:

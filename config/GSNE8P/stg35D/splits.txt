@@ -135,8 +135,8 @@ stg35D_32.c:
 	.text       start:0x00022F44 end:0x000233CC
 	.rodata     start:0x00000B08 end:0x00000B28
 
-stg35D_33.c:
-	.text       start:0x00023468 end:0x000238EC
+OBJECT/o_bigjump.c:
+	.text       start:0x000233CC end:0x000239EC
 	.rodata     start:0x00000B28 end:0x00000B48
 
 OBJECT/o_bunchin.c:

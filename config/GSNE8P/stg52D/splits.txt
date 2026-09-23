@@ -182,8 +182,8 @@ stg52D_44.c:
 	.text       start:0x00022408 end:0x00022890
 	.rodata     start:0x00000968 end:0x00000988
 
-stg52D_45.c:
-	.text       start:0x0002292C end:0x00022DB0
+OBJECT/o_bigjump.c:
+	.text       start:0x00022890 end:0x00022EB0
 	.rodata     start:0x00000988 end:0x000009A8
 
 OBJECT/o_bunchin.c:

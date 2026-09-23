@@ -195,8 +195,8 @@ stg44D_48.c:
 	.text       start:0x00018AE4 end:0x00018F6C
 	.rodata     start:0x00000868 end:0x00000888
 
-stg44D_49.c:
-	.text       start:0x00019008 end:0x0001948C
+OBJECT/o_bigjump.c:
+	.text       start:0x00018F6C end:0x0001958C
 	.rodata     start:0x00000888 end:0x000008A8
 
 OBJECT/o_bunchin.c:

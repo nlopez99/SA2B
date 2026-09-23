@@ -116,8 +116,8 @@ stg33D_29.c:
 	.text       start:0x0001084C end:0x00010CD4
 	.rodata     start:0x000005A8 end:0x000005C8
 
-stg33D_30.c:
-	.text       start:0x00010D70 end:0x000111F4
+OBJECT/o_bigjump.c:
+	.text       start:0x00010CD4 end:0x000112F4
 	.rodata     start:0x000005C8 end:0x000005E8
 
 OBJECT/o_bunchin.c:

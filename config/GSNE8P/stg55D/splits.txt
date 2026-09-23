@@ -155,8 +155,8 @@ stg55D_38.c:
 	.text       start:0x00017E38 end:0x000182C0
 	.rodata     start:0x000008A0 end:0x000008C0
 
-stg55D_39.c:
-	.text       start:0x0001835C end:0x000187E0
+OBJECT/o_bigjump.c:
+	.text       start:0x000182C0 end:0x000188E0
 	.rodata     start:0x000008C0 end:0x000008E0
 
 OBJECT/o_bunchin.c:

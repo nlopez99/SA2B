@@ -203,8 +203,8 @@ stg47D_49.c:
 	.text       start:0x000183CC end:0x00018854
 	.rodata     start:0x00000890 end:0x000008B0
 
-stg47D_50.c:
-	.text       start:0x000188F0 end:0x00018D74
+OBJECT/o_bigjump.c:
+	.text       start:0x00018854 end:0x00018E74
 	.rodata     start:0x000008B0 end:0x000008D0
 
 OBJECT/o_bunchin.c:

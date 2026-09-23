@@ -179,8 +179,8 @@ stg09D_44.c:
 	.text       start:0x00015FA8 end:0x00016430
 	.rodata     start:0x00000860 end:0x00000880
 
-stg09D_45.c:
-	.text       start:0x000164CC end:0x00016950
+OBJECT/o_bigjump.c:
+	.text       start:0x00016430 end:0x00016A50
 	.rodata     start:0x00000880 end:0x000008A0
 
 OBJECT/o_bunchin.c:

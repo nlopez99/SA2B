@@ -199,8 +199,8 @@ boss_last1D_49.c:
 	.text       start:0x0001B8E0 end:0x0001BD68
 	.rodata     start:0x00000E88 end:0x00000EA8
 
-boss_last1D_50.c:
-	.text       start:0x0001BE04 end:0x0001C288
+OBJECT/o_bigjump.c:
+	.text       start:0x0001BD68 end:0x0001C388
 	.rodata     start:0x00000EA8 end:0x00000EC8
 
 OBJECT/o_bunchin.c:

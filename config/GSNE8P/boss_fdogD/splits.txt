@@ -115,8 +115,8 @@ boss_fdogD_28.c:
 	.text       start:0x00010A34 end:0x00010EBC
 	.rodata     start:0x00000788 end:0x000007A8
 
-boss_fdogD_29.c:
-	.text       start:0x00010F58 end:0x000113DC
+OBJECT/o_bigjump.c:
+	.text       start:0x00010EBC end:0x000114DC
 	.rodata     start:0x000007A8 end:0x000007C8
 
 OBJECT/o_bunchin.c:

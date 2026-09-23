@@ -171,8 +171,8 @@ stg14D_42.c:
 	.text       start:0x00016F50 end:0x000173D8
 	.rodata     start:0x000007B8 end:0x000007D8
 
-stg14D_43.c:
-	.text       start:0x00017474 end:0x000178F8
+OBJECT/o_bigjump.c:
+	.text       start:0x000173D8 end:0x000179F8
 	.rodata     start:0x000007D8 end:0x000007F8
 
 OBJECT/o_bunchin.c:

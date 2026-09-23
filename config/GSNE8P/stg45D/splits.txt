@@ -116,8 +116,8 @@ stg45D_28.c:
 	.text       start:0x0000F324 end:0x0000F7AC
 	.rodata     start:0x00000578 end:0x00000598
 
-stg45D_29.c:
-	.text       start:0x0000F848 end:0x0000FCCC
+OBJECT/o_bigjump.c:
+	.text       start:0x0000F7AC end:0x0000FDCC
 	.rodata     start:0x00000598 end:0x000005B8
 
 OBJECT/o_bunchin.c:
