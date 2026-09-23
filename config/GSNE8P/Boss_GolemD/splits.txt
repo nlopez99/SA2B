@@ -188,9 +188,10 @@ OBJECT/o_dmyobj.c:
 	.rodata     start:0x00001188 end:0x000011A8
 	.bss        start:0x00000BC0 end:0x00000BC8
 
-Boss_GolemD_47.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x000204A8 end:0x00020ECC
 	.rodata     start:0x000011A8 end:0x000011C8
+	.bss        start:0x00000BC8 end:0x00001210
 
 OBJECT/o_effobj0.c:
 	.text       start:0x00020ECC end:0x000218A0

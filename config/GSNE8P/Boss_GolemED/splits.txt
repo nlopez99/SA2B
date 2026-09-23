@@ -176,9 +176,10 @@ OBJECT/o_dmyobj.c:
 	.rodata     start:0x000010E0 end:0x00001100
 	.bss        start:0x000008C0 end:0x000008C8
 
-Boss_GolemED_43.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x0001F944 end:0x00020368
 	.rodata     start:0x00001100 end:0x00001120
+	.bss        start:0x000008C8 end:0x00000F10
 
 OBJECT/o_effobj0.c:
 	.text       start:0x00020368 end:0x00020D3C

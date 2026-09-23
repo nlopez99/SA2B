@@ -160,9 +160,10 @@ OBJECT/o_degring_linear.c:
 	.rodata     start:0x00000C68 end:0x00000C80
 	.data       start:0x0004CE78 end:0x0004CE80
 
-boss_bigfootD_40.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x0001F0A8 end:0x0001FACC
 	.rodata     start:0x00000C80 end:0x00000CA0
+	.bss        start:0x000005C8 end:0x00000C10
 
 OBJECT/o_effobj0.c:
 	.text       start:0x0001FACC end:0x000204A0

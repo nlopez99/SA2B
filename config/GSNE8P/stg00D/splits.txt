@@ -107,9 +107,10 @@ OBJECT/o_dmyobj.c:
 	.rodata     start:0x000004A8 end:0x000004C8
 	.bss        start:0x00000448 end:0x00000450
 
-stg00D_26.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x0000CB70 end:0x0000D594
 	.rodata     start:0x000004C8 end:0x000004E8
+	.bss        start:0x00000450 end:0x00000A98
 
 OBJECT/o_emerald.c:
 	.text       start:0x0000D594 end:0x00010928

@@ -229,9 +229,10 @@ OBJECT/o_degring_linear.c:
 	.rodata     start:0x00000AF8 end:0x00000B10
 	.data       start:0x00043A18 end:0x00043A20
 
-stg49D_56.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x00020194 end:0x00020BB8
 	.rodata     start:0x00000B10 end:0x00000B30
+	.bss        start:0x000006C0 end:0x00000D08
 
 OBJECT/o_effobj0.c:
 	.text       start:0x00020BB8 end:0x0002158C

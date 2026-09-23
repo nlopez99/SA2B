@@ -144,9 +144,10 @@ OBJECT/o_degring_linear.c:
 	.rodata     start:0x000008D0 end:0x000008E8
 	.data       start:0x0001BD78 end:0x0001BD80
 
-boss_fdogD_36.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x00015194 end:0x00015BB8
 	.rodata     start:0x000008E8 end:0x00000908
+	.bss        start:0x000007F0 end:0x00000E38
 
 OBJECT/o_effobj0.c:
 	.text       start:0x00015BB8 end:0x0001658C

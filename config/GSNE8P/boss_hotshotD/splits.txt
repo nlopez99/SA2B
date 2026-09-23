@@ -139,9 +139,10 @@ OBJECT/o_dmyobj.c:
 	.rodata     start:0x00000B30 end:0x00000B50
 	.bss        start:0x000005B0 end:0x000005B8
 
-boss_hotshotD_35.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x00017624 end:0x00018048
 	.rodata     start:0x00000B50 end:0x00000B70
+	.bss        start:0x000005B8 end:0x00000C00
 
 OBJECT/o_effobj0.c:
 	.text       start:0x00018048 end:0x00018A1C

@@ -170,9 +170,10 @@ OBJECT/o_dmyobj.c:
 	.rodata     start:0x00000AF0 end:0x00000B10
 	.bss        start:0x000004F8 end:0x00000500
 
-stg37D_42.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x0001F67C end:0x000200A0
 	.rodata     start:0x00000B10 end:0x00000B30
+	.bss        start:0x00000500 end:0x00000B48
 
 OBJECT/o_effobj0.c:
 	.text       start:0x000200A0 end:0x00020A74

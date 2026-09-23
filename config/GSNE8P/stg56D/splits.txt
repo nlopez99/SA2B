@@ -125,6 +125,11 @@ OBJECT/o_dmyobj.c:
 	.rodata     start:0x00000698 end:0x000006B8
 	.bss        start:0x00000698 end:0x000006A0
 
+OBJECT/o_dynamite.c:
+	.text       start:0x000144AC end:0x00014ED0
+	.rodata     start:0x000006B8 end:0x000006D8
+	.bss        start:0x000006A0 end:0x00000CE8
+
 OBJECT/o_hintbox.c:
 	.text       start:0x000158A4 end:0x000162C4
 	.rodata     start:0x00000708 end:0x00000738

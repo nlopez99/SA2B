@@ -236,9 +236,10 @@ OBJECT/o_dmyobj.c:
 	.rodata     start:0x00000B78 end:0x00000B98
 	.bss        start:0x00000728 end:0x00000730
 
-stg13D_57.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x00028FFC end:0x00029A20
 	.rodata     start:0x00000B98 end:0x00000BB8
+	.bss        start:0x00000730 end:0x00000D78
 
 OBJECT/o_effobj0.c:
 	.text       start:0x00029A20 end:0x0002A3F4

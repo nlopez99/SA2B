@@ -240,9 +240,10 @@ OBJECT/o_dmyobj.c:
 	.rodata     start:0x00000A60 end:0x00000A80
 	.bss        start:0x00000AF0 end:0x00000AF8
 
-stg44D_59.c:
+OBJECT/o_dynamite.c:
 	.text       start:0x0001F078 end:0x0001FA9C
 	.rodata     start:0x00000A80 end:0x00000AA0
+	.bss        start:0x00000AF8 end:0x00001140
 
 OBJECT/o_effobj0.c:
 	.text       start:0x0001FA9C end:0x00020470

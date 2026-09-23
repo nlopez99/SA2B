@@ -733,6 +733,7 @@ config.libs = [
             Object(Matching, "ENEMY/e_jet.c"),
             Object(Matching, "ENEMY/e_light.c"),
             Object(Matching, "OBJECT/o_dmyobj.c"),
+            Object(Matching, "OBJECT/o_dynamite.c"),
             Object(Matching, "OBJECT/o_bigjump.c"),
             Object(Matching, "OBJECT/o_kasoku.c"),
             Object(Matching, "OBJECT/o_rocket.c"),
