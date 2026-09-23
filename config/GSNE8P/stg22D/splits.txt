@@ -378,9 +378,11 @@ stg22D_95.c:
 	.text       start:0x00047DE4 end:0x00048084
 	.rodata     start:0x000015C0 end:0x000015F8
 
-stg22D_96.c:
+ENEMY/e_bullet.c:
 	.text       start:0x00048208 end:0x00048F70
 	.rodata     start:0x000015F8 end:0x00001640
+	.data       start:0x0010AD28 end:0x0010B098
+	.bss        start:0x00000D78 end:0x00000D80
 
 stg22D_97.c:
 	.text       start:0x00048F70 end:0x00049A68

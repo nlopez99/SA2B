@@ -351,9 +351,11 @@ stg05D_89.c:
 	.text       start:0x00045054 end:0x000452F4
 	.rodata     start:0x00001428 end:0x00001460
 
-stg05D_90.c:
+ENEMY/e_bullet.c:
 	.text       start:0x00045478 end:0x000461E0
 	.rodata     start:0x00001460 end:0x000014A8
+	.data       start:0x000919C8 end:0x00091D38
+	.bss        start:0x00000D90 end:0x00000D98
 
 stg05D_91.c:
 	.text       start:0x000461E0 end:0x00046D50

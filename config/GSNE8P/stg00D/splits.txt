@@ -230,9 +230,11 @@ stg00D_56.c:
 	.text       start:0x000287CC end:0x00028A6C
 	.rodata     start:0x00000C58 end:0x00000C90
 
-stg00D_57.c:
+ENEMY/e_bullet.c:
 	.text       start:0x00028BF0 end:0x00029958
 	.rodata     start:0x00000C90 end:0x00000CD8
+	.data       start:0x00051168 end:0x000514D8
+	.bss        start:0x00000B18 end:0x00000B20
 
 stg00D_58.c:
 	.text       start:0x00029958 end:0x0002A5C8

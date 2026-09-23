@@ -365,6 +365,27 @@ modules:
     header_type: none
     custom_type: s32
 
+  - symbol: e_bullet_plist!.data:0x258964
+    binary: assets/e_bullet_plist.bin
+    header: assets/e_bullet_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: e_bullet_vlist!.data:0x258a0c
+    binary: assets/e_bullet_vlist.bin
+    header: assets/e_bullet_vlist.inc
+    header_type: none
+    custom_type: s32
+  - symbol: e_bullet_trail_plist!.data:0x258b38
+    binary: assets/e_bullet_trail_plist.bin
+    header: assets/e_bullet_trail_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: e_bullet_trail_vlist!.data:0x258b88
+    binary: assets/e_bullet_trail_vlist.bin
+    header: assets/e_bullet_trail_vlist.inc
+    header_type: none
+    custom_type: s32
+
 - object: orig/GSNE8P/files/stg14D.rel
   hash: 68b094fa0f3e58adb7276d34d4b9881ac1c64fae
   symbols: config/GSNE8P/stg14D/symbols.txt

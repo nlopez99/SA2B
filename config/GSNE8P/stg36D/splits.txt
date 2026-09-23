@@ -306,9 +306,11 @@ stg36D_76.c:
 	.text       start:0x0004D8D4 end:0x0004DB74
 	.rodata     start:0x000016D8 end:0x00001710
 
-stg36D_77.c:
+ENEMY/e_bullet.c:
 	.text       start:0x0004DCF8 end:0x0004EA60
 	.rodata     start:0x00001710 end:0x00001758
+	.data       start:0x000BD750 end:0x000BDAC0
+	.bss        start:0x00000B98 end:0x00000BA0
 
 stg36D_78.c:
 	.text       start:0x0004EA60 end:0x0004F558

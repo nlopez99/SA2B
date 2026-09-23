@@ -362,9 +362,11 @@ stg30D_91.c:
 	.text       start:0x00045414 end:0x000456B4
 	.rodata     start:0x000013F8 end:0x00001430
 
-stg30D_92.c:
+ENEMY/e_bullet.c:
 	.text       start:0x00045838 end:0x000465A0
 	.rodata     start:0x00001430 end:0x00001478
+	.data       start:0x00108B28 end:0x00108E98
+	.bss        start:0x000011D0 end:0x000011D8
 
 stg30D_93.c:
 	.text       start:0x000465A0 end:0x00047210

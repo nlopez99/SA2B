@@ -424,9 +424,11 @@ stg18D_106.c:
 	.text       start:0x0004D754 end:0x0004D9F4
 	.rodata     start:0x00001758 end:0x00001790
 
-stg18D_107.c:
+ENEMY/e_bullet.c:
 	.text       start:0x0004DB78 end:0x0004E8E0
 	.rodata     start:0x00001790 end:0x000017D8
+	.data       start:0x0011F1D0 end:0x0011F540
+	.bss        start:0x00000DE8 end:0x00000DF0
 
 stg18D_108.c:
 	.text       start:0x0004E8E0 end:0x0004F450

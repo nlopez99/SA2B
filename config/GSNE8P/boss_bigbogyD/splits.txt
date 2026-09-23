@@ -266,9 +266,11 @@ boss_bigbogyD_67.c:
 	.text       start:0x000412B4 end:0x00041554
 	.rodata     start:0x00001960 end:0x00001998
 
-boss_bigbogyD_68.c:
+ENEMY/e_bullet.c:
 	.text       start:0x000416D8 end:0x00042440
 	.rodata     start:0x00001998 end:0x000019E0
+	.data       start:0x000845E8 end:0x00084958
+	.bss        start:0x00000BC0 end:0x00000BC8
 
 boss_bigbogyD_69.c:
 	.text       start:0x00042440 end:0x00042FB0

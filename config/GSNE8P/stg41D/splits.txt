@@ -380,9 +380,11 @@ stg41D_95.c:
 	.text       start:0x000491C8 end:0x00049468
 	.rodata     start:0x000015E0 end:0x00001618
 
-stg41D_96.c:
+ENEMY/e_bullet.c:
 	.text       start:0x000495EC end:0x0004A354
 	.rodata     start:0x00001618 end:0x00001660
+	.data       start:0x000B0848 end:0x000B0BB8
+	.bss        start:0x00000DC8 end:0x00000DD0
 
 stg41D_97.c:
 	.text       start:0x0004A354 end:0x0004AEC4

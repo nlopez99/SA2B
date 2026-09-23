@@ -350,9 +350,11 @@ stg40D_88.c:
 	.text       start:0x00042794 end:0x00042A34
 	.rodata     start:0x00001308 end:0x00001340
 
-stg40D_89.c:
+ENEMY/e_bullet.c:
 	.text       start:0x00042BB8 end:0x00043920
 	.rodata     start:0x00001340 end:0x00001388
+	.data       start:0x000C4168 end:0x000C44D8
+	.bss        start:0x00000DA0 end:0x00000DA8
 
 stg40D_90.c:
 	.text       start:0x00043920 end:0x00044418

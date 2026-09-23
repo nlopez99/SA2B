@@ -9,7 +9,7 @@
 #include "samt/sonic/shadow.h"
 #include "set.h"
 
-extern void *_rename_CreateObjDust0(NJS_POINT3 *pos, NJS_VECTOR *spd,
+extern void *_rename_CreateSmoke(NJS_POINT3 *pos, NJS_VECTOR *spd,
                                     Float scl);
 extern void *_rename_CreateObjDust1(NJS_POINT3 *pos, NJS_VECTOR *spd,
                                     Float scl);
@@ -169,7 +169,7 @@ static void ObjectIronBall2Exec(task *tp) {
     njRotateY(NULL, 0x8000);
     njCalcPoint(NULL, &vp, &pos);
     njCalcVector(NULL, &vs, &spd);
-    _rename_CreateObjDust0(&pos, &spd, ironball2_dust_scl);
+    _rename_CreateSmoke(&pos, &spd, ironball2_dust_scl);
     njPopMatrix(1);
   }
 

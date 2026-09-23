@@ -693,6 +693,7 @@ config.libs = [
             Object(Matching, "OBJECT/itemboxmanager.c"),
             Object(Matching, "EFFECT/ef_kiran.c"),
             Object(Matching, "OBJECT/o_ironball2.c"),
+            Object(Matching, "ENEMY/e_bullet.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

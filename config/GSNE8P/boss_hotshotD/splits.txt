@@ -262,9 +262,11 @@ boss_hotshotD_66.c:
 	.text       start:0x00037554 end:0x000377F4
 	.rodata     start:0x000013C0 end:0x000013F8
 
-boss_hotshotD_67.c:
+ENEMY/e_bullet.c:
 	.text       start:0x00037978 end:0x000386E0
 	.rodata     start:0x000013F8 end:0x00001440
+	.data       start:0x00060148 end:0x000604B8
+	.bss        start:0x00000C80 end:0x00000C88
 
 boss_hotshotD_68.c:
 	.text       start:0x000386E0 end:0x00039250

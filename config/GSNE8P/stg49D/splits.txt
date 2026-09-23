@@ -379,9 +379,11 @@ stg49D_95.c:
 	.text       start:0x000489B0 end:0x00048C50
 	.rodata     start:0x000015A0 end:0x000015D8
 
-stg49D_96.c:
+ENEMY/e_bullet.c:
 	.text       start:0x00048DD4 end:0x00049B3C
 	.rodata     start:0x000015D8 end:0x00001620
+	.data       start:0x00085F68 end:0x000862D8
+	.bss        start:0x00000D98 end:0x00000DA0
 
 stg49D_97.c:
 	.text       start:0x00049B3C end:0x00049D38

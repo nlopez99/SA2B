@@ -346,9 +346,11 @@ stg38D_87.c:
 	.text       start:0x00048DB8 end:0x00049058
 	.rodata     start:0x00001638 end:0x00001670
 
-stg38D_88.c:
+ENEMY/e_bullet.c:
 	.text       start:0x000491DC end:0x00049F44
 	.rodata     start:0x00001670 end:0x000016B8
+	.data       start:0x000DD830 end:0x000DDBA0
+	.bss        start:0x00001018 end:0x00001020
 
 stg38D_89.c:
 	.text       start:0x00049F44 end:0x0004ABB4

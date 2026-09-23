@@ -318,9 +318,11 @@ stg35D_79.c:
 	.text       start:0x0004DB80 end:0x0004DE20
 	.rodata     start:0x00001708 end:0x00001740
 
-stg35D_80.c:
+ENEMY/e_bullet.c:
 	.text       start:0x0004DFA4 end:0x0004ED0C
 	.rodata     start:0x00001740 end:0x00001788
+	.data       start:0x000C8650 end:0x000C89C0
+	.bss        start:0x00000BA0 end:0x00000BA8
 
 stg35D_81.c:
 	.text       start:0x0004ED0C end:0x0004F97C

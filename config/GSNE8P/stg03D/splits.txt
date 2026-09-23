@@ -390,9 +390,11 @@ stg03D_98.c:
 	.text       start:0x00049EA0 end:0x0004A140
 	.rodata     start:0x00001698 end:0x000016D0
 
-stg03D_99.c:
+ENEMY/e_bullet.c:
 	.text       start:0x0004A2C4 end:0x0004B02C
 	.rodata     start:0x000016D0 end:0x00001718
+	.data       start:0x001242B0 end:0x00124620
+	.bss        start:0x00000DC8 end:0x00000DD0
 
 stg03D_100.c:
 	.text       start:0x0004B02C end:0x0004B8A0
