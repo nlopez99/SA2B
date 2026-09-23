@@ -36,7 +36,7 @@ extern void _rename_ShadowTexBegin(void *, Float, Float, void *, void *,
 extern void _rename_ShadowTexEnd(void *);
 extern void _rename_ShadowTexDraw(Sint32, NJS_VECTOR *, Float, void *);
 extern void _rename_RingDrawShadowModel(void);
-extern void _rename_MakeParticle2(NJS_POINT3 *, NJS_VECTOR *, Float);
+extern void CreateRingSparkle(NJS_POINT3 *, NJS_VECTOR *, Float);
 extern void _rename_MakeParticle3(NJS_POINT3 *, NJS_VECTOR *, Float);
 extern void _rename_GoalRingChildExec(task *tp);
 
@@ -274,7 +274,7 @@ static void ObjectGoalRingExec(task *tp) {
         vec.x *= _rename_goalring_ptcl_spd / len;
         vec.y = _rename_goalring_ptcl_spd_y;
         vec.z *= _rename_goalring_ptcl_spd / len;
-        _rename_MakeParticle2(&pos, &vec, 1.5f);
+        CreateRingSparkle(&pos, &vec, 1.5f);
       }
     }
     fn_8006AFFC(0x1012, twp, 1, (Sint16) - (twp->wtimer << 1), 30,
