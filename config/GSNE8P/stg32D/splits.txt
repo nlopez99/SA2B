@@ -279,8 +279,8 @@ stg32D_69.c:
 	.text       start:0x00024C68 end:0x00024D24
 	.rodata     start:0x00000BB0 end:0x00000BB8
 
-stg32D_70.c:
-	.text       start:0x00024ECC end:0x000261E4
+OBJECT/o_goalring.c:
+	.text       start:0x00024EC8 end:0x000261E4
 	.rodata     start:0x00000BB8 end:0x00000C10
 
 stg32D_71.c:

@@ -187,8 +187,8 @@ Boss_GolemED_46.c:
 	.text       start:0x000238EC end:0x000239A8
 	.rodata     start:0x000011A0 end:0x000011A8
 
-Boss_GolemED_47.c:
-	.text       start:0x00023B50 end:0x00024E68
+OBJECT/o_goalring.c:
+	.text       start:0x00023B4C end:0x00024E68
 	.rodata     start:0x000011A8 end:0x00001200
 
 Boss_GolemED_48.c:

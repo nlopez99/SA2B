@@ -119,8 +119,8 @@ stg00D_29.c:
 	.text       start:0x00010B60 end:0x00010F9C
 	.rodata     start:0x00000550 end:0x00000578
 
-stg00D_30.c:
-	.text       start:0x00010FA0 end:0x000122B8
+OBJECT/o_goalring.c:
+	.text       start:0x00010F9C end:0x000122B8
 	.rodata     start:0x00000578 end:0x000005D0
 
 stg00D_31.c:

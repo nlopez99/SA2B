@@ -235,8 +235,8 @@ stg09D_58.c:
 	.text       start:0x000204E4 end:0x000205A0
 	.rodata     start:0x00000B18 end:0x00000B20
 
-stg09D_59.c:
-	.text       start:0x00020748 end:0x00021A60
+OBJECT/o_goalring.c:
+	.text       start:0x00020744 end:0x00021A60
 	.rodata     start:0x00000B20 end:0x00000B78
 
 stg09D_60.c:

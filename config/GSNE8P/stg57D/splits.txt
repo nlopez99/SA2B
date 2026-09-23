@@ -247,8 +247,8 @@ stg57D_61.c:
 	.text       start:0x000261E8 end:0x000262A4
 	.rodata     start:0x00000BE0 end:0x00000BE8
 
-stg57D_62.c:
-	.text       start:0x0002644C end:0x00027764
+OBJECT/o_goalring.c:
+	.text       start:0x00026448 end:0x00027764
 	.rodata     start:0x00000BE8 end:0x00000C40
 
 stg57D_63.c:

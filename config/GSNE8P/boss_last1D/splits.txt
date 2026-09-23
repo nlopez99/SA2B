@@ -243,8 +243,8 @@ boss_last1D_60.c:
 	.text       start:0x00023FE8 end:0x000240A4
 	.rodata     start:0x00001088 end:0x00001090
 
-boss_last1D_61.c:
-	.text       start:0x0002424C end:0x00025564
+OBJECT/o_goalring.c:
+	.text       start:0x00024248 end:0x00025564
 	.rodata     start:0x00001090 end:0x000010E8
 
 boss_last1D_62.c:

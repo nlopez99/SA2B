@@ -303,8 +303,8 @@ stg28D_75.c:
 	.text       start:0x000260C0 end:0x00026A40
 	.rodata     start:0x00000D48 end:0x00000D78
 
-stg28D_76.c:
-	.text       start:0x00026A44 end:0x00027D5C
+OBJECT/o_goalring.c:
+	.text       start:0x00026A40 end:0x00027D5C
 	.rodata     start:0x00000D78 end:0x00000DD0
 
 stg28D_77.c:

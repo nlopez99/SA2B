@@ -159,8 +159,8 @@ boss_bigbogyD_39.c:
 	.text       start:0x0002532C end:0x000253E8
 	.rodata     start:0x00001190 end:0x00001198
 
-boss_bigbogyD_40.c:
-	.text       start:0x00025590 end:0x000268A8
+OBJECT/o_goalring.c:
+	.text       start:0x0002558C end:0x000268A8
 	.rodata     start:0x00001198 end:0x000011F0
 
 boss_bigbogyD_41.c:

@@ -230,8 +230,8 @@ stg15D_57.c:
 	.text       start:0x000212C4 end:0x00021380
 	.rodata     start:0x00000B18 end:0x00000B20
 
-stg15D_58.c:
-	.text       start:0x00021528 end:0x00022840
+OBJECT/o_goalring.c:
+	.text       start:0x00021524 end:0x00022840
 	.rodata     start:0x00000B20 end:0x00000B78
 
 stg15D_59.c:

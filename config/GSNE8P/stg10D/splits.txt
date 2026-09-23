@@ -247,8 +247,8 @@ stg10D_61.c:
 	.text       start:0x000260F4 end:0x000261B0
 	.rodata     start:0x00000BE8 end:0x00000BF0
 
-stg10D_62.c:
-	.text       start:0x00026358 end:0x00027670
+OBJECT/o_goalring.c:
+	.text       start:0x00026354 end:0x00027670
 	.rodata     start:0x00000BF0 end:0x00000C48
 
 stg10D_63.c:

@@ -47,8 +47,8 @@ void fn_8011E19C(NJS_OBJECT *, fn_8011E19C_p2 *, Float);
 
 extern NJS_OBJECT lbl_13_data_1063DC;
 
-extern void fn_13_1863C(void*, float, float, void*, void*, void*);
-extern void fn_13_18AE8(int, NJS_VECTOR*, float, void*);
+extern void _rename_ShadowTexBegin(void*, float, float, void*, void*, void*);
+extern void _rename_ShadowTexDraw(int, NJS_VECTOR*, float, void*);
 
 // ^ extern
 // v in this file
@@ -97,7 +97,7 @@ void ObjectBoard(task *tp) {
   twp->smode = tp->twp->ang.x & 1;
   tp->work.ptr = (void *)syCalloc(1, 0x58);
   if (tp->work.ptr) {
-    fn_13_189EC(tp->work.ptr, 0x40);
+    _rename_ShadowTexInit(tp->work.ptr, 0x40);
     tp->exec = ObjectBoardExec;
     tp->dest = ObjectBoardDest;
     tp->disp = ObjectBoardDisp;
@@ -211,7 +211,7 @@ void ObjectBoardDispShad(task *tp) {
   if (p_twp) {
     o_ce_board_1((s32)twp->smode, &sp30, &sp34, &sp2C);
     r27 = p_pwp->m.action;
-    fn_13_1863C(tp->work.ptr, 1.8f, 0.0f, &twp->pos, 0, 0);
+    _rename_ShadowTexBegin(tp->work.ptr, 1.8f, 0.0f, &twp->pos, 0, 0);
     njSetTexture(sp30);
     njPushMatrixEx();
     if (twp->mode != 1) {
@@ -244,13 +244,13 @@ void ObjectBoardDispShad(task *tp) {
       }
     }
     njPopMatrixEx();
-    fn_13_18978(tp->work.ptr);
-    fn_13_18AE8(2, &twp->pos, 90.f, tp->work.ptr);
+    _rename_ShadowTexEnd(tp->work.ptr);
+    _rename_ShadowTexDraw(2, &twp->pos, 90.f, tp->work.ptr);
   }
 }
 
 void ObjectBoardDest(task *tp) {
-    fn_13_18AA8(tp->work.ptr);
+    _rename_ShadowTexFree(tp->work.ptr);
     syFree(tp->work.ptr);
     tp->work.ptr = NULL;
 }

@@ -219,8 +219,8 @@ stg43D_54.c:
 	.text       start:0x00021EEC end:0x00021FA8
 	.rodata     start:0x00000AC8 end:0x00000AD0
 
-stg43D_55.c:
-	.text       start:0x00022150 end:0x00023468
+OBJECT/o_goalring.c:
+	.text       start:0x0002214C end:0x00023468
 	.rodata     start:0x00000AD0 end:0x00000B28
 
 stg43D_56.c:

@@ -299,8 +299,8 @@ stg25D_74.c:
 	.text       start:0x0002B1FC end:0x0002B2B8
 	.rodata     start:0x00000DC8 end:0x00000DD0
 
-stg25D_75.c:
-	.text       start:0x0002B460 end:0x0002C778
+OBJECT/o_goalring.c:
+	.text       start:0x0002B45C end:0x0002C778
 	.rodata     start:0x00000DD0 end:0x00000E28
 
 stg25D_76.c:

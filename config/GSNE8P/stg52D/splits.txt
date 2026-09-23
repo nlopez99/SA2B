@@ -238,8 +238,8 @@ stg52D_58.c:
 	.text       start:0x0002C944 end:0x0002CA00
 	.rodata     start:0x00000C20 end:0x00000C28
 
-stg52D_59.c:
-	.text       start:0x0002CBA8 end:0x0002DEC0
+OBJECT/o_goalring.c:
+	.text       start:0x0002CBA4 end:0x0002DEC0
 	.rodata     start:0x00000C28 end:0x00000C80
 
 stg52D_60.c:

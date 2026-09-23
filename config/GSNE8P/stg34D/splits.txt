@@ -215,8 +215,8 @@ stg34D_53.c:
 	.text       start:0x00023768 end:0x00023824
 	.rodata     start:0x00000B58 end:0x00000B60
 
-stg34D_54.c:
-	.text       start:0x000239CC end:0x00024CE4
+OBJECT/o_goalring.c:
+	.text       start:0x000239C8 end:0x00024CE4
 	.rodata     start:0x00000B60 end:0x00000BB8
 
 stg34D_55.c:

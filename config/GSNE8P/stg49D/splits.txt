@@ -239,8 +239,8 @@ stg49D_59.c:
 	.text       start:0x00024700 end:0x000247BC
 	.rodata     start:0x00000BC0 end:0x00000BC8
 
-stg49D_60.c:
-	.text       start:0x00024964 end:0x00025C7C
+OBJECT/o_goalring.c:
+	.text       start:0x00024960 end:0x00025C7C
 	.rodata     start:0x00000BC8 end:0x00000C20
 
 stg49D_61.c:

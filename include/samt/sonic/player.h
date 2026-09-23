@@ -828,7 +828,9 @@ typedef struct {
   /* 0x3D */ s8 _3D;
   artificial_padding(0x3d, 0x6e, s8);
   /* 0x6E */ s16 _6E;
-  artificial_padding(0x6e, 0xf0, s16);
+  artificial_padding(0x6e, 0x7c, s16);
+  /* 0x7C */ u32 _7C;
+  artificial_padding(0x7c, 0xf0, u32);
 } lbl_801CC168_t;
 
 extern lbl_801CC168_t lbl_801CC168;

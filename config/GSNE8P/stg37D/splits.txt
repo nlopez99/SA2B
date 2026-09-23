@@ -175,8 +175,8 @@ stg37D_43.c:
 	.text       start:0x000200F4 end:0x00020A74
 	.rodata     start:0x00000B30 end:0x00000B60
 
-stg37D_44.c:
-	.text       start:0x00020A78 end:0x00021D90
+OBJECT/o_goalring.c:
+	.text       start:0x00020A74 end:0x00021D90
 	.rodata     start:0x00000B60 end:0x00000BB8
 
 stg37D_45.c:
