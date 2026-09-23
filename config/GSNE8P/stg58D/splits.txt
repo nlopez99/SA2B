@@ -404,9 +404,11 @@ stg58D_98.c:
 	.text       start:0x0004DE84 end:0x0004EC64
 	.rodata     start:0x00001890 end:0x000018D8
 
-stg58D_99.c:
-	.text       start:0x0004ED80 end:0x000511AC
+ENEMY/e_kumi.c:
+	.text       start:0x0004EC64 end:0x000511AC
 	.rodata     start:0x000018D8 end:0x00001978
+	.data       start:0x00079C00 end:0x00079D48
+	.bss        start:0x00002E70 end:0x00002E88
 
 stg58D_100.c:
 	.text       start:0x00051220 end:0x00053288

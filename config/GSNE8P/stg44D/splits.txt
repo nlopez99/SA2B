@@ -443,9 +443,11 @@ stg44D_108.c:
 	.text       start:0x0004F198 end:0x00054A28
 	.rodata     start:0x00001860 end:0x00001928
 
-stg44D_109.c:
-	.text       start:0x00054B44 end:0x00056F70
+ENEMY/e_kumi.c:
+	.text       start:0x00054A28 end:0x00056F70
 	.rodata     start:0x00001928 end:0x000019C8
+	.data       start:0x000E35D0 end:0x000E3718
+	.bss        start:0x00003278 end:0x00003290
 
 stg44D_110.c:
 	.text       start:0x00056FE4 end:0x0005904C

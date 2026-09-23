@@ -395,9 +395,11 @@ stg27D_96.c:
 	.text       start:0x0004AC34 end:0x0004BA14
 	.rodata     start:0x00001768 end:0x000017B0
 
-stg27D_97.c:
-	.text       start:0x0004BB30 end:0x0004DF5C
+ENEMY/e_kumi.c:
+	.text       start:0x0004BA14 end:0x0004DF5C
 	.rodata     start:0x000017B0 end:0x00001850
+	.data       start:0x000CD018 end:0x000CD160
+	.bss        start:0x00003058 end:0x00003070
 
 stg27D_98.c:
 	.text       start:0x0004DFD0 end:0x00050038

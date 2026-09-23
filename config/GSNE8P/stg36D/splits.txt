@@ -347,9 +347,11 @@ stg36D_83.c:
 	.text       start:0x0005208C end:0x00058898
 	.rodata     start:0x00001930 end:0x00001A10
 
-stg36D_84.c:
-	.text       start:0x00058DC0 end:0x0005B1EC
+ENEMY/e_kumi.c:
+	.text       start:0x00058CA4 end:0x0005B1EC
 	.rodata     start:0x00001A10 end:0x00001AB0
+	.data       start:0x000EE2F0 end:0x000EE438
+	.bss        start:0x00002C30 end:0x00002C48
 
 stg36D_85.c:
 	.text       start:0x0005B228 end:0x0005DC98

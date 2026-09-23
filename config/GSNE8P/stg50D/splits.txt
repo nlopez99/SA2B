@@ -415,9 +415,11 @@ stg50D_101.c:
 	.text       start:0x0004D928 end:0x000531B8
 	.rodata     start:0x00001818 end:0x000018E0
 
-stg50D_102.c:
-	.text       start:0x000532D4 end:0x00055700
+ENEMY/e_kumi.c:
+	.text       start:0x000531B8 end:0x00055700
 	.rodata     start:0x000018E0 end:0x00001980
+	.data       start:0x000B0E10 end:0x000B0F58
+	.bss        start:0x00003278 end:0x00003290
 
 stg50D_103.c:
 	.text       start:0x00055774 end:0x000577DC

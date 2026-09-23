@@ -459,9 +459,11 @@ stg21D_111.c:
 	.text       start:0x0004CA7C end:0x0004D85C
 	.rodata     start:0x000017D8 end:0x00001820
 
-stg21D_112.c:
-	.text       start:0x0004D978 end:0x0004FDA4
+ENEMY/e_kumi.c:
+	.text       start:0x0004D85C end:0x0004FDA4
 	.rodata     start:0x00001820 end:0x000018C0
+	.data       start:0x000D17A0 end:0x000D18E8
+	.bss        start:0x00002DC8 end:0x00002DE0
 
 stg21D_113.c:
 	.text       start:0x0004FE18 end:0x00051E80

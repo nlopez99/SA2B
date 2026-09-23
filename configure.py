@@ -699,6 +699,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_udreel.c"),
             Object(Matching, "ENEMY/e_bomb.c"),
             Object(Matching, "OBJECT/o_levupdai.c"),
+            Object(Matching, "ENEMY/e_kumi.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

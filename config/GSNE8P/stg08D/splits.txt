@@ -403,9 +403,11 @@ stg08D_98.c:
 	.text       start:0x0004A5E4 end:0x0004B3C4
 	.rodata     start:0x00001700 end:0x00001748
 
-stg08D_99.c:
-	.text       start:0x0004B4E0 end:0x0004D90C
+ENEMY/e_kumi.c:
+	.text       start:0x0004B3C4 end:0x0004D90C
 	.rodata     start:0x00001748 end:0x000017E8
+	.data       start:0x000B4B98 end:0x000B4CE0
+	.bss        start:0x000074B8 end:0x000074D0
 
 stg08D_100.c:
 	.text       start:0x0004D980 end:0x0004F9E8

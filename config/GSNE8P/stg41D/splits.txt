@@ -417,9 +417,11 @@ stg41D_101.c:
 	.text       start:0x0004CBDC end:0x0004D9BC
 	.rodata     start:0x000017F0 end:0x00001838
 
-stg41D_102.c:
-	.text       start:0x0004DAD8 end:0x0004FF04
+ENEMY/e_kumi.c:
+	.text       start:0x0004D9BC end:0x0004FF04
 	.rodata     start:0x00001838 end:0x000018D8
+	.data       start:0x000BD2C0 end:0x000BD408
+	.bss        start:0x00002DF8 end:0x00002E10
 
 stg41D_103.c:
 	.text       start:0x0004FF78 end:0x00051FE0

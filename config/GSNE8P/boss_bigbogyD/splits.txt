@@ -297,9 +297,11 @@ EFFECT/ef_explosion.c:
 	.data       start:0x00086E18 end:0x00086E90
 	.bss        start:0x00002BE0 end:0x00002BE8
 
-boss_bigbogyD_73.c:
-	.text       start:0x00044DA8 end:0x000471D4
+ENEMY/e_kumi.c:
+	.text       start:0x00044C8C end:0x000471D4
 	.rodata     start:0x00001B70 end:0x00001C10
+	.data       start:0x0008F158 end:0x0008F2A0
+	.bss        start:0x00002BE8 end:0x00002C00
 
 boss_bigbogyD_74.c:
 	.text       start:0x00047248 end:0x000492B0

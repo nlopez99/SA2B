@@ -403,9 +403,11 @@ stg14D_98.c:
 	.text       start:0x000482FC end:0x000490DC
 	.rodata     start:0x00001628 end:0x00001670
 
-stg14D_99.c:
-	.text       start:0x000491F8 end:0x0004B624
+ENEMY/e_kumi.c:
+	.text       start:0x000490DC end:0x0004B624
 	.rodata     start:0x00001670 end:0x00001710
+	.data       start:0x001190E0 end:0x00119228
+	.bss        start:0x00002E08 end:0x00002E20
 
 stg14D_100.c:
 	.text       start:0x0004B660 end:0x0004E0D0

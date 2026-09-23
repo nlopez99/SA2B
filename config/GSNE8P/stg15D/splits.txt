@@ -409,9 +409,11 @@ EFFECT/ef_explosion.c:
 	.data       start:0x00083138 end:0x000831B0
 	.bss        start:0x00002E28 end:0x00002E30
 
-stg15D_99.c:
-	.text       start:0x00047F70 end:0x0004A39C
+ENEMY/e_kumi.c:
+	.text       start:0x00047E54 end:0x0004A39C
 	.rodata     start:0x000016D8 end:0x00001778
+	.data       start:0x0008B478 end:0x0008B5C0
+	.bss        start:0x00002E30 end:0x00002E48
 
 stg15D_100.c:
 	.text       start:0x0004A410 end:0x0004C478

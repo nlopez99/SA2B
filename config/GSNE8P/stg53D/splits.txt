@@ -398,9 +398,11 @@ stg53D_96.c:
 	.text       start:0x00044F78 end:0x00045EF4
 	.rodata     start:0x00001550 end:0x000015A8
 
-stg53D_97.c:
-	.text       start:0x0004641C end:0x00048848
+ENEMY/e_kumi.c:
+	.text       start:0x00046300 end:0x00048848
 	.rodata     start:0x000015A8 end:0x00001648
+	.data       start:0x0007D5C0 end:0x0007D708
+	.bss        start:0x00002DF8 end:0x00002E10
 
 stg53D_98.c:
 	.text       start:0x00048884 end:0x0004B3F8

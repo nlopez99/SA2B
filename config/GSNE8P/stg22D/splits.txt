@@ -423,9 +423,11 @@ stg22D_103.c:
 	.text       start:0x0004E4B4 end:0x00053D44
 	.rodata     start:0x000018B0 end:0x00001978
 
-stg22D_104.c:
-	.text       start:0x00053E60 end:0x0005628C
+ENEMY/e_kumi.c:
+	.text       start:0x00053D44 end:0x0005628C
 	.rodata     start:0x00001978 end:0x00001A18
+	.data       start:0x00143EF0 end:0x00144038
+	.bss        start:0x00002E18 end:0x00002E30
 
 stg22D_105.c:
 	.text       start:0x000562C8 end:0x00058D38

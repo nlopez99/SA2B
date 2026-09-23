@@ -427,9 +427,11 @@ stg10D_104.c:
 	.text       start:0x0004ECAC end:0x0004FA8C
 	.rodata     start:0x00001838 end:0x00001880
 
-stg10D_105.c:
-	.text       start:0x0004FBA8 end:0x00051FD4
+ENEMY/e_kumi.c:
+	.text       start:0x0004FA8C end:0x00051FD4
 	.rodata     start:0x00001880 end:0x00001920
+	.data       start:0x001BD138 end:0x001BD280
+	.bss        start:0x000030C0 end:0x000030D8
 
 stg10D_106.c:
 	.text       start:0x00052010 end:0x00054680

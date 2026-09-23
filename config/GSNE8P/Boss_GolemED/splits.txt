@@ -323,9 +323,11 @@ EFFECT/ef_explosion.c:
 	.data       start:0x0010E148 end:0x0010E1C0
 	.bss        start:0x00002FA8 end:0x00002FB0
 
-Boss_GolemED_79.c:
-	.text       start:0x00042884 end:0x00044CB0
+ENEMY/e_kumi.c:
+	.text       start:0x00042768 end:0x00044CB0
 	.rodata     start:0x00001B58 end:0x00001BF8
+	.data       start:0x00116488 end:0x001165D0
+	.bss        start:0x00002FB0 end:0x00002FC8
 
 Boss_GolemED_80.c:
 	.text       start:0x00044D24 end:0x00046D8C

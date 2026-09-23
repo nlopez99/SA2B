@@ -443,9 +443,11 @@ stg23D_107.c:
 	.text       start:0x0004CD38 end:0x0004DB18
 	.rodata     start:0x00001890 end:0x000018D8
 
-stg23D_108.c:
-	.text       start:0x0004DC34 end:0x00050060
+ENEMY/e_kumi.c:
+	.text       start:0x0004DB18 end:0x00050060
 	.rodata     start:0x000018D8 end:0x00001978
+	.data       start:0x00154E20 end:0x00154F68
+	.bss        start:0x00002DC8 end:0x00002DE0
 
 stg23D_109.c:
 	.text       start:0x0005009C end:0x0005270C

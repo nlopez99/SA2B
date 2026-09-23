@@ -447,9 +447,11 @@ stg26D_109.c:
 	.text       start:0x0004FB84 end:0x00050964
 	.rodata     start:0x00001850 end:0x00001898
 
-stg26D_110.c:
-	.text       start:0x00050A80 end:0x00052EAC
+ENEMY/e_kumi.c:
+	.text       start:0x00050964 end:0x00052EAC
 	.rodata     start:0x00001898 end:0x00001938
+	.data       start:0x000F0588 end:0x000F06D0
+	.bss        start:0x00003100 end:0x00003118
 
 stg26D_111.c:
 	.text       start:0x00052F20 end:0x00054F88

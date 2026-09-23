@@ -381,9 +381,11 @@ EFFECT/ef_explosion.c:
 	.data       start:0x000F2198 end:0x000F2210
 	.bss        start:0x00002FD8 end:0x00002FE0
 
-boss_last1D_94.c:
-	.text       start:0x00043A64 end:0x00045E90
+ENEMY/e_kumi.c:
+	.text       start:0x00043948 end:0x00045E90
 	.rodata     start:0x00001A68 end:0x00001B08
+	.data       start:0x000FA4D8 end:0x000FA620
+	.bss        start:0x00002FE0 end:0x00002FF8
 
 boss_last1D_95.c:
 	.text       start:0x00045F04 end:0x00047F6C

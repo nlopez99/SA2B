@@ -467,9 +467,11 @@ stg59D_114.c:
 	.text       start:0x000548B0 end:0x00055690
 	.rodata     start:0x00001A30 end:0x00001A78
 
-stg59D_115.c:
-	.text       start:0x000557AC end:0x00057BD8
+ENEMY/e_kumi.c:
+	.text       start:0x00055690 end:0x00057BD8
 	.rodata     start:0x00001A78 end:0x00001B18
+	.data       start:0x00105AC0 end:0x00105C08
+	.bss        start:0x00002DD0 end:0x00002DE8
 
 stg59D_116.c:
 	.text       start:0x00057C4C end:0x00059CB4

@@ -809,7 +809,7 @@ s32     GetRivalPlayerNumber( s32 pno );
 #endif/*SAMT_INCL_FUNCPTRS*/
 
 extern void SetInputP(Sint32 pno, Sint8 mode, Sint32 unk);
-extern void SetSpringVelocityP(Uint8 pno, Float x, Float y, Float z);
+extern void SetSpringVelocityP(Sint32 pno, Float x, Float y, Float z);
 extern void SetVelocityYAndRotationAndNoconTimeP(Uint8 pno, Float y, Sint32 *ang, Sint32 tm);
 extern Sint32 GetPlayerRunningSpeed(Sint8 pno, Float *v);
 

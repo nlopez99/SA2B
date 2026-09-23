@@ -461,9 +461,11 @@ stg18D_112.c:
 	.text       start:0x00051168 end:0x00051F48
 	.rodata     start:0x00001968 end:0x000019B0
 
-stg18D_113.c:
-	.text       start:0x00052064 end:0x00054490
+ENEMY/e_kumi.c:
+	.text       start:0x00051F48 end:0x00054490
 	.rodata     start:0x000019B0 end:0x00001A50
+	.data       start:0x0012BC48 end:0x0012BD90
+	.bss        start:0x00002E18 end:0x00002E30
 
 stg18D_114.c:
 	.text       start:0x00054504 end:0x0005656C
