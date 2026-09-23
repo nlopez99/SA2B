@@ -280,7 +280,7 @@ stg24D_69.c:
 	.text       start:0x0002F474 end:0x000303B4
 	.rodata     start:0x00000F58 end:0x00000F88
 
-stg24D_70.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x000306E8 end:0x00031904
 	.rodata     start:0x00000F88 end:0x00000FB0
 

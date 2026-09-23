@@ -326,7 +326,7 @@ stg18D_81.c:
 	.text       start:0x0002EC24 end:0x0002FB64
 	.rodata     start:0x00000EF0 end:0x00000F20
 
-stg18D_82.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002FE98 end:0x000310B4
 	.rodata     start:0x00000F20 end:0x00000F48
 

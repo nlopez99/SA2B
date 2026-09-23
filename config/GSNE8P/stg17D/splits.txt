@@ -264,7 +264,7 @@ stg17D_65.c:
 	.text       start:0x00030B30 end:0x00031A70
 	.rodata     start:0x00000E40 end:0x00000E70
 
-stg17D_66.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x00031DA4 end:0x00032FC0
 	.rodata     start:0x00000E70 end:0x00000E98
 

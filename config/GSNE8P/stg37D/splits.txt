@@ -220,7 +220,7 @@ stg37D_55.c:
 	.text       start:0x00027458 end:0x00028398
 	.rodata     start:0x00000D58 end:0x00000D88
 
-stg37D_56.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x000286CC end:0x000298E8
 	.rodata     start:0x00000D88 end:0x00000DB0
 

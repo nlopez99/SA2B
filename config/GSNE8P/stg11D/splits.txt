@@ -276,7 +276,7 @@ stg11D_69.c:
 	.text       start:0x0002D774 end:0x0002E6B4
 	.rodata     start:0x00000EC8 end:0x00000EF8
 
-stg11D_70.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002E9E8 end:0x0002FC04
 	.rodata     start:0x00000EF8 end:0x00000F20
 

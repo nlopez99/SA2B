@@ -292,7 +292,7 @@ stg22D_73.c:
 	.text       start:0x0002D350 end:0x0002E290
 	.rodata     start:0x00000EB0 end:0x00000EE0
 
-stg22D_74.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002E5C4 end:0x0002F7E0
 	.rodata     start:0x00000EE0 end:0x00000F08
 

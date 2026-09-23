@@ -283,7 +283,7 @@ stg52D_70.c:
 	.text       start:0x00033588 end:0x000344C8
 	.rodata     start:0x00000E20 end:0x00000E50
 
-stg52D_71.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x000347FC end:0x00035A18
 	.rodata     start:0x00000E50 end:0x00000E78
 

@@ -296,7 +296,7 @@ stg44D_74.c:
 	.text       start:0x0002A434 end:0x0002B374
 	.rodata     start:0x00000D30 end:0x00000D60
 
-stg44D_75.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002B6A8 end:0x0002C8C4
 	.rodata     start:0x00000D60 end:0x00000D88
 

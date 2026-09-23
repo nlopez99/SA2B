@@ -228,7 +228,7 @@ stg35D_56.c:
 	.text       start:0x0003146C end:0x000323AC
 	.rodata     start:0x00000F68 end:0x00000F98
 
-stg35D_57.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x000326E0 end:0x000338FC
 	.rodata     start:0x00000F98 end:0x00000FC0
 

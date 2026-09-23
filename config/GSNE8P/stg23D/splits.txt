@@ -312,7 +312,7 @@ stg23D_77.c:
 	.text       start:0x0002A4A0 end:0x0002B3E0
 	.rodata     start:0x00000E10 end:0x00000E40
 
-stg23D_78.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002B714 end:0x0002C930
 	.rodata     start:0x00000E40 end:0x00000E68
 

@@ -276,7 +276,7 @@ stg51D_68.c:
 	.text       start:0x000284F4 end:0x00029434
 	.rodata     start:0x00000D20 end:0x00000D50
 
-stg51D_69.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x00029768 end:0x0002A984
 	.rodata     start:0x00000D50 end:0x00000D78
 

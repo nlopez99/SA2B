@@ -310,7 +310,7 @@ stg48D_77.c:
 	.text       start:0x000295B0 end:0x0002A4F0
 	.rodata     start:0x00000D70 end:0x00000DA0
 
-stg48D_78.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002A824 end:0x0002BA40
 	.rodata     start:0x00000DA0 end:0x00000DC8
 

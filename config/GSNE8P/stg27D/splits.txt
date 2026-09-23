@@ -262,7 +262,7 @@ stg27D_66.c:
 	.text       start:0x00029F7C end:0x0002AEBC
 	.rodata     start:0x00000D90 end:0x00000DC0
 
-stg27D_67.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002B1F0 end:0x0002C40C
 	.rodata     start:0x00000DC0 end:0x00000DE8
 

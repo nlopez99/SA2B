@@ -334,7 +334,7 @@ stg59D_83.c:
 	.text       start:0x00031F48 end:0x00032E88
 	.rodata     start:0x00000FC8 end:0x00000FF8
 
-stg59D_84.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x000331BC end:0x000343D8
 	.rodata     start:0x00000FF8 end:0x00001020
 

@@ -254,7 +254,7 @@ stg38D_63.c:
 	.text       start:0x0002AD18 end:0x0002BC58
 	.rodata     start:0x00000E28 end:0x00000E58
 
-stg38D_64.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002BF8C end:0x0002D1A8
 	.rodata     start:0x00000E58 end:0x00000E80
 

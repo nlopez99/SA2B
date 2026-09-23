@@ -282,7 +282,7 @@ stg41D_70.c:
 	.text       start:0x00029FA4 end:0x0002AEE4
 	.rodata     start:0x00000D68 end:0x00000D98
 
-stg41D_71.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002B218 end:0x0002C434
 	.rodata     start:0x00000D98 end:0x00000DC0
 

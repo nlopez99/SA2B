@@ -268,7 +268,7 @@ stg30D_67.c:
 	.text       start:0x00028DCC end:0x00029D0C
 	.rodata     start:0x00000C50 end:0x00000C80
 
-stg30D_68.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002A040 end:0x0002B25C
 	.rodata     start:0x00000C80 end:0x00000CA8
 

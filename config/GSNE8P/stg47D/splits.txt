@@ -304,7 +304,7 @@ stg47D_75.c:
 	.text       start:0x0002954C end:0x0002A48C
 	.rodata     start:0x00000D48 end:0x00000D78
 
-stg47D_76.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002A7C0 end:0x0002B9DC
 	.rodata     start:0x00000D78 end:0x00000DA0
 

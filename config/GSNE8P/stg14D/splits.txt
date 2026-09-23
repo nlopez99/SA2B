@@ -272,7 +272,7 @@ stg14D_68.c:
 	.text       start:0x000280D0 end:0x00029010
 	.rodata     start:0x00000C70 end:0x00000CA0
 
-stg14D_69.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x00029344 end:0x0002A560
 	.rodata     start:0x00000CA0 end:0x00000CC8
 

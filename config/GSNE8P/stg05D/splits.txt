@@ -248,7 +248,7 @@ stg05D_63.c:
 	.text       start:0x000264A8 end:0x000273E8
 	.rodata     start:0x00000BA8 end:0x00000BD8
 
-stg05D_64.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x0002771C end:0x00028938
 	.rodata     start:0x00000BD8 end:0x00000C00
 

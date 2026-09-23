@@ -279,7 +279,7 @@ stg15D_69.c:
 	.text       start:0x00028134 end:0x00029074
 	.rodata     start:0x00000D20 end:0x00000D50
 
-stg15D_70.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x000293A8 end:0x0002A5C4
 	.rodata     start:0x00000D50 end:0x00000D78
 

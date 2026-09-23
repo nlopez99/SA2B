@@ -212,7 +212,7 @@ stg36D_52.c:
 	.text       start:0x000300B4 end:0x00030FF4
 	.rodata     start:0x00000F00 end:0x00000F30
 
-stg36D_53.c:
+OBJECT/o_kdwarphole.c:
 	.text       start:0x00031328 end:0x00032544
 	.rodata     start:0x00000F30 end:0x00000F58
 
