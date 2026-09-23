@@ -6,5 +6,8 @@
 
 void EnemyLaserLoadTexture(void);
 void CreateEnemyLaser(task *ptp, Float pow, NJS_VECTOR *spd, NJS_POINT3 *pos);
+void SetEnemyLaser(task *ptp, NJS_VECTOR *spd, NJS_POINT3 *pos);
+void CreateEnemyLaserShot(task *ptp, Float pow, NJS_VECTOR *spd,
+                          NJS_POINT3 *pos);
 
 #endif // !_E_LASER_H_

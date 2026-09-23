@@ -340,3 +340,77 @@ void CreateEnemyLaser(task *ptp, Float pow, NJS_VECTOR *spd, NJS_POINT3 *pos) {
   EnemyLaserLoadTexture();
   fn_8006B7EC(0x4001, NULL, 0, 0, pos);
 }
+
+// the next two are stripped by the linker in some stages
+
+// walk ptp's children for the one laser still in MD_APPEAR and steer it
+void SetEnemyLaser(task *ptp, NJS_VECTOR *spd, NJS_POINT3 *pos) {
+  task *ctp;
+  task *ltp;
+  taskwk *twp;
+  enemywk *ewp;
+
+  if (ptp == NULL) {
+    return;
+  }
+  ctp = ptp->ctp;
+  if (ctp == NULL) {
+    return;
+  }
+
+  ltp = NULL;
+  do {
+    if (ctp->exec == EnemyLaserExecutor && ctp->twp != NULL &&
+        ctp->twp->mode == MD_APPEAR) {
+      ltp = ctp;
+      break;
+    }
+    ctp = ctp->next;
+  } while (ctp != ptp->ctp);
+
+  if (ltp == NULL) {
+    return;
+  }
+  twp = ltp->twp;
+  ewp = (enemywk *)ltp->mwp;
+  if (twp == NULL || ewp == NULL) {
+    return;
+  }
+  if (twp->mode != MD_APPEAR) {
+    return;
+  }
+
+  if (pos != NULL) {
+    twp->pos = *pos;
+  }
+  if (spd != NULL) {
+    ewp->spd = *spd;
+  }
+  if (spd != NULL) {
+    twp->ang.x = RadAng(asinf(-spd->y / njScalor(spd)));
+    twp->ang.y = RadAng(atan2f(spd->x, spd->z));
+  }
+}
+
+// the same laser, but already past the muzzle flash
+void CreateEnemyLaserShot(task *ptp, Float pow, NJS_VECTOR *spd,
+                          NJS_POINT3 *pos) {
+  task *tp;
+
+  if (ptp != NULL) {
+    tp = CreateChildTask(IM_TWK, EnemyLaserExecutor, ptp);
+  } else {
+    tp = CreateElementalTask(IM_TWK, LEV_3, EnemyLaserExecutor,
+                             "EnemyLaserExecutor");
+  }
+  if (tp == NULL) {
+    return;
+  }
+
+  tp->twp->pos = *pos;
+  EnemyLaserInit(tp, pow, spd);
+  EnemyLaserLoadTexture();
+  tp->twp->mode = MD_EXTEND;
+  tp->twp->scl.x = 1.0f;
+  fn_8006B7EC(0x4002, NULL, 0, 0, pos);
+}
