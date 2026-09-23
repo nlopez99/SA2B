@@ -86,7 +86,7 @@ stg37D_19.c:
 	.text       start:0x00014C20 end:0x00014FC4
 	.rodata     start:0x00000728 end:0x00000730
 
-stg37D_20.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00014FC4 end:0x0001562C
 	.rodata     start:0x00000730 end:0x00000768
 

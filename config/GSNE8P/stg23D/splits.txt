@@ -170,7 +170,7 @@ stg23D_40.c:
 	.text       start:0x00015044 end:0x000153E8
 	.rodata     start:0x000007A8 end:0x000007B0
 
-stg23D_41.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x000153E8 end:0x00015A50
 	.rodata     start:0x000007B0 end:0x000007E8
 

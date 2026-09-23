@@ -78,7 +78,7 @@ boss_fdogD_17.c:
 	.text       start:0x0000D5A8 end:0x0000D60C
 	.rodata     start:0x000005F8 end:0x00000600
 
-boss_fdogD_18.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x0000D89C end:0x0000DF04
 	.rodata     start:0x00000600 end:0x00000638
 

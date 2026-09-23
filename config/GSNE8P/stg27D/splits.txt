@@ -126,7 +126,7 @@ stg27D_29.c:
 	.text       start:0x00014704 end:0x00014AA8
 	.rodata     start:0x00000728 end:0x00000730
 
-stg27D_30.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00014AA8 end:0x00015110
 	.rodata     start:0x00000730 end:0x00000768
 

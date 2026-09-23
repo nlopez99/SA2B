@@ -70,7 +70,7 @@ stg19D_15.c:
 	.text       start:0x0000E0AC end:0x0000E450
 	.rodata     start:0x00000560 end:0x00000568
 
-stg19D_16.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x0000E450 end:0x0000EAB8
 	.rodata     start:0x00000568 end:0x000005A0
 

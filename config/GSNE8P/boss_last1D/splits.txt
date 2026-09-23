@@ -158,7 +158,7 @@ boss_last1D_37.c:
 	.text       start:0x00018158 end:0x000181BC
 	.rodata     start:0x00000CD8 end:0x00000CE0
 
-boss_last1D_38.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x0001844C end:0x00018AB4
 	.rodata     start:0x00000CE0 end:0x00000D18
 

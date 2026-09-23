@@ -114,7 +114,7 @@ stg38D_26.c:
 	.text       start:0x0001684C end:0x00016BF0
 	.rodata     start:0x00000748 end:0x00000750
 
-stg38D_27.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00016BF0 end:0x00017258
 	.rodata     start:0x00000750 end:0x00000788
 

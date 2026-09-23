@@ -198,7 +198,7 @@ stg59D_47.c:
 	.text       start:0x0001DA90 end:0x0001DE34
 	.rodata     start:0x000009D0 end:0x000009D8
 
-stg59D_48.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x0001DE34 end:0x0001E49C
 	.rodata     start:0x000009D8 end:0x00000A10
 

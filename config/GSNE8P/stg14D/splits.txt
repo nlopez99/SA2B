@@ -134,7 +134,7 @@ stg14D_31.c:
 	.text       start:0x00012D84 end:0x00013128
 	.rodata     start:0x00000608 end:0x00000610
 
-stg14D_32.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00013128 end:0x00013790
 	.rodata     start:0x00000610 end:0x00000648
 

@@ -190,7 +190,7 @@ stg21D_45.c:
 	.text       start:0x000157AC end:0x00015B50
 	.rodata     start:0x00000710 end:0x00000718
 
-stg21D_46.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00015B50 end:0x000161B8
 	.rodata     start:0x00000718 end:0x00000750
 

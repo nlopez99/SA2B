@@ -78,7 +78,7 @@ stg45D_17.c:
 	.text       start:0x0000C1B4 end:0x0000C558
 	.rodata     start:0x000003F0 end:0x000003F8
 
-stg45D_18.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x0000C558 end:0x0000CBC0
 	.rodata     start:0x000003F8 end:0x00000430
 

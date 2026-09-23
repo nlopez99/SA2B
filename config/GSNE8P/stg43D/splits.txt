@@ -126,7 +126,7 @@ stg43D_29.c:
 	.text       start:0x00013538 end:0x000138DC
 	.rodata     start:0x00000660 end:0x00000668
 
-stg43D_30.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x000138DC end:0x00013F44
 	.rodata     start:0x00000668 end:0x000006A0
 

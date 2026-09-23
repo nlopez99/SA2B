@@ -90,7 +90,7 @@ stg42D_20.c:
 	.text       start:0x0000BE94 end:0x0000C238
 	.rodata     start:0x000004A8 end:0x000004B0
 
-stg42D_21.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x0000C238 end:0x0000C8A0
 	.rodata     start:0x000004B0 end:0x000004E8
 

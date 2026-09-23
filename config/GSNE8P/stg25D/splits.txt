@@ -210,7 +210,7 @@ stg25D_50.c:
 	.text       start:0x0001DA78 end:0x0001DE1C
 	.rodata     start:0x000009D0 end:0x000009D8
 
-stg25D_51.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x0001DE1C end:0x0001E484
 	.rodata     start:0x000009D8 end:0x00000A10
 

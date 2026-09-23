@@ -62,7 +62,7 @@ Boss_Last2D_13.c:
 	.text       start:0x0001425C end:0x000142C0
 	.rodata     start:0x00000730 end:0x00000738
 
-Boss_Last2D_14.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00014550 end:0x00014BB8
 	.rodata     start:0x00000738 end:0x00000770
 

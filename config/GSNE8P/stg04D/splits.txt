@@ -130,7 +130,7 @@ stg04D_30.c:
 	.text       start:0x00012B04 end:0x00012EA8
 	.rodata     start:0x00000620 end:0x00000628
 
-stg04D_31.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00012EA8 end:0x00013510
 	.rodata     start:0x00000628 end:0x00000660
 

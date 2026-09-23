@@ -162,7 +162,7 @@ stg47D_38.c:
 	.text       start:0x00014294 end:0x00014638
 	.rodata     start:0x000006E0 end:0x000006E8
 
-stg47D_39.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00014638 end:0x00014CA0
 	.rodata     start:0x000006E8 end:0x00000720
 

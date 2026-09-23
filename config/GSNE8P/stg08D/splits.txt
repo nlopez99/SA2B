@@ -122,7 +122,7 @@ stg08D_28.c:
 	.text       start:0x00010A7C end:0x00010E20
 	.rodata     start:0x000005A0 end:0x000005A8
 
-stg08D_29.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00010E20 end:0x00011488
 	.rodata     start:0x000005A8 end:0x000005E0
 

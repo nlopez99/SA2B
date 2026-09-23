@@ -130,7 +130,7 @@ stg50D_30.c:
 	.text       start:0x00012F0C end:0x000132B0
 	.rodata     start:0x00000670 end:0x00000678
 
-stg50D_31.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x000132B0 end:0x00013918
 	.rodata     start:0x00000678 end:0x000006B0
 

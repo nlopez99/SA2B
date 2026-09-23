@@ -74,7 +74,7 @@ stg20D_16.c:
 	.text       start:0x00013B98 end:0x00013F3C
 	.rodata     start:0x00000720 end:0x00000728
 
-stg20D_17.c:
+EFFECT/ef_ringsparkle.c:
 	.text       start:0x00013F3C end:0x000145A4
 	.rodata     start:0x00000728 end:0x00000760
 
