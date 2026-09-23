@@ -362,8 +362,8 @@ static void CreateRingTask(void);
 static void o_ring_10(ringwk *arg);
 static ringwk *CreateRingObject(void);
 static BOOL o_ring_8(task *tp);
-static void o_ring_2(task*);
-static void o_ring_1(task* tp, f32 f1);
+static void SgRingDisp(task*);
+static void SgRingShadowDisp(task* tp, f32 f1);
 
 enum RINGMD {
   RINGMD_0 = 0,
@@ -541,7 +541,8 @@ void Ring(task *tp) {
   }
 }
 
-void o_ring_M1(task *tp) {
+// set object "SG_RING": draws itself, picked up by distance to the player
+void SgRing(task *tp) {
   taskwk *twp = tp->twp;
   if (CheckRangeOut(tp)) {
     if (twp->mode != 0) {
@@ -566,7 +567,7 @@ void o_ring_M1(task *tp) {
       GET_RING_MWK(tp)->tp = tp;
     }
     tp->fwp = syCalloc(1, sizeof(ringfwk));
-    
+
     if (twp->scl.x == -1.0f) {
       twp->smode = colli_timer;
       colli_timer++;
@@ -584,7 +585,7 @@ void o_ring_M1(task *tp) {
     twp->scl.z = -4.0f;
     twp->id = 17;
     tp->dest = RingEnd;
-    tp->disp = o_ring_2;
+    tp->disp = SgRingDisp;
     break;
   case 1: {
     int i;
@@ -609,7 +610,6 @@ void o_ring_M1(task *tp) {
       o_ring_0(tp);
     }
     if (!o_ring_8(tp)) {
-      // CCL_Entry(tp);
       if (GET_RING_FWK(tp)->_C || !lbl_801CC168._37) {
         twp->ang.y += 0x16c;
       }
@@ -659,7 +659,7 @@ void o_ring_M1(task *tp) {
   }
 }
 
-static void o_ring_1(task* tp, f32 f1) {
+static void SgRingShadowDisp(task* tp, f32 f1) {
   taskwk* twp = tp->twp;
   njSetTexture(&_rename_ring_tex_1);
   njPushMatrixEx();
@@ -672,11 +672,11 @@ static void o_ring_1(task* tp, f32 f1) {
   njPopMatrixEx();
 }
 
-static void o_ring_2(task *tp) {
+static void SgRingDisp(task *tp) {
   taskwk *twp = tp->twp;
   if (lbl_801CC168._38 & (1 << lbl_803ADAD0) || lbl_801CC168._9) {
     if (twp->btimer < 50 && twp->scl.y != -1000000.0f) {
-      o_ring_1(tp, twp->scl.y);
+      SgRingShadowDisp(tp, twp->scl.y);
     }
     if (DisableObjectFog) {
       njDisableFog();
