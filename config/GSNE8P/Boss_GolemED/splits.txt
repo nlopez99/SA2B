@@ -169,9 +169,10 @@ OBJECT/o_degring_linear.c:
 	.rodata     start:0x000010C8 end:0x000010E0
 	.data       start:0x000D2418 end:0x000D2420
 
-Boss_GolemED_42.c:
-	.text       start:0x0001F634 end:0x0001F944
+OBJECT/o_dmyobj.c:
+	.text       start:0x0001EF40 end:0x0001F944
 	.rodata     start:0x000010E0 end:0x00001100
+	.bss        start:0x000008C0 end:0x000008C8
 
 Boss_GolemED_43.c:
 	.text       start:0x0001F944 end:0x00020368

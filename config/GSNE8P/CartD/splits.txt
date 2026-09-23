@@ -130,9 +130,10 @@ CartD_30.c:
 	.text       start:0x0000F8DC end:0x0000FC10
 	.rodata     start:0x000004F0 end:0x00000520
 
-CartD_31.c:
-	.text       start:0x00010304 end:0x00010614
+OBJECT/o_dmyobj.c:
+	.text       start:0x0000FC10 end:0x00010614
 	.rodata     start:0x00000520 end:0x00000540
+	.bss        start:0x0003D048 end:0x0003D04C
 
 CartD_32.c:
 	.text       start:0x00010B54 end:0x00010F1C

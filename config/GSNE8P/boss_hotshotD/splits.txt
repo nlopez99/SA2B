@@ -133,9 +133,10 @@ OBJECT/o_degring_linear.c:
 	.rodata     start:0x00000B18 end:0x00000B30
 	.data       start:0x00024FD8 end:0x00024FE0
 
-boss_hotshotD_34.c:
-	.text       start:0x00017314 end:0x00017624
+OBJECT/o_dmyobj.c:
+	.text       start:0x00016C20 end:0x00017624
 	.rodata     start:0x00000B30 end:0x00000B50
+	.bss        start:0x000005B0 end:0x000005B8
 
 boss_hotshotD_35.c:
 	.text       start:0x00017624 end:0x00018048

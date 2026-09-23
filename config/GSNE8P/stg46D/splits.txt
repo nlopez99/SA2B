@@ -241,9 +241,10 @@ OBJECT/o_degring_linear.c:
 	.rodata     start:0x00000A80 end:0x00000A98
 	.data       start:0x00064C98 end:0x00064CA0
 
-stg46D_61.c:
-	.text       start:0x0001D58C end:0x0001D89C
+OBJECT/o_dmyobj.c:
+	.text       start:0x0001CE98 end:0x0001D89C
 	.rodata     start:0x00000A98 end:0x00000AB8
+	.bss        start:0x000006D0 end:0x000006D8
 
 stg46D_62.c:
 	.text       start:0x0001D89C end:0x0001E2C0
