@@ -212,9 +212,10 @@ OBJECT/o_bunchin.c:
 	.rodata     start:0x00000AD8 end:0x00000B20
 	.bss        start:0x00000690 end:0x00000698
 
-stg22D_52.c:
+OBJECT/o_chaokey.c:
 	.text       start:0x0001F9AC end:0x0002046C
 	.rodata     start:0x00000B20 end:0x00000B70
+	.data       start:0x000C9868 end:0x000C9888
 
 OBJECT/o_chaopipe.c:
 	.text       start:0x0002046C end:0x00020820

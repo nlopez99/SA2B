@@ -837,7 +837,9 @@ typedef struct {
   /* 0x3D */ s8 _3D;
   artificial_padding(0x3d, 0x42, s8);
   /* 0x42 */ s8 _42;
-  artificial_padding(0x42, 0x6e, s8);
+  artificial_padding(0x42, 0x44, s8);
+  /* 0x44 */ s8 _44;
+  artificial_padding(0x44, 0x6e, s8);
   /* 0x6E */ s16 _6E;
   artificial_padding(0x6e, 0x7c, s16);
   /* 0x7C */ u32 _7C;
