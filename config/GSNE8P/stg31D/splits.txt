@@ -232,7 +232,7 @@ stg31D_58.c:
 	.text       start:0x00021670 end:0x00022024
 	.rodata     start:0x00000A70 end:0x00000AC0
 
-stg31D_59.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00022024 end:0x00022A40
 	.rodata     start:0x00000AC0 end:0x00000AF8
 

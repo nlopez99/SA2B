@@ -262,7 +262,7 @@ stg30D_65.c:
 	.text       start:0x000277B0 end:0x00028164
 	.rodata     start:0x00000BC8 end:0x00000C18
 
-stg30D_66.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00028164 end:0x00028B80
 	.rodata     start:0x00000C18 end:0x00000C50
 

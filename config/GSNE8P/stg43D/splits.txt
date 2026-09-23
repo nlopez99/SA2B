@@ -262,7 +262,7 @@ stg43D_64.c:
 	.text       start:0x000275DC end:0x00027F90
 	.rodata     start:0x00000C40 end:0x00000C90
 
-stg43D_65.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00027F90 end:0x000289AC
 	.rodata     start:0x00000C90 end:0x00000CC8
 

@@ -262,7 +262,7 @@ stg53D_65.c:
 	.text       start:0x0002420C end:0x00024BC0
 	.rodata     start:0x00000B50 end:0x00000BA0
 
-stg53D_66.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00024BC0 end:0x000255DC
 	.rodata     start:0x00000BA0 end:0x00000BD8
 

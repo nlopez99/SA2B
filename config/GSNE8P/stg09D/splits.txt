@@ -274,7 +274,7 @@ stg09D_68.c:
 	.text       start:0x00025BD4 end:0x00026588
 	.rodata     start:0x00000C90 end:0x00000CE0
 
-stg09D_69.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00026588 end:0x00026FA4
 	.rodata     start:0x00000CE0 end:0x00000D18
 

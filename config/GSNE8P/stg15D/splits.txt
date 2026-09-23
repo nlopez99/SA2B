@@ -273,7 +273,7 @@ stg15D_67.c:
 	.text       start:0x00026B18 end:0x000274CC
 	.rodata     start:0x00000C98 end:0x00000CE8
 
-stg15D_68.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x000274CC end:0x00027EE8
 	.rodata     start:0x00000CE8 end:0x00000D20
 

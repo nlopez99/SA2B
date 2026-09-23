@@ -222,7 +222,7 @@ stg35D_54.c:
 	.text       start:0x0002FE50 end:0x00030804
 	.rodata     start:0x00000EE0 end:0x00000F30
 
-stg35D_55.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00030804 end:0x00031220
 	.rodata     start:0x00000F30 end:0x00000F68
 

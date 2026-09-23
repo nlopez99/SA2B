@@ -306,7 +306,7 @@ stg23D_75.c:
 	.text       start:0x00028E84 end:0x00029838
 	.rodata     start:0x00000D88 end:0x00000DD8
 
-stg23D_76.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00029838 end:0x0002A254
 	.rodata     start:0x00000DD8 end:0x00000E10
 

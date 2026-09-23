@@ -304,7 +304,7 @@ stg48D_75.c:
 	.text       start:0x00027F94 end:0x00028948
 	.rodata     start:0x00000CE8 end:0x00000D38
 
-stg48D_76.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00028948 end:0x00029364
 	.rodata     start:0x00000D38 end:0x00000D70
 

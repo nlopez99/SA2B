@@ -298,7 +298,7 @@ stg47D_73.c:
 	.text       start:0x00027F30 end:0x000288E4
 	.rodata     start:0x00000CC0 end:0x00000D10
 
-stg47D_74.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x000288E4 end:0x00029300
 	.rodata     start:0x00000D10 end:0x00000D48
 

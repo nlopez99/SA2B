@@ -286,7 +286,7 @@ stg10D_71.c:
 	.text       start:0x0002B71C end:0x0002C0D0
 	.rodata     start:0x00000D60 end:0x00000DB0
 
-stg10D_72.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x0002C0D0 end:0x0002CAEC
 	.rodata     start:0x00000DB0 end:0x00000DE8
 

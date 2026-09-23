@@ -270,7 +270,7 @@ stg12D_66.c:
 	.text       start:0x00026F40 end:0x000278F4
 	.rodata     start:0x00000C98 end:0x00000CE8
 
-stg12D_67.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x000278F4 end:0x00028310
 	.rodata     start:0x00000CE8 end:0x00000D20
 

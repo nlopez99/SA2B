@@ -256,7 +256,7 @@ stg08D_63.c:
 	.text       start:0x000254D4 end:0x00025E88
 	.rodata     start:0x00000B90 end:0x00000BE0
 
-stg08D_64.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00025E88 end:0x000268A4
 	.rodata     start:0x00000BE0 end:0x00000C18
 

@@ -279,7 +279,7 @@ stg49D_69.c:
 	.text       start:0x00029DF0 end:0x0002A7A4
 	.rodata     start:0x00000D38 end:0x00000D88
 
-stg49D_70.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x0002A7A4 end:0x0002B1C0
 	.rodata     start:0x00000D88 end:0x00000DC0
 

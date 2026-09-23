@@ -302,7 +302,7 @@ stg46D_75.c:
 	.text       start:0x00027B40 end:0x000284F4
 	.rodata     start:0x00000CE0 end:0x00000D30
 
-stg46D_76.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x000284F4 end:0x00028F10
 	.rodata     start:0x00000D30 end:0x00000D68
 

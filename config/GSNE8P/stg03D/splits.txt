@@ -291,7 +291,7 @@ stg03D_72.c:
 	.text       start:0x0002B5F8 end:0x0002BFAC
 	.rodata     start:0x00000E48 end:0x00000E98
 
-stg03D_73.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x0002BFAC end:0x0002C9C8
 	.rodata     start:0x00000E98 end:0x00000ED0
 

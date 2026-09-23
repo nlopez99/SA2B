@@ -206,7 +206,7 @@ stg36D_50.c:
 	.text       start:0x0002EA98 end:0x0002F44C
 	.rodata     start:0x00000E78 end:0x00000EC8
 
-stg36D_51.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x0002F44C end:0x0002FE68
 	.rodata     start:0x00000EC8 end:0x00000F00
 

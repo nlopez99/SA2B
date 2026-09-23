@@ -248,7 +248,7 @@ stg38D_61.c:
 	.text       start:0x000296FC end:0x0002A0B0
 	.rodata     start:0x00000DA0 end:0x00000DF0
 
-stg38D_62.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x0002A0B0 end:0x0002AACC
 	.rodata     start:0x00000DF0 end:0x00000E28
 

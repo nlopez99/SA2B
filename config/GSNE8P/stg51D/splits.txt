@@ -270,7 +270,7 @@ stg51D_66.c:
 	.text       start:0x00026ED8 end:0x0002788C
 	.rodata     start:0x00000C98 end:0x00000CE8
 
-stg51D_67.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x0002788C end:0x000282A8
 	.rodata     start:0x00000CE8 end:0x00000D20
 

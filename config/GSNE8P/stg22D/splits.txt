@@ -286,7 +286,7 @@ stg22D_71.c:
 	.text       start:0x0002BD34 end:0x0002C6E8
 	.rodata     start:0x00000E28 end:0x00000E78
 
-stg22D_72.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x0002C6E8 end:0x0002D104
 	.rodata     start:0x00000E78 end:0x00000EB0
 

@@ -256,7 +256,7 @@ stg27D_64.c:
 	.text       start:0x00028960 end:0x00029314
 	.rodata     start:0x00000D08 end:0x00000D58
 
-stg27D_65.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00029314 end:0x00029D30
 	.rodata     start:0x00000D58 end:0x00000D90
 

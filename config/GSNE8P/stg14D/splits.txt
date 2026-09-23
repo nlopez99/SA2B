@@ -266,7 +266,7 @@ stg14D_66.c:
 	.text       start:0x00026AB4 end:0x00027468
 	.rodata     start:0x00000BE8 end:0x00000C38
 
-stg14D_67.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x00027468 end:0x00027E84
 	.rodata     start:0x00000C38 end:0x00000C70
 

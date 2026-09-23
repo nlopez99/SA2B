@@ -250,7 +250,7 @@ stg40D_62.c:
 	.text       start:0x00024B30 end:0x000254E4
 	.rodata     start:0x00000AD8 end:0x00000B28
 
-stg40D_63.c:
+OBJECT/o_kddoor.c:
 	.text       start:0x000254E4 end:0x00025F00
 	.rodata     start:0x00000B28 end:0x00000B60
 
