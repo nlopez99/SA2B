@@ -301,9 +301,10 @@ OBJECT/o_ring.c:
 	.data       start:0x00068160 end:0x000699E0
 	.bss        start:0x00000DC0 end:0x00000DD0
 
-stg51D_75.c:
-	.text       start:0x00035168 end:0x00036C88
+OBJECT/o_rocket.c:
+	.text       start:0x00035168 end:0x00036D20
 	.rodata     start:0x00000FE0 end:0x00001078
+	.data       start:0x0006D668 end:0x0006D6B0
 
 OBJECT/o_rocketmissile.c:
 	.text       start:0x00036D20 end:0x00038A7C

@@ -720,6 +720,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_dmyobj.c"),
             Object(Matching, "OBJECT/o_bigjump.c"),
             Object(Matching, "OBJECT/o_kasoku.c"),
+            Object(Matching, "OBJECT/o_rocket.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,
