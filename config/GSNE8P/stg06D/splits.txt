@@ -66,9 +66,10 @@ stg06D_14.c:
 	.text       start:0x0000D2E0 end:0x0000D46C
 	.rodata     start:0x000003E0 end:0x00000408
 
-stg06D_15.c:
+OBJECT/flashmanager.c:
 	.text       start:0x0000D53C end:0x0000DAB0
 	.rodata     start:0x00000408 end:0x00000440
+	.data       start:0x00068420 end:0x00068430
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x0000DAB0 end:0x0000E524

@@ -86,9 +86,10 @@ stg17D_19.c:
 	.text       start:0x00017624 end:0x000177B0
 	.rodata     start:0x00000610 end:0x00000638
 
-stg17D_20.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00017880 end:0x00017FB4
 	.rodata     start:0x00000638 end:0x00000670
+	.data       start:0x00083E90 end:0x00083EA0
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x00017FB4 end:0x00018A28

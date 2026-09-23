@@ -142,9 +142,10 @@ stg18D_33.c:
 	.text       start:0x00015574 end:0x00015700
 	.rodata     start:0x000006B0 end:0x000006D8
 
-stg18D_34.c:
+OBJECT/flashmanager.c:
 	.text       start:0x000157D0 end:0x00015D44
 	.rodata     start:0x000006D8 end:0x00000710
+	.data       start:0x000D37A8 end:0x000D37B8
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x00015D44 end:0x000167B8

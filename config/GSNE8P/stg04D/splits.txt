@@ -94,9 +94,10 @@ stg04D_21.c:
 	.text       start:0x0000FF2C end:0x000100B8
 	.rodata     start:0x000004C0 end:0x000004E8
 
-stg04D_22.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00010188 end:0x000106FC
 	.rodata     start:0x000004E8 end:0x00000520
+	.data       start:0x00075D68 end:0x00075D78
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x000106FC end:0x00011170

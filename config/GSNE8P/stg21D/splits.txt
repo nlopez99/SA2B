@@ -154,9 +154,10 @@ stg21D_36.c:
 	.text       start:0x00011BF0 end:0x00011D7C
 	.rodata     start:0x00000548 end:0x00000570
 
-stg21D_37.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00011E4C end:0x000124A8
 	.rodata     start:0x00000570 end:0x000005A8
+	.data       start:0x000703B8 end:0x000703C8
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x000124A8 end:0x00012F1C

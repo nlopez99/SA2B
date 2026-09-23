@@ -106,9 +106,10 @@ stg11D_24.c:
 	.text       start:0x00013B94 end:0x00013D20
 	.rodata     start:0x00000650 end:0x00000678
 
-stg11D_25.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00013DF0 end:0x00014524
 	.rodata     start:0x00000678 end:0x000006B0
+	.data       start:0x0005E0E0 end:0x0005E0F0
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x00014524 end:0x00014F98

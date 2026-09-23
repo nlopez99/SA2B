@@ -122,9 +122,10 @@ stg22D_28.c:
 	.text       start:0x000161DC end:0x00016368
 	.rodata     start:0x00000740 end:0x00000768
 
-stg22D_29.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00016438 end:0x000169AC
 	.rodata     start:0x00000768 end:0x000007A0
+	.data       start:0x000C47A8 end:0x000C47B8
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x000169AC end:0x00017420

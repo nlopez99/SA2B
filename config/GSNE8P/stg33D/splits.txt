@@ -42,9 +42,10 @@ EFFECT/ef_splash.c:
 	.text       start:0x0000A0F8 end:0x0000A354
 	.rodata     start:0x00000278 end:0x000002A0
 
-stg33D_9.c:
+OBJECT/flashmanager.c:
 	.text       start:0x0000A354 end:0x0000A9B0
 	.rodata     start:0x000002A0 end:0x000002D8
+	.data       start:0x00015C88 end:0x00015C98
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x0000A9B0 end:0x0000B424

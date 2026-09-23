@@ -90,9 +90,10 @@ stg53D_20.c:
 	.text       start:0x0000CD18 end:0x0000CEA4
 	.rodata     start:0x000003C0 end:0x000003E8
 
-stg53D_21.c:
+OBJECT/flashmanager.c:
 	.text       start:0x0000CF74 end:0x0000D5D0
 	.rodata     start:0x000003E8 end:0x00000420
+	.data       start:0x00023120 end:0x00023130
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x0000D5D0 end:0x0000E044

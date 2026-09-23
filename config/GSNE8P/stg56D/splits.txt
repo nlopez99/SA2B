@@ -18,6 +18,11 @@ EFFECT/ef_splash.c:
 	.text       start:0x00008E98 end:0x000090F4
 	.rodata     start:0x00000228 end:0x00000250
 
+OBJECT/flashmanager.c:
+	.text       start:0x000090F4 end:0x00009750
+	.rodata     start:0x00000250 end:0x00000288
+	.data       start:0x0002B318 end:0x0002B328
+
 OBJECT/itemboxmanager.c:
 	.text       start:0x00009750 end:0x0000A1C4
 	.rodata     start:0x00000288 end:0x000002D0

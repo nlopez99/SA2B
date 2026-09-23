@@ -90,9 +90,10 @@ stg30D_20.c:
 	.text       start:0x00010188 end:0x00010314
 	.rodata     start:0x00000440 end:0x00000468
 
-stg30D_21.c:
+OBJECT/flashmanager.c:
 	.text       start:0x000103E4 end:0x00010A40
 	.rodata     start:0x00000468 end:0x000004A0
+	.data       start:0x000BDE58 end:0x000BDE68
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x00010A40 end:0x000114B4

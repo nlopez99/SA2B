@@ -86,9 +86,10 @@ Boss_GolemD_19.c:
 	.text       start:0x00015A08 end:0x00015B94
 	.rodata     start:0x00000D60 end:0x00000D88
 
-Boss_GolemD_20.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00015C64 end:0x000161D8
 	.rodata     start:0x00000D88 end:0x00000DC0
+	.data       start:0x000D00A0 end:0x000D00B0
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x000161D8 end:0x00016C4C

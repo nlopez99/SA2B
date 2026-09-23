@@ -102,9 +102,10 @@ stg24D_23.c:
 	.text       start:0x00016018 end:0x000161A4
 	.rodata     start:0x00000728 end:0x00000750
 
-stg24D_24.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00016274 end:0x000168D0
 	.rodata     start:0x00000750 end:0x00000788
+	.data       start:0x0007B4B8 end:0x0007B4C8
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x000168D0 end:0x00017344

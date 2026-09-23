@@ -74,9 +74,10 @@ Boss_GolemED_16.c:
 	.text       start:0x00014838 end:0x000149C4
 	.rodata     start:0x00000C98 end:0x00000CC0
 
-Boss_GolemED_17.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00014A94 end:0x00015008
 	.rodata     start:0x00000CC0 end:0x00000CF8
+	.data       start:0x000CB588 end:0x000CB598
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x00015008 end:0x00015A7C

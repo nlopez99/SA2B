@@ -122,9 +122,10 @@ boss_last1D_28.c:
 	.text       start:0x00015418 end:0x000155A4
 	.rodata     start:0x00000B58 end:0x00000B80
 
-boss_last1D_29.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00015674 end:0x00015BE8
 	.rodata     start:0x00000B80 end:0x00000BB8
+	.data       start:0x000AD178 end:0x000AD188
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x00015BE8 end:0x0001665C

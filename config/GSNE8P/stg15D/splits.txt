@@ -97,9 +97,10 @@ stg15D_22.c:
 	.text       start:0x0000E9B0 end:0x0000EB3C
 	.rodata     start:0x000004C8 end:0x000004F0
 
-stg15D_23.c:
+OBJECT/flashmanager.c:
 	.text       start:0x0000EC0C end:0x0000F268
 	.rodata     start:0x000004F0 end:0x00000528
+	.data       start:0x00035F00 end:0x00035F10
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x0000F268 end:0x0000FCDC

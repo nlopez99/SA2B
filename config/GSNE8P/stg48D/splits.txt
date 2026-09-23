@@ -134,9 +134,10 @@ stg48D_31.c:
 	.text       start:0x00010DDC end:0x00010F68
 	.rodata     start:0x00000560 end:0x00000588
 
-stg48D_32.c:
+OBJECT/flashmanager.c:
 	.text       start:0x00011038 end:0x00011694
 	.rodata     start:0x00000588 end:0x000005C0
+	.data       start:0x001002E0 end:0x001002F0
 
 OBJECT/itemboxmanager.c:
 	.text       start:0x00011694 end:0x00012108
