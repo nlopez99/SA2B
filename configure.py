@@ -683,6 +683,7 @@ config.libs = [
             Object(Matching, "EFFECT/ef_rocketthrust.c"),
             Object(Matching, "EFFECT/ef_snowpuff.c"),
             Object(Matching, "EFFECT/ef_splash.c"),
+            Object(Matching, "EFFECT/ef_dirt.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,
