@@ -347,8 +347,8 @@ stg49D_86.c:
 	.text       start:0x000419D8 end:0x000435EC
 	.rodata     start:0x00001360 end:0x000013E0
 
-stg49D_87.c:
-	.text       start:0x00043744 end:0x00044ED4
+OBJECT/o_switch.c:
+	.text       start:0x000435EC end:0x00044ED4
 	.rodata     start:0x000013E0 end:0x00001468
 
 OBJECT/o_udreel.c:
