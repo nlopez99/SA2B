@@ -180,7 +180,7 @@ OBJECT/o_3spring.c:
 	.text       start:0x00018350 end:0x000187EC
 	.rodata     start:0x00000848 end:0x00000868
 
-stg07D_45.c:
+OBJECT/o_kasoku.c:
 	.text       start:0x000187EC end:0x00018C74
 	.rodata     start:0x00000868 end:0x00000888
 

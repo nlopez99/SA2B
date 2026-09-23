@@ -68,6 +68,10 @@ OBJECT/o_3spring.c:
 	.text       start:0x0000F260 end:0x0000F6FC
 	.rodata     start:0x00000538 end:0x00000558
 
+OBJECT/o_kasoku.c:
+	.text       start:0x0000F6FC end:0x0000FB84
+	.rodata     start:0x00000558 end:0x00000578
+
 OBJECT/o_bigjump.c:
 	.text       start:0x0000FB84 end:0x000101A4
 	.rodata     start:0x00000578 end:0x00000598

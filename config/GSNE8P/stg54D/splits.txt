@@ -114,7 +114,7 @@ OBJECT/o_3spring.c:
 	.text       start:0x0000EB78 end:0x0000F014
 	.rodata     start:0x00000568 end:0x00000588
 
-54d_26.c:
+OBJECT/o_kasoku.c:
 	.text       start:0x0000F014 end:0x0000F49C
 	.rodata     start:0x00000588 end:0x000005A8
 

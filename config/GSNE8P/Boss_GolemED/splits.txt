@@ -139,7 +139,7 @@ OBJECT/o_3spring.c:
 	.text       start:0x0001A344 end:0x0001A7E0
 	.rodata     start:0x00000F60 end:0x00000F80
 
-Boss_GolemED_34.c:
+OBJECT/o_kasoku.c:
 	.text       start:0x0001A7E0 end:0x0001AC68
 	.rodata     start:0x00000F80 end:0x00000FA0
 

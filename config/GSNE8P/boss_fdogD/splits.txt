@@ -111,7 +111,7 @@ OBJECT/o_3spring.c:
 	.text       start:0x00010598 end:0x00010A34
 	.rodata     start:0x00000768 end:0x00000788
 
-boss_fdogD_28.c:
+OBJECT/o_kasoku.c:
 	.text       start:0x00010A34 end:0x00010EBC
 	.rodata     start:0x00000788 end:0x000007A8
 

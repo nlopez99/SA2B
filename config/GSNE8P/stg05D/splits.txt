@@ -148,7 +148,7 @@ OBJECT/o_3spring.c:
 	.text       start:0x000150C0 end:0x0001555C
 	.rodata     start:0x000006E0 end:0x00000700
 
-stg05D_38.c:
+OBJECT/o_kasoku.c:
 	.text       start:0x0001555C end:0x000159E4
 	.rodata     start:0x00000700 end:0x00000720
 

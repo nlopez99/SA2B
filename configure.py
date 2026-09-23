@@ -713,6 +713,7 @@ config.libs = [
             Object(Matching, "ENEMY/e_light.c"),
             Object(Matching, "OBJECT/o_dmyobj.c"),
             Object(Matching, "OBJECT/o_bigjump.c"),
+            Object(Matching, "OBJECT/o_kasoku.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

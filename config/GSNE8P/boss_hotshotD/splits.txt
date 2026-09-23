@@ -103,7 +103,7 @@ OBJECT/o_3spring.c:
 	.text       start:0x00012024 end:0x000124C0
 	.rodata     start:0x000009B0 end:0x000009D0
 
-boss_hotshotD_26.c:
+OBJECT/o_kasoku.c:
 	.text       start:0x000124C0 end:0x00012948
 	.rodata     start:0x000009D0 end:0x000009F0
 

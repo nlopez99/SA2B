@@ -195,7 +195,7 @@ OBJECT/o_3spring.c:
 	.text       start:0x0001B444 end:0x0001B8E0
 	.rodata     start:0x00000E68 end:0x00000E88
 
-boss_last1D_49.c:
+OBJECT/o_kasoku.c:
 	.text       start:0x0001B8E0 end:0x0001BD68
 	.rodata     start:0x00000E88 end:0x00000EA8
 
