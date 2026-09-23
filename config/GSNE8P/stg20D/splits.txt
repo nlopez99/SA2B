@@ -198,8 +198,8 @@ stg20D_48.c:
 	.text       start:0x00029224 end:0x0002AD44
 	.rodata     start:0x00000D60 end:0x00000DF8
 
-stg20D_49.c:
-	.text       start:0x0002AE88 end:0x0002C92C
+OBJECT/o_rocketmissile.c:
+	.text       start:0x0002ADDC end:0x0002CB38
 	.rodata     start:0x00000DF8 end:0x00000E88
 
 stg20D_50.c:

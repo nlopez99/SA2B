@@ -248,8 +248,8 @@ stg37D_62.c:
 	.text       start:0x000347B8 end:0x000362D8
 	.rodata     start:0x00001020 end:0x000010B8
 
-stg37D_63.c:
-	.text       start:0x0003641C end:0x00037EC0
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00036370 end:0x000380CC
 	.rodata     start:0x000010B8 end:0x00001148
 
 OBJECT/o_savepoint.c:

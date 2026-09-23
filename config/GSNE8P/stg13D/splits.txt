@@ -320,8 +320,8 @@ stg13D_79.c:
 	.text       start:0x0004031C end:0x00041E3C
 	.rodata     start:0x000010F8 end:0x00001190
 
-stg13D_80.c:
-	.text       start:0x00041F80 end:0x00043C30
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00041ED4 end:0x00043C30
 	.rodata     start:0x00001190 end:0x00001220
 
 OBJECT/o_savepoint.c:

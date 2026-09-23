@@ -235,8 +235,8 @@ stg39D_58.c:
 	.text       start:0x00028F08 end:0x0002AA28
 	.rodata     start:0x00000C30 end:0x00000CC8
 
-stg39D_59.c:
-	.text       start:0x0002AB6C end:0x0002C610
+OBJECT/o_rocketmissile.c:
+	.text       start:0x0002AAC0 end:0x0002C81C
 	.rodata     start:0x00000CC8 end:0x00000D58
 
 stg39D_60.c:

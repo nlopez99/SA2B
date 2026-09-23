@@ -292,8 +292,8 @@ stg17D_72.c:
 	.text       start:0x0003D7A4 end:0x0003F2C4
 	.rodata     start:0x00001100 end:0x00001198
 
-stg17D_73.c:
-	.text       start:0x0003F408 end:0x00040EAC
+OBJECT/o_rocketmissile.c:
+	.text       start:0x0003F35C end:0x000410B8
 	.rodata     start:0x00001198 end:0x00001228
 
 OBJECT/o_savepoint.c:

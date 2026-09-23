@@ -290,8 +290,8 @@ boss_last1D_73.c:
 	.text       start:0x00032988 end:0x000344A8
 	.rodata     start:0x00001408 end:0x000014A0
 
-boss_last1D_74.c:
-	.text       start:0x000345EC end:0x00036090
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00034540 end:0x0003629C
 	.rodata     start:0x000014A0 end:0x00001530
 
 boss_last1D_75.c:

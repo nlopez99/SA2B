@@ -334,8 +334,8 @@ stg46D_83.c:
 	.text       start:0x00031DAC end:0x000338CC
 	.rodata     start:0x00000F48 end:0x00000FE0
 
-stg46D_84.c:
-	.text       start:0x00033A10 end:0x000354B4
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00033964 end:0x000356C0
 	.rodata     start:0x00000FE0 end:0x00001070
 
 OBJECT/o_savepoint.c:

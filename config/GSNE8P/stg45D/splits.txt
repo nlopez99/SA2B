@@ -188,8 +188,8 @@ stg45D_46.c:
 	.text       start:0x0001BED4 end:0x0001D9F4
 	.rodata     start:0x000008F8 end:0x00000990
 
-stg45D_47.c:
-	.text       start:0x0001DB38 end:0x0001F5DC
+OBJECT/o_rocketmissile.c:
+	.text       start:0x0001DA8C end:0x0001F7E8
 	.rodata     start:0x00000990 end:0x00000A20
 
 stg45D_48.c:

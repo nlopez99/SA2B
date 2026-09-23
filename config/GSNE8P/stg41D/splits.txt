@@ -310,8 +310,8 @@ stg41D_77.c:
 	.text       start:0x00037000 end:0x00038B20
 	.rodata     start:0x00001030 end:0x000010C8
 
-stg41D_78.c:
-	.text       start:0x00038C64 end:0x0003A708
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00038BB8 end:0x0003A914
 	.rodata     start:0x000010C8 end:0x00001158
 
 OBJECT/o_savepoint.c:

@@ -206,8 +206,8 @@ boss_bigbogyD_52.c:
 	.text       start:0x00033CCC end:0x000357EC
 	.rodata     start:0x00001510 end:0x000015A8
 
-boss_bigbogyD_53.c:
-	.text       start:0x00035930 end:0x000373D4
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00035884 end:0x000375E0
 	.rodata     start:0x000015A8 end:0x00001638
 
 boss_bigbogyD_54.c:

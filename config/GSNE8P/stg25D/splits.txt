@@ -372,8 +372,8 @@ stg25D_93.c:
 	.text       start:0x0003EF8C end:0x00040AAC
 	.rodata     start:0x00001290 end:0x00001328
 
-stg25D_94.c:
-	.text       start:0x00040BF0 end:0x00042694
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00040B44 end:0x000428A0
 	.rodata     start:0x00001328 end:0x000013B8
 
 OBJECT/o_savepoint.c:

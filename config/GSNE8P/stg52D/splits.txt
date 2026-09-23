@@ -311,8 +311,8 @@ stg52D_77.c:
 	.text       start:0x0003FCBC end:0x000417DC
 	.rodata     start:0x000010E0 end:0x00001178
 
-stg52D_78.c:
-	.text       start:0x00041920 end:0x000433C4
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00041874 end:0x000435D0
 	.rodata     start:0x00001178 end:0x00001208
 
 OBJECT/o_savepoint.c:

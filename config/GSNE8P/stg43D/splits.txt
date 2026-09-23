@@ -296,8 +296,8 @@ stg43D_73.c:
 	.text       start:0x0003586C end:0x0003738C
 	.rodata     start:0x00000F88 end:0x00001020
 
-stg43D_74.c:
-	.text       start:0x000374D0 end:0x00038F74
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00037424 end:0x00039180
 	.rodata     start:0x00001020 end:0x000010B0
 
 OBJECT/o_savepoint.c:

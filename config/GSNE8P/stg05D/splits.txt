@@ -277,8 +277,8 @@ stg05D_70.c:
 	.text       start:0x000332EC end:0x00034E0C
 	.rodata     start:0x00000E70 end:0x00000F08
 
-stg05D_71.c:
-	.text       start:0x00034F50 end:0x000369F4
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00034EA4 end:0x00036C00
 	.rodata     start:0x00000F08 end:0x00000F98
 
 OBJECT/o_savepoint.c:

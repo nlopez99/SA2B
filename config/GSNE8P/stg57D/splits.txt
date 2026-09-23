@@ -320,8 +320,8 @@ stg57D_80.c:
 	.text       start:0x00039AA0 end:0x0003B5C0
 	.rodata     start:0x000010A0 end:0x00001138
 
-stg57D_81.c:
-	.text       start:0x0003B704 end:0x0003D1A8
+OBJECT/o_rocketmissile.c:
+	.text       start:0x0003B658 end:0x0003D3B4
 	.rodata     start:0x00001138 end:0x000011C8
 
 OBJECT/o_savepoint.c:

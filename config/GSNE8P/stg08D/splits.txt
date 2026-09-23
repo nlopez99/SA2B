@@ -288,8 +288,8 @@ stg08D_72.c:
 	.text       start:0x00033934 end:0x00035454
 	.rodata     start:0x00000EE0 end:0x00000F78
 
-stg08D_73.c:
-	.text       start:0x00035598 end:0x0003703C
+OBJECT/o_rocketmissile.c:
+	.text       start:0x000354EC end:0x00037248
 	.rodata     start:0x00000F78 end:0x00001008
 
 OBJECT/o_savepoint.c:

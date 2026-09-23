@@ -268,8 +268,8 @@ stg31D_67.c:
 	.text       start:0x0002F900 end:0x00031420
 	.rodata     start:0x00000DB8 end:0x00000E50
 
-stg31D_68.c:
-	.text       start:0x00031564 end:0x00033008
+OBJECT/o_rocketmissile.c:
+	.text       start:0x000314B8 end:0x00033214
 	.rodata     start:0x00000E50 end:0x00000EE0
 
 OBJECT/o_savepoint.c:

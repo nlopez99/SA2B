@@ -166,8 +166,8 @@ stg00D_41.c:
 	.text       start:0x0001B110 end:0x0001CC30
 	.rodata     start:0x00000808 end:0x000008A0
 
-stg00D_42.c:
-	.text       start:0x0001CD74 end:0x0001E818
+OBJECT/o_rocketmissile.c:
+	.text       start:0x0001CCC8 end:0x0001EA24
 	.rodata     start:0x000008A0 end:0x00000930
 
 stg00D_43.c:

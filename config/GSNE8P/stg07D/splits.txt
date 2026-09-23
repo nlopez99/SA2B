@@ -313,8 +313,8 @@ stg07D_78.c:
 	.text       start:0x000380CC end:0x00039BEC
 	.rodata     start:0x00001088 end:0x00001120
 
-stg07D_79.c:
-	.text       start:0x00039D30 end:0x0003B7D4
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00039C84 end:0x0003B9E0
 	.rodata     start:0x00001120 end:0x000011B0
 
 OBJECT/o_savepoint.c:

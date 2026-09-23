@@ -296,8 +296,8 @@ stg50D_74.c:
 	.text       start:0x00035F48 end:0x00037A68
 	.rodata     start:0x00000FB0 end:0x00001048
 
-stg50D_75.c:
-	.text       start:0x00037BAC end:0x00039650
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00037B00 end:0x0003985C
 	.rodata     start:0x00001048 end:0x000010D8
 
 OBJECT/o_savepoint.c:

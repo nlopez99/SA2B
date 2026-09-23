@@ -310,8 +310,8 @@ stg15D_76.c:
 	.text       start:0x00034AA8 end:0x000365C8
 	.rodata     start:0x00000FE0 end:0x00001078
 
-stg15D_77.c:
-	.text       start:0x0003670C end:0x000381B0
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00036660 end:0x000383BC
 	.rodata     start:0x00001078 end:0x00001108
 
 OBJECT/o_savepoint.c:

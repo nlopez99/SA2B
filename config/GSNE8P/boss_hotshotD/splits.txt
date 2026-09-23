@@ -202,8 +202,8 @@ boss_hotshotD_51.c:
 	.text       start:0x00029F6C end:0x0002BA8C
 	.rodata     start:0x00000F70 end:0x00001008
 
-boss_hotshotD_52.c:
-	.text       start:0x0002BBD0 end:0x0002D674
+OBJECT/o_rocketmissile.c:
+	.text       start:0x0002BB24 end:0x0002D880
 	.rodata     start:0x00001008 end:0x00001098
 
 boss_hotshotD_53.c:

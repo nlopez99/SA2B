@@ -284,8 +284,8 @@ stg40D_71.c:
 	.text       start:0x00032DC0 end:0x000348E0
 	.rodata     start:0x00000E20 end:0x00000EB8
 
-stg40D_72.c:
-	.text       start:0x00034A24 end:0x000364C8
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00034978 end:0x000366D4
 	.rodata     start:0x00000EB8 end:0x00000F48
 
 OBJECT/o_savepoint.c:

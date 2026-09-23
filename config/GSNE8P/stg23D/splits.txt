@@ -340,8 +340,8 @@ stg23D_84.c:
 	.text       start:0x00036DEC end:0x0003890C
 	.rodata     start:0x000010D0 end:0x00001168
 
-stg23D_85.c:
-	.text       start:0x00038A50 end:0x0003A4F4
+OBJECT/o_rocketmissile.c:
+	.text       start:0x000389A4 end:0x0003A700
 	.rodata     start:0x00001168 end:0x000011F8
 
 OBJECT/o_savepoint.c:

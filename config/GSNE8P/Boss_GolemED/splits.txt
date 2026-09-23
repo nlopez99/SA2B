@@ -238,8 +238,8 @@ Boss_GolemED_59.c:
 	.text       start:0x0003228C end:0x00033DAC
 	.rodata     start:0x00001520 end:0x000015B8
 
-Boss_GolemED_60.c:
-	.text       start:0x00033EF0 end:0x00035994
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00033E44 end:0x00035BA0
 	.rodata     start:0x000015B8 end:0x00001648
 
 Boss_GolemED_61.c:

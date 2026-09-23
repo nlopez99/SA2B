@@ -222,8 +222,8 @@ boss_bigfootD_56.c:
 	.text       start:0x000319F0 end:0x00033510
 	.rodata     start:0x000010A0 end:0x00001138
 
-boss_bigfootD_57.c:
-	.text       start:0x00033654 end:0x000350F8
+OBJECT/o_rocketmissile.c:
+	.text       start:0x000335A8 end:0x00035304
 	.rodata     start:0x00001138 end:0x000011C8
 
 boss_bigfootD_58.c:

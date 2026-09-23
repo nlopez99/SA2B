@@ -250,8 +250,8 @@ Boss_GolemD_63.c:
 	.text       start:0x00032D84 end:0x000348A4
 	.rodata     start:0x000015C8 end:0x00001660
 
-Boss_GolemD_64.c:
-	.text       start:0x000349E8 end:0x0003648C
+OBJECT/o_rocketmissile.c:
+	.text       start:0x0003493C end:0x00036698
 	.rodata     start:0x00001660 end:0x000016F0
 
 Boss_GolemD_65.c:

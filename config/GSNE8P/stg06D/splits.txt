@@ -272,8 +272,8 @@ stg06D_68.c:
 	.text       start:0x00032C8C end:0x000347AC
 	.rodata     start:0x00000EC0 end:0x00000F58
 
-stg06D_69.c:
-	.text       start:0x000348F0 end:0x00036394
+OBJECT/o_rocketmissile.c:
+	.text       start:0x00034844 end:0x000365A0
 	.rodata     start:0x00000F58 end:0x00000FE8
 
 OBJECT/o_savepoint.c:

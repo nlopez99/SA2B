@@ -19,7 +19,7 @@ inline float sqrtf(float f);
 extern void fn_800232A4(Uint32 attr, task *tp, NJS_OBJECT *object);
 extern void fn_800231CC(task *tp, NJS_OBJECT *object);
 extern s32 _rename_EitherPlayerWithinSphere(NJS_VECTOR *, float);
-extern BOOL _rename_IsSwitchOn(Uint8 id);
+extern BOOL _rename_GetSwitchOnOff(Uint8 id);
 extern void _rename_CreateBoxDust(NJS_POINT3 *pos, Float x, Float z,
                                   Angle3 *ang, Float scl, Float interval,
                                   Float spd);
@@ -231,7 +231,7 @@ static void ObjectBunchinExec(task *tp) {
     case MD_WAIT:
       switch (GetType(twp)) {
       case TYPE_PLAYER_SWITCH:
-        if (_rename_IsSwitchOn(GetSwitch(twp))) {
+        if (_rename_GetSwitchOnOff(GetSwitch(twp))) {
           GetWork(tp)->fall = 0.0f;
           twp->smode = MD_UP;
           break;
@@ -258,7 +258,7 @@ static void ObjectBunchinExec(task *tp) {
         twp->smode = MD_FALL;
         break;
       case TYPE_SWITCH:
-        if (!_rename_IsSwitchOn(GetSwitch(twp))) {
+        if (!_rename_GetSwitchOnOff(GetSwitch(twp))) {
           GetWork(tp)->fall = 0.0f;
           twp->smode = MD_FALL;
         }
@@ -270,7 +270,7 @@ static void ObjectBunchinExec(task *tp) {
     case MD_UP:
       GetWork(tp)->posy += _rename_bunchin_rise_spd;
       if (GetType(twp) != TYPE_PLAYER_SWITCH ||
-          !_rename_IsSwitchOn(GetSwitch(twp))) {
+          !_rename_GetSwitchOnOff(GetSwitch(twp))) {
         if ((GetType(twp) != TYPE_PLAYER_SWITCH &&
              GetType(twp) != TYPE_PLAYER) ||
             IsNoPlayerBelow(twp)) {
@@ -339,7 +339,7 @@ static void ObjectBunchinExec(task *tp) {
       }
       if (twp->wtimer > _rename_bunchin_wait_time) {
         if ((GetType(twp) == TYPE_PLAYER_SWITCH &&
-             _rename_IsSwitchOn(GetSwitch(twp))) ||
+             _rename_GetSwitchOnOff(GetSwitch(twp))) ||
             (GetType(twp) != TYPE_PLAYER_SWITCH &&
              (GetType(twp) != TYPE_PLAYER || IsNoPlayerBelow(twp)))) {
           tp->work.f = 0.0f;
@@ -407,7 +407,7 @@ static void ObjectBunchinDisp(task *tp) {
 
   njScale(NULL, 1.0f + twp->scl.x, 1.0f, 1.0f + twp->scl.z);
   if ((GetType(twp) != TYPE_SWITCH && GetType(twp) != TYPE_PLAYER_SWITCH) ||
-      !_rename_IsSwitchOn(GetSwitch(twp))) {
+      !_rename_GetSwitchOnOff(GetSwitch(twp))) {
     // working: the lamps blink
     color = fn_800334B0(
         0xFF101010, 0xFFFFFFFF,
