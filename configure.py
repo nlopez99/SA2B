@@ -694,6 +694,7 @@ config.libs = [
             Object(Matching, "EFFECT/ef_kiran.c"),
             Object(Matching, "OBJECT/o_ironball2.c"),
             Object(Matching, "ENEMY/e_bullet.c"),
+            Object(Matching, "OBJECT/o_hintbox.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

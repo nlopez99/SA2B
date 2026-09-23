@@ -148,9 +148,11 @@ stg33D_37.c:
 	.text       start:0x00016074 end:0x000169F4
 	.rodata     start:0x00000728 end:0x00000758
 
-stg33D_38.c:
+OBJECT/o_hintbox.c:
 	.text       start:0x000169F4 end:0x00017414
 	.rodata     start:0x00000758 end:0x00000788
+	.data       start:0x0001E0C0 end:0x0001E128
+	.bss        start:0x00000CE8 end:0x00000CF0
 
 OBJECT/o_ironball2.c:
 	.text       start:0x00017414 end:0x00017F80

@@ -143,9 +143,11 @@ stg42D_33.c:
 	.text       start:0x00010C88 end:0x00011608
 	.rodata     start:0x000006B0 end:0x000006E0
 
-stg42D_34.c:
+OBJECT/o_hintbox.c:
 	.text       start:0x00011608 end:0x00012028
 	.rodata     start:0x000006E0 end:0x00000710
+	.data       start:0x00010E78 end:0x00010EE0
+	.bss        start:0x00000680 end:0x00000688
 
 OBJECT/o_itembox.c:
 	.text       start:0x00012028 end:0x00012FD0

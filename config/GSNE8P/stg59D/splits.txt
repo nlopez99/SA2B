@@ -287,9 +287,11 @@ OBJECT/o_goalring.c:
 	.text       start:0x0002B474 end:0x0002C790
 	.rodata     start:0x00000DD0 end:0x00000E28
 
-stg59D_73.c:
+OBJECT/o_hintbox.c:
 	.text       start:0x0002C858 end:0x0002D278
 	.rodata     start:0x00000E28 end:0x00000E58
+	.data       start:0x000BEE58 end:0x000BEEC0
+	.bss        start:0x00000D18 end:0x00000D20
 
 OBJECT/o_ironball2.c:
 	.text       start:0x0002D278 end:0x0002DDE4
