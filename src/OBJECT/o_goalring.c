@@ -37,7 +37,7 @@ extern void _rename_ShadowTexEnd(void *);
 extern void _rename_ShadowTexDraw(Sint32, NJS_VECTOR *, Float, void *);
 extern void _rename_RingDrawShadowModel(void);
 extern void CreateRingSparkle(NJS_POINT3 *, NJS_VECTOR *, Float);
-extern void _rename_MakeParticle3(NJS_POINT3 *, NJS_VECTOR *, Float);
+extern void CreateSplashDrop(NJS_POINT3 *, NJS_VECTOR *, Float);
 extern void _rename_GoalRingChildExec(task *tp);
 
 extern BOOL DisableObjectFog;
@@ -322,11 +322,11 @@ static void ObjectGoalRingExec(task *tp) {
     if (*num != 0 && lbl_801CC168._7C % 6 < 3) {
       (*num)--;
       vec.y += 0.8f * dy;
-      _rename_MakeParticle3(&pos, &vec, _rename_goalring_ptcl_scl);
+      CreateSplashDrop(&pos, &vec, _rename_goalring_ptcl_scl);
       njCalcPoint(NULL, &_rename_goalring_ptcl_pos1, &pos);
       njCalcVector(NULL, &_rename_goalring_ptcl_vec1, &vec);
       vec.y += 0.5f * dy;
-      _rename_MakeParticle3(&pos, &vec, _rename_goalring_ptcl_scl);
+      CreateSplashDrop(&pos, &vec, _rename_goalring_ptcl_scl);
     }
     njPopMatrixEx();
   }
