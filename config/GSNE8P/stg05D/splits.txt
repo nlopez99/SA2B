@@ -286,9 +286,11 @@ stg05D_71.c:
 	.text       start:0x00034F50 end:0x000369F4
 	.rodata     start:0x00000F08 end:0x00000F98
 
-stg05D_72.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00036C00 end:0x00037C90
 	.rodata     start:0x00000F98 end:0x00000FD0
+	.data       start:0x00085AF0 end:0x00085B40
+	.bss        start:0x00000D50 end:0x00000D58
 
 stg05D_73.c:
 	.text       start:0x000382F4 end:0x00039924

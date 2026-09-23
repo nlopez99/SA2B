@@ -290,9 +290,11 @@ stg40D_72.c:
 	.text       start:0x00034A24 end:0x000364C8
 	.rodata     start:0x00000EB8 end:0x00000F48
 
-stg40D_73.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x000366D4 end:0x00037764
 	.rodata     start:0x00000F48 end:0x00000F80
+	.data       start:0x000B8A50 end:0x000B8AA0
+	.bss        start:0x00000D60 end:0x00000D68
 
 stg40D_74.c:
 	.text       start:0x00037DC8 end:0x00039274

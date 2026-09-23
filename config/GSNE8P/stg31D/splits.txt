@@ -274,9 +274,11 @@ stg31D_68.c:
 	.text       start:0x00031564 end:0x00033008
 	.rodata     start:0x00000E50 end:0x00000EE0
 
-stg31D_69.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00033214 end:0x000342A4
 	.rodata     start:0x00000EE0 end:0x00000F18
+	.data       start:0x000C2990 end:0x000C29E0
+	.bss        start:0x00000B40 end:0x00000B48
 
 stg31D_70.c:
 	.text       start:0x00034908 end:0x00035DB4

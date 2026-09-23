@@ -218,9 +218,11 @@ boss_fdogD_54.c:
 	.text       start:0x0002B3F0 end:0x0002B66C
 	.rodata     start:0x00000E30 end:0x00000E50
 
-boss_fdogD_55.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x0002B9B8 end:0x0002CA48
 	.rodata     start:0x00000E50 end:0x00000E88
+	.data       start:0x0004ECB0 end:0x0004ED00
+	.bss        start:0x00000E88 end:0x00000E90
 
 boss_fdogD_56.c:
 	.text       start:0x0002CAA0 end:0x0002CC78

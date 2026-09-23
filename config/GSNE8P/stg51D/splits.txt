@@ -306,9 +306,11 @@ stg51D_76.c:
 	.text       start:0x00036DCC end:0x00038870
 	.rodata     start:0x00001078 end:0x00001108
 
-stg51D_77.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00038A7C end:0x00039B0C
 	.rodata     start:0x00001108 end:0x00001140
+	.data       start:0x00072950 end:0x000729A0
+	.bss        start:0x00000DD0 end:0x00000DD8
 
 stg51D_78.c:
 	.text       start:0x0003A170 end:0x0003B61C

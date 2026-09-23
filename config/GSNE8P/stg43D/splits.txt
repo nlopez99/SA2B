@@ -298,9 +298,11 @@ stg43D_74.c:
 	.text       start:0x000374D0 end:0x00038F74
 	.rodata     start:0x00001020 end:0x000010B0
 
-stg43D_75.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00039180 end:0x0003A210
 	.rodata     start:0x000010B0 end:0x000010E8
+	.data       start:0x00090030 end:0x00090080
+	.bss        start:0x00000D90 end:0x00000D98
 
 stg43D_76.c:
 	.text       start:0x0003A874 end:0x0003BD20

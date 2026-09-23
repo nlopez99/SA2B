@@ -358,9 +358,11 @@ stg21D_89.c:
 	.text       start:0x00038794 end:0x0003A238
 	.rodata     start:0x000010B0 end:0x00001140
 
-stg21D_90.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x0003A444 end:0x0003B4D4
 	.rodata     start:0x00001140 end:0x00001178
+	.data       start:0x000AEFB0 end:0x000AF000
+	.bss        start:0x00000D50 end:0x00000D58
 
 stg21D_91.c:
 	.text       start:0x0003BB38 end:0x0003CFE4

@@ -302,9 +302,11 @@ stg30D_75.c:
 	.text       start:0x000376A4 end:0x00039148
 	.rodata     start:0x00000FA8 end:0x00001038
 
-stg30D_76.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00039354 end:0x0003A3E4
 	.rodata     start:0x00001038 end:0x00001070
+	.data       start:0x000FD410 end:0x000FD460
+	.bss        start:0x00001190 end:0x00001198
 
 stg30D_77.c:
 	.text       start:0x0003AA48 end:0x0003BEF4

@@ -378,9 +378,11 @@ stg25D_94.c:
 	.text       start:0x00040BF0 end:0x00042694
 	.rodata     start:0x00001328 end:0x000013B8
 
-stg25D_95.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x000428A0 end:0x00043930
 	.rodata     start:0x000013B8 end:0x000013F0
+	.data       start:0x0010FBB0 end:0x0010FC00
+	.bss        start:0x00000D60 end:0x00000D68
 
 stg25D_96.c:
 	.text       start:0x00043F94 end:0x000455C4

@@ -242,9 +242,11 @@ stg36D_60.c:
 	.text       start:0x0003F0E4 end:0x00040B88
 	.rodata     start:0x00001260 end:0x000012F0
 
-stg36D_61.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00040D94 end:0x00041E24
 	.rodata     start:0x000012F0 end:0x00001328
+	.data       start:0x000B24B0 end:0x000B2500
+	.bss        start:0x00000B58 end:0x00000B60
 
 stg36D_62.c:
 	.text       start:0x00042488 end:0x00043934

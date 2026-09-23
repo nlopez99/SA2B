@@ -185,9 +185,11 @@ OBJECT/o_ring.c:
 	.data       start:0x0015F7E0 end:0x00161060
 	.bss        start:0x00000490 end:0x000004A0
 
-54d_44.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x000229DC end:0x00023A6C
 	.rodata     start:0x00000A68 end:0x00000AA0
+	.data       start:0x00163500 end:0x00163550
+	.bss        start:0x000004A0 end:0x000004A8
 
 54d_45.c:
 	.text       start:0x00023A8C end:0x000242C4

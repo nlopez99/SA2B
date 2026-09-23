@@ -278,9 +278,11 @@ stg06D_69.c:
 	.text       start:0x000348F0 end:0x00036394
 	.rodata     start:0x00000F58 end:0x00000FE8
 
-stg06D_70.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x000365A0 end:0x00037630
 	.rodata     start:0x00000FE8 end:0x00001020
+	.data       start:0x000A7070 end:0x000A70C0
+	.bss        start:0x00000D58 end:0x00000D60
 
 stg06D_71.c:
 	.text       start:0x00037C94 end:0x00039140

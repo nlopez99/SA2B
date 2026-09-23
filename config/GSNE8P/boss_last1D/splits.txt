@@ -302,9 +302,11 @@ boss_last1D_75.c:
 	.text       start:0x0003629C end:0x00036518
 	.rodata     start:0x00001530 end:0x00001550
 
-boss_last1D_76.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00036864 end:0x000378F4
 	.rodata     start:0x00001550 end:0x00001588
+	.data       start:0x000E7730 end:0x000E7780
+	.bss        start:0x00000F88 end:0x00000F90
 
 boss_last1D_77.c:
 	.text       start:0x0003794C end:0x00037B24

@@ -314,9 +314,11 @@ stg41D_78.c:
 	.text       start:0x00038C64 end:0x0003A708
 	.rodata     start:0x000010C8 end:0x00001158
 
-stg41D_79.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x0003A914 end:0x0003B9A4
 	.rodata     start:0x00001158 end:0x00001190
+	.data       start:0x000A4890 end:0x000A48E0
+	.bss        start:0x00000D88 end:0x00000D90
 
 stg41D_80.c:
 	.text       start:0x0003C008 end:0x0003D638

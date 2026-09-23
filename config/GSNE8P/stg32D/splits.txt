@@ -358,9 +358,11 @@ stg32D_89.c:
 	.text       start:0x0003A95C end:0x0003C400
 	.rodata     start:0x00001110 end:0x000011A0
 
-stg32D_90.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x0003C60C end:0x0003D69C
 	.rodata     start:0x000011A0 end:0x000011D8
+	.data       start:0x0009D890 end:0x0009D8E0
+	.bss        start:0x00000D98 end:0x00000DA0
 
 stg32D_91.c:
 	.text       start:0x0003DD00 end:0x0003F330

@@ -314,9 +314,11 @@ stg16D_78.c:
 	.text       start:0x00038A40 end:0x0003A4E4
 	.rodata     start:0x000010C0 end:0x00001150
 
-stg16D_79.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x0003A6F0 end:0x0003B780
 	.rodata     start:0x00001150 end:0x00001188
+	.data       start:0x000CD1B0 end:0x000CD200
+	.bss        start:0x00000B68 end:0x00000B70
 
 stg16D_80.c:
 	.text       start:0x0003BDE4 end:0x0003D414

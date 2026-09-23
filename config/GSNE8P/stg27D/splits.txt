@@ -298,9 +298,11 @@ stg27D_74.c:
 	.text       start:0x00038854 end:0x0003A2F8
 	.rodata     start:0x000010E8 end:0x00001178
 
-stg27D_75.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x0003A504 end:0x0003B594
 	.rodata     start:0x00001178 end:0x000011B0
+	.data       start:0x000AB130 end:0x000AB180
+	.bss        start:0x00000FE8 end:0x00000FF0
 
 stg27D_76.c:
 	.text       start:0x0003BBF8 end:0x0003D0A4

@@ -294,9 +294,11 @@ stg17D_73.c:
 	.text       start:0x0003F408 end:0x00040EAC
 	.rodata     start:0x00001198 end:0x00001228
 
-stg17D_74.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x000410B8 end:0x00042148
 	.rodata     start:0x00001228 end:0x00001260
+	.data       start:0x000C2B70 end:0x000C2BC0
+	.bss        start:0x00000D88 end:0x00000D90
 
 stg17D_75.c:
 	.text       start:0x000427AC end:0x00043C58

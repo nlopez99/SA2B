@@ -819,12 +819,16 @@ typedef struct {
   /* 0x37 */ s8 _9;
   artificial_padding(9, 0x1e, s8);
   /* 0x1e */ s8 TWO_PLAYER;
-  artificial_padding(0x1e, 0x37, s8);
+  artificial_padding(0x1e, 0x23, s8);
+  /* 0x23 */ s8 _23;
+  artificial_padding(0x23, 0x37, s8);
   /* 0x37 */ s8 _37;
   /* 0x38 */ s8 _38;
   artificial_padding(0x38, 0x3d, s8);
   /* 0x3D */ s8 _3D;
-  artificial_padding(0x3d, 0xf0, s8);
+  artificial_padding(0x3d, 0x6e, s8);
+  /* 0x6E */ s16 _6E;
+  artificial_padding(0x6e, 0xf0, s16);
 } lbl_801CC168_t;
 
 extern lbl_801CC168_t lbl_801CC168;

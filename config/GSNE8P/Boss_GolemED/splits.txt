@@ -246,9 +246,11 @@ Boss_GolemED_61.c:
 	.text       start:0x00035BA0 end:0x00035E1C
 	.rodata     start:0x00001648 end:0x00001668
 
-Boss_GolemED_62.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00036168 end:0x000371F8
 	.rodata     start:0x00001668 end:0x000016A0
+	.data       start:0x00105350 end:0x001053A0
+	.bss        start:0x00000F60 end:0x00000F68
 
 Boss_GolemED_63.c:
 	.text       start:0x00037250 end:0x00037428

@@ -214,9 +214,11 @@ boss_hotshotD_53.c:
 	.text       start:0x0002D880 end:0x0002DAFC
 	.rodata     start:0x00001098 end:0x000010B8
 
-boss_hotshotD_54.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x0002DE48 end:0x0002EED8
 	.rodata     start:0x000010B8 end:0x000010F0
+	.data       start:0x00057F10 end:0x00057F60
+	.bss        start:0x00000C50 end:0x00000C58
 
 boss_hotshotD_55.c:
 	.text       start:0x0002EF30 end:0x0002F108

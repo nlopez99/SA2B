@@ -329,6 +329,8 @@ stg13D_80.c:
 OBJECT/o_savepoint.c:
 	.text       start:0x00043C30 end:0x00044CC0
 	.rodata     start:0x00001220 end:0x00001258
+	.data       start:0x0024D210 end:0x0024D260
+	.bss        start:0x00000DD0 end:0x00000DD8
 
 stg13D_82.c:
 	.text       start:0x00044CC0 end:0x000467D0

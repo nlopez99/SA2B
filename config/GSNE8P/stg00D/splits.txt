@@ -174,9 +174,11 @@ stg00D_43.c:
 	.text       start:0x0001EA24 end:0x0001ECA0
 	.rodata     start:0x00000930 end:0x00000950
 
-stg00D_44.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x0001F0C0 end:0x00020150
 	.rodata     start:0x00000950 end:0x00000988
+	.data       start:0x00048F30 end:0x00048F80
+	.bss        start:0x00000AE8 end:0x00000AF0
 
 stg00D_45.c:
 	.text       start:0x000201A8 end:0x00020380

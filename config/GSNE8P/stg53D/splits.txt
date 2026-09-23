@@ -302,9 +302,11 @@ stg53D_75.c:
 	.text       start:0x00034100 end:0x00035BA4
 	.rodata     start:0x00000F30 end:0x00000FC0
 
-stg53D_76.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00035DB0 end:0x00036E40
 	.rodata     start:0x00000FC0 end:0x00000FF8
+	.data       start:0x00061D90 end:0x00061DE0
+	.bss        start:0x00000D88 end:0x00000D90
 
 stg53D_77.c:
 	.text       start:0x000374A4 end:0x00038950

@@ -306,9 +306,11 @@ stg14D_76.c:
 	.text       start:0x000369A8 end:0x0003844C
 	.rodata     start:0x00000FC8 end:0x00001058
 
-stg14D_77.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00038658 end:0x000396E8
 	.rodata     start:0x00001058 end:0x00001090
+	.data       start:0x00100F50 end:0x00100FA0
+	.bss        start:0x00000D98 end:0x00000DA0
 
 stg14D_78.c:
 	.text       start:0x00039D4C end:0x0003B1F8
