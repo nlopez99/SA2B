@@ -166,9 +166,10 @@ stg42D_39.c:
 	.text       start:0x00014344 end:0x00018A84
 	.rodata     start:0x00000788 end:0x00000870
 
-stg42D_40.c:
-	.text       start:0x00018A84 end:0x000193EC
+OBJECT/o_ori.c:
+	.text       start:0x00018A84 end:0x00019550
 	.rodata     start:0x00000870 end:0x000008B8
+	.bss        start:0x000006A0 end:0x000006A8
 
 OBJECT/o_ring.c:
 	.text       start:0x000195AC end:0x0001B7FC

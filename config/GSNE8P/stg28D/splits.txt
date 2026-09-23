@@ -360,9 +360,10 @@ stg28D_90.c:
 	.text       start:0x00032328 end:0x00036734
 	.rodata     start:0x00001038 end:0x00001120
 
-stg28D_91.c:
-	.text       start:0x00036734 end:0x0003709C
+OBJECT/o_ori.c:
+	.text       start:0x00036734 end:0x00037200
 	.rodata     start:0x00001120 end:0x00001168
+	.bss        start:0x00000700 end:0x00000708
 
 OBJECT/o_ring.c:
 	.text       start:0x0003725C end:0x00039518

@@ -288,9 +288,10 @@ stg14D_72.c:
 	.text       start:0x0002DB2C end:0x00031F38
 	.rodata     start:0x00000D68 end:0x00000E50
 
-stg14D_73.c:
-	.text       start:0x00031F38 end:0x000328A0
+OBJECT/o_ori.c:
+	.text       start:0x00031F38 end:0x00032A04
 	.rodata     start:0x00000E50 end:0x00000E98
+	.bss        start:0x00000D80 end:0x00000D88
 
 OBJECT/o_ring.c:
 	.text       start:0x00032A60 end:0x00034D1C

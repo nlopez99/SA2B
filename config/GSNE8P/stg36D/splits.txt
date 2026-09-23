@@ -230,9 +230,10 @@ stg36D_56.c:
 	.text       start:0x0003584C end:0x00039F8C
 	.rodata     start:0x00000FF8 end:0x000010E0
 
-stg36D_57.c:
-	.text       start:0x00039F8C end:0x0003A8F4
+OBJECT/o_ori.c:
+	.text       start:0x00039F8C end:0x0003AA58
 	.rodata     start:0x000010E0 end:0x00001128
+	.bss        start:0x00000B40 end:0x00000B48
 
 OBJECT/o_ring.c:
 	.text       start:0x0003AAB4 end:0x0003D480

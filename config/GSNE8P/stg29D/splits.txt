@@ -184,9 +184,10 @@ stg29D_45.c:
 	.text       start:0x0001B678 end:0x0001FDB8
 	.rodata     start:0x000008D0 end:0x000009B8
 
-stg29D_46.c:
-	.text       start:0x0001FDB8 end:0x00020720
+OBJECT/o_ori.c:
+	.text       start:0x0001FDB8 end:0x00020884
 	.rodata     start:0x000009B8 end:0x00000A00
+	.bss        start:0x00000D08 end:0x00000D10
 
 OBJECT/o_ring.c:
 	.text       start:0x000208E0 end:0x00022B30

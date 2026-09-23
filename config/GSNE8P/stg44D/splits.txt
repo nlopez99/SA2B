@@ -312,9 +312,10 @@ stg44D_78.c:
 	.text       start:0x0002FE90 end:0x0003429C
 	.rodata     start:0x00000E28 end:0x00000F10
 
-stg44D_79.c:
-	.text       start:0x0003429C end:0x00034C04
+OBJECT/o_ori.c:
+	.text       start:0x0003429C end:0x00034D68
 	.rodata     start:0x00000F10 end:0x00000F58
+	.bss        start:0x00001180 end:0x00001188
 
 OBJECT/o_ring.c:
 	.text       start:0x00034DC4 end:0x00037790

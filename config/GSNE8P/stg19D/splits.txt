@@ -150,9 +150,10 @@ stg19D_35.c:
 	.text       start:0x00016858 end:0x0001AF98
 	.rodata     start:0x00000860 end:0x00000948
 
-stg19D_36.c:
-	.text       start:0x0001AF98 end:0x0001B900
+OBJECT/o_ori.c:
+	.text       start:0x0001AF98 end:0x0001BA64
 	.rodata     start:0x00000948 end:0x00000990
+	.bss        start:0x000006A0 end:0x000006A8
 
 OBJECT/o_ring.c:
 	.text       start:0x0001BAC0 end:0x0001DD10

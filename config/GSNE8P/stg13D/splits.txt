@@ -306,9 +306,10 @@ stg13D_76.c:
 	.text       start:0x00039104 end:0x0003D510
 	.rodata     start:0x00000F30 end:0x00001018
 
-stg13D_77.c:
+OBJECT/o_ori.c:
 	.text       start:0x0003D510 end:0x0003DFDC
 	.rodata     start:0x00001018 end:0x00001060
+	.bss        start:0x00000DB8 end:0x00000DC0
 
 OBJECT/o_ring.c:
 	.text       start:0x0003E038 end:0x000402F4

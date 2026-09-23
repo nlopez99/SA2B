@@ -189,9 +189,10 @@ boss_hotshotD_48.c:
 	.text       start:0x00022A48 end:0x00027188
 	.rodata     start:0x00000DA8 end:0x00000E90
 
-boss_hotshotD_49.c:
-	.text       start:0x00027188 end:0x00027AF0
+OBJECT/o_ori.c:
+	.text       start:0x00027188 end:0x00027C54
 	.rodata     start:0x00000E90 end:0x00000ED8
+	.bss        start:0x00000C38 end:0x00000C40
 
 OBJECT/o_ring.c:
 	.text       start:0x00027CB0 end:0x00029F6C

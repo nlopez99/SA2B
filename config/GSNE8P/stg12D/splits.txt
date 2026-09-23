@@ -292,9 +292,10 @@ stg12D_72.c:
 	.text       start:0x0002DFB8 end:0x000323C4
 	.rodata     start:0x00000E18 end:0x00000F00
 
-stg12D_73.c:
-	.text       start:0x000323C4 end:0x00032D2C
+OBJECT/o_ori.c:
+	.text       start:0x000323C4 end:0x00032E90
 	.rodata     start:0x00000F00 end:0x00000F48
+	.bss        start:0x00000DB8 end:0x00000DC0
 
 OBJECT/o_ring.c:
 	.text       start:0x00032EEC end:0x000351A8

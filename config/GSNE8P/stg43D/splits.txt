@@ -284,9 +284,10 @@ stg43D_70.c:
 	.text       start:0x0002E654 end:0x00032A60
 	.rodata     start:0x00000DC0 end:0x00000EA8
 
-stg43D_71.c:
-	.text       start:0x00032A60 end:0x000333C8
+OBJECT/o_ori.c:
+	.text       start:0x00032A60 end:0x0003352C
 	.rodata     start:0x00000EA8 end:0x00000EF0
+	.bss        start:0x00000D78 end:0x00000D80
 
 OBJECT/o_ring.c:
 	.text       start:0x00033588 end:0x00035844

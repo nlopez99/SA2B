@@ -328,9 +328,10 @@ stg23D_81.c:
 	.text       start:0x0002FBFC end:0x00034008
 	.rodata     start:0x00000F08 end:0x00000FF0
 
-stg23D_82.c:
-	.text       start:0x00034008 end:0x00034970
+OBJECT/o_ori.c:
+	.text       start:0x00034008 end:0x00034AD4
 	.rodata     start:0x00000FF0 end:0x00001038
+	.bss        start:0x00000D38 end:0x00000D40
 
 OBJECT/o_ring.c:
 	.text       start:0x00034B30 end:0x00036DEC

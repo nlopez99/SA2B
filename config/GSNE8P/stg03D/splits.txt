@@ -312,9 +312,10 @@ stg03D_78.c:
 	.text       start:0x00032670 end:0x00036A7C
 	.rodata     start:0x00000FC8 end:0x000010B0
 
-stg03D_79.c:
-	.text       start:0x00036A7C end:0x000373E4
+OBJECT/o_ori.c:
+	.text       start:0x00036A7C end:0x00037548
 	.rodata     start:0x000010B0 end:0x000010F8
+	.bss        start:0x00000D70 end:0x00000D78
 
 OBJECT/o_ring.c:
 	.text       start:0x000375A4 end:0x00039860

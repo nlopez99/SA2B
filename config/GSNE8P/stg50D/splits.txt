@@ -284,9 +284,10 @@ stg50D_71.c:
 	.text       start:0x0002E620 end:0x00032A2C
 	.rodata     start:0x00000DE0 end:0x00000EC8
 
-stg50D_72.c:
-	.text       start:0x00032A2C end:0x00033394
+OBJECT/o_ori.c:
+	.text       start:0x00032A2C end:0x000334F8
 	.rodata     start:0x00000EC8 end:0x00000F10
+	.bss        start:0x00001180 end:0x00001188
 
 OBJECT/o_ring.c:
 	.text       start:0x00033554 end:0x00035F20

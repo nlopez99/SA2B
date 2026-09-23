@@ -272,9 +272,10 @@ stg40D_68.c:
 	.text       start:0x0002BBA8 end:0x0002FFB4
 	.rodata     start:0x00000C58 end:0x00000D40
 
-stg40D_69.c:
-	.text       start:0x0002FFB4 end:0x0003091C
+OBJECT/o_ori.c:
+	.text       start:0x0002FFB4 end:0x00030A80
 	.rodata     start:0x00000D40 end:0x00000D88
+	.bss        start:0x00000D48 end:0x00000D50
 
 OBJECT/o_ring.c:
 	.text       start:0x00030ADC end:0x00032D98

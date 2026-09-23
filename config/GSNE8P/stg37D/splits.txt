@@ -238,9 +238,10 @@ stg37D_59.c:
 	.text       start:0x0002CBF0 end:0x00031330
 	.rodata     start:0x00000E50 end:0x00000F38
 
-stg37D_60.c:
-	.text       start:0x00031330 end:0x00031C98
+OBJECT/o_ori.c:
+	.text       start:0x00031330 end:0x00031DFC
 	.rodata     start:0x00000F38 end:0x00000F80
+	.bss        start:0x00000B80 end:0x00000B88
 
 OBJECT/o_ring.c:
 	.text       start:0x00031E58 end:0x000347B8

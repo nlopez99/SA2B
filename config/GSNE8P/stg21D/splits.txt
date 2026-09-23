@@ -344,9 +344,10 @@ stg21D_85.c:
 	.text       start:0x0002F940 end:0x00033D4C
 	.rodata     start:0x00000E50 end:0x00000F38
 
-stg21D_86.c:
-	.text       start:0x00033D4C end:0x000346B4
+OBJECT/o_ori.c:
+	.text       start:0x00033D4C end:0x00034818
 	.rodata     start:0x00000F38 end:0x00000F80
+	.bss        start:0x00000D38 end:0x00000D40
 
 OBJECT/o_ring.c:
 	.text       start:0x00034874 end:0x00036B30

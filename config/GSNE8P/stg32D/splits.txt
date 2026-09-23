@@ -340,9 +340,10 @@ stg32D_85.c:
 	.text       start:0x000313D0 end:0x000357DC
 	.rodata     start:0x00000EA8 end:0x00000F90
 
-stg32D_86.c:
-	.text       start:0x000357DC end:0x00036144
+OBJECT/o_ori.c:
+	.text       start:0x000357DC end:0x000362A8
 	.rodata     start:0x00000F90 end:0x00000FD8
+	.bss        start:0x00000D80 end:0x00000D88
 
 OBJECT/o_ring.c:
 	.text       start:0x00036304 end:0x00038CD0

@@ -362,9 +362,10 @@ stg25D_90.c:
 	.text       start:0x0003768C end:0x0003BA98
 	.rodata     start:0x000010C0 end:0x000011A8
 
-stg25D_91.c:
-	.text       start:0x0003BA98 end:0x0003C400
+OBJECT/o_ori.c:
+	.text       start:0x0003BA98 end:0x0003C564
 	.rodata     start:0x000011A8 end:0x000011F0
+	.bss        start:0x00000D48 end:0x00000D50
 
 OBJECT/o_ring.c:
 	.text       start:0x0003C5C0 end:0x0003EF8C

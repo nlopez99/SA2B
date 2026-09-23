@@ -280,9 +280,10 @@ stg27D_70.c:
 	.text       start:0x0002F9D8 end:0x00033DE4
 	.rodata     start:0x00000E88 end:0x00000F70
 
-stg27D_71.c:
-	.text       start:0x00033DE4 end:0x0003474C
+OBJECT/o_ori.c:
+	.text       start:0x00033DE4 end:0x000348B0
 	.rodata     start:0x00000F70 end:0x00000FB8
+	.bss        start:0x00000FD0 end:0x00000FD8
 
 OBJECT/o_ring.c:
 	.text       start:0x0003490C end:0x00036BC8

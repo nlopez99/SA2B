@@ -260,9 +260,10 @@ stg06D_65.c:
 	.text       start:0x0002BA74 end:0x0002FE80
 	.rodata     start:0x00000CF8 end:0x00000DE0
 
-stg06D_66.c:
-	.text       start:0x0002FE80 end:0x000307E8
+OBJECT/o_ori.c:
+	.text       start:0x0002FE80 end:0x0003094C
 	.rodata     start:0x00000DE0 end:0x00000E28
+	.bss        start:0x00000D40 end:0x00000D48
 
 OBJECT/o_ring.c:
 	.text       start:0x000309A8 end:0x00032C64

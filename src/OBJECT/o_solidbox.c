@@ -11,10 +11,10 @@
 
 extern void FreeTaskC(task *tp);
 // the stage's pushable-object registry: join on init, leave on destroy
-extern void _rename_EntryObjectList(task *tp);
-extern void _rename_LeaveObjectList(task *tp);
+extern void _rename_BreakObjEntry(task *tp);
+extern void _rename_BreakObjFree(task *tp);
 // creates a child task carrying its own collision volume
-extern task *_rename_CreateColliChild(task *tp, Sint32 a, Sint32 b,
+extern task *_rename_CreateBreakObjColli(task *tp, Sint32 a, Sint32 b,
                                       CCL_INFO *ci, Sint32 num, Uint32 flag);
 extern void _rename_CreateBoxDust(NJS_POINT3 *pos, Float x, Float z,
                                   Angle3 *ang, Float scl, Float interval,
@@ -53,13 +53,13 @@ void ObjectSolidBox(task *tp) {
   twp->scl.z = 0.0f;
   CCL_Init(tp, _rename_solidbox_colli_info, ARYLEN(_rename_solidbox_colli_info),
            CID_OBJECT);
-  _rename_EntryObjectList(tp);
+  _rename_BreakObjEntry(tp);
   twp->ang.x = 0;
   twp->ang.z = 0;
 }
 
 static void ObjectSolidBoxDest(task *tp) {
-  _rename_LeaveObjectList(tp);
+  _rename_BreakObjFree(tp);
   tp->awp = NULL;
 }
 
@@ -85,7 +85,7 @@ static void ObjectSolidBoxExec(task *tp) {
     twp->scl.z = 0.99f * twp->scl.z - 0.08f;
 
     if (tp->ctp == NULL) {
-      _rename_CreateColliChild(tp, 0, 0, _rename_solidbox_colli_info,
+      _rename_CreateBreakObjColli(tp, 0, 0, _rename_solidbox_colli_info,
                                ARYLEN(_rename_solidbox_colli_info), 0);
     }
     // the child collision sits where the fall ends

@@ -184,9 +184,10 @@ stg33D_46.c:
 	.text       start:0x0001B230 end:0x0001F970
 	.rodata     start:0x00000878 end:0x00000960
 
-stg33D_47.c:
-	.text       start:0x0001F970 end:0x000202D8
+OBJECT/o_ori.c:
+	.text       start:0x0001F970 end:0x0002043C
 	.rodata     start:0x00000960 end:0x000009A8
+	.bss        start:0x00000D10 end:0x00000D18
 
 OBJECT/o_ring.c:
 	.text       start:0x00020498 end:0x000226E8

@@ -226,9 +226,10 @@ Boss_GolemED_56.c:
 	.text       start:0x0002AD68 end:0x0002F4A8
 	.rodata     start:0x00001358 end:0x00001440
 
-Boss_GolemED_57.c:
-	.text       start:0x0002F4A8 end:0x0002FE10
+OBJECT/o_ori.c:
+	.text       start:0x0002F4A8 end:0x0002FF74
 	.rodata     start:0x00001440 end:0x00001488
+	.bss        start:0x00000F48 end:0x00000F50
 
 OBJECT/o_ring.c:
 	.text       start:0x0002FFD0 end:0x0003228C

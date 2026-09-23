@@ -174,9 +174,10 @@ OBJECT/o_itemboxballoon.c:
 	.rodata     start:0x000007C8 end:0x00000818
 	.data       start:0x000301B8 end:0x00030B20
 
-stg45D_44.c:
-	.text       start:0x0001915C end:0x00019AC4
+OBJECT/o_ori.c:
+	.text       start:0x0001915C end:0x00019C28
 	.rodata     start:0x00000818 end:0x00000860
+	.bss        start:0x00000AD0 end:0x00000AD8
 
 OBJECT/o_ring.c:
 	.text       start:0x00019C84 end:0x0001BED4

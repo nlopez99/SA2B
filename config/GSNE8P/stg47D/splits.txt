@@ -320,9 +320,10 @@ stg47D_79.c:
 	.text       start:0x0002EB58 end:0x00032F64
 	.rodata     start:0x00000E40 end:0x00000F28
 
-stg47D_80.c:
-	.text       start:0x00032F64 end:0x000338CC
+OBJECT/o_ori.c:
+	.text       start:0x00032F64 end:0x00033A30
 	.rodata     start:0x00000F28 end:0x00000F70
+	.bss        start:0x00000D38 end:0x00000D40
 
 OBJECT/o_ring.c:
 	.text       start:0x00033A8C end:0x00035D48

@@ -277,9 +277,10 @@ boss_last1D_70.c:
 	.text       start:0x0002B464 end:0x0002FBA4
 	.rodata     start:0x00001240 end:0x00001328
 
-boss_last1D_71.c:
-	.text       start:0x0002FBA4 end:0x0003050C
+OBJECT/o_ori.c:
+	.text       start:0x0002FBA4 end:0x00030670
 	.rodata     start:0x00001328 end:0x00001370
+	.bss        start:0x00000F70 end:0x00000F78
 
 OBJECT/o_ring.c:
 	.text       start:0x000306CC end:0x00032988
