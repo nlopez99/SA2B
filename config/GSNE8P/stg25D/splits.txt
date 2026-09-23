@@ -162,7 +162,7 @@ stg25D_38.c:
 	.text       start:0x00018358 end:0x00018DB4
 	.rodata     start:0x00000778 end:0x00000800
 
-stg25D_39.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00018DB8 end:0x00018E80
 	.rodata     start:0x00000800 end:0x00000808
 

@@ -46,7 +46,7 @@ stg42D_9.c:
 	.text       start:0x00007558 end:0x00007684
 	.rodata     start:0x000002E0 end:0x000002F0
 
-stg42D_10.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00007684 end:0x0000774C
 	.rodata     start:0x000002F0 end:0x000002F8
 

@@ -30,7 +30,7 @@ boss_fdogD_5.c:
 	.text       start:0x00009008 end:0x00009134
 	.rodata     start:0x00000418 end:0x00000428
 
-boss_fdogD_6.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00009134 end:0x000091FC
 	.rodata     start:0x00000428 end:0x00000430
 

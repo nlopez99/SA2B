@@ -134,7 +134,7 @@ stg26D_31.c:
 	.text       start:0x00013FDC end:0x00014A38
 	.rodata     start:0x000005B8 end:0x00000640
 
-stg26D_32.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00014A3C end:0x00014B04
 	.rodata     start:0x00000640 end:0x00000648
 

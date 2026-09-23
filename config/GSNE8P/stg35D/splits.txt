@@ -38,7 +38,7 @@ stg35D_7.c:
 	.text       start:0x00017F0C end:0x00018968
 	.rodata     start:0x00000670 end:0x000006F8
 
-stg35D_8.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0001896C end:0x00018A34
 	.rodata     start:0x000006F8 end:0x00000700
 

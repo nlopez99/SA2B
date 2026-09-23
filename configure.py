@@ -690,6 +690,7 @@ config.libs = [
             Object(Matching, "EFFECT/ef_spspark.c"),
             Object(Matching, "EFFECT/ef_dirt.c"),
             Object(Matching, "EFFECT/ef_explosion.c"),
+            Object(Matching, "EFFECT/ef_bombfire.c"),
             Object(Matching, "OBJECT/itemboxmanager.c"),
             Object(Matching, "EFFECT/ef_kiran.c"),
             Object(Matching, "OBJECT/o_ironball2.c"),

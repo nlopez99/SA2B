@@ -26,7 +26,7 @@ boss_hotshotD_4.c:
 	.text       start:0x0000B1BC end:0x0000B2E8
 	.rodata     start:0x00000688 end:0x00000698
 
-boss_hotshotD_5.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0000B2E8 end:0x0000B3B0
 	.rodata     start:0x00000698 end:0x000006A0
 

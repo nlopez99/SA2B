@@ -130,7 +130,7 @@ stg18D_30.c:
 	.text       start:0x00012B10 end:0x0001356C
 	.rodata     start:0x000005B8 end:0x00000640
 
-stg18D_31.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00013570 end:0x00013638
 	.rodata     start:0x00000640 end:0x00000648
 

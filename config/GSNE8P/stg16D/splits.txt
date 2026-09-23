@@ -90,7 +90,7 @@ stg16D_20.c:
 	.text       start:0x0000EE7C end:0x0000EFA8
 	.rodata     start:0x000004E0 end:0x000004F0
 
-stg16D_21.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0000EFA8 end:0x0000F070
 	.rodata     start:0x000004F0 end:0x000004F8
 

@@ -98,7 +98,7 @@ stg13D_21.c:
 	.text       start:0x00018B74 end:0x00018CA0
 	.rodata     start:0x00000580 end:0x00000590
 
-stg13D_22.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00018CA8 end:0x00018D70
 	.rodata     start:0x00000590 end:0x00000598
 

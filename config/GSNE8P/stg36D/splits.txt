@@ -26,7 +26,7 @@ stg36D_4.c:
 	.text       start:0x00017784 end:0x000178B0
 	.rodata     start:0x000006A0 end:0x000006B0
 
-stg36D_5.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x000178B0 end:0x00017978
 	.rodata     start:0x000006B0 end:0x000006B8
 

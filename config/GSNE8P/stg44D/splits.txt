@@ -106,7 +106,7 @@ stg44D_24.c:
 	.text       start:0x0000EB78 end:0x0000ECA4
 	.rodata     start:0x00000490 end:0x000004A0
 
-stg44D_25.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0000ECAC end:0x0000ED74
 	.rodata     start:0x000004A0 end:0x000004A8
 

@@ -110,7 +110,7 @@ boss_last1D_25.c:
 	.text       start:0x0001311C end:0x00013B78
 	.rodata     start:0x00000A60 end:0x00000AE8
 
-boss_last1D_26.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00013B7C end:0x00013C44
 	.rodata     start:0x00000AE8 end:0x00000AF0
 

@@ -78,7 +78,7 @@ stg53D_17.c:
 	.text       start:0x00009CA0 end:0x00009DCC
 	.rodata     start:0x00000338 end:0x00000348
 
-stg53D_18.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00009DD4 end:0x00009E9C
 	.rodata     start:0x00000348 end:0x00000350
 

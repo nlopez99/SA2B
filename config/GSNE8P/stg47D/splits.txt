@@ -114,7 +114,7 @@ stg47D_26.c:
 	.text       start:0x0000E5A8 end:0x0000E6D4
 	.rodata     start:0x00000498 end:0x000004A8
 
-stg47D_27.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0000E6D4 end:0x0000E79C
 	.rodata     start:0x000004A8 end:0x000004B0
 

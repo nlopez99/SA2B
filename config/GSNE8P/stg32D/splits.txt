@@ -126,7 +126,7 @@ stg32D_29.c:
 	.text       start:0x0000EF7C end:0x0000F0A8
 	.rodata     start:0x000004C0 end:0x000004D0
 
-stg32D_30.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0000F0B0 end:0x0000F178
 	.rodata     start:0x000004D0 end:0x000004D8
 

@@ -106,7 +106,7 @@ stg03D_24.c:
 	.text       start:0x00011574 end:0x00011FD0
 	.rodata     start:0x000005C0 end:0x00000648
 
-stg03D_25.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00011FD4 end:0x0001209C
 	.rodata     start:0x00000648 end:0x00000650
 

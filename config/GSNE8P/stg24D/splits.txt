@@ -86,7 +86,7 @@ stg24D_19.c:
 	.text       start:0x000133D8 end:0x00013504
 	.rodata     start:0x00000680 end:0x00000690
 
-stg24D_20.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00013504 end:0x000135CC
 	.rodata     start:0x00000690 end:0x00000698
 

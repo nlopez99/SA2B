@@ -30,7 +30,7 @@ stg45D_5.c:
 	.text       start:0x00006C74 end:0x00006DA0
 	.rodata     start:0x000001C8 end:0x000001D8
 
-stg45D_6.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00006DA0 end:0x00006E68
 	.rodata     start:0x000001D8 end:0x000001E0
 

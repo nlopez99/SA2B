@@ -98,7 +98,7 @@ stg10D_22.c:
 	.text       start:0x00010B0C end:0x00011568
 	.rodata     start:0x000004A8 end:0x00000530
 
-stg10D_23.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0001156C end:0x00011634
 	.rodata     start:0x00000530 end:0x00000538
 

@@ -46,7 +46,7 @@ stg31D_9.c:
 	.text       start:0x00007AA4 end:0x00008500
 	.rodata     start:0x000001F0 end:0x00000278
 
-stg31D_10.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00008504 end:0x000085CC
 	.rodata     start:0x00000278 end:0x00000280
 

@@ -66,7 +66,7 @@ stg38D_14.c:
 	.text       start:0x00011100 end:0x00011B5C
 	.rodata     start:0x000004F0 end:0x00000578
 
-stg38D_15.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00011B60 end:0x00011C28
 	.rodata     start:0x00000578 end:0x00000580
 

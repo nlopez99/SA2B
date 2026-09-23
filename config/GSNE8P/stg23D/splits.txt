@@ -122,7 +122,7 @@ stg23D_28.c:
 	.text       start:0x0000F358 end:0x0000F484
 	.rodata     start:0x00000560 end:0x00000570
 
-stg23D_29.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0000F484 end:0x0000F54C
 	.rodata     start:0x00000570 end:0x00000578
 

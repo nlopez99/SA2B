@@ -82,7 +82,7 @@ stg12D_18.c:
 	.text       start:0x0000B6C8 end:0x0000C124
 	.rodata     start:0x000003D0 end:0x00000458
 
-stg12D_19.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0000C128 end:0x0000C1F0
 	.rodata     start:0x00000458 end:0x00000460
 

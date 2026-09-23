@@ -89,7 +89,7 @@ stg52D_19.c:
 	.text       start:0x00018514 end:0x00018640
 	.rodata     start:0x00000568 end:0x00000578
 
-stg52D_20.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00018648 end:0x00018710
 	.rodata     start:0x00000578 end:0x00000580
 

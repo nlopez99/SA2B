@@ -78,7 +78,7 @@ stg43D_17.c:
 	.text       start:0x0000C8E0 end:0x0000CA0C
 	.rodata     start:0x00000410 end:0x00000420
 
-stg43D_18.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0000CA0C end:0x0000CAD4
 	.rodata     start:0x00000420 end:0x00000428
 

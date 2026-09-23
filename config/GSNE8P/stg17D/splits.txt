@@ -70,7 +70,7 @@ stg17D_15.c:
 	.text       start:0x0001455C end:0x00014688
 	.rodata     start:0x00000560 end:0x00000570
 
-stg17D_16.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00014690 end:0x00014758
 	.rodata     start:0x00000570 end:0x00000578
 

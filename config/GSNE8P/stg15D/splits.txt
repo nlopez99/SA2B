@@ -85,7 +85,7 @@ stg15D_19.c:
 	.text       start:0x0000B24C end:0x0000BCA8
 	.rodata     start:0x000003C8 end:0x00000450
 
-stg15D_20.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x0000BCAC end:0x0000BD74
 	.rodata     start:0x00000450 end:0x00000458
 

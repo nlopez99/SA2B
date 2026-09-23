@@ -94,7 +94,7 @@ stg58D_21.c:
 	.text       start:0x00011D74 end:0x00011EA0
 	.rodata     start:0x00000608 end:0x00000618
 
-stg58D_22.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00011EA8 end:0x00011F70
 	.rodata     start:0x00000618 end:0x00000620
 

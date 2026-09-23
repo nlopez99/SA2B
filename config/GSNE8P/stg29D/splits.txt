@@ -26,7 +26,7 @@ stg29D_4.c:
 	.text       start:0x0000791C end:0x00007A48
 	.rodata     start:0x00000208 end:0x00000218
 
-stg29D_5.c:
+EFFECT/ef_bombfire.c:
 	.text       start:0x00007A48 end:0x00007B10
 	.rodata     start:0x00000218 end:0x00000220
 
