@@ -126,8 +126,8 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x00019154 end:0x00019B6C
 	.rodata     start:0x00000F18 end:0x00000F58
 
-Boss_GolemD_31.c:
-	.text       start:0x00019B6C end:0x00019EC0
+EFFECT/ef_splash.c:
+	.text       start:0x00019B6C end:0x00019F90
 	.rodata     start:0x00000F58 end:0x00000F88
 
 Boss_GolemD_32.c:

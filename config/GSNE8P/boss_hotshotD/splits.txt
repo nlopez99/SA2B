@@ -78,8 +78,8 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x000102D0 end:0x00010CE8
 	.rodata     start:0x000008C0 end:0x00000900
 
-boss_hotshotD_19.c:
-	.text       start:0x00010CE8 end:0x0001103C
+EFFECT/ef_splash.c:
+	.text       start:0x00010CE8 end:0x0001110C
 	.rodata     start:0x00000900 end:0x00000930
 
 boss_hotshotD_20.c:

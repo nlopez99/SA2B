@@ -102,8 +102,8 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x00018758 end:0x00019170
 	.rodata     start:0x00000A10 end:0x00000A50
 
-boss_bigfootD_25.c:
-	.text       start:0x00019170 end:0x000194C4
+EFFECT/ef_splash.c:
+	.text       start:0x00019170 end:0x00019594
 	.rodata     start:0x00000A50 end:0x00000A80
 
 boss_bigfootD_26.c:

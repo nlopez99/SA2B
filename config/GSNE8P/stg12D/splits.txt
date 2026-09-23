@@ -142,8 +142,8 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x00013E44 end:0x0001485C
 	.rodata     start:0x00000718 end:0x00000758
 
-stg12D_34.c:
-	.text       start:0x0001485C end:0x00014BB0
+EFFECT/ef_splash.c:
+	.text       start:0x0001485C end:0x00014C80
 	.rodata     start:0x00000758 end:0x00000788
 
 stg12D_35.c:

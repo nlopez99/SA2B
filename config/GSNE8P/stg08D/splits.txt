@@ -130,8 +130,8 @@ stg08D_31.c:
 	.text       start:0x00011DC8 end:0x00012C64
 	.rodata     start:0x00000620 end:0x00000660
 
-stg08D_32.c:
-	.text       start:0x00012C64 end:0x00012FB8
+EFFECT/ef_splash.c:
+	.text       start:0x00012C64 end:0x00013088
 	.rodata     start:0x00000660 end:0x00000690
 
 stg08D_33.c:

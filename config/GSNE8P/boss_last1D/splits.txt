@@ -166,8 +166,8 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x000193F4 end:0x00019E0C
 	.rodata     start:0x00000D58 end:0x00000D98
 
-boss_last1D_41.c:
-	.text       start:0x00019E0C end:0x0001A160
+EFFECT/ef_splash.c:
+	.text       start:0x00019E0C end:0x0001A230
 	.rodata     start:0x00000D98 end:0x00000DC8
 
 boss_last1D_42.c:
