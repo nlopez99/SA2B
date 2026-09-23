@@ -114,7 +114,7 @@ eventD_26.c:
 	.text       start:0x0000FB2C end:0x0000FCB8
 	.rodata     start:0x00000340 end:0x00000368
 
-eventD_27.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x0000FD88 end:0x0000FF44
 	.rodata     start:0x00000368 end:0x00000390
 

@@ -102,7 +102,7 @@ stg29D_23.c:
 	.text       start:0x0000FC38 end:0x00010068
 	.rodata     start:0x00000578 end:0x00000588
 
-stg29D_24.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x000100E8 end:0x000102A4
 	.rodata     start:0x00000588 end:0x000005B0
 

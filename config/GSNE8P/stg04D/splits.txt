@@ -150,7 +150,7 @@ stg04D_36.c:
 	.text       start:0x00014FE4 end:0x00015414
 	.rodata     start:0x00000728 end:0x00000738
 
-stg04D_37.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00015494 end:0x00015650
 	.rodata     start:0x00000738 end:0x00000760
 

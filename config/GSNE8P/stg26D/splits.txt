@@ -202,7 +202,7 @@ stg26D_49.c:
 	.text       start:0x0001B714 end:0x0001BB44
 	.rodata     start:0x00000900 end:0x00000910
 
-stg26D_50.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x0001BBC4 end:0x0001BD80
 	.rodata     start:0x00000910 end:0x00000938
 

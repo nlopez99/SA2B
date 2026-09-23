@@ -62,7 +62,7 @@ stg00D_13.c:
 	.text       start:0x0000711C end:0x000072E4
 	.rodata     start:0x000002D8 end:0x00000300
 
-stg00D_14.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x000073B4 end:0x00007570
 	.rodata     start:0x00000300 end:0x00000328
 

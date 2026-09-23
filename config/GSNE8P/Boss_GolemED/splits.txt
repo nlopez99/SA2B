@@ -126,7 +126,7 @@ Boss_GolemED_29.c:
 	.text       start:0x00019784 end:0x00019BB4
 	.rodata     start:0x00000EF8 end:0x00000F08
 
-Boss_GolemED_30.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00019C34 end:0x00019DF0
 	.rodata     start:0x00000F08 end:0x00000F30
 

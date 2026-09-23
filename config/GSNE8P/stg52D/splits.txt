@@ -165,7 +165,7 @@ stg52D_39.c:
 	.text       start:0x0002071C end:0x00020B4C
 	.rodata     start:0x000008C0 end:0x000008D0
 
-stg52D_40.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00020BCC end:0x00020D88
 	.rodata     start:0x000008D0 end:0x000008F8
 

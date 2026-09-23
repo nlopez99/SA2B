@@ -202,7 +202,7 @@ stg32D_49.c:
 	.text       start:0x00017FE4 end:0x00018414
 	.rodata     start:0x00000820 end:0x00000830
 
-stg32D_50.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00018494 end:0x00018650
 	.rodata     start:0x00000830 end:0x00000858
 

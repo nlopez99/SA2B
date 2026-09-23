@@ -98,7 +98,7 @@ stg20D_22.c:
 	.text       start:0x00015E50 end:0x00016280
 	.rodata     start:0x00000820 end:0x00000830
 
-stg20D_23.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00016300 end:0x000164BC
 	.rodata     start:0x00000830 end:0x00000858
 

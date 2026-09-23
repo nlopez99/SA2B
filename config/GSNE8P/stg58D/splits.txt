@@ -162,7 +162,7 @@ stg58D_38.c:
 	.text       start:0x00019D68 end:0x0001A198
 	.rodata     start:0x00000910 end:0x00000920
 
-stg58D_39.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x0001A218 end:0x0001A3D4
 	.rodata     start:0x00000920 end:0x00000948
 

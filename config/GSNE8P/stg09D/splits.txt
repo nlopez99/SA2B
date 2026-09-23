@@ -162,7 +162,7 @@ stg09D_39.c:
 	.text       start:0x00014120 end:0x00014550
 	.rodata     start:0x000007B8 end:0x000007C8
 
-stg09D_40.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x000145D0 end:0x0001478C
 	.rodata     start:0x000007C8 end:0x000007F0
 

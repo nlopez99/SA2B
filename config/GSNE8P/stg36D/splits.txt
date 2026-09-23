@@ -102,7 +102,7 @@ stg36D_23.c:
 	.text       start:0x0001FEA0 end:0x000202D0
 	.rodata     start:0x000009F8 end:0x00000A08
 
-stg36D_24.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00020350 end:0x0002050C
 	.rodata     start:0x00000A08 end:0x00000A30
 

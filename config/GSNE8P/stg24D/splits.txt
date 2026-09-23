@@ -162,7 +162,7 @@ stg24D_38.c:
 	.text       start:0x0001C1EC end:0x0001C61C
 	.rodata     start:0x000009F8 end:0x00000A08
 
-stg24D_39.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x0001C69C end:0x0001C858
 	.rodata     start:0x00000A08 end:0x00000A30
 

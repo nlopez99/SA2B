@@ -146,7 +146,7 @@ stg27D_35.c:
 	.text       start:0x00016CF4 end:0x00017124
 	.rodata     start:0x00000830 end:0x00000840
 
-stg27D_36.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x000171A4 end:0x00017360
 	.rodata     start:0x00000840 end:0x00000868
 

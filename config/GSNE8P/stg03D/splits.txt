@@ -174,7 +174,7 @@ stg03D_42.c:
 	.text       start:0x00019AAC end:0x00019EDC
 	.rodata     start:0x00000950 end:0x00000960
 
-stg03D_43.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00019F5C end:0x0001A118
 	.rodata     start:0x00000960 end:0x00000988
 

@@ -202,7 +202,7 @@ stg18D_49.c:
 	.text       start:0x0001AC4C end:0x0001B07C
 	.rodata     start:0x00000960 end:0x00000970
 
-stg18D_50.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x0001B0FC end:0x0001B2B8
 	.rodata     start:0x00000970 end:0x00000998
 

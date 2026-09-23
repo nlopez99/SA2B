@@ -90,7 +90,7 @@ boss_hotshotD_21.c:
 	.text       start:0x00011464 end:0x00011894
 	.rodata     start:0x00000948 end:0x00000958
 
-boss_hotshotD_22.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00011914 end:0x00011AD0
 	.rodata     start:0x00000958 end:0x00000980
 

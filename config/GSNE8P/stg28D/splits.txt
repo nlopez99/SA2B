@@ -250,7 +250,7 @@ stg28D_61.c:
 	.text       start:0x0001F848 end:0x0001FC78
 	.rodata     start:0x00000B28 end:0x00000B38
 
-stg28D_62.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x0001FCF8 end:0x0001FEB4
 	.rodata     start:0x00000B38 end:0x00000B60
 

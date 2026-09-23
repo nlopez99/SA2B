@@ -162,7 +162,7 @@ stg11D_38.c:
 	.text       start:0x00019414 end:0x00019844
 	.rodata     start:0x000008D8 end:0x000008E8
 
-stg11D_39.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x000198C4 end:0x00019A80
 	.rodata     start:0x000008E8 end:0x00000910
 

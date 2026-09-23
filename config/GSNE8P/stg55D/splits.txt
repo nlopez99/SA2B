@@ -138,7 +138,7 @@ stg55D_33.c:
 	.text       start:0x00015FB0 end:0x000163E0
 	.rodata     start:0x000007F8 end:0x00000808
 
-stg55D_34.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00016460 end:0x0001661C
 	.rodata     start:0x00000808 end:0x00000830
 

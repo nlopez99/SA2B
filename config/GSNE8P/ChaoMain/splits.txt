@@ -422,8 +422,9 @@ ChaoMain_131.c:
 ChaoMain_132.c:
 	.text       start:0x00058BC8 end:0x00058D90
 
-ChaoMain_133.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00058E60 end:0x0005901C
+	.rodata     start:0x00009C38 end:0x00009C60
 
 ef_waterripple.c:
 	.text       start:0x0005901C end:0x00059318

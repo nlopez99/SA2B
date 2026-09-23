@@ -214,7 +214,7 @@ stg21D_51.c:
 	.text       start:0x00017D9C end:0x000181CC
 	.rodata     start:0x00000818 end:0x00000828
 
-stg21D_52.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x0001824C end:0x00018408
 	.rodata     start:0x00000828 end:0x00000850
 

@@ -150,7 +150,7 @@ stg43D_35.c:
 	.text       start:0x00015B28 end:0x00015F58
 	.rodata     start:0x00000768 end:0x00000778
 
-stg43D_36.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00015FD8 end:0x00016194
 	.rodata     start:0x00000778 end:0x000007A0
 

@@ -162,7 +162,7 @@ stg16D_39.c:
 	.text       start:0x000160A4 end:0x000164D4
 	.rodata     start:0x000007F0 end:0x00000800
 
-stg16D_40.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00016554 end:0x00016710
 	.rodata     start:0x00000800 end:0x00000828
 

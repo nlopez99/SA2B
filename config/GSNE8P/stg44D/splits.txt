@@ -178,7 +178,7 @@ stg44D_43.c:
 	.text       start:0x00016C5C end:0x0001708C
 	.rodata     start:0x000007C0 end:0x000007D0
 
-stg44D_44.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x0001710C end:0x000172C8
 	.rodata     start:0x000007D0 end:0x000007F8
 

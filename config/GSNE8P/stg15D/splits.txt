@@ -157,7 +157,7 @@ stg15D_37.c:
 	.text       start:0x00014A4C end:0x00014E7C
 	.rodata     start:0x00000798 end:0x000007A8
 
-stg15D_38.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00014EFC end:0x000150B8
 	.rodata     start:0x000007A8 end:0x000007D0
 

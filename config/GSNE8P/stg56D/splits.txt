@@ -22,6 +22,10 @@ EFFECT/ef_snowpuff.c:
 	.text       start:0x0000D6D4 end:0x0000E0EC
 	.rodata     start:0x00000450 end:0x00000490
 
+EFFECT/ef_dirt.c:
+	.text       start:0x0000EB50 end:0x0000ED0C
+	.rodata     start:0x000004E0 end:0x00000508
+
 OBJECT/o_3spring.c:
 	.text       start:0x0000F260 end:0x0000F6FC
 	.rodata     start:0x00000538 end:0x00000558

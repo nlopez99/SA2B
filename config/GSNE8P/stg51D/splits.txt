@@ -154,7 +154,7 @@ stg51D_36.c:
 	.text       start:0x00014F70 end:0x000153A0
 	.rodata     start:0x000007A0 end:0x000007B0
 
-stg51D_37.c:
+EFFECT/ef_dirt.c:
 	.text       start:0x00015420 end:0x000155DC
 	.rodata     start:0x000007B0 end:0x000007D8
 
