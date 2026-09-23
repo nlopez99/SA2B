@@ -354,6 +354,17 @@ modules:
     header_type: none
     custom_type: s32
 
+  - symbol: itemboxballoon_plist!.data:0x22221c
+    binary: assets/itemboxballoon_plist.bin
+    header: assets/itemboxballoon_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: itemboxballoon_vlist!.data:0x2225f0
+    binary: assets/itemboxballoon_vlist.bin
+    header: assets/itemboxballoon_vlist.inc
+    header_type: none
+    custom_type: s32
+
 - object: orig/GSNE8P/files/stg14D.rel
   hash: 68b094fa0f3e58adb7276d34d4b9881ac1c64fae
   symbols: config/GSNE8P/stg14D/symbols.txt

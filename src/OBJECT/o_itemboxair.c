@@ -38,8 +38,7 @@ extern void gjSetFog(void);
 extern void _rename_ItemGetDisplaySet(Sint32 pno, Sint32 kind);
 extern Sint32 _rename_ItemIconDraw(Sint32 kind, NJS_POINT3 *pos, Angle ang,
                                    Float scl);
-extern void _rename_MakeBreakParticle(NJS_POINT3 *pos, NJS_POINT3 *spd,
-                                      Float scl);
+extern void *CreateSnowPuff(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl);
 extern void _rename_ItemBombSet(NJS_POINT3 *pos);
 
 extern NJS_TEXLIST   _rename_itemboxair_texlist;
@@ -233,7 +232,7 @@ static void ObjectItemBoxAirNormal(task *tp) {
   taskwk *twp = tp->twp;
   itemboxairwk *wk = (itemboxairwk *)tp->mwp;
   Sint32 pno;
-  NJS_POINT3 spd;
+  NJS_VECTOR spd;
   NJS_POINT3 pos; // unused
 
   if ((twp->flag & 4 && wk->pno != -1) ||
@@ -252,7 +251,7 @@ static void ObjectItemBoxAirNormal(task *tp) {
       spd.x = 0.0f;
       spd.y = 0.1f;
       spd.z = 0.0f;
-      _rename_MakeBreakParticle(&twp->pos, &spd, 6.0f);
+      CreateSnowPuff(&twp->pos, &spd, 6.0f);
       SE_Call(0x800D, NULL, 0, 0);
       fn_8002FB2C(pno, 1, 0x30, 0);
       if (tp->ocp != NULL) {

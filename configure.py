@@ -677,6 +677,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_itemboxair.c"),
             Object(Matching, "OBJECT/o_savepoint.c"),
             Object(Matching, "OBJECT/o_goalring.c"),
+            Object(Matching, "OBJECT/o_itemboxballoon.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,
