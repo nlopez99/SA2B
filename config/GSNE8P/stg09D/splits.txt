@@ -363,9 +363,11 @@ stg09D_90.c:
 	.text       start:0x00040BF4 end:0x00041018
 	.rodata     start:0x000013A8 end:0x000013C8
 
-stg09D_91.c:
+ENEMY/e_bomb.c:
 	.text       start:0x00041018 end:0x00042A94
 	.rodata     start:0x000013C8 end:0x00001460
+	.data       start:0x00094018 end:0x00094F10
+	.bss        start:0x00000D70 end:0x00000D78
 
 stg09D_92.c:
 	.text       start:0x00042A94 end:0x00043A34

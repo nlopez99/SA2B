@@ -347,9 +347,11 @@ stg27D_86.c:
 	.text       start:0x00043494 end:0x000438B8
 	.rodata     start:0x00001400 end:0x00001420
 
-stg27D_87.c:
+ENEMY/e_bomb.c:
 	.text       start:0x000438B8 end:0x00045334
 	.rodata     start:0x00001420 end:0x000014B8
+	.data       start:0x000B4B38 end:0x000B5A30
+	.bss        start:0x00001010 end:0x00001018
 
 stg27D_88.c:
 	.text       start:0x00045334 end:0x0004547C

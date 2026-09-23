@@ -359,9 +359,11 @@ stg51D_88.c:
 	.text       start:0x00041BB0 end:0x00041FD4
 	.rodata     start:0x000013B0 end:0x000013D0
 
-stg51D_89.c:
+ENEMY/e_bomb.c:
 	.text       start:0x00041FD4 end:0x00043A50
 	.rodata     start:0x000013D0 end:0x00001468
+	.data       start:0x0007C358 end:0x0007D250
+	.bss        start:0x00000DF8 end:0x00000E00
 
 stg51D_90.c:
 	.text       start:0x00043A50 end:0x000449F0

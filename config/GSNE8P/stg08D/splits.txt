@@ -351,9 +351,11 @@ stg08D_87.c:
 	.text       start:0x00041D2C end:0x00042150
 	.rodata     start:0x00001340 end:0x00001360
 
-stg08D_88.c:
+ENEMY/e_bomb.c:
 	.text       start:0x00042150 end:0x00043BCC
 	.rodata     start:0x00001360 end:0x000013F8
+	.data       start:0x0009B8D8 end:0x0009C7D0
+	.bss        start:0x00005468 end:0x00005470
 
 stg08D_89.c:
 	.text       start:0x00043BCC end:0x00044B6C

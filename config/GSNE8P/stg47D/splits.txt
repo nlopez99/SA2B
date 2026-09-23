@@ -379,9 +379,11 @@ stg47D_93.c:
 	.text       start:0x00043124 end:0x00043548
 	.rodata     start:0x00001400 end:0x00001420
 
-stg47D_94.c:
+ENEMY/e_bomb.c:
 	.text       start:0x00043548 end:0x00044FC4
 	.rodata     start:0x00001420 end:0x000014B8
+	.data       start:0x000D2360 end:0x000D3258
+	.bss        start:0x00000D78 end:0x00000D80
 
 stg47D_95.c:
 	.text       start:0x00044FC4 end:0x00045F64

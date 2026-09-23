@@ -421,9 +421,11 @@ stg28D_105.c:
 	.text       start:0x0004516C end:0x00045590
 	.rodata     start:0x00001560 end:0x00001580
 
-stg28D_106.c:
+ENEMY/e_bomb.c:
 	.text       start:0x00045590 end:0x0004700C
 	.rodata     start:0x00001580 end:0x00001618
+	.data       start:0x00110DB8 end:0x00111CB0
+	.bss        start:0x00000730 end:0x00000738
 
 ENEMY/e_bullet.c:
 	.text       start:0x000470BC end:0x00047E24

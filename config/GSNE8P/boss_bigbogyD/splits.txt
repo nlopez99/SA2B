@@ -253,9 +253,11 @@ boss_bigbogyD_63.c:
 	.text       start:0x0003E328 end:0x0003E74C
 	.rodata     start:0x00001848 end:0x00001868
 
-boss_bigbogyD_64.c:
+ENEMY/e_bomb.c:
 	.text       start:0x0003E74C end:0x000401C8
 	.rodata     start:0x00001868 end:0x00001900
+	.data       start:0x000828D8 end:0x000837D0
+	.bss        start:0x00000BA8 end:0x00000BB0
 
 boss_bigbogyD_65.c:
 	.text       start:0x000401C8 end:0x00041168

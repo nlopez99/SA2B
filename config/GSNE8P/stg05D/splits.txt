@@ -340,9 +340,11 @@ stg05D_85.c:
 	.text       start:0x000420C8 end:0x000424EC
 	.rodata     start:0x00001310 end:0x00001330
 
-stg05D_86.c:
+ENEMY/e_bomb.c:
 	.text       start:0x000424EC end:0x00043F68
 	.rodata     start:0x00001330 end:0x000013C8
+	.data       start:0x0008FCB8 end:0x00090BB0
+	.bss        start:0x00000D78 end:0x00000D80
 
 stg05D_87.c:
 	.text       start:0x00043F68 end:0x00044F08

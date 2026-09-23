@@ -372,9 +372,11 @@ stg49D_92.c:
 	.text       start:0x000469C4 end:0x00046DE8
 	.rodata     start:0x000014E0 end:0x00001500
 
-stg49D_93.c:
+ENEMY/e_bomb.c:
 	.text       start:0x00046DE8 end:0x00048864
 	.rodata     start:0x00001500 end:0x00001598
+	.data       start:0x00085038 end:0x00085F30
+	.bss        start:0x00000D88 end:0x00000D90
 
 stg49D_94.c:
 	.text       start:0x00048864 end:0x000489AC

@@ -350,9 +350,11 @@ stg53D_86.c:
 	.text       start:0x0003E7D4 end:0x0003EBF8
 	.rodata     start:0x00001238 end:0x00001258
 
-stg53D_87.c:
+ENEMY/e_bomb.c:
 	.text       start:0x0003EBF8 end:0x00040674
 	.rodata     start:0x00001258 end:0x000012F0
+	.data       start:0x0006B180 end:0x0006C078
+	.bss        start:0x00000DB0 end:0x00000DB8
 
 stg53D_88.c:
 	.text       start:0x00040674 end:0x000407BC

@@ -402,6 +402,37 @@ modules:
     header_type: none
     custom_type: s32
 
+  - symbol: e_bomb_big_plist!.data:0x256c80
+    binary: assets/e_bomb_big_plist.bin
+    header: assets/e_bomb_big_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: e_bomb_big_vlist!.data:0x256eb4
+    binary: assets/e_bomb_big_vlist.bin
+    header: assets/e_bomb_big_vlist.inc
+    header_type: none
+    custom_type: s32
+  - symbol: e_bomb_plist!.data:0x257208
+    binary: assets/e_bomb_plist.bin
+    header: assets/e_bomb_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: e_bomb_vlist!.data:0x257354
+    binary: assets/e_bomb_vlist.bin
+    header: assets/e_bomb_vlist.inc
+    header_type: none
+    custom_type: s32
+  - symbol: e_bomb_touch_plist!.data:0x257558
+    binary: assets/e_bomb_touch_plist.bin
+    header: assets/e_bomb_touch_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: e_bomb_touch_vlist!.data:0x2576a4
+    binary: assets/e_bomb_touch_vlist.bin
+    header: assets/e_bomb_touch_vlist.inc
+    header_type: none
+    custom_type: s32
+
 - object: orig/GSNE8P/files/stg14D.rel
   hash: 68b094fa0f3e58adb7276d34d4b9881ac1c64fae
   symbols: config/GSNE8P/stg14D/symbols.txt

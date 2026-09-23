@@ -269,9 +269,11 @@ boss_bigfootD_67.c:
 	.text       start:0x0003C04C end:0x0003C470
 	.rodata     start:0x000013D8 end:0x000013F8
 
-boss_bigfootD_68.c:
+ENEMY/e_bomb.c:
 	.text       start:0x0003C470 end:0x0003DEEC
 	.rodata     start:0x000013F8 end:0x00001490
+	.data       start:0x000862D8 end:0x000871D0
+	.bss        start:0x00000C78 end:0x00000C80
 
 boss_bigfootD_69.c:
 	.text       start:0x0003DEEC end:0x0003EE8C

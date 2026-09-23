@@ -387,9 +387,11 @@ stg48D_95.c:
 	.text       start:0x00042FE4 end:0x00043408
 	.rodata     start:0x00001410 end:0x00001430
 
-stg48D_96.c:
+ENEMY/e_bomb.c:
 	.text       start:0x00043408 end:0x00044E84
 	.rodata     start:0x00001430 end:0x000014C8
+	.data       start:0x00148400 end:0x001492F8
+	.bss        start:0x00000B58 end:0x00000B60
 
 ENEMY/e_bullet.c:
 	.text       start:0x00044E84 end:0x00045BEC

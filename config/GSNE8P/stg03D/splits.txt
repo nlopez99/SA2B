@@ -379,9 +379,11 @@ stg03D_94.c:
 	.text       start:0x00046F14 end:0x00047338
 	.rodata     start:0x00001580 end:0x000015A0
 
-stg03D_95.c:
+ENEMY/e_bomb.c:
 	.text       start:0x00047338 end:0x00048DB4
 	.rodata     start:0x000015A0 end:0x00001638
+	.data       start:0x001225A0 end:0x00123498
+	.bss        start:0x00000DB0 end:0x00000DB8
 
 stg03D_96.c:
 	.text       start:0x00048DB4 end:0x00049D54

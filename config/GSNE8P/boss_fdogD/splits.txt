@@ -253,9 +253,11 @@ boss_fdogD_63.c:
 	.text       start:0x00032138 end:0x0003255C
 	.rodata     start:0x00001040 end:0x00001060
 
-boss_fdogD_64.c:
+ENEMY/e_bomb.c:
 	.text       start:0x0003255C end:0x00033FD8
 	.rodata     start:0x00001060 end:0x000010F8
+	.data       start:0x000551D8 end:0x000560D0
+	.bss        start:0x00000EA0 end:0x00000EA8
 
 boss_fdogD_65.c:
 	.text       start:0x00033FD8 end:0x00034F78

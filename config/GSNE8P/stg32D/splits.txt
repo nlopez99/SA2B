@@ -415,9 +415,11 @@ stg32D_103.c:
 	.text       start:0x00046F4C end:0x00047370
 	.rodata     start:0x000014B8 end:0x000014D8
 
-stg32D_104.c:
+ENEMY/e_bomb.c:
 	.text       start:0x00047370 end:0x00048DEC
 	.rodata     start:0x000014D8 end:0x00001570
+	.data       start:0x000A7A18 end:0x000A8910
+	.bss        start:0x00000DC0 end:0x00000DC8
 
 stg32D_105.c:
 	.text       start:0x00048DEC end:0x00048F34

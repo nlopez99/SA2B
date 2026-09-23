@@ -337,9 +337,11 @@ boss_last1D_84.c:
 	.text       start:0x0003CFE4 end:0x0003D408
 	.rodata     start:0x00001740 end:0x00001760
 
-boss_last1D_85.c:
+ENEMY/e_bomb.c:
 	.text       start:0x0003D408 end:0x0003EE84
 	.rodata     start:0x00001760 end:0x000017F8
+	.data       start:0x000EDC58 end:0x000EEB50
+	.bss        start:0x00000FA0 end:0x00000FA8
 
 boss_last1D_86.c:
 	.text       start:0x0003EE84 end:0x0003FE24
