@@ -268,8 +268,8 @@ OBJECT/o_switch.c:
 	.text       start:0x0003A4F0 end:0x0003BB14
 	.rodata     start:0x000017A0 end:0x00001820
 
-Boss_GolemED_67.c:
-	.text       start:0x0003BBC8 end:0x0003BC74
+OBJECT/o_modmod.c:
+	.text       start:0x0003BB14 end:0x0003BC74
 	.rodata     start:0x00001820 end:0x00001828
 
 Boss_GolemED_68.c:

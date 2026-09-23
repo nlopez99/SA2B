@@ -348,8 +348,8 @@ OBJECT/o_wsmmls.c:
 	.text       start:0x00043BAC end:0x00043E64
 	.rodata     start:0x000013F8 end:0x00001400
 
-stg50D_87.c:
-	.text       start:0x00043F18 end:0x00043FC4
+OBJECT/o_modmod.c:
+	.text       start:0x00043E64 end:0x00043FC4
 	.rodata     start:0x00001400 end:0x00001408
 
 stg50D_88.c:

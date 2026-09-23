@@ -193,8 +193,8 @@ OBJECT/o_udreel.c:
 	.data       start:0x00020B68 end:0x00020C50
 	.bss        start:0x000006C8 end:0x000006D0
 
-stg42D_46.c:
-	.text       start:0x000203C4 end:0x00020470
+OBJECT/o_modmod.c:
+	.text       start:0x00020310 end:0x00020470
 	.rodata     start:0x00000A78 end:0x00000A80
 
 stg42D_47.c:

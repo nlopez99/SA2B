@@ -410,8 +410,8 @@ OBJECT/o_wsmmls.c:
 	.text       start:0x0004D968 end:0x0004DC20
 	.rodata     start:0x000016F0 end:0x000016F8
 
-stg59D_102.c:
-	.text       start:0x0004DCD4 end:0x0004DD80
+OBJECT/o_modmod.c:
+	.text       start:0x0004DC20 end:0x0004DD80
 	.rodata     start:0x000016F8 end:0x00001700
 
 stg59D_103.c:

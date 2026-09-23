@@ -242,8 +242,8 @@ OBJECT/o_udreel.c:
 	.data       start:0x00054B88 end:0x00054C70
 	.bss        start:0x00000E98 end:0x00000EA0
 
-boss_fdogD_61.c:
-	.text       start:0x00031EFC end:0x00031FA8
+OBJECT/o_modmod.c:
+	.text       start:0x00031E48 end:0x00031FA8
 	.rodata     start:0x00001030 end:0x00001038
 
 boss_fdogD_62.c:

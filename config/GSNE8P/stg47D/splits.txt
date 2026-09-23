@@ -6,8 +6,8 @@ Sections:
 	.data       type:data align:8
 	.bss        type:bss align:8
 
-stg47D_0.c:
-	.text       start:0x000000B4 end:0x00000160
+OBJECT/o_modmod.c:
+	.text       start:0x00000000 end:0x00000160
 	.rodata     start:0x00000000 end:0x00000008
 
 stg47D_1.c:

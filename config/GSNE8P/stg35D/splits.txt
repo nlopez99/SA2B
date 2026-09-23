@@ -6,7 +6,7 @@ Sections:
 	.data       type:data align:32
 	.bss        type:bss align:8
 
-stg35D_0.c:
+OBJECT/o_modmod.c:
 	.text       start:0x00000000 end:0x00000160
 	.rodata     start:0x00000000 end:0x00000008
 

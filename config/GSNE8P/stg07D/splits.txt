@@ -361,8 +361,8 @@ OBJECT/o_wsmmls.c:
 	.text       start:0x00046298 end:0x00046550
 	.rodata     start:0x000014C8 end:0x000014D0
 
-stg07D_90.c:
-	.text       start:0x00046604 end:0x000466B0
+OBJECT/o_modmod.c:
+	.text       start:0x00046550 end:0x000466B0
 	.rodata     start:0x000014D0 end:0x000014D8
 
 stg07D_91.c:

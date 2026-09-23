@@ -412,8 +412,8 @@ OBJECT/o_wsmmls.c:
 	.text       start:0x00044BC4 end:0x00044E7C
 	.rodata     start:0x00001548 end:0x00001550
 
-stg28D_103.c:
-	.text       start:0x00044F30 end:0x00044FDC
+OBJECT/o_modmod.c:
+	.text       start:0x00044E7C end:0x00044FDC
 	.rodata     start:0x00001550 end:0x00001558
 
 stg28D_104.c:
