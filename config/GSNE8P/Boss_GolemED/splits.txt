@@ -93,9 +93,10 @@ EFFECT/ef_lnspark.c:
 	.data       start:0x000CB878 end:0x000CB898
 	.bss        start:0x00000888 end:0x00000890
 
-Boss_GolemED_22.c:
+EFFECT/ef_dust.c:
 	.text       start:0x00016430 end:0x00017354
 	.rodata     start:0x00000D88 end:0x00000DF0
+	.data       start:0x000CB898 end:0x000CB9A8
 
 OBJECT/o_colli.c:
 	.text       start:0x00017354 end:0x00017648

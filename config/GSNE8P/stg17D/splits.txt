@@ -113,9 +113,10 @@ EFFECT/ef_lnspark.c:
 	.data       start:0x00084460 end:0x00084480
 	.bss        start:0x00000698 end:0x000006A0
 
-stg17D_27.c:
+EFFECT/ef_dust.c:
 	.text       start:0x0001A394 end:0x0001B2B8
 	.rodata     start:0x00000770 end:0x000007D8
+	.data       start:0x00084480 end:0x00084590
 
 OBJECT/o_colli.c:
 	.text       start:0x0001B2B8 end:0x0001B65C
