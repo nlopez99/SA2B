@@ -210,9 +210,10 @@ stg41D_52.c:
 	.text       start:0x0001C54C end:0x0001D390
 	.rodata     start:0x00000A28 end:0x00000A80
 
-stg41D_53.c:
-	.text       start:0x0001D3C4 end:0x0001DB50
+OBJECT/o_degring_linear.c:
+	.text       start:0x0001D390 end:0x0001DCE0
 	.rodata     start:0x00000A80 end:0x00000A98
+	.data       start:0x0006CF38 end:0x0006CF40
 
 stg41D_54.c:
 	.text       start:0x0001E3D4 end:0x0001E6E4

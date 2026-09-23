@@ -138,9 +138,10 @@ stg33D_33.c:
 	.text       start:0x00013464 end:0x000142A8
 	.rodata     start:0x00000678 end:0x000006D0
 
-stg33D_34.c:
-	.text       start:0x000142DC end:0x00014A68
+OBJECT/o_degring_linear.c:
+	.text       start:0x000142A8 end:0x00014BF8
 	.rodata     start:0x000006D0 end:0x000006E8
+	.data       start:0x0001C118 end:0x0001C120
 
 stg33D_35.c:
 	.text       start:0x000152EC end:0x000155FC

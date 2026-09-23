@@ -94,9 +94,10 @@ stg00D_23.c:
 	.text       start:0x0000A9D8 end:0x0000B81C
 	.rodata     start:0x00000438 end:0x00000490
 
-stg00D_24.c:
-	.text       start:0x0000B850 end:0x0000BFDC
+OBJECT/o_degring_linear.c:
+	.text       start:0x0000B81C end:0x0000C16C
 	.rodata     start:0x00000490 end:0x000004A8
+	.data       start:0x0001AE38 end:0x0001AE40
 
 stg00D_25.c:
 	.text       start:0x0000C860 end:0x0000CB70

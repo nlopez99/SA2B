@@ -210,9 +210,10 @@ stg16D_52.c:
 	.text       start:0x0001C328 end:0x0001D16C
 	.rodata     start:0x00000A20 end:0x00000A78
 
-stg16D_53.c:
-	.text       start:0x0001D1A0 end:0x0001D92C
+OBJECT/o_degring_linear.c:
+	.text       start:0x0001D16C end:0x0001DABC
 	.rodata     start:0x00000A78 end:0x00000A90
+	.data       start:0x00095858 end:0x00095860
 
 stg16D_54.c:
 	.text       start:0x0001E1B0 end:0x0001E4C0

@@ -218,9 +218,10 @@ stg49D_54.c:
 	.text       start:0x0001EA00 end:0x0001F844
 	.rodata     start:0x00000AA0 end:0x00000AF8
 
-stg49D_55.c:
-	.text       start:0x0001F878 end:0x00020004
+OBJECT/o_degring_linear.c:
+	.text       start:0x0001F844 end:0x00020194
 	.rodata     start:0x00000AF8 end:0x00000B10
+	.data       start:0x00043A18 end:0x00043A20
 
 stg49D_56.c:
 	.text       start:0x00020194 end:0x00020BB8

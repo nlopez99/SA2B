@@ -190,9 +190,10 @@ stg17D_47.c:
 	.text       start:0x00023B2C end:0x00024970
 	.rodata     start:0x00000B10 end:0x00000B68
 
-stg17D_48.c:
-	.text       start:0x000249A4 end:0x00025130
+OBJECT/o_degring_linear.c:
+	.text       start:0x00024970 end:0x000252C0
 	.rodata     start:0x00000B68 end:0x00000B80
+	.data       start:0x0008BF98 end:0x0008BFA0
 
 stg17D_49.c:
 	.text       start:0x000259B4 end:0x00025CC4

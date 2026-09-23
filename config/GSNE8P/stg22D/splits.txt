@@ -222,9 +222,10 @@ stg22D_55.c:
 	.text       start:0x00020820 end:0x000210A4
 	.rodata     start:0x00000B90 end:0x00000BD8
 
-stg22D_56.c:
-	.text       start:0x000211C4 end:0x00021950
+OBJECT/o_degring_linear.c:
+	.text       start:0x00021190 end:0x00021AE0
 	.rodata     start:0x00000BD8 end:0x00000BF0
+	.data       start:0x000CC060 end:0x000CC068
 
 stg22D_57.c:
 	.text       start:0x000221D4 end:0x000224E4

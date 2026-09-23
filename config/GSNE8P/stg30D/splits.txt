@@ -198,9 +198,10 @@ stg30D_49.c:
 	.text       start:0x0001BF80 end:0x0001CDC4
 	.rodata     start:0x00000920 end:0x00000978
 
-stg30D_50.c:
-	.text       start:0x0001CDF8 end:0x0001D584
+OBJECT/o_degring_linear.c:
+	.text       start:0x0001CDC4 end:0x0001D714
 	.rodata     start:0x00000978 end:0x00000990
+	.data       start:0x000C5EF8 end:0x000C5F00
 
 stg30D_51.c:
 	.text       start:0x0001DE08 end:0x0001E118

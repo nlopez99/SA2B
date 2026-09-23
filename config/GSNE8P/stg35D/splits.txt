@@ -162,9 +162,10 @@ stg35D_40.c:
 	.text       start:0x00027340 end:0x00028184
 	.rodata     start:0x00000C90 end:0x00000CE8
 
-stg35D_41.c:
-	.text       start:0x000281B8 end:0x00028944
+OBJECT/o_degring_linear.c:
+	.text       start:0x00028184 end:0x00028AD4
 	.rodata     start:0x00000CE8 end:0x00000D00
+	.data       start:0x00087618 end:0x00087620
 
 stg35D_42.c:
 	.text       start:0x000291C8 end:0x000294D8

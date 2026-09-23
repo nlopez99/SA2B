@@ -206,9 +206,10 @@ stg24D_51.c:
 	.text       start:0x00022470 end:0x000232B4
 	.rodata     start:0x00000C28 end:0x00000C80
 
-stg24D_52.c:
-	.text       start:0x000232E8 end:0x00023A74
+OBJECT/o_degring_linear.c:
+	.text       start:0x000232B4 end:0x00023C04
 	.rodata     start:0x00000C80 end:0x00000C98
+	.data       start:0x000835B8 end:0x000835C0
 
 stg24D_53.c:
 	.text       start:0x000242F8 end:0x00024608

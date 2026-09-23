@@ -186,9 +186,10 @@ stg40D_46.c:
 	.text       start:0x00019300 end:0x0001A144
 	.rodata     start:0x00000830 end:0x00000888
 
-stg40D_47.c:
-	.text       start:0x0001A178 end:0x0001A904
+OBJECT/o_degring_linear.c:
+	.text       start:0x0001A144 end:0x0001AA94
 	.rodata     start:0x00000888 end:0x000008A0
+	.data       start:0x00081E78 end:0x00081E80
 
 stg40D_48.c:
 	.text       start:0x0001B188 end:0x0001B498

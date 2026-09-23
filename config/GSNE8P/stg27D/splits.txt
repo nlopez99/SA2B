@@ -194,9 +194,10 @@ stg27D_48.c:
 	.text       start:0x0001CF78 end:0x0001DDBC
 	.rodata     start:0x00000A60 end:0x00000AB8
 
-stg27D_49.c:
-	.text       start:0x0001DDF0 end:0x0001E57C
+OBJECT/o_degring_linear.c:
+	.text       start:0x0001DDBC end:0x0001E70C
 	.rodata     start:0x00000AB8 end:0x00000AD0
+	.data       start:0x00074558 end:0x00074560
 
 stg27D_50.c:
 	.text       start:0x0001EE00 end:0x0001F110

@@ -202,9 +202,10 @@ stg04D_50.c:
 	.text       start:0x0001B564 end:0x0001C3A8
 	.rodata     start:0x00000978 end:0x000009D0
 
-stg04D_51.c:
-	.text       start:0x0001C3DC end:0x0001CB68
+OBJECT/o_degring_linear.c:
+	.text       start:0x0001C3A8 end:0x0001CCF8
 	.rodata     start:0x000009D0 end:0x000009E8
+	.data       start:0x0007E1F8 end:0x0007E200
 
 stg04D_52.c:
 	.text       start:0x0001D3EC end:0x0001D6FC

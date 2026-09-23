@@ -186,9 +186,10 @@ stg05D_46.c:
 	.text       start:0x00019958 end:0x0001A79C
 	.rodata     start:0x00000888 end:0x000008E0
 
-stg05D_47.c:
-	.text       start:0x0001A7D0 end:0x0001AF5C
+OBJECT/o_degring_linear.c:
+	.text       start:0x0001A79C end:0x0001B0EC
 	.rodata     start:0x000008E0 end:0x000008F8
+	.data       start:0x0004EEF8 end:0x0004EF00
 
 stg05D_48.c:
 	.text       start:0x0001B0EC end:0x0001BB10

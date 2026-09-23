@@ -226,9 +226,10 @@ stg03D_56.c:
 	.text       start:0x0001FE90 end:0x00020CD4
 	.rodata     start:0x00000BA0 end:0x00000BF8
 
-stg03D_57.c:
-	.text       start:0x00020D08 end:0x00021494
+OBJECT/o_degring_linear.c:
+	.text       start:0x00020CD4 end:0x00021624
 	.rodata     start:0x00000BF8 end:0x00000C10
+	.data       start:0x000E2578 end:0x000E2580
 
 stg03D_58.c:
 	.text       start:0x00021D18 end:0x00022028

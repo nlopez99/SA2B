@@ -254,9 +254,10 @@ stg18D_63.c:
 	.text       start:0x000211CC end:0x00022010
 	.rodata     start:0x00000BB0 end:0x00000C08
 
-stg18D_64.c:
-	.text       start:0x00022044 end:0x000227D0
+OBJECT/o_degring_linear.c:
+	.text       start:0x00022010 end:0x00022960
 	.rodata     start:0x00000C08 end:0x00000C20
+	.data       start:0x000DBEB8 end:0x000DBEC0
 
 stg18D_65.c:
 	.text       start:0x00023054 end:0x00023364
