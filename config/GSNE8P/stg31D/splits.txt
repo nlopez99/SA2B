@@ -199,9 +199,11 @@ stg31D_50.c:
 	.text       start:0x0001D5C4 end:0x0001DFE4
 	.rodata     start:0x00000958 end:0x00000988
 
-stg31D_51.c:
+OBJECT/o_ironball2.c:
 	.text       start:0x0001DFE4 end:0x0001EB50
 	.rodata     start:0x00000988 end:0x000009B0
+	.data       start:0x00095ED0 end:0x00095EF8
+	.bss        start:0x00000B00 end:0x00000B08
 
 OBJECT/o_itembox.c:
 	.text       start:0x0001EB50 end:0x0001FCF8

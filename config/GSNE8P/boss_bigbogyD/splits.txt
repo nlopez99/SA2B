@@ -159,9 +159,11 @@ OBJECT/o_goalring.c:
 	.text       start:0x0002558C end:0x000268A8
 	.rodata     start:0x00001198 end:0x000011F0
 
-boss_bigbogyD_41.c:
+OBJECT/o_ironball2.c:
 	.text       start:0x000268A8 end:0x00027414
 	.rodata     start:0x000011F0 end:0x00001218
+	.data       start:0x000526B0 end:0x000526D8
+	.bss        start:0x00000B50 end:0x00000B58
 
 OBJECT/o_itembox.c:
 	.text       start:0x00027414 end:0x000285BC

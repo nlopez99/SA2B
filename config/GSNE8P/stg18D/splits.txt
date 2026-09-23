@@ -283,9 +283,11 @@ stg18D_71.c:
 	.text       start:0x00028F14 end:0x00029934
 	.rodata     start:0x00000D50 end:0x00000D80
 
-stg18D_72.c:
+OBJECT/o_ironball2.c:
 	.text       start:0x00029934 end:0x0002A4A0
 	.rodata     start:0x00000D80 end:0x00000DA8
+	.data       start:0x000E5FF8 end:0x000E6020
+	.bss        start:0x00000D68 end:0x00000D70
 
 stg18D_73.c:
 	.text       start:0x0002A718 end:0x0002BA10

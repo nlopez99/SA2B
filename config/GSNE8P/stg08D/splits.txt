@@ -219,9 +219,11 @@ stg08D_55.c:
 	.text       start:0x00021428 end:0x00021E48
 	.rodata     start:0x00000A78 end:0x00000AA8
 
-stg08D_56.c:
+OBJECT/o_ironball2.c:
 	.text       start:0x00021E48 end:0x000229B4
 	.rodata     start:0x00000AA8 end:0x00000AD0
+	.data       start:0x00064C90 end:0x00064CB8
+	.bss        start:0x00005400 end:0x00005408
 
 OBJECT/o_itembox.c:
 	.text       start:0x000229B4 end:0x00023B5C

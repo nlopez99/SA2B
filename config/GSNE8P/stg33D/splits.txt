@@ -152,9 +152,11 @@ stg33D_38.c:
 	.text       start:0x000169F4 end:0x00017414
 	.rodata     start:0x00000758 end:0x00000788
 
-stg33D_39.c:
+OBJECT/o_ironball2.c:
 	.text       start:0x00017414 end:0x00017F80
 	.rodata     start:0x00000788 end:0x000007B0
+	.data       start:0x0001FB50 end:0x0001FB78
+	.bss        start:0x00000CF0 end:0x00000CF8
 
 stg33D_40.c:
 	.text       start:0x000180BC end:0x00018DE0

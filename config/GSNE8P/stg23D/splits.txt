@@ -271,9 +271,11 @@ stg23D_67.c:
 	.text       start:0x00024DD8 end:0x000257F8
 	.rodata     start:0x00000C70 end:0x00000CA0
 
-stg23D_68.c:
+OBJECT/o_ironball2.c:
 	.text       start:0x000257F8 end:0x00026364
 	.rodata     start:0x00000CA0 end:0x00000CC8
+	.data       start:0x00105BF0 end:0x00105C18
+	.bss        start:0x00000D10 end:0x00000D18
 
 OBJECT/o_itembox.c:
 	.text       start:0x00026364 end:0x0002750C

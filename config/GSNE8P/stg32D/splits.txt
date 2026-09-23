@@ -283,9 +283,11 @@ stg32D_71.c:
 	.text       start:0x000262AC end:0x00026CCC
 	.rodata     start:0x00000C10 end:0x00000C40
 
-stg32D_72.c:
+OBJECT/o_ironball2.c:
 	.text       start:0x00026CCC end:0x00027838
 	.rodata     start:0x00000C40 end:0x00000C68
+	.data       start:0x00070DD8 end:0x00070E00
+	.bss        start:0x00000D58 end:0x00000D60
 
 OBJECT/o_itembox.c:
 	.text       start:0x00027838 end:0x000289E0

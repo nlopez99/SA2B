@@ -692,6 +692,7 @@ config.libs = [
             Object(Matching, "EFFECT/ef_explosion.c"),
             Object(Matching, "OBJECT/itemboxmanager.c"),
             Object(Matching, "EFFECT/ef_kiran.c"),
+            Object(Matching, "OBJECT/o_ironball2.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

@@ -191,9 +191,11 @@ OBJECT/o_goalring.c:
 	.text       start:0x00023B4C end:0x00024E68
 	.rodata     start:0x000011A8 end:0x00001200
 
-Boss_GolemED_48.c:
+OBJECT/o_ironball2.c:
 	.text       start:0x00024E68 end:0x000259D4
 	.rodata     start:0x00001200 end:0x00001228
+	.data       start:0x000DB650 end:0x000DB678
+	.bss        start:0x00000F20 end:0x00000F28
 
 OBJECT/o_itembox.c:
 	.text       start:0x000259D4 end:0x00026B7C

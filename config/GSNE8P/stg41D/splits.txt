@@ -239,9 +239,11 @@ stg41D_60.c:
 	.text       start:0x00024294 end:0x00024CB4
 	.rodata     start:0x00000BC8 end:0x00000BF8
 
-stg41D_61.c:
+OBJECT/o_ironball2.c:
 	.text       start:0x00024CB4 end:0x00025820
 	.rodata     start:0x00000BF8 end:0x00000C20
+	.data       start:0x00077078 end:0x000770A0
+	.bss        start:0x00000D48 end:0x00000D50
 
 stg41D_62.c:
 	.text       start:0x00025A98 end:0x00026D90
