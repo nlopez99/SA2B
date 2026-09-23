@@ -381,13 +381,11 @@ stg52D_93.c:
 	.text       start:0x0004F4FC end:0x0005049C
 	.rodata     start:0x00001598 end:0x000015F0
 
-stg52D_94.c:
-	.text       start:0x0005049C end:0x000505E4
-	.rodata     start:0x000015F0 end:0x000015F8
-
-stg52D_95.c:
-	.text       start:0x000505E8 end:0x00050888
-	.rodata     start:0x000015F8 end:0x00001630
+ENEMY/e_jet.c:
+	.text       start:0x0005049C end:0x00050A0C
+	.rodata     start:0x000015F0 end:0x00001630
+	.data       start:0x001C5E30 end:0x001C5E68
+	.bss        start:0x00000E00 end:0x00000E08
 
 ENEMY/e_bullet.c:
 	.text       start:0x00050A0C end:0x00051774

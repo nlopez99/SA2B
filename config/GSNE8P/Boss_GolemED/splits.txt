@@ -290,13 +290,11 @@ Boss_GolemED_71.c:
 	.text       start:0x0003DCA4 end:0x0003EC44
 	.rodata     start:0x000018E8 end:0x00001940
 
-Boss_GolemED_72.c:
-	.text       start:0x0003EC44 end:0x0003ED8C
-	.rodata     start:0x00001940 end:0x00001948
-
-Boss_GolemED_73.c:
-	.text       start:0x0003ED90 end:0x0003F030
-	.rodata     start:0x00001948 end:0x00001980
+ENEMY/e_jet.c:
+	.text       start:0x0003EC44 end:0x0003F1B4
+	.rodata     start:0x00001940 end:0x00001980
+	.data       start:0x0010B8E0 end:0x0010B918
+	.bss        start:0x00000F80 end:0x00000F88
 
 ENEMY/e_bullet.c:
 	.text       start:0x0003F1B4 end:0x0003FF1C

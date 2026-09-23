@@ -348,13 +348,11 @@ boss_last1D_86.c:
 	.text       start:0x0003EE84 end:0x0003FE24
 	.rodata     start:0x000017F8 end:0x00001850
 
-boss_last1D_87.c:
-	.text       start:0x0003FE24 end:0x0003FF6C
-	.rodata     start:0x00001850 end:0x00001858
-
-boss_last1D_88.c:
-	.text       start:0x0003FF70 end:0x00040210
-	.rodata     start:0x00001858 end:0x00001890
+ENEMY/e_jet.c:
+	.text       start:0x0003FE24 end:0x00040394
+	.rodata     start:0x00001850 end:0x00001890
+	.data       start:0x000EF930 end:0x000EF968
+	.bss        start:0x00000FB0 end:0x00000FB8
 
 ENEMY/e_bullet.c:
 	.text       start:0x00040394 end:0x000410FC

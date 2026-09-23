@@ -320,13 +320,11 @@ stg35D_77.c:
 	.text       start:0x0004CA94 end:0x0004DA34
 	.rodata     start:0x000016A8 end:0x00001700
 
-stg35D_78.c:
-	.text       start:0x0004DA34 end:0x0004DB7C
-	.rodata     start:0x00001700 end:0x00001708
-
-stg35D_79.c:
-	.text       start:0x0004DB80 end:0x0004DE20
-	.rodata     start:0x00001708 end:0x00001740
+ENEMY/e_jet.c:
+	.text       start:0x0004DA34 end:0x0004DFA4
+	.rodata     start:0x00001700 end:0x00001740
+	.data       start:0x000C8618 end:0x000C8650
+	.bss        start:0x00000B98 end:0x00000BA0
 
 ENEMY/e_bullet.c:
 	.text       start:0x0004DFA4 end:0x0004ED0C

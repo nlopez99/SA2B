@@ -373,13 +373,11 @@ stg15D_91.c:
 	.text       start:0x00043390 end:0x00044330
 	.rodata     start:0x00001468 end:0x000014C0
 
-stg15D_92.c:
-	.text       start:0x00044330 end:0x00044478
-	.rodata     start:0x000014C0 end:0x000014C8
-
-stg15D_93.c:
-	.text       start:0x0004447C end:0x0004471C
-	.rodata     start:0x000014C8 end:0x00001500
+ENEMY/e_jet.c:
+	.text       start:0x00044330 end:0x000448A0
+	.rodata     start:0x000014C0 end:0x00001500
+	.data       start:0x000808D0 end:0x00080908
+	.bss        start:0x00000E00 end:0x00000E08
 
 ENEMY/e_bullet.c:
 	.text       start:0x000448A0 end:0x00045608

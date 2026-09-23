@@ -707,6 +707,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_emerald.c"),
             Object(Matching, "OBJECT/o_switch.c"),
             Object(Matching, "ENEMY/e_ai.c"),
+            Object(Matching, "ENEMY/e_jet.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

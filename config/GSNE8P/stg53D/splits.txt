@@ -354,13 +354,11 @@ ENEMY/e_bomb.c:
 	.data       start:0x0006B180 end:0x0006C078
 	.bss        start:0x00000DB0 end:0x00000DB8
 
-stg53D_88.c:
-	.text       start:0x00040674 end:0x000407BC
-	.rodata     start:0x000012F0 end:0x000012F8
-
-stg53D_89.c:
-	.text       start:0x000407C0 end:0x00040A60
-	.rodata     start:0x000012F8 end:0x00001330
+ENEMY/e_jet.c:
+	.text       start:0x00040674 end:0x00040BE4
+	.rodata     start:0x000012F0 end:0x00001330
+	.data       start:0x0006C078 end:0x0006C0B0
+	.bss        start:0x00000DB8 end:0x00000DC0
 
 ENEMY/e_bullet.c:
 	.text       start:0x00040BE4 end:0x0004194C

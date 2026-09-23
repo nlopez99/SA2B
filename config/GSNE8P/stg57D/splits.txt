@@ -386,13 +386,11 @@ stg57D_95.c:
 	.text       start:0x00048388 end:0x00049328
 	.rodata     start:0x00001528 end:0x00001580
 
-stg57D_96.c:
-	.text       start:0x00049328 end:0x00049470
-	.rodata     start:0x00001580 end:0x00001588
-
-stg57D_97.c:
-	.text       start:0x00049474 end:0x00049714
-	.rodata     start:0x00001588 end:0x000015C0
+ENEMY/e_jet.c:
+	.text       start:0x00049328 end:0x00049898
+	.rodata     start:0x00001580 end:0x000015C0
+	.data       start:0x00188650 end:0x00188688
+	.bss        start:0x00001078 end:0x00001080
 
 ENEMY/e_bullet.c:
 	.text       start:0x00049898 end:0x0004A600

@@ -310,13 +310,11 @@ stg37D_76.c:
 	.text       start:0x00042770 end:0x00043710
 	.rodata     start:0x00001468 end:0x000014C0
 
-stg37D_77.c:
-	.text       start:0x00043710 end:0x00043858
-	.rodata     start:0x000014C0 end:0x000014C8
-
-stg37D_78.c:
-	.text       start:0x0004385C end:0x00043AFC
-	.rodata     start:0x000014C8 end:0x00001500
+ENEMY/e_jet.c:
+	.text       start:0x00043710 end:0x00043C80
+	.rodata     start:0x000014C0 end:0x00001500
+	.data       start:0x000E2420 end:0x000E2458
+	.bss        start:0x00000BC8 end:0x00000BD0
 
 ENEMY/e_bullet.c:
 	.text       start:0x00043C80 end:0x000449E8

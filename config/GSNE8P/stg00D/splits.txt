@@ -224,13 +224,11 @@ stg00D_54.c:
 	.text       start:0x000276E0 end:0x00028680
 	.rodata     start:0x00000BF8 end:0x00000C50
 
-stg00D_55.c:
-	.text       start:0x00028680 end:0x000287C8
-	.rodata     start:0x00000C50 end:0x00000C58
-
-stg00D_56.c:
-	.text       start:0x000287CC end:0x00028A6C
-	.rodata     start:0x00000C58 end:0x00000C90
+ENEMY/e_jet.c:
+	.text       start:0x00028680 end:0x00028BF0
+	.rodata     start:0x00000C50 end:0x00000C90
+	.data       start:0x00051130 end:0x00051168
+	.bss        start:0x00000B10 end:0x00000B18
 
 ENEMY/e_bullet.c:
 	.text       start:0x00028BF0 end:0x00029958

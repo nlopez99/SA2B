@@ -367,13 +367,11 @@ stg58D_90.c:
 	.text       start:0x00049384 end:0x0004A324
 	.rodata     start:0x00001620 end:0x00001678
 
-stg58D_91.c:
-	.text       start:0x0004A324 end:0x0004A46C
-	.rodata     start:0x00001678 end:0x00001680
-
-stg58D_92.c:
-	.text       start:0x0004A470 end:0x0004A710
-	.rodata     start:0x00001680 end:0x000016B8
+ENEMY/e_jet.c:
+	.text       start:0x0004A324 end:0x0004A894
+	.rodata     start:0x00001678 end:0x000016B8
+	.data       start:0x0006D150 end:0x0006D188
+	.bss        start:0x00000E38 end:0x00000E40
 
 ENEMY/e_bullet.c:
 	.text       start:0x0004A894 end:0x0004B5FC

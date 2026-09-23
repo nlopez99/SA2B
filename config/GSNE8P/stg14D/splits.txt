@@ -366,13 +366,11 @@ stg14D_90.c:
 	.text       start:0x00043974 end:0x00044914
 	.rodata     start:0x000013B8 end:0x00001410
 
-stg14D_91.c:
-	.text       start:0x00044914 end:0x00044A5C
-	.rodata     start:0x00001410 end:0x00001418
-
-stg14D_92.c:
-	.text       start:0x00044A60 end:0x00044D00
-	.rodata     start:0x00001418 end:0x00001450
+ENEMY/e_jet.c:
+	.text       start:0x00044914 end:0x00044E84
+	.rodata     start:0x00001410 end:0x00001450
+	.data       start:0x0010C630 end:0x0010C668
+	.bss        start:0x00000DD0 end:0x00000DD8
 
 ENEMY/e_bullet.c:
 	.text       start:0x00044E84 end:0x00045BEC

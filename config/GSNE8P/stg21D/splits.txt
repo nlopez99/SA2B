@@ -418,13 +418,11 @@ stg21D_102.c:
 	.text       start:0x00046064 end:0x00047004
 	.rodata     start:0x000014D0 end:0x00001528
 
-stg21D_103.c:
-	.text       start:0x00047004 end:0x0004714C
-	.rodata     start:0x00001528 end:0x00001530
-
-stg21D_104.c:
-	.text       start:0x00047150 end:0x000473F0
-	.rodata     start:0x00001530 end:0x00001568
+ENEMY/e_jet.c:
+	.text       start:0x00047004 end:0x00047574
+	.rodata     start:0x00001528 end:0x00001568
+	.data       start:0x000BA1B8 end:0x000BA1F0
+	.bss        start:0x00000D88 end:0x00000D90
 
 ENEMY/e_bullet.c:
 	.text       start:0x00047574 end:0x000482DC

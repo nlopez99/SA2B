@@ -260,13 +260,11 @@ boss_hotshotD_64.c:
 	.text       start:0x00036468 end:0x00037408
 	.rodata     start:0x00001360 end:0x000013B8
 
-boss_hotshotD_65.c:
-	.text       start:0x00037408 end:0x00037550
-	.rodata     start:0x000013B8 end:0x000013C0
-
-boss_hotshotD_66.c:
-	.text       start:0x00037554 end:0x000377F4
-	.rodata     start:0x000013C0 end:0x000013F8
+ENEMY/e_jet.c:
+	.text       start:0x00037408 end:0x00037978
+	.rodata     start:0x000013B8 end:0x000013F8
+	.data       start:0x00060110 end:0x00060148
+	.bss        start:0x00000C78 end:0x00000C80
 
 ENEMY/e_bullet.c:
 	.text       start:0x00037978 end:0x000386E0

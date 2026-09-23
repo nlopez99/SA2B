@@ -367,13 +367,11 @@ stg11D_90.c:
 	.text       start:0x00048A30 end:0x000499D0
 	.rodata     start:0x000015E8 end:0x00001640
 
-stg11D_91.c:
-	.text       start:0x000499D0 end:0x00049B18
-	.rodata     start:0x00001640 end:0x00001648
-
-stg11D_92.c:
-	.text       start:0x00049B1C end:0x00049DBC
-	.rodata     start:0x00001648 end:0x00001680
+ENEMY/e_jet.c:
+	.text       start:0x000499D0 end:0x00049F40
+	.rodata     start:0x00001640 end:0x00001680
+	.data       start:0x000A8750 end:0x000A8788
+	.bss        start:0x00001038 end:0x00001040
 
 ENEMY/e_bullet.c:
 	.text       start:0x00049F40 end:0x0004ACA8

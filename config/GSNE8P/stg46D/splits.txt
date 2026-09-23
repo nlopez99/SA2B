@@ -400,13 +400,11 @@ stg46D_98.c:
 	.text       start:0x000424DC end:0x0004347C
 	.rodata     start:0x00001480 end:0x000014D8
 
-stg46D_99.c:
-	.text       start:0x0004347C end:0x000435C4
-	.rodata     start:0x000014D8 end:0x000014E0
-
-stg46D_100.c:
-	.text       start:0x000435C8 end:0x00043868
-	.rodata     start:0x000014E0 end:0x00001518
+ENEMY/e_jet.c:
+	.text       start:0x0004347C end:0x000439EC
+	.rodata     start:0x000014D8 end:0x00001518
+	.data       start:0x000A3198 end:0x000A31D0
+	.bss        start:0x00000DA8 end:0x00000DB0
 
 ENEMY/e_bullet.c:
 	.text       start:0x000439EC end:0x00044754

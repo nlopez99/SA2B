@@ -119,8 +119,8 @@ void _rename_PutDustCircle(NJS_POINT3 *pos, Float rad, Float spd, Sint32 num);
 void _rename_EnemyCapturingBulletLoadTexture(void);
 void _rename_CreateEnemyCapturingBullet(task *tp, NJS_VECTOR *spd,
                                         NJS_POINT3 *pos);
-void _rename_EnemyJetLoadTexture(void);
-void _rename_CreateEnemyJet(task *tp, Sint32 type, NJS_POINT3 *pos,
+void EnemyJetLoadTexture(void);
+void CreateEnemyJet(task *tp, Sint32 type, NJS_POINT3 *pos,
                             NJS_VECTOR *spd);
 void _rename_EnemyLaserLoadTexture(void);
 void _rename_CreateEnemyLaser(task *tp, Float pow, NJS_VECTOR *spd,
@@ -299,7 +299,7 @@ static void EnemyAiInit(task *tp, taskwk *twp) {
   }
   tp->dest = EnemyAiDestructor;
 
-  _rename_EnemyJetLoadTexture();
+  EnemyJetLoadTexture();
 
   if (mantex_tp == NULL) {
     fn_80072820("E_AITEX", &_rename_e_ai_texlist);
@@ -596,7 +596,7 @@ static void EnemyAiPutJet(taskwk *twp) {
   spd.y = -0.3f;
   spd.z = 0.0f;
   EnemyAiCalcVector(twp, &spd);
-  _rename_CreateEnemyJet(NULL, 1, &pos, &spd);
+  CreateEnemyJet(NULL, 1, &pos, &spd);
 
   pos.x = -6.5f;
   pos.y = 23.0f;
@@ -606,7 +606,7 @@ static void EnemyAiPutJet(taskwk *twp) {
   spd.y = -0.7f;
   spd.z = -0.5f;
   EnemyAiCalcVector(twp, &spd);
-  _rename_CreateEnemyJet(NULL, 1, &pos, &spd);
+  CreateEnemyJet(NULL, 1, &pos, &spd);
 
   pos.x = -6.5f;
   pos.y = 23.0f;
@@ -616,7 +616,7 @@ static void EnemyAiPutJet(taskwk *twp) {
   spd.y = -0.7f;
   spd.z = 0.5f;
   EnemyAiCalcVector(twp, &spd);
-  _rename_CreateEnemyJet(NULL, 1, &pos, &spd);
+  CreateEnemyJet(NULL, 1, &pos, &spd);
 }
 
 static void EnemyAiAim(taskwk *twp, NJS_POINT3 *pos, NJS_VECTOR *spd) {

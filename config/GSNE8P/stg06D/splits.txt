@@ -338,13 +338,11 @@ stg06D_83.c:
 	.text       start:0x00041934 end:0x000428D4
 	.rodata     start:0x00001360 end:0x000013B8
 
-stg06D_84.c:
-	.text       start:0x000428D4 end:0x00042A1C
-	.rodata     start:0x000013B8 end:0x000013C0
-
-stg06D_85.c:
-	.text       start:0x00042A20 end:0x00042CC0
-	.rodata     start:0x000013C0 end:0x000013F8
+ENEMY/e_jet.c:
+	.text       start:0x000428D4 end:0x00042E44
+	.rodata     start:0x000013B8 end:0x000013F8
+	.data       start:0x000B26F0 end:0x000B2728
+	.bss        start:0x00000D90 end:0x00000D98
 
 ENEMY/e_bullet.c:
 	.text       start:0x00042E44 end:0x00043BAC
