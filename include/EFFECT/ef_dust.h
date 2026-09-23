@@ -10,6 +10,8 @@ Bool DustExec(particle_info *info, particle *p);
 Bool DustShortExec(particle_info *info, particle *p);
 void CreateDustRing(NJS_POINT3 *pos, NJS_VECTOR *spd, Float r, Float scl,
                     Sint32 num);
+void CreateDustRingShort(NJS_POINT3 *pos, NJS_VECTOR *spd, Float r, Float scl,
+                         Sint32 num);
 void CreateBlackSmokeGenerator(Sint32 pno, Sint32 num);
 task *CreateBrokenDownSmoke(Sint32 pno, task *ptp);
 

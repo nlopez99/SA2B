@@ -150,6 +150,39 @@ void CreateDustRing(NJS_POINT3 *pos, NJS_VECTOR *spd, Float r, Float scl,
   njPopMatrixEx();
 }
 
+// as CreateDustRing, but short dust with each spoke nudged by up to half a step
+void CreateDustRingShort(NJS_POINT3 *pos, NJS_VECTOR *spd, Float r, Float scl,
+                         Sint32 num) {
+  NJS_VECTOR v = {0.0f, 0.03f, 0.07f};
+  NJS_POINT3 p = {0.0f, 0.0f, 0.0f};
+  NJS_POINT3 ppos;
+  NJS_VECTOR pspd;
+  Uint8 i;
+  Angle step = 0x10000 / num;
+  Angle ang = 0;
+
+  p.z = r;
+  njPushMatrixEx();
+  njUnitMatrix(NULL);
+  v.y *= scl;
+  v.z *= scl;
+  for (i = 0; i < num; i++) {
+    ang += 0.5f * (step * ParticleRandom());
+    njRotateY(NULL, ang);
+    njCalcPoint(NULL, &p, &ppos);
+    njCalcVector(NULL, &v, &pspd);
+    ppos.x += pos->x;
+    ppos.y += pos->y;
+    ppos.z += pos->z;
+    pspd.x += spd->x;
+    pspd.y += spd->y;
+    pspd.z += spd->z;
+    CreateDustShort(&ppos, &pspd, scl);
+    ang += step;
+  }
+  njPopMatrixEx();
+}
+
 // puts the generator on the joint mode names; the rest use the right foot
 // plus the offset in scl
 static void BlackSmokeSetPos(taskwk *twp) {
