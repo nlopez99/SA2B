@@ -334,8 +334,8 @@ stg51D_82.c:
 	.text       start:0x0003D528 end:0x0003E87C
 	.rodata     start:0x00001250 end:0x000012B0
 
-stg51D_83.c:
-	.text       start:0x0003E9D4 end:0x000400C0
+OBJECT/o_switch.c:
+	.text       start:0x0003E87C end:0x000400C0
 	.rodata     start:0x000012B0 end:0x00001338
 
 OBJECT/o_udreel.c:

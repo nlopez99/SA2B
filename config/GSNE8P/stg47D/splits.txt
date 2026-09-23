@@ -362,8 +362,8 @@ stg47D_89.c:
 	.text       start:0x0003E108 end:0x00040208
 	.rodata     start:0x00001278 end:0x00001310
 
-stg47D_90.c:
-	.text       start:0x00040360 end:0x00041A4C
+OBJECT/o_switch.c:
+	.text       start:0x00040208 end:0x00041A4C
 	.rodata     start:0x00001310 end:0x00001398
 
 OBJECT/o_udreel.c:

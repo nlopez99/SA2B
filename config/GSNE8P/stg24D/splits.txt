@@ -338,8 +338,8 @@ stg24D_83.c:
 	.text       start:0x000444A8 end:0x00045658
 	.rodata     start:0x00001488 end:0x000014C8
 
-stg24D_84.c:
-	.text       start:0x000457B0 end:0x00046E9C
+OBJECT/o_switch.c:
+	.text       start:0x00045658 end:0x00046E9C
 	.rodata     start:0x000014C8 end:0x00001550
 
 OBJECT/o_udreel.c:

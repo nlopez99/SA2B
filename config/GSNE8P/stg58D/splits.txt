@@ -331,8 +331,8 @@ stg58D_82.c:
 	.text       start:0x00042B14 end:0x000441B0
 	.rodata     start:0x00001408 end:0x00001468
 
-stg58D_83.c:
-	.text       start:0x00044308 end:0x000459F4
+OBJECT/o_switch.c:
+	.text       start:0x000441B0 end:0x000459F4
 	.rodata     start:0x00001468 end:0x000014F0
 
 OBJECT/o_udreel.c:

@@ -206,8 +206,8 @@ stg45D_50.c:
 	.text       start:0x00020CD0 end:0x000228E4
 	.rodata     start:0x00000AA8 end:0x00000B28
 
-stg45D_51.c:
-	.text       start:0x000229A8 end:0x00023CA0
+OBJECT/o_switch.c:
+	.text       start:0x000228E4 end:0x00023F08
 	.rodata     start:0x00000B28 end:0x00000BA8
 
 OBJECT/o_udreel.c:

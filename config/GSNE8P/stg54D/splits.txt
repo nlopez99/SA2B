@@ -221,8 +221,8 @@ OBJECT/o_spring.c:
 	.text       start:0x000267B8 end:0x000276DC
 	.rodata     start:0x00000B78 end:0x00000BA8
 
-54d_49.c:
-	.text       start:0x000277A0 end:0x00028A98
+OBJECT/o_switch.c:
+	.text       start:0x000276DC end:0x00028D00
 	.rodata     start:0x00000BA8 end:0x00000C28
 
 OBJECT/o_udreel.c:

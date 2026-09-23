@@ -322,8 +322,8 @@ stg17D_79.c:
 	.text       start:0x00045B64 end:0x00047200
 	.rodata     start:0x00001370 end:0x000013D0
 
-stg17D_80.c:
-	.text       start:0x00047358 end:0x00048A44
+OBJECT/o_switch.c:
+	.text       start:0x00047200 end:0x00048A44
 	.rodata     start:0x000013D0 end:0x00001458
 
 OBJECT/o_udreel.c:

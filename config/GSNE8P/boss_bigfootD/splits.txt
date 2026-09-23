@@ -248,8 +248,8 @@ boss_bigfootD_62.c:
 	.text       start:0x00037E9C end:0x000391F0
 	.rodata     start:0x00001288 end:0x000012E8
 
-boss_bigfootD_63.c:
-	.text       start:0x000392B4 end:0x0003A5AC
+OBJECT/o_switch.c:
+	.text       start:0x000391F0 end:0x0003A814
 	.rodata     start:0x000012E8 end:0x00001368
 
 OBJECT/o_udreel.c:

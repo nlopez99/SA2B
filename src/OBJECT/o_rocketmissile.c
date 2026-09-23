@@ -22,8 +22,8 @@ extern void fn_800231CC(task *tp, NJS_OBJECT *object);
 extern s32 _rename_EitherPlayerWithinSphere(NJS_VECTOR *, float);
 extern void _rename_SetConditionFlag(task *tp, u8 smode);
 extern void _rename_gjSetTexMtx(NJS_POINT3 *pos, Angle3 *ang);
-extern void _rename_SetSwitchOnOff(Sint32 id, Sint32 flag);
-extern Sint32 _rename_GetSwitchOnOff(Sint32 id);
+extern void SetSwitchOnOff(Sint32 id, Sint32 flag);
+extern Sint32 GetSwitchOnOff(Sint32 id);
 extern Sint8 fn_80065388(task *tp);
 extern Sint32 fn_80018E30(Sint32 id);
 extern void fn_8002FB2C(Sint32, Sint32, Sint32, Sint32);
@@ -304,7 +304,7 @@ static void ObjectRocketMissileExec(task *tp) {
       twp->mode = MD_APPEAR;
       switch (GetType(twp)) {
       case 2:
-        if (!_rename_GetSwitchOnOff(GetId(twp))) {
+        if (!GetSwitchOnOff(GetId(twp))) {
           twp->mode = MD_WAIT;
         }
         break;
@@ -499,7 +499,7 @@ static void ObjectRocketMissileExec(task *tp) {
         break;
       case 2:
         twp->mode = MD_WAIT;
-        _rename_SetSwitchOnOff(GetId(twp), 0);
+        SetSwitchOnOff(GetId(twp), 0);
         break;
       case 1:
         twp->mode = MD_END;

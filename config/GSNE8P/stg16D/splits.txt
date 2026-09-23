@@ -348,8 +348,8 @@ stg16D_86.c:
 	.text       start:0x00040CB8 end:0x00042F9C
 	.rodata     start:0x00001330 end:0x000013C8
 
-stg16D_87.c:
-	.text       start:0x000430F4 end:0x000447E0
+OBJECT/o_switch.c:
+	.text       start:0x00042F9C end:0x000447E0
 	.rodata     start:0x000013C8 end:0x00001450
 
 OBJECT/o_udreel.c:

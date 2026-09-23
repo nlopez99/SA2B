@@ -354,8 +354,8 @@ stg13D_87.c:
 	.text       start:0x00049A64 end:0x0004A988
 	.rodata     start:0x000013C8 end:0x000013F8
 
-stg13D_88.c:
-	.text       start:0x0004AAE0 end:0x0004C1CC
+OBJECT/o_switch.c:
+	.text       start:0x0004A988 end:0x0004C1CC
 	.rodata     start:0x000013F8 end:0x00001480
 
 OBJECT/o_udreel.c:

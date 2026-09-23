@@ -315,8 +315,8 @@ stg05D_79.c:
 	.text       start:0x0003CFDC end:0x0003ED94
 	.rodata     start:0x00001178 end:0x00001210
 
-stg05D_80.c:
-	.text       start:0x0003EEEC end:0x000405D8
+OBJECT/o_switch.c:
+	.text       start:0x0003ED94 end:0x000405D8
 	.rodata     start:0x00001210 end:0x00001298
 
 OBJECT/o_udreel.c:

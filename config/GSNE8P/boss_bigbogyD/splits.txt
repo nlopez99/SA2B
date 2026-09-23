@@ -232,8 +232,8 @@ boss_bigbogyD_58.c:
 	.text       start:0x0003A178 end:0x0003B4CC
 	.rodata     start:0x000016F8 end:0x00001758
 
-boss_bigbogyD_59.c:
-	.text       start:0x0003B590 end:0x0003C888
+OBJECT/o_switch.c:
+	.text       start:0x0003B4CC end:0x0003CAF0
 	.rodata     start:0x00001758 end:0x000017D8
 
 OBJECT/o_udreel.c:

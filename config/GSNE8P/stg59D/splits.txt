@@ -396,8 +396,8 @@ stg59D_98.c:
 	.text       start:0x00048ADC end:0x0004ABDC
 	.rodata     start:0x00001570 end:0x00001608
 
-stg59D_99.c:
-	.text       start:0x0004AD34 end:0x0004C420
+OBJECT/o_switch.c:
+	.text       start:0x0004ABDC end:0x0004C420
 	.rodata     start:0x00001608 end:0x00001690
 
 OBJECT/o_udreel.c:

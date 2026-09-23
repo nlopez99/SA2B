@@ -350,8 +350,8 @@ stg10D_87.c:
 	.text       start:0x00041D6C end:0x000430C0
 	.rodata     start:0x00001318 end:0x00001378
 
-stg10D_88.c:
-	.text       start:0x00043218 end:0x00044904
+OBJECT/o_switch.c:
+	.text       start:0x000430C0 end:0x00044904
 	.rodata     start:0x00001378 end:0x00001400
 
 OBJECT/o_udreel.c:

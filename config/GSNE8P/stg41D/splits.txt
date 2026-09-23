@@ -348,8 +348,8 @@ stg41D_86.c:
 	.text       start:0x00040EDC end:0x000431C0
 	.rodata     start:0x00001338 end:0x000013D0
 
-stg41D_87.c:
-	.text       start:0x00043318 end:0x00044A04
+OBJECT/o_switch.c:
+	.text       start:0x000431C0 end:0x00044A04
 	.rodata     start:0x000013D0 end:0x00001458
 
 OBJECT/o_udreel.c:

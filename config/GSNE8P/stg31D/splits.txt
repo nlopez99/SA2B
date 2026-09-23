@@ -298,8 +298,8 @@ stg31D_74.c:
 	.text       start:0x00037CC0 end:0x00038E70
 	.rodata     start:0x00001028 end:0x00001068
 
-stg31D_75.c:
-	.text       start:0x00038FC8 end:0x0003A6B4
+OBJECT/o_switch.c:
+	.text       start:0x00038E70 end:0x0003A6B4
 	.rodata     start:0x00001068 end:0x000010F0
 
 OBJECT/o_udreel.c:

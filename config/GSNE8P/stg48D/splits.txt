@@ -370,8 +370,8 @@ stg48D_91.c:
 	.text       start:0x0003E16C end:0x000400C8
 	.rodata     start:0x000012A0 end:0x00001320
 
-stg48D_92.c:
-	.text       start:0x00040220 end:0x0004190C
+OBJECT/o_switch.c:
+	.text       start:0x000400C8 end:0x0004190C
 	.rodata     start:0x00001320 end:0x000013A8
 
 OBJECT/o_udreel.c:

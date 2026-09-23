@@ -398,8 +398,8 @@ stg28D_99.c:
 	.text       start:0x00041134 end:0x00042058
 	.rodata     start:0x00001438 end:0x00001468
 
-stg28D_100.c:
-	.text       start:0x0004211C end:0x00043414
+OBJECT/o_switch.c:
+	.text       start:0x00042058 end:0x0004367C
 	.rodata     start:0x00001468 end:0x000014E8
 
 OBJECT/o_udreel.c:

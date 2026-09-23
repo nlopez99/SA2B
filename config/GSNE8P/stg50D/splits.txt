@@ -334,8 +334,8 @@ stg50D_83.c:
 	.text       start:0x0003FACC end:0x00040E20
 	.rodata     start:0x000012B0 end:0x00001310
 
-stg50D_84.c:
-	.text       start:0x00040F78 end:0x00042664
+OBJECT/o_switch.c:
+	.text       start:0x00040E20 end:0x00042664
 	.rodata     start:0x00001310 end:0x00001398
 
 OBJECT/o_udreel.c:

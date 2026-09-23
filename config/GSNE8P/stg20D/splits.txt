@@ -220,8 +220,8 @@ stg20D_53.c:
 	.text       start:0x0002E230 end:0x0002F3E0
 	.rodata     start:0x00000F18 end:0x00000F58
 
-stg20D_54.c:
-	.text       start:0x0002F4A4 end:0x0003079C
+OBJECT/o_switch.c:
+	.text       start:0x0002F3E0 end:0x00030A04
 	.rodata     start:0x00000F58 end:0x00000FD8
 
 OBJECT/o_udreel.c:

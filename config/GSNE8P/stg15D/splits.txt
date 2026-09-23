@@ -340,8 +340,8 @@ stg15D_83.c:
 	.text       start:0x0003CE68 end:0x0003E1BC
 	.rodata     start:0x00001250 end:0x000012B0
 
-stg15D_84.c:
-	.text       start:0x0003E314 end:0x0003FA00
+OBJECT/o_switch.c:
+	.text       start:0x0003E1BC end:0x0003FA00
 	.rodata     start:0x000012B0 end:0x00001338
 
 OBJECT/o_udreel.c:

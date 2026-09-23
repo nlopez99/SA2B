@@ -322,8 +322,8 @@ stg34D_80.c:
 	.text       start:0x000407B0 end:0x000416D4
 	.rodata     start:0x000012E8 end:0x00001318
 
-stg34D_81.c:
-	.text       start:0x0004182C end:0x00042F18
+OBJECT/o_switch.c:
+	.text       start:0x000416D4 end:0x00042F18
 	.rodata     start:0x00001318 end:0x000013A0
 
 OBJECT/o_udreel.c:

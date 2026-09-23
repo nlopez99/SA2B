@@ -317,8 +317,8 @@ stg55D_78.c:
 	.text       start:0x0003E3D0 end:0x0003F580
 	.rodata     start:0x00001290 end:0x000012D0
 
-stg55D_79.c:
-	.text       start:0x0003F6D8 end:0x00040DC4
+OBJECT/o_switch.c:
+	.text       start:0x0003F580 end:0x00040DC4
 	.rodata     start:0x000012D0 end:0x00001358
 
 OBJECT/o_udreel.c:

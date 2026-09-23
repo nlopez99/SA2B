@@ -220,8 +220,8 @@ stg33D_54.c:
 	.text       start:0x0002771C end:0x000288CC
 	.rodata     start:0x00000BF8 end:0x00000C38
 
-stg33D_55.c:
-	.text       start:0x00028990 end:0x00029C88
+OBJECT/o_switch.c:
+	.text       start:0x000288CC end:0x00029EF0
 	.rodata     start:0x00000C38 end:0x00000CB8
 
 OBJECT/o_udreel.c:

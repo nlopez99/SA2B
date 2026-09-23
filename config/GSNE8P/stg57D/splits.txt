@@ -350,8 +350,8 @@ stg57D_87.c:
 	.text       start:0x00041E60 end:0x000431B4
 	.rodata     start:0x00001310 end:0x00001370
 
-stg57D_88.c:
-	.text       start:0x0004330C end:0x000449F8
+OBJECT/o_switch.c:
+	.text       start:0x000431B4 end:0x000449F8
 	.rodata     start:0x00001370 end:0x000013F8
 
 OBJECT/o_udreel.c:

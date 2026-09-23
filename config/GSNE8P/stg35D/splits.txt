@@ -288,8 +288,8 @@ stg35D_70.c:
 	.text       start:0x000464E8 end:0x00047A20
 	.rodata     start:0x00001498 end:0x000014F8
 
-stg35D_71.c:
-	.text       start:0x00047B78 end:0x00049264
+OBJECT/o_switch.c:
+	.text       start:0x00047A20 end:0x00049264
 	.rodata     start:0x000014F8 end:0x00001580
 
 OBJECT/o_udreel.c:

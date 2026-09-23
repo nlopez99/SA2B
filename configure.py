@@ -705,6 +705,7 @@ config.libs = [
             Object(Matching, "ENEMY/e_kumi.c"),
             Object(Matching, "OBJECT/o_rocketmissile.c"),
             Object(Matching, "OBJECT/o_emerald.c"),
+            Object(Matching, "OBJECT/o_switch.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

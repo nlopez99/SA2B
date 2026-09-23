@@ -302,8 +302,8 @@ stg06D_75.c:
 	.text       start:0x0003AA24 end:0x0003C980
 	.rodata     start:0x00001100 end:0x000011B0
 
-stg06D_76.c:
-	.text       start:0x0003CA44 end:0x0003DD3C
+OBJECT/o_switch.c:
+	.text       start:0x0003C980 end:0x0003DFA4
 	.rodata     start:0x000011B0 end:0x00001230
 
 OBJECT/o_udreel.c:

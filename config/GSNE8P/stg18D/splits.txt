@@ -392,8 +392,8 @@ stg18D_97.c:
 	.text       start:0x000459F0 end:0x000475F4
 	.rodata     start:0x000014B8 end:0x00001548
 
-stg18D_98.c:
-	.text       start:0x0004774C end:0x00048E38
+OBJECT/o_switch.c:
+	.text       start:0x000475F4 end:0x00048E38
 	.rodata     start:0x00001548 end:0x000015D0
 
 OBJECT/o_udreel.c:

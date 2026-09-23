@@ -316,8 +316,8 @@ stg38D_78.c:
 	.text       start:0x00040EA0 end:0x00042C58
 	.rodata     start:0x00001390 end:0x00001428
 
-stg38D_79.c:
-	.text       start:0x00042DB0 end:0x0004449C
+OBJECT/o_switch.c:
+	.text       start:0x00042C58 end:0x0004449C
 	.rodata     start:0x00001428 end:0x000014B0
 
 OBJECT/o_udreel.c:

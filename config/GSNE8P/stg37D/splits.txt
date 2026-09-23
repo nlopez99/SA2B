@@ -284,8 +284,8 @@ stg37D_70.c:
 	.text       start:0x0003D574 end:0x0003F178
 	.rodata     start:0x000012C0 end:0x00001350
 
-stg37D_71.c:
-	.text       start:0x0003F2D0 end:0x000409BC
+OBJECT/o_switch.c:
+	.text       start:0x0003F178 end:0x000409BC
 	.rodata     start:0x00001350 end:0x000013D8
 
 OBJECT/o_udreel.c:

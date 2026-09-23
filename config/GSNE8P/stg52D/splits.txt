@@ -345,8 +345,8 @@ stg52D_85.c:
 	.text       start:0x00049404 end:0x0004A328
 	.rodata     start:0x000013B0 end:0x000013E0
 
-stg52D_86.c:
-	.text       start:0x0004A480 end:0x0004BB6C
+OBJECT/o_switch.c:
+	.text       start:0x0004A328 end:0x0004BB6C
 	.rodata     start:0x000013E0 end:0x00001468
 
 OBJECT/o_udreel.c:

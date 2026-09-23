@@ -386,8 +386,8 @@ stg21D_95.c:
 	.text       start:0x0003EEF0 end:0x00040FF0
 	.rodata     start:0x00001288 end:0x00001320
 
-stg21D_96.c:
-	.text       start:0x00041148 end:0x00042834
+OBJECT/o_switch.c:
+	.text       start:0x00040FF0 end:0x00042834
 	.rodata     start:0x00001320 end:0x000013A8
 
 OBJECT/o_udreel.c:

@@ -192,8 +192,8 @@ stg00D_47.c:
 	.text       start:0x00021690 end:0x000229E4
 	.rodata     start:0x000009F0 end:0x00000A50
 
-stg00D_48.c:
-	.text       start:0x00022AA8 end:0x00023DA0
+OBJECT/o_switch.c:
+	.text       start:0x000229E4 end:0x00024008
 	.rodata     start:0x00000A50 end:0x00000AD0
 
 OBJECT/o_udreel.c:

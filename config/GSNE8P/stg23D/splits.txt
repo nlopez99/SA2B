@@ -370,8 +370,8 @@ stg23D_91.c:
 	.text       start:0x0003F1AC end:0x000412AC
 	.rodata     start:0x00001340 end:0x000013D8
 
-stg23D_92.c:
-	.text       start:0x00041404 end:0x00042AF0
+OBJECT/o_switch.c:
+	.text       start:0x000412AC end:0x00042AF0
 	.rodata     start:0x000013D8 end:0x00001460
 
 OBJECT/o_udreel.c:

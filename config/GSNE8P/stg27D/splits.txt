@@ -322,8 +322,8 @@ stg27D_80.c:
 	.text       start:0x0003EFB0 end:0x00040160
 	.rodata     start:0x000012C0 end:0x00001300
 
-stg27D_81.c:
-	.text       start:0x000402B8 end:0x000419A4
+OBJECT/o_switch.c:
+	.text       start:0x00040160 end:0x000419A4
 	.rodata     start:0x00001300 end:0x00001388
 
 OBJECT/o_udreel.c:
