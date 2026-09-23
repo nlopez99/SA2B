@@ -155,13 +155,10 @@ stg42D_36.c:
 	.text       start:0x00012D50 end:0x00012E20
 	.rodata     start:0x00000740 end:0x00000748
 
-stg42D_37.c:
-	.text       start:0x000130A4 end:0x00013B4C
-	.rodata     start:0x00000748 end:0x00000780
-
-stg42D_38.c:
-	.text       start:0x00013BC0 end:0x00013C04
-	.rodata     start:0x00000780 end:0x00000788
+OBJECT/o_itemboxair.c:
+	.text       start:0x00012FD0 end:0x00013C78
+	.rodata     start:0x00000748 end:0x00000788
+	.data       start:0x000128D8 end:0x00012958
 
 stg42D_39.c:
 	.text       start:0x00014344 end:0x00018A84

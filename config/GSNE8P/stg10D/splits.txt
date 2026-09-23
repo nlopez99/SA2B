@@ -267,13 +267,10 @@ stg10D_66.c:
 	.text       start:0x00029B24 end:0x00029BF4
 	.rodata     start:0x00000CD0 end:0x00000CD8
 
-stg10D_67.c:
-	.text       start:0x00029E78 end:0x0002A920
-	.rodata     start:0x00000CD8 end:0x00000D10
-
-stg10D_68.c:
-	.text       start:0x0002A994 end:0x0002A9D8
-	.rodata     start:0x00000D10 end:0x00000D18
+OBJECT/o_itemboxair.c:
+	.text       start:0x00029DA4 end:0x0002AA4C
+	.rodata     start:0x00000CD8 end:0x00000D18
+	.data       start:0x0016F3D8 end:0x0016F458
 
 stg10D_69.c:
 	.text       start:0x0002AB90 end:0x0002B5F0

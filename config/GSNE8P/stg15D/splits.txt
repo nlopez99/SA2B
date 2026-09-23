@@ -250,13 +250,10 @@ stg15D_62.c:
 	.text       start:0x00024DBC end:0x00024E8C
 	.rodata     start:0x00000C00 end:0x00000C08
 
-stg15D_63.c:
-	.text       start:0x00025110 end:0x00025BB8
-	.rodata     start:0x00000C08 end:0x00000C40
-
-stg15D_64.c:
-	.text       start:0x00025C2C end:0x00025C70
-	.rodata     start:0x00000C40 end:0x00000C48
+OBJECT/o_itemboxair.c:
+	.text       start:0x0002503C end:0x00025CE4
+	.rodata     start:0x00000C08 end:0x00000C48
+	.data       start:0x0004A1D8 end:0x0004A258
 
 stg15D_65.c:
 	.text       start:0x00025E28 end:0x00026888

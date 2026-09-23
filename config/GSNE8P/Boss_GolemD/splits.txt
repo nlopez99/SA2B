@@ -219,13 +219,10 @@ Boss_GolemD_54.c:
 	.text       start:0x00027460 end:0x00027530
 	.rodata     start:0x00001300 end:0x00001308
 
-Boss_GolemD_55.c:
-	.text       start:0x000277B4 end:0x0002825C
-	.rodata     start:0x00001308 end:0x00001340
-
-Boss_GolemD_56.c:
-	.text       start:0x000282D0 end:0x00028314
-	.rodata     start:0x00001340 end:0x00001348
+OBJECT/o_itemboxair.c:
+	.text       start:0x000276E0 end:0x00028388
+	.rodata     start:0x00001308 end:0x00001348
+	.data       start:0x000E1B18 end:0x000E1B98
 
 Boss_GolemD_57.c:
 	.text       start:0x000284CC end:0x00028F2C

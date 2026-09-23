@@ -239,13 +239,10 @@ stg43D_59.c:
 	.text       start:0x000259E4 end:0x00025AB4
 	.rodata     start:0x00000BB0 end:0x00000BB8
 
-stg43D_60.c:
-	.text       start:0x00025D38 end:0x000267E0
-	.rodata     start:0x00000BB8 end:0x00000BF0
-
-stg43D_61.c:
-	.text       start:0x00026854 end:0x00026898
-	.rodata     start:0x00000BF0 end:0x00000BF8
+OBJECT/o_itemboxair.c:
+	.text       start:0x00025C64 end:0x0002690C
+	.rodata     start:0x00000BB8 end:0x00000BF8
+	.data       start:0x00064F98 end:0x00065018
 
 stg43D_62.c:
 	.text       start:0x00026A50 end:0x000274B0

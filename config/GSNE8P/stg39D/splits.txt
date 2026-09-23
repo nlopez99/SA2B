@@ -210,13 +210,10 @@ stg39D_51.c:
 	.text       start:0x00023E20 end:0x00023EF0
 	.rodata     start:0x00000AB8 end:0x00000AC0
 
-stg39D_52.c:
-	.text       start:0x00024174 end:0x00024C1C
-	.rodata     start:0x00000AC0 end:0x00000AF8
-
-stg39D_53.c:
-	.text       start:0x00024C90 end:0x00024CD4
-	.rodata     start:0x00000AF8 end:0x00000B00
+OBJECT/o_itemboxair.c:
+	.text       start:0x000240A0 end:0x00024D48
+	.rodata     start:0x00000AC0 end:0x00000B00
+	.data       start:0x000549B8 end:0x00054A38
 
 stg39D_54.c:
 	.text       start:0x00024E8C end:0x000258EC

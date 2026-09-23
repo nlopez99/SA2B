@@ -219,13 +219,10 @@ stg06D_54.c:
 	.text       start:0x00022E04 end:0x00022ED4
 	.rodata     start:0x00000AE8 end:0x00000AF0
 
-stg06D_55.c:
-	.text       start:0x00023158 end:0x00023C00
-	.rodata     start:0x00000AF0 end:0x00000B28
-
-stg06D_56.c:
-	.text       start:0x00023C74 end:0x00023CB8
-	.rodata     start:0x00000B28 end:0x00000B30
+OBJECT/o_itemboxair.c:
+	.text       start:0x00023084 end:0x00023D2C
+	.rodata     start:0x00000AF0 end:0x00000B30
+	.data       start:0x0007BFD8 end:0x0007C058
 
 stg06D_57.c:
 	.text       start:0x00023E70 end:0x000248D0

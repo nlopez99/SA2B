@@ -247,13 +247,10 @@ stg14D_61.c:
 	.text       start:0x00024EBC end:0x00024F8C
 	.rodata     start:0x00000B58 end:0x00000B60
 
-stg14D_62.c:
-	.text       start:0x00025210 end:0x00025CB8
-	.rodata     start:0x00000B60 end:0x00000B98
-
-stg14D_63.c:
-	.text       start:0x00025D2C end:0x00025D70
-	.rodata     start:0x00000B98 end:0x00000BA0
+OBJECT/o_itemboxair.c:
+	.text       start:0x0002513C end:0x00025DE4
+	.rodata     start:0x00000B60 end:0x00000BA0
+	.data       start:0x000D5EB8 end:0x000D5F38
 
 stg14D_64.c:
 	.text       start:0x00025F28 end:0x00026988

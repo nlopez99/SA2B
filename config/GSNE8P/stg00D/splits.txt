@@ -135,13 +135,10 @@ stg00D_33.c:
 	.text       start:0x00013D4C end:0x00013E1C
 	.rodata     start:0x00000628 end:0x00000630
 
-stg00D_34.c:
-	.text       start:0x000140A0 end:0x00014B48
-	.rodata     start:0x00000630 end:0x00000668
-
-stg00D_35.c:
-	.text       start:0x00014BBC end:0x00014C00
-	.rodata     start:0x00000668 end:0x00000670
+OBJECT/o_itemboxair.c:
+	.text       start:0x00013FCC end:0x00014C74
+	.rodata     start:0x00000630 end:0x00000670
+	.data       start:0x00025A78 end:0x00025AF8
 
 stg00D_36.c:
 	.text       start:0x00014DB8 end:0x00015818

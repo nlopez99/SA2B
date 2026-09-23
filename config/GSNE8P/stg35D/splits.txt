@@ -199,13 +199,10 @@ stg35D_49.c:
 	.text       start:0x0002E258 end:0x0002E328
 	.rodata     start:0x00000E50 end:0x00000E58
 
-stg35D_50.c:
-	.text       start:0x0002E5AC end:0x0002F054
-	.rodata     start:0x00000E58 end:0x00000E90
-
-stg35D_51.c:
-	.text       start:0x0002F0C8 end:0x0002F10C
-	.rodata     start:0x00000E90 end:0x00000E98
+OBJECT/o_itemboxair.c:
+	.text       start:0x0002E4D8 end:0x0002F180
+	.rodata     start:0x00000E58 end:0x00000E98
+	.data       start:0x000923D8 end:0x00092458
 
 stg35D_52.c:
 	.text       start:0x0002F2C4 end:0x0002FD24

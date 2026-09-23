@@ -299,13 +299,10 @@ stg18D_74.c:
 	.text       start:0x0002BA10 end:0x0002BAE0
 	.rodata     start:0x00000DD8 end:0x00000DE0
 
-stg18D_75.c:
-	.text       start:0x0002BD64 end:0x0002C80C
-	.rodata     start:0x00000DE0 end:0x00000E18
-
-stg18D_76.c:
-	.text       start:0x0002C880 end:0x0002C8C4
-	.rodata     start:0x00000E18 end:0x00000E20
+OBJECT/o_itemboxair.c:
+	.text       start:0x0002BC90 end:0x0002C938
+	.rodata     start:0x00000DE0 end:0x00000E20
+	.data       start:0x000E8808 end:0x000E8888
 
 stg18D_77.c:
 	.text       start:0x0002CA7C end:0x0002D4DC

@@ -267,13 +267,10 @@ stg22D_66.c:
 	.text       start:0x0002A13C end:0x0002A20C
 	.rodata     start:0x00000D98 end:0x00000DA0
 
-stg22D_67.c:
-	.text       start:0x0002A490 end:0x0002AF38
-	.rodata     start:0x00000DA0 end:0x00000DD8
-
-stg22D_68.c:
-	.text       start:0x0002AFAC end:0x0002AFF0
-	.rodata     start:0x00000DD8 end:0x00000DE0
+OBJECT/o_itemboxair.c:
+	.text       start:0x0002A3BC end:0x0002B064
+	.rodata     start:0x00000DA0 end:0x00000DE0
+	.data       start:0x000D7B98 end:0x000D7C18
 
 stg22D_69.c:
 	.text       start:0x0002B1A8 end:0x0002BC08

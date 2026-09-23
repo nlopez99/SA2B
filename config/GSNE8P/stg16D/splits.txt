@@ -255,13 +255,10 @@ stg16D_63.c:
 	.text       start:0x00026B6C end:0x00026C3C
 	.rodata     start:0x00000C48 end:0x00000C50
 
-stg16D_64.c:
-	.text       start:0x00026EC0 end:0x00027968
-	.rodata     start:0x00000C50 end:0x00000C88
-
-stg16D_65.c:
-	.text       start:0x000279DC end:0x00027A20
-	.rodata     start:0x00000C88 end:0x00000C90
+OBJECT/o_itemboxair.c:
+	.text       start:0x00026DEC end:0x00027A94
+	.rodata     start:0x00000C50 end:0x00000C90
+	.data       start:0x000A21A8 end:0x000A2228
 
 stg16D_66.c:
 	.text       start:0x00027BD8 end:0x00028638

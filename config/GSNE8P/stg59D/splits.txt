@@ -307,13 +307,10 @@ stg59D_76.c:
 	.text       start:0x0002ED0C end:0x0002EDDC
 	.rodata     start:0x00000EB0 end:0x00000EB8
 
-stg59D_77.c:
-	.text       start:0x0002F060 end:0x0002FB08
-	.rodata     start:0x00000EB8 end:0x00000EF0
-
-stg59D_78.c:
-	.text       start:0x0002FB7C end:0x0002FBC0
-	.rodata     start:0x00000EF0 end:0x00000EF8
+OBJECT/o_itemboxair.c:
+	.text       start:0x0002EF8C end:0x0002FC34
+	.rodata     start:0x00000EB8 end:0x00000EF8
+	.data       start:0x000C2318 end:0x000C2398
 
 stg59D_79.c:
 	.text       start:0x0002FD78 end:0x000307D8

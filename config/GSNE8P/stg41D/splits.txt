@@ -255,13 +255,10 @@ stg41D_63.c:
 	.text       start:0x00026D90 end:0x00026E60
 	.rodata     start:0x00000C50 end:0x00000C58
 
-stg41D_64.c:
-	.text       start:0x000270E4 end:0x00027B8C
-	.rodata     start:0x00000C58 end:0x00000C90
-
-stg41D_65.c:
-	.text       start:0x00027C00 end:0x00027C44
-	.rodata     start:0x00000C90 end:0x00000C98
+OBJECT/o_itemboxair.c:
+	.text       start:0x00027010 end:0x00027CB8
+	.rodata     start:0x00000C58 end:0x00000C98
+	.data       start:0x00079888 end:0x00079908
 
 stg41D_66.c:
 	.text       start:0x00027DFC end:0x0002885C

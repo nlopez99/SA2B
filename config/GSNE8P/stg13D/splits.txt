@@ -267,13 +267,10 @@ stg13D_65.c:
 	.text       start:0x000309D4 end:0x00030AA4
 	.rodata     start:0x00000D20 end:0x00000D28
 
-stg13D_66.c:
-	.text       start:0x00030D28 end:0x000317D0
-	.rodata     start:0x00000D28 end:0x00000D60
-
-stg13D_67.c:
-	.text       start:0x00031844 end:0x00031888
-	.rodata     start:0x00000D60 end:0x00000D68
+OBJECT/o_itemboxair.c:
+	.text       start:0x00030C54 end:0x000318FC
+	.rodata     start:0x00000D28 end:0x00000D68
+	.data       start:0x00222178 end:0x002221F8
 
 stg13D_68.c:
 	.text       start:0x00031A40 end:0x000324A0

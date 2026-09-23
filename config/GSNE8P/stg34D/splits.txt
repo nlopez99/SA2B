@@ -235,13 +235,10 @@ stg34D_58.c:
 	.text       start:0x00027198 end:0x00027268
 	.rodata     start:0x00000C40 end:0x00000C48
 
-stg34D_59.c:
-	.text       start:0x000274EC end:0x00027F94
-	.rodata     start:0x00000C48 end:0x00000C80
-
-stg34D_60.c:
-	.text       start:0x00028008 end:0x0002804C
-	.rodata     start:0x00000C80 end:0x00000C88
+OBJECT/o_itemboxair.c:
+	.text       start:0x00027418 end:0x000280C0
+	.rodata     start:0x00000C48 end:0x00000C88
+	.data       start:0x0016B598 end:0x0016B618
 
 stg34D_61.c:
 	.text       start:0x00028204 end:0x00028C64

@@ -235,13 +235,10 @@ stg08D_58.c:
 	.text       start:0x000238DC end:0x000239AC
 	.rodata     start:0x00000B00 end:0x00000B08
 
-stg08D_59.c:
-	.text       start:0x00023C30 end:0x000246D8
-	.rodata     start:0x00000B08 end:0x00000B40
-
-stg08D_60.c:
-	.text       start:0x0002474C end:0x00024790
-	.rodata     start:0x00000B40 end:0x00000B48
+OBJECT/o_itemboxair.c:
+	.text       start:0x00023B5C end:0x00024804
+	.rodata     start:0x00000B08 end:0x00000B48
+	.data       start:0x000666B8 end:0x00066738
 
 stg08D_61.c:
 	.text       start:0x00024948 end:0x000253A8

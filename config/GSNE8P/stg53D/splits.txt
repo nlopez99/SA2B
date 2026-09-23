@@ -243,13 +243,10 @@ stg53D_60.c:
 	.text       start:0x000224B0 end:0x00022580
 	.rodata     start:0x00000AB8 end:0x00000AC0
 
-stg53D_61.c:
-	.text       start:0x00022804 end:0x000232AC
-	.rodata     start:0x00000AC0 end:0x00000AF8
-
-stg53D_62.c:
-	.text       start:0x00023320 end:0x00023364
-	.rodata     start:0x00000AF8 end:0x00000B00
+OBJECT/o_itemboxair.c:
+	.text       start:0x00022730 end:0x000233D8
+	.rodata     start:0x00000AC0 end:0x00000B00
+	.data       start:0x00036CF8 end:0x00036D78
 
 stg53D_63.c:
 	.text       start:0x0002351C end:0x00023F7C

@@ -299,13 +299,10 @@ stg32D_74.c:
 	.text       start:0x00028760 end:0x00028830
 	.rodata     start:0x00000C98 end:0x00000CA0
 
-stg32D_75.c:
-	.text       start:0x00028AB4 end:0x0002955C
-	.rodata     start:0x00000CA0 end:0x00000CD8
-
-stg32D_76.c:
-	.text       start:0x000295D0 end:0x00029614
-	.rodata     start:0x00000CD8 end:0x00000CE0
+OBJECT/o_itemboxair.c:
+	.text       start:0x000289E0 end:0x00029688
+	.rodata     start:0x00000CA0 end:0x00000CE0
+	.data       start:0x000727F8 end:0x00072878
 
 stg32D_77.c:
 	.text       start:0x000297CC end:0x0002A22C

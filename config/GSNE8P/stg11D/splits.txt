@@ -251,13 +251,10 @@ stg11D_62.c:
 	.text       start:0x0002A560 end:0x0002A630
 	.rodata     start:0x00000DB0 end:0x00000DB8
 
-stg11D_63.c:
-	.text       start:0x0002A8B4 end:0x0002B35C
-	.rodata     start:0x00000DB8 end:0x00000DF0
-
-stg11D_64.c:
-	.text       start:0x0002B3D0 end:0x0002B414
-	.rodata     start:0x00000DF0 end:0x00000DF8
+OBJECT/o_itemboxair.c:
+	.text       start:0x0002A7E0 end:0x0002B488
+	.rodata     start:0x00000DB8 end:0x00000DF8
+	.data       start:0x00072238 end:0x000722B8
 
 stg11D_65.c:
 	.text       start:0x0002B5CC end:0x0002C02C

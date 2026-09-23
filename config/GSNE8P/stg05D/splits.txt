@@ -227,13 +227,10 @@ stg05D_56.c:
 	.text       start:0x00023294 end:0x00023364
 	.rodata     start:0x00000A90 end:0x00000A98
 
-stg05D_57.c:
-	.text       start:0x000235E8 end:0x00024090
-	.rodata     start:0x00000A98 end:0x00000AD0
-
-stg05D_58.c:
-	.text       start:0x00024104 end:0x00024148
-	.rodata     start:0x00000AD0 end:0x00000AD8
+OBJECT/o_itemboxair.c:
+	.text       start:0x00023514 end:0x000241BC
+	.rodata     start:0x00000A98 end:0x00000AD8
+	.data       start:0x0005AA58 end:0x0005AAD8
 
 stg05D_59.c:
 	.text       start:0x00024300 end:0x00024D60

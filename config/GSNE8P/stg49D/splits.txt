@@ -259,13 +259,10 @@ stg49D_64.c:
 	.text       start:0x000281F8 end:0x000282C8
 	.rodata     start:0x00000CA8 end:0x00000CB0
 
-stg49D_65.c:
-	.text       start:0x0002854C end:0x00028FF4
-	.rodata     start:0x00000CB0 end:0x00000CE8
-
-stg49D_66.c:
-	.text       start:0x00029068 end:0x000290AC
-	.rodata     start:0x00000CE8 end:0x00000CF0
+OBJECT/o_itemboxair.c:
+	.text       start:0x00028478 end:0x00029120
+	.rodata     start:0x00000CB0 end:0x00000CF0
+	.data       start:0x0004F578 end:0x0004F5F8
 
 stg49D_67.c:
 	.text       start:0x00029264 end:0x00029CC4

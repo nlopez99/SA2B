@@ -154,9 +154,10 @@ OBJECT/o_degring_linear.c:
 	.text       start:0x000159D4 end:0x00016A44
 	.rodata     start:0x00000780 end:0x000007B8
 
-54d_37.c:
+OBJECT/o_itemboxair.c:
 	.text       start:0x00016A44 end:0x000176EC
 	.rodata     start:0x000007B8 end:0x000007F8
+	.data       start:0x00144098 end:0x00144118
 
 54d_38.c:
 	.text       start:0x000176EC end:0x000183BC

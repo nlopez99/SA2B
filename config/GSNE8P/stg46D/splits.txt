@@ -283,13 +283,10 @@ stg46D_70.c:
 	.text       start:0x00025F48 end:0x00026018
 	.rodata     start:0x00000C50 end:0x00000C58
 
-stg46D_71.c:
-	.text       start:0x0002629C end:0x00026D44
-	.rodata     start:0x00000C58 end:0x00000C90
-
-stg46D_72.c:
-	.text       start:0x00026DB8 end:0x00026DFC
-	.rodata     start:0x00000C90 end:0x00000C98
+OBJECT/o_itemboxair.c:
+	.text       start:0x000261C8 end:0x00026E70
+	.rodata     start:0x00000C58 end:0x00000C98
+	.data       start:0x000715E8 end:0x00071668
 
 stg46D_73.c:
 	.text       start:0x00026FB4 end:0x00027A14

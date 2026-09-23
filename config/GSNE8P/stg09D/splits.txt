@@ -255,13 +255,10 @@ stg09D_63.c:
 	.text       start:0x00023FDC end:0x000240AC
 	.rodata     start:0x00000C00 end:0x00000C08
 
-stg09D_64.c:
-	.text       start:0x00024330 end:0x00024DD8
-	.rodata     start:0x00000C08 end:0x00000C40
-
-stg09D_65.c:
-	.text       start:0x00024E4C end:0x00024E90
-	.rodata     start:0x00000C40 end:0x00000C48
+OBJECT/o_itemboxair.c:
+	.text       start:0x0002425C end:0x00024F04
+	.rodata     start:0x00000C08 end:0x00000C48
+	.data       start:0x0005F578 end:0x0005F5F8
 
 stg09D_66.c:
 	.text       start:0x00025048 end:0x00025AA8

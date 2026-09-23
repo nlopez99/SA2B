@@ -247,13 +247,10 @@ stg51D_61.c:
 	.text       start:0x000252E0 end:0x000253B0
 	.rodata     start:0x00000C08 end:0x00000C10
 
-stg51D_62.c:
-	.text       start:0x00025634 end:0x000260DC
-	.rodata     start:0x00000C10 end:0x00000C48
-
-stg51D_63.c:
-	.text       start:0x00026150 end:0x00026194
-	.rodata     start:0x00000C48 end:0x00000C50
+OBJECT/o_itemboxair.c:
+	.text       start:0x00025560 end:0x00026208
+	.rodata     start:0x00000C10 end:0x00000C50
+	.data       start:0x000478B8 end:0x00047938
 
 stg51D_64.c:
 	.text       start:0x0002634C end:0x00026DAC

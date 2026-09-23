@@ -674,6 +674,7 @@ config.libs = [
             Object(NonMatching, "stg13_cityescape/cityescape.c"),
             Object(Matching, "OBJECT/o_3spring.c"),
             Object(Matching, "OBJECT/o_degring_linear.c"),
+            Object(Matching, "OBJECT/o_itemboxair.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

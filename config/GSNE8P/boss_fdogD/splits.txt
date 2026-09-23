@@ -175,13 +175,10 @@ boss_fdogD_43.c:
 	.text       start:0x0001C14C end:0x0001C21C
 	.rodata     start:0x00000A40 end:0x00000A48
 
-boss_fdogD_44.c:
-	.text       start:0x0001C4A0 end:0x0001CF48
-	.rodata     start:0x00000A48 end:0x00000A80
-
-boss_fdogD_45.c:
-	.text       start:0x0001CFBC end:0x0001D000
-	.rodata     start:0x00000A80 end:0x00000A88
+OBJECT/o_itemboxair.c:
+	.text       start:0x0001C3CC end:0x0001D074
+	.rodata     start:0x00000A48 end:0x00000A88
+	.data       start:0x000269D8 end:0x00026A58
 
 boss_fdogD_46.c:
 	.text       start:0x0001D1B8 end:0x0001DC18

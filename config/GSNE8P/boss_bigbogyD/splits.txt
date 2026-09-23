@@ -175,13 +175,10 @@ boss_bigbogyD_43.c:
 	.text       start:0x0002833C end:0x0002840C
 	.rodata     start:0x00001248 end:0x00001250
 
-boss_bigbogyD_44.c:
-	.text       start:0x00028690 end:0x00029138
-	.rodata     start:0x00001250 end:0x00001288
-
-boss_bigbogyD_45.c:
-	.text       start:0x000291AC end:0x000291F0
-	.rodata     start:0x00001288 end:0x00001290
+OBJECT/o_itemboxair.c:
+	.text       start:0x000285BC end:0x00029264
+	.rodata     start:0x00001250 end:0x00001290
+	.data       start:0x000540D8 end:0x00054158
 
 boss_bigbogyD_46.c:
 	.text       start:0x000293A8 end:0x00029E08

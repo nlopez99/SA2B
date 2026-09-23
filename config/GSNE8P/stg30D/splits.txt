@@ -243,13 +243,10 @@ stg30D_60.c:
 	.text       start:0x00025BB8 end:0x00025C88
 	.rodata     start:0x00000B38 end:0x00000B40
 
-stg30D_61.c:
-	.text       start:0x00025F0C end:0x000269B4
-	.rodata     start:0x00000B40 end:0x00000B78
-
-stg30D_62.c:
-	.text       start:0x00026A28 end:0x00026A6C
-	.rodata     start:0x00000B78 end:0x00000B80
+OBJECT/o_itemboxair.c:
+	.text       start:0x00025E38 end:0x00026AE0
+	.rodata     start:0x00000B40 end:0x00000B80
+	.data       start:0x000D1A38 end:0x000D1AB8
 
 stg30D_63.c:
 	.text       start:0x00026C24 end:0x00027684
