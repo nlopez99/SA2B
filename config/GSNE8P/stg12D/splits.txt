@@ -372,9 +372,11 @@ ENEMY/e_bomb.c:
 	.data       start:0x0009BB58 end:0x0009CA50
 	.bss        start:0x00000DF8 end:0x00000E00
 
-stg12D_90.c:
+ENEMY/e_capturingbullet.c:
 	.text       start:0x00043AB8 end:0x00044A58
 	.rodata     start:0x00001468 end:0x000014C0
+	.data       start:0x0009D7D8 end:0x0009D830
+	.bss        start:0x00000E00 end:0x00000E08
 
 ENEMY/e_jet.c:
 	.text       start:0x00044A58 end:0x00044FC8

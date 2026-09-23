@@ -256,9 +256,11 @@ ENEMY/e_bomb.c:
 	.data       start:0x0005E438 end:0x0005F330
 	.bss        start:0x00000C68 end:0x00000C70
 
-boss_hotshotD_64.c:
+ENEMY/e_capturingbullet.c:
 	.text       start:0x00036468 end:0x00037408
 	.rodata     start:0x00001360 end:0x000013B8
+	.data       start:0x000600B8 end:0x00060110
+	.bss        start:0x00000C70 end:0x00000C78
 
 ENEMY/e_jet.c:
 	.text       start:0x00037408 end:0x00037978

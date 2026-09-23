@@ -261,9 +261,11 @@ ENEMY/e_bomb.c:
 	.data       start:0x000551D8 end:0x000560D0
 	.bss        start:0x00000EA0 end:0x00000EA8
 
-boss_fdogD_65.c:
+ENEMY/e_capturingbullet.c:
 	.text       start:0x00033FD8 end:0x00034F78
 	.rodata     start:0x000010F8 end:0x00001150
+	.data       start:0x00056E58 end:0x00056EB0
+	.bss        start:0x00000EA8 end:0x00000EB0
 
 ENEMY/e_jet.c:
 	.text       start:0x00034F78 end:0x000354E8

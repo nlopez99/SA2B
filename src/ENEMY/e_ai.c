@@ -116,8 +116,8 @@ extern NJS_CNK_MODEL *_rename_e_ai_broken_models[];
 extern enemy_action _rename_e_ai_actions[];
 
 void _rename_PutDustCircle(NJS_POINT3 *pos, Float rad, Float spd, Sint32 num);
-void _rename_EnemyCapturingBulletLoadTexture(void);
-void _rename_CreateEnemyCapturingBullet(task *tp, NJS_VECTOR *spd,
+void EnemyCapturingBulletLoadTexture(void);
+void CreateEnemyCapturingBullet(task *tp, NJS_VECTOR *spd,
                                         NJS_POINT3 *pos);
 void EnemyJetLoadTexture(void);
 void CreateEnemyJet(task *tp, Sint32 type, NJS_POINT3 *pos,
@@ -222,7 +222,7 @@ static void EnemyAiInit(task *tp, taskwk *twp) {
     ewp->shot_spd = twp->scl.y;
     ewp->mtn.object = &_rename_e_ai_object;
     EnemyBulletLoadTexture();
-    _rename_EnemyCapturingBulletLoadTexture();
+    EnemyCapturingBulletLoadTexture();
   } else if (InRange(twp->smode, AI_LASER, AI_LASER_CHASE) ||
              twp->smode == AI_BIG || twp->smode == AI_HIDE_LASER) {
     ewp->shot_num = twp->ang.x & 0xFF;
@@ -709,7 +709,7 @@ static void EnemyAiShotCapture(task *tp, taskwk *twp, enemywk *ewp) {
   spd.z = 0.0f;
   EnemyAiAim(twp, &pos, &spd);
 
-  _rename_CreateEnemyCapturingBullet(tp, &spd, &pos);
+  CreateEnemyCapturingBullet(tp, &spd, &pos);
 }
 
 static void EnemyAiDestructor(task *tp) {

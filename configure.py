@@ -718,6 +718,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_emerald.c"),
             Object(Matching, "OBJECT/o_switch.c"),
             Object(Matching, "ENEMY/e_ai.c"),
+            Object(Matching, "ENEMY/e_capturingbullet.c"),
             Object(Matching, "ENEMY/e_jet.c"),
             Object(Matching, "ENEMY/e_light.c"),
             Object(Matching, "OBJECT/o_dmyobj.c"),
