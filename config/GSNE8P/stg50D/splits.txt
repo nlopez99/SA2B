@@ -211,9 +211,10 @@ stg50D_52.c:
 	.text       start:0x0001D808 end:0x0001E22C
 	.rodata     start:0x00000A38 end:0x00000A58
 
-stg50D_53.c:
-	.text       start:0x0001E280 end:0x0001EC00
+OBJECT/o_effobj0.c:
+	.text       start:0x0001E22C end:0x0001EC00
 	.rodata     start:0x00000A58 end:0x00000A88
+	.data       start:0x000362C8 end:0x00036348
 
 OBJECT/o_emerald.c:
 	.text       start:0x0001EC00 end:0x00022118

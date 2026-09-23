@@ -215,9 +215,10 @@ stg04D_53.c:
 	.text       start:0x0001D6FC end:0x0001E120
 	.rodata     start:0x00000A08 end:0x00000A28
 
-stg04D_54.c:
-	.text       start:0x0001E174 end:0x0001EAF4
+OBJECT/o_effobj0.c:
+	.text       start:0x0001E120 end:0x0001EAF4
 	.rodata     start:0x00000A28 end:0x00000A58
+	.data       start:0x0007F2A8 end:0x0007F328
 
 OBJECT/o_emerald.c:
 	.text       start:0x0001EAF4 end:0x00021904

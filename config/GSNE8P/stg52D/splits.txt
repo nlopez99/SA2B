@@ -226,9 +226,10 @@ stg52D_55.c:
 	.text       start:0x0002899C end:0x000293C0
 	.rodata     start:0x00000B80 end:0x00000BA0
 
-stg52D_56.c:
-	.text       start:0x00029414 end:0x00029D94
+OBJECT/o_effobj0.c:
+	.text       start:0x000293C0 end:0x00029D94
 	.rodata     start:0x00000BA0 end:0x00000BD0
+	.data       start:0x00184C08 end:0x00184C88
 
 OBJECT/o_emerald.c:
 	.text       start:0x00029D94 end:0x0002CBA4

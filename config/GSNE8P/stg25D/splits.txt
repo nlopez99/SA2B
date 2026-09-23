@@ -287,9 +287,10 @@ stg25D_71.c:
 	.text       start:0x00026C14 end:0x00027638
 	.rodata     start:0x00000D18 end:0x00000D38
 
-stg25D_72.c:
-	.text       start:0x0002768C end:0x0002800C
+OBJECT/o_effobj0.c:
+	.text       start:0x00027638 end:0x0002800C
 	.rodata     start:0x00000D38 end:0x00000D68
+	.data       start:0x000DA0A0 end:0x000DA120
 
 stg25D_73.c:
 	.text       start:0x0002800C end:0x0002B1FC

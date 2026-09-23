@@ -222,9 +222,10 @@ stg15D_54.c:
 	.text       start:0x0001D164 end:0x0001DD40
 	.rodata     start:0x00000A78 end:0x00000A98
 
-stg15D_55.c:
-	.text       start:0x0001DD94 end:0x0001E714
+OBJECT/o_effobj0.c:
+	.text       start:0x0001DD40 end:0x0001E714
 	.rodata     start:0x00000A98 end:0x00000AC8
+	.data       start:0x0003F748 end:0x0003F7C8
 
 OBJECT/o_emerald.c:
 	.text       start:0x0001E714 end:0x00021524

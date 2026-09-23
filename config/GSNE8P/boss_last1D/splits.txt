@@ -230,9 +230,10 @@ boss_last1D_57.c:
 	.text       start:0x00020040 end:0x00020A64
 	.rodata     start:0x00000FE8 end:0x00001008
 
-boss_last1D_58.c:
-	.text       start:0x00020AB8 end:0x00021438
+OBJECT/o_effobj0.c:
+	.text       start:0x00020A64 end:0x00021438
 	.rodata     start:0x00001008 end:0x00001038
+	.data       start:0x000B58A8 end:0x000B5928
 
 OBJECT/o_emerald.c:
 	.text       start:0x00021438 end:0x00024248

@@ -235,9 +235,10 @@ stg10D_58.c:
 	.text       start:0x0002214C end:0x00022B70
 	.rodata     start:0x00000B48 end:0x00000B68
 
-stg10D_59.c:
-	.text       start:0x00022BC4 end:0x00023544
+OBJECT/o_effobj0.c:
+	.text       start:0x00022B70 end:0x00023544
 	.rodata     start:0x00000B68 end:0x00000B98
+	.data       start:0x00164948 end:0x001649C8
 
 OBJECT/o_emerald.c:
 	.text       start:0x00023544 end:0x00026354

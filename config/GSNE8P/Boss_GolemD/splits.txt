@@ -191,9 +191,10 @@ Boss_GolemD_47.c:
 	.text       start:0x000204A8 end:0x00020ECC
 	.rodata     start:0x000011A8 end:0x000011C8
 
-Boss_GolemD_48.c:
-	.text       start:0x00020F20 end:0x000218A0
+OBJECT/o_effobj0.c:
+	.text       start:0x00020ECC end:0x000218A0
 	.rodata     start:0x000011C8 end:0x000011F8
+	.data       start:0x000D7F68 end:0x000D7FE8
 
 OBJECT/o_emerald.c:
 	.text       start:0x000218A0 end:0x000246B0

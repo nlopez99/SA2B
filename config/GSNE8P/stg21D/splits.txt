@@ -271,9 +271,10 @@ OBJECT/o_dmyobj.c:
 	.rodata     start:0x00000AB8 end:0x00000AD8
 	.bss        start:0x00000CF0 end:0x00000CF8
 
-stg21D_67.c:
-	.text       start:0x00020070 end:0x000209F0
+OBJECT/o_effobj0.c:
+	.text       start:0x0002001C end:0x000209F0
 	.rodata     start:0x00000AD8 end:0x00000B08
+	.data       start:0x00079500 end:0x00079580
 
 OBJECT/o_emerald.c:
 	.text       start:0x000209F0 end:0x00023800

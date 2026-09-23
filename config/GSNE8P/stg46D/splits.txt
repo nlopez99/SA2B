@@ -251,9 +251,10 @@ stg46D_62.c:
 	.text       start:0x0001D89C end:0x0001E2C0
 	.rodata     start:0x00000AB8 end:0x00000AD8
 
-stg46D_63.c:
-	.text       start:0x0001E314 end:0x0001EC94
+OBJECT/o_effobj0.c:
+	.text       start:0x0001E2C0 end:0x0001EC94
 	.rodata     start:0x00000AD8 end:0x00000B08
+	.data       start:0x00065D48 end:0x00065DC8
 
 OBJECT/o_emerald.c:
 	.text       start:0x0001EC94 end:0x00022068

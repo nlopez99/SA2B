@@ -275,9 +275,10 @@ stg59D_68.c:
 	.text       start:0x00026C2C end:0x00027650
 	.rodata     start:0x00000D18 end:0x00000D38
 
-stg59D_69.c:
-	.text       start:0x000276A4 end:0x00028024
+OBJECT/o_effobj0.c:
+	.text       start:0x00027650 end:0x00028024
 	.rodata     start:0x00000D38 end:0x00000D68
+	.data       start:0x000B7820 end:0x000B78A0
 
 stg59D_70.c:
 	.text       start:0x00028024 end:0x0002B214

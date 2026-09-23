@@ -227,9 +227,10 @@ stg07D_56.c:
 	.text       start:0x00020010 end:0x00020A34
 	.rodata     start:0x00000B10 end:0x00000B30
 
-stg07D_57.c:
-	.text       start:0x00020A88 end:0x00021408
+OBJECT/o_effobj0.c:
+	.text       start:0x00020A34 end:0x00021408
 	.rodata     start:0x00000B30 end:0x00000B60
+	.data       start:0x00050BE8 end:0x00050C68
 
 OBJECT/o_emerald.c:
 	.text       start:0x00021408 end:0x000247DC

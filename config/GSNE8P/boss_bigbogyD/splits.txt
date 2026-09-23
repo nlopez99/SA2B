@@ -146,9 +146,10 @@ boss_bigbogyD_36.c:
 	.text       start:0x00021384 end:0x00021DA8
 	.rodata     start:0x000010F0 end:0x00001110
 
-boss_bigbogyD_37.c:
-	.text       start:0x00021DFC end:0x0002277C
+OBJECT/o_effobj0.c:
+	.text       start:0x00021DA8 end:0x0002277C
 	.rodata     start:0x00001110 end:0x00001140
+	.data       start:0x0004A528 end:0x0004A5A8
 
 OBJECT/o_emerald.c:
 	.text       start:0x0002277C end:0x0002558C

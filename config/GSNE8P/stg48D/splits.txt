@@ -255,9 +255,10 @@ stg48D_62.c:
 	.text       start:0x0001E9C4 end:0x0001F3E8
 	.rodata     start:0x00000AD0 end:0x00000AF0
 
-stg48D_63.c:
-	.text       start:0x0001F43C end:0x0001FDBC
+OBJECT/o_effobj0.c:
+	.text       start:0x0001F3E8 end:0x0001FDBC
 	.rodata     start:0x00000AF0 end:0x00000B20
+	.data       start:0x00109448 end:0x001094C8
 
 OBJECT/o_emerald.c:
 	.text       start:0x0001FDBC end:0x00022BCC

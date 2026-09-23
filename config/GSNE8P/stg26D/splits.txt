@@ -259,9 +259,10 @@ stg26D_64.c:
 	.text       start:0x000223D0 end:0x00022DF4
 	.rodata     start:0x00000B40 end:0x00000B60
 
-stg26D_65.c:
-	.text       start:0x00022E48 end:0x000237C8
+OBJECT/o_effobj0.c:
+	.text       start:0x00022DF4 end:0x000237C8
 	.rodata     start:0x00000B60 end:0x00000B90
+	.data       start:0x000A2840 end:0x000A28C0
 
 stg26D_66.c:
 	.text       start:0x000237C8 end:0x000269B8

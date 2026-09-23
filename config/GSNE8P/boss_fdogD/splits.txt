@@ -145,9 +145,10 @@ boss_fdogD_36.c:
 	.text       start:0x00015194 end:0x00015BB8
 	.rodata     start:0x000008E8 end:0x00000908
 
-boss_fdogD_37.c:
-	.text       start:0x00015C0C end:0x0001658C
+OBJECT/o_effobj0.c:
+	.text       start:0x00015BB8 end:0x0001658C
 	.rodata     start:0x00000908 end:0x00000938
+	.data       start:0x0001CE28 end:0x0001CEA8
 
 OBJECT/o_emerald.c:
 	.text       start:0x0001658C end:0x0001939C

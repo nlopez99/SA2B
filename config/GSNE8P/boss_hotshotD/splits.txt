@@ -142,9 +142,10 @@ boss_hotshotD_35.c:
 	.text       start:0x00017624 end:0x00018048
 	.rodata     start:0x00000B50 end:0x00000B70
 
-boss_hotshotD_36.c:
-	.text       start:0x0001809C end:0x00018A1C
+OBJECT/o_effobj0.c:
+	.text       start:0x00018048 end:0x00018A1C
 	.rodata     start:0x00000B70 end:0x00000BA0
+	.data       start:0x00026088 end:0x00026108
 
 OBJECT/o_emerald.c:
 	.text       start:0x00018A1C end:0x0001B82C

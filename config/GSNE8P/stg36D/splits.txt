@@ -163,9 +163,10 @@ stg36D_39.c:
 	.text       start:0x00028120 end:0x00028CFC
 	.rodata     start:0x00000CB8 end:0x00000CD8
 
-stg36D_40.c:
-	.text       start:0x00028D50 end:0x000296D0
+OBJECT/o_effobj0.c:
+	.text       start:0x00028CFC end:0x000296D0
 	.rodata     start:0x00000CD8 end:0x00000D08
+	.data       start:0x0007D768 end:0x0007D7E8
 
 OBJECT/o_goalring.c:
 	.text       start:0x000296D0 end:0x0002A9EC

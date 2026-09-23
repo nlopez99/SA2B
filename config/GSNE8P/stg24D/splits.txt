@@ -223,9 +223,10 @@ stg24D_54.c:
 	.text       start:0x00024608 end:0x000251E4
 	.rodata     start:0x00000CB8 end:0x00000CD8
 
-stg24D_55.c:
-	.text       start:0x00025238 end:0x00025BB8
+OBJECT/o_effobj0.c:
+	.text       start:0x000251E4 end:0x00025BB8
 	.rodata     start:0x00000CD8 end:0x00000D08
+	.data       start:0x00084668 end:0x000846E8
 
 OBJECT/o_emerald.c:
 	.text       start:0x00025BB8 end:0x000289C8
