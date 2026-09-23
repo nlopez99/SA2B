@@ -105,7 +105,7 @@ extern NJS_CNK_MODEL *lbl_801857F0[8];
 extern NJS_MATRIX nj_unit_matrix;
 
 extern void o_ring_3(void);
-extern void _rename_CreateSpark(Sint32 num, NJS_POINT3 *pos, NJS_VECTOR *spd);
+extern void CreateSpark(Sint32 num, NJS_POINT3 *pos, NJS_VECTOR *spd);
 
 // ^ extern
 // v in this file
@@ -280,7 +280,7 @@ static void EnemyBombCreateExplosion(taskwk *twp, enemywk *ewp) {
     big_spd.y = 0.0f;
     big_spd.z = 0.0f;
     fn_800E29BC(&twp->pos, &big_spd, 25.0f);
-    _rename_CreateSpark(80, &twp->pos, NULL);
+    CreateSpark(80, &twp->pos, NULL);
     fn_80016A1C(48, &twp->pos, &twp->ang);
     fn_8006B7EC(0x401A, NULL, 0, 0x7F, &twp->pos);
     if (!lbl_801CC168.TWO_PLAYER) {
@@ -297,7 +297,7 @@ static void EnemyBombCreateExplosion(taskwk *twp, enemywk *ewp) {
     spd.y = 0.0f;
     spd.z = 0.0f;
     fn_800E29BC(&twp->pos, &spd, 15.0f);
-    _rename_CreateSpark(48, &twp->pos, NULL);
+    CreateSpark(48, &twp->pos, NULL);
     fn_80016A1C(16, &twp->pos, &twp->ang);
     fn_8006B7EC(0x4019, NULL, 0, 0x5A, &twp->pos);
     if (twp->smode == ENEMYBOMB_PILLAR) {

@@ -341,13 +341,10 @@ OBJECT/o_wsmmls.c:
 	.text       start:0x0004175C end:0x00041A14
 	.rodata     start:0x00001318 end:0x00001320
 
-stg43D_84.c:
-	.text       start:0x00041A14 end:0x00041BA4
-	.rodata     start:0x00001320 end:0x00001328
-
-stg43D_85.c:
-	.text       start:0x00041BA4 end:0x00041FC8
-	.rodata     start:0x00001328 end:0x00001348
+EFFECT/ef_spark.c:
+	.text       start:0x00041A14 end:0x00041FC8
+	.rodata     start:0x00001320 end:0x00001348
+	.data       start:0x00099410 end:0x00099420
 
 ENEMY/e_bomb.c:
 	.text       start:0x00041FC8 end:0x00043A44

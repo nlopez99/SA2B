@@ -48,7 +48,7 @@ extern void njEnableFog(void);
 extern void gjSetFog(void);
 
 extern void _rename_CreateSmoke(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl);
-extern void _rename_CreateSpark(Sint32 num, NJS_POINT3 *pos, NJS_VECTOR *spd);
+extern void CreateSpark(Sint32 num, NJS_POINT3 *pos, NJS_VECTOR *spd);
 
 // ^ extern
 // v in this file
@@ -286,7 +286,7 @@ static void EnemyBulletNormal(taskwk *twp, enemywk *ewp) {
     spd.x = 0.1f * ewp->spd.x;
     spd.y = 0.1f * ewp->spd.y;
     spd.z = 0.1f * ewp->spd.z;
-    _rename_CreateSpark(16, &twp->pos, &spd);
+    CreateSpark(16, &twp->pos, &spd);
     SetExplode(twp);
   }
   if (!lbl_801CC168._37) {
@@ -462,6 +462,6 @@ void CreateEnemyBullet(task *ptp, Sint32 smode, NJS_VECTOR *spd,
   v.x = 0.1f * spd->x;
   v.y = 0.1f * spd->y;
   v.z = 0.1f * spd->z;
-  _rename_CreateSpark(8, pos, &v);
+  CreateSpark(8, pos, &v);
   fn_8006B7EC(0x4000, NULL, 0, 0x7F, pos);
 }

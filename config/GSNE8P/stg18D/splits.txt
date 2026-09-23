@@ -407,13 +407,10 @@ OBJECT/o_wsmmls.c:
 	.text       start:0x0004A380 end:0x0004A638
 	.rodata     start:0x00001630 end:0x00001638
 
-stg18D_101.c:
-	.text       start:0x0004A638 end:0x0004A7C8
-	.rodata     start:0x00001638 end:0x00001640
-
-stg18D_102.c:
-	.text       start:0x0004A7C8 end:0x0004ABEC
-	.rodata     start:0x00001640 end:0x00001660
+EFFECT/ef_spark.c:
+	.text       start:0x0004A638 end:0x0004ABEC
+	.rodata     start:0x00001638 end:0x00001660
+	.data       start:0x0011D4B0 end:0x0011D4C0
 
 ENEMY/e_bomb.c:
 	.text       start:0x0004ABEC end:0x0004C668

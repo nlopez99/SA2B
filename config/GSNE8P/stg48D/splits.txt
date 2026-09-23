@@ -381,13 +381,10 @@ OBJECT/o_udreel.c:
 	.data       start:0x00148308 end:0x001483F0
 	.bss        start:0x00000B50 end:0x00000B58
 
-stg48D_94.c:
-	.text       start:0x00042E54 end:0x00042FE4
-	.rodata     start:0x00001408 end:0x00001410
-
-stg48D_95.c:
-	.text       start:0x00042FE4 end:0x00043408
-	.rodata     start:0x00001410 end:0x00001430
+EFFECT/ef_spark.c:
+	.text       start:0x00042E54 end:0x00043408
+	.rodata     start:0x00001408 end:0x00001430
+	.data       start:0x001483F0 end:0x00148400
 
 ENEMY/e_bomb.c:
 	.text       start:0x00043408 end:0x00044E84

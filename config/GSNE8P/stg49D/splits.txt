@@ -365,13 +365,10 @@ OBJECT/o_modmod.c:
 	.text       start:0x000466D4 end:0x00046834
 	.rodata     start:0x000014D0 end:0x000014D8
 
-stg49D_91.c:
-	.text       start:0x00046834 end:0x000469C4
-	.rodata     start:0x000014D8 end:0x000014E0
-
-stg49D_92.c:
-	.text       start:0x000469C4 end:0x00046DE8
-	.rodata     start:0x000014E0 end:0x00001500
+EFFECT/ef_spark.c:
+	.text       start:0x00046834 end:0x00046DE8
+	.rodata     start:0x000014D8 end:0x00001500
+	.data       start:0x00085028 end:0x00085038
 
 ENEMY/e_bomb.c:
 	.text       start:0x00046DE8 end:0x00048864

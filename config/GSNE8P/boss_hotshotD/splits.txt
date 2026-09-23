@@ -243,13 +243,10 @@ OBJECT/o_modmod.c:
 	.text       start:0x000342D8 end:0x00034438
 	.rodata     start:0x00001298 end:0x000012A0
 
-boss_hotshotD_61.c:
-	.text       start:0x00034438 end:0x000345C8
-	.rodata     start:0x000012A0 end:0x000012A8
-
-boss_hotshotD_62.c:
-	.text       start:0x000345C8 end:0x000349EC
-	.rodata     start:0x000012A8 end:0x000012C8
+EFFECT/ef_spark.c:
+	.text       start:0x00034438 end:0x000349EC
+	.rodata     start:0x000012A0 end:0x000012C8
+	.data       start:0x0005E428 end:0x0005E438
 
 ENEMY/e_bomb.c:
 	.text       start:0x000349EC end:0x00036468

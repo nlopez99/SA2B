@@ -409,13 +409,10 @@ OBJECT/o_modmod.c:
 	.text       start:0x00046C5C end:0x00046DBC
 	.rodata     start:0x000014A8 end:0x000014B0
 
-stg32D_102.c:
-	.text       start:0x00046DBC end:0x00046F4C
-	.rodata     start:0x000014B0 end:0x000014B8
-
-stg32D_103.c:
-	.text       start:0x00046F4C end:0x00047370
-	.rodata     start:0x000014B8 end:0x000014D8
+EFFECT/ef_spark.c:
+	.text       start:0x00046DBC end:0x00047370
+	.rodata     start:0x000014B0 end:0x000014D8
+	.data       start:0x000A7A08 end:0x000A7A18
 
 ENEMY/e_bomb.c:
 	.text       start:0x00047370 end:0x00048DEC

@@ -415,13 +415,10 @@ OBJECT/o_modmod.c:
 	.text       start:0x0004DC20 end:0x0004DD80
 	.rodata     start:0x000016F8 end:0x00001700
 
-stg59D_103.c:
-	.text       start:0x0004DD80 end:0x0004DF10
-	.rodata     start:0x00001700 end:0x00001708
-
-stg59D_104.c:
-	.text       start:0x0004DF10 end:0x0004E334
-	.rodata     start:0x00001708 end:0x00001728
+EFFECT/ef_spark.c:
+	.text       start:0x0004DD80 end:0x0004E334
+	.rodata     start:0x00001700 end:0x00001728
+	.data       start:0x000F7328 end:0x000F7338
 
 ENEMY/e_bomb.c:
 	.text       start:0x0004E334 end:0x0004FDB0

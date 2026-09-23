@@ -349,13 +349,10 @@ OBJECT/o_modmod.c:
 	.text       start:0x000471F4 end:0x00047354
 	.rodata     start:0x00001558 end:0x00001560
 
-stg58D_87.c:
-	.text       start:0x00047354 end:0x000474E4
-	.rodata     start:0x00001560 end:0x00001568
-
-stg58D_88.c:
-	.text       start:0x000474E4 end:0x00047908
-	.rodata     start:0x00001568 end:0x00001588
+EFFECT/ef_spark.c:
+	.text       start:0x00047354 end:0x00047908
+	.rodata     start:0x00001560 end:0x00001588
+	.data       start:0x0006B468 end:0x0006B478
 
 ENEMY/e_bomb.c:
 	.text       start:0x00047908 end:0x00049384

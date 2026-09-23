@@ -383,13 +383,10 @@ OBJECT/o_udreel.c:
 	.data       start:0x000A13C8 end:0x000A14B0
 	.bss        start:0x00000D90 end:0x00000D98
 
-stg46D_95.c:
-	.text       start:0x000404AC end:0x0004063C
-	.rodata     start:0x000013C0 end:0x000013C8
-
-stg46D_96.c:
-	.text       start:0x0004063C end:0x00040A60
-	.rodata     start:0x000013C8 end:0x000013E8
+EFFECT/ef_spark.c:
+	.text       start:0x000404AC end:0x00040A60
+	.rodata     start:0x000013C0 end:0x000013E8
+	.data       start:0x000A14B0 end:0x000A14C0
 
 ENEMY/e_bomb.c:
 	.text       start:0x00040A60 end:0x000424DC
