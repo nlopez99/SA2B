@@ -204,13 +204,11 @@ stg31D_51.c:
 	.text       start:0x0001DFE4 end:0x0001EB50
 	.rodata     start:0x00000988 end:0x000009B0
 
-stg31D_52.c:
-	.text       start:0x0001EC8C end:0x0001FA78
-	.rodata     start:0x000009B0 end:0x000009E0
-
-stg31D_53.c:
-	.text       start:0x0001FA78 end:0x0001FB48
-	.rodata     start:0x000009E0 end:0x000009E8
+OBJECT/o_itembox.c:
+	.text       start:0x0001EB50 end:0x0001FCF8
+	.rodata     start:0x000009B0 end:0x000009E8
+	.data       start:0x00096E68 end:0x00096ED0
+	.bss        start:0x00000B08 end:0x00000B10
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x0001FCF8 end:0x000209A0

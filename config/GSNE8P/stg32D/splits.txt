@@ -288,13 +288,11 @@ stg32D_72.c:
 	.text       start:0x00026CCC end:0x00027838
 	.rodata     start:0x00000C40 end:0x00000C68
 
-stg32D_73.c:
-	.text       start:0x00027974 end:0x00028760
-	.rodata     start:0x00000C68 end:0x00000C98
-
-stg32D_74.c:
-	.text       start:0x00028760 end:0x00028830
-	.rodata     start:0x00000C98 end:0x00000CA0
+OBJECT/o_itembox.c:
+	.text       start:0x00027838 end:0x000289E0
+	.rodata     start:0x00000C68 end:0x00000CA0
+	.data       start:0x00071D68 end:0x00071DD0
+	.bss        start:0x00000D60 end:0x00000D68
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x000289E0 end:0x00029688

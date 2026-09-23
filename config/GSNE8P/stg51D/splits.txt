@@ -240,13 +240,11 @@ stg51D_59.c:
 	.text       start:0x0002384C end:0x000243B8
 	.rodata     start:0x00000BB0 end:0x00000BD8
 
-stg51D_60.c:
-	.text       start:0x000244F4 end:0x000252E0
-	.rodata     start:0x00000BD8 end:0x00000C08
-
-stg51D_61.c:
-	.text       start:0x000252E0 end:0x000253B0
-	.rodata     start:0x00000C08 end:0x00000C10
+OBJECT/o_itembox.c:
+	.text       start:0x000243B8 end:0x00025560
+	.rodata     start:0x00000BD8 end:0x00000C10
+	.data       start:0x00046E28 end:0x00046E90
+	.bss        start:0x00000D98 end:0x00000DA0
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x00025560 end:0x00026208

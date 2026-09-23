@@ -244,13 +244,11 @@ stg09D_61.c:
 	.text       start:0x00022548 end:0x000230B4
 	.rodata     start:0x00000BA8 end:0x00000BD0
 
-stg09D_62.c:
-	.text       start:0x000231F0 end:0x00023FDC
-	.rodata     start:0x00000BD0 end:0x00000C00
-
-stg09D_63.c:
-	.text       start:0x00023FDC end:0x000240AC
-	.rodata     start:0x00000C00 end:0x00000C08
+OBJECT/o_itembox.c:
+	.text       start:0x000230B4 end:0x0002425C
+	.rodata     start:0x00000BD0 end:0x00000C08
+	.data       start:0x0005EAE8 end:0x0005EB50
+	.bss        start:0x00000D10 end:0x00000D18
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x0002425C end:0x00024F04

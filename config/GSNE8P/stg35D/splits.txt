@@ -192,13 +192,11 @@ stg35D_47.c:
 	.text       start:0x0002C7C4 end:0x0002D330
 	.rodata     start:0x00000DF8 end:0x00000E20
 
-stg35D_48.c:
-	.text       start:0x0002D46C end:0x0002E258
-	.rodata     start:0x00000E20 end:0x00000E50
-
-stg35D_49.c:
-	.text       start:0x0002E258 end:0x0002E328
-	.rodata     start:0x00000E50 end:0x00000E58
+OBJECT/o_itembox.c:
+	.text       start:0x0002D330 end:0x0002E4D8
+	.rodata     start:0x00000E20 end:0x00000E58
+	.data       start:0x00091948 end:0x000919B0
+	.bss        start:0x00000B28 end:0x00000B30
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x0002E4D8 end:0x0002F180

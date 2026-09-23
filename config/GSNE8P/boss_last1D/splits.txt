@@ -248,13 +248,11 @@ boss_last1D_62.c:
 	.text       start:0x00025564 end:0x000260D0
 	.rodata     start:0x000010E8 end:0x00001110
 
-boss_last1D_63.c:
-	.text       start:0x0002620C end:0x00026FF8
-	.rodata     start:0x00001110 end:0x00001140
-
-boss_last1D_64.c:
-	.text       start:0x00026FF8 end:0x000270C8
-	.rodata     start:0x00001140 end:0x00001148
+OBJECT/o_itembox.c:
+	.text       start:0x000260D0 end:0x00027278
+	.rodata     start:0x00001110 end:0x00001148
+	.data       start:0x000BE9C8 end:0x000BEA30
+	.bss        start:0x00000F50 end:0x00000F58
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x00027278 end:0x00027F20

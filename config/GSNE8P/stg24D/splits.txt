@@ -244,13 +244,11 @@ stg24D_60.c:
 	.text       start:0x0002A7CC end:0x0002B338
 	.rodata     start:0x00000DE8 end:0x00000E10
 
-stg24D_61.c:
-	.text       start:0x0002B474 end:0x0002C260
-	.rodata     start:0x00000E10 end:0x00000E40
-
-stg24D_62.c:
-	.text       start:0x0002C260 end:0x0002C330
-	.rodata     start:0x00000E40 end:0x00000E48
+OBJECT/o_itembox.c:
+	.text       start:0x0002B338 end:0x0002C4E0
+	.rodata     start:0x00000E10 end:0x00000E48
+	.data       start:0x0008E668 end:0x0008E6D0
+	.bss        start:0x00000D28 end:0x00000D30
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x0002C4E0 end:0x0002D188

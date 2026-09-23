@@ -180,13 +180,11 @@ boss_bigfootD_45.c:
 	.text       start:0x000245CC end:0x00025138
 	.rodata     start:0x00000D80 end:0x00000DA8
 
-boss_bigfootD_46.c:
-	.text       start:0x00025274 end:0x00026060
-	.rodata     start:0x00000DA8 end:0x00000DD8
-
-boss_bigfootD_47.c:
-	.text       start:0x00026060 end:0x00026130
-	.rodata     start:0x00000DD8 end:0x00000DE0
+OBJECT/o_itembox.c:
+	.text       start:0x00025138 end:0x000262E0
+	.rodata     start:0x00000DA8 end:0x00000DE0
+	.data       start:0x00057048 end:0x000570B0
+	.bss        start:0x00000C28 end:0x00000C30
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x000262E0 end:0x00026F88

@@ -236,13 +236,11 @@ stg14D_59.c:
 	.text       start:0x00023428 end:0x00023F94
 	.rodata     start:0x00000B00 end:0x00000B28
 
-stg14D_60.c:
-	.text       start:0x000240D0 end:0x00024EBC
-	.rodata     start:0x00000B28 end:0x00000B58
-
-stg14D_61.c:
-	.text       start:0x00024EBC end:0x00024F8C
-	.rodata     start:0x00000B58 end:0x00000B60
+OBJECT/o_itembox.c:
+	.text       start:0x00023F94 end:0x0002513C
+	.rodata     start:0x00000B28 end:0x00000B60
+	.data       start:0x000D5428 end:0x000D5490
+	.bss        start:0x00000D60 end:0x00000D68
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x0002513C end:0x00025DE4

@@ -256,13 +256,11 @@ stg13D_63.c:
 	.text       start:0x0002EF40 end:0x0002FAAC
 	.rodata     start:0x00000CC8 end:0x00000CF0
 
-stg13D_64.c:
-	.text       start:0x0002FAAC end:0x000309D4
-	.rodata     start:0x00000CF0 end:0x00000D20
-
-stg13D_65.c:
-	.text       start:0x000309D4 end:0x00030AA4
-	.rodata     start:0x00000D20 end:0x00000D28
+OBJECT/o_itembox.c:
+	.text       start:0x0002FAAC end:0x00030C54
+	.rodata     start:0x00000CF0 end:0x00000D28
+	.data       start:0x002216E8 end:0x00221750
+	.bss        start:0x00000D98 end:0x00000DA0
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x00030C54 end:0x000318FC

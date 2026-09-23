@@ -240,13 +240,11 @@ stg12D_59.c:
 	.text       start:0x000238B4 end:0x00024420
 	.rodata     start:0x00000BB0 end:0x00000BD8
 
-stg12D_60.c:
-	.text       start:0x0002455C end:0x00025348
-	.rodata     start:0x00000BD8 end:0x00000C08
-
-stg12D_61.c:
-	.text       start:0x00025348 end:0x00025418
-	.rodata     start:0x00000C08 end:0x00000C10
+OBJECT/o_itembox.c:
+	.text       start:0x00024420 end:0x000255C8
+	.rodata     start:0x00000BD8 end:0x00000C10
+	.data       start:0x00066628 end:0x00066690
+	.bss        start:0x00000D98 end:0x00000DA0
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x000255C8 end:0x00026270

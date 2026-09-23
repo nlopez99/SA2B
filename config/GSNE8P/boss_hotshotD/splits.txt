@@ -160,13 +160,11 @@ boss_hotshotD_40.c:
 	.text       start:0x0001CB48 end:0x0001D6B4
 	.rodata     start:0x00000C50 end:0x00000C78
 
-boss_hotshotD_41.c:
-	.text       start:0x0001D7F0 end:0x0001E5DC
-	.rodata     start:0x00000C78 end:0x00000CA8
-
-boss_hotshotD_42.c:
-	.text       start:0x0001E5DC end:0x0001E6AC
-	.rodata     start:0x00000CA8 end:0x00000CB0
+OBJECT/o_itembox.c:
+	.text       start:0x0001D6B4 end:0x0001E85C
+	.rodata     start:0x00000C78 end:0x00000CB0
+	.data       start:0x0002F1A8 end:0x0002F210
+	.bss        start:0x00000C18 end:0x00000C20
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x0001E85C end:0x0001F504

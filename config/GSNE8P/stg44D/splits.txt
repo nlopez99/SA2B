@@ -260,13 +260,11 @@ stg44D_65.c:
 	.text       start:0x0002578C end:0x000262F8
 	.rodata     start:0x00000BC0 end:0x00000BE8
 
-stg44D_66.c:
-	.text       start:0x00026434 end:0x00027220
-	.rodata     start:0x00000BE8 end:0x00000C18
-
-stg44D_67.c:
-	.text       start:0x00027220 end:0x000272F0
-	.rodata     start:0x00000C18 end:0x00000C20
+OBJECT/o_itembox.c:
+	.text       start:0x000262F8 end:0x000274A0
+	.rodata     start:0x00000BE8 end:0x00000C20
+	.data       start:0x00072AA8 end:0x00072B10
+	.bss        start:0x00001160 end:0x00001168
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x000274A0 end:0x00028148

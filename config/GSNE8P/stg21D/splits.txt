@@ -292,13 +292,11 @@ stg21D_72.c:
 	.text       start:0x0002553C end:0x000260A8
 	.rodata     start:0x00000BE8 end:0x00000C10
 
-stg21D_73.c:
-	.text       start:0x000261E4 end:0x00026FD0
-	.rodata     start:0x00000C10 end:0x00000C40
-
-stg21D_74.c:
-	.text       start:0x00026FD0 end:0x000270A0
-	.rodata     start:0x00000C40 end:0x00000C48
+OBJECT/o_itembox.c:
+	.text       start:0x000260A8 end:0x00027250
+	.rodata     start:0x00000C10 end:0x00000C48
+	.data       start:0x00083508 end:0x00083570
+	.bss        start:0x00000D18 end:0x00000D20
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x00027250 end:0x00027EF8

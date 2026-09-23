@@ -196,13 +196,11 @@ Boss_GolemED_48.c:
 	.text       start:0x00024E68 end:0x000259D4
 	.rodata     start:0x00001200 end:0x00001228
 
-Boss_GolemED_49.c:
-	.text       start:0x00025B10 end:0x000268FC
-	.rodata     start:0x00001228 end:0x00001258
-
-Boss_GolemED_50.c:
-	.text       start:0x000268FC end:0x000269CC
-	.rodata     start:0x00001258 end:0x00001260
+OBJECT/o_itembox.c:
+	.text       start:0x000259D4 end:0x00026B7C
+	.rodata     start:0x00001228 end:0x00001260
+	.data       start:0x000DC5E8 end:0x000DC650
+	.bss        start:0x00000F28 end:0x00000F30
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x00026B7C end:0x00027824

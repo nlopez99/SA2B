@@ -208,13 +208,11 @@ Boss_GolemD_52.c:
 	.text       start:0x000259CC end:0x00026538
 	.rodata     start:0x000012A8 end:0x000012D0
 
-Boss_GolemD_53.c:
-	.text       start:0x00026674 end:0x00027460
-	.rodata     start:0x000012D0 end:0x00001300
-
-Boss_GolemD_54.c:
-	.text       start:0x00027460 end:0x00027530
-	.rodata     start:0x00001300 end:0x00001308
+OBJECT/o_itembox.c:
+	.text       start:0x00026538 end:0x000276E0
+	.rodata     start:0x000012D0 end:0x00001308
+	.data       start:0x000E1088 end:0x000E10F0
+	.bss        start:0x00001228 end:0x00001230
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x000276E0 end:0x00028388

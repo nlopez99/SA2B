@@ -220,13 +220,11 @@ stg55D_55.c:
 	.text       start:0x00024590 end:0x000250FC
 	.rodata     start:0x00000BE8 end:0x00000C10
 
-stg55D_56.c:
-	.text       start:0x00025238 end:0x00026024
-	.rodata     start:0x00000C10 end:0x00000C40
-
-stg55D_57.c:
-	.text       start:0x00026024 end:0x000260F4
-	.rodata     start:0x00000C40 end:0x00000C48
+OBJECT/o_itembox.c:
+	.text       start:0x000250FC end:0x000262A4
+	.rodata     start:0x00000C10 end:0x00000C48
+	.data       start:0x000330E8 end:0x00033150
+	.bss        start:0x00000B80 end:0x00000B88
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x000262A4 end:0x00026F4C

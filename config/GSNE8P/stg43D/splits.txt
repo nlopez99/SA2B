@@ -232,13 +232,11 @@ stg43D_57.c:
 	.text       start:0x00023F50 end:0x00024ABC
 	.rodata     start:0x00000B58 end:0x00000B80
 
-stg43D_58.c:
-	.text       start:0x00024BF8 end:0x000259E4
-	.rodata     start:0x00000B80 end:0x00000BB0
-
-stg43D_59.c:
-	.text       start:0x000259E4 end:0x00025AB4
-	.rodata     start:0x00000BB0 end:0x00000BB8
+OBJECT/o_itembox.c:
+	.text       start:0x00024ABC end:0x00025C64
+	.rodata     start:0x00000B80 end:0x00000BB8
+	.data       start:0x00064508 end:0x00064570
+	.bss        start:0x00000D58 end:0x00000D60
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x00025C64 end:0x0002690C
