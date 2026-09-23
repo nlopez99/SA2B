@@ -678,6 +678,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_savepoint.c"),
             Object(Matching, "OBJECT/o_goalring.c"),
             Object(Matching, "OBJECT/o_itemboxballoon.c"),
+            Object(Matching, "OBJECT/o_colli.c"),
             Object(Matching, "EFFECT/ef_dust.c"),
             Object(Matching, "EFFECT/ef_ringsparkle.c"),
             Object(Matching, "EFFECT/ef_rocketthrust.c"),
