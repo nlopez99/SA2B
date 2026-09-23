@@ -440,6 +440,8 @@ stg03D_107.c:
 	.text       start:0x000529F0 end:0x00054A58
 	.rodata     start:0x00001A28 end:0x00001AF8
 
-stg03D_108.c:
-	.text       start:0x00054A94 end:0x00057504
+ENEMY/e_ai.c:
+	.text       start:0x00054A58 end:0x00057504
 	.rodata     start:0x00001AF8 end:0x00001BD0
+	.data       start:0x00152560 end:0x001525C8
+	.bss        start:0x00002E20 end:0x00002E58

@@ -302,9 +302,11 @@ boss_hotshotD_73.c:
 	.text       start:0x0003D4E8 end:0x0003F550
 	.rodata     start:0x00001670 end:0x00001740
 
-boss_hotshotD_74.c:
-	.text       start:0x0003F58C end:0x00041FFC
+ENEMY/e_ai.c:
+	.text       start:0x0003F550 end:0x00041FFC
 	.rodata     start:0x00001740 end:0x00001818
+	.data       start:0x000819B8 end:0x00081A20
+	.bss        start:0x00002CC8 end:0x00002D00
 
 boss_hotshotD_75.c:
 	.text       start:0x00042038 end:0x00044BAC

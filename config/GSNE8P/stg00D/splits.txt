@@ -286,9 +286,11 @@ stg00D_68.c:
 	.text       start:0x00039EB8 end:0x0003BF20
 	.rodata     start:0x00001160 end:0x00001230
 
-stg00D_69.c:
-	.text       start:0x0003BF5C end:0x0003E9CC
+ENEMY/e_ai.c:
+	.text       start:0x0003BF20 end:0x0003E9CC
 	.rodata     start:0x00001230 end:0x00001308
+	.data       start:0x000A6638 end:0x000A66A0
+	.bss        start:0x00002C58 end:0x00002C90
 
 stg00D_70.c:
 	.text       start:0x0003EA08 end:0x0004157C

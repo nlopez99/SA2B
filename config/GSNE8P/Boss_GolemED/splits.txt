@@ -332,9 +332,11 @@ Boss_GolemED_80.c:
 	.text       start:0x00044D24 end:0x00046D8C
 	.rodata     start:0x00001BF8 end:0x00001CC8
 
-Boss_GolemED_81.c:
-	.text       start:0x00046DC8 end:0x00049838
+ENEMY/e_ai.c:
+	.text       start:0x00046D8C end:0x00049838
 	.rodata     start:0x00001CC8 end:0x00001DA0
+	.data       start:0x0012D188 end:0x0012D1F0
+	.bss        start:0x00002FD0 end:0x00003008
 
 Boss_GolemED_82.c:
 	.text       start:0x00049874 end:0x0004C3E8

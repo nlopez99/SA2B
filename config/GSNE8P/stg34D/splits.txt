@@ -398,9 +398,11 @@ stg34D_97.c:
 	.text       start:0x0004DF04 end:0x00054710
 	.rodata     start:0x00001818 end:0x000018F8
 
-stg34D_98.c:
-	.text       start:0x00054B58 end:0x000575C8
+ENEMY/e_ai.c:
+	.text       start:0x00054B1C end:0x000575C8
 	.rodata     start:0x000018F8 end:0x000019D0
+	.data       start:0x001E4740 end:0x001E47A8
+	.bss        start:0x00002C78 end:0x00002CB0
 
 stg34D_99.c:
 	.text       start:0x00057604 end:0x0005A178

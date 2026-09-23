@@ -322,9 +322,11 @@ boss_bigfootD_78.c:
 	.text       start:0x00044F6C end:0x00046FD4
 	.rodata     start:0x000017A0 end:0x00001870
 
-boss_bigfootD_79.c:
-	.text       start:0x00047010 end:0x00049A80
+ENEMY/e_ai.c:
+	.text       start:0x00046FD4 end:0x00049A80
 	.rodata     start:0x00001870 end:0x00001948
+	.data       start:0x000A9858 end:0x000A98C0
+	.bss        start:0x00002CD8 end:0x00002D10
 
 boss_bigfootD_80.c:
 	.text       start:0x00049ABC end:0x0004C630

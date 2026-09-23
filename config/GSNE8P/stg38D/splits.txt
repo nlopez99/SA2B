@@ -398,9 +398,11 @@ stg38D_96.c:
 	.text       start:0x000568BC end:0x00058924
 	.rodata     start:0x00001A10 end:0x00001AE0
 
-stg38D_97.c:
-	.text       start:0x00058960 end:0x0005B3D0
+ENEMY/e_ai.c:
+	.text       start:0x00058924 end:0x0005B3D0
 	.rodata     start:0x00001AE0 end:0x00001BB8
+	.data       start:0x001250D0 end:0x00125138
+	.bss        start:0x000030D0 end:0x00003108
 
 stg38D_98.c:
 	.text       start:0x0005B40C end:0x0005DF80

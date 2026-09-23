@@ -408,9 +408,11 @@ ENEMY/e_kumi.c:
 	.data       start:0x001190E0 end:0x00119228
 	.bss        start:0x00002E08 end:0x00002E20
 
-stg14D_100.c:
-	.text       start:0x0004B660 end:0x0004E0D0
+ENEMY/e_ai.c:
+	.text       start:0x0004B624 end:0x0004E0D0
 	.rodata     start:0x00001710 end:0x000017E8
+	.data       start:0x00128DA8 end:0x00128E10
+	.bss        start:0x00002E20 end:0x00002E58
 
 stg14D_101.c:
 	.text       start:0x0004E10C end:0x0005077C

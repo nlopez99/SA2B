@@ -452,9 +452,11 @@ stg44D_110.c:
 	.text       start:0x00056FE4 end:0x0005904C
 	.rodata     start:0x000019C8 end:0x00001A98
 
-stg44D_111.c:
-	.text       start:0x00059088 end:0x0005BAF8
+ENEMY/e_ai.c:
+	.text       start:0x0005904C end:0x0005BAF8
 	.rodata     start:0x00001A98 end:0x00001B70
+	.data       start:0x000FA2D0 end:0x000FA338
+	.bss        start:0x00003298 end:0x000032D0
 
 stg44D_112.c:
 	.text       start:0x0005BB34 end:0x0005E6A8

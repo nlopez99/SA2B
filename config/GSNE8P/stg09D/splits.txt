@@ -424,9 +424,11 @@ stg09D_103.c:
 	.text       start:0x0004C848 end:0x0004E8B0
 	.rodata     start:0x00001850 end:0x00001920
 
-stg09D_104.c:
-	.text       start:0x0004E8EC end:0x0005135C
+ENEMY/e_ai.c:
+	.text       start:0x0004E8B0 end:0x0005135C
 	.rodata     start:0x00001920 end:0x000019F8
+	.data       start:0x000C3FD8 end:0x000C4040
+	.bss        start:0x00002DE0 end:0x00002E18
 
 stg09D_105.c:
 	.text       start:0x00051398 end:0x00053F0C

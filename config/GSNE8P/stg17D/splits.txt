@@ -398,9 +398,11 @@ stg17D_96.c:
 	.text       start:0x00052C74 end:0x00053A54
 	.rodata     start:0x00001890 end:0x000018D8
 
-stg17D_97.c:
-	.text       start:0x00053A90 end:0x00056500
+ENEMY/e_ai.c:
+	.text       start:0x00053A54 end:0x00056500
 	.rodata     start:0x000018D8 end:0x000019B0
+	.data       start:0x000ED0F0 end:0x000ED158
+	.bss        start:0x00002E00 end:0x00002E38
 
 stg17D_98.c:
 	.text       start:0x0005653C end:0x000590B0

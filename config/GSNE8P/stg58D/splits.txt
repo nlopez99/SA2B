@@ -413,9 +413,11 @@ stg58D_100.c:
 	.text       start:0x00051220 end:0x00053288
 	.rodata     start:0x00001978 end:0x00001A48
 
-stg58D_101.c:
-	.text       start:0x000532C4 end:0x00055D34
+ENEMY/e_ai.c:
+	.text       start:0x00053288 end:0x00055D34
 	.rodata     start:0x00001A48 end:0x00001B20
+	.data       start:0x00090900 end:0x00090968
+	.bss        start:0x00002E90 end:0x00002EC8
 
 stg58D_102.c:
 	.text       start:0x00055D70 end:0x00058194

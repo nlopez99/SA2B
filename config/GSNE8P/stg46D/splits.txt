@@ -446,9 +446,11 @@ stg46D_108.c:
 	.text       start:0x0004A378 end:0x0004C3E0
 	.rodata     start:0x000017D8 end:0x000018A8
 
-stg46D_109.c:
-	.text       start:0x0004C41C end:0x0004EE8C
+ENEMY/e_ai.c:
+	.text       start:0x0004C3E0 end:0x0004EE8C
 	.rodata     start:0x000018A8 end:0x00001980
+	.data       start:0x000C6948 end:0x000C69B0
+	.bss        start:0x00002E00 end:0x00002E38
 
 stg46D_110.c:
 	.text       start:0x0004EEC8 end:0x000512EC

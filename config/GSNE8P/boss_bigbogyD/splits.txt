@@ -306,9 +306,11 @@ boss_bigbogyD_74.c:
 	.text       start:0x00047248 end:0x000492B0
 	.rodata     start:0x00001C10 end:0x00001CE0
 
-boss_bigbogyD_75.c:
-	.text       start:0x000492EC end:0x0004BD5C
+ENEMY/e_ai.c:
+	.text       start:0x000492B0 end:0x0004BD5C
 	.rodata     start:0x00001CE0 end:0x00001DB8
+	.data       start:0x000A5E58 end:0x000A5EC0
+	.bss        start:0x00002C08 end:0x00002C40
 
 boss_bigbogyD_76.c:
 	.text       start:0x0004BD98 end:0x0004E90C

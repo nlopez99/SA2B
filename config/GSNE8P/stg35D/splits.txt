@@ -374,9 +374,11 @@ stg35D_89.c:
 	.text       start:0x0005D59C end:0x0005F604
 	.rodata     start:0x00001B78 end:0x00001C48
 
-stg35D_90.c:
-	.text       start:0x0005F640 end:0x000620B0
+ENEMY/e_ai.c:
+	.text       start:0x0005F604 end:0x000620B0
 	.rodata     start:0x00001C48 end:0x00001D20
+	.data       start:0x0011AA28 end:0x0011AA90
+	.bss        start:0x00002C60 end:0x00002C98
 
 stg35D_91.c:
 	.text       start:0x000620EC end:0x00064C60

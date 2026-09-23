@@ -390,9 +390,11 @@ boss_last1D_95.c:
 	.text       start:0x00045F04 end:0x00047F6C
 	.rodata     start:0x00001B08 end:0x00001BD8
 
-boss_last1D_96.c:
-	.text       start:0x00047FA8 end:0x0004AA18
+ENEMY/e_ai.c:
+	.text       start:0x00047F6C end:0x0004AA18
 	.rodata     start:0x00001BD8 end:0x00001CB0
+	.data       start:0x001111D8 end:0x00111240
+	.bss        start:0x00003000 end:0x00003038
 
 boss_last1D_97.c:
 	.text       start:0x0004AA54 end:0x0004D5C8
