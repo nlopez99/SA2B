@@ -131,13 +131,11 @@ stg19D_30.c:
 	.text       start:0x00013B1C end:0x0001453C
 	.rodata     start:0x000007B8 end:0x000007E8
 
-stg19D_31.c:
-	.text       start:0x00014678 end:0x00015264
-	.rodata     start:0x000007E8 end:0x00000818
-
-stg19D_32.c:
-	.text       start:0x00015264 end:0x00015334
-	.rodata     start:0x00000818 end:0x00000820
+OBJECT/o_itembox.c:
+	.text       start:0x0001453C end:0x000154E4
+	.rodata     start:0x000007E8 end:0x00000820
+	.data       start:0x0001CB08 end:0x0001CB70
+	.bss        start:0x00000688 end:0x00000690
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x000154E4 end:0x0001618C

@@ -153,9 +153,11 @@ OBJECT/o_ironball2.c:
 	.data       start:0x00142670 end:0x00142698
 	.bss        start:0x00000468 end:0x00000470
 
-54d_36.c:
+OBJECT/o_itembox.c:
 	.text       start:0x000159D4 end:0x00016A44
 	.rodata     start:0x00000780 end:0x000007B8
+	.data       start:0x00143608 end:0x00143670
+	.bss        start:0x00000470 end:0x00000478
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x00016A44 end:0x000176EC

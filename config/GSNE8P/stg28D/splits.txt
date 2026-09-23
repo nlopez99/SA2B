@@ -309,13 +309,11 @@ OBJECT/o_ironball2.c:
 	.data       start:0x000DDB98 end:0x000DDBC0
 	.bss        start:0x000006D8 end:0x000006E0
 
-stg28D_78.c:
-	.text       start:0x00028A04 end:0x000296B8
-	.rodata     start:0x00000DF8 end:0x00000E28
-
-stg28D_79.c:
-	.text       start:0x000296B8 end:0x00029788
-	.rodata     start:0x00000E28 end:0x00000E30
+OBJECT/o_itembox.c:
+	.text       start:0x000288C8 end:0x00029938
+	.rodata     start:0x00000DF8 end:0x00000E30
+	.data       start:0x000DEB28 end:0x000DEB90
+	.bss        start:0x000006E0 end:0x000006E8
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x00029938 end:0x0002A5E0

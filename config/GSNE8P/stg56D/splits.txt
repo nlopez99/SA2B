@@ -70,6 +70,12 @@ OBJECT/o_ironball2.c:
 	.data       start:0x00035210 end:0x00035238
 	.bss        start:0x00000CF0 end:0x00000CF8
 
+OBJECT/o_itembox.c:
+	.text       start:0x00016E30 end:0x00017F10
+	.rodata     start:0x00000760 end:0x00000798
+	.data       start:0x000361A8 end:0x00036210
+	.bss        start:0x00000CF8 end:0x00000D00
+
 OBJECT/o_itemboxair.c:
 	.text       start:0x00017F10 end:0x00018BB8
 	.rodata     start:0x00000798 end:0x000007D8

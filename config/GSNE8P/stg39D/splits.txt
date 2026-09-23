@@ -201,13 +201,11 @@ OBJECT/o_ironball2.c:
 	.data       start:0x00052F98 end:0x00052FC0
 	.bss        start:0x00000D18 end:0x00000D20
 
-stg39D_50.c:
-	.text       start:0x000230FC end:0x00023E20
-	.rodata     start:0x00000A88 end:0x00000AB8
-
-stg39D_51.c:
-	.text       start:0x00023E20 end:0x00023EF0
-	.rodata     start:0x00000AB8 end:0x00000AC0
+OBJECT/o_itembox.c:
+	.text       start:0x00022FC0 end:0x000240A0
+	.rodata     start:0x00000A88 end:0x00000AC0
+	.data       start:0x00053F28 end:0x00053F90
+	.bss        start:0x00000D20 end:0x00000D28
 
 OBJECT/o_itemboxair.c:
 	.text       start:0x000240A0 end:0x00024D48
