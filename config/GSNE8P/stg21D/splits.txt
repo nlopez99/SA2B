@@ -198,7 +198,7 @@ stg21D_47.c:
 	.text       start:0x000161B8 end:0x00016988
 	.rodata     start:0x00000750 end:0x00000790
 
-stg21D_48.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x00016C08 end:0x00017620
 	.rodata     start:0x00000790 end:0x000007D0
 

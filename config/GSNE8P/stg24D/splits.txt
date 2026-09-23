@@ -146,7 +146,7 @@ stg24D_34.c:
 	.text       start:0x0001A608 end:0x0001ADD8
 	.rodata     start:0x00000930 end:0x00000970
 
-stg24D_35.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x0001B058 end:0x0001BA70
 	.rodata     start:0x00000970 end:0x000009B0
 

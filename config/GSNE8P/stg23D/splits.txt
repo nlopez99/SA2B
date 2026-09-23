@@ -178,7 +178,7 @@ stg23D_42.c:
 	.text       start:0x00015A50 end:0x00016220
 	.rodata     start:0x000007E8 end:0x00000828
 
-stg23D_43.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x000164A0 end:0x00016EB8
 	.rodata     start:0x00000828 end:0x00000868
 

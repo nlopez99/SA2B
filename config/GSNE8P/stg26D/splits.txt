@@ -186,7 +186,7 @@ stg26D_45.c:
 	.text       start:0x00019C40 end:0x0001A410
 	.rodata     start:0x00000838 end:0x00000878
 
-stg26D_46.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x0001A580 end:0x0001AF98
 	.rodata     start:0x00000878 end:0x000008B8
 

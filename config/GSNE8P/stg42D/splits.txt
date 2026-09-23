@@ -102,7 +102,7 @@ stg42D_23.c:
 	.text       start:0x0000CA94 end:0x0000CB8C
 	.rodata     start:0x00000508 end:0x00000510
 
-stg42D_24.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x0000CCFC end:0x0000D714
 	.rodata     start:0x00000510 end:0x00000550
 

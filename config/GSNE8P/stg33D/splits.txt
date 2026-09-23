@@ -86,7 +86,7 @@ stg33D_20.c:
 	.text       start:0x0000E054 end:0x0000E824
 	.rodata     start:0x00000460 end:0x000004A0
 
-stg33D_21.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x0000E824 end:0x0000F23C
 	.rodata     start:0x000004A0 end:0x000004E0
 

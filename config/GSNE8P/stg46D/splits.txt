@@ -170,7 +170,7 @@ stg46D_41.c:
 	.text       start:0x000136B0 end:0x00013E80
 	.rodata     start:0x00000710 end:0x00000750
 
-stg46D_42.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x00013FF0 end:0x00014A08
 	.rodata     start:0x00000750 end:0x00000790
 

@@ -98,7 +98,7 @@ boss_bigfootD_23.c:
 	.text       start:0x00017E18 end:0x000185E8
 	.rodata     start:0x000009D0 end:0x00000A10
 
-boss_bigfootD_24.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x00018758 end:0x00019170
 	.rodata     start:0x00000A10 end:0x00000A50
 

@@ -214,7 +214,7 @@ stg25D_52.c:
 	.text       start:0x0001E484 end:0x0001EC54
 	.rodata     start:0x00000A10 end:0x00000A50
 
-stg25D_53.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x0001EDC4 end:0x0001F7DC
 	.rodata     start:0x00000A50 end:0x00000A90
 

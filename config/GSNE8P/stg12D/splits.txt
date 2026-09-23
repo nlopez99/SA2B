@@ -138,7 +138,7 @@ stg12D_32.c:
 	.text       start:0x000133F4 end:0x00013BC4
 	.rodata     start:0x000006D8 end:0x00000718
 
-stg12D_33.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x00013E44 end:0x0001485C
 	.rodata     start:0x00000718 end:0x00000758
 

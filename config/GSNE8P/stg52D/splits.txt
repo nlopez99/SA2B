@@ -149,7 +149,7 @@ stg52D_35.c:
 	.text       start:0x0001EC48 end:0x0001F418
 	.rodata     start:0x000007F8 end:0x00000838
 
-stg52D_36.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x0001F588 end:0x0001FFA0
 	.rodata     start:0x00000838 end:0x00000878
 

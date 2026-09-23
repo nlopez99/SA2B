@@ -126,7 +126,7 @@ stg34D_30.c:
 	.text       start:0x000158B4 end:0x00016084
 	.rodata     start:0x00000730 end:0x00000770
 
-stg34D_31.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x000161F4 end:0x00016C0C
 	.rodata     start:0x00000770 end:0x000007B0
 

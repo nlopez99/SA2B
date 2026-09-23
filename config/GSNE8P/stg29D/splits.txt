@@ -86,7 +86,7 @@ stg29D_19.c:
 	.text       start:0x0000E38C end:0x0000EB5C
 	.rodata     start:0x000004B8 end:0x000004F8
 
-stg29D_20.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x0000EC6C end:0x0000F684
 	.rodata     start:0x000004F8 end:0x00000538
 

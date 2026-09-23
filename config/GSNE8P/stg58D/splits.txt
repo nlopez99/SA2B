@@ -146,7 +146,7 @@ stg58D_34.c:
 	.text       start:0x000182F4 end:0x00018AC4
 	.rodata     start:0x00000848 end:0x00000888
 
-stg58D_35.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x00018BD4 end:0x000195EC
 	.rodata     start:0x00000888 end:0x000008C8
 

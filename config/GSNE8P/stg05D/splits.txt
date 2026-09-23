@@ -122,7 +122,7 @@ stg05D_29.c:
 	.text       start:0x00011D70 end:0x00012540
 	.rodata     start:0x00000590 end:0x000005D0
 
-stg05D_30.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x00012540 end:0x00012F58
 	.rodata     start:0x000005D0 end:0x00000610
 

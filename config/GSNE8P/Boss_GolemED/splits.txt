@@ -110,7 +110,7 @@ Boss_GolemED_25.c:
 	.text       start:0x00017CB0 end:0x00018480
 	.rodata     start:0x00000E30 end:0x00000E70
 
-Boss_GolemED_26.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x000185F0 end:0x00019008
 	.rodata     start:0x00000E70 end:0x00000EB0
 
