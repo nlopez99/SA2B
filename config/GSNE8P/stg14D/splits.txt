@@ -263,7 +263,7 @@ OBJECT/o_itemboxballoon.c:
 	.rodata     start:0x00000BA0 end:0x00000BE8
 	.data       start:0x000D5F38 end:0x000D6890
 
-stg14D_66.c:
+OBJECT/o_kdasiba.c:
 	.text       start:0x00026AB4 end:0x00027468
 	.rodata     start:0x00000BE8 end:0x00000C38
 

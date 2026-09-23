@@ -677,6 +677,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_degring_linear.c"),
             Object(Matching, "OBJECT/o_kddegring.c"),
             Object(Matching, "OBJECT/o_kddoor.c"),
+            Object(Matching, "OBJECT/o_kdasiba.c"),
             Object(Matching, "OBJECT/o_itembox.c"),
             Object(Matching, "OBJECT/o_modmod.c"),
             Object(Matching, "OBJECT/o_effobj0.c"),
