@@ -442,9 +442,11 @@ ENEMY/e_bullet.c:
 	.data       start:0x000A8948 end:0x000A8CB8
 	.bss        start:0x00000DD0 end:0x00000DD8
 
-stg32D_108.c:
+ENEMY/e_laser.c:
 	.text       start:0x0004A0C4 end:0x0004ABBC
 	.rodata     start:0x000015F8 end:0x00001630
+	.data       start:0x000A8CB8 end:0x000A9200
+	.bss        start:0x00000DD8 end:0x00000DE0
 
 ENEMY/e_light.c:
 	.text       start:0x0004ABBC end:0x0004B328

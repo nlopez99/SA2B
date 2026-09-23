@@ -363,9 +363,11 @@ ENEMY/e_bullet.c:
 	.data       start:0x000EF968 end:0x000EFCD8
 	.bss        start:0x00000FB8 end:0x00000FC0
 
-boss_last1D_90.c:
+ENEMY/e_laser.c:
 	.text       start:0x000410FC end:0x00041C6C
 	.rodata     start:0x000018D8 end:0x00001910
+	.data       start:0x000EFCD8 end:0x000F0220
+	.bss        start:0x00000FC0 end:0x00000FC8
 
 ENEMY/e_light.c:
 	.text       start:0x00041C6C end:0x000423D8

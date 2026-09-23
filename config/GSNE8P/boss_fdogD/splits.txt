@@ -280,9 +280,11 @@ ENEMY/e_bullet.c:
 	.data       start:0x00056EE8 end:0x00057258
 	.bss        start:0x00000EB8 end:0x00000EC0
 
-boss_fdogD_69.c:
+ENEMY/e_laser.c:
 	.text       start:0x00036250 end:0x00036DC0
 	.rodata     start:0x000011D8 end:0x00001210
+	.data       start:0x00057258 end:0x000577A0
+	.bss        start:0x00000EC0 end:0x00000EC8
 
 ENEMY/e_light.c:
 	.text       start:0x00036DC0 end:0x0003752C

@@ -294,9 +294,11 @@ ENEMY/e_bullet.c:
 	.data       start:0x00087FE8 end:0x00088358
 	.bss        start:0x00000C90 end:0x00000C98
 
-boss_bigfootD_73.c:
+ENEMY/e_laser.c:
 	.text       start:0x00040164 end:0x00040CD4
 	.rodata     start:0x00001570 end:0x000015A8
+	.data       start:0x00088358 end:0x000888A0
+	.bss        start:0x00000C98 end:0x00000CA0
 
 ENEMY/e_light.c:
 	.text       start:0x00040CD4 end:0x00041440

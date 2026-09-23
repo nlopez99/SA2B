@@ -432,9 +432,11 @@ ENEMY/e_bullet.c:
 	.data       start:0x000E3B10 end:0x000E3E80
 	.bss        start:0x000010D0 end:0x000010D8
 
-stg26D_105.c:
+ENEMY/e_laser.c:
 	.text       start:0x0004D2FC end:0x0004DE6C
 	.rodata     start:0x000016C0 end:0x000016F8
+	.data       start:0x000E3E80 end:0x000E43C8
+	.bss        start:0x000010D8 end:0x000010E0
 
 ENEMY/e_light.c:
 	.text       start:0x0004DE6C end:0x0004E5D8

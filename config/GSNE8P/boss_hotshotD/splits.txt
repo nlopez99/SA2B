@@ -275,9 +275,11 @@ ENEMY/e_bullet.c:
 	.data       start:0x00060148 end:0x000604B8
 	.bss        start:0x00000C80 end:0x00000C88
 
-boss_hotshotD_68.c:
+ENEMY/e_laser.c:
 	.text       start:0x000386E0 end:0x00039250
 	.rodata     start:0x00001440 end:0x00001478
+	.data       start:0x000604B8 end:0x00060A00
+	.bss        start:0x00000C88 end:0x00000C90
 
 ENEMY/e_light.c:
 	.text       start:0x00039250 end:0x000399BC
