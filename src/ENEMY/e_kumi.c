@@ -1,5 +1,7 @@
 #include "ENEMY/e_kumi.h"
 
+#include "ENEMY/e_light.h"
+
 #include "CCL.h"
 #include "ENEMY/e_bullet.h"
 #include "fabsf.h"
@@ -147,8 +149,8 @@ extern Sint8 lbl_803AD926;
 extern void EnemyBombLoadTexture(void);
 extern task *CreateEnemyBomb(task *ptp, Sint32 kind, Sint32 type,
                                      NJS_POINT3 *pos);
-extern void _rename_EnemyLightLoadTexture(void);
-extern void _rename_CreateEnemyLight(task *ptp, Sint32 smode, NJS_POINT3 *pos);
+
+
 
 extern NJS_TEXLIST _rename_e_kumi_texlist;
 extern NJS_TEXLIST _rename_e_g_kumi_texlist;
@@ -348,7 +350,7 @@ static void EnemyKumiInit(task *tp, taskwk *twp) {
 
   twp->ang.x &= 0xFF00;
   fn_80015C40(&ewp->mtn);
-  _rename_EnemyLightLoadTexture();
+  EnemyLightLoadTexture();
   ewp->view_range = (60.0f + twp->scl.z) * (60.0f + twp->scl.z);
   ewp->view_ang = 0x4000;
   ewp->home_range = (60.0f + twp->scl.z) * (60.0f + twp->scl.z);
@@ -1064,12 +1066,12 @@ void EnemyKumi(task *tp) {
       lpos.y = -8.32f;
       lpos.z = -6.78f;
       njCalcPoint(NULL, &lpos, &lpos);
-      _rename_CreateEnemyLight(tp, 0, &lpos);
+      CreateEnemyLight(tp, 0, &lpos);
       lpos.x = -3.35f;
       lpos.y = -8.32f;
       lpos.z = 6.78f;
       njCalcPoint(NULL, &lpos, &lpos);
-      _rename_CreateEnemyLight(tp, 0, &lpos);
+      CreateEnemyLight(tp, 0, &lpos);
       njPopMatrixEx();
     }
 
@@ -1087,7 +1089,7 @@ void EnemyKumi(task *tp) {
         pos.z = 0.0f;
       }
       njCalcPoint(NULL, &pos, &pos);
-      _rename_CreateEnemyLight(tp, 1, &pos);
+      CreateEnemyLight(tp, 1, &pos);
       njPopMatrixEx();
     }
   }

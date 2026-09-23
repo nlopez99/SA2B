@@ -125,8 +125,8 @@ void CreateEnemyJet(task *tp, Sint32 type, NJS_POINT3 *pos,
 void _rename_EnemyLaserLoadTexture(void);
 void _rename_CreateEnemyLaser(task *tp, Float pow, NJS_VECTOR *spd,
                               NJS_POINT3 *pos);
-void _rename_EnemyLightLoadTexture(void);
-void _rename_CreateEnemyLight(task *tp, Sint32 type, NJS_POINT3 *pos);
+void EnemyLightLoadTexture(void);
+void CreateEnemyLight(task *tp, Sint32 type, NJS_POINT3 *pos);
 Sint32 _rename_CheckFlag0x20(task *tp);
 void _rename_SetFlag0x20(task *tp);
 
@@ -253,7 +253,7 @@ static void EnemyAiInit(task *tp, taskwk *twp) {
   ewp->spd.x = 1.0f;
   ewp->turn_spd = 0x800;
 
-  _rename_EnemyLightLoadTexture();
+  EnemyLightLoadTexture();
   fn_80017BE4(twp, ewp);
 
   ewp->mtn.actptr = _rename_e_ai_actions;
@@ -1176,9 +1176,9 @@ void EnemyAi(task *tp) {
 
     if (twp->flag & 0x2000) {
       if (twp->mode == 7 || ewp->mtn.action == 2) {
-        _rename_CreateEnemyLight(tp, 4, &ewp->eye_pos);
+        CreateEnemyLight(tp, 4, &ewp->eye_pos);
       } else {
-        _rename_CreateEnemyLight(tp, 3, &ewp->eye_pos);
+        CreateEnemyLight(tp, 3, &ewp->eye_pos);
       }
     }
   }

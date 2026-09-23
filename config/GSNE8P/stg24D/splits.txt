@@ -386,13 +386,11 @@ stg24D_94.c:
 	.text       start:0x0004BB04 end:0x0004C5FC
 	.rodata     start:0x00001708 end:0x00001740
 
-stg24D_95.c:
-	.text       start:0x0004C5FC end:0x0004C7F8
-	.rodata     start:0x00001740 end:0x000017B0
-
-stg24D_96.c:
-	.text       start:0x0004C918 end:0x0004CC0C
-	.rodata     start:0x000017B0 end:0x000017D8
+ENEMY/e_light.c:
+	.text       start:0x0004C5FC end:0x0004CD68
+	.rodata     start:0x00001740 end:0x000017D8
+	.data       start:0x000C5380 end:0x000C5408
+	.bss        start:0x00000DA8 end:0x00002DB8
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0004CD68 end:0x0004E2D8

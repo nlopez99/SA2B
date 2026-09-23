@@ -438,13 +438,11 @@ stg32D_108.c:
 	.text       start:0x0004A0C4 end:0x0004ABBC
 	.rodata     start:0x000015F8 end:0x00001630
 
-stg32D_109.c:
-	.text       start:0x0004ABBC end:0x0004ADB8
-	.rodata     start:0x00001630 end:0x000016A0
-
-stg32D_110.c:
-	.text       start:0x0004AED8 end:0x0004B1CC
-	.rodata     start:0x000016A0 end:0x000016C8
+ENEMY/e_light.c:
+	.text       start:0x0004ABBC end:0x0004B328
+	.rodata     start:0x00001630 end:0x000016C8
+	.data       start:0x000A9200 end:0x000A9288
+	.bss        start:0x00000DE0 end:0x00002DF0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0004B328 end:0x0004C898

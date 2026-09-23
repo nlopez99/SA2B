@@ -280,13 +280,11 @@ boss_bigbogyD_69.c:
 	.text       start:0x00042440 end:0x00042FB0
 	.rodata     start:0x000019E0 end:0x00001A18
 
-boss_bigbogyD_70.c:
-	.text       start:0x00042FB0 end:0x000431AC
-	.rodata     start:0x00001A18 end:0x00001A88
-
-boss_bigbogyD_71.c:
-	.text       start:0x000432CC end:0x000435C0
-	.rodata     start:0x00001A88 end:0x00001AB0
+ENEMY/e_light.c:
+	.text       start:0x00042FB0 end:0x0004371C
+	.rodata     start:0x00001A18 end:0x00001AB0
+	.data       start:0x00084EA0 end:0x00084F28
+	.bss        start:0x00000BD0 end:0x00002BE0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0004371C end:0x00044C8C

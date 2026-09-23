@@ -362,13 +362,11 @@ stg55D_89.c:
 	.text       start:0x00045A2C end:0x000462A0
 	.rodata     start:0x00001510 end:0x00001548
 
-stg55D_90.c:
-	.text       start:0x00046424 end:0x00046620
-	.rodata     start:0x00001548 end:0x000015B8
-
-stg55D_91.c:
-	.text       start:0x00046740 end:0x00046A34
-	.rodata     start:0x000015B8 end:0x000015E0
+ENEMY/e_light.c:
+	.text       start:0x00046424 end:0x00046B90
+	.rodata     start:0x00001548 end:0x000015E0
+	.data       start:0x00069E00 end:0x00069E88
+	.bss        start:0x00000C00 end:0x00002C10
 
 EFFECT/ef_explosion.c:
 	.text       start:0x00046B90 end:0x00048100

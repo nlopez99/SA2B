@@ -326,13 +326,11 @@ stg37D_80.c:
 	.text       start:0x000449E8 end:0x000454E0
 	.rodata     start:0x00001548 end:0x00001580
 
-stg37D_81.c:
-	.text       start:0x000454E0 end:0x000456DC
-	.rodata     start:0x00001580 end:0x000015F0
-
-stg37D_82.c:
-	.text       start:0x000457FC end:0x00045AF0
-	.rodata     start:0x000015F0 end:0x00001618
+ENEMY/e_light.c:
+	.text       start:0x000454E0 end:0x00045C4C
+	.rodata     start:0x00001580 end:0x00001618
+	.data       start:0x000E2D10 end:0x000E2D98
+	.bss        start:0x00000BE0 end:0x00002BF0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x00045C4C end:0x000471BC

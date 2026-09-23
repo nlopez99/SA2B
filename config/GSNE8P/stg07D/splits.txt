@@ -391,13 +391,11 @@ ENEMY/e_bullet.c:
 	.data       start:0x00092088 end:0x000923F8
 	.bss        start:0x00000FA8 end:0x00000FB0
 
-stg07D_97.c:
-	.text       start:0x000499B8 end:0x00049BB4
-	.rodata     start:0x00001620 end:0x00001690
-
-stg07D_98.c:
-	.text       start:0x00049CD4 end:0x00049FC8
-	.rodata     start:0x00001690 end:0x000016B8
+ENEMY/e_light.c:
+	.text       start:0x000499B8 end:0x0004A124
+	.rodata     start:0x00001620 end:0x000016B8
+	.data       start:0x000923F8 end:0x00092480
+	.bss        start:0x00000FB0 end:0x00002FC0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0004A124 end:0x0004B694

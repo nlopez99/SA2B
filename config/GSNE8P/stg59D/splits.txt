@@ -448,13 +448,11 @@ stg59D_110.c:
 	.text       start:0x00052028 end:0x00052B98
 	.rodata     start:0x000018A0 end:0x000018D8
 
-stg59D_111.c:
-	.text       start:0x00052B98 end:0x00052D94
-	.rodata     start:0x000018D8 end:0x00001948
-
-stg59D_112.c:
-	.text       start:0x00052EB4 end:0x000531A8
-	.rodata     start:0x00001948 end:0x00001970
+ENEMY/e_light.c:
+	.text       start:0x00052B98 end:0x00053304
+	.rodata     start:0x000018D8 end:0x00001970
+	.data       start:0x000F9900 end:0x000F9988
+	.bss        start:0x00000DB0 end:0x00002DC0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x00053304 end:0x00054874

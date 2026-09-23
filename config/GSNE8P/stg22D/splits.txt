@@ -394,13 +394,11 @@ stg22D_97.c:
 	.text       start:0x00048F70 end:0x00049A68
 	.rodata     start:0x00001640 end:0x00001678
 
-stg22D_98.c:
-	.text       start:0x00049A68 end:0x00049C64
-	.rodata     start:0x00001678 end:0x000016E8
-
-stg22D_99.c:
-	.text       start:0x00049D84 end:0x0004A078
-	.rodata     start:0x000016E8 end:0x00001710
+ENEMY/e_light.c:
+	.text       start:0x00049A68 end:0x0004A1D4
+	.rodata     start:0x00001678 end:0x00001710
+	.data       start:0x0010B5E0 end:0x0010B668
+	.bss        start:0x00000D88 end:0x00002D98
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0004A1D4 end:0x0004B744

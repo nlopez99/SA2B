@@ -386,13 +386,11 @@ stg50D_95.c:
 	.text       start:0x0004826C end:0x00048EDC
 	.rodata     start:0x000015A8 end:0x000015E0
 
-stg50D_96.c:
-	.text       start:0x00048EDC end:0x000490D8
-	.rodata     start:0x000015E0 end:0x00001650
-
-stg50D_97.c:
-	.text       start:0x000491F8 end:0x000494EC
-	.rodata     start:0x00001650 end:0x00001678
+ENEMY/e_light.c:
+	.text       start:0x00048EDC end:0x00049648
+	.rodata     start:0x000015E0 end:0x00001678
+	.data       start:0x00078500 end:0x00078588
+	.bss        start:0x000011E8 end:0x000031F8
 
 EFFECT/ef_explosion.c:
 	.text       start:0x00049648 end:0x0004ABB8

@@ -247,9 +247,11 @@ ENEMY/e_bullet.c:
 	.data       start:0x0016A5C0 end:0x0016A930
 	.bss        start:0x000004C8 end:0x000004D0
 
-54d_53.c:
-	.text       start:0x0002D090 end:0x0002D6A0
+ENEMY/e_light.c:
+	.text       start:0x0002D090 end:0x0002D7FC
 	.rodata     start:0x00000D90 end:0x00000E28
+	.data       start:0x0016A930 end:0x0016A9B8
+	.bss        start:0x000004D0 end:0x000024E0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0002D7FC end:0x0002ED6C

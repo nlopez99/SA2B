@@ -708,6 +708,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_switch.c"),
             Object(Matching, "ENEMY/e_ai.c"),
             Object(Matching, "ENEMY/e_jet.c"),
+            Object(Matching, "ENEMY/e_light.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

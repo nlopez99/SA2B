@@ -354,13 +354,11 @@ stg06D_87.c:
 	.text       start:0x00043BAC end:0x0004471C
 	.rodata     start:0x00001440 end:0x00001478
 
-stg06D_88.c:
-	.text       start:0x0004471C end:0x00044918
-	.rodata     start:0x00001478 end:0x000014E8
-
-stg06D_89.c:
-	.text       start:0x00044A38 end:0x00044D2C
-	.rodata     start:0x000014E8 end:0x00001510
+ENEMY/e_light.c:
+	.text       start:0x0004471C end:0x00044E88
+	.rodata     start:0x00001478 end:0x00001510
+	.data       start:0x000B2FE0 end:0x000B3068
+	.bss        start:0x00000DA8 end:0x00002DB8
 
 EFFECT/ef_explosion.c:
 	.text       start:0x00044E88 end:0x000463F8

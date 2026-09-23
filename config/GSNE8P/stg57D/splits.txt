@@ -402,13 +402,11 @@ stg57D_99.c:
 	.text       start:0x0004A600 end:0x0004B170
 	.rodata     start:0x00001608 end:0x00001640
 
-stg57D_100.c:
-	.text       start:0x0004B170 end:0x0004B36C
-	.rodata     start:0x00001640 end:0x000016B0
-
-stg57D_101.c:
-	.text       start:0x0004B48C end:0x0004B780
-	.rodata     start:0x000016B0 end:0x000016D8
+ENEMY/e_light.c:
+	.text       start:0x0004B170 end:0x0004B8DC
+	.rodata     start:0x00001640 end:0x000016D8
+	.data       start:0x00188F40 end:0x00188FC8
+	.bss        start:0x00001090 end:0x000030A0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0004B8DC end:0x0004CE4C

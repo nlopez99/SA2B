@@ -428,13 +428,11 @@ stg26D_105.c:
 	.text       start:0x0004D2FC end:0x0004DE6C
 	.rodata     start:0x000016C0 end:0x000016F8
 
-stg26D_106.c:
-	.text       start:0x0004DE6C end:0x0004E068
-	.rodata     start:0x000016F8 end:0x00001768
-
-stg26D_107.c:
-	.text       start:0x0004E188 end:0x0004E47C
-	.rodata     start:0x00001768 end:0x00001790
+ENEMY/e_light.c:
+	.text       start:0x0004DE6C end:0x0004E5D8
+	.rodata     start:0x000016F8 end:0x00001790
+	.data       start:0x000E43C8 end:0x000E4450
+	.bss        start:0x000010E0 end:0x000030F0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0004E5D8 end:0x0004FB48

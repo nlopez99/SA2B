@@ -366,13 +366,11 @@ stg40D_90.c:
 	.text       start:0x00043920 end:0x00044418
 	.rodata     start:0x00001388 end:0x000013C0
 
-stg40D_91.c:
-	.text       start:0x00044418 end:0x00044614
-	.rodata     start:0x000013C0 end:0x00001430
-
-stg40D_92.c:
-	.text       start:0x00044734 end:0x00044A28
-	.rodata     start:0x00001430 end:0x00001458
+ENEMY/e_light.c:
+	.text       start:0x00044418 end:0x00044B84
+	.rodata     start:0x000013C0 end:0x00001458
+	.data       start:0x000C4A20 end:0x000C4AA8
+	.bss        start:0x00000DB0 end:0x00002DC0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x00044B84 end:0x000460F4

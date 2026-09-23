@@ -378,13 +378,11 @@ stg30D_93.c:
 	.text       start:0x000465A0 end:0x00047210
 	.rodata     start:0x00001478 end:0x000014B0
 
-stg30D_94.c:
-	.text       start:0x00047210 end:0x0004740C
-	.rodata     start:0x000014B0 end:0x00001520
-
-stg30D_95.c:
-	.text       start:0x0004752C end:0x00047820
-	.rodata     start:0x00001520 end:0x00001548
+ENEMY/e_light.c:
+	.text       start:0x00047210 end:0x0004797C
+	.rodata     start:0x000014B0 end:0x00001548
+	.data       start:0x001093E0 end:0x00109468
+	.bss        start:0x000011E0 end:0x000031F0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0004797C end:0x00048EEC

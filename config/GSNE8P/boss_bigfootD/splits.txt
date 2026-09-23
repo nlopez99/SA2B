@@ -296,13 +296,11 @@ boss_bigfootD_73.c:
 	.text       start:0x00040164 end:0x00040CD4
 	.rodata     start:0x00001570 end:0x000015A8
 
-boss_bigfootD_74.c:
-	.text       start:0x00040CD4 end:0x00040ED0
-	.rodata     start:0x000015A8 end:0x00001618
-
-boss_bigfootD_75.c:
-	.text       start:0x00040FF0 end:0x000412E4
-	.rodata     start:0x00001618 end:0x00001640
+ENEMY/e_light.c:
+	.text       start:0x00040CD4 end:0x00041440
+	.rodata     start:0x000015A8 end:0x00001640
+	.data       start:0x000888A0 end:0x00088928
+	.bss        start:0x00000CA0 end:0x00002CB0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x00041440 end:0x000429B0

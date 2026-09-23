@@ -440,13 +440,11 @@ stg18D_108.c:
 	.text       start:0x0004E8E0 end:0x0004F450
 	.rodata     start:0x000017D8 end:0x00001810
 
-stg18D_109.c:
-	.text       start:0x0004F450 end:0x0004F64C
-	.rodata     start:0x00001810 end:0x00001880
-
-stg18D_110.c:
-	.text       start:0x0004F76C end:0x0004FA60
-	.rodata     start:0x00001880 end:0x000018A8
+ENEMY/e_light.c:
+	.text       start:0x0004F450 end:0x0004FBBC
+	.rodata     start:0x00001810 end:0x000018A8
+	.data       start:0x0011FA88 end:0x0011FB10
+	.bss        start:0x00000DF8 end:0x00002E08
 
 EFFECT/ef_explosion.c:
 	.text       start:0x0004FBBC end:0x0005112C

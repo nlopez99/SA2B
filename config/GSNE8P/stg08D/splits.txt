@@ -380,13 +380,11 @@ stg08D_93.c:
 	.text       start:0x00045E44 end:0x000469B4
 	.rodata     start:0x000014D8 end:0x00001510
 
-stg08D_94.c:
-	.text       start:0x000469B4 end:0x00046BB0
-	.rodata     start:0x00001510 end:0x00001580
-
-stg08D_95.c:
-	.text       start:0x00046CD0 end:0x00046FC4
-	.rodata     start:0x00001580 end:0x000015A8
+ENEMY/e_light.c:
+	.text       start:0x000469B4 end:0x00047120
+	.rodata     start:0x00001510 end:0x000015A8
+	.data       start:0x0009DEA0 end:0x0009DF28
+	.bss        start:0x00005490 end:0x000074A0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x00047120 end:0x00048690

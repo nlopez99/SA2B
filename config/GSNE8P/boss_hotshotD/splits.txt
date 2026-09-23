@@ -276,13 +276,11 @@ boss_hotshotD_68.c:
 	.text       start:0x000386E0 end:0x00039250
 	.rodata     start:0x00001440 end:0x00001478
 
-boss_hotshotD_69.c:
-	.text       start:0x00039250 end:0x0003944C
-	.rodata     start:0x00001478 end:0x000014E8
-
-boss_hotshotD_70.c:
-	.text       start:0x0003956C end:0x00039860
-	.rodata     start:0x000014E8 end:0x00001510
+ENEMY/e_light.c:
+	.text       start:0x00039250 end:0x000399BC
+	.rodata     start:0x00001478 end:0x00001510
+	.data       start:0x00060A00 end:0x00060A88
+	.bss        start:0x00000C90 end:0x00002CA0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x000399BC end:0x0003AF2C

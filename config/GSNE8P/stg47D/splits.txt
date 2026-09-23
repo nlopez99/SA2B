@@ -406,13 +406,11 @@ stg47D_99.c:
 	.text       start:0x0004723C end:0x00047DAC
 	.rodata     start:0x00001598 end:0x000015D0
 
-stg47D_100.c:
-	.text       start:0x00047DAC end:0x00047FA8
-	.rodata     start:0x000015D0 end:0x00001640
-
-stg47D_101.c:
-	.text       start:0x000480C8 end:0x000483BC
-	.rodata     start:0x00001640 end:0x00001668
+ENEMY/e_light.c:
+	.text       start:0x00047DAC end:0x00048518
+	.rodata     start:0x000015D0 end:0x00001668
+	.data       start:0x000D4928 end:0x000D49B0
+	.bss        start:0x00000DA0 end:0x00002DB0
 
 EFFECT/ef_explosion.c:
 	.text       start:0x00048518 end:0x00049A88
