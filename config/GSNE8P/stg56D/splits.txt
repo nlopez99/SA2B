@@ -32,6 +32,7 @@ EFFECT/ef_lnspark.c:
 EFFECT/ef_dust.c:
 	.text       start:0x0000BB30 end:0x0000C3E8
 	.rodata     start:0x00000388 end:0x000003D0
+	.data       start:0x0002B8F8 end:0x0002B9A8
 
 OBJECT/o_colli.c:
 	.text       start:0x0000C3E8 end:0x0000C78C

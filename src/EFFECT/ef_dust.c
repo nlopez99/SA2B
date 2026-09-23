@@ -1,15 +1,45 @@
 #include "EFFECT/ef_dust.h"
 
 #include "samt/ninja/njmatrix.h"
+#include "samt/sonic/player.h"
+#include "samt/sonic/task.h"
 
-extern particle_info _rename_dust_info;
-extern particle_info _rename_dust_short_info;
+extern NJS_TEXLIST _rename_dust_texlist;
+
+// throws num puffs of dust at pno's position, spread over a vector
+extern void fn_800BF6A4(Sint32 pno, Sint32 num, NJS_POINT3 *pos,
+                        NJS_VECTOR *spd);
 
 // ^ extern
 // v in this file
 
+static void BrokenDownSmokeDest(task *tp);
+static void BrokenDownSmokeExec(task *tp);
+
+// player joint positions in awp; playerwk in player.h has them 0x18 too low
+typedef struct pljointwk {
+  /* 0x000 */ Uint8      unused[0x200];
+  /* 0x200 */ NJS_POINT3 joint[8];
+  /* 0x260 */ Uint8      unused2[0x194];
+  /* 0x3F4 */ NJS_POINT3 joint2[2];
+} pljointwk;
+
+static particle_init dust_init = {
+    0, 1.0f, {0.0f, 0.0f, 0.0f}, 0xB0080810, 0.0f, 0x4000,
+};
+
+particle_info dust_info = {
+    2,     &_rename_dust_texlist, 0,          8,       0.11f, 0.98f, 0.0065f,
+    0.03f, DustExec,              75000.0f,   &dust_init,
+};
+
+particle_info dust_short_info = {
+    2,     &_rename_dust_texlist, 0,          8,       0.06f, 0.98f, -0.001f,
+    0.05f, DustShortExec,         22500.0f,   &dust_init,
+};
+
 particle *CreateDust(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl) {
-  particle *p = fn_80032B78(&_rename_dust_info);
+  particle *p = fn_80032B78(&dust_info);
   if (p != NULL) {
     p->pos = *pos;
     p->spd = *spd;
@@ -23,7 +53,7 @@ particle *CreateDust(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl) {
 }
 
 particle *CreateDustShort(NJS_POINT3 *pos, NJS_VECTOR *spd, Float scl) {
-  particle *p = fn_80032B78(&_rename_dust_short_info);
+  particle *p = fn_80032B78(&dust_short_info);
   if (p != NULL) {
     p->pos = *pos;
     p->spd = *spd;
@@ -118,4 +148,160 @@ void CreateDustRing(NJS_POINT3 *pos, NJS_VECTOR *spd, Float r, Float scl,
     ang += step;
   }
   njPopMatrixEx();
+}
+
+// puts the generator on the joint mode names; the rest use the right foot
+// plus the offset in scl
+static void BlackSmokeSetPos(taskwk *twp) {
+  pljointwk *pjp = (pljointwk *)playertp[twp->smode]->awp;
+
+  switch (twp->mode) {
+  case 0:
+    twp->pos = pjp->joint[4];
+    break;
+  case 3:
+    twp->pos = pjp->joint[0];
+    break;
+  case 4:
+    twp->pos = pjp->joint[1];
+    break;
+  case 7:
+    twp->pos = pjp->joint[5];
+    break;
+  case 8:
+    twp->pos = pjp->joint[6];
+    break;
+  case 9:
+    twp->pos = pjp->joint[7];
+    break;
+  case 10:
+    twp->pos = pjp->joint2[0];
+    break;
+  case 11:
+    twp->pos = pjp->joint2[1];
+    break;
+  default:
+    twp->pos = pjp->joint[2];
+    njAddVector(&twp->pos, &twp->scl);
+    break;
+  }
+}
+
+static void BlackSmokeGeneratorExec(task *tp) {
+  taskwk *twp = tp->twp;
+  particle *p; // unused
+  NJS_VECTOR spd;
+  Sint32 num;
+
+  if (playerpwp[twp->smode] == NULL) {
+    DestroyTask(tp);
+    return;
+  }
+  if (lbl_801CC168._37 != 0) {
+    return;
+  }
+  if (twp->mode <= 0) {
+    BlackSmokeSetPos(twp);
+    spd.x = 0.0f;
+    spd.y = 0.45f;
+    spd.z = 0.0f;
+    CreateDustShort(&twp->pos, &spd, 0.2f);
+    num = twp->btimer;
+    num--;
+    if (num <= 0) {
+      FreeTask(tp);
+      return;
+    }
+    twp->btimer = num;
+    twp->mode = 8.0f + 24.0f * ParticleRandom();
+  } else {
+    twp->mode--;
+  }
+}
+
+// follows pno around puffing black smoke out of a random joint, num times
+void CreateBlackSmokeGenerator(Sint32 pno, Sint32 num) {
+  task *tp;
+  taskwk *twp;
+  particle *p; // unused
+  NJS_VECTOR spd;
+  NJS_POINT3 pos;
+
+  tp = CreateFundamentalTask(IM_TWK, LEV_5, BlackSmokeGeneratorExec);
+  if (tp == NULL) {
+    return;
+  }
+  twp = tp->twp;
+  twp->smode = pno;
+  twp->btimer = num;
+  twp->mode = 16.0f * ParticleRandom();
+  twp->scl.x = 2.0f * ParticleRandom();
+  twp->scl.z = 2.0f * ParticleRandom();
+  BlackSmokeSetPos(twp);
+  if (ParticleRandom() >= 0.9f) {
+    pos = twp->pos;
+    spd.x = 0.0f;
+    spd.y = 0.5f;
+    spd.z = 0.0f;
+    fn_800BF6A4(pno, 8, &pos, &spd);
+  }
+}
+
+// one smoker per player, its player number in btimer
+static task *smoke_task[2] = {NULL, NULL};
+
+// smokes harder the less health pno has left
+task *CreateBrokenDownSmoke(Sint32 pno, task *ptp) {
+  task *tp;
+  taskwk *twp;
+
+  if (pno < 2 && smoke_task[pno] == NULL) {
+    if (ptp != NULL) {
+      tp = CreateChildTask(IM_TWK, BrokenDownSmokeExec, ptp);
+    } else {
+      tp = CreateFundamentalTask(IM_TWK, LEV_1, BrokenDownSmokeExec);
+    }
+    if (tp != NULL) {
+      twp = tp->twp;
+      tp->dest = BrokenDownSmokeDest;
+      twp->btimer = pno;
+      smoke_task[pno] = tp;
+      return tp;
+    }
+  }
+  return NULL;
+}
+
+static void BrokenDownSmokeDest(task *tp) {
+  taskwk *twp = tp->twp;
+
+  if (smoke_task[twp->btimer] == tp) {
+    smoke_task[twp->btimer] = NULL;
+  }
+}
+
+static void BrokenDownSmokeExec(task *tp) {
+  taskwk *twp = tp->twp;
+  Sint32 pno = twp->btimer;
+  playerwk *pwp = playerpwp[pno];
+  Sint32 num;
+
+  if (pwp == NULL) {
+    DestroyTask(tp);
+    return;
+  }
+  if (lbl_801CC168._37 != 0) {
+    return;
+  }
+  num = 1.6f * (10.0f - pwp->hp);
+  if (num <= 0) {
+    return;
+  }
+  if (lbl_801CC168._7C & 0xF) {
+    return;
+  }
+  if (((lbl_801CC168._7C & 0xFF) >> 4) >= num) {
+    return;
+  }
+  CreateBlackSmokeGenerator(pno, 2);
 }

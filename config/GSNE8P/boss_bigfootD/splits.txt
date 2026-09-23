@@ -84,6 +84,7 @@ EFFECT/ef_lnspark.c:
 EFFECT/ef_dust.c:
 	.text       start:0x00016C04 end:0x000174BC
 	.rodata     start:0x00000948 end:0x00000990
+	.data       start:0x00046368 end:0x00046418
 
 OBJECT/o_colli.c:
 	.text       start:0x000174BC end:0x000177B0
