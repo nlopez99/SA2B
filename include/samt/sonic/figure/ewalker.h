@@ -37,12 +37,12 @@ typedef struct walkerwk
     char field_35F;
     char field_360;
     char field_361[3];
-    __int16 field_364;
-    __int16 field_366;
-    __int16 field_368;
-    __int16 field_36A;
-    __int16 field_36C;
-    __int16 field_36E;
+    s16 field_364;
+    s16 field_366;
+    s16 field_368;
+    s16 field_36A;
+    s16 field_36C;
+    s16 field_36E;
     char field_370[4];
     float field_374;
     char field_378[8];

@@ -268,9 +268,11 @@ stg17D_67.c:
 	.text       start:0x00032FC0 end:0x00033988
 	.rodata     start:0x00000E98 end:0x00000EC8
 
-stg17D_68.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x00033A24 end:0x00035B74
 	.rodata     start:0x00000EC8 end:0x00000F38
+	.data       start:0x000B0F98 end:0x000B0FB8
+	.bss        start:0x00000D58 end:0x00000D60
 
 stg17D_69.c:
 	.text       start:0x0003658C end:0x0003A998

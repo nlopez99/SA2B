@@ -287,9 +287,11 @@ stg52D_72.c:
 	.text       start:0x00035A18 end:0x000363E0
 	.rodata     start:0x00000E78 end:0x00000EA8
 
-stg52D_73.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0003647C end:0x000385CC
 	.rodata     start:0x00000EA8 end:0x00000F18
+	.data       start:0x001A8B58 end:0x001A8B78
+	.bss        start:0x00000D98 end:0x00000DA0
 
 stg52D_74.c:
 	.text       start:0x00038AA4 end:0x0003CEB0

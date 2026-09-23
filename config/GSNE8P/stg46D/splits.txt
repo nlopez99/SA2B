@@ -314,9 +314,11 @@ stg46D_79.c:
 	.text       start:0x0002B5EC end:0x0002BFB4
 	.rodata     start:0x00000DC0 end:0x00000DF0
 
-stg46D_80.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0002C050 end:0x0002E1A0
 	.rodata     start:0x00000DF0 end:0x00000E60
+	.data       start:0x0008AA98 end:0x0008AAB8
+	.bss        start:0x00000D48 end:0x00000D50
 
 stg46D_81.c:
 	.text       start:0x0002E8B8 end:0x0002F220

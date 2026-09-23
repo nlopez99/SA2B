@@ -300,9 +300,11 @@ stg44D_76.c:
 	.text       start:0x0002C8C4 end:0x0002D28C
 	.rodata     start:0x00000D88 end:0x00000DB8
 
-stg44D_77.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0002D328 end:0x0002F478
 	.rodata     start:0x00000DB8 end:0x00000E28
+	.data       start:0x0008C9F8 end:0x0008CA18
+	.bss        start:0x00001168 end:0x00001170
 
 stg44D_78.c:
 	.text       start:0x0002FE90 end:0x0003429C

@@ -216,9 +216,11 @@ stg36D_54.c:
 	.text       start:0x00032544 end:0x00032F0C
 	.rodata     start:0x00000F58 end:0x00000F88
 
-stg36D_55.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x00032FA8 end:0x000350F8
 	.rodata     start:0x00000F88 end:0x00000FF8
+	.data       start:0x000A0938 end:0x000A0958
+	.bss        start:0x00000B28 end:0x00000B30
 
 stg36D_56.c:
 	.text       start:0x0003584C end:0x00039F8C

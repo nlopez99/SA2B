@@ -178,9 +178,11 @@ OBJECT/o_itemboxballoon.c:
 	.text       start:0x00019330 end:0x00019780
 	.rodata     start:0x00000870 end:0x00000878
 
-54d_41.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x00019780 end:0x0001B8D0
 	.rodata     start:0x00000878 end:0x000008E8
+	.data       start:0x0015A810 end:0x0015A830
+	.bss        start:0x00000478 end:0x00000480
 
 54d_42.c:
 	.text       start:0x0001C2B8 end:0x000206C4

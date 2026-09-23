@@ -286,9 +286,11 @@ stg41D_72.c:
 	.text       start:0x0002C434 end:0x0002CDFC
 	.rodata     start:0x00000DC0 end:0x00000DF0
 
-stg41D_73.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0002CE98 end:0x0002EFE8
 	.rodata     start:0x00000DF0 end:0x00000E60
+	.data       start:0x00092D38 end:0x00092D58
+	.bss        start:0x00000D58 end:0x00000D60
 
 stg41D_74.c:
 	.text       start:0x0002F700 end:0x00033B0C

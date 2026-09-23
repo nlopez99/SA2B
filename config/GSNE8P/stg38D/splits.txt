@@ -256,9 +256,11 @@ stg38D_65.c:
 	.text       start:0x0002D1A8 end:0x0002DB70
 	.rodata     start:0x00000E80 end:0x00000EB0
 
-stg38D_66.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0002DC0C end:0x0002FD5C
 	.rodata     start:0x00000EB0 end:0x00000F20
+	.data       start:0x000C0A18 end:0x000C0A38
+	.bss        start:0x00000FA8 end:0x00000FB0
 
 stg38D_67.c:
 	.text       start:0x000304B0 end:0x00034BF0

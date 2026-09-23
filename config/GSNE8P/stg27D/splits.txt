@@ -268,9 +268,11 @@ stg27D_68.c:
 	.text       start:0x0002C40C end:0x0002CDD4
 	.rodata     start:0x00000DE8 end:0x00000E18
 
-stg27D_69.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0002CE70 end:0x0002EFC0
 	.rodata     start:0x00000E18 end:0x00000E88
+	.data       start:0x00099558 end:0x00099578
+	.bss        start:0x00000FB8 end:0x00000FC0
 
 stg27D_70.c:
 	.text       start:0x0002F9D8 end:0x00033DE4

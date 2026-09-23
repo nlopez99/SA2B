@@ -198,9 +198,11 @@ OBJECT/o_itemboxballoon.c:
 	.rodata     start:0x00000E20 end:0x00000E68
 	.data       start:0x00057B58 end:0x000584B0
 
-boss_bigfootD_52.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x00027C58 end:0x00029DA8
 	.rodata     start:0x00000E68 end:0x00000ED8
+	.data       start:0x0006E080 end:0x0006E0A0
+	.bss        start:0x00000C30 end:0x00000C38
 
 boss_bigfootD_53.c:
 	.text       start:0x0002A4CC end:0x0002EC0C

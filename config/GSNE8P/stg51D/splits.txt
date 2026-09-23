@@ -280,9 +280,11 @@ stg51D_70.c:
 	.text       start:0x0002A984 end:0x0002B34C
 	.rodata     start:0x00000D78 end:0x00000DA8
 
-stg51D_71.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0002B3E8 end:0x0002D538
 	.rodata     start:0x00000DA8 end:0x00000E18
+	.data       start:0x00060D78 end:0x00060D98
+	.bss        start:0x00000DA0 end:0x00000DA8
 
 stg51D_72.c:
 	.text       start:0x0002DF50 end:0x0003235C

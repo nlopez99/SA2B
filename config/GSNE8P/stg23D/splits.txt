@@ -316,9 +316,11 @@ stg23D_79.c:
 	.text       start:0x0002C930 end:0x0002D2F8
 	.rodata     start:0x00000E68 end:0x00000E98
 
-stg23D_80.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0002D394 end:0x0002F4E4
 	.rodata     start:0x00000E98 end:0x00000F08
+	.data       start:0x00120AD8 end:0x00120AF8
+	.bss        start:0x00000D20 end:0x00000D28
 
 stg23D_81.c:
 	.text       start:0x0002FBFC end:0x00034008

@@ -296,9 +296,11 @@ stg10D_75.c:
 	.text       start:0x0002F1C8 end:0x0002FB90
 	.rodata     start:0x00000E40 end:0x00000E70
 
-stg10D_76.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0002FC2C end:0x00031D7C
 	.rodata     start:0x00000E70 end:0x00000EE0
+	.data       start:0x00188898 end:0x001888B8
+	.bss        start:0x00001018 end:0x00001020
 
 stg10D_77.c:
 	.text       start:0x00032794 end:0x00036BA0

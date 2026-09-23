@@ -320,9 +320,11 @@ stg26D_81.c:
 	.text       start:0x0002FB54 end:0x0003051C
 	.rodata     start:0x00000E48 end:0x00000E78
 
-stg26D_82.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x000305B8 end:0x00032708
 	.rodata     start:0x00000E78 end:0x00000EE8
+	.data       start:0x000C67F8 end:0x000C6818
+	.bss        start:0x00001060 end:0x00001068
 
 stg26D_83.c:
 	.text       start:0x00032E20 end:0x0003722C

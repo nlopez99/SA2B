@@ -272,9 +272,11 @@ stg43D_68.c:
 	.text       start:0x0002B088 end:0x0002BA50
 	.rodata     start:0x00000D20 end:0x00000D50
 
-stg43D_69.c:
+OBJECT/o_levupdai.c:
 	.text       start:0x0002BAEC end:0x0002DC3C
 	.rodata     start:0x00000D50 end:0x00000DC0
+	.data       start:0x0007E458 end:0x0007E478
+	.bss        start:0x00000D60 end:0x00000D68
 
 stg43D_70.c:
 	.text       start:0x0002E654 end:0x00032A60
