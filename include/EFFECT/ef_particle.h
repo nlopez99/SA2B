@@ -2,6 +2,7 @@
 #define _EF_PARTICLE_H_
 
 #include "sa2b_types.h"
+#include "stdlib.h"
 
 typedef struct particle      particle;
 typedef struct particle_info particle_info;
@@ -21,7 +22,10 @@ struct particle // sizeof=0x40
   /* 0x2C */ Angle      ang_spd;
   /* 0x30 */ particle  *next;
   /* 0x34 */ Uint32     flag;
-  /* 0x38 */ Sint32     timer;
+  /* 0x38 */ union {
+    Angle ang;
+    Float f;
+  } phase;
   /* 0x3C */ particle  *next_free;
 };
 
@@ -42,6 +46,9 @@ struct particle_info // sizeof=0x38
   /* 0x30 */ particle      *head;
   /* 0x34 */ particle_info *next;
 };
+
+#define ParticleRandom() (0.000030517578f * (Float)rand())
+#define ParticleDegAng(n) ((Angle)(182.04445f * (n)))
 
 // takes a particle from the pool, fills it from info->init and links it to info
 extern particle *fn_80032B78(particle_info *info);
