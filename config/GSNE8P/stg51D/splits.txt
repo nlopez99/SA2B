@@ -74,7 +74,7 @@ stg51D_16.c:
 	.text       start:0x00006BF8 end:0x0000B464
 	.rodata     start:0x000002C0 end:0x000003C0
 
-stg51D_17.c:
+field.c:
 	.text       start:0x0000B464 end:0x0000B590
 	.rodata     start:0x000003C0 end:0x000003D0
 

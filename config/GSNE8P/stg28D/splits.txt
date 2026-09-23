@@ -174,7 +174,7 @@ stg28D_41.c:
 	.text       start:0x00013ECC end:0x00017DC8
 	.rodata     start:0x00000708 end:0x000007F8
 
-stg28D_42.c:
+field.c:
 	.text       start:0x00017DC8 end:0x00017EF4
 	.rodata     start:0x000007F8 end:0x00000808
 

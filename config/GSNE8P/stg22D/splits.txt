@@ -106,7 +106,7 @@ stg22D_24.c:
 	.text       start:0x0000F6DC end:0x00013BA8
 	.rodata     start:0x000005C8 end:0x000006C0
 
-stg22D_25.c:
+field.c:
 	.text       start:0x00013BA8 end:0x00013CD4
 	.rodata     start:0x000006C0 end:0x000006D0
 

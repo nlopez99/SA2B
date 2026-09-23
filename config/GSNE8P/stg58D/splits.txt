@@ -90,7 +90,7 @@ stg58D_20.c:
 	.text       start:0x0000CE54 end:0x00011D74
 	.rodata     start:0x000004F0 end:0x00000608
 
-stg58D_21.c:
+field.c:
 	.text       start:0x00011D74 end:0x00011EA0
 	.rodata     start:0x00000608 end:0x00000618
 

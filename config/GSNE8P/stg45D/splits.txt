@@ -26,7 +26,7 @@ stg45D_4.c:
 	.text       start:0x000048B4 end:0x00006C74
 	.rodata     start:0x00000160 end:0x000001C8
 
-stg45D_5.c:
+field.c:
 	.text       start:0x00006C74 end:0x00006DA0
 	.rodata     start:0x000001C8 end:0x000001D8
 

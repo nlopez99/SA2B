@@ -22,7 +22,7 @@ boss_hotshotD_3.c:
 	.text       start:0x000073F0 end:0x0000B1BC
 	.rodata     start:0x00000598 end:0x00000688
 
-boss_hotshotD_4.c:
+field.c:
 	.text       start:0x0000B1BC end:0x0000B2E8
 	.rodata     start:0x00000688 end:0x00000698
 

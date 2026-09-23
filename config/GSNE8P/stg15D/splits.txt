@@ -77,7 +77,7 @@ stg15D_17.c:
 	.text       start:0x000067E4 end:0x0000B050
 	.rodata     start:0x000002B8 end:0x000003B8
 
-stg15D_18.c:
+field.c:
 	.text       start:0x0000B050 end:0x0000B17C
 	.rodata     start:0x000003B8 end:0x000003C8
 

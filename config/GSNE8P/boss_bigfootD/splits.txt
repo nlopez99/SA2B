@@ -42,7 +42,7 @@ boss_bigfootD_8.c:
 	.text       start:0x0000E44C end:0x000124F4
 	.rodata     start:0x000006B0 end:0x000007A8
 
-boss_bigfootD_9.c:
+field.c:
 	.text       start:0x000124F4 end:0x00012620
 	.rodata     start:0x000007A8 end:0x000007B8
 

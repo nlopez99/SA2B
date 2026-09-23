@@ -138,7 +138,7 @@ stg59D_32.c:
 	.text       start:0x00013F74 end:0x00017DE0
 	.rodata     start:0x00000670 end:0x00000760
 
-stg59D_33.c:
+field.c:
 	.text       start:0x00017DE0 end:0x00017F0C
 	.rodata     start:0x00000760 end:0x00000770
 

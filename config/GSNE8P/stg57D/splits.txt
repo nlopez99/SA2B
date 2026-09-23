@@ -86,7 +86,7 @@ stg57D_19.c:
 	.text       start:0x0000B97C end:0x00010670
 	.rodata     start:0x00000380 end:0x00000488
 
-stg57D_20.c:
+field.c:
 	.text       start:0x00010670 end:0x0001079C
 	.rodata     start:0x00000488 end:0x00000498
 

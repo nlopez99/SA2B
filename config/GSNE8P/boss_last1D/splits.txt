@@ -102,7 +102,7 @@ boss_last1D_23.c:
 	.text       start:0x0000F154 end:0x00012F20
 	.rodata     start:0x00000960 end:0x00000A50
 
-boss_last1D_24.c:
+field.c:
 	.text       start:0x00012F20 end:0x0001304C
 	.rodata     start:0x00000A50 end:0x00000A60
 

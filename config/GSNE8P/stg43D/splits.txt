@@ -74,7 +74,7 @@ stg43D_16.c:
 	.text       start:0x00007B28 end:0x0000C8E0
 	.rodata     start:0x00000300 end:0x00000410
 
-stg43D_17.c:
+field.c:
 	.text       start:0x0000C8E0 end:0x0000CA0C
 	.rodata     start:0x00000410 end:0x00000420
 

@@ -138,7 +138,7 @@ stg21D_32.c:
 	.text       start:0x0000BBC8 end:0x0000FAC0
 	.rodata     start:0x000003C8 end:0x000004C8
 
-stg21D_33.c:
+field.c:
 	.text       start:0x0000FAC0 end:0x0000FBEC
 	.rodata     start:0x000004C8 end:0x000004D8
 

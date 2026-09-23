@@ -86,7 +86,7 @@ stg41D_19.c:
 	.text       start:0x0000AB94 end:0x0000EA00
 	.rodata     start:0x000003D8 end:0x000004C8
 
-stg41D_20.c:
+field.c:
 	.text       start:0x0000EA00 end:0x0000EB2C
 	.rodata     start:0x000004C8 end:0x000004D8
 

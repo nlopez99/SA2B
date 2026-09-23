@@ -26,7 +26,7 @@ boss_fdogD_4.c:
 	.text       start:0x0000519C end:0x00009008
 	.rodata     start:0x00000328 end:0x00000418
 
-boss_fdogD_5.c:
+field.c:
 	.text       start:0x00009008 end:0x00009134
 	.rodata     start:0x00000418 end:0x00000428
 

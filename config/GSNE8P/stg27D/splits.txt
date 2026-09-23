@@ -66,7 +66,7 @@ stg27D_14.c:
 	.text       start:0x00009714 end:0x0000E534
 	.rodata     start:0x000003C0 end:0x000004D8
 
-stg27D_15.c:
+field.c:
 	.text       start:0x0000E534 end:0x0000E660
 	.rodata     start:0x000004D8 end:0x000004E8
 

@@ -86,7 +86,7 @@ stg09D_19.c:
 	.text       start:0x00007578 end:0x0000BF68
 	.rodata     start:0x00000360 end:0x00000488
 
-stg09D_20.c:
+field.c:
 	.text       start:0x0000BF68 end:0x0000C094
 	.rodata     start:0x00000488 end:0x00000498
 

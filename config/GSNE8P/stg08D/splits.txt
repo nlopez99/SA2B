@@ -66,7 +66,7 @@ stg08D_14.c:
 	.text       start:0x00006B9C end:0x0000B3CC
 	.rodata     start:0x00000258 end:0x00000378
 
-stg08D_15.c:
+field.c:
 	.text       start:0x0000B3CC end:0x0000B4F8
 	.rodata     start:0x00000378 end:0x00000388
 

@@ -74,7 +74,7 @@ stg04D_16.c:
 	.text       start:0x00008FF8 end:0x0000D2CC
 	.rodata     start:0x000002C0 end:0x000003B8
 
-stg04D_17.c:
+field.c:
 	.text       start:0x0000D2CC end:0x0000D3F8
 	.rodata     start:0x000003B8 end:0x000003C8
 

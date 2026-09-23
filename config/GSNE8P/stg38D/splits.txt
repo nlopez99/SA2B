@@ -58,7 +58,7 @@ stg38D_12.c:
 	.text       start:0x0000D098 end:0x00010F04
 	.rodata     start:0x000003F0 end:0x000004E0
 
-stg38D_13.c:
+field.c:
 	.text       start:0x00010F04 end:0x00011030
 	.rodata     start:0x000004E0 end:0x000004F0
 

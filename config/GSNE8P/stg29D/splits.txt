@@ -22,7 +22,7 @@ stg29D_3.c:
 	.text       start:0x00003880 end:0x0000791C
 	.rodata     start:0x00000110 end:0x00000208
 
-stg29D_4.c:
+field.c:
 	.text       start:0x0000791C end:0x00007A48
 	.rodata     start:0x00000208 end:0x00000218
 

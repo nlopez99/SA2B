@@ -74,7 +74,7 @@ stg12D_16.c:
 	.text       start:0x00006C60 end:0x0000B4CC
 	.rodata     start:0x000002C0 end:0x000003C0
 
-stg12D_17.c:
+field.c:
 	.text       start:0x0000B4CC end:0x0000B5F8
 	.rodata     start:0x000003C0 end:0x000003D0
 

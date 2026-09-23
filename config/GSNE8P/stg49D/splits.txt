@@ -86,7 +86,7 @@ stg49D_19.c:
 	.text       start:0x00009610 end:0x0000DAC4
 	.rodata     start:0x000002C8 end:0x000003D0
 
-stg49D_20.c:
+field.c:
 	.text       start:0x0000DAC4 end:0x0000DBF0
 	.rodata     start:0x000003D0 end:0x000003E0
 

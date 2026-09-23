@@ -85,7 +85,7 @@ stg52D_18.c:
 	.text       start:0x00013768 end:0x00018514
 	.rodata     start:0x00000460 end:0x00000568
 
-stg52D_19.c:
+field.c:
 	.text       start:0x00018514 end:0x00018640
 	.rodata     start:0x00000568 end:0x00000578
 

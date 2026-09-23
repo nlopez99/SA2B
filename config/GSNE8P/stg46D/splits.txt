@@ -110,7 +110,7 @@ stg46D_25.c:
 	.text       start:0x00009A28 end:0x0000D850
 	.rodata     start:0x00000390 end:0x00000480
 
-stg46D_26.c:
+field.c:
 	.text       start:0x0000D850 end:0x0000D97C
 	.rodata     start:0x00000480 end:0x00000490
 

@@ -74,7 +74,7 @@ stg53D_16.c:
 	.text       start:0x000050EC end:0x00009CA0
 	.rodata     start:0x00000228 end:0x00000338
 
-stg53D_17.c:
+field.c:
 	.text       start:0x00009CA0 end:0x00009DCC
 	.rodata     start:0x00000338 end:0x00000348
 

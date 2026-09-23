@@ -58,7 +58,7 @@ Boss_GolemED_12.c:
 	.text       start:0x0000F0A4 end:0x00012E70
 	.rodata     start:0x00000B28 end:0x00000C18
 
-Boss_GolemED_13.c:
+field.c:
 	.text       start:0x00012E70 end:0x00012F9C
 	.rodata     start:0x00000C18 end:0x00000C28
 

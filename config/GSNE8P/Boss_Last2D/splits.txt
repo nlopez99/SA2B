@@ -50,7 +50,7 @@ Boss_Last2D_10.c:
 	.text       start:0x00010DA0 end:0x00013DB8
 	.rodata     start:0x00000618 end:0x000006F8
 
-Boss_Last2D_11.c:
+field.c:
 	.text       start:0x00013E24 end:0x00013F50
 	.rodata     start:0x000006F8 end:0x00000708
 

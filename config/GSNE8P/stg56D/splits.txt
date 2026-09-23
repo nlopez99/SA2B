@@ -6,6 +6,10 @@ Sections:
 	.data       type:data align:8
 	.bss        type:bss align:8
 
+field.c:
+	.text       start:0x000069E8 end:0x00006B14
+	.rodata     start:0x00000180 end:0x00000190
+
 EFFECT/ef_bombfire.c:
 	.text       start:0x00006B1C end:0x00006BE4
 	.rodata     start:0x00000190 end:0x00000198

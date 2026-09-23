@@ -70,7 +70,7 @@ Boss_GolemD_15.c:
 	.text       start:0x00010274 end:0x00014040
 	.rodata     start:0x00000BF0 end:0x00000CE0
 
-Boss_GolemD_16.c:
+field.c:
 	.text       start:0x00014040 end:0x0001416C
 	.rodata     start:0x00000CE0 end:0x00000CF0
 

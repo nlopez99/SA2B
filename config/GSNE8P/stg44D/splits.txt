@@ -102,7 +102,7 @@ stg44D_23.c:
 	.text       start:0x00009BA4 end:0x0000EAD4
 	.rodata     start:0x00000380 end:0x00000490
 
-stg44D_24.c:
+field.c:
 	.text       start:0x0000EB78 end:0x0000ECA4
 	.rodata     start:0x00000490 end:0x000004A0
 
