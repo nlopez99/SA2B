@@ -670,6 +670,7 @@ config.libs = [
             Object(Matching, "stg13_cityescape/o_ce_board.c"),
             Object(Matching, "stg13_cityescape/o_ce_board_col.c"),
             Object(Matching, "stg13_cityescape/o_ce_sobj.c"),
+            Object(Matching, "stg13_cityescape/o_ce_roadobj.c"),
             Object(Matching, "stg13_cityescape/o_ce_tjumpdai.c"),
             Object(NonMatching, "stg13_cityescape/cityescape.c"),
             Object(Matching, "earthshake.c"),

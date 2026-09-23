@@ -75,13 +75,9 @@ stg13_cityescape/cityescape.c:
 	.rodata     start:0x00000398 end:0x00000458
 	.data       start:0x00202228 end:0x00202414
 
-stg13D_17.c:
-	.text       start:0x0001294C end:0x00012A98
-	.rodata     start:0x00000458 end:0x00000468
-
-stg13D_18.c:
-	.text       start:0x00012A98 end:0x00012B98
-	.rodata     start:0x00000468 end:0x00000470
+stg13_cityescape/o_ce_roadobj.c:
+	.text       start:0x0001251C end:0x00012B98
+	.rodata     start:0x00000458 end:0x00000470
 
 light.c:
 	.text       start:0x00012D0C end:0x00013DC8
