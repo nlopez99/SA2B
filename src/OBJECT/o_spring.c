@@ -1,7 +1,12 @@
 #include "OBJECT/o_spring.h"
 
 #include "CCL.h"
+// player.h widens the player number to Sint32; this file passes it as Uint8
+#define SetInputP SetInputP_Sint32
+#define SetSpringVelocityP SetSpringVelocityP_Sint32
 #include "samt/sonic/player.h"
+#undef SetInputP
+#undef SetSpringVelocityP
 #include "set.h"
 #include "qFabsf.h"
 #include "fabsf.h"
@@ -9,6 +14,8 @@
 extern void fn_8002FB2C(Sint8, int, int, int); 
 extern void _rename_SetRelLocal(Sint8, int);
 extern void SE_Call(int, int, int, int);
+extern void SetInputP(Uint8 pno, Sint8 mode, Sint32 unk);
+extern void SetSpringVelocityP(Uint8 pno, Float x, Float y, Float z);
 extern void ds_DrawModelClip(NJS_MODEL *);
 
 inline float sqrtf(float f);

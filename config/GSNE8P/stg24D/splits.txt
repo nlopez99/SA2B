@@ -341,9 +341,11 @@ stg24D_84.c:
 	.text       start:0x000457B0 end:0x00046E9C
 	.rodata     start:0x000014C8 end:0x00001550
 
-stg24D_85.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00046E9C end:0x000483E4
 	.rodata     start:0x00001550 end:0x000015B0
+	.data       start:0x000C3548 end:0x000C3630
+	.bss        start:0x00000D80 end:0x00000D88
 
 stg24D_86.c:
 	.text       start:0x0004846C end:0x00048698

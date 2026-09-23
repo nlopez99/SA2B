@@ -325,9 +325,11 @@ stg27D_81.c:
 	.text       start:0x000402B8 end:0x000419A4
 	.rodata     start:0x00001300 end:0x00001388
 
-stg27D_82.c:
+OBJECT/o_udreel.c:
 	.text       start:0x000419A4 end:0x00042EEC
 	.rodata     start:0x00001388 end:0x000013E8
+	.data       start:0x000B44E8 end:0x000B45D0
+	.bss        start:0x00001008 end:0x00001010
 
 stg27D_83.c:
 	.text       start:0x00042F74 end:0x000431A0

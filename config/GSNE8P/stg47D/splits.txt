@@ -365,9 +365,11 @@ stg47D_90.c:
 	.text       start:0x00040360 end:0x00041A4C
 	.rodata     start:0x00001310 end:0x00001398
 
-stg47D_91.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00041A4C end:0x00042F94
 	.rodata     start:0x00001398 end:0x000013F8
+	.data       start:0x000D2268 end:0x000D2350
+	.bss        start:0x00000D70 end:0x00000D78
 
 stg47D_92.c:
 	.text       start:0x00042F94 end:0x00043124

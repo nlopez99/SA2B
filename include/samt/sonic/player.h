@@ -808,7 +808,7 @@ s32     GetRivalPlayerNumber( s32 pno );
 
 #endif/*SAMT_INCL_FUNCPTRS*/
 
-extern void SetInputP(Uint8 pno, Sint8 mode, Sint32 unk);
+extern void SetInputP(Sint32 pno, Sint8 mode, Sint32 unk);
 extern void SetSpringVelocityP(Uint8 pno, Float x, Float y, Float z);
 extern void SetVelocityYAndRotationAndNoconTimeP(Uint8 pno, Float y, Sint32 *ang, Sint32 tm);
 extern Sint32 GetPlayerRunningSpeed(Sint8 pno, Float *v);
@@ -833,7 +833,9 @@ typedef struct {
   artificial_padding(0x38, 0x3c, s8);
   /* 0x3C */ s8 _3C;
   /* 0x3D */ s8 _3D;
-  artificial_padding(0x3d, 0x6e, s8);
+  artificial_padding(0x3d, 0x42, s8);
+  /* 0x42 */ s8 _42;
+  artificial_padding(0x42, 0x6e, s8);
   /* 0x6E */ s16 _6E;
   artificial_padding(0x6e, 0x7c, s16);
   /* 0x7C */ u32 _7C;

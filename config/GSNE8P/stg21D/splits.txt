@@ -389,9 +389,11 @@ stg21D_96.c:
 	.text       start:0x00041148 end:0x00042834
 	.rodata     start:0x00001320 end:0x000013A8
 
-stg21D_97.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00042834 end:0x00043D7C
 	.rodata     start:0x000013A8 end:0x00001408
+	.data       start:0x000B83E8 end:0x000B84D0
+	.bss        start:0x00000D70 end:0x00000D78
 
 stg21D_98.c:
 	.text       start:0x00043E04 end:0x00044030

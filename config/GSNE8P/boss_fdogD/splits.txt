@@ -235,9 +235,11 @@ boss_fdogD_59.c:
 	.text       start:0x0002F3A0 end:0x00030698
 	.rodata     start:0x00000F50 end:0x00000FD0
 
-boss_fdogD_60.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00030900 end:0x00031E48
 	.rodata     start:0x00000FD0 end:0x00001030
+	.data       start:0x00054B88 end:0x00054C70
+	.bss        start:0x00000E98 end:0x00000EA0
 
 boss_fdogD_61.c:
 	.text       start:0x00031EFC end:0x00031FA8

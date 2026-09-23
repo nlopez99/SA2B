@@ -343,9 +343,11 @@ stg15D_84.c:
 	.text       start:0x0003E314 end:0x0003FA00
 	.rodata     start:0x000012B0 end:0x00001338
 
-stg15D_85.c:
+OBJECT/o_udreel.c:
 	.text       start:0x0003FA00 end:0x00040F48
 	.rodata     start:0x00001338 end:0x00001398
+	.data       start:0x0007E5A8 end:0x0007E690
+	.bss        start:0x00000DE8 end:0x00000DF0
 
 stg15D_86.c:
 	.text       start:0x00040FD0 end:0x000411FC

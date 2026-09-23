@@ -285,9 +285,11 @@ stg37D_71.c:
 	.text       start:0x0003F2D0 end:0x000409BC
 	.rodata     start:0x00001350 end:0x000013D8
 
-stg37D_72.c:
+OBJECT/o_udreel.c:
 	.text       start:0x000409BC end:0x00041F04
 	.rodata     start:0x000013D8 end:0x00001438
+	.data       start:0x000E1548 end:0x000E1630
+	.bss        start:0x00000BB8 end:0x00000BC0
 
 stg37D_73.c:
 	.text       start:0x00041F8C end:0x000421B8

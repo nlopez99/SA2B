@@ -231,9 +231,11 @@ boss_hotshotD_58.c:
 	.text       start:0x00031830 end:0x00032B28
 	.rodata     start:0x000011B8 end:0x00001238
 
-boss_hotshotD_59.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00032D90 end:0x000342D8
 	.rodata     start:0x00001238 end:0x00001298
+	.data       start:0x0005DDE8 end:0x0005DED0
+	.bss        start:0x00000C60 end:0x00000C68
 
 boss_hotshotD_60.c:
 	.text       start:0x0003438C end:0x00034438

@@ -345,9 +345,11 @@ stg22D_86.c:
 	.text       start:0x00041E08 end:0x00043100
 	.rodata     start:0x000013B0 end:0x00001430
 
-stg22D_87.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00043368 end:0x000448B0
 	.rodata     start:0x00001430 end:0x00001490
+	.data       start:0x001089C8 end:0x00108AB0
+	.bss        start:0x00000D58 end:0x00000D60
 
 stg22D_88.c:
 	.text       start:0x00044938 end:0x00044B64

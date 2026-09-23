@@ -186,9 +186,11 @@ stg42D_44.c:
 	.text       start:0x0001DC18 end:0x0001EDC8
 	.rodata     start:0x000009D8 end:0x00000A18
 
-stg42D_45.c:
+OBJECT/o_udreel.c:
 	.text       start:0x0001EDC8 end:0x00020310
 	.rodata     start:0x00000A18 end:0x00000A78
+	.data       start:0x00020B68 end:0x00020C50
+	.bss        start:0x000006C8 end:0x000006D0
 
 stg42D_46.c:
 	.text       start:0x000203C4 end:0x00020470

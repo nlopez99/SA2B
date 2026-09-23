@@ -251,9 +251,11 @@ boss_bigfootD_63.c:
 	.text       start:0x000392B4 end:0x0003A5AC
 	.rodata     start:0x000012E8 end:0x00001368
 
-boss_bigfootD_64.c:
+OBJECT/o_udreel.c:
 	.text       start:0x0003A814 end:0x0003BD5C
 	.rodata     start:0x00001368 end:0x000013C8
+	.data       start:0x00085C88 end:0x00085D70
+	.bss        start:0x00000C70 end:0x00000C78
 
 boss_bigfootD_65.c:
 	.text       start:0x0003BE10 end:0x0003BEBC

@@ -353,9 +353,11 @@ stg10D_88.c:
 	.text       start:0x00043218 end:0x00044904
 	.rodata     start:0x00001378 end:0x00001400
 
-stg10D_89.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00044904 end:0x00045E4C
 	.rodata     start:0x00001400 end:0x00001460
+	.data       start:0x001A3828 end:0x001A3910
+	.bss        start:0x00001068 end:0x00001070
 
 stg10D_90.c:
 	.text       start:0x00045ED4 end:0x00046100

@@ -223,9 +223,11 @@ stg20D_54.c:
 	.text       start:0x0002F4A4 end:0x0003079C
 	.rodata     start:0x00000F58 end:0x00000FD8
 
-stg20D_55.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00030A04 end:0x00031F4C
 	.rodata     start:0x00000FD8 end:0x00001038
+	.data       start:0x00057E28 end:0x00057F10
+	.bss        start:0x00000DA8 end:0x00000DB0
 
 stg20D_56.c:
 	.text       start:0x00032000 end:0x000320AC

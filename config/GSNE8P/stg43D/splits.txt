@@ -329,9 +329,11 @@ stg43D_81.c:
 	.text       start:0x0003ECB4 end:0x0003FFAC
 	.rodata     start:0x00001238 end:0x000012B8
 
-stg43D_82.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00040214 end:0x0004175C
 	.rodata     start:0x000012B8 end:0x00001318
+	.data       start:0x00099328 end:0x00099410
+	.bss        start:0x00000DB0 end:0x00000DB8
 
 stg43D_83.c:
 	.text       start:0x000417E4 end:0x00041A10

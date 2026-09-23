@@ -337,9 +337,11 @@ stg51D_83.c:
 	.text       start:0x0003E9D4 end:0x000400C0
 	.rodata     start:0x000012B0 end:0x00001338
 
-stg51D_84.c:
+OBJECT/o_udreel.c:
 	.text       start:0x000400C0 end:0x00041608
 	.rodata     start:0x00001338 end:0x00001398
+	.data       start:0x0007BD08 end:0x0007BDF0
+	.bss        start:0x00000DF0 end:0x00000DF8
 
 stg51D_85.c:
 	.text       start:0x00041690 end:0x000418BC

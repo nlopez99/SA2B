@@ -305,9 +305,11 @@ stg06D_76.c:
 	.text       start:0x0003CA44 end:0x0003DD3C
 	.rodata     start:0x000011B0 end:0x00001230
 
-stg06D_77.c:
+OBJECT/o_udreel.c:
 	.text       start:0x0003DFA4 end:0x0003F4EC
 	.rodata     start:0x00001230 end:0x00001290
+	.data       start:0x000B03C8 end:0x000B04B0
+	.bss        start:0x00000D78 end:0x00000D80
 
 stg06D_78.c:
 	.text       start:0x0003F574 end:0x0003F7A0

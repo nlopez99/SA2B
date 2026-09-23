@@ -317,9 +317,11 @@ stg40D_79.c:
 	.text       start:0x0003C62C end:0x0003DD18
 	.rodata     start:0x000010F0 end:0x00001178
 
-stg40D_80.c:
+OBJECT/o_udreel.c:
 	.text       start:0x0003DD18 end:0x0003F260
 	.rodata     start:0x00001178 end:0x000011D8
+	.data       start:0x000C1E08 end:0x000C1EF0
+	.bss        start:0x00000D80 end:0x00000D88
 
 stg40D_81.c:
 	.text       start:0x0003F2E8 end:0x0003F514

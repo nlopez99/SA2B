@@ -329,9 +329,11 @@ stg30D_82.c:
 	.text       start:0x0003F2AC end:0x00040998
 	.rodata     start:0x000011E0 end:0x00001268
 
-stg30D_83.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00040998 end:0x00041EE0
 	.rodata     start:0x00001268 end:0x000012C8
+	.data       start:0x001067C8 end:0x001068B0
+	.bss        start:0x000011B0 end:0x000011B8
 
 stg30D_84.c:
 	.text       start:0x00041F68 end:0x00042194

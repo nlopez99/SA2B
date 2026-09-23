@@ -395,9 +395,11 @@ stg18D_98.c:
 	.text       start:0x0004774C end:0x00048E38
 	.rodata     start:0x00001548 end:0x000015D0
 
-stg18D_99.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00048E38 end:0x0004A380
 	.rodata     start:0x000015D0 end:0x00001630
+	.data       start:0x0011D3C8 end:0x0011D4B0
+	.bss        start:0x00000DC8 end:0x00000DD0
 
 stg18D_100.c:
 	.text       start:0x0004A408 end:0x0004A634

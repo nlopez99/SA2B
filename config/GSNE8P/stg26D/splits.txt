@@ -381,9 +381,11 @@ stg26D_95.c:
 	.text       start:0x00046168 end:0x00047854
 	.rodata     start:0x00001430 end:0x000014B8
 
-stg26D_96.c:
+OBJECT/o_udreel.c:
 	.text       start:0x00047854 end:0x00048D9C
 	.rodata     start:0x000014B8 end:0x00001518
+	.data       start:0x000E1D08 end:0x000E1DF0
+	.bss        start:0x000010B0 end:0x000010B8
 
 stg26D_97.c:
 	.text       start:0x00048E24 end:0x00049050
