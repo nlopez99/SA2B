@@ -162,7 +162,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x00001028 end:0x00001070
 	.bss        start:0x000008B0 end:0x000008B8
 
-Boss_GolemED_40.c:
+OBJECT/o_contwood.c:
 	.text       start:0x0001D7AC end:0x0001E5F0
 	.rodata     start:0x00001070 end:0x000010C8
 

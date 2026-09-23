@@ -125,7 +125,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x00000A78 end:0x00000AC0
 	.bss        start:0x000005A0 end:0x000005A8
 
-boss_hotshotD_32.c:
+OBJECT/o_contwood.c:
 	.text       start:0x0001548C end:0x000162D0
 	.rodata     start:0x00000AC0 end:0x00000B18
 

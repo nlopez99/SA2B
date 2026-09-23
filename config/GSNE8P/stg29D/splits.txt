@@ -133,7 +133,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x00000688 end:0x000006D0
 	.bss        start:0x00000680 end:0x00000688
 
-stg29D_32.c:
+OBJECT/o_contwood.c:
 	.text       start:0x000138AC end:0x000146F0
 	.rodata     start:0x000006D0 end:0x00000728
 

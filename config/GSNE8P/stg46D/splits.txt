@@ -236,7 +236,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x000009E0 end:0x00000A28
 	.bss        start:0x000006C0 end:0x000006C8
 
-stg46D_59.c:
+OBJECT/o_contwood.c:
 	.text       start:0x0001B704 end:0x0001C548
 	.rodata     start:0x00000A28 end:0x00000A80
 

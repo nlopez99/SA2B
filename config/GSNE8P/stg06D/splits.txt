@@ -174,7 +174,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x00000878 end:0x000008C0
 	.bss        start:0x000006A0 end:0x000006A8
 
-stg06D_43.c:
+OBJECT/o_contwood.c:
 	.text       start:0x00018D10 end:0x00019B54
 	.rodata     start:0x000008C0 end:0x00000918
 

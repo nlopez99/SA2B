@@ -119,7 +119,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x000006D0 end:0x00000718
 	.bss        start:0x00000670 end:0x00000678
 
-stg19D_27.c:
+OBJECT/o_contwood.c:
 	.text       start:0x000119B4 end:0x000127F8
 	.rodata     start:0x00000718 end:0x00000770
 

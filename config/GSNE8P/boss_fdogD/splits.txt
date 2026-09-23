@@ -135,7 +135,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x00000830 end:0x00000878
 	.bss        start:0x000007E0 end:0x000007E8
 
-boss_fdogD_34.c:
+OBJECT/o_contwood.c:
 	.text       start:0x00013A00 end:0x00014844
 	.rodata     start:0x00000878 end:0x000008D0
 

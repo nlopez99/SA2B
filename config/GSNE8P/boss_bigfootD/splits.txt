@@ -149,7 +149,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x00000BC8 end:0x00000C10
 	.bss        start:0x000005B8 end:0x000005C0
 
-boss_bigfootD_38.c:
+OBJECT/o_contwood.c:
 	.text       start:0x0001D914 end:0x0001E758
 	.rodata     start:0x00000C10 end:0x00000C68
 

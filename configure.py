@@ -673,6 +673,7 @@ config.libs = [
             Object(Matching, "stg13_cityescape/o_ce_tjumpdai.c"),
             Object(NonMatching, "stg13_cityescape/cityescape.c"),
             Object(Matching, "OBJECT/o_3spring.c"),
+            Object(Matching, "OBJECT/o_contwood.c"),
             Object(Matching, "OBJECT/o_degring_linear.c"),
             Object(Matching, "OBJECT/o_kddegring.c"),
             Object(Matching, "OBJECT/o_kddoor.c"),

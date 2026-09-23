@@ -218,7 +218,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x00000F30 end:0x00000F78
 	.bss        start:0x000008E0 end:0x000008E8
 
-boss_last1D_55.c:
+OBJECT/o_contwood.c:
 	.text       start:0x0001E8AC end:0x0001F6F0
 	.rodata     start:0x00000F78 end:0x00000FD0
 

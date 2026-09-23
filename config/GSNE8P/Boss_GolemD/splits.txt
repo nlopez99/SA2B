@@ -174,7 +174,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x000010D0 end:0x00001118
 	.bss        start:0x00000BB0 end:0x00000BB8
 
-Boss_GolemD_44.c:
+OBJECT/o_contwood.c:
 	.text       start:0x0001E310 end:0x0001F154
 	.rodata     start:0x00001118 end:0x00001170
 

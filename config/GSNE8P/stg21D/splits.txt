@@ -262,7 +262,7 @@ OBJECT/o_contiron.c:
 	.rodata     start:0x00000A00 end:0x00000A48
 	.bss        start:0x00000CE0 end:0x00000CE8
 
-stg21D_64.c:
+OBJECT/o_contwood.c:
 	.text       start:0x0001DE84 end:0x0001ECC8
 	.rodata     start:0x00000A48 end:0x00000AA0
 
