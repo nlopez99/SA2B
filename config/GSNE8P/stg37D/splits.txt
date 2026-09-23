@@ -218,9 +218,10 @@ stg37D_54.c:
 	.text       start:0x000267F0 end:0x0002720C
 	.rodata     start:0x00000D20 end:0x00000D58
 
-stg37D_55.c:
-	.text       start:0x00027458 end:0x00028398
+OBJECT/o_kddegring.c:
+	.text       start:0x00027424 end:0x00028398
 	.rodata     start:0x00000D58 end:0x00000D88
+	.data       start:0x000AEAD8 end:0x000AEAE0
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x000286CC end:0x000298E8

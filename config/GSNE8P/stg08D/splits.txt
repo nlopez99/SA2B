@@ -260,9 +260,10 @@ stg08D_64.c:
 	.text       start:0x00025E88 end:0x000268A4
 	.rodata     start:0x00000BE0 end:0x00000C18
 
-stg08D_65.c:
-	.text       start:0x00026AF0 end:0x00027A30
+OBJECT/o_kddegring.c:
+	.text       start:0x00026ABC end:0x00027A30
 	.rodata     start:0x00000C18 end:0x00000C48
+	.data       start:0x00068118 end:0x00068120
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x00027D64 end:0x00028F80

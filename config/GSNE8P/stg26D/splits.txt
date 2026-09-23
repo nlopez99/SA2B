@@ -314,9 +314,10 @@ stg26D_78.c:
 	.text       start:0x0002CA5C end:0x0002D478
 	.rodata     start:0x00000DB8 end:0x00000DF0
 
-stg26D_79.c:
-	.text       start:0x0002D6C4 end:0x0002E604
+OBJECT/o_kddegring.c:
+	.text       start:0x0002D690 end:0x0002E604
 	.rodata     start:0x00000DF0 end:0x00000E20
+	.data       start:0x000AED98 end:0x000AEDA0
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002E938 end:0x0002FB54

@@ -295,9 +295,10 @@ stg03D_73.c:
 	.text       start:0x0002BFAC end:0x0002C9C8
 	.rodata     start:0x00000E98 end:0x00000ED0
 
-stg03D_74.c:
-	.text       start:0x0002CC14 end:0x0002DB54
+OBJECT/o_kddegring.c:
+	.text       start:0x0002CBE0 end:0x0002DB54
 	.rodata     start:0x00000ED0 end:0x00000F00
+	.data       start:0x000EFB18 end:0x000EFB20
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002DE88 end:0x0002F0A4

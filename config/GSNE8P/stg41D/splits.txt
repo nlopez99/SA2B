@@ -280,9 +280,10 @@ stg41D_69.c:
 	.text       start:0x0002933C end:0x00029D58
 	.rodata     start:0x00000D30 end:0x00000D68
 
-stg41D_70.c:
-	.text       start:0x00029FA4 end:0x0002AEE4
+OBJECT/o_kddegring.c:
+	.text       start:0x00029F70 end:0x0002AEE4
 	.rodata     start:0x00000D68 end:0x00000D98
+	.data       start:0x0007B2D8 end:0x0007B2E0
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002B218 end:0x0002C434

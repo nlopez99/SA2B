@@ -252,9 +252,10 @@ stg38D_62.c:
 	.text       start:0x0002A0B0 end:0x0002AACC
 	.rodata     start:0x00000DF0 end:0x00000E28
 
-stg38D_63.c:
-	.text       start:0x0002AD18 end:0x0002BC58
+OBJECT/o_kddegring.c:
+	.text       start:0x0002ACE4 end:0x0002BC58
 	.rodata     start:0x00000E28 end:0x00000E58
+	.data       start:0x000A8FB8 end:0x000A8FC0
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002BF8C end:0x0002D1A8

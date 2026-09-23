@@ -262,9 +262,10 @@ stg17D_64.c:
 	.text       start:0x0002FEC8 end:0x000308E4
 	.rodata     start:0x00000E08 end:0x00000E40
 
-stg17D_65.c:
-	.text       start:0x00030B30 end:0x00031A70
+OBJECT/o_kddegring.c:
+	.text       start:0x00030AFC end:0x00031A70
 	.rodata     start:0x00000E40 end:0x00000E70
+	.data       start:0x00099538 end:0x00099540
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x00031DA4 end:0x00032FC0

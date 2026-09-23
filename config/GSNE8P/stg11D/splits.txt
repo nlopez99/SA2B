@@ -274,9 +274,10 @@ stg11D_68.c:
 	.text       start:0x0002CB0C end:0x0002D528
 	.rodata     start:0x00000E90 end:0x00000EC8
 
-stg11D_69.c:
-	.text       start:0x0002D774 end:0x0002E6B4
+OBJECT/o_kddegring.c:
+	.text       start:0x0002D740 end:0x0002E6B4
 	.rodata     start:0x00000EC8 end:0x00000EF8
+	.data       start:0x00073C98 end:0x00073CA0
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002E9E8 end:0x0002FC04

@@ -15,8 +15,8 @@ extern void _rename_SetConditionFlag(task *tp, Uint8 smode);
 
 // the two holes sit at twp->pos and twp->scl; entering one exits the other
 // the two halves of the executor are not quite symmetric, as in the original
-extern Sint32 _rename_GetKnuDaiMode(Sint32 no);
-extern Sint32 _rename_GetKnuDaiPos(Sint32 no, NJS_POINT3 *pos);
+extern Sint32 _rename_GetRingGroupState(Sint32 no);
+extern Sint32 _rename_GetRingGroupPos(Sint32 no, NJS_POINT3 *pos);
 extern task *CreateWpHole(NJS_POINT3 *pos, Float scale, Sint32 num,
                                   Uint8 flag, Float alpha, task **ptp);
 
@@ -153,10 +153,10 @@ static void ObjectKDWarpHoleExec(task *tp) {
   }
   switch (twp->mode) {
   case MD_WAIT:
-    if (_rename_GetKnuDaiMode((twp->ang.x & 0xF) % 8) != 1) {
+    if (_rename_GetRingGroupState((twp->ang.x & 0xF) % 8) != 1) {
       return;
     }
-    if (!_rename_GetKnuDaiPos((twp->ang.x & 0xF) % 8, &pos)) {
+    if (!_rename_GetRingGroupPos((twp->ang.x & 0xF) % 8, &pos)) {
       return;
     }
     GetWork(tp)->ratio = 0.0f;

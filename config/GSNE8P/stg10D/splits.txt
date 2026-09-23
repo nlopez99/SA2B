@@ -290,9 +290,10 @@ stg10D_72.c:
 	.text       start:0x0002C0D0 end:0x0002CAEC
 	.rodata     start:0x00000DB0 end:0x00000DE8
 
-stg10D_73.c:
-	.text       start:0x0002CD38 end:0x0002DC78
+OBJECT/o_kddegring.c:
+	.text       start:0x0002CD04 end:0x0002DC78
 	.rodata     start:0x00000DE8 end:0x00000E18
+	.data       start:0x00170E38 end:0x00170E40
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002DFAC end:0x0002F1C8

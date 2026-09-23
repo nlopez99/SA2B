@@ -242,9 +242,10 @@ stg06D_60.c:
 	.text       start:0x000253B0 end:0x00025DCC
 	.rodata     start:0x00000BC8 end:0x00000C00
 
-stg06D_61.c:
-	.text       start:0x00026018 end:0x00026F58
+OBJECT/o_kddegring.c:
+	.text       start:0x00025FE4 end:0x00026F58
 	.rodata     start:0x00000C00 end:0x00000C30
+	.data       start:0x0007DA38 end:0x0007DA40
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002728C end:0x000284A8

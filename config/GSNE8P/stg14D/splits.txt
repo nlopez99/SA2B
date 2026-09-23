@@ -270,9 +270,10 @@ stg14D_67.c:
 	.text       start:0x00027468 end:0x00027E84
 	.rodata     start:0x00000C38 end:0x00000C70
 
-stg14D_68.c:
-	.text       start:0x000280D0 end:0x00029010
+OBJECT/o_kddegring.c:
+	.text       start:0x0002809C end:0x00029010
 	.rodata     start:0x00000C70 end:0x00000CA0
+	.data       start:0x000D7918 end:0x000D7920
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x00029344 end:0x0002A560

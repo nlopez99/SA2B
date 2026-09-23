@@ -266,9 +266,10 @@ stg53D_66.c:
 	.text       start:0x00024BC0 end:0x000255DC
 	.rodata     start:0x00000BA0 end:0x00000BD8
 
-stg53D_67.c:
-	.text       start:0x00025828 end:0x00026768
+OBJECT/o_kddegring.c:
+	.text       start:0x000257F4 end:0x00026768
 	.rodata     start:0x00000BD8 end:0x00000C08
+	.data       start:0x00038758 end:0x00038760
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x00026A9C end:0x00027CB8

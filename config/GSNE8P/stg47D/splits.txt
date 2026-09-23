@@ -302,9 +302,10 @@ stg47D_74.c:
 	.text       start:0x000288E4 end:0x00029300
 	.rodata     start:0x00000D10 end:0x00000D48
 
-stg47D_75.c:
-	.text       start:0x0002954C end:0x0002A48C
+OBJECT/o_kddegring.c:
+	.text       start:0x00029518 end:0x0002A48C
 	.rodata     start:0x00000D48 end:0x00000D78
+	.data       start:0x0009F898 end:0x0009F8A0
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002A7C0 end:0x0002B9DC

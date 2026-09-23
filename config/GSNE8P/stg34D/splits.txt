@@ -256,9 +256,10 @@ stg34D_64.c:
 	.text       start:0x00029744 end:0x0002A160
 	.rodata     start:0x00000D20 end:0x00000D58
 
-stg34D_65.c:
-	.text       start:0x0002A3AC end:0x0002B2EC
+OBJECT/o_kddegring.c:
+	.text       start:0x0002A378 end:0x0002B2EC
 	.rodata     start:0x00000D58 end:0x00000D88
+	.data       start:0x0016CFF8 end:0x0016D000
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002B620 end:0x0002C83C

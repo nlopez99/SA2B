@@ -274,9 +274,10 @@ stg51D_67.c:
 	.text       start:0x0002788C end:0x000282A8
 	.rodata     start:0x00000CE8 end:0x00000D20
 
-stg51D_68.c:
-	.text       start:0x000284F4 end:0x00029434
+OBJECT/o_kddegring.c:
+	.text       start:0x000284C0 end:0x00029434
 	.rodata     start:0x00000D20 end:0x00000D50
+	.data       start:0x00049318 end:0x00049320
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x00029768 end:0x0002A984

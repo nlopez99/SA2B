@@ -283,9 +283,10 @@ stg07D_70.c:
 	.text       start:0x0002A620 end:0x0002B03C
 	.rodata     start:0x00000D88 end:0x00000DC0
 
-stg07D_71.c:
-	.text       start:0x0002B288 end:0x0002C1C8
+OBJECT/o_kddegring.c:
+	.text       start:0x0002B254 end:0x0002C1C8
 	.rodata     start:0x00000DC0 end:0x00000DF0
+	.data       start:0x0005D0F8 end:0x0005D100
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002C4FC end:0x0002D718

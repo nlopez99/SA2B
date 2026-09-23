@@ -226,9 +226,10 @@ stg35D_55.c:
 	.text       start:0x00030804 end:0x00031220
 	.rodata     start:0x00000F30 end:0x00000F68
 
-stg35D_56.c:
-	.text       start:0x0003146C end:0x000323AC
+OBJECT/o_kddegring.c:
+	.text       start:0x00031438 end:0x000323AC
 	.rodata     start:0x00000F68 end:0x00000F98
+	.data       start:0x00093E38 end:0x00093E40
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x000326E0 end:0x000338FC

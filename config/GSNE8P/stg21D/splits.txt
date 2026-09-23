@@ -326,9 +326,10 @@ stg21D_80.c:
 	.text       start:0x0002957C end:0x00029F98
 	.rodata     start:0x00000D20 end:0x00000D58
 
-stg21D_81.c:
-	.text       start:0x0002A1E4 end:0x0002B124
+OBJECT/o_kddegring.c:
+	.text       start:0x0002A1B0 end:0x0002B124
 	.rodata     start:0x00000D58 end:0x00000D88
+	.data       start:0x000859F8 end:0x00085A00
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002B458 end:0x0002C674

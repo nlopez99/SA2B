@@ -344,9 +344,10 @@ stg25D_85.c:
 	.text       start:0x000312A0 end:0x00031CE4
 	.rodata     start:0x00000F90 end:0x00000FC8
 
-stg25D_86.c:
-	.text       start:0x00031F30 end:0x00032E70
+OBJECT/o_kddegring.c:
+	.text       start:0x00031EFC end:0x00032E70
 	.rodata     start:0x00000FC8 end:0x00000FF8
+	.data       start:0x000E65F8 end:0x000E6600
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x000331A4 end:0x000343C0

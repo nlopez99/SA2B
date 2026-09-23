@@ -260,9 +260,10 @@ stg27D_65.c:
 	.text       start:0x00029314 end:0x00029D30
 	.rodata     start:0x00000D58 end:0x00000D90
 
-stg27D_66.c:
-	.text       start:0x00029F7C end:0x0002AEBC
+OBJECT/o_kddegring.c:
+	.text       start:0x00029F48 end:0x0002AEBC
 	.rodata     start:0x00000D90 end:0x00000DC0
+	.data       start:0x00081AF8 end:0x00081B00
 
 OBJECT/o_kdwarphole.c:
 	.text       start:0x0002B1F0 end:0x0002C40C

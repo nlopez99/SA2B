@@ -176,9 +176,10 @@ OBJECT/o_itemboxballoon.c:
 	.rodata     start:0x000007F8 end:0x00000840
 	.data       start:0x00144118 end:0x00144A70
 
-54d_39.c:
+OBJECT/o_kddegring.c:
 	.text       start:0x000183BC end:0x00019330
 	.rodata     start:0x00000840 end:0x00000870
+	.data       start:0x00144B48 end:0x00144B50
 
 54d_40.c:
 	.text       start:0x00019330 end:0x00019780
