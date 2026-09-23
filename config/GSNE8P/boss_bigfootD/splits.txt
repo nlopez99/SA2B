@@ -85,8 +85,8 @@ EFFECT/ef_dust.c:
 	.text       start:0x00016C04 end:0x000174BC
 	.rodata     start:0x00000948 end:0x00000990
 
-boss_bigfootD_21.c:
-	.text       start:0x000174BC end:0x00017520
+OBJECT/o_colli.c:
+	.text       start:0x000174BC end:0x000177B0
 	.rodata     start:0x00000990 end:0x00000998
 
 EFFECT/ef_ringsparkle.c:

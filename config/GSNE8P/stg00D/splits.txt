@@ -43,8 +43,8 @@ stg00D_8.c:
 	.text       start:0x000054A8 end:0x00005624
 	.rodata     start:0x00000208 end:0x00000220
 
-stg00D_9.c:
-	.text       start:0x00005624 end:0x00005688
+OBJECT/o_colli.c:
+	.text       start:0x00005624 end:0x00005918
 	.rodata     start:0x00000220 end:0x00000228
 
 EFFECT/ef_ringsparkle.c:

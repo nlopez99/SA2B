@@ -69,8 +69,8 @@ EFFECT/ef_dust.c:
 	.text       start:0x0000CCF0 end:0x0000D5A8
 	.rodata     start:0x000005B0 end:0x000005F8
 
-boss_fdogD_17.c:
-	.text       start:0x0000D5A8 end:0x0000D60C
+OBJECT/o_colli.c:
+	.text       start:0x0000D5A8 end:0x0000D89C
 	.rodata     start:0x000005F8 end:0x00000600
 
 EFFECT/ef_ringsparkle.c:

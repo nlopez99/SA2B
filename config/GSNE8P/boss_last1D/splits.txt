@@ -149,8 +149,8 @@ EFFECT/ef_dust.c:
 	.text       start:0x000178A0 end:0x00018158
 	.rodata     start:0x00000C90 end:0x00000CD8
 
-boss_last1D_37.c:
-	.text       start:0x00018158 end:0x000181BC
+OBJECT/o_colli.c:
+	.text       start:0x00018158 end:0x0001844C
 	.rodata     start:0x00000CD8 end:0x00000CE0
 
 EFFECT/ef_ringsparkle.c:

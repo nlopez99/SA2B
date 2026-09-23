@@ -109,8 +109,8 @@ EFFECT/ef_dust.c:
 	.text       start:0x00017600 end:0x00017EB8
 	.rodata     start:0x00000E50 end:0x00000E98
 
-Boss_GolemD_27.c:
-	.text       start:0x00017EB8 end:0x00017F1C
+OBJECT/o_colli.c:
+	.text       start:0x00017EB8 end:0x000181AC
 	.rodata     start:0x00000E98 end:0x00000EA0
 
 EFFECT/ef_ringsparkle.c:

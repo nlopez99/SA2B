@@ -14,6 +14,6 @@ ChaoStgNeut_1.c:
 	.text       start:0x00000808 end:0x00000920
 	.rodata     start:0x00000088 end:0x00000098
 
-ChaoStgNeut_2.c:
-	.text       start:0x00000D10 end:0x00000D74
+OBJECT/o_colli.c:
+	.text       start:0x00000D10 end:0x00001004
 	.rodata     start:0x00000098 end:0x0000009C

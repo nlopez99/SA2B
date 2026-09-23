@@ -28,6 +28,7 @@ modules:
   hash: 7379b87d640a23b58b2ea12181bb74704bd9718a
   symbols: config/GSNE8P/ChaoStgKarate/symbols.txt
   splits: config/GSNE8P/ChaoStgKarate/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/ChaoStgKinder.rel
   hash: 0e05faf1e6b323aabae30ff0365fc504a053ab42
@@ -38,6 +39,7 @@ modules:
   hash: ac9aed6d9faf36c4ea1b089c049e6a4142529f95
   symbols: config/GSNE8P/ChaoStgLobby/symbols.txt
   splits: config/GSNE8P/ChaoStgLobby/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/ChaoStgLobby000.rel
   hash: 43b271e81ed52084380a08767be5118154273b45
@@ -103,26 +105,31 @@ modules:
   hash: e7e24b8b6f4305d95531c9d898d566ead79ddc8d
   symbols: config/GSNE8P/ChaoMain/symbols.txt
   splits: config/GSNE8P/ChaoMain/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/Boss_GolemD.rel
   hash: 07afe5716bea12588255bc94d2fdae482caaae7c
   symbols: config/GSNE8P/Boss_GolemD/symbols.txt
   splits: config/GSNE8P/Boss_GolemD/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/Boss_GolemED.rel
   hash: c4916f4373f68268771b6027a2e0a7d45ad2c3ef
   symbols: config/GSNE8P/Boss_GolemED/symbols.txt
   splits: config/GSNE8P/Boss_GolemED/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/Boss_Last2D.rel
   hash: 677bd0b0e842031097612a905ee82eba50f444cc
   symbols: config/GSNE8P/Boss_Last2D/symbols.txt
   splits: config/GSNE8P/Boss_Last2D/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/CartD.rel
   hash: 3a7aa2470d6c4334067bf216783a3ad739c1dbd7
   symbols: config/GSNE8P/CartD/symbols.txt
   splits: config/GSNE8P/CartD/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/ChaoMotionsD.rel
   hash: e60502ef11973d8ff7c81c90d1a3bd9cd74e9b09
@@ -133,6 +140,7 @@ modules:
   hash: b3bc84cffbb902d3dd5f417abc1e356ddbf2b94c
   symbols: config/GSNE8P/EmblemGetD/symbols.txt
   splits: config/GSNE8P/EmblemGetD/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/EndingD.rel
   hash: caba450b77e165189120e37a6c202e8a8e06f0d4
@@ -143,36 +151,43 @@ modules:
   hash: 1764d34512136037e914daa688b0fc2c605398fe
   symbols: config/GSNE8P/advertiseD/symbols.txt
   splits: config/GSNE8P/advertiseD/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/boss_bigbogyD.rel
   hash: e83e55891db0e8baed9038ed1ef71290e9fc690d
   symbols: config/GSNE8P/boss_bigbogyD/symbols.txt
   splits: config/GSNE8P/boss_bigbogyD/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/boss_bigfootD.rel
   hash: d967fde6c63aaa7f7ae57116f2cb5bffb2846084
   symbols: config/GSNE8P/boss_bigfootD/symbols.txt
   splits: config/GSNE8P/boss_bigfootD/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/boss_fdogD.rel
   hash: 9a5f6c2dee422ec300db7f36dc72eddf9e4ae028
   symbols: config/GSNE8P/boss_fdogD/symbols.txt
   splits: config/GSNE8P/boss_fdogD/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/boss_hotshotD.rel
   hash: 98d15c6e8fdf63216cbd6d718225d7515f2a9494
   symbols: config/GSNE8P/boss_hotshotD/symbols.txt
   splits: config/GSNE8P/boss_hotshotD/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/boss_last1D.rel
   hash: 2393ed486a62af5cdff29d43171191d377d268c7
   symbols: config/GSNE8P/boss_last1D/symbols.txt
   splits: config/GSNE8P/boss_last1D/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/eventD.rel
   hash: 188a4276b8180b9d70ca3b6f1d22bfc3ac99b22d
   symbols: config/GSNE8P/eventD/symbols.txt
   splits: config/GSNE8P/eventD/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/mcwarnD.rel
   hash: 5344686948f7deb3e82e2df8d38d8ba1018be777
@@ -188,6 +203,7 @@ modules:
   hash: 38aa2f5614ded2a2a0a96007552e9140603f0ea1
   symbols: config/GSNE8P/stg00D/symbols.txt
   splits: config/GSNE8P/stg00D/splits.txt
+  force_active: [ObjectSphere, ObjectCCyl, ObjectCCube, ObjectCWall]
 
 - object: orig/GSNE8P/files/stg03D.rel
   hash: 79eda3b69de5f486943910c7b53e72776d8eeb36

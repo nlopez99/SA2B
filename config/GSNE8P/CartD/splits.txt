@@ -122,8 +122,8 @@ CartD_28.c:
 	.text       start:0x0000EEC0 end:0x0000F524
 	.rodata     start:0x000004C0 end:0x000004E8
 
-CartD_29.c:
-	.text       start:0x0000F5E8 end:0x0000F64C
+OBJECT/o_colli.c:
+	.text       start:0x0000F5E8 end:0x0000F8DC
 	.rodata     start:0x000004E8 end:0x000004F0
 
 CartD_30.c:

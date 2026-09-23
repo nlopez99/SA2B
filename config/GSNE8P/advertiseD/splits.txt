@@ -134,8 +134,8 @@ EFFECT/ef_kiran.c:
 	.text       start:0x0003AD64 end:0x0003B070
 	.rodata     start:0x00000AA8 end:0x00000AD0
 
-advertiseD_33.c:
-	.text       start:0x0003B070 end:0x0003B0D4
+OBJECT/o_colli.c:
+	.text       start:0x0003B070 end:0x0003B364
 	.rodata     start:0x00000AD0 end:0x00000AD8
 
 advertiseD_34.c:

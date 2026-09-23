@@ -37,6 +37,6 @@ ChaoStgLobby_7.c:
 	.text       start:0x00001850 end:0x00001924
 	.rodata     start:0x000000A8 end:0x000000B8
 
-ChaoStgLobby_8.c:
-	.text       start:0x000019E0 end:0x00001A44
+OBJECT/o_colli.c:
+	.text       start:0x000019E0 end:0x00001CD4
 	.rodata     start:0x000000B8 end:0x000000BC

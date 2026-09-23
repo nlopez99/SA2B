@@ -116,6 +116,6 @@ EFFECT/ef_kiran.c:
 	.text       start:0x000113FC end:0x00011708
 	.rodata     start:0x00000DD0 end:0x00000DF8
 
-ChaoStgRace_28.c:
-	.text       start:0x00011708 end:0x0001176C
+OBJECT/o_colli.c:
+	.text       start:0x00011708 end:0x000119FC
 	.rodata     start:0x00000DF8 end:0x00000DFC
