@@ -98,9 +98,10 @@ stg51D_22.c:
 	.text       start:0x0000F020 end:0x0000F67C
 	.rodata     start:0x000004F8 end:0x00000530
 
-stg51D_23.c:
-	.text       start:0x0000F77C end:0x000100F0
+OBJECT/itemboxmanager.c:
+	.text       start:0x0000F67C end:0x000100F0
 	.rodata     start:0x00000530 end:0x00000578
+	.data       start:0x000335D8 end:0x00033818
 
 stg51D_24.c:
 	.text       start:0x000100F0 end:0x000103FC

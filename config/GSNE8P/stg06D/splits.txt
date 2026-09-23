@@ -70,9 +70,10 @@ stg06D_15.c:
 	.text       start:0x0000D53C end:0x0000DAB0
 	.rodata     start:0x00000408 end:0x00000440
 
-stg06D_16.c:
-	.text       start:0x0000DBB0 end:0x0000E524
+OBJECT/itemboxmanager.c:
+	.text       start:0x0000DAB0 end:0x0000E524
 	.rodata     start:0x00000440 end:0x00000488
+	.data       start:0x00068440 end:0x00068680
 
 stg06D_17.c:
 	.text       start:0x0000E524 end:0x0000E830

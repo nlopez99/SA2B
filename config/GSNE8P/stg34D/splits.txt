@@ -86,9 +86,10 @@ stg34D_19.c:
 	.text       start:0x00012254 end:0x000128B0
 	.rodata     start:0x00000590 end:0x000005C8
 
-stg34D_20.c:
-	.text       start:0x000129B0 end:0x00013324
+OBJECT/itemboxmanager.c:
+	.text       start:0x000128B0 end:0x00013324
 	.rodata     start:0x000005C8 end:0x00000610
+	.data       start:0x00157A58 end:0x00157C98
 
 stg34D_21.c:
 	.text       start:0x00013324 end:0x00013630

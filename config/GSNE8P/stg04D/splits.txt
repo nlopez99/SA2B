@@ -98,9 +98,10 @@ stg04D_22.c:
 	.text       start:0x00010188 end:0x000106FC
 	.rodata     start:0x000004E8 end:0x00000520
 
-stg04D_23.c:
-	.text       start:0x000107FC end:0x00011170
+OBJECT/itemboxmanager.c:
+	.text       start:0x000106FC end:0x00011170
 	.rodata     start:0x00000520 end:0x00000568
+	.data       start:0x00075D88 end:0x00075FC8
 
 stg04D_24.c:
 	.text       start:0x00011170 end:0x0001147C

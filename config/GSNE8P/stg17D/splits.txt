@@ -90,9 +90,10 @@ stg17D_20.c:
 	.text       start:0x00017880 end:0x00017FB4
 	.rodata     start:0x00000638 end:0x00000670
 
-stg17D_21.c:
-	.text       start:0x000180B4 end:0x00018A28
+OBJECT/itemboxmanager.c:
+	.text       start:0x00017FB4 end:0x00018A28
 	.rodata     start:0x00000670 end:0x000006B8
+	.data       start:0x00083EC8 end:0x00084108
 
 stg17D_22.c:
 	.text       start:0x00018A28 end:0x00018D34

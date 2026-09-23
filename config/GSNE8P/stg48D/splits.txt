@@ -138,9 +138,10 @@ stg48D_32.c:
 	.text       start:0x00011038 end:0x00011694
 	.rodata     start:0x00000588 end:0x000005C0
 
-stg48D_33.c:
-	.text       start:0x00011794 end:0x00012108
+OBJECT/itemboxmanager.c:
+	.text       start:0x00011694 end:0x00012108
 	.rodata     start:0x000005C0 end:0x00000608
+	.data       start:0x00100308 end:0x00100548
 
 stg48D_34.c:
 	.text       start:0x00012108 end:0x00012414

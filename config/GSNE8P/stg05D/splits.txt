@@ -86,9 +86,10 @@ stg05D_19.c:
 	.text       start:0x0000E900 end:0x0000EF5C
 	.rodata     start:0x00000418 end:0x00000450
 
-stg05D_20.c:
-	.text       start:0x0000F05C end:0x0000F9D0
+OBJECT/itemboxmanager.c:
+	.text       start:0x0000EF5C end:0x0000F9D0
 	.rodata     start:0x00000450 end:0x00000498
+	.data       start:0x000471A8 end:0x000473E8
 
 stg05D_21.c:
 	.text       start:0x0000F9D0 end:0x0000FCDC

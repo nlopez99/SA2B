@@ -114,9 +114,10 @@ stg10D_26.c:
 	.text       start:0x00013F5C end:0x000144D0
 	.rodata     start:0x000005D0 end:0x00000608
 
-stg10D_27.c:
-	.text       start:0x000145D0 end:0x00014F44
+OBJECT/itemboxmanager.c:
+	.text       start:0x000144D0 end:0x00014F44
 	.rodata     start:0x00000608 end:0x00000650
+	.data       start:0x0015B150 end:0x0015B390
 
 stg10D_28.c:
 	.text       start:0x00014F44 end:0x00015250

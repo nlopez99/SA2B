@@ -126,9 +126,10 @@ stg22D_29.c:
 	.text       start:0x00016438 end:0x000169AC
 	.rodata     start:0x00000768 end:0x000007A0
 
-stg22D_30.c:
-	.text       start:0x00016AAC end:0x00017420
+OBJECT/itemboxmanager.c:
+	.text       start:0x000169AC end:0x00017420
 	.rodata     start:0x000007A0 end:0x000007E8
+	.data       start:0x000C47C8 end:0x000C4A08
 
 stg22D_31.c:
 	.text       start:0x00017420 end:0x0001772C

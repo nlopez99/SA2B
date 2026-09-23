@@ -66,9 +66,10 @@ boss_bigfootD_14.c:
 	.text       start:0x000150A8 end:0x000157DC
 	.rodata     start:0x00000880 end:0x000008B8
 
-boss_bigfootD_15.c:
-	.text       start:0x000158DC end:0x00016250
+OBJECT/itemboxmanager.c:
+	.text       start:0x000157DC end:0x00016250
 	.rodata     start:0x000008B8 end:0x00000900
+	.data       start:0x00046078 end:0x000462B8
 
 boss_bigfootD_16.c:
 	.text       start:0x00016250 end:0x0001655C

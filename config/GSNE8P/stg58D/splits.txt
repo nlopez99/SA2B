@@ -110,9 +110,10 @@ stg58D_25.c:
 	.text       start:0x00014680 end:0x00014DB4
 	.rodata     start:0x000006B0 end:0x000006E8
 
-stg58D_26.c:
-	.text       start:0x00014EB4 end:0x00015828
+OBJECT/itemboxmanager.c:
+	.text       start:0x00014DB4 end:0x00015828
 	.rodata     start:0x000006E8 end:0x00000730
+	.data       start:0x00022B20 end:0x00022D60
 
 stg58D_27.c:
 	.text       start:0x00015828 end:0x00015B34

@@ -110,9 +110,10 @@ stg49D_25.c:
 	.text       start:0x00010980 end:0x00010FDC
 	.rodata     start:0x00000500 end:0x00000538
 
-stg49D_26.c:
-	.text       start:0x000110DC end:0x00011A50
+OBJECT/itemboxmanager.c:
+	.text       start:0x00010FDC end:0x00011A50
 	.rodata     start:0x00000538 end:0x00000580
+	.data       start:0x0003B450 end:0x0003B690
 
 stg49D_27.c:
 	.text       start:0x00011A50 end:0x00011D5C

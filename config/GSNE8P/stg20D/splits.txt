@@ -42,9 +42,10 @@ stg20D_8.c:
 	.text       start:0x00010238 end:0x00010894
 	.rodata     start:0x00000580 end:0x000005B8
 
-stg20D_9.c:
-	.text       start:0x00010994 end:0x00011308
+OBJECT/itemboxmanager.c:
+	.text       start:0x00010894 end:0x00011308
 	.rodata     start:0x000005B8 end:0x00000600
+	.data       start:0x00035F78 end:0x000361B8
 
 stg20D_10.c:
 	.text       start:0x00011308 end:0x00011614

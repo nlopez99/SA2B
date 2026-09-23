@@ -94,9 +94,10 @@ stg30D_21.c:
 	.text       start:0x000103E4 end:0x00010A40
 	.rodata     start:0x00000468 end:0x000004A0
 
-stg30D_22.c:
-	.text       start:0x00010B40 end:0x000114B4
+OBJECT/itemboxmanager.c:
+	.text       start:0x00010A40 end:0x000114B4
 	.rodata     start:0x000004A0 end:0x000004E8
+	.data       start:0x000BDE80 end:0x000BE0C0
 
 stg30D_23.c:
 	.text       start:0x000114B4 end:0x000117C0

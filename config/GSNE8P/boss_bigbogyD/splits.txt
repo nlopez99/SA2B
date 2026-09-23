@@ -46,9 +46,10 @@ boss_bigbogyD_9.c:
 	.text       start:0x00016CB4 end:0x00017228
 	.rodata     start:0x00000CA8 end:0x00000CE0
 
-boss_bigbogyD_10.c:
-	.text       start:0x00017328 end:0x00017C9C
+OBJECT/itemboxmanager.c:
+	.text       start:0x00017228 end:0x00017C9C
 	.rodata     start:0x00000CE0 end:0x00000D28
+	.data       start:0x000424E8 end:0x00042728
 
 boss_bigbogyD_11.c:
 	.text       start:0x00017C9C end:0x00017FA8

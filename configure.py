@@ -690,6 +690,7 @@ config.libs = [
             Object(Matching, "EFFECT/ef_spspark.c"),
             Object(Matching, "EFFECT/ef_dirt.c"),
             Object(Matching, "EFFECT/ef_explosion.c"),
+            Object(Matching, "OBJECT/itemboxmanager.c"),
             CHAOPIPE_C,
             SPRING_C,
             RING_C,

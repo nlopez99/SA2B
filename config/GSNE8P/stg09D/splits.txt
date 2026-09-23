@@ -106,9 +106,10 @@ stg09D_24.c:
 	.text       start:0x0000E83C end:0x0000EE98
 	.rodata     start:0x00000530 end:0x00000568
 
-stg09D_25.c:
-	.text       start:0x0000EF98 end:0x0000F90C
+OBJECT/itemboxmanager.c:
+	.text       start:0x0000EE98 end:0x0000F90C
 	.rodata     start:0x00000568 end:0x000005B0
+	.data       start:0x0004B9B8 end:0x0004BBF8
 
 stg09D_26.c:
 	.text       start:0x0000F90C end:0x0000FC18

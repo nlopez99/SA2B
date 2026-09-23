@@ -166,9 +166,10 @@ stg59D_39.c:
 	.text       start:0x0001B030 end:0x0001B68C
 	.rodata     start:0x00000898 end:0x000008D0
 
-stg59D_40.c:
-	.text       start:0x0001B78C end:0x0001C100
+OBJECT/itemboxmanager.c:
+	.text       start:0x0001B68C end:0x0001C100
 	.rodata     start:0x000008D0 end:0x00000918
+	.data       start:0x000AFF20 end:0x000B0160
 
 stg59D_41.c:
 	.text       start:0x0001C100 end:0x0001C40C

@@ -122,9 +122,10 @@ stg03D_28.c:
 	.text       start:0x00014234 end:0x000147A8
 	.rodata     start:0x000006E0 end:0x00000718
 
-stg03D_29.c:
-	.text       start:0x000148A8 end:0x0001521C
+OBJECT/itemboxmanager.c:
+	.text       start:0x000147A8 end:0x0001521C
 	.rodata     start:0x00000718 end:0x00000760
+	.data       start:0x000DA090 end:0x000DA2D0
 
 stg03D_30.c:
 	.text       start:0x0001521C end:0x00015528

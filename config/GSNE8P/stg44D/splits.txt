@@ -122,9 +122,10 @@ stg44D_28.c:
 	.text       start:0x00011454 end:0x00011AB0
 	.rodata     start:0x00000538 end:0x00000570
 
-stg44D_29.c:
-	.text       start:0x00011BB0 end:0x00012524
+OBJECT/itemboxmanager.c:
+	.text       start:0x00011AB0 end:0x00012524
 	.rodata     start:0x00000570 end:0x000005B8
+	.data       start:0x0005F990 end:0x0005FBD0
 
 stg44D_30.c:
 	.text       start:0x00012524 end:0x00012830

@@ -101,9 +101,10 @@ stg15D_23.c:
 	.text       start:0x0000EC0C end:0x0000F268
 	.rodata     start:0x000004F0 end:0x00000528
 
-stg15D_24.c:
-	.text       start:0x0000F368 end:0x0000FCDC
+OBJECT/itemboxmanager.c:
+	.text       start:0x0000F268 end:0x0000FCDC
 	.rodata     start:0x00000528 end:0x00000570
+	.data       start:0x00035F28 end:0x00036168
 
 stg15D_25.c:
 	.text       start:0x0000FCDC end:0x0000FFE8

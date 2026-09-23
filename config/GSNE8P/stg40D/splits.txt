@@ -82,9 +82,10 @@ stg40D_18.c:
 	.text       start:0x0000D880 end:0x0000DDF4
 	.rodata     start:0x00000378 end:0x000003B0
 
-stg40D_19.c:
-	.text       start:0x0000DEF4 end:0x0000E868
+OBJECT/itemboxmanager.c:
+	.text       start:0x0000DDF4 end:0x0000E868
 	.rodata     start:0x000003B0 end:0x000003F8
+	.data       start:0x00079E10 end:0x0007A050
 
 stg40D_20.c:
 	.text       start:0x0000E868 end:0x0000EB74
