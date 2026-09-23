@@ -78,13 +78,11 @@ stg31D_17.c:
 	.text       start:0x0000BCFC end:0x0000C2F4
 	.rodata     start:0x000003C0 end:0x00000408
 
-stg31D_18.c:
-	.text       start:0x0000C370 end:0x0000C684
-	.rodata     start:0x00000408 end:0x00000420
-
-stg31D_19.c:
-	.text       start:0x0000C684 end:0x0000C90C
-	.rodata     start:0x00000420 end:0x00000428
+EFFECT/ef_lnspark.c:
+	.text       start:0x0000C370 end:0x0000CA18
+	.rodata     start:0x00000408 end:0x00000428
+	.data       start:0x00083C08 end:0x00083C28
+	.bss        start:0x00000450 end:0x00000458
 
 EFFECT/ef_dust.c:
 	.text       start:0x0000CA18 end:0x0000D2D0

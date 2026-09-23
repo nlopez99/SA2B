@@ -146,13 +146,11 @@ stg47D_34.c:
 	.text       start:0x00012654 end:0x00012C4C
 	.rodata     start:0x00000610 end:0x00000658
 
-stg47D_35.c:
-	.text       start:0x00012CC8 end:0x00012FDC
-	.rodata     start:0x00000658 end:0x00000670
-
-stg47D_36.c:
-	.text       start:0x00012FDC end:0x00013264
-	.rodata     start:0x00000670 end:0x00000678
+EFFECT/ef_lnspark.c:
+	.text       start:0x00012CC8 end:0x00013370
+	.rodata     start:0x00000658 end:0x00000678
+	.data       start:0x0008A7C8 end:0x0008A7E8
+	.bss        start:0x00000660 end:0x00000668
 
 stg47D_37.c:
 	.text       start:0x00013370 end:0x00014294

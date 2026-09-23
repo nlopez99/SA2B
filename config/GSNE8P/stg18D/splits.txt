@@ -162,13 +162,11 @@ stg18D_38.c:
 	.text       start:0x00017214 end:0x0001780C
 	.rodata     start:0x000007A8 end:0x000007F0
 
-stg18D_39.c:
-	.text       start:0x0001780C end:0x00017B20
-	.rodata     start:0x000007F0 end:0x00000808
-
-stg18D_40.c:
-	.text       start:0x00017B20 end:0x00017DA8
-	.rodata     start:0x00000808 end:0x00000810
+EFFECT/ef_lnspark.c:
+	.text       start:0x0001780C end:0x00017EB4
+	.rodata     start:0x000007F0 end:0x00000810
+	.data       start:0x000D3D48 end:0x000D3D68
+	.bss        start:0x000006B8 end:0x000006C0
 
 EFFECT/ef_dust.c:
 	.text       start:0x00017EB4 end:0x0001876C

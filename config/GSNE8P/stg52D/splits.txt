@@ -125,13 +125,11 @@ stg52D_28.c:
 	.text       start:0x0001CC68 end:0x0001D260
 	.rodata     start:0x00000708 end:0x00000750
 
-stg52D_29.c:
-	.text       start:0x0001D2DC end:0x0001D5F0
-	.rodata     start:0x00000750 end:0x00000768
-
-stg52D_30.c:
-	.text       start:0x0001D5F0 end:0x0001D878
-	.rodata     start:0x00000768 end:0x00000770
+EFFECT/ef_lnspark.c:
+	.text       start:0x0001D2DC end:0x0001D984
+	.rodata     start:0x00000750 end:0x00000770
+	.data       start:0x0017C0B0 end:0x0017C0D0
+	.bss        start:0x000006D8 end:0x000006E0
 
 EFFECT/ef_dust.c:
 	.text       start:0x0001D984 end:0x0001E23C

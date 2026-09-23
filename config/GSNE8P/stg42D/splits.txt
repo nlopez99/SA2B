@@ -74,13 +74,11 @@ stg42D_16.c:
 	.text       start:0x0000A988 end:0x0000AFEC
 	.rodata     start:0x00000430 end:0x00000458
 
-stg42D_17.c:
-	.text       start:0x0000B0B0 end:0x0000B3C4
-	.rodata     start:0x00000458 end:0x00000470
-
-stg42D_18.c:
-	.text       start:0x0000B3C4 end:0x0000B64C
-	.rodata     start:0x00000470 end:0x00000478
+EFFECT/ef_lnspark.c:
+	.text       start:0x0000B0B0 end:0x0000B758
+	.rodata     start:0x00000458 end:0x00000478
+	.data       start:0x0000DAB0 end:0x0000DAD0
+	.bss        start:0x00000658 end:0x00000660
 
 stg42D_19.c:
 	.text       start:0x0000B758 end:0x0000BE94

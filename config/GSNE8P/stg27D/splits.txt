@@ -106,13 +106,11 @@ stg27D_24.c:
 	.text       start:0x00013130 end:0x00013728
 	.rodata     start:0x00000678 end:0x000006C0
 
-stg27D_25.c:
-	.text       start:0x000137A4 end:0x00013AB8
-	.rodata     start:0x000006C0 end:0x000006D8
-
-stg27D_26.c:
-	.text       start:0x00013AB8 end:0x00013D40
-	.rodata     start:0x000006D8 end:0x000006E0
+EFFECT/ef_lnspark.c:
+	.text       start:0x000137A4 end:0x00013E4C
+	.rodata     start:0x000006C0 end:0x000006E0
+	.data       start:0x0006CA80 end:0x0006CAA0
+	.bss        start:0x000008F8 end:0x00000900
 
 EFFECT/ef_dust.c:
 	.text       start:0x00013E4C end:0x00014704

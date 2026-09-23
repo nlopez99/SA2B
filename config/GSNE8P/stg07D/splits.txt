@@ -122,13 +122,11 @@ stg07D_28.c:
 	.text       start:0x00011BAC end:0x00012210
 	.rodata     start:0x000005A8 end:0x000005D0
 
-stg07D_29.c:
-	.text       start:0x000122FC end:0x00012610
-	.rodata     start:0x000005D0 end:0x000005E8
-
-stg07D_30.c:
-	.text       start:0x00012610 end:0x00012898
-	.rodata     start:0x000005E8 end:0x000005F0
+EFFECT/ef_lnspark.c:
+	.text       start:0x000122FC end:0x000129A4
+	.rodata     start:0x000005D0 end:0x000005F0
+	.data       start:0x00047860 end:0x00047880
+	.bss        start:0x00000880 end:0x00000888
 
 stg07D_31.c:
 	.text       start:0x000129A4 end:0x00013474

@@ -114,13 +114,11 @@ stg12D_26.c:
 	.text       start:0x00010DA8 end:0x000113A0
 	.rodata     start:0x000005C8 end:0x00000610
 
-stg12D_27.c:
-	.text       start:0x0001141C end:0x00011730
-	.rodata     start:0x00000610 end:0x00000628
-
-stg12D_28.c:
-	.text       start:0x00011730 end:0x000119B8
-	.rodata     start:0x00000628 end:0x00000630
+EFFECT/ef_lnspark.c:
+	.text       start:0x0001141C end:0x00011AC4
+	.rodata     start:0x00000610 end:0x00000630
+	.data       start:0x00053368 end:0x00053388
+	.bss        start:0x000006E0 end:0x000006E8
 
 stg12D_29.c:
 	.text       start:0x00011AC4 end:0x000129E8

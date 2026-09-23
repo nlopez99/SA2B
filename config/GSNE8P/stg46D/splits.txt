@@ -146,13 +146,11 @@ stg46D_34.c:
 	.text       start:0x00011AE8 end:0x00011D44
 	.rodata     start:0x00000658 end:0x00000668
 
-stg46D_35.c:
-	.text       start:0x00011D44 end:0x00012058
-	.rodata     start:0x00000668 end:0x00000680
-
-stg46D_36.c:
-	.text       start:0x00012058 end:0x000122E0
-	.rodata     start:0x00000680 end:0x00000688
+EFFECT/ef_lnspark.c:
+	.text       start:0x00011D44 end:0x000123EC
+	.rodata     start:0x00000668 end:0x00000688
+	.data       start:0x0005CB30 end:0x0005CB50
+	.bss        start:0x00000688 end:0x00000690
 
 EFFECT/ef_dust.c:
 	.text       start:0x000123EC end:0x00012CA4

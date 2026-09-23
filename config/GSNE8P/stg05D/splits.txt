@@ -98,13 +98,11 @@ stg05D_22.c:
 	.text       start:0x0000FCDC end:0x00010340
 	.rodata     start:0x000004C0 end:0x000004E8
 
-stg05D_23.c:
-	.text       start:0x00010404 end:0x00010718
-	.rodata     start:0x000004E8 end:0x00000500
-
-stg05D_24.c:
-	.text       start:0x00010718 end:0x000109A0
-	.rodata     start:0x00000500 end:0x00000508
+EFFECT/ef_lnspark.c:
+	.text       start:0x00010404 end:0x00010AAC
+	.rodata     start:0x000004E8 end:0x00000508
+	.data       start:0x000474B0 end:0x000474D0
+	.bss        start:0x00000668 end:0x00000670
 
 EFFECT/ef_dust.c:
 	.text       start:0x00010AAC end:0x00011364

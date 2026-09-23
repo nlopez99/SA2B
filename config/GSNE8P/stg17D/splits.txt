@@ -106,13 +106,11 @@ stg17D_24.c:
 	.text       start:0x00019678 end:0x00019C70
 	.rodata     start:0x00000708 end:0x00000750
 
-stg17D_25.c:
-	.text       start:0x00019CEC end:0x0001A000
-	.rodata     start:0x00000750 end:0x00000768
-
-stg17D_26.c:
-	.text       start:0x0001A000 end:0x0001A288
-	.rodata     start:0x00000768 end:0x00000770
+EFFECT/ef_lnspark.c:
+	.text       start:0x00019CEC end:0x0001A394
+	.rodata     start:0x00000750 end:0x00000770
+	.data       start:0x00084460 end:0x00084480
+	.bss        start:0x00000698 end:0x000006A0
 
 stg17D_27.c:
 	.text       start:0x0001A394 end:0x0001B2B8

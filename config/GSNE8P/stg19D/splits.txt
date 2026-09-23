@@ -54,13 +54,11 @@ stg19D_11.c:
 	.text       start:0x0000CBA0 end:0x0000D204
 	.rodata     start:0x000004E8 end:0x00000510
 
-stg19D_12.c:
-	.text       start:0x0000D2C8 end:0x0000D5DC
-	.rodata     start:0x00000510 end:0x00000528
-
-stg19D_13.c:
-	.text       start:0x0000D5DC end:0x0000D864
-	.rodata     start:0x00000528 end:0x00000530
+EFFECT/ef_lnspark.c:
+	.text       start:0x0000D2C8 end:0x0000D970
+	.rodata     start:0x00000510 end:0x00000530
+	.data       start:0x00018090 end:0x000180B0
+	.bss        start:0x00000658 end:0x00000660
 
 stg19D_14.c:
 	.text       start:0x0000D970 end:0x0000E0AC

@@ -102,13 +102,11 @@ stg08D_23.c:
 	.text       start:0x0000F4A8 end:0x0000FAA0
 	.rodata     start:0x000004F0 end:0x00000538
 
-stg08D_24.c:
-	.text       start:0x0000FB1C end:0x0000FE30
-	.rodata     start:0x00000538 end:0x00000550
-
-stg08D_25.c:
-	.text       start:0x0000FE30 end:0x000100B8
-	.rodata     start:0x00000550 end:0x00000558
+EFFECT/ef_lnspark.c:
+	.text       start:0x0000FB1C end:0x000101C4
+	.rodata     start:0x00000538 end:0x00000558
+	.data       start:0x00053018 end:0x00053038
+	.bss        start:0x00004D50 end:0x00004D58
 
 EFFECT/ef_dust.c:
 	.text       start:0x000101C4 end:0x00010A7C

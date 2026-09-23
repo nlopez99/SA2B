@@ -162,13 +162,11 @@ stg32D_38.c:
 	.text       start:0x00014420 end:0x00014A18
 	.rodata     start:0x00000668 end:0x000006B0
 
-stg32D_39.c:
-	.text       start:0x00014A94 end:0x00014DA8
-	.rodata     start:0x000006B0 end:0x000006C8
-
-stg32D_40.c:
-	.text       start:0x00014DA8 end:0x00015030
-	.rodata     start:0x000006C8 end:0x000006D0
+EFFECT/ef_lnspark.c:
+	.text       start:0x00014A94 end:0x0001513C
+	.rodata     start:0x000006B0 end:0x000006D0
+	.data       start:0x0005EAF0 end:0x0005EB10
+	.bss        start:0x000006A8 end:0x000006B0
 
 EFFECT/ef_dust.c:
 	.text       start:0x0001513C end:0x000159F4

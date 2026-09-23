@@ -62,13 +62,11 @@ stg36D_13.c:
 	.text       start:0x0001BC70 end:0x0001C268
 	.rodata     start:0x00000820 end:0x00000868
 
-stg36D_14.c:
-	.text       start:0x0001C2E4 end:0x0001C5F8
-	.rodata     start:0x00000868 end:0x00000880
-
-stg36D_15.c:
-	.text       start:0x0001C5F8 end:0x0001C880
-	.rodata     start:0x00000880 end:0x00000888
+EFFECT/ef_lnspark.c:
+	.text       start:0x0001C2E4 end:0x0001C98C
+	.rodata     start:0x00000868 end:0x00000888
+	.data       start:0x00074B78 end:0x00074B98
+	.bss        start:0x00000470 end:0x00000478
 
 stg36D_16.c:
 	.text       start:0x0001C98C end:0x0001D8B0

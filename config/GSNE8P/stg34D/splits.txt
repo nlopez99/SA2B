@@ -102,13 +102,11 @@ stg34D_23.c:
 	.text       start:0x000138D4 end:0x00013ECC
 	.rodata     start:0x00000640 end:0x00000688
 
-stg34D_24.c:
-	.text       start:0x00013F48 end:0x0001425C
-	.rodata     start:0x00000688 end:0x000006A0
-
-stg34D_25.c:
-	.text       start:0x0001425C end:0x000144E4
-	.rodata     start:0x000006A0 end:0x000006A8
+EFFECT/ef_lnspark.c:
+	.text       start:0x00013F48 end:0x000145F0
+	.rodata     start:0x00000688 end:0x000006A8
+	.data       start:0x00157FB8 end:0x00157FD8
+	.bss        start:0x000004A8 end:0x000004B0
 
 EFFECT/ef_dust.c:
 	.text       start:0x000145F0 end:0x00014EA8

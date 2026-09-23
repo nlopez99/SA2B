@@ -109,13 +109,11 @@ stg39D_25.c:
 	.text       start:0x000172F0 end:0x000178E8
 	.rodata     start:0x00000658 end:0x000006A0
 
-stg39D_26.c:
-	.text       start:0x00017964 end:0x00017C78
-	.rodata     start:0x000006A0 end:0x000006B8
-
-stg39D_27.c:
-	.text       start:0x00017C78 end:0x00017F00
-	.rodata     start:0x000006B8 end:0x000006C0
+EFFECT/ef_lnspark.c:
+	.text       start:0x00017964 end:0x0001800C
+	.rodata     start:0x000006A0 end:0x000006C0
+	.data       start:0x0004A4E8 end:0x0004A508
+	.bss        start:0x00000688 end:0x00000690
 
 stg39D_28.c:
 	.text       start:0x0001800C end:0x00018F30

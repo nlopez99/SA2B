@@ -74,13 +74,11 @@ boss_bigfootD_16.c:
 	.text       start:0x00016250 end:0x0001655C
 	.rodata     start:0x00000900 end:0x00000928
 
-boss_bigfootD_17.c:
-	.text       start:0x0001655C end:0x00016870
-	.rodata     start:0x00000928 end:0x00000940
-
-boss_bigfootD_18.c:
-	.text       start:0x00016870 end:0x00016AF8
-	.rodata     start:0x00000940 end:0x00000948
+EFFECT/ef_lnspark.c:
+	.text       start:0x0001655C end:0x00016C04
+	.rodata     start:0x00000928 end:0x00000948
+	.data       start:0x00046348 end:0x00046368
+	.bss        start:0x00000590 end:0x00000598
 
 EFFECT/ef_dust.c:
 	.text       start:0x00016C04 end:0x000174BC

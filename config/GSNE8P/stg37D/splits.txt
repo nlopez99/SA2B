@@ -66,13 +66,11 @@ stg37D_14.c:
 	.text       start:0x0001364C end:0x00013C44
 	.rodata     start:0x00000678 end:0x000006C0
 
-stg37D_15.c:
-	.text       start:0x00013CC0 end:0x00013FD4
-	.rodata     start:0x000006C0 end:0x000006D8
-
-stg37D_16.c:
-	.text       start:0x00013FD4 end:0x0001425C
-	.rodata     start:0x000006D8 end:0x000006E0
+EFFECT/ef_lnspark.c:
+	.text       start:0x00013CC0 end:0x00014368
+	.rodata     start:0x000006C0 end:0x000006E0
+	.data       start:0x0009A150 end:0x0009A170
+	.bss        start:0x000004B0 end:0x000004B8
 
 EFFECT/ef_dust.c:
 	.text       start:0x00014368 end:0x00014C20

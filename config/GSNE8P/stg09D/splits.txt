@@ -122,13 +122,11 @@ stg09D_28.c:
 	.text       start:0x0001055C end:0x00010B54
 	.rodata     start:0x00000600 end:0x00000648
 
-stg09D_29.c:
-	.text       start:0x00010BD0 end:0x00010EE4
-	.rodata     start:0x00000648 end:0x00000660
-
-stg09D_30.c:
-	.text       start:0x00010EE4 end:0x0001116C
-	.rodata     start:0x00000660 end:0x00000668
+EFFECT/ef_lnspark.c:
+	.text       start:0x00010BD0 end:0x00011278
+	.rodata     start:0x00000648 end:0x00000668
+	.data       start:0x0004BF50 end:0x0004BF70
+	.bss        start:0x00000658 end:0x00000660
 
 EFFECT/ef_dust.c:
 	.text       start:0x00011278 end:0x00011B30

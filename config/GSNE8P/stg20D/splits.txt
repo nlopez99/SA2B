@@ -58,13 +58,11 @@ stg20D_12.c:
 	.text       start:0x00011F58 end:0x00012550
 	.rodata     start:0x00000650 end:0x00000698
 
-stg20D_13.c:
-	.text       start:0x000125CC end:0x000128E0
-	.rodata     start:0x00000698 end:0x000006B0
-
-stg20D_14.c:
-	.text       start:0x000128E0 end:0x00012B68
-	.rodata     start:0x000006B0 end:0x000006B8
+EFFECT/ef_lnspark.c:
+	.text       start:0x000125CC end:0x00012C74
+	.rodata     start:0x00000698 end:0x000006B8
+	.data       start:0x00036510 end:0x00036530
+	.bss        start:0x000006D8 end:0x000006E0
 
 stg20D_15.c:
 	.text       start:0x00012C74 end:0x00013B98

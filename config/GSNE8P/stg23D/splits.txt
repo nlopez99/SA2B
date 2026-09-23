@@ -154,13 +154,11 @@ stg23D_36.c:
 	.text       start:0x00013404 end:0x000139FC
 	.rodata     start:0x000006D8 end:0x00000720
 
-stg23D_37.c:
-	.text       start:0x00013A78 end:0x00013D8C
-	.rodata     start:0x00000720 end:0x00000738
-
-stg23D_38.c:
-	.text       start:0x00013D8C end:0x00014014
-	.rodata     start:0x00000738 end:0x00000740
+EFFECT/ef_lnspark.c:
+	.text       start:0x00013A78 end:0x00014120
+	.rodata     start:0x00000720 end:0x00000740
+	.data       start:0x000F3F98 end:0x000F3FB8
+	.bss        start:0x00000660 end:0x00000668
 
 stg23D_39.c:
 	.text       start:0x00014120 end:0x00015044

@@ -110,13 +110,11 @@ stg30D_25.c:
 	.text       start:0x00012138 end:0x00012730
 	.rodata     start:0x00000538 end:0x00000580
 
-stg30D_26.c:
-	.text       start:0x000127AC end:0x00012AC0
-	.rodata     start:0x00000580 end:0x00000598
-
-stg30D_27.c:
-	.text       start:0x00012AC0 end:0x00012D48
-	.rodata     start:0x00000598 end:0x000005A0
+EFFECT/ef_lnspark.c:
+	.text       start:0x000127AC end:0x00012E54
+	.rodata     start:0x00000580 end:0x000005A0
+	.data       start:0x000BE418 end:0x000BE438
+	.bss        start:0x00000AA0 end:0x00000AA8
 
 EFFECT/ef_dust.c:
 	.text       start:0x00012E54 end:0x0001370C

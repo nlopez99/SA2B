@@ -154,13 +154,11 @@ stg48D_36.c:
 	.text       start:0x000126B8 end:0x00012CB0
 	.rodata     start:0x00000638 end:0x00000680
 
-stg48D_37.c:
-	.text       start:0x00012D2C end:0x00013040
-	.rodata     start:0x00000680 end:0x00000698
-
-stg48D_38.c:
-	.text       start:0x00013040 end:0x000132C8
-	.rodata     start:0x00000698 end:0x000006A0
+EFFECT/ef_lnspark.c:
+	.text       start:0x00012D2C end:0x000133D4
+	.rodata     start:0x00000680 end:0x000006A0
+	.data       start:0x00100868 end:0x00100888
+	.bss        start:0x00000440 end:0x00000448
 
 stg48D_39.c:
 	.text       start:0x000133D4 end:0x000142F8

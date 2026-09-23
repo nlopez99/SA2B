@@ -130,13 +130,11 @@ stg57D_30.c:
 	.text       start:0x00015CB0 end:0x000162A8
 	.rodata     start:0x00000698 end:0x000006E0
 
-stg57D_31.c:
-	.text       start:0x00016324 end:0x00016638
-	.rodata     start:0x000006E0 end:0x000006F8
-
-stg57D_32.c:
-	.text       start:0x00016638 end:0x000168C0
-	.rodata     start:0x000006F8 end:0x00000700
+EFFECT/ef_lnspark.c:
+	.text       start:0x00016324 end:0x000169CC
+	.rodata     start:0x000006E0 end:0x00000700
+	.data       start:0x0013E1F0 end:0x0013E210
+	.bss        start:0x00000948 end:0x00000950
 
 EFFECT/ef_dust.c:
 	.text       start:0x000169CC end:0x00017284

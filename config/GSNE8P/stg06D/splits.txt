@@ -86,13 +86,11 @@ stg06D_19.c:
 	.text       start:0x0000F174 end:0x0000F76C
 	.rodata     start:0x000004D8 end:0x00000520
 
-stg06D_20.c:
-	.text       start:0x0000F7E8 end:0x0000FAFC
-	.rodata     start:0x00000520 end:0x00000538
-
-stg06D_21.c:
-	.text       start:0x0000FAFC end:0x0000FD84
-	.rodata     start:0x00000538 end:0x00000540
+EFFECT/ef_lnspark.c:
+	.text       start:0x0000F7E8 end:0x0000FE90
+	.rodata     start:0x00000520 end:0x00000540
+	.data       start:0x000689D8 end:0x000689F8
+	.bss        start:0x00000668 end:0x00000670
 
 EFFECT/ef_dust.c:
 	.text       start:0x0000FE90 end:0x00010748
