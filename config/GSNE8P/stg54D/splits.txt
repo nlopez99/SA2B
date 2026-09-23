@@ -92,8 +92,12 @@ EFFECT/ef_kiran.c:
 	.rodata     start:0x00000488 end:0x000004B8
 
 54d_21.c:
-	.text       start:0x0000D7EC end:0x0000E374
-	.rodata     start:0x000004B8 end:0x00000510
+	.text       start:0x0000D7EC end:0x0000DD0C
+	.rodata     start:0x000004B8 end:0x000004D8
+
+EFFECT/ef_ringsparkle.c:
+	.text       start:0x0000DD0C end:0x0000E374
+	.rodata     start:0x000004D8 end:0x00000510
 
 54d_22.c:
 	.text       start:0x0000E374 end:0x0000E73C
@@ -228,8 +232,14 @@ OBJECT/o_udreel.c:
 	.bss        start:0x000004B0 end:0x000004B8
 
 54d_51.c:
-	.text       start:0x0002A248 end:0x0002C278
-	.rodata     start:0x00000C88 end:0x00000D48
+	.text       start:0x0002A248 end:0x0002A7FC
+	.rodata     start:0x00000C88 end:0x00000CB0
+
+ENEMY/e_bomb.c:
+	.text       start:0x0002A7FC end:0x0002C278
+	.rodata     start:0x00000CB0 end:0x00000D48
+	.data       start:0x001696A0 end:0x0016A598
+	.bss        start:0x000004B8 end:0x000004C0
 
 ENEMY/e_bullet.c:
 	.text       start:0x0002C328 end:0x0002D090
