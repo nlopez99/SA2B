@@ -122,9 +122,10 @@ eventD_28.c:
 	.text       start:0x0000FF44 end:0x000102F4
 	.rodata     start:0x00000390 end:0x000003C0
 
-eventD_29.c:
+EFFECT/ef_dust_ev.c:
 	.text       start:0x000102F4 end:0x00010A30
 	.rodata     start:0x000003C0 end:0x000003F0
+	.data       start:0x00002750 end:0x000027C0
 
 eventD_30.c:
 	.text       start:0x00010A88 end:0x00011034

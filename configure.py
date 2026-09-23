@@ -697,6 +697,7 @@ config.libs = [
             Object(Matching, "EFFECT/ef_spark.c"),
             Object(Matching, "EFFECT/ef_lensflare.c"),
             Object(Matching, "EFFECT/ef_dust.c"),
+            Object(Matching, "EFFECT/ef_dust_ev.c"),
             Object(Matching, "EFFECT/ef_ringsparkle.c"),
             Object(Matching, "EFFECT/ef_rocketthrust.c"),
             Object(Matching, "EFFECT/ef_snowpuff.c"),
