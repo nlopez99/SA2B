@@ -413,8 +413,9 @@ ChaoMain_128.c:
 ChaoMain_129.c:
 	.text       start:0x0005836C end:0x000584F8
 
-ChaoMain_130.c:
+EFFECT/ef_kiran.c:
 	.text       start:0x000585C8 end:0x000588D4
+	.rodata     start:0x00009BE0 end:0x00009C08
 
 ChaoMain_131.c:
 	.text       start:0x000588D4 end:0x00058938

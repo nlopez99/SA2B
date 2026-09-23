@@ -112,7 +112,7 @@ ChaoStgRace_26.c:
 	.text       start:0x00011140 end:0x00011340
 	.rodata     start:0x00000DB0 end:0x00000DD0
 
-ChaoStgRace_27.c:
+EFFECT/ef_kiran.c:
 	.text       start:0x000113FC end:0x00011708
 	.rodata     start:0x00000DD0 end:0x00000DF8
 

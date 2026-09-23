@@ -95,7 +95,7 @@ OBJECT/itemboxmanager.c:
 	.rodata     start:0x00000DC0 end:0x00000E08
 	.data       start:0x000D00C0 end:0x000D0300
 
-Boss_GolemD_22.c:
+EFFECT/ef_kiran.c:
 	.text       start:0x00016C4C end:0x00016F58
 	.rodata     start:0x00000E08 end:0x00000E30
 

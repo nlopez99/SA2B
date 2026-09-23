@@ -103,7 +103,7 @@ OBJECT/itemboxmanager.c:
 	.rodata     start:0x00000520 end:0x00000568
 	.data       start:0x00075D88 end:0x00075FC8
 
-stg04D_24.c:
+EFFECT/ef_kiran.c:
 	.text       start:0x00011170 end:0x0001147C
 	.rodata     start:0x00000568 end:0x00000590
 

@@ -151,7 +151,7 @@ OBJECT/itemboxmanager.c:
 	.rodata     start:0x00000710 end:0x00000758
 	.data       start:0x000D37C8 end:0x000D3A08
 
-stg18D_36.c:
+EFFECT/ef_kiran.c:
 	.text       start:0x000167B8 end:0x00016AC4
 	.rodata     start:0x00000758 end:0x00000780
 

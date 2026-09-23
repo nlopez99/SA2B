@@ -18,7 +18,7 @@ EmblemGetD_2.c:
 	.text       start:0x00000EE4 end:0x000010E4
 	.rodata     start:0x00000030 end:0x00000050
 
-EmblemGetD_3.c:
+EFFECT/ef_kiran.c:
 	.text       start:0x000011A0 end:0x000014AC
 	.rodata     start:0x00000050 end:0x00000078
 
