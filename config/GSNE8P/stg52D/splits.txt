@@ -73,9 +73,13 @@ stg52D_15.c:
 	.text       start:0x0000CCE8 end:0x000116C4
 	.rodata     start:0x000002A0 end:0x00000398
 
+stg13_cityescape/o_ce_roadobj.c:
+	.text       start:0x0001189C end:0x00011F18
+	.rodata     start:0x00000430 end:0x00000448
+
 stg52D_16.c:
-	.text       start:0x00011CCC end:0x00012298
-	.rodata     start:0x00000428 end:0x00000458
+	.text       start:0x00011F18 end:0x00012298
+	.rodata     start:0x00000448 end:0x00000458
 
 stg52D_17.c:
 	.text       start:0x000126AC end:0x00013250
