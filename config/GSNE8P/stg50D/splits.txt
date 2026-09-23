@@ -107,7 +107,7 @@ stg50D_24.c:
 	.text       start:0x00010FC0 end:0x00011624
 	.rodata     start:0x00000598 end:0x000005C0
 
-stg50D_25.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x00011938 end:0x00011F30
 	.rodata     start:0x000005C0 end:0x00000608
 

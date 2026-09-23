@@ -151,7 +151,7 @@ stg23D_35.c:
 	.text       start:0x00012AC0 end:0x00013124
 	.rodata     start:0x000006B0 end:0x000006D8
 
-stg23D_36.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x00013404 end:0x000139FC
 	.rodata     start:0x000006D8 end:0x00000720
 

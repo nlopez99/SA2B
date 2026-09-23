@@ -143,7 +143,7 @@ stg47D_33.c:
 	.text       start:0x00011D10 end:0x00012374
 	.rodata     start:0x000005E8 end:0x00000610
 
-stg47D_34.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x00012654 end:0x00012C4C
 	.rodata     start:0x00000610 end:0x00000658
 

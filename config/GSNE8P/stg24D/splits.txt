@@ -119,7 +119,7 @@ stg24D_27.c:
 	.text       start:0x00017650 end:0x00017CB4
 	.rodata     start:0x000007F8 end:0x00000820
 
-stg24D_28.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x00017FBC end:0x000185B4
 	.rodata     start:0x00000820 end:0x00000868
 

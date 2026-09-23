@@ -171,7 +171,7 @@ stg21D_40.c:
 	.text       start:0x00013228 end:0x0001388C
 	.rodata     start:0x00000618 end:0x00000640
 
-stg21D_41.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x00013B6C end:0x00014164
 	.rodata     start:0x00000640 end:0x00000688
 

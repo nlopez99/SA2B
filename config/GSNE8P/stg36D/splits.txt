@@ -59,7 +59,7 @@ stg36D_12.c:
 	.text       start:0x0001B9CC end:0x0001BA54
 	.rodata     start:0x00000818 end:0x00000820
 
-stg36D_13.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x0001BC70 end:0x0001C268
 	.rodata     start:0x00000820 end:0x00000868
 

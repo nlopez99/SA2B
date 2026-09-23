@@ -95,7 +95,7 @@ stg40D_21.c:
 	.text       start:0x0000EB74 end:0x0000F1D8
 	.rodata     start:0x00000420 end:0x00000448
 
-stg40D_22.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x0000F4B8 end:0x0000FAB0
 	.rodata     start:0x00000448 end:0x00000490
 

@@ -127,7 +127,7 @@ stg57D_29.c:
 	.text       start:0x00015344 end:0x000159A8
 	.rodata     start:0x00000670 end:0x00000698
 
-stg57D_30.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x00015CB0 end:0x000162A8
 	.rodata     start:0x00000698 end:0x000006E0
 

@@ -55,7 +55,7 @@ stg20D_11.c:
 	.text       start:0x00011614 end:0x00011C78
 	.rodata     start:0x00000628 end:0x00000650
 
-stg20D_12.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x00011F58 end:0x00012550
 	.rodata     start:0x00000650 end:0x00000698
 

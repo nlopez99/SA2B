@@ -83,7 +83,7 @@ stg06D_18.c:
 	.text       start:0x0000E830 end:0x0000EE94
 	.rodata     start:0x000004B0 end:0x000004D8
 
-stg06D_19.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x0000F174 end:0x0000F76C
 	.rodata     start:0x000004D8 end:0x00000520
 

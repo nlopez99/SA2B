@@ -75,7 +75,7 @@ stg31D_16.c:
 	.text       start:0x0000BA58 end:0x0000BAE0
 	.rodata     start:0x000003B8 end:0x000003C0
 
-stg31D_17.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x0000BCFC end:0x0000C2F4
 	.rodata     start:0x000003C0 end:0x00000408
 

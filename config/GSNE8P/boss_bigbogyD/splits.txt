@@ -55,7 +55,7 @@ EFFECT/ef_kiran.c:
 	.text       start:0x00017C9C end:0x00017FA8
 	.rodata     start:0x00000D28 end:0x00000D50
 
-boss_bigbogyD_12.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x000181C4 end:0x000187BC
 	.rodata     start:0x00000D50 end:0x00000D98
 

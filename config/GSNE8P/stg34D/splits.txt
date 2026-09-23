@@ -99,7 +99,7 @@ stg34D_22.c:
 	.text       start:0x00013630 end:0x000136B8
 	.rodata     start:0x00000638 end:0x00000640
 
-stg34D_23.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x000138D4 end:0x00013ECC
 	.rodata     start:0x00000640 end:0x00000688
 

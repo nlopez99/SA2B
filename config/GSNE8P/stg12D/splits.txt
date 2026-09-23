@@ -111,7 +111,7 @@ stg12D_25.c:
 	.text       start:0x00010464 end:0x00010AC8
 	.rodata     start:0x000005A0 end:0x000005C8
 
-stg12D_26.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x00010DA8 end:0x000113A0
 	.rodata     start:0x000005C8 end:0x00000610
 

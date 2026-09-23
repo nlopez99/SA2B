@@ -83,12 +83,10 @@ stg13D_18.c:
 	.text       start:0x00012A98 end:0x00012B98
 	.rodata     start:0x00000468 end:0x00000470
 
-stg13D_19.c:
-	.text       start:0x00012D0C end:0x000138B0
+light.c:
+	.text       start:0x00012D0C end:0x00013DC8
 	.rodata     start:0x00000470 end:0x00000478
-
-stg13D_19.5.c:
-	.text       start:0x000138B0 end:0x00013DC8
+	.data       start:0x0020DDF0 end:0x0020DDF8
 
 stg13D_20.c:
 	.text       start:0x00013DC8 end:0x00018B74
@@ -131,7 +129,7 @@ stg13D_29.c:
 	.text       start:0x0001C984 end:0x0001CFE8
 	.rodata     start:0x000006F8 end:0x00000720
 
-stg13D_30.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x0001D2C8 end:0x0001D8C0
 	.rodata     start:0x00000720 end:0x00000768
 

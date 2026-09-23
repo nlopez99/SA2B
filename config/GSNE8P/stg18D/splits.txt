@@ -159,7 +159,7 @@ stg18D_37.c:
 	.text       start:0x00016AC4 end:0x00017128
 	.rodata     start:0x00000780 end:0x000007A8
 
-stg18D_38.c:
+EFFECT/ef_lensflare.c:
 	.text       start:0x00017214 end:0x0001780C
 	.rodata     start:0x000007A8 end:0x000007F0
 
