@@ -109,13 +109,11 @@ stg00D_26.c:
 	.text       start:0x0000CB70 end:0x0000D594
 	.rodata     start:0x000004C8 end:0x000004E8
 
-stg00D_27.c:
-	.text       start:0x0000D594 end:0x000106C8
-	.rodata     start:0x000004E8 end:0x00000548
-
-stg00D_28.c:
-	.text       start:0x000106C8 end:0x00010784
-	.rodata     start:0x00000548 end:0x00000550
+OBJECT/o_emerald.c:
+	.text       start:0x0000D594 end:0x00010928
+	.rodata     start:0x000004E8 end:0x00000550
+	.data       start:0x0001BEE8 end:0x0001CCF8
+	.bss        start:0x00000A98 end:0x00000AA0
 
 stg00D_29.c:
 	.text       start:0x00010B60 end:0x00010F9C

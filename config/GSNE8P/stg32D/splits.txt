@@ -269,13 +269,11 @@ stg32D_67.c:
 	.text       start:0x00021174 end:0x00021AF4
 	.rodata     start:0x00000B20 end:0x00000B50
 
-stg32D_68.c:
-	.text       start:0x00021AF4 end:0x00024C68
-	.rodata     start:0x00000B50 end:0x00000BB0
-
-stg32D_69.c:
-	.text       start:0x00024C68 end:0x00024D24
-	.rodata     start:0x00000BB0 end:0x00000BB8
+OBJECT/o_emerald.c:
+	.text       start:0x00021AF4 end:0x00024EC8
+	.rodata     start:0x00000B50 end:0x00000BB8
+	.data       start:0x00067DC8 end:0x00068BD8
+	.bss        start:0x00000D40 end:0x00000D48
 
 OBJECT/o_goalring.c:
 	.text       start:0x00024EC8 end:0x000261E4

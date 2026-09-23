@@ -229,13 +229,11 @@ stg07D_57.c:
 	.text       start:0x00020A88 end:0x00021408
 	.rodata     start:0x00000B30 end:0x00000B60
 
-stg07D_58.c:
-	.text       start:0x00021408 end:0x0002457C
-	.rodata     start:0x00000B60 end:0x00000BC0
-
-stg07D_59.c:
-	.text       start:0x0002457C end:0x00024638
-	.rodata     start:0x00000BC0 end:0x00000BC8
+OBJECT/o_emerald.c:
+	.text       start:0x00021408 end:0x000247DC
+	.rodata     start:0x00000B60 end:0x00000BC8
+	.data       start:0x00050C68 end:0x00051A78
+	.bss        start:0x00000F18 end:0x00000F20
 
 OBJECT/o_goalring.c:
 	.text       start:0x000247DC end:0x00025AF8
