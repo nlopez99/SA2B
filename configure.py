@@ -722,6 +722,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_levupdai.c"),
             Object(Matching, "ENEMY/e_kumi.c"),
             Object(Matching, "OBJECT/o_kdwarphole.c"),
+            Object(Matching, "ENEMY/e_path.c"),
             Object(Matching, "OBJECT/o_rocketmissile.c"),
             Object(Matching, "OBJECT/o_emerald.c"),
             Object(Matching, "OBJECT/o_switch.c"),

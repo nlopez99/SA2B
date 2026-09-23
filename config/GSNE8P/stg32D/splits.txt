@@ -460,9 +460,11 @@ EFFECT/ef_explosion.c:
 	.data       start:0x000AB178 end:0x000AB1F0
 	.bss        start:0x00002DF0 end:0x00002DF8
 
-stg32D_112.c:
-	.text       start:0x0004C90C end:0x0004E328
+ENEMY/e_path.c:
+	.text       start:0x0004C898 end:0x0004E7B0
 	.rodata     start:0x00001788 end:0x00001820
+	.data       start:0x000B5BE0 end:0x000B5D28
+	.bss        start:0x00002DF8 end:0x00002E00
 
 ENEMY/e_gold.c:
 	.text       start:0x0004E7B0 end:0x0004F5CC

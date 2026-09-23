@@ -411,9 +411,11 @@ EFFECT/ef_explosion.c:
 	.data       start:0x00088250 end:0x000882C8
 	.bss        start:0x00002DB0 end:0x00002DB8
 
-stg49D_100.c:
-	.text       start:0x0004B88C end:0x0004D2A8
+ENEMY/e_path.c:
+	.text       start:0x0004B818 end:0x0004D730
 	.rodata     start:0x00001778 end:0x00001810
+	.data       start:0x00092CB8 end:0x00092E00
+	.bss        start:0x00002DB8 end:0x00002DC0
 
 ENEMY/e_gold.c:
 	.text       start:0x0004D730 end:0x0004E54C
