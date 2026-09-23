@@ -308,9 +308,10 @@ stg05D_75.c:
 	.text       start:0x0003A320 end:0x0003B13C
 	.rodata     start:0x00001050 end:0x000010B0
 
-stg05D_76.c:
+OBJECT/o_skull.c:
 	.text       start:0x0003B170 end:0x0003BB14
 	.rodata     start:0x000010B0 end:0x000010F0
+	.data       start:0x00089760 end:0x00089770
 
 OBJECT/o_solidbox.c:
 	.text       start:0x0003BB14 end:0x0003BEB8

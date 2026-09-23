@@ -405,9 +405,10 @@ stg25D_98.c:
 	.text       start:0x00045FC0 end:0x00046DDC
 	.rodata     start:0x00001470 end:0x000014D0
 
-stg25D_99.c:
+OBJECT/o_skull.c:
 	.text       start:0x00046E10 end:0x000477B4
 	.rodata     start:0x000014D0 end:0x00001510
+	.data       start:0x00113820 end:0x00113830
 
 OBJECT/o_spring.c:
 	.text       start:0x000479A0 end:0x00048AC4

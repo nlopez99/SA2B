@@ -345,7 +345,7 @@ stg49D_83.c:
 	.text       start:0x0003F284 end:0x000400A0
 	.rodata     start:0x00001268 end:0x000012C8
 
-stg49D_84.c:
+OBJECT/o_skull.c:
 	.text       start:0x000400D4 end:0x000408B4
 	.rodata     start:0x000012C8 end:0x00001300
 

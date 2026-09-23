@@ -393,9 +393,10 @@ stg59D_95.c:
 	.text       start:0x00045FD8 end:0x00046DF4
 	.rodata     start:0x00001470 end:0x000014D0
 
-stg59D_96.c:
+OBJECT/o_skull.c:
 	.text       start:0x00046E28 end:0x000477CC
 	.rodata     start:0x000014D0 end:0x00001510
+	.data       start:0x000F0FA0 end:0x000F0FB0
 
 OBJECT/o_spring.c:
 	.text       start:0x000479B8 end:0x00048ADC

@@ -340,9 +340,10 @@ stg16D_82.c:
 	.text       start:0x0003DE10 end:0x0003EC2C
 	.rodata     start:0x00001208 end:0x00001268
 
-stg16D_83.c:
+OBJECT/o_skull.c:
 	.text       start:0x0003EC60 end:0x0003F604
 	.rodata     start:0x00001268 end:0x000012A8
+	.data       start:0x000D0E20 end:0x000D0E30
 
 OBJECT/o_solidbox.c:
 	.text       start:0x0003F7F0 end:0x0003FB94

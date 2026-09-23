@@ -328,7 +328,7 @@ OBJECT/o_searchbox.c:
 	.data       start:0x00064EC8 end:0x00064F00
 	.bss        start:0x00000E08 end:0x00000E18
 
-stg58D_80.c:
+OBJECT/o_skull.c:
 	.text       start:0x00041210 end:0x000419F0
 	.rodata     start:0x00001370 end:0x000013A8
 
