@@ -81,7 +81,7 @@ EFFECT/ef_lnspark.c:
 	.data       start:0x0000DAB0 end:0x0000DAD0
 	.bss        start:0x00000658 end:0x00000660
 
-stg42D_19.c:
+EFFECT/ef_dust.c:
 	.text       start:0x0000B758 end:0x0000BE94
 	.rodata     start:0x00000478 end:0x000004A8
 

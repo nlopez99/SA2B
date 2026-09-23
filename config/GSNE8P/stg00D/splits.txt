@@ -35,13 +35,9 @@ EFFECT/ef_kiran.c:
 	.text       start:0x00004DD4 end:0x000050E0
 	.rodata     start:0x000001B0 end:0x000001D8
 
-stg00D_7.c:
-	.text       start:0x000050E0 end:0x000054A8
-	.rodata     start:0x000001D8 end:0x00000208
-
-stg00D_8.c:
-	.text       start:0x000054A8 end:0x00005624
-	.rodata     start:0x00000208 end:0x00000220
+EFFECT/ef_dust.c:
+	.text       start:0x000050E0 end:0x00005624
+	.rodata     start:0x000001D8 end:0x00000220
 
 OBJECT/o_colli.c:
 	.text       start:0x00005624 end:0x00005918
