@@ -110,7 +110,7 @@ EFFECT/ef_dust.c:
 	.text       start:0x000101D4 end:0x00010A8C
 	.rodata     start:0x000004B0 end:0x000004F8
 
-stg40D_27.c:
+OBJECT/o_colli.c:
 	.text       start:0x00010A8C end:0x00010E30
 	.rodata     start:0x000004F8 end:0x00000500
 

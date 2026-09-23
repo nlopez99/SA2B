@@ -126,7 +126,7 @@ stg51D_29.c:
 	.text       start:0x00011A5C end:0x00012980
 	.rodata     start:0x00000630 end:0x00000698
 
-stg51D_30.c:
+OBJECT/o_colli.c:
 	.text       start:0x00012980 end:0x00012D24
 	.rodata     start:0x00000698 end:0x000006A0
 

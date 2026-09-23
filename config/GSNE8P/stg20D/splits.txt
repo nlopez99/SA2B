@@ -70,7 +70,7 @@ stg20D_15.c:
 	.text       start:0x00012C74 end:0x00013B98
 	.rodata     start:0x000006B8 end:0x00000720
 
-stg20D_16.c:
+OBJECT/o_colli.c:
 	.text       start:0x00013B98 end:0x00013F3C
 	.rodata     start:0x00000720 end:0x00000728
 

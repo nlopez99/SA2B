@@ -121,7 +121,7 @@ stg39D_28.c:
 	.text       start:0x0001800C end:0x00018F30
 	.rodata     start:0x000006C0 end:0x00000728
 
-stg39D_29.c:
+OBJECT/o_colli.c:
 	.text       start:0x00018F30 end:0x000192D4
 	.rodata     start:0x00000728 end:0x00000730
 

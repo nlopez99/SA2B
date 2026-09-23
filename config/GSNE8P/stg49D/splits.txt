@@ -138,7 +138,7 @@ stg49D_32.c:
 	.text       start:0x000136E4 end:0x00013A60
 	.rodata     start:0x00000650 end:0x00000668
 
-stg49D_33.c:
+OBJECT/o_colli.c:
 	.text       start:0x00013A60 end:0x00013E04
 	.rodata     start:0x00000668 end:0x00000670
 

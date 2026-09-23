@@ -86,7 +86,7 @@ stg35D_19.c:
 	.text       start:0x0001DA48 end:0x0001E96C
 	.rodata     start:0x000008D0 end:0x00000938
 
-stg35D_20.c:
+OBJECT/o_colli.c:
 	.text       start:0x0001E96C end:0x0001ED10
 	.rodata     start:0x00000938 end:0x00000940
 

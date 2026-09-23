@@ -166,7 +166,7 @@ stg48D_39.c:
 	.text       start:0x000133D4 end:0x000142F8
 	.rodata     start:0x000006A0 end:0x00000708
 
-stg48D_40.c:
+OBJECT/o_colli.c:
 	.text       start:0x000142F8 end:0x0001469C
 	.rodata     start:0x00000708 end:0x00000710
 

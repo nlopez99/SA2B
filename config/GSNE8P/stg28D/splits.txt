@@ -222,7 +222,7 @@ EFFECT/ef_dust.c:
 	.text       start:0x0001CAB0 end:0x0001D368
 	.rodata     start:0x000009D8 end:0x00000A20
 
-stg28D_55.c:
+OBJECT/o_colli.c:
 	.text       start:0x0001D368 end:0x0001D70C
 	.rodata     start:0x00000A20 end:0x00000A28
 

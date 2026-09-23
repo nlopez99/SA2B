@@ -122,7 +122,7 @@ stg43D_28.c:
 	.text       start:0x00012614 end:0x00013538
 	.rodata     start:0x000005F8 end:0x00000660
 
-stg43D_29.c:
+OBJECT/o_colli.c:
 	.text       start:0x00013538 end:0x000138DC
 	.rodata     start:0x00000660 end:0x00000668
 

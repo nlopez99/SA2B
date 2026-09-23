@@ -134,7 +134,7 @@ stg58D_31.c:
 	.text       start:0x000169C4 end:0x000178E8
 	.rodata     start:0x000007A0 end:0x00000808
 
-stg58D_32.c:
+OBJECT/o_colli.c:
 	.text       start:0x000178E8 end:0x00017C8C
 	.rodata     start:0x00000808 end:0x00000810
 

@@ -74,7 +74,7 @@ stg36D_16.c:
 	.text       start:0x0001C98C end:0x0001D8B0
 	.rodata     start:0x00000888 end:0x000008F0
 
-stg36D_17.c:
+OBJECT/o_colli.c:
 	.text       start:0x0001D8B0 end:0x0001DC54
 	.rodata     start:0x000008F0 end:0x000008F8
 

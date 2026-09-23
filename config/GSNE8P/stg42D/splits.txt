@@ -86,7 +86,7 @@ stg42D_19.c:
 	.text       start:0x0000B758 end:0x0000BE94
 	.rodata     start:0x00000478 end:0x000004A8
 
-stg42D_20.c:
+OBJECT/o_colli.c:
 	.text       start:0x0000BE94 end:0x0000C238
 	.rodata     start:0x000004A8 end:0x000004B0
 

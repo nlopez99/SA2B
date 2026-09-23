@@ -134,7 +134,7 @@ stg24D_31.c:
 	.text       start:0x00018CD8 end:0x00019BFC
 	.rodata     start:0x00000888 end:0x000008F0
 
-stg24D_32.c:
+OBJECT/o_colli.c:
 	.text       start:0x00019BFC end:0x00019FA0
 	.rodata     start:0x000008F0 end:0x000008F8
 

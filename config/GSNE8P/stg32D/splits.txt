@@ -174,7 +174,7 @@ EFFECT/ef_dust.c:
 	.text       start:0x0001513C end:0x000159F4
 	.rodata     start:0x000006D0 end:0x00000718
 
-stg32D_43.c:
+OBJECT/o_colli.c:
 	.text       start:0x000159F4 end:0x00015D98
 	.rodata     start:0x00000718 end:0x00000720
 

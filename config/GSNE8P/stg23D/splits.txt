@@ -166,7 +166,7 @@ stg23D_39.c:
 	.text       start:0x00014120 end:0x00015044
 	.rodata     start:0x00000740 end:0x000007A8
 
-stg23D_40.c:
+OBJECT/o_colli.c:
 	.text       start:0x00015044 end:0x000153E8
 	.rodata     start:0x000007A8 end:0x000007B0
 

@@ -138,7 +138,7 @@ stg07D_32.c:
 	.text       start:0x00013560 end:0x000138DC
 	.rodata     start:0x00000650 end:0x00000668
 
-stg07D_33.c:
+OBJECT/o_colli.c:
 	.text       start:0x000138DC end:0x00013C80
 	.rodata     start:0x00000668 end:0x00000670
 

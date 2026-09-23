@@ -118,7 +118,7 @@ stg17D_27.c:
 	.text       start:0x0001A394 end:0x0001B2B8
 	.rodata     start:0x00000770 end:0x000007D8
 
-stg17D_28.c:
+OBJECT/o_colli.c:
 	.text       start:0x0001B2B8 end:0x0001B65C
 	.rodata     start:0x000007D8 end:0x000007E0
 

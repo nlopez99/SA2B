@@ -134,7 +134,7 @@ stg11D_31.c:
 	.text       start:0x00016070 end:0x00016F94
 	.rodata     start:0x00000768 end:0x000007D0
 
-stg11D_32.c:
+OBJECT/o_colli.c:
 	.text       start:0x00016F94 end:0x00017338
 	.rodata     start:0x000007D0 end:0x000007D8
 

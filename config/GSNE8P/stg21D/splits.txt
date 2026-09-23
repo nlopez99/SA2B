@@ -186,7 +186,7 @@ stg21D_44.c:
 	.text       start:0x00014888 end:0x000157AC
 	.rodata     start:0x000006A8 end:0x00000710
 
-stg21D_45.c:
+OBJECT/o_colli.c:
 	.text       start:0x000157AC end:0x00015B50
 	.rodata     start:0x00000710 end:0x00000718
 

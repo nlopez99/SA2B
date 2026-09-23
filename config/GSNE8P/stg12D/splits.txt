@@ -126,7 +126,7 @@ stg12D_29.c:
 	.text       start:0x00011AC4 end:0x000129E8
 	.rodata     start:0x00000630 end:0x00000698
 
-stg12D_30.c:
+OBJECT/o_colli.c:
 	.text       start:0x000129E8 end:0x00012D8C
 	.rodata     start:0x00000698 end:0x000006A0
 
