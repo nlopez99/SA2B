@@ -106,7 +106,7 @@ eventD_24.c:
 	.text       start:0x0000F2E8 end:0x0000F3E0
 	.rodata     start:0x00000300 end:0x00000308
 
-eventD_25.c:
+EFFECT/ef_snowpuff.c:
 	.text       start:0x0000F3E0 end:0x0000FB2C
 	.rodata     start:0x00000308 end:0x00000340
 
