@@ -366,9 +366,11 @@ OBJECT/o_savepoint.c:
 	.data       start:0x000AEFB0 end:0x000AF000
 	.bss        start:0x00000D50 end:0x00000D58
 
-stg21D_91.c:
-	.text       start:0x0003BB38 end:0x0003CFE4
+OBJECT/o_searchbox.c:
+	.text       start:0x0003B4D4 end:0x0003D004
 	.rodata     start:0x00001178 end:0x000011C8
+	.data       start:0x000B21A8 end:0x000B21E0
+	.bss        start:0x00000D58 end:0x00000D68
 
 stg21D_92.c:
 	.text       start:0x0003D004 end:0x0003D83C

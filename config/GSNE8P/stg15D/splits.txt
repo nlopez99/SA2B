@@ -317,9 +317,11 @@ OBJECT/o_savepoint.c:
 	.data       start:0x000751F0 end:0x00075240
 	.bss        start:0x00000DC8 end:0x00000DD0
 
-stg15D_79.c:
-	.text       start:0x00039AB0 end:0x0003AF5C
+OBJECT/o_searchbox.c:
+	.text       start:0x0003944C end:0x0003AF7C
 	.rodata     start:0x00001140 end:0x00001190
+	.data       start:0x000783E8 end:0x00078420
+	.bss        start:0x00000DD0 end:0x00000DE0
 
 stg15D_80.c:
 	.text       start:0x0003AF7C end:0x0003B7B4

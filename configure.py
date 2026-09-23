@@ -680,6 +680,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_solidbox.c"),
             Object(Matching, "OBJECT/o_itemboxair.c"),
             Object(Matching, "OBJECT/o_savepoint.c"),
+            Object(Matching, "OBJECT/o_searchbox.c"),
             Object(Matching, "OBJECT/o_goalring.c"),
             Object(Matching, "OBJECT/o_itemboxballoon.c"),
             Object(Matching, "OBJECT/o_colli.c"),

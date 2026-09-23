@@ -821,7 +821,9 @@ typedef struct {
   /* 0x0B */ s8 _B;
   artificial_padding(0xb, 0x11, s8);
   /* 0x11 */ s8 _11;
-  artificial_padding(0x11, 0x1e, s8);
+  artificial_padding(0x11, 0x17, s8);
+  /* 0x17 */ s8 _17;
+  artificial_padding(0x17, 0x1e, s8);
   /* 0x1e */ s8 TWO_PLAYER;
   artificial_padding(0x1e, 0x20, s8);
   /* 0x20 */ s8 _20;

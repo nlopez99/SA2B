@@ -302,9 +302,11 @@ OBJECT/o_savepoint.c:
 	.data       start:0x000AB130 end:0x000AB180
 	.bss        start:0x00000FE8 end:0x00000FF0
 
-stg27D_76.c:
-	.text       start:0x0003BBF8 end:0x0003D0A4
+OBJECT/o_searchbox.c:
+	.text       start:0x0003B594 end:0x0003D0C4
 	.rodata     start:0x000011B0 end:0x00001200
+	.data       start:0x000AE328 end:0x000AE360
+	.bss        start:0x00000FF0 end:0x00001000
 
 stg27D_77.c:
 	.text       start:0x0003D0C4 end:0x0003D8FC
