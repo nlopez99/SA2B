@@ -343,7 +343,7 @@ OBJECT/o_spring.c:
 	.rodata     start:0x000012C0 end:0x00001320
 	.bss        start:0x00000D50 end:0x00000D58
 
-stg22D_84.c:
+OBJECT/objdust.c:
 	.text       start:0x0003FA04 end:0x00040D58
 	.rodata     start:0x00001320 end:0x00001380
 

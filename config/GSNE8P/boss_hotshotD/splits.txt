@@ -228,7 +228,7 @@ OBJECT/o_spring.c:
 	.rodata     start:0x000010F8 end:0x00001158
 	.bss        start:0x00000C58 end:0x00000C60
 
-boss_hotshotD_57.c:
+OBJECT/objdust.c:
 	.text       start:0x00030418 end:0x0003176C
 	.rodata     start:0x00001158 end:0x000011B8
 

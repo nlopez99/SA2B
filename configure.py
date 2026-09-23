@@ -736,6 +736,7 @@ config.libs = [
             Object(Matching, "OBJECT/o_kasoku.c"),
             Object(Matching, "OBJECT/o_rocket.c"),
             Object(Matching, "OBJECT/o_ori.c"),
+            Object(Matching, "OBJECT/objdust.c"),
             Object(Matching, "ENEMY/e_gold.c"),
             Object(Matching, "OBJECT/o_contiron.c"),
             CHAOPIPE_C,

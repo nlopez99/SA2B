@@ -247,7 +247,7 @@ OBJECT/o_spring.c:
 	.rodata     start:0x00001228 end:0x00001288
 	.bss        start:0x00000C68 end:0x00000C70
 
-boss_bigfootD_62.c:
+OBJECT/objdust.c:
 	.text       start:0x00037E9C end:0x000391F0
 	.rodata     start:0x00001288 end:0x000012E8
 

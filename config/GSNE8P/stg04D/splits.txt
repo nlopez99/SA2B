@@ -333,7 +333,7 @@ OBJECT/o_spring.c:
 	.rodata     start:0x00001128 end:0x00001188
 	.bss        start:0x00000D70 end:0x00000D78
 
-stg04D_81.c:
+OBJECT/objdust.c:
 	.text       start:0x0003B394 end:0x0003C6E8
 	.rodata     start:0x00001188 end:0x000011E8
 

@@ -233,7 +233,7 @@ OBJECT/o_spring.c:
 	.rodata     start:0x00000E90 end:0x00000EF0
 	.bss        start:0x00000E90 end:0x00000E98
 
-boss_fdogD_58.c:
+OBJECT/objdust.c:
 	.text       start:0x0002DF88 end:0x0002F2DC
 	.rodata     start:0x00000EF0 end:0x00000F50
 

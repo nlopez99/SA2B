@@ -316,7 +316,7 @@ OBJECT/o_spring.c:
 	.rodata     start:0x00001590 end:0x000015F0
 	.bss        start:0x00000F90 end:0x00000F98
 
-boss_last1D_79.c:
+OBJECT/objdust.c:
 	.text       start:0x00038E34 end:0x0003A188
 	.rodata     start:0x000015F0 end:0x00001650
 
