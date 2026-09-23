@@ -704,6 +704,7 @@ config.libs = [
             Object(Matching, "OBJECT/flashmanager.c"),
             Object(Matching, "OBJECT/itemboxmanager.c"),
             Object(Matching, "EFFECT/ef_kiran.c"),
+            Object(Matching, "sonic/fog.c"),
             Object(Matching, "OBJECT/o_ironball2.c"),
             Object(Matching, "ENEMY/e_bullet.c"),
             Object(Matching, "OBJECT/o_hintbox.c"),

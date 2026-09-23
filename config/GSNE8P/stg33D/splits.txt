@@ -56,9 +56,11 @@ EFFECT/ef_kiran.c:
 	.text       start:0x0000B424 end:0x0000B730
 	.rodata     start:0x00000320 end:0x00000348
 
-stg33D_12.c:
-	.text       start:0x0000B730 end:0x0000BD94
+sonic/fog.c:
+	.text       start:0x0000B730 end:0x0000BE58
 	.rodata     start:0x00000348 end:0x00000370
+	.data       start:0x00015F80 end:0x00015FB8
+	.bss        start:0x00000648 end:0x00000660
 
 EFFECT/ef_lensflare.c:
 	.text       start:0x0000C074 end:0x0000C66C
