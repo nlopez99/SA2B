@@ -675,6 +675,8 @@ config.libs = [
             Object(Matching, "OBJECT/o_3spring.c"),
             Object(Matching, "OBJECT/o_degring_linear.c"),
             Object(Matching, "OBJECT/o_itembox.c"),
+            Object(Matching, "OBJECT/o_modmod.c"),
+            Object(Matching, "OBJECT/o_wsmmls.c"),
             Object(Matching, "OBJECT/o_itemboxair.c"),
             Object(Matching, "OBJECT/o_savepoint.c"),
             Object(Matching, "OBJECT/o_goalring.c"),

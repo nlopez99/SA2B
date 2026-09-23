@@ -389,8 +389,8 @@ OBJECT/o_udreel.c:
 	.data       start:0x000E1D08 end:0x000E1DF0
 	.bss        start:0x000010B0 end:0x000010B8
 
-stg26D_97.c:
-	.text       start:0x00048E24 end:0x00049050
+OBJECT/o_wsmmls.c:
+	.text       start:0x00048D9C end:0x00049054
 	.rodata     start:0x00001518 end:0x00001520
 
 stg26D_98.c:

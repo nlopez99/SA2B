@@ -359,8 +359,8 @@ OBJECT/o_udreel.c:
 	.data       start:0x00186328 end:0x00186410
 	.bss        start:0x00001060 end:0x00001068
 
-stg57D_90.c:
-	.text       start:0x00045FC8 end:0x000461F4
+OBJECT/o_wsmmls.c:
+	.text       start:0x00045F40 end:0x000461F8
 	.rodata     start:0x00001458 end:0x00001460
 
 stg57D_91.c:

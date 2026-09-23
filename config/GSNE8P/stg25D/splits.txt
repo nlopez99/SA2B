@@ -417,8 +417,8 @@ OBJECT/o_udreel.c:
 	.data       start:0x00119568 end:0x00119650
 	.bss        start:0x00000D80 end:0x00000D88
 
-stg25D_104.c:
-	.text       start:0x0004D9D8 end:0x0004DC04
+OBJECT/o_wsmmls.c:
+	.text       start:0x0004D950 end:0x0004DC08
 	.rodata     start:0x000016F0 end:0x000016F8
 
 stg25D_105.c:

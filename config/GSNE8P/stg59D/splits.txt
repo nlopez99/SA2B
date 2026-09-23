@@ -405,8 +405,8 @@ OBJECT/o_udreel.c:
 	.data       start:0x000F6CE8 end:0x000F6DD0
 	.bss        start:0x00000D80 end:0x00000D88
 
-stg59D_101.c:
-	.text       start:0x0004D9F0 end:0x0004DC1C
+OBJECT/o_wsmmls.c:
+	.text       start:0x0004D968 end:0x0004DC20
 	.rodata     start:0x000016F0 end:0x000016F8
 
 stg59D_102.c:

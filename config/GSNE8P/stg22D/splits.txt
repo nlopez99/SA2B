@@ -351,8 +351,8 @@ OBJECT/o_udreel.c:
 	.data       start:0x001089C8 end:0x00108AB0
 	.bss        start:0x00000D58 end:0x00000D60
 
-stg22D_88.c:
-	.text       start:0x00044938 end:0x00044B64
+OBJECT/o_wsmmls.c:
+	.text       start:0x000448B0 end:0x00044B68
 	.rodata     start:0x00001490 end:0x00001498
 
 stg22D_89.c:

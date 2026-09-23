@@ -331,8 +331,8 @@ OBJECT/o_udreel.c:
 	.data       start:0x000CBF28 end:0x000CC010
 	.bss        start:0x00000DA8 end:0x00000DB0
 
-stg17D_82.c:
-	.text       start:0x0004A014 end:0x0004A240
+OBJECT/o_wsmmls.c:
+	.text       start:0x00049F8C end:0x0004A244
 	.rodata     start:0x000014B8 end:0x000014C0
 
 stg17D_83.c:
