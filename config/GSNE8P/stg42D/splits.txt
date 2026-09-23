@@ -54,8 +54,8 @@ stg42D_11.c:
 	.text       start:0x0000774C end:0x00009438
 	.rodata     start:0x000002F8 end:0x00000360
 
-stg42D_12.c:
-	.text       start:0x00009438 end:0x000095C4
+EFFECT/ef_splash.c:
+	.text       start:0x00009438 end:0x00009694
 	.rodata     start:0x00000360 end:0x00000388
 
 stg42D_13.c:

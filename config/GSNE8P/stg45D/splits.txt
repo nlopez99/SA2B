@@ -38,8 +38,8 @@ stg45D_7.c:
 	.text       start:0x00006E68 end:0x00008D80
 	.rodata     start:0x000001E0 end:0x00000248
 
-stg45D_8.c:
-	.text       start:0x00008D80 end:0x00008F0C
+EFFECT/ef_splash.c:
+	.text       start:0x00008D80 end:0x00008FDC
 	.rodata     start:0x00000248 end:0x00000270
 
 stg45D_9.c:

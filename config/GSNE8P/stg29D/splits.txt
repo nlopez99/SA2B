@@ -38,8 +38,8 @@ stg29D_7.c:
 	.text       start:0x000097FC end:0x00009DC4
 	.rodata     start:0x00000288 end:0x000002B0
 
-stg29D_8.c:
-	.text       start:0x00009DC4 end:0x00009F50
+EFFECT/ef_splash.c:
+	.text       start:0x00009DC4 end:0x0000A020
 	.rodata     start:0x000002B0 end:0x000002D8
 
 stg29D_9.c:

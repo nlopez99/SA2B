@@ -34,8 +34,8 @@ stg19D_6.c:
 	.text       start:0x00009E7C end:0x0000B650
 	.rodata     start:0x000003B0 end:0x00000418
 
-stg19D_7.c:
-	.text       start:0x0000B650 end:0x0000B7DC
+EFFECT/ef_splash.c:
+	.text       start:0x0000B650 end:0x0000B8AC
 	.rodata     start:0x00000418 end:0x00000440
 
 stg19D_8.c:

@@ -34,8 +34,8 @@ stg20D_6.c:
 	.text       start:0x0000D3EC end:0x0000FFDC
 	.rodata     start:0x000004E8 end:0x00000558
 
-stg20D_7.c:
-	.text       start:0x0000FFDC end:0x00010168
+EFFECT/ef_splash.c:
+	.text       start:0x0000FFDC end:0x00010238
 	.rodata     start:0x00000558 end:0x00000580
 
 stg20D_8.c:
