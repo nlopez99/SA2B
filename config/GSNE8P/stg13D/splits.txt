@@ -189,6 +189,7 @@ stg13D_43.c:
 OBJECT/o_3spring.c:
 	.text       start:0x000225CC end:0x00022A68
 	.rodata     start:0x00000960 end:0x00000980
+	.data       start:0x0020F420 end:0x00210518
 
 stg13D_46.c:
 	.text       start:0x00022A68 end:0x00022EF0

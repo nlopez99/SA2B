@@ -169,6 +169,7 @@ stg14D_39.c:
 OBJECT/o_3spring.c:
 	.text       start:0x00016AB4 end:0x00016F50
 	.rodata     start:0x00000798 end:0x000007B8
+	.data       start:0x000C3160 end:0x000C4258
 
 stg14D_42.c:
 	.text       start:0x00016F50 end:0x000173D8

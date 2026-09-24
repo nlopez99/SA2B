@@ -113,6 +113,7 @@ stg29D_25.c:
 OBJECT/o_3spring.c:
 	.text       start:0x000107F8 end:0x00010C94
 	.rodata     start:0x000005E0 end:0x00000600
+	.data       start:0x0002C420 end:0x0002D518
 
 stg29D_28.c:
 	.text       start:0x00010C94 end:0x0001111C

@@ -189,6 +189,7 @@ stg10D_44.c:
 OBJECT/o_3spring.c:
 	.text       start:0x0001B71C end:0x0001BBB8
 	.rodata     start:0x00000910 end:0x00000930
+	.data       start:0x0015C680 end:0x0015D778
 
 stg10D_47.c:
 	.text       start:0x0001BBB8 end:0x0001C040

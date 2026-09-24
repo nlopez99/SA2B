@@ -157,6 +157,7 @@ stg08D_36.c:
 OBJECT/o_3spring.c:
 	.text       start:0x00014DCC end:0x00015268
 	.rodata     start:0x00000730 end:0x00000750
+	.data       start:0x00053900 end:0x000549F8
 
 stg08D_39.c:
 	.text       start:0x00015268 end:0x000156F0

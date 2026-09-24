@@ -197,6 +197,7 @@ stg47D_46.c:
 OBJECT/o_3spring.c:
 	.text       start:0x00017F30 end:0x000183CC
 	.rodata     start:0x00000870 end:0x00000890
+	.data       start:0x0008B0E0 end:0x0008C1D8
 
 stg47D_49.c:
 	.text       start:0x000183CC end:0x00018854

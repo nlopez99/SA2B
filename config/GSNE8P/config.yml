@@ -365,6 +365,102 @@ modules:
     header_type: none
     custom_type: s32
 
+  - symbol: spring3_model2_pos!.data:0x20f498
+    binary: assets/spring3_model2_pos.bin
+    header: assets/spring3_model2_pos.inc
+    header_type: none
+    custom_type: vtx
+  - symbol: spring3_model2_nrm!.data:0x20f69c
+    binary: assets/spring3_model2_nrm.bin
+    header: assets/spring3_model2_nrm.inc
+    header_type: none
+    custom_type: vtx
+  - symbol: spring3_model2_uv!.data:0x20f8a0
+    binary: assets/spring3_model2_uv.bin
+    header: assets/spring3_model2_uv.inc
+    header_type: none
+    custom_type: s16
+  - symbol: spring3_model2_mat_0!.data:0x20faa8
+    binary: assets/spring3_model2_mat_0.bin
+    header: assets/spring3_model2_mat_0.inc
+    header_type: none
+    custom_type: gjmaterial
+  - symbol: spring3_model2_mat_1!.data:0x20faf8
+    binary: assets/spring3_model2_mat_1.bin
+    header: assets/spring3_model2_mat_1.inc
+    header_type: none
+    custom_type: gjmaterial
+  - symbol: spring3_model2_mat_2!.data:0x20fb00
+    binary: assets/spring3_model2_mat_2.bin
+    header: assets/spring3_model2_mat_2.inc
+    header_type: none
+    custom_type: gjmaterial
+  - symbol: spring3_model2_dl_0!.data:0x20fb20
+    binary: assets/spring3_model2_dl_0.bin
+    header: assets/spring3_model2_dl_0.inc
+    header_type: none
+    custom_type: displaylist
+  - symbol: spring3_model2_dl_1!.data:0x20fbe0
+    binary: assets/spring3_model2_dl_1.bin
+    header: assets/spring3_model2_dl_1.inc
+    header_type: none
+    custom_type: displaylist
+  - symbol: spring3_model2_dl_2!.data:0x20fc40
+    binary: assets/spring3_model2_dl_2.bin
+    header: assets/spring3_model2_dl_2.inc
+    header_type: none
+    custom_type: displaylist
+  - symbol: spring3_model2_dl_3!.data:0x20fc80
+    binary: assets/spring3_model2_dl_3.bin
+    header: assets/spring3_model2_dl_3.inc
+    header_type: none
+    custom_type: displaylist
+  - symbol: spring3_model1_pos!.data:0x20fd64
+    binary: assets/spring3_model1_pos.bin
+    header: assets/spring3_model1_pos.inc
+    header_type: none
+    custom_type: vtx
+  - symbol: spring3_model1_nrm!.data:0x20ff2c
+    binary: assets/spring3_model1_nrm.bin
+    header: assets/spring3_model1_nrm.inc
+    header_type: none
+    custom_type: vtx
+  - symbol: spring3_model1_uv!.data:0x2100f4
+    binary: assets/spring3_model1_uv.bin
+    header: assets/spring3_model1_uv.inc
+    header_type: none
+    custom_type: s16
+  - symbol: spring3_model1_mat_0!.data:0x210274
+    binary: assets/spring3_model1_mat_0.bin
+    header: assets/spring3_model1_mat_0.inc
+    header_type: none
+    custom_type: gjmaterial
+  - symbol: spring3_model1_mat_1!.data:0x2102c4
+    binary: assets/spring3_model1_mat_1.bin
+    header: assets/spring3_model1_mat_1.inc
+    header_type: none
+    custom_type: gjmaterial
+  - symbol: spring3_model1_mat_2!.data:0x2102cc
+    binary: assets/spring3_model1_mat_2.bin
+    header: assets/spring3_model1_mat_2.inc
+    header_type: none
+    custom_type: gjmaterial
+  - symbol: spring3_model1_dl_0!.data:0x2102e0
+    binary: assets/spring3_model1_dl_0.bin
+    header: assets/spring3_model1_dl_0.inc
+    header_type: none
+    custom_type: displaylist
+  - symbol: spring3_model1_dl_1!.data:0x210400
+    binary: assets/spring3_model1_dl_1.bin
+    header: assets/spring3_model1_dl_1.inc
+    header_type: none
+    custom_type: displaylist
+  - symbol: spring3_model1_dl_2!.data:0x210460
+    binary: assets/spring3_model1_dl_2.bin
+    header: assets/spring3_model1_dl_2.inc
+    header_type: none
+    custom_type: displaylist
+
 - object: orig/GSNE8P/files/stg14D.rel
   hash: 68b094fa0f3e58adb7276d34d4b9881ac1c64fae
   symbols: config/GSNE8P/stg14D/symbols.txt

@@ -169,6 +169,7 @@ stg04D_39.c:
 OBJECT/o_3spring.c:
 	.text       start:0x00016CCC end:0x00017168
 	.rodata     start:0x000007D0 end:0x000007F0
+	.data       start:0x00076FE0 end:0x000780D8
 
 stg04D_42.c:
 	.text       start:0x00017168 end:0x000175F0

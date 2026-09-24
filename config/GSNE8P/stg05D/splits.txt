@@ -153,6 +153,7 @@ stg05D_35.c:
 OBJECT/o_3spring.c:
 	.text       start:0x000150C0 end:0x0001555C
 	.rodata     start:0x000006E0 end:0x00000700
+	.data       start:0x00047CE0 end:0x00048DD8
 
 stg05D_38.c:
 	.text       start:0x0001555C end:0x000159E4

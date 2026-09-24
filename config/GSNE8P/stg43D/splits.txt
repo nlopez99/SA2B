@@ -161,6 +161,7 @@ stg43D_37.c:
 OBJECT/o_3spring.c:
 	.text       start:0x00017514 end:0x000179B0
 	.rodata     start:0x000007F0 end:0x00000810
+	.data       start:0x00052240 end:0x00053338
 
 stg43D_40.c:
 	.text       start:0x000179B0 end:0x00017E38

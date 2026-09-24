@@ -165,6 +165,7 @@ stg50D_38.c:
 OBJECT/o_3spring.c:
 	.text       start:0x00016DD8 end:0x00017274
 	.rodata     start:0x00000800 end:0x00000820
+	.data       start:0x0002E000 end:0x0002F0F8
 
 stg50D_41.c:
 	.text       start:0x00017274 end:0x000176FC

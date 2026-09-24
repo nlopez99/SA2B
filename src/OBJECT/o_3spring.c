@@ -14,15 +14,6 @@ extern void fn_80039D20(Sint8, NJS_POINT3 *, Angle3 *, int);
 extern void fn_8002FB2C(Sint8, int, int, int);
 extern void SE_Call(int, int, int, int);
 
-extern NJS_TEXLIST _rename_3spring_TexList;
-extern GJS_MODEL   _rename_3SpringGjModel1;
-extern GJS_MODEL   _rename_3SpringGjModel2;
-
-extern CCL_INFO    _rename_3spring_colli_info[1];
-extern Float       _rename_3spring_k;
-extern Float       _rename_3spring_touch_spd;
-extern Float       _rename_3spring_damp;
-
 // ^ extern
 // v in this file
 
@@ -38,6 +29,213 @@ typedef struct spring3wk // sizeof=0xC
 } spring3wk;
 
 #define GetWork(task) ((spring3wk *)(task)->mwp)
+
+static NJS_TEXNAME spring3_texname[] = {
+    {"sikake_01_128"},
+    {"sikake_02_128"},
+    {"sikake_08_64"},
+    {"sikake_15_64"},
+};
+
+static NJS_TEXLIST spring3_texlist = {
+    spring3_texname,
+    ARRAY_COUNT(spring3_texname),
+};
+
+static NJS_POINT3 spring3_model2_pos[] = {
+#include "assets/spring3_model2_pos.inc"
+};
+
+static NJS_VECTOR spring3_model2_nrm[] = {
+#include "assets/spring3_model2_nrm.inc"
+};
+
+static NJS_TEX spring3_model2_uv[] = {
+#include "assets/spring3_model2_uv.inc"
+};
+
+static GJS_ARRAY spring3_model2_arrays[] = {
+    {
+        GJ_VA_POS,
+        sizeof(*spring3_model2_pos),
+        ARRAY_COUNT(spring3_model2_pos),
+        GJ_ARR_TYPE(GJ_POS_XYZ, GJ_F32),
+        spring3_model2_pos,
+        sizeof(spring3_model2_pos),
+    },
+    {
+        GJ_VA_NRM,
+        sizeof(*spring3_model2_nrm),
+        ARRAY_COUNT(spring3_model2_nrm),
+        GJ_ARR_TYPE(GJ_NRM_XYZ, GJ_F32),
+        spring3_model2_nrm,
+        sizeof(spring3_model2_nrm),
+    },
+    {
+        GJ_VA_TEX0,
+        sizeof(*spring3_model2_uv),
+        ARRAY_COUNT(spring3_model2_uv),
+        GJ_ARR_TYPE(GJ_TEX_ST, GJ_S16),
+        spring3_model2_uv,
+        sizeof(spring3_model2_uv),
+    },
+    {GJ_VA_NULL},
+};
+
+static GJS_MATERIAL spring3_model2_mat_0[] = {
+#include "assets/spring3_model2_mat_0.inc"
+};
+
+static GJS_MATERIAL spring3_model2_mat_1[] = {
+#include "assets/spring3_model2_mat_1.inc"
+};
+
+static GJS_MATERIAL spring3_model2_mat_2[] = {
+#include "assets/spring3_model2_mat_2.inc"
+};
+
+static Uint8 spring3_model2_dl_0[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/spring3_model2_dl_0.inc"
+};
+
+static Uint8 spring3_model2_dl_1[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/spring3_model2_dl_1.inc"
+};
+
+static Uint8 spring3_model2_dl_2[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/spring3_model2_dl_2.inc"
+};
+
+static Uint8 spring3_model2_dl_3[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/spring3_model2_dl_3.inc"
+};
+
+static GJS_MESHSET spring3_model2_meshset[] = {
+    {spring3_model2_mat_0, ARRAY_COUNT(spring3_model2_mat_0),
+     spring3_model2_dl_0, ARRAY_COUNT(spring3_model2_dl_0)},
+    {spring3_model2_mat_1, ARRAY_COUNT(spring3_model2_mat_1),
+     spring3_model2_dl_1, ARRAY_COUNT(spring3_model2_dl_1)},
+    {NULL, 0, spring3_model2_dl_2, ARRAY_COUNT(spring3_model2_dl_2)},
+    {spring3_model2_mat_2, ARRAY_COUNT(spring3_model2_mat_2),
+     spring3_model2_dl_3, ARRAY_COUNT(spring3_model2_dl_3)},
+};
+
+static GJS_MODEL spring3_model2 = {
+    spring3_model2_arrays,
+    NULL,
+    spring3_model2_meshset,
+    NULL,
+    ARRAY_COUNT(spring3_model2_meshset),
+    0,
+    {0.0f, 5.975694f, 6.280429f},
+    25.453106f,
+};
+
+static NJS_POINT3 spring3_model1_pos[] = {
+#include "assets/spring3_model1_pos.inc"
+};
+
+static NJS_VECTOR spring3_model1_nrm[] = {
+#include "assets/spring3_model1_nrm.inc"
+};
+
+static NJS_TEX spring3_model1_uv[] = {
+#include "assets/spring3_model1_uv.inc"
+};
+
+static GJS_ARRAY spring3_model1_arrays[] = {
+    {
+        GJ_VA_POS,
+        sizeof(*spring3_model1_pos),
+        ARRAY_COUNT(spring3_model1_pos),
+        GJ_ARR_TYPE(GJ_POS_XYZ, GJ_F32),
+        spring3_model1_pos,
+        sizeof(spring3_model1_pos),
+    },
+    {
+        GJ_VA_NRM,
+        sizeof(*spring3_model1_nrm),
+        ARRAY_COUNT(spring3_model1_nrm),
+        GJ_ARR_TYPE(GJ_NRM_XYZ, GJ_F32),
+        spring3_model1_nrm,
+        sizeof(spring3_model1_nrm),
+    },
+    {
+        GJ_VA_TEX0,
+        sizeof(*spring3_model1_uv),
+        ARRAY_COUNT(spring3_model1_uv),
+        GJ_ARR_TYPE(GJ_TEX_ST, GJ_S16),
+        spring3_model1_uv,
+        sizeof(spring3_model1_uv),
+    },
+    {GJ_VA_NULL},
+};
+
+static GJS_MATERIAL spring3_model1_mat_0[] = {
+#include "assets/spring3_model1_mat_0.inc"
+};
+
+static GJS_MATERIAL spring3_model1_mat_1[] = {
+#include "assets/spring3_model1_mat_1.inc"
+};
+
+static GJS_MATERIAL spring3_model1_mat_2[] = {
+#include "assets/spring3_model1_mat_2.inc"
+};
+
+static Uint8 spring3_model1_dl_0[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/spring3_model1_dl_0.inc"
+};
+
+static Uint8 spring3_model1_dl_1[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/spring3_model1_dl_1.inc"
+};
+
+static Uint8 spring3_model1_dl_2[] ATTRIBUTE_ALIGN(32) = {
+#include "assets/spring3_model1_dl_2.inc"
+};
+
+static GJS_MESHSET spring3_model1_meshset[] = {
+    {spring3_model1_mat_0, ARRAY_COUNT(spring3_model1_mat_0),
+     spring3_model1_dl_0, ARRAY_COUNT(spring3_model1_dl_0)},
+    {spring3_model1_mat_1, ARRAY_COUNT(spring3_model1_mat_1),
+     spring3_model1_dl_1, ARRAY_COUNT(spring3_model1_dl_1)},
+    {spring3_model1_mat_2, ARRAY_COUNT(spring3_model1_mat_2),
+     spring3_model1_dl_2, ARRAY_COUNT(spring3_model1_dl_2)},
+};
+
+static GJS_MODEL spring3_model1 = {
+    spring3_model1_arrays,
+    NULL,
+    spring3_model1_meshset,
+    NULL,
+    ARRAY_COUNT(spring3_model1_meshset),
+    0,
+    {0.0f, 4.38871f, 5.830001f},
+    23.485126f,
+};
+
+NJS_TEXLIST *spring3_texlists[] = {&spring3_texlist, NULL};
+
+static CCL_INFO spring3_colli_info[] = {
+    {0,
+     CI_FORM_CYLINDER2,
+     0x77,
+     0,
+     0,
+     {0.0f, 5.0f, 5.0f},
+     6.0f,
+     23.0f,
+     0.0f,
+     0.0f,
+     0,
+     0,
+     0x4000},
+};
+
+static Float spring3_k = 0.25f;
+static Float spring3_touch_spd = 1.0f;
+static Float spring3_damp = 0.95f;
 
 static void Object3SpringJump(task *tp, Sint32 player) {
   Sint8 pno;
@@ -89,7 +287,7 @@ void Object3Spring(task *tp) {
   tp->exec = Object3SpringExec;
   tp->dest = Object3SpringDest;
   twp->smode = 0;
-  CCL_Init(tp, _rename_3spring_colli_info, ARYLEN(_rename_3spring_colli_info),
+  CCL_Init(tp, spring3_colli_info, ARYLEN(spring3_colli_info),
            CID_OBJECT);
   twp->cwp->flag |= 0x40;
   GetWork(tp)->spd = 0.0f;
@@ -114,7 +312,7 @@ static void Object3SpringExec(task *tp) {
   if (hitPlayer != NULL && (pno = IsThisTaskPlayer(hitPlayer)) >= 0) {
     // indexing through a pointer, not the member array, gives add rD, base, idx
     if (((Uint8 *)GetWork(tp)->timer)[pno] == 0) {
-      GetWork(tp)->spd = _rename_3spring_touch_spd;
+      GetWork(tp)->spd = spring3_touch_spd;
       GetWork(tp)->pos = 0.0f;
       Object3SpringJump(tp, (Sint8)pno);
     }
@@ -130,23 +328,23 @@ static void Object3SpringExec(task *tp) {
   }
 
   CCL_Entry(tp);
-  GetWork(tp)->spd = _rename_3spring_damp *
-                     (GetWork(tp)->spd - GetWork(tp)->pos * _rename_3spring_k);
+  GetWork(tp)->spd = spring3_damp *
+                     (GetWork(tp)->spd - GetWork(tp)->pos * spring3_k);
   GetWork(tp)->pos += GetWork(tp)->spd;
 }
 
 static void Object3SpringDisp(task *tp) {
   taskwk *twp = tp->twp;
   Float f;
-  njSetTexture(&_rename_3spring_TexList);
+  njSetTexture(&spring3_texlist);
   njPushMatrixEx();
   njTranslateEx(&twp->pos);
   njRotateZ(NULL, twp->ang.z);
   njRotateX(NULL, twp->ang.x);
   njRotateY(NULL, twp->ang.y);
-  gjDrawModel(&_rename_3SpringGjModel1);
+  gjDrawModel(&spring3_model1);
   f = fabsf(GetWork(tp)->pos);
   njTranslate(NULL, 0.0f, f, f);
-  gjDrawModel(&_rename_3SpringGjModel2);
+  gjDrawModel(&spring3_model2);
   njPopMatrixEx();
 }

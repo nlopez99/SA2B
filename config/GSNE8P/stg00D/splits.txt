@@ -69,6 +69,7 @@ stg00D_14.c:
 OBJECT/o_3spring.c:
 	.text       start:0x00007570 end:0x00007A0C
 	.rodata     start:0x00000328 end:0x00000348
+	.data       start:0x00014C40 end:0x00015D38
 
 stg00D_17.c:
 	.text       start:0x00007A0C end:0x00007E94

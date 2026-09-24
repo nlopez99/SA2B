@@ -189,6 +189,7 @@ stg57D_44.c:
 OBJECT/o_3spring.c:
 	.text       start:0x0001B810 end:0x0001BCAC
 	.rodata     start:0x00000908 end:0x00000928
+	.data       start:0x0013F180 end:0x00140278
 
 stg57D_47.c:
 	.text       start:0x0001BCAC end:0x0001C134
