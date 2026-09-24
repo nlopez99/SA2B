@@ -207,6 +207,8 @@ Boss_GolemD_50.c:
 OBJECT/o_goalring.c:
 	.text       start:0x000246B0 end:0x000259CC
 	.rodata     start:0x00001250 end:0x000012A8
+	.data       start:0x000D8DD0 end:0x000DE6C8
+	.bss        start:0x00001218 end:0x00001220
 
 Boss_GolemD_52.c:
 	.text       start:0x000259CC end:0x00026538

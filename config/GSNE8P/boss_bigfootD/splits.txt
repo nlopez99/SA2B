@@ -179,6 +179,8 @@ boss_bigfootD_43.c:
 OBJECT/o_goalring.c:
 	.text       start:0x000232B0 end:0x000245CC
 	.rodata     start:0x00000D28 end:0x00000D80
+	.data       start:0x0004ED90 end:0x00054688
+	.bss        start:0x00000C18 end:0x00000C20
 
 boss_bigfootD_45.c:
 	.text       start:0x000245CC end:0x00025138

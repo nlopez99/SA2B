@@ -283,6 +283,8 @@ stg32D_69.c:
 OBJECT/o_goalring.c:
 	.text       start:0x00024EC8 end:0x000261E4
 	.rodata     start:0x00000BB8 end:0x00000C10
+	.data       start:0x00068BD8 end:0x0006E4D0
+	.bss        start:0x00000D48 end:0x00000D50
 
 stg32D_71.c:
 	.text       start:0x000262AC end:0x00026CCC

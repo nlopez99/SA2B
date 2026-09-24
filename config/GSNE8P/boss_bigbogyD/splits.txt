@@ -163,6 +163,8 @@ boss_bigbogyD_39.c:
 OBJECT/o_goalring.c:
 	.text       start:0x0002558C end:0x000268A8
 	.rodata     start:0x00001198 end:0x000011F0
+	.data       start:0x0004B390 end:0x00050C88
+	.bss        start:0x00000B48 end:0x00000B50
 
 boss_bigbogyD_41.c:
 	.text       start:0x000268A8 end:0x00027414

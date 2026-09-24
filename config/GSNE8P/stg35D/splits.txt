@@ -183,6 +183,8 @@ stg35D_44.c:
 OBJECT/o_goalring.c:
 	.text       start:0x0002AA88 end:0x0002BDA4
 	.rodata     start:0x00000D70 end:0x00000DC8
+	.data       start:0x000887B0 end:0x0008E0A8
+	.bss        start:0x00000B10 end:0x00000B18
 
 stg35D_46.c:
 	.text       start:0x0002BDA4 end:0x0002C7C4

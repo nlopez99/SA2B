@@ -259,6 +259,8 @@ stg47D_63.c:
 OBJECT/o_goalring.c:
 	.text       start:0x00022B68 end:0x00023E84
 	.rodata     start:0x00000B50 end:0x00000BA8
+	.data       start:0x00094210 end:0x00099B08
+	.bss        start:0x00000D00 end:0x00000D08
 
 stg47D_65.c:
 	.text       start:0x00023E84 end:0x000248A4

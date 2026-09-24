@@ -460,6 +460,216 @@ modules:
     header: assets/spring3_model1_dl_2.inc
     header_type: none
     custom_type: displaylist
+  - symbol: goalring_plist!.data:0x218590
+    binary: assets/goalring_plist.bin
+    header: assets/goalring_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_vlist!.data:0x218860
+    binary: assets/goalring_vlist.bin
+    header: assets/goalring_vlist.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_text1_plist!.data:0x219580
+    binary: assets/goalring_text1_plist.bin
+    header: assets/goalring_text1_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_text1_vlist!.data:0x2195d0
+    binary: assets/goalring_text1_vlist.bin
+    header: assets/goalring_text1_vlist.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_text2_plist!.data:0x2196c8
+    binary: assets/goalring_text2_plist.bin
+    header: assets/goalring_text2_plist.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_text2_vlist!.data:0x219718
+    binary: assets/goalring_text2_vlist.bin
+    header: assets/goalring_text2_vlist.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_plist_8!.data:0x219874
+    binary: assets/goalring_anim_plist_8.bin
+    header: assets/goalring_anim_plist_8.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_vlist_8!.data:0x21997c
+    binary: assets/goalring_anim_vlist_8.bin
+    header: assets/goalring_anim_vlist_8.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_plist_7!.data:0x219b58
+    binary: assets/goalring_anim_plist_7.bin
+    header: assets/goalring_anim_plist_7.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_vlist_7!.data:0x219c58
+    binary: assets/goalring_anim_vlist_7.bin
+    header: assets/goalring_anim_vlist_7.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_plist_6!.data:0x219e04
+    binary: assets/goalring_anim_plist_6.bin
+    header: assets/goalring_anim_plist_6.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_vlist_6!.data:0x219f10
+    binary: assets/goalring_anim_vlist_6.bin
+    header: assets/goalring_anim_vlist_6.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_plist_5!.data:0x21a0bc
+    binary: assets/goalring_anim_plist_5.bin
+    header: assets/goalring_anim_plist_5.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_vlist_5!.data:0x21a17c
+    binary: assets/goalring_anim_vlist_5.bin
+    header: assets/goalring_anim_vlist_5.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_plist_4!.data:0x21a2e0
+    binary: assets/goalring_anim_plist_4.bin
+    header: assets/goalring_anim_plist_4.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_vlist_4!.data:0x21a3e8
+    binary: assets/goalring_anim_vlist_4.bin
+    header: assets/goalring_anim_vlist_4.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_plist_3!.data:0x21a5c4
+    binary: assets/goalring_anim_plist_3.bin
+    header: assets/goalring_anim_plist_3.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_vlist_3!.data:0x21a5f8
+    binary: assets/goalring_anim_vlist_3.bin
+    header: assets/goalring_anim_vlist_3.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_plist_2!.data:0x21a6b4
+    binary: assets/goalring_anim_plist_2.bin
+    header: assets/goalring_anim_plist_2.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_vlist_2!.data:0x21a6e8
+    binary: assets/goalring_anim_vlist_2.bin
+    header: assets/goalring_anim_vlist_2.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_plist_1!.data:0x21a7a4
+    binary: assets/goalring_anim_plist_1.bin
+    header: assets/goalring_anim_plist_1.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_vlist_1!.data:0x21aa54
+    binary: assets/goalring_anim_vlist_1.bin
+    header: assets/goalring_anim_vlist_1.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_plist_0!.data:0x21ae58
+    binary: assets/goalring_anim_plist_0.bin
+    header: assets/goalring_anim_plist_0.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_vlist_0!.data:0x21afcc
+    binary: assets/goalring_anim_vlist_0.bin
+    header: assets/goalring_anim_vlist_0.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_hit_plist_8!.data:0x21b774
+    binary: assets/goalring_anim_hit_plist_8.bin
+    header: assets/goalring_anim_hit_plist_8.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_hit_vlist_8!.data:0x21b87c
+    binary: assets/goalring_anim_hit_vlist_8.bin
+    header: assets/goalring_anim_hit_vlist_8.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_hit_plist_7!.data:0x21ba58
+    binary: assets/goalring_anim_hit_plist_7.bin
+    header: assets/goalring_anim_hit_plist_7.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_hit_vlist_7!.data:0x21bb58
+    binary: assets/goalring_anim_hit_vlist_7.bin
+    header: assets/goalring_anim_hit_vlist_7.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_hit_plist_6!.data:0x21bd04
+    binary: assets/goalring_anim_hit_plist_6.bin
+    header: assets/goalring_anim_hit_plist_6.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_hit_vlist_6!.data:0x21be10
+    binary: assets/goalring_anim_hit_vlist_6.bin
+    header: assets/goalring_anim_hit_vlist_6.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_hit_plist_5!.data:0x21bfbc
+    binary: assets/goalring_anim_hit_plist_5.bin
+    header: assets/goalring_anim_hit_plist_5.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_hit_vlist_5!.data:0x21c07c
+    binary: assets/goalring_anim_hit_vlist_5.bin
+    header: assets/goalring_anim_hit_vlist_5.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_hit_plist_4!.data:0x21c1e0
+    binary: assets/goalring_anim_hit_plist_4.bin
+    header: assets/goalring_anim_hit_plist_4.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_hit_vlist_4!.data:0x21c2e8
+    binary: assets/goalring_anim_hit_vlist_4.bin
+    header: assets/goalring_anim_hit_vlist_4.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_hit_plist_3!.data:0x21c4c4
+    binary: assets/goalring_anim_hit_plist_3.bin
+    header: assets/goalring_anim_hit_plist_3.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_hit_vlist_3!.data:0x21c4f8
+    binary: assets/goalring_anim_hit_vlist_3.bin
+    header: assets/goalring_anim_hit_vlist_3.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_hit_plist_2!.data:0x21c5b4
+    binary: assets/goalring_anim_hit_plist_2.bin
+    header: assets/goalring_anim_hit_plist_2.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_hit_vlist_2!.data:0x21c5e8
+    binary: assets/goalring_anim_hit_vlist_2.bin
+    header: assets/goalring_anim_hit_vlist_2.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_hit_plist_1!.data:0x21c6a4
+    binary: assets/goalring_anim_hit_plist_1.bin
+    header: assets/goalring_anim_hit_plist_1.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_hit_vlist_1!.data:0x21c954
+    binary: assets/goalring_anim_hit_vlist_1.bin
+    header: assets/goalring_anim_hit_vlist_1.inc
+    header_type: none
+    custom_type: s32
+  - symbol: goalring_anim_hit_plist_0!.data:0x21cd58
+    binary: assets/goalring_anim_hit_plist_0.bin
+    header: assets/goalring_anim_hit_plist_0.inc
+    header_type: none
+    custom_type: s16
+  - symbol: goalring_anim_hit_vlist_0!.data:0x21cecc
+    binary: assets/goalring_anim_hit_vlist_0.bin
+    header: assets/goalring_anim_hit_vlist_0.inc
+    header_type: none
+    custom_type: s32
 
 - object: orig/GSNE8P/files/stg14D.rel
   hash: 68b094fa0f3e58adb7276d34d4b9881ac1c64fae

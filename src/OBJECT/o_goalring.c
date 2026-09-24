@@ -43,42 +43,7 @@ extern void _rename_GoalRingChildExec(task *tp);
 
 extern BOOL DisableObjectFog;
 
-extern NJS_TEXLIST    _rename_goalring_texlist;
-extern NJS_CNK_MODEL  _rename_goalring_model;
-extern NJS_TEXLIST    _rename_goalring_text1_texlist;
-extern NJS_CNK_MODEL  _rename_goalring_text1_model;
-extern NJS_TEXLIST    _rename_goalring_text2_texlist;
-extern NJS_CNK_MODEL  _rename_goalring_text2_model;
-extern NJS_TEXLIST    _rename_goalring_anim_texlist;
-extern NJS_CNK_OBJECT _rename_goalring_anim_center_object;
-extern NJS_CNK_OBJECT _rename_goalring_anim_object;
-extern NJS_MOTION     _rename_goalring_anim_motion;
-extern NJS_TEXLIST    _rename_goalring_anim_hit_texlist;
-extern NJS_CNK_OBJECT _rename_goalring_anim_hit_center_object;
-extern NJS_CNK_OBJECT _rename_goalring_anim_hit_object;
-extern NJS_MOTION     _rename_goalring_anim_hit_motion;
-
-extern CCL_INFO   _rename_goalring_colli_info[2];
-extern Angle      _rename_goalring_rot_spd;
-extern Angle      _rename_goalring_rot_spd_hit;
-extern Float      _rename_goalring_ptcl_scl;
-extern Float      _rename_goalring_ptcl_spd;
-extern Float      _rename_goalring_ptcl_spd_y;
-extern Uint32     _rename_goalring_blink_on;
-extern Uint32     _rename_goalring_blink_cycle;
-extern Float      _rename_goalring_rise_spd;
-extern Float      _rename_goalring_anim_spd;
-extern Float      _rename_goalring_anim_spd_hit;
-extern NJS_POINT3 _rename_goalring_ptcl_pos0;
-extern NJS_POINT3 _rename_goalring_ptcl_pos1;
-extern NJS_VECTOR _rename_goalring_ptcl_vec0;
-extern NJS_VECTOR _rename_goalring_ptcl_vec1;
-extern NJS_POINT3 _rename_goalring_glow_pos;
-extern Angle      _rename_goalring_glow_ang;
-extern NJS_VECTOR _rename_goalring_shadow_scl;
-extern NJS_VECTOR _rename_goalring_anim_shadow_scl;
-
-extern NJS_MATRIX *_rename_goalring_matrix_p;
+extern NJS_TEXLIST _rename_ring_texlist;
 
 // ^ extern
 // v in this file
@@ -113,6 +78,834 @@ enum {
   Uint8 name##_buf[sizeof(NJS_MATRIX) + 8];                                    \
   NJS_MATRIX *volatile name =                                                  \
       (NJS_MATRIX *)ALIGN_PREV((Uint32)name##_buf + 4, 8)
+
+static NJS_TEXNAME goalring_texname[] = {
+    {"sikake_14_32"},
+    {"sikake_05_64"},
+};
+
+static NJS_TEXLIST goalring_texlist = {goalring_texname,
+                                       ARRAY_COUNT(goalring_texname)};
+
+static Sint16 goalring_plist[] = {
+#include "assets/goalring_plist.inc"
+};
+
+static Sint32 goalring_vlist[] = {
+#include "assets/goalring_vlist.inc"
+};
+
+static NJS_CNK_MODEL goalring_model = {
+    goalring_vlist,
+    goalring_plist,
+    {3e-6f, 3e-6f, 0.0f},
+    26.292267f,
+};
+
+static NJS_TEXNAME goalring_text1_texname[] = {
+    {"sikake_10_128"},
+};
+
+static NJS_TEXLIST goalring_text1_texlist = {
+    goalring_text1_texname, ARRAY_COUNT(goalring_text1_texname)};
+
+static Sint16 goalring_text1_plist[] = {
+#include "assets/goalring_text1_plist.inc"
+};
+
+static Sint32 goalring_text1_vlist[] = {
+#include "assets/goalring_text1_vlist.inc"
+};
+
+static NJS_CNK_MODEL goalring_text1_model = {
+    goalring_text1_vlist,
+    goalring_text1_plist,
+    {0.0f, 0.0f, -1e-6f},
+    15.230057f,
+};
+
+static NJS_TEXNAME goalring_text2_texname[] = {
+    {"sikake_10_128"},
+};
+
+static NJS_TEXLIST goalring_text2_texlist = {
+    goalring_text2_texname, ARRAY_COUNT(goalring_text2_texname)};
+
+static Sint16 goalring_text2_plist[] = {
+#include "assets/goalring_text2_plist.inc"
+};
+
+static Sint32 goalring_text2_vlist[] = {
+#include "assets/goalring_text2_vlist.inc"
+};
+
+static NJS_CNK_MODEL goalring_text2_model = {
+    goalring_text2_vlist,
+    goalring_text2_plist,
+    {0.0f, 0.0f, -1e-6f},
+    15.230057f,
+};
+
+static NJS_TEXNAME goalring_anim_texname[] = {
+    {"sikake_43_32"},
+    {"sikake_44_32"},
+    {"sikake_45_64"},
+    {"sikake_49_64"},
+};
+
+static NJS_TEXLIST goalring_anim_texlist = {goalring_anim_texname,
+                                            ARRAY_COUNT(goalring_anim_texname)};
+
+static Sint16 goalring_anim_plist_8[] = {
+#include "assets/goalring_anim_plist_8.inc"
+};
+
+static Sint32 goalring_anim_vlist_8[] = {
+#include "assets/goalring_anim_vlist_8.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_model_8 = {
+    goalring_anim_vlist_8,
+    goalring_anim_plist_8,
+    {0.300701f, -0.852327f, -0.111707f},
+    1.090747f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_object_8 = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_model_8,
+    {-0.661664f, 0.811234f, 0.16f},
+    {0x38E3, -0x7FFF, -0xE38},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    NULL,
+    0.0f,
+};
+
+static Sint16 goalring_anim_plist_7[] = {
+#include "assets/goalring_anim_plist_7.inc"
+};
+
+static Sint32 goalring_anim_vlist_7[] = {
+#include "assets/goalring_anim_vlist_7.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_model_7 = {
+    goalring_anim_vlist_7,
+    goalring_anim_plist_7,
+    {0.268491f, -0.862628f, 0.42467f},
+    1.329391f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_object_7 = {
+    NJD_EVAL_UNIT_ANG | NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_model_7,
+    {0.441818f, 0.031819f, 0.0f},
+    {0, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_object_8,
+    0.0f,
+};
+
+static Sint16 goalring_anim_plist_6[] = {
+#include "assets/goalring_anim_plist_6.inc"
+};
+
+static Sint32 goalring_anim_vlist_6[] = {
+#include "assets/goalring_anim_vlist_6.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_model_6 = {
+    goalring_anim_vlist_6,
+    goalring_anim_plist_6,
+    {0.268491f, -0.862628f, -0.42467f},
+    1.329391f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_object_6 = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_model_6,
+    {-0.441818f, 0.031819f, 0.0f},
+    {0, -0x8000, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_object_7,
+    0.0f,
+};
+
+static Sint16 goalring_anim_plist_5[] = {
+#include "assets/goalring_anim_plist_5.inc"
+};
+
+static Sint32 goalring_anim_vlist_5[] = {
+#include "assets/goalring_anim_vlist_5.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_model_5 = {
+    goalring_anim_vlist_5,
+    goalring_anim_plist_5,
+    {0.0f, -0.411845f, -0.185203f},
+    0.567583f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_object_5 = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_model_5,
+    {0.0f, -0.015406f, -1.009871f},
+    {0x18E3, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_object_6,
+    0.0f,
+};
+
+static Sint16 goalring_anim_plist_4[] = {
+#include "assets/goalring_anim_plist_4.inc"
+};
+
+static Sint32 goalring_anim_vlist_4[] = {
+#include "assets/goalring_anim_vlist_4.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_model_4 = {
+    goalring_anim_vlist_4,
+    goalring_anim_plist_4,
+    {0.300701f, -0.852327f, 0.111707f},
+    1.090747f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_object_4 = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_model_4,
+    {0.661664f, 0.811234f, 0.16f},
+    {-0x38E3, 0, 0xE38},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_object_5,
+    0.0f,
+};
+
+static Sint16 goalring_anim_plist_3[] = {
+#include "assets/goalring_anim_plist_3.inc"
+};
+
+static Sint32 goalring_anim_vlist_3[] = {
+#include "assets/goalring_anim_vlist_3.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_model_3 = {
+    goalring_anim_vlist_3,
+    goalring_anim_plist_3,
+    {-0.62439f, 0.036828f, -0.579342f},
+    1.078913f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_object_3 = {
+    NJD_EVAL_UNIT_ANG | NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_model_3,
+    {-0.378701f, 0.648003f, -0.56423f},
+    {0, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_object_4,
+    0.0f,
+};
+
+static Sint16 goalring_anim_plist_2[] = {
+#include "assets/goalring_anim_plist_2.inc"
+};
+
+static Sint32 goalring_anim_vlist_2[] = {
+#include "assets/goalring_anim_vlist_2.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_model_2 = {
+    goalring_anim_vlist_2,
+    goalring_anim_plist_2,
+    {0.62439f, 0.036828f, -0.579342f},
+    1.078913f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_object_2 = {
+    NJD_EVAL_UNIT_ANG | NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_model_2,
+    {0.378701f, 0.648003f, -0.56423f},
+    {0, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_object_3,
+    0.0f,
+};
+
+static Sint16 goalring_anim_plist_1[] = {
+#include "assets/goalring_anim_plist_1.inc"
+};
+
+static Sint32 goalring_anim_vlist_1[] = {
+#include "assets/goalring_anim_vlist_1.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_model_1 = {
+    goalring_anim_vlist_1,
+    goalring_anim_plist_1,
+    {-4e-6f, 1.729028f, -0.018082f},
+    2.618065f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_center_object = {
+    NJD_EVAL_UNIT_ANG | NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_model_1,
+    {0.0f, 0.724436f, 1e-6f},
+    {0, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_object_2,
+    0.0f,
+};
+
+static Sint16 goalring_anim_plist_0[] = {
+#include "assets/goalring_anim_plist_0.inc"
+};
+
+static Sint32 goalring_anim_vlist_0[] = {
+#include "assets/goalring_anim_vlist_0.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_model_0 = {
+    goalring_anim_vlist_0,
+    goalring_anim_plist_0,
+    {2.7e-5f, 0.178874f, 0.065301f},
+    1.465567f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_object = {
+    NJD_EVAL_UNIT_ANG | NJD_EVAL_UNIT_SCL,
+    &goalring_anim_model_0,
+    {0.0f, 1.25f, 0.0f},
+    {0, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    &goalring_anim_center_object,
+    NULL,
+    0.0f,
+};
+
+static NJS_MKEY_F goalring_anim_pos_0[] = {
+    {0, {0.0f, 1.25f, 0.0f}},
+    {9, {0.0f, 1.25f, 0.0f}},
+};
+
+static NJS_MKEY_A goalring_anim_ang_0[] = {
+    {0, {0, 0, 0}},
+    {9, {0, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_ang_1[] = {
+    {0, {0, 0, 0}},      {1, {0x1DD, 0, 0}},  {2, {0x38E, 0, 0}},
+    {3, {0x268, 0, 0}},  {4, {0x50, 0, 0}},   {5, {-0x1C7, 0, 0}},
+    {6, {-0x38E, 0, 0}}, {7, {-0x26F, 0, 0}}, {8, {-0xD2, 0, 0}},
+    {9, {0, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_ang_2[] = {
+    {0, {0, 0, 0}},     {1, {0, 0x2C7, 0}},  {2, {0, 0x8E3, 0}},
+    {3, {0, 0xEFF, 0}}, {4, {0, 0x11C7, 0}}, {5, {0, 0xFED, 0}},
+    {6, {0, 0xB85, 0}}, {7, {0, 0x641, 0}},  {8, {0, 0x1D9, 0}},
+    {9, {0, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_ang_3[] = {
+    {0, {0, 0, 0}},      {1, {0, -0x2C7, 0}},  {2, {0, -0x8E3, 0}},
+    {3, {0, -0xEFF, 0}}, {4, {0, -0x11C7, 0}}, {5, {0, -0xFED, 0}},
+    {6, {0, -0xB85, 0}}, {7, {0, -0x641, 0}},  {8, {0, -0x1D9, 0}},
+    {9, {0, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_ang_4[] = {
+    {0, {-0x38E3, 0, 0xE38}}, {1, {-0x36D0, 0, 0xE38}},
+    {2, {-0x3555, 0, 0xE38}}, {3, {-0x3792, 0, 0xE38}},
+    {4, {-0x3B01, 0, 0xE38}}, {5, {-0x3E44, 0, 0xE38}},
+    {6, {-0x3FFF, 0, 0xE38}}, {7, {-0x3E61, 0, 0xE38}},
+    {8, {-0x3AD8, 0, 0xE38}}, {9, {-0x38E3, 0, 0xE38}},
+};
+
+static NJS_MKEY_A goalring_anim_ang_5[] = {
+    {0, {0x18E3, 0, 0}},       {1, {0x18E3, -0xFFF, 0}},
+    {2, {0x18E3, -0x1FFF, 0}}, {3, {0x18E3, -0x1333, 0}},
+    {4, {0x18E3, 0, 0}},       {5, {0x18E3, 0xDFC, 0}},
+    {6, {0x18E3, 0x1A8C, 0}},  {7, {0x18E3, 0x1FFF, 0}},
+    {8, {0x18E3, 0xFFF, 0}},   {9, {0x18E3, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_ang_6[] = {
+    {0, {0, -0x7FFF, 0}},
+    {9, {0, -0x7FFF, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_ang_7[] = {
+    {0, {0, 0, 0}},
+    {9, {0, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_ang_8[] = {
+    {0, {0x38E3, -0x7FFF, -0xE38}}, {1, {0x36D0, -0x7FFF, -0xE38}},
+    {2, {0x3555, -0x7FFF, -0xE38}}, {3, {0x3792, -0x7FFF, -0xE38}},
+    {4, {0x3B01, -0x7FFF, -0xE38}}, {5, {0x3E44, -0x7FFF, -0xE38}},
+    {6, {0x3FFF, -0x7FFF, -0xE38}}, {7, {0x3E61, -0x7FFF, -0xE38}},
+    {8, {0x3AD8, -0x7FFF, -0xE38}}, {9, {0x38E3, -0x7FFF, -0xE38}},
+};
+
+static NJS_MDATA2 goalring_anim_mdata[] = {
+    {{goalring_anim_pos_0, goalring_anim_ang_0},
+     {ARRAY_COUNT(goalring_anim_pos_0), ARRAY_COUNT(goalring_anim_ang_0)}},
+    {{NULL, goalring_anim_ang_1}, {0, ARRAY_COUNT(goalring_anim_ang_1)}},
+    {{NULL, goalring_anim_ang_2}, {0, ARRAY_COUNT(goalring_anim_ang_2)}},
+    {{NULL, goalring_anim_ang_3}, {0, ARRAY_COUNT(goalring_anim_ang_3)}},
+    {{NULL, goalring_anim_ang_4}, {0, ARRAY_COUNT(goalring_anim_ang_4)}},
+    {{NULL, goalring_anim_ang_5}, {0, ARRAY_COUNT(goalring_anim_ang_5)}},
+    {{NULL, goalring_anim_ang_6}, {0, ARRAY_COUNT(goalring_anim_ang_6)}},
+    {{NULL, goalring_anim_ang_7}, {0, ARRAY_COUNT(goalring_anim_ang_7)}},
+    {{NULL, goalring_anim_ang_8}, {0, ARRAY_COUNT(goalring_anim_ang_8)}},
+};
+
+static NJS_MOTION goalring_anim_motion = {goalring_anim_mdata, 10, 3, 2};
+
+static NJS_TEXNAME goalring_anim_hit_texname[] = {
+    {"sikake_43_32"},
+    {"sikake_44_32"},
+    {"sikake_45_64"},
+    {"sikake_48_64"},
+};
+
+static NJS_TEXLIST goalring_anim_hit_texlist = {
+    goalring_anim_hit_texname, ARRAY_COUNT(goalring_anim_hit_texname)};
+
+static Sint16 goalring_anim_hit_plist_8[] = {
+#include "assets/goalring_anim_hit_plist_8.inc"
+};
+
+static Sint32 goalring_anim_hit_vlist_8[] = {
+#include "assets/goalring_anim_hit_vlist_8.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_hit_model_8 = {
+    goalring_anim_hit_vlist_8,
+    goalring_anim_hit_plist_8,
+    {0.300701f, -0.852327f, -0.111707f},
+    0.991277f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_hit_object_8 = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_hit_model_8,
+    {-0.661664f, 0.811234f, 0.16f},
+    {0x38E, -0x7FFF, -0xE38},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    NULL,
+    0.0f,
+};
+
+static Sint16 goalring_anim_hit_plist_7[] = {
+#include "assets/goalring_anim_hit_plist_7.inc"
+};
+
+static Sint32 goalring_anim_hit_vlist_7[] = {
+#include "assets/goalring_anim_hit_vlist_7.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_hit_model_7 = {
+    goalring_anim_hit_vlist_7,
+    goalring_anim_hit_plist_7,
+    {0.268491f, -0.862628f, 0.42467f},
+    1.250255f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_hit_object_7 = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_hit_model_7,
+    {0.441818f, 0.031819f, 0.0f},
+    {0x1C71, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_hit_object_8,
+    0.0f,
+};
+
+static Sint16 goalring_anim_hit_plist_6[] = {
+#include "assets/goalring_anim_hit_plist_6.inc"
+};
+
+static Sint32 goalring_anim_hit_vlist_6[] = {
+#include "assets/goalring_anim_hit_vlist_6.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_hit_model_6 = {
+    goalring_anim_hit_vlist_6,
+    goalring_anim_hit_plist_6,
+    {0.268491f, -0.862628f, -0.42467f},
+    1.250255f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_hit_object_6 = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_hit_model_6,
+    {-0.441818f, 0.031819f, 0.0f},
+    {-0x1C71, -0x8000, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_hit_object_7,
+    0.0f,
+};
+
+static Sint16 goalring_anim_hit_plist_5[] = {
+#include "assets/goalring_anim_hit_plist_5.inc"
+};
+
+static Sint32 goalring_anim_hit_vlist_5[] = {
+#include "assets/goalring_anim_hit_vlist_5.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_hit_model_5 = {
+    goalring_anim_hit_vlist_5,
+    goalring_anim_hit_plist_5,
+    {0.0f, -0.411845f, -0.185203f},
+    0.587591f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_hit_object_5 = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_hit_model_5,
+    {0.0f, -0.015406f, -1.009871f},
+    {0x71C, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_hit_object_6,
+    0.0f,
+};
+
+static Sint16 goalring_anim_hit_plist_4[] = {
+#include "assets/goalring_anim_hit_plist_4.inc"
+};
+
+static Sint32 goalring_anim_hit_vlist_4[] = {
+#include "assets/goalring_anim_hit_vlist_4.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_hit_model_4 = {
+    goalring_anim_hit_vlist_4,
+    goalring_anim_hit_plist_4,
+    {0.300701f, -0.852327f, 0.111707f},
+    1.014864f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_hit_object_4 = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_hit_model_4,
+    {0.661664f, 0.811234f, 0.16f},
+    {0x38E, 0, 0xE38},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_hit_object_5,
+    0.0f,
+};
+
+static Sint16 goalring_anim_hit_plist_3[] = {
+#include "assets/goalring_anim_hit_plist_3.inc"
+};
+
+static Sint32 goalring_anim_hit_vlist_3[] = {
+#include "assets/goalring_anim_hit_vlist_3.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_hit_model_3 = {
+    goalring_anim_hit_vlist_3,
+    goalring_anim_hit_plist_3,
+    {-0.62439f, 0.036828f, -0.579342f},
+    1.078913f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_hit_object_3 = {
+    NJD_EVAL_UNIT_ANG | NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_hit_model_3,
+    {-0.378701f, 0.648003f, -0.56423f},
+    {0, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_hit_object_4,
+    0.0f,
+};
+
+static Sint16 goalring_anim_hit_plist_2[] = {
+#include "assets/goalring_anim_hit_plist_2.inc"
+};
+
+static Sint32 goalring_anim_hit_vlist_2[] = {
+#include "assets/goalring_anim_hit_vlist_2.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_hit_model_2 = {
+    goalring_anim_hit_vlist_2,
+    goalring_anim_hit_plist_2,
+    {0.62439f, 0.036828f, -0.579342f},
+    1.078913f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_hit_object_2 = {
+    NJD_EVAL_UNIT_ANG | NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_hit_model_2,
+    {0.378701f, 0.648003f, -0.56423f},
+    {0, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_hit_object_3,
+    0.0f,
+};
+
+static Sint16 goalring_anim_hit_plist_1[] = {
+#include "assets/goalring_anim_hit_plist_1.inc"
+};
+
+static Sint32 goalring_anim_hit_vlist_1[] = {
+#include "assets/goalring_anim_hit_vlist_1.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_hit_model_1 = {
+    goalring_anim_hit_vlist_1,
+    goalring_anim_hit_plist_1,
+    {-4e-6f, 1.729028f, -0.018082f},
+    2.545652f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_hit_center_object = {
+    NJD_EVAL_UNIT_SCL | NJD_EVAL_BREAK,
+    &goalring_anim_hit_model_1,
+    {-0.0f, 0.724436f, 1e-6f},
+    {0x71C, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    NULL,
+    &goalring_anim_hit_object_2,
+    0.0f,
+};
+
+static Sint16 goalring_anim_hit_plist_0[] = {
+#include "assets/goalring_anim_hit_plist_0.inc"
+};
+
+static Sint32 goalring_anim_hit_vlist_0[] = {
+#include "assets/goalring_anim_hit_vlist_0.inc"
+};
+
+static NJS_CNK_MODEL goalring_anim_hit_model_0 = {
+    goalring_anim_hit_vlist_0,
+    goalring_anim_hit_plist_0,
+    {2.7e-5f, 0.178874f, 0.065301f},
+    1.465567f,
+};
+
+static NJS_CNK_OBJECT goalring_anim_hit_object = {
+    NJD_EVAL_UNIT_ANG | NJD_EVAL_UNIT_SCL,
+    &goalring_anim_hit_model_0,
+    {0.0f, 2.442472f, 0.0f},
+    {0, 0, 0},
+    {1.0f, 1.0f, 1.0f},
+    &goalring_anim_hit_center_object,
+    NULL,
+    0.0f,
+};
+
+static NJS_MKEY_F goalring_anim_hit_pos_0[] = {
+    {0, {0.0f, 2.442472f, 0.0f}},  {1, {0.0f, 3.463042f, 0.0f}},
+    {2, {0.0f, 4.322634f, 0.0f}},  {3, {0.0f, 5.032173f, 0.0f}},
+    {4, {0.0f, 5.602581f, 0.0f}},  {5, {0.0f, 6.044782f, 0.0f}},
+    {6, {0.0f, 6.369701f, 0.0f}},  {7, {0.0f, 6.588261f, 0.0f}},
+    {8, {0.0f, 6.711387f, 0.0f}},  {9, {0.0f, 6.75f, 0.0f}},
+    {10, {0.0f, 6.721509f, 0.0f}}, {11, {0.0f, 6.624254f, 0.0f}},
+    {12, {0.0f, 6.440562f, 0.0f}}, {13, {0.0f, 6.152761f, 0.0f}},
+    {14, {0.0f, 5.743177f, 0.0f}}, {15, {0.0f, 5.19414f, 0.0f}},
+    {16, {0.0f, 4.487977f, 0.0f}}, {17, {0.0f, 3.607013f, 0.0f}},
+    {18, {0.0f, 2.53358f, 0.0f}},  {19, {0.0f, 1.25f, 0.0f}},
+};
+
+static NJS_MKEY_A goalring_anim_hit_ang_0[] = {
+    {0, {0, 0, 0}},
+    {19, {0, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_hit_ang_1[] = {
+    {0, {0x71C, 0, 0}},   {1, {0x1C, 0, 0}},    {2, {-0x71C, 0, 0}},
+    {3, {-0x773, 0, 0}},  {4, {-0x798, 0, 0}},  {5, {-0x78F, 0, 0}},
+    {6, {-0x75C, 0, 0}},  {7, {-0x703, 0, 0}},  {8, {-0x688, 0, 0}},
+    {9, {-0x5F1, 0, 0}},  {10, {-0x541, 0, 0}}, {11, {-0x47C, 0, 0}},
+    {12, {-0x3A6, 0, 0}}, {13, {-0x2C4, 0, 0}}, {14, {-0x1DA, 0, 0}},
+    {15, {-0xED, 0, 0}},  {16, {0, 0, 0}},      {17, {0x29F, 0, 0}},
+    {18, {0x686, 0, 0}},  {19, {0x888, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_hit_ang_2[] = {
+    {0, {0, 0, 0}},       {1, {0, 0x471, 0}},   {2, {0, 0xE38, 0}},
+    {3, {0, 0x17FF, 0}},  {4, {0, 0x1C71, 0}},  {5, {0, 0x196D, 0}},
+    {6, {0, 0x1242, 0}},  {7, {0, 0x9C1, 0}},   {8, {0, 0x2BB, 0}},
+    {9, {0, 0, 0}},       {10, {0, 0x38E, 0}},  {11, {0, 0xB85, 0}},
+    {12, {0, 0x14E8, 0}}, {13, {0, 0x1CBA, 0}}, {14, {0, 0x1FFF, 0}},
+    {15, {0, 0x1CAB, 0}}, {16, {0, 0x14BC, 0}}, {17, {0, 0xB43, 0}},
+    {18, {0, 0x353, 0}},  {19, {0, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_hit_ang_3[] = {
+    {0, {0, 0, 0}},        {1, {0, -0x4FF, 0}},   {2, {0, -0xFFF, 0}},
+    {3, {0, -0x1AFF, 0}},  {4, {0, -0x1FFF, 0}},  {5, {0, -0x1CAB, 0}},
+    {6, {0, -0x14BC, 0}},  {7, {0, -0xB43, 0}},   {8, {0, -0x353, 0}},
+    {9, {0, 0, 0}},        {10, {0, -0x353, 0}},  {11, {0, -0xB43, 0}},
+    {12, {0, -0x14BC, 0}}, {13, {0, -0x1CAB, 0}}, {14, {0, -0x1FFF, 0}},
+    {15, {0, -0x1CAB, 0}}, {16, {0, -0x14BC, 0}}, {17, {0, -0xB43, 0}},
+    {18, {0, -0x353, 0}},  {19, {0, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_hit_ang_4[] = {
+    {0, {0x38E, 0, 0xE38}},     {1, {0x294, 0, 0xF70}},
+    {2, {-0x8, 0, 0x12B5}},     {3, {-0x3D1, 0, 0x1770}},
+    {4, {-0x84E, 0, 0x1D0C}},   {5, {-0xD06, 0, 0x22F3}},
+    {6, {-0x1183, 0, 0x288F}},  {7, {-0x154C, 0, 0x2D4A}},
+    {8, {-0x17E9, 0, 0x308E}},  {9, {-0x18E3, 0, 0x31C6}},
+    {10, {-0x1817, 0, 0x30C8}}, {11, {-0x15EE, 0, 0x2E14}},
+    {12, {-0x12BE, 0, 0x2A18}}, {13, {-0xEE0, 0, 0x2542}},
+    {14, {-0xAAA, 0, 0x1FFF}},  {15, {-0x674, 0, 0x1ABC}},
+    {16, {-0x296, 0, 0x15E6}},  {17, {0x98, 0, 0x11EB}},
+    {18, {0x2C2, 0, 0xF37}},    {19, {0x38E, 0, 0xE38}},
+};
+
+static NJS_MKEY_A goalring_anim_hit_ang_5[] = {
+    {0, {0x71C, 0, 0}},   {1, {0x111C, 0, 0}},  {2, {0x271C, 0, 0}},
+    {3, {0x3D1C, 0, 0}},  {4, {0x471C, 0, 0}},  {5, {0x4074, 0, 0}},
+    {6, {0x3095, 0, 0}},  {7, {0x1DA3, 0, 0}},  {8, {0xDC4, 0, 0}},
+    {9, {0x71C, 0, 0}},   {10, {0xDC4, 0, 0}},  {11, {0x1DA3, 0, 0}},
+    {12, {0x3095, 0, 0}}, {13, {0x4074, 0, 0}}, {14, {0x471C, 0, 0}},
+    {15, {0x4074, 0, 0}}, {16, {0x3095, 0, 0}}, {17, {0x1DA3, 0, 0}},
+    {18, {0xDC4, 0, 0}},  {19, {0x71C, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_hit_ang_6[] = {
+    {0, {-0x1C71, -0x7FFF, 0}}, {1, {-0x1C37, -0x7FFF, 0}},
+    {2, {-0x1B90, -0x7FFF, 0}}, {3, {-0x1A8A, -0x7FFF, 0}},
+    {4, {-0x1931, -0x7FFF, 0}}, {5, {-0x1792, -0x7FFF, 0}},
+    {6, {-0x15B9, -0x7FFF, 0}}, {7, {-0x13B4, -0x7FFF, 0}},
+    {8, {-0x118F, -0x7FFF, 0}}, {9, {-0xF58, -0x7FFF, 0}},
+    {10, {-0xD19, -0x7FFF, 0}}, {11, {-0xAE1, -0x7FFF, 0}},
+    {12, {-0x8BC, -0x7FFF, 0}}, {13, {-0x6B7, -0x7FFF, 0}},
+    {14, {-0x4DF, -0x7FFF, 0}}, {15, {-0x340, -0x7FFF, 0}},
+    {16, {-0x1E7, -0x7FFF, 0}}, {17, {-0xE1, -0x7FFF, 0}},
+    {18, {-0x3A, -0x7FFF, 0}},  {19, {0, -0x7FFF, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_hit_ang_7[] = {
+    {0, {0x1C71, 0, 0}}, {1, {0x1C37, 0, 0}}, {2, {0x1B90, 0, 0}},
+    {3, {0x1A8A, 0, 0}}, {4, {0x1931, 0, 0}}, {5, {0x1792, 0, 0}},
+    {6, {0x15B9, 0, 0}}, {7, {0x13B4, 0, 0}}, {8, {0x118F, 0, 0}},
+    {9, {0xF58, 0, 0}},  {10, {0xD19, 0, 0}}, {11, {0xAE1, 0, 0}},
+    {12, {0x8BC, 0, 0}}, {13, {0x6B7, 0, 0}}, {14, {0x4DF, 0, 0}},
+    {15, {0x340, 0, 0}}, {16, {0x1E7, 0, 0}}, {17, {0xE1, 0, 0}},
+    {18, {0x3A, 0, 0}},  {19, {0, 0, 0}},
+};
+
+static NJS_MKEY_A goalring_anim_hit_ang_8[] = {
+    {0, {0x38E, -0x7FFF, -0xE38}},    {1, {0x449, -0x7FFF, -0xF70}},
+    {2, {0x63F, -0x7FFF, -0x12B5}},   {3, {0x916, -0x7FFF, -0x1770}},
+    {4, {0xC73, -0x7FFF, -0x1D0C}},   {5, {0xFFE, -0x7FFF, -0x22F3}},
+    {6, {0x135B, -0x7FFF, -0x288F}},  {7, {0x1632, -0x7FFF, -0x2D4A}},
+    {8, {0x1828, -0x7FFF, -0x308E}},  {9, {0x18E3, -0x7FFF, -0x31C6}},
+    {10, {0x184A, -0x7FFF, -0x30C8}}, {11, {0x16AB, -0x7FFF, -0x2E14}},
+    {12, {0x1447, -0x7FFF, -0x2A18}}, {13, {0x1161, -0x7FFF, -0x2542}},
+    {14, {0xE38, -0x7FFF, -0x1FFF}},  {15, {0xB10, -0x7FFF, -0x1ABC}},
+    {16, {0x829, -0x7FFF, -0x15E6}},  {17, {0x5C6, -0x7FFF, -0x11EB}},
+    {18, {0x427, -0x7FFF, -0xF37}},   {19, {0x38E, -0x7FFF, -0xE38}},
+};
+
+static NJS_MDATA2 goalring_anim_hit_mdata[] = {
+    {{goalring_anim_hit_pos_0, goalring_anim_hit_ang_0},
+     {ARRAY_COUNT(goalring_anim_hit_pos_0),
+      ARRAY_COUNT(goalring_anim_hit_ang_0)}},
+    {{NULL, goalring_anim_hit_ang_1},
+     {0, ARRAY_COUNT(goalring_anim_hit_ang_1)}},
+    {{NULL, goalring_anim_hit_ang_2},
+     {0, ARRAY_COUNT(goalring_anim_hit_ang_2)}},
+    {{NULL, goalring_anim_hit_ang_3},
+     {0, ARRAY_COUNT(goalring_anim_hit_ang_3)}},
+    {{NULL, goalring_anim_hit_ang_4},
+     {0, ARRAY_COUNT(goalring_anim_hit_ang_4)}},
+    {{NULL, goalring_anim_hit_ang_5},
+     {0, ARRAY_COUNT(goalring_anim_hit_ang_5)}},
+    {{NULL, goalring_anim_hit_ang_6},
+     {0, ARRAY_COUNT(goalring_anim_hit_ang_6)}},
+    {{NULL, goalring_anim_hit_ang_7},
+     {0, ARRAY_COUNT(goalring_anim_hit_ang_7)}},
+    {{NULL, goalring_anim_hit_ang_8},
+     {0, ARRAY_COUNT(goalring_anim_hit_ang_8)}},
+};
+
+static NJS_MOTION goalring_anim_hit_motion = {goalring_anim_hit_mdata, 20, 3,
+                                              2};
+
+// referenced by the stage's texture load list
+NJS_TEXLIST *goalring_texlist_tbl[] = {
+    &goalring_texlist,
+    &goalring_text1_texlist,
+    &goalring_text2_texlist,
+    &goalring_anim_texlist,
+    &goalring_anim_hit_texlist,
+    &_rename_ring_texlist,
+    NULL,
+};
+
+static CCL_INFO goalring_colli_info[] = {
+    {0,
+     0,
+     0x70,
+     0,
+     0x8000,
+     {0.0f, 0.0f, 0.0f},
+     25.0f,
+     0.0f,
+     0.0f,
+     0.0f,
+     0,
+     0,
+     0},
+    {0,
+     0,
+     0x70,
+     0,
+     0x8000,
+     {0.0f, 0.0f, 0.0f},
+     8.0f,
+     0.0f,
+     0.0f,
+     0.0f,
+     0,
+     0,
+     0},
+};
+
+static Angle goalring_rot_spd = 0x180;
+static Angle goalring_rot_spd_hit = 0x350;
+static Float goalring_ptcl_scl = 0.1f;
+static Float goalring_ptcl_spd = 0.1f;
+static Float goalring_ptcl_spd_y = 0.03f;
+static Uint32 goalring_blink_on = 25;
+static Uint32 goalring_blink_cycle = 40;
+static Float goalring_rise_spd = 0.2f;
+static Float goalring_anim_spd = 0.12f;
+static Float goalring_anim_spd_hit = 0.33f;
+static NJS_POINT3 goalring_ptcl_pos0 = {0.7f, 0.55f, 1.5f};
+static NJS_POINT3 goalring_ptcl_pos1 = {-0.7f, 0.55f, 1.5f};
+static NJS_VECTOR goalring_ptcl_vec0 = {0.2f, 0.07f, 0.02f};
+static NJS_VECTOR goalring_ptcl_vec1 = {-0.2f, 0.07f, 0.02f};
+static NJS_POINT3 goalring_glow_pos = {0.0f, 5.0f, 0.0f};
+static Angle goalring_glow_ang = 0xE000;
+static NJS_VECTOR goalring_shadow_scl = {30.0f, 5.0f, 10.0f};
+static NJS_VECTOR goalring_anim_shadow_scl = {2.3f, 1.0f, 2.5f};
+
+static NJS_MATRIX *goalring_matrix_p;
 
 static void ObjectGoalRingDispSortDummy(task *tp) {}
 
@@ -177,9 +970,9 @@ void ObjectGoalRing(task *tp) {
   }
   twp->btimer = 0;
   if (GetType(twp) == MD_GOALRING_1) {
-    CCL_Init(tp, &_rename_goalring_colli_info[1], 1, CID_OBJECT);
+    CCL_Init(tp, &goalring_colli_info[1], 1, CID_OBJECT);
   } else {
-    CCL_Init(tp, &_rename_goalring_colli_info[0], 1, CID_OBJECT);
+    CCL_Init(tp, &goalring_colli_info[0], 1, CID_OBJECT);
   }
   twp->smode = 0;
   twp->scl.z = -1000000.0f;
@@ -201,8 +994,8 @@ static void ObjectGoalRingExec(task *tp) {
     return;
   }
 
-  if (lbl_801CC168._7C % _rename_goalring_blink_cycle <
-      _rename_goalring_blink_on) {
+  if (lbl_801CC168._7C % goalring_blink_cycle <
+      goalring_blink_on) {
     switch (lbl_801CC168._23) {
     case 1:
     case 2:
@@ -232,15 +1025,15 @@ static void ObjectGoalRingExec(task *tp) {
   } else if (GetType(twp) != MD_GOALRING_0) {
     if (GetType(twp) == MD_GOALRING_1) {
       if (twp->smode != 0) {
-        twp->scl.y += _rename_goalring_anim_spd_hit;
+        twp->scl.y += goalring_anim_spd_hit;
         if (twp->scl.y >
-            (Float)(_rename_goalring_anim_hit_motion.nbFrame - 1)) {
+            (Float)(goalring_anim_hit_motion.nbFrame - 1)) {
           twp->scl.y = 0.0f;
         }
         fn_8006AFFC(0x100E, tp, 1, 30, 30, &twp->pos);
       } else {
-        twp->scl.y += _rename_goalring_anim_spd;
-        if (twp->scl.y > (Float)(_rename_goalring_anim_motion.nbFrame - 1)) {
+        twp->scl.y += goalring_anim_spd;
+        if (twp->scl.y > (Float)(goalring_anim_motion.nbFrame - 1)) {
           twp->scl.y = 0.0f;
         }
         fn_8006AFFC(0x100D, tp, 1, 30 - twp->wtimer * 2, 30, &twp->pos);
@@ -250,11 +1043,11 @@ static void ObjectGoalRingExec(task *tp) {
     }
   } else {
     if (twp->smode != 0) {
-      twp->ang.y += _rename_goalring_rot_spd_hit;
+      twp->ang.y += goalring_rot_spd_hit;
       twp->wtimer++;
-      twp->pos.y += _rename_goalring_rise_spd;
+      twp->pos.y += goalring_rise_spd;
     } else {
-      twp->ang.y += _rename_goalring_rot_spd;
+      twp->ang.y += goalring_rot_spd;
     }
     if (njRandom() < 0.9f) {
       NJS_POINT3 pos;
@@ -279,9 +1072,9 @@ static void ObjectGoalRingExec(task *tp) {
 
         vec.y = 0.0f;
         len = njScalor(&vec);
-        vec.x *= _rename_goalring_ptcl_spd / len;
-        vec.y = _rename_goalring_ptcl_spd_y;
-        vec.z *= _rename_goalring_ptcl_spd / len;
+        vec.x *= goalring_ptcl_spd / len;
+        vec.y = goalring_ptcl_spd_y;
+        vec.z *= goalring_ptcl_spd / len;
         _rename_MakeParticle2(&pos, &vec, 1.5f);
       }
     }
@@ -314,8 +1107,8 @@ static void ObjectGoalRingExec(task *tp) {
 
     njPushMatrixEx();
     njSetMatrix(NULL, &GetWork(tp)->mat);
-    njCalcPoint(NULL, &_rename_goalring_ptcl_pos0, &pos);
-    njCalcVector(NULL, &_rename_goalring_ptcl_vec0, &vec);
+    njCalcPoint(NULL, &goalring_ptcl_pos0, &pos);
+    njCalcVector(NULL, &goalring_ptcl_vec0, &vec);
     old = GetWork(tp)->posy;
     GetWork(tp)->posy = pos.y;
     dy = pos.y - old;
@@ -325,11 +1118,11 @@ static void ObjectGoalRingExec(task *tp) {
     if (GetWork(tp)->ptcl_num != 0 && lbl_801CC168._7C % 6 < 3) {
       GetWork(tp)->ptcl_num--;
       vec.y += 0.8f * dy;
-      _rename_MakeParticle3(&pos, &vec, _rename_goalring_ptcl_scl);
-      njCalcPoint(NULL, &_rename_goalring_ptcl_pos1, &pos);
-      njCalcVector(NULL, &_rename_goalring_ptcl_vec1, &vec);
+      _rename_MakeParticle3(&pos, &vec, goalring_ptcl_scl);
+      njCalcPoint(NULL, &goalring_ptcl_pos1, &pos);
+      njCalcVector(NULL, &goalring_ptcl_vec1, &vec);
       vec.y += 0.5f * dy;
-      _rename_MakeParticle3(&pos, &vec, _rename_goalring_ptcl_scl);
+      _rename_MakeParticle3(&pos, &vec, goalring_ptcl_scl);
     }
     njPopMatrixEx();
   }
@@ -344,22 +1137,22 @@ static void ObjectGoalRingExec(task *tp) {
 }
 
 static void GoalRingGetMatrix(void) {
-  if (_rename_goalring_matrix_p != NULL) {
-    njGetMatrix(_rename_goalring_matrix_p);
+  if (goalring_matrix_p != NULL) {
+    njGetMatrix(goalring_matrix_p);
   }
 }
 
 static void GoalRingObjectCallback(NJS_CNK_OBJECT *object) {
   __njColorBlendingMode(0, 8);
   __njColorBlendingMode(1, 6);
-  if (object == &_rename_goalring_anim_hit_center_object) {
-    fn_80033620(&_rename_goalring_glow_pos, 3, 0x4000, 0, 1.5f, 1.5f, -1, 0,
+  if (object == &goalring_anim_hit_center_object) {
+    fn_80033620(&goalring_glow_pos, 3, 0x4000, 0, 1.5f, 1.5f, -1, 0,
                 0.0f, 0.0f);
     GoalRingGetMatrix();
   }
-  if (object == &_rename_goalring_anim_center_object) {
-    fn_80033620(&_rename_goalring_glow_pos, 3, 0x4000,
-                _rename_goalring_glow_ang, 1.5f, 1.5f, -1, 0, 0.0f, 0.0f);
+  if (object == &goalring_anim_center_object) {
+    fn_80033620(&goalring_glow_pos, 3, 0x4000,
+                goalring_glow_ang, 1.5f, 1.5f, -1, 0, 0.0f, 0.0f);
     GoalRingGetMatrix();
   }
 }
@@ -379,17 +1172,17 @@ static void ObjectGoalRingDisp(task *tp) {
   if (GetType(twp) == MD_GOALRING_1) {
     fn_8012297C(1);
     if (twp->smode != 0) {
-      njSetTexture(&_rename_goalring_anim_hit_texlist);
-      fn_8011E1EC(&_rename_goalring_anim_hit_object,
-                  &_rename_goalring_anim_hit_motion, twp->scl.y);
+      njSetTexture(&goalring_anim_hit_texlist);
+      fn_8011E1EC(&goalring_anim_hit_object,
+                  &goalring_anim_hit_motion, twp->scl.y);
     } else {
-      njSetTexture(&_rename_goalring_anim_texlist);
-      fn_8011E1EC(&_rename_goalring_anim_object, &_rename_goalring_anim_motion,
+      njSetTexture(&goalring_anim_texlist);
+      fn_8011E1EC(&goalring_anim_object, &goalring_anim_motion,
                   twp->scl.y);
     }
     fn_8012297C(3);
   } else {
-    njSetTexture(&_rename_goalring_texlist);
+    njSetTexture(&goalring_texlist);
     if (twp->smode != 0) {
       Float scl = 1.0f - twp->wtimer / 60.0f;
 
@@ -398,15 +1191,15 @@ static void ObjectGoalRingDisp(task *tp) {
       }
       njScale(NULL, scl, 1.0f, scl);
     }
-    njCnkCacheDrawModel(&_rename_goalring_model);
+    njCnkCacheDrawModel(&goalring_model);
     switch (twp->btimer) {
     case 1:
-      njSetTexture(&_rename_goalring_text1_texlist);
-      njCnkCacheDrawModel(&_rename_goalring_text1_model);
+      njSetTexture(&goalring_text1_texlist);
+      njCnkCacheDrawModel(&goalring_text1_model);
       break;
     case 2:
-      njSetTexture(&_rename_goalring_text2_texlist);
-      njCnkCacheDrawModel(&_rename_goalring_text2_model);
+      njSetTexture(&goalring_text2_texlist);
+      njCnkCacheDrawModel(&goalring_text2_model);
       break;
     }
   }
@@ -429,7 +1222,7 @@ static void ObjectGoalRingDispSort(task *tp) {
     njTranslate(NULL, twp->pos.x, 0.3f + twp->scl.z, twp->pos.z);
     njRotateY(NULL, twp->ang.y);
     njTranslate(NULL, 0.0f, 0.0f, 0.8f);
-    fn_8011610C(&_rename_goalring_anim_shadow_scl);
+    fn_8011610C(&goalring_anim_shadow_scl);
     _rename_RingDrawShadowModel();
     njPopMatrixEx();
     njPushMatrixEx();
@@ -439,15 +1232,15 @@ static void ObjectGoalRingDispSort(task *tp) {
       njDisableFog();
       gjSetFog();
     }
-    _rename_goalring_matrix_p = &GetWork(tp)->mat;
+    goalring_matrix_p = &GetWork(tp)->mat;
     fn_8011C3A0(GoalRingObjectCallback);
     if (twp->smode != 0) {
-      njSetTexture(&_rename_goalring_anim_hit_texlist);
-      fn_8011E1EC(&_rename_goalring_anim_hit_object,
-                  &_rename_goalring_anim_hit_motion, twp->scl.y);
+      njSetTexture(&goalring_anim_hit_texlist);
+      fn_8011E1EC(&goalring_anim_hit_object,
+                  &goalring_anim_hit_motion, twp->scl.y);
     } else {
-      njSetTexture(&_rename_goalring_anim_texlist);
-      fn_8011E1EC(&_rename_goalring_anim_object, &_rename_goalring_anim_motion,
+      njSetTexture(&goalring_anim_texlist);
+      fn_8011E1EC(&goalring_anim_object, &goalring_anim_motion,
                   twp->scl.y);
     }
     fn_8011C3A0(NULL);
@@ -458,7 +1251,7 @@ static void ObjectGoalRingDispSort(task *tp) {
     njGetMatrix(&GetWork(tp)->mat);
     njPopMatrixEx();
     GetWork(tp)->mat_ok = 1;
-    _rename_goalring_matrix_p = NULL;
+    goalring_matrix_p = NULL;
     if (DisableObjectFog) {
       njEnableFog();
       gjSetFog();
@@ -468,7 +1261,7 @@ static void ObjectGoalRingDispSort(task *tp) {
     njPushMatrixEx();
     njTranslate(NULL, twp->pos.x, 0.8f + twp->scl.z, twp->pos.z);
     njRotateY(NULL, twp->ang.y);
-    fn_8011610C(&_rename_goalring_shadow_scl);
+    fn_8011610C(&goalring_shadow_scl);
     _rename_RingDrawShadowModel();
     njPopMatrixEx();
   }
@@ -489,17 +1282,17 @@ static void ObjectGoalRingDispShad(task *tp) {
   if (GetType(twp) == MD_GOALRING_1) {
     fn_8012297C(1);
     if (twp->smode != 0) {
-      njSetTexture(&_rename_goalring_anim_hit_texlist);
-      fn_8011E1EC(&_rename_goalring_anim_hit_object,
-                  &_rename_goalring_anim_hit_motion, twp->scl.y);
+      njSetTexture(&goalring_anim_hit_texlist);
+      fn_8011E1EC(&goalring_anim_hit_object,
+                  &goalring_anim_hit_motion, twp->scl.y);
     } else {
-      njSetTexture(&_rename_goalring_anim_texlist);
-      fn_8011E1EC(&_rename_goalring_anim_object, &_rename_goalring_anim_motion,
+      njSetTexture(&goalring_anim_texlist);
+      fn_8011E1EC(&goalring_anim_object, &goalring_anim_motion,
                   twp->scl.y);
     }
     fn_8012297C(3);
   } else {
-    njSetTexture(&_rename_goalring_texlist);
+    njSetTexture(&goalring_texlist);
     if (twp->smode != 0) {
       Float scl = 1.0f - twp->wtimer / 60.0f;
 
@@ -508,15 +1301,15 @@ static void ObjectGoalRingDispShad(task *tp) {
       }
       njScale(NULL, scl, 1.0f, scl);
     }
-    njCnkCacheDrawModel(&_rename_goalring_model);
+    njCnkCacheDrawModel(&goalring_model);
     switch (twp->btimer) {
     case 1:
-      njSetTexture(&_rename_goalring_text1_texlist);
-      njCnkCacheDrawModel(&_rename_goalring_text1_model);
+      njSetTexture(&goalring_text1_texlist);
+      njCnkCacheDrawModel(&goalring_text1_model);
       break;
     case 2:
-      njSetTexture(&_rename_goalring_text2_texlist);
-      njCnkCacheDrawModel(&_rename_goalring_text2_model);
+      njSetTexture(&goalring_text2_texlist);
+      njCnkCacheDrawModel(&goalring_text2_model);
       break;
     }
   }
