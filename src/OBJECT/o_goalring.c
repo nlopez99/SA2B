@@ -73,7 +73,6 @@ enum {
 #define GetType(twp) ((twp)->ang.x % 3)
 
 // NJS_MATRIX on the stack at an 8-byte aligned address; volatile to match.
-// ATTRIBUTE_ALIGN is ignored on locals, so the buffer is aligned by hand.
 #define ALIGNED_MATRIX(name)                                                   \
   Uint8 name##_buf[sizeof(NJS_MATRIX) + 8];                                    \
   NJS_MATRIX *volatile name =                                                  \
