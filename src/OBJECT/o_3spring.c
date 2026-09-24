@@ -37,8 +37,7 @@ typedef struct spring3wk // sizeof=0xC
   /* 0x08 */ Uint8 timer[2];
 } spring3wk;
 
-#define GetWork(task) ((spring3wk *)task->mwp)
-#define GetTimer(task) ((Uint8 *)GetWork(task)->timer)
+#define GetWork(task) ((spring3wk *)(task)->mwp)
 
 static void Object3SpringJump(task *tp, Sint32 player) {
   Sint8 pno;
@@ -47,6 +46,7 @@ static void Object3SpringJump(task *tp, Sint32 player) {
   Angle3 ang;
   NJS_POINT3 pos;
 
+  // a Sint8 parameter would not be re-extended; the original narrows here
   pno = player;
 
   fn_80038008(pno, 0, &pos, NULL);
@@ -112,15 +112,17 @@ static void Object3SpringExec(task *tp) {
 
   hitPlayer = CCL_IsHitPlayer(tp);
   if (hitPlayer != NULL && (pno = IsThisTaskPlayer(hitPlayer)) >= 0) {
-    if (GetTimer(tp)[pno] == 0) {
+    // indexing through a pointer, not the member array, gives add rD, base, idx
+    if (((Uint8 *)GetWork(tp)->timer)[pno] == 0) {
       GetWork(tp)->spd = _rename_3spring_touch_spd;
       GetWork(tp)->pos = 0.0f;
       Object3SpringJump(tp, (Sint8)pno);
     }
-    GetTimer(tp)[pno] = 10;
+    ((Uint8 *)GetWork(tp)->timer)[pno] = 10;
   }
 
   for (i = 0; i < 2; i++) {
+    // without the pointer the unrolled second pass adds 8 and 1 separately
     Uint8 *timer = &GetWork(tp)->timer[i];
     if (*timer != 0) {
       (*timer)--;
