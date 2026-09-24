@@ -11,6 +11,7 @@
 #include "samt/sonic/shadow.h"
 #include "set.h"
 #include "fabsf.h"
+#include "types.h"
 
 extern Sint32 _rename_GetPlayerCharacter(Sint32);
 extern Sint32 _rename_GetStageNum(void);
@@ -97,14 +98,21 @@ typedef struct goalringwk // sizeof=0x94
   /* 0x3C */ Uint8 shadow[0x58];
 } goalringwk;
 
-#define GetWork(task) ((goalringwk *)task->mwp)
-#define GetType(twp) (twp->ang.x % 3)
+enum {
+  MD_GOALRING_0,
+  MD_GOALRING_1,
+  MD_GOALRING_2,
+};
 
-// NJS_MATRIX on the stack at an 8-byte aligned address; volatile to match
+#define GetWork(task) ((goalringwk *)(task)->mwp)
+#define GetType(twp) ((twp)->ang.x % 3)
+
+// NJS_MATRIX on the stack at an 8-byte aligned address; volatile to match.
+// ATTRIBUTE_ALIGN is ignored on locals, so the buffer is aligned by hand.
 #define ALIGNED_MATRIX(name)                                                   \
   Uint8 name##_buf[sizeof(NJS_MATRIX) + 8];                                    \
   NJS_MATRIX *volatile name =                                                  \
-      (NJS_MATRIX *)(((Uint32)name##_buf + 4) & ~7)
+      (NJS_MATRIX *)ALIGN_PREV((Uint32)name##_buf + 4, 8)
 
 static void ObjectGoalRingDispSortDummy(task *tp) {}
 
@@ -119,12 +127,12 @@ void ObjectGoalRing(task *tp) {
   case PLNO_KNUCKLES:
   case PLNO_ROUGE:
     if (lbl_801CC168._23 != 1) {
-      if (GetType(twp) == 1) {
+      if (GetType(twp) == MD_GOALRING_1) {
         break;
       }
       return;
     }
-    twp->ang.x = 2;
+    twp->ang.x = MD_GOALRING_2;
     twp->mode = 1;
     if (playertwp[0] == NULL || playertwp[0]->wtimer < 120) {
       return;
@@ -132,15 +140,16 @@ void ObjectGoalRing(task *tp) {
     break;
   }
 
-  if (lbl_801CC168._23 != 2 && GetType(twp) == 1) {
+  if (lbl_801CC168._23 != 2 && GetType(twp) == MD_GOALRING_1) {
     task *ctp;
 
-    if (tp->ctp == NULL &&
-        (ctp = CreateChildTask(IM_TWK, _rename_GoalRingChildExec, tp)) !=
-            NULL) {
-      tp->disp_sort = ObjectGoalRingDispSortDummy;
-      ctp->twp->scl.x = 2.0f;
-      ctp->twp->smode = 1;
+    if (tp->ctp == NULL) {
+      ctp = CreateChildTask(IM_TWK, _rename_GoalRingChildExec, tp);
+      if (ctp != NULL) {
+        tp->disp_sort = ObjectGoalRingDispSortDummy;
+        ctp->twp->scl.x = 2.0f;
+        ctp->twp->smode = 1;
+      }
     }
     if (tp->ctp != NULL) {
       tp->ctp->twp->pos = twp->pos;
@@ -162,15 +171,15 @@ void ObjectGoalRing(task *tp) {
   tp->disp_sort = ObjectGoalRingDispSort;
   tp->dest = ObjectGoalRingDest;
   tp->exec = ObjectGoalRingExec;
-  if (GetType(twp) != 1 &&
+  if (GetType(twp) != MD_GOALRING_1 &&
       (_rename_GetStageNum() == 57 || _rename_GetStageNum() == 6)) {
     tp->disp_shad = ObjectGoalRingDispShad;
   }
   twp->btimer = 0;
-  if (GetType(twp) == 1) {
+  if (GetType(twp) == MD_GOALRING_1) {
     CCL_Init(tp, &_rename_goalring_colli_info[1], 1, CID_OBJECT);
   } else {
-    CCL_Init(tp, _rename_goalring_colli_info, 1, CID_OBJECT);
+    CCL_Init(tp, &_rename_goalring_colli_info[0], 1, CID_OBJECT);
   }
   twp->smode = 0;
   twp->scl.z = -1000000.0f;
@@ -220,8 +229,8 @@ static void ObjectGoalRingExec(task *tp) {
   // type tests in this order (other, 1, 0) to match
   if (lbl_801CC168._37 != 0) {
     // frozen: no animation, no sound
-  } else if (GetType(twp) != 0) {
-    if (GetType(twp) == 1) {
+  } else if (GetType(twp) != MD_GOALRING_0) {
+    if (GetType(twp) == MD_GOALRING_1) {
       if (twp->smode != 0) {
         twp->scl.y += _rename_goalring_anim_spd_hit;
         if (twp->scl.y >
@@ -234,11 +243,10 @@ static void ObjectGoalRingExec(task *tp) {
         if (twp->scl.y > (Float)(_rename_goalring_anim_motion.nbFrame - 1)) {
           twp->scl.y = 0.0f;
         }
-        fn_8006AFFC(0x100D, tp, 1, 30 - (twp->wtimer << 1), 30, &twp->pos);
+        fn_8006AFFC(0x100D, tp, 1, 30 - twp->wtimer * 2, 30, &twp->pos);
       }
     } else {
-      fn_8006AFFC(0x1012, twp, 1, (Sint16) - (twp->wtimer << 1), 30,
-                  &twp->pos);
+      fn_8006AFFC(0x1012, twp, 1, (Sint16)-(twp->wtimer * 2), 30, &twp->pos);
     }
   } else {
     if (twp->smode != 0) {
@@ -277,14 +285,13 @@ static void ObjectGoalRingExec(task *tp) {
         _rename_MakeParticle2(&pos, &vec, 1.5f);
       }
     }
-    fn_8006AFFC(0x1012, twp, 1, (Sint16) - (twp->wtimer << 1), 30,
-                &twp->pos);
+    fn_8006AFFC(0x1012, twp, 1, (Sint16)-(twp->wtimer * 2), 30, &twp->pos);
   }
 
   if (twp->smode == 0 && (hit = CCL_IsHitPlayer(tp)) != NULL &&
       (pno = IsThisTaskPlayer(hit)) != -1) {
     if (lbl_801CC168._23 != 1 &&
-        (lbl_801CC168._23 != 2 || GetType(twp) != 0)) {
+        (lbl_801CC168._23 != 2 || GetType(twp) != MD_GOALRING_0)) {
       fn_8001C810(pno);
       twp->smode = 1;
       fn_8006AFFC(0x1013, tp, 1, 30, 180, &twp->pos);
@@ -299,28 +306,24 @@ static void ObjectGoalRingExec(task *tp) {
     CCL_Entry(tp);
   }
 
-  if (GetType(twp) != 0 && GetWork(tp)->mat_ok != 0 && twp->smode == 0 &&
-      lbl_801CC168._37 == 0) {
+  if (GetType(twp) != MD_GOALRING_0 && GetWork(tp)->mat_ok != 0 &&
+      twp->smode == 0 && lbl_801CC168._37 == 0) {
     NJS_VECTOR vec;
     NJS_POINT3 pos;
-    Float *posy;
     Float old;
-    Sint32 *num;
 
     njPushMatrixEx();
     njSetMatrix(NULL, &GetWork(tp)->mat);
     njCalcPoint(NULL, &_rename_goalring_ptcl_pos0, &pos);
     njCalcVector(NULL, &_rename_goalring_ptcl_vec0, &vec);
-    posy = &GetWork(tp)->posy;
-    old = *posy;
-    *posy = pos.y;
+    old = GetWork(tp)->posy;
+    GetWork(tp)->posy = pos.y;
     dy = pos.y - old;
     if (old > pos.y) {
       GetWork(tp)->ptcl_num = 6;
     }
-    num = &GetWork(tp)->ptcl_num;
-    if (*num != 0 && lbl_801CC168._7C % 6 < 3) {
-      (*num)--;
+    if (GetWork(tp)->ptcl_num != 0 && lbl_801CC168._7C % 6 < 3) {
+      GetWork(tp)->ptcl_num--;
       vec.y += 0.8f * dy;
       _rename_MakeParticle3(&pos, &vec, _rename_goalring_ptcl_scl);
       njCalcPoint(NULL, &_rename_goalring_ptcl_pos1, &pos);
@@ -373,7 +376,7 @@ static void ObjectGoalRingDisp(task *tp) {
     njDisableFog();
     gjSetFog();
   }
-  if (GetType(twp) == 1) {
+  if (GetType(twp) == MD_GOALRING_1) {
     fn_8012297C(1);
     if (twp->smode != 0) {
       njSetTexture(&_rename_goalring_anim_hit_texlist);
@@ -417,9 +420,9 @@ static void ObjectGoalRingDisp(task *tp) {
 static void ObjectGoalRingDispSort(task *tp) {
   taskwk *twp = tp->twp;
 
-  if (GetType(twp) == 1) {
+  if (GetType(twp) == MD_GOALRING_1) {
     ALIGNED_MATRIX(m);
-    NJS_ARGB argb; // unused
+    STACK_PAD_VAR(4);
 
     njGetMatrix(m);
     njPushMatrixEx();
@@ -483,7 +486,7 @@ static void ObjectGoalRingDispShad(task *tp) {
     njDisableFog();
     gjSetFog();
   }
-  if (GetType(twp) == 1) {
+  if (GetType(twp) == MD_GOALRING_1) {
     fn_8012297C(1);
     if (twp->smode != 0) {
       njSetTexture(&_rename_goalring_anim_hit_texlist);
