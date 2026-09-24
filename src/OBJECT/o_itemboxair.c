@@ -95,10 +95,12 @@ enum {
   ITEM_EXTRALIFE,
 };
 
+typedef void (*ITEM_FUNC)(task *tp, Sint32 pno);
+
 typedef struct iteminfo // sizeof=0x8
 {
   /* 0x00 */ Sint32 kind;
-  /* 0x04 */ void (*func)(task *tp, Sint32 pno);
+  /* 0x04 */ ITEM_FUNC func;
 } iteminfo;
 
 // work allocated by fn_80018D28, sizeof=0x210
@@ -106,6 +108,8 @@ typedef struct itemboxairwk {
   /* 0x00 */ Uint8 unk0[0x44];
   /* 0x44 */ Sint8 pno; // player that attacked the box, -1 if none
 } itemboxairwk;
+
+#define GetWork(tp) ((itemboxairwk *)(tp)->mwp)
 
 static iteminfo itemboxair_item_info[] = {
     {ITEM_SPEEDUP, ItemBoxAirSpeedUp},
@@ -230,7 +234,7 @@ static void ObjectItemBoxAirAppear(task *tp) {
 static void ObjectItemBoxAirNormal(task *tp) {
   task *hit_tp = NULL;
   taskwk *twp = tp->twp;
-  itemboxairwk *wk = (itemboxairwk *)tp->mwp;
+  itemboxairwk *wk = GetWork(tp);
   Sint32 pno;
   NJS_VECTOR spd;
   NJS_POINT3 pos; // unused
@@ -279,21 +283,19 @@ static void ObjectItemBoxAirVanish(task *tp) {
   taskwk *twp = tp->twp;
 
   twp->scl.z += 0.2;
-  if (!(twp->scl.z > 5.0f)) {
-    return;
-  }
-
-  twp->scl.z = 5.0f;
-  if (twp->smode != 0) {
-    if (tp->ptp->ocp != NULL) {
-      DeadOut(tp->ptp);
+  if (twp->scl.z > 5.0f) {
+    twp->scl.z = 5.0f;
+    if (twp->smode != 0) {
+      if (tp->ptp->ocp != NULL) {
+        DeadOut(tp->ptp);
+      } else {
+        FreeTask(tp->ptp);
+      }
+    } else if (tp->ocp != NULL) {
+      DeadOut(tp);
     } else {
-      FreeTask(tp->ptp);
+      FreeTask(tp);
     }
-  } else if (tp->ocp != NULL) {
-    DeadOut(tp);
-  } else {
-    FreeTask(tp);
   }
 }
 
@@ -360,7 +362,7 @@ static void ObjectItemBoxAirDispSort(task *tp) {
     pos.y = 14.5f;
     pos.z = 0.0f;
     _rename_ItemIconDraw(itemboxair_item_info[twp->btimer].kind, &pos,
-                         182.04445f * twp->scl.y, 9.0f);
+                         NJM_DEG_ANG(twp->scl.y), 9.0f);
   }
   njSetTexture(&_rename_itemboxair_texlist);
   if (twp->scl.z > 1.0f) {
