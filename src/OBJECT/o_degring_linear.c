@@ -177,7 +177,7 @@ static void ObjectDegRingDest(task *tp) {
 
 static void ObjectDegRingLinearExec(task *tp) {
   taskwk *twp = tp->twp;
-  Sint32 count; // found flag, then rings left; one variable, as in the original
+  Sint32 count;
   degringent *ent;
   NJS_POINT3 *pos;
   task *ring;
@@ -205,14 +205,16 @@ static void ObjectDegRingLinearExec(task *tp) {
   pos = GetWork(tp)->pos;
   count = 0;
   for (i = 0; i < twp->btimer; i++, ent++, pos++) {
-    if (!(ent->flag & 2) && ent->tp == NULL &&
-        (ring = CreateElementalTask(IM_TWK, LEV_1, Ring, "Ring")) != NULL) {
-      ent->flag = 0;
-      ring->twp->pos = *pos;
-      ring->twp->ang.x = 0;
-      ring->twp->ang.y = 0;
-      ring->twp->ang.z = 0;
-      _rename_RingSetGroup(ring, ent);
+    if (!(ent->flag & 2) && ent->tp == NULL) {
+      ring = CreateFundamentalTask(IM_TWK, LEV_1, Ring);
+      if (ring != NULL) {
+        ent->flag = 0;
+        ring->twp->pos = *pos;
+        ring->twp->ang.x = 0;
+        ring->twp->ang.y = 0;
+        ring->twp->ang.z = 0;
+        _rename_RingSetGroup(ring, ent);
+      }
     }
     if (!(ent->flag & 2)) {
       count++;
@@ -253,7 +255,7 @@ void ObjectDegRingCircle(task *tp) {
 
 static void ObjectDegRingCircleExec(task *tp) {
   taskwk *twp = tp->twp;
-  Sint32 count; // found flag, then rings left; one variable, as in the original
+  Sint32 count;
   degringent *ent;
   NJS_POINT3 *pos;
   task *ring;
@@ -281,14 +283,16 @@ static void ObjectDegRingCircleExec(task *tp) {
   pos = GetWork(tp)->pos;
   count = 0;
   for (i = 0; i < twp->btimer; i++, ent++, pos++) {
-    if (!(ent->flag & 2) && ent->tp == NULL &&
-        (ring = CreateElementalTask(IM_TWK, LEV_1, Ring, "Ring")) != NULL) {
-      ent->flag = 0;
-      ring->twp->pos = *pos;
-      ring->twp->ang.x = 0;
-      ring->twp->ang.y = 0;
-      ring->twp->ang.z = 0;
-      _rename_RingSetGroup(ring, ent);
+    if (!(ent->flag & 2) && ent->tp == NULL) {
+      ring = CreateFundamentalTask(IM_TWK, LEV_1, Ring);
+      if (ring != NULL) {
+        ent->flag = 0;
+        ring->twp->pos = *pos;
+        ring->twp->ang.x = 0;
+        ring->twp->ang.y = 0;
+        ring->twp->ang.z = 0;
+        _rename_RingSetGroup(ring, ent);
+      }
     }
     if (!(ent->flag & 2)) {
       count++;
